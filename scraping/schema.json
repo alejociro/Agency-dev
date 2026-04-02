@@ -1,0 +1,21 @@
+{
+  "negocio": "",
+  "url": "",
+  "sector": "",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": { "title": "", "description": "", "keywords": "" },
+  "favicon": "",
+  "paleta": { "primario": "", "secundario": "", "acento": "", "fondo": "", "texto": "", "otros": [] },
+  "logo": { "url": "", "descripcion": "", "posicion": "", "colores": [] },
+  "tipografias": [{ "nombre": "", "uso": "", "peso": "", "tamanio_aprox": "" }],
+  "navegacion": [{ "label": "", "url": "" }],
+  "secciones": [{ "tipo": "", "titulo": "", "contenido": "", "cta": "", "imagenes": [{ "url": "", "alt": "", "descripcion": "", "tipo": "", "dimensiones": "" }] }],
+  "textos_clave": { "slogan": "", "propuesta_valor": "", "ctas": [] },
+  "videos": [{ "url": "", "plataforma": "", "descripcion": "" }],
+  "contacto": { "telefono": "", "whatsapp": "", "email": "", "direccion": "", "horarios": "" },
+  "redes": [{ "plataforma": "", "url": "" }],
+  "formularios": [{ "proposito": "", "campos": [] }],
+  "footer": { "contenido": "", "links": [], "copyright": "" },
+  "tecnologia": ""
+}

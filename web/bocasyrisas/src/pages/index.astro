@@ -1,0 +1,1568 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const serviciosEstetica = [
+  {
+    nombre: 'Diseño de Sonrisa',
+    desc: 'Transformamos tu sonrisa con carillas, coronas y técnicas de última generación para un resultado natural y duradero.',
+    detalle: 'El diseño de sonrisa es un procedimiento integral que combina estética y funcionalidad. Utilizamos carillas de porcelana, coronas de última generación y tecnología digital para planificar cada detalle de tu nueva sonrisa. El proceso incluye un análisis facial completo, simulación digital del resultado y un plan de tratamiento personalizado. Nuestro equipo de especialistas trabaja con materiales de la más alta calidad para garantizar resultados naturales que duran años.',
+    icon: 'smile',
+    id: 'diseno-sonrisa'
+  },
+  {
+    nombre: 'Blanqueamiento Dental',
+    desc: 'Recupera el blanco natural de tus dientes con tratamientos seguros y resultados visibles desde la primera sesión.',
+    detalle: 'Ofrecemos blanqueamiento dental profesional con tecnología LED de última generación que aclara tus dientes hasta 8 tonos en una sola sesión. El procedimiento es seguro, indoloro y supervisado por nuestros especialistas. También contamos con kits de blanqueamiento domiciliario personalizados para mantener los resultados. Evaluamos previamente la salud de tus dientes para garantizar un tratamiento sin sensibilidad.',
+    icon: 'sparkle',
+    id: 'blanqueamiento'
+  },
+  {
+    nombre: 'Ortodoncia',
+    desc: 'Brackets tradicionales, autoligables y alineadores invisibles para una mordida perfecta a cualquier edad.',
+    detalle: 'Contamos con todas las opciones de ortodoncia moderna: brackets metálicos, cerámicos, autoligables y alineadores invisibles. Cada tratamiento inicia con un diagnóstico digital completo que incluye radiografías, fotografías y escaneo 3D. Nuestros ortodoncistas diseñan planes de tratamiento personalizados con tiempos claros y resultados predecibles. Atendemos pacientes de todas las edades, desde niños hasta adultos.',
+    icon: 'align',
+    id: 'ortodoncia'
+  },
+];
+
+const serviciosGeneral = [
+  {
+    nombre: 'Implantes Dentales',
+    desc: 'Reemplazamos piezas perdidas con implantes de titanio que se integran al hueso para una solución permanente.',
+    detalle: 'Los implantes dentales son la solución más avanzada y duradera para reemplazar dientes perdidos. Utilizamos implantes de titanio de grado médico que se integran naturalmente al hueso maxilar. El procedimiento incluye planificación digital 3D, cirugía guiada mínimamente invasiva y coronas de porcelana de alta estética. Ofrecemos opciones desde implantes unitarios hasta rehabilitaciones completas con técnicas de carga inmediata.',
+    icon: 'implant',
+    id: 'implantes'
+  },
+  {
+    nombre: 'Endodoncia',
+    desc: 'Salvamos tus dientes naturales con tratamientos de conducto precisos, sin dolor y con tecnología digital.',
+    detalle: 'La endodoncia moderna es un procedimiento indoloro que permite conservar tus dientes naturales. Utilizamos localizadores de ápice electrónicos, limas rotatorias de última generación y magnificación óptica para garantizar la máxima precisión. El tratamiento de conducto elimina la infección del interior del diente, alivia el dolor y permite conservar la pieza dental con una restauración estética.',
+    icon: 'root',
+    id: 'endodoncia'
+  },
+  {
+    nombre: 'Odontopediatría',
+    desc: 'Cuidado dental especializado para los más pequeños, con un enfoque gentil que crea hábitos de salud para toda la vida.',
+    detalle: 'Nuestro equipo de odontopediatría está especialmente entrenado para atender niños desde su primer diente. Creamos un ambiente lúdico y seguro donde los pequeños aprenden a cuidar su salud oral sin miedo. Ofrecemos sellantes, fluorizaciones, ortopedia maxilar y tratamientos preventivos adaptados a cada etapa del crecimiento. Los padres reciben orientación personalizada sobre higiene oral y alimentación.',
+    icon: 'child',
+    id: 'odontopediatria'
+  },
+];
+
+const testimonios = [
+  {
+    nombre: 'Carolina M.',
+    texto: 'Después de 27 años yendo a Bocas & Risas puedo decir que son mi familia dental. Mi diseño de sonrisa fue impecable — el Dr. supo exactamente lo que necesitaba.',
+    servicio: 'Diseño de Sonrisa',
+    iniciales: 'CM'
+  },
+  {
+    nombre: 'Andrés F.',
+    texto: 'Me daba miedo el dentista hasta que conocí esta clínica. El trato es increíble y la tecnología que usan te da mucha confianza. Mis implantes quedaron perfectos.',
+    servicio: 'Implantes Dentales',
+    iniciales: 'AF'
+  },
+  {
+    nombre: 'María José L.',
+    texto: 'Llevé a mis dos hijos y la experiencia fue maravillosa. Los doctores tienen una paciencia y un cuidado con los niños que no he visto en ninguna otra clínica.',
+    servicio: 'Odontopediatría',
+    iniciales: 'ML'
+  },
+];
+
+const faqs = [
+  {
+    pregunta: '¿Cuánto cuesta un diseño de sonrisa?',
+    respuesta: 'El costo depende del número de piezas y el tipo de material. En tu primera consulta de valoración (sin costo) te presentamos un plan de tratamiento personalizado con todos los detalles de inversión.'
+  },
+  {
+    pregunta: '¿Los tratamientos de ortodoncia duelen?',
+    respuesta: 'Las molestias iniciales son mínimas y desaparecen en pocos días. Con los brackets autoligables y los alineadores invisibles, la experiencia es mucho más cómoda que la ortodoncia tradicional.'
+  },
+  {
+    pregunta: '¿Atienden urgencias dentales?',
+    respuesta: 'Sí, atendemos urgencias odontológicas. Puedes llamarnos directamente o escribirnos por WhatsApp para recibir atención prioritaria.'
+  },
+  {
+    pregunta: '¿Tienen facilidades de pago?',
+    respuesta: 'Ofrecemos múltiples opciones de financiación y trabajamos con las principales entidades. Consúltanos sobre planes de pago sin intereses para tratamientos extensos.'
+  },
+  {
+    pregunta: '¿Cuánto dura un blanqueamiento dental?',
+    respuesta: 'El procedimiento en consultorio toma aproximadamente 1 hora. Los resultados duran entre 1 y 3 años dependiendo de tus hábitos alimenticios y de higiene oral.'
+  },
+];
+
+const pasos = [
+  { num: '01', titulo: 'Valoración', desc: 'Consulta inicial sin costo donde evaluamos tu salud oral y escuchamos lo que quieres lograr.' },
+  { num: '02', titulo: 'Plan de Tratamiento', desc: 'Diseñamos un plan personalizado con tiempos, técnicas y opciones de inversión claras.' },
+  { num: '03', titulo: 'Tratamiento', desc: 'Ejecutamos tu plan con tecnología de vanguardia, priorizando tu comodidad en cada sesión.' },
+  { num: '04', titulo: 'Seguimiento', desc: 'Te acompañamos después del tratamiento con controles periódicos para resultados duraderos.' },
+];
+---
+
+<BaseLayout title="Bocas & Risas | Clínica Odontológica en Medellín | 27 años de experiencia">
+  <Header />
+
+  <!-- ═══════════════════════════════════
+       HERO
+       ═══════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-bg-gradient"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-tag section-tag">Clínica Odontológica en Medellín</span>
+        <h1 class="hero-title">
+          Tu sonrisa merece<br/>
+          <span class="hero-accent">27 años de experiencia</span>
+        </h1>
+        <p class="hero-sub">
+          Expertos en restaurar, transformar y cuidar tu sonrisa con procedimientos innovadores y un equipo de especialistas dedicados a tu bienestar.
+        </p>
+        <div class="hero-cta">
+          <a href="#contacto" class="btn btn-primary">Agenda tu cita</a>
+          <a href="#servicios" class="btn btn-outline">Conoce nuestros servicios</a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-item">
+            <strong>2</strong> sedes
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <strong>12</strong> servicios
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <strong>27</strong> años
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <strong>6+</strong> especialistas
+          </div>
+        </div>
+      </div>
+      <div class="hero-logo" data-animate="scale-in">
+        <img
+          src="/assets/images/NewLogoBocas.png"
+          alt="Bocas & Risas Clínica Odontológica"
+          width="500"
+          height="500"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       METRICS BAR
+       ═══════════════════════════════════ -->
+  <section class="metrics-bar" data-animate="fade-up">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="metric-value">
+            <span class="metric-number" data-target="27">0</span>
+            <span class="metric-suffix">+</span>
+          </div>
+          <span class="metric-label">Años de experiencia</span>
+        </div>
+        <div class="metric">
+          <div class="metric-value">
+            <span class="metric-number" data-target="15000">0</span>
+            <span class="metric-suffix">+</span>
+          </div>
+          <span class="metric-label">Pacientes atendidos</span>
+        </div>
+        <div class="metric">
+          <div class="metric-value">
+            <span class="metric-number" data-target="12">0</span>
+          </div>
+          <span class="metric-label">Servicios especializados</span>
+        </div>
+        <div class="metric">
+          <div class="metric-value">
+            <span class="metric-number" data-target="2">0</span>
+          </div>
+          <span class="metric-label">Sedes en Medellín</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SERVICIOS
+       ═══════════════════════════════════ -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Nuestros Servicios</span>
+        <h2>Soluciones completas para tu salud oral</h2>
+        <p class="section-subtitle">12 servicios especializados en odontología estética y general, respaldados por tecnología de punta y un equipo de profesionales.</p>
+      </div>
+
+      <div class="services-label" data-animate="fade-up">
+        <span>Odontología Estética</span>
+      </div>
+      <div class="services-grid" data-animate="stagger">
+        {serviciosEstetica.map(s => (
+          <div class="service-card card" data-modal-id={s.id} data-modal-nombre={s.nombre} data-modal-detalle={s.detalle} role="button" tabindex="0" aria-label={`Ver más sobre ${s.nombre}`}>
+            <div class="service-icon">
+              {s.icon === 'smile' && (
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+              )}
+              {s.icon === 'sparkle' && (
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+              )}
+              {s.icon === 'align' && (
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+              )}
+            </div>
+            <h3 class="service-title">{s.nombre}</h3>
+            <p class="service-desc">{s.desc}</p>
+            <span class="service-cta">
+              Ver más información
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </div>
+        ))}
+      </div>
+
+      <div class="services-label" data-animate="fade-up" style="margin-top: var(--space-8);">
+        <span>Odontología General</span>
+      </div>
+      <div class="services-grid" data-animate="stagger">
+        {serviciosGeneral.map(s => (
+          <div class="service-card card" data-modal-id={s.id} data-modal-nombre={s.nombre} data-modal-detalle={s.detalle} role="button" tabindex="0" aria-label={`Ver más sobre ${s.nombre}`}>
+            <div class="service-icon">
+              {s.icon === 'implant' && (
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="M12 2v4"/><path d="M8 6h8"/><rect x="9" y="6" width="6" height="4" rx="1"/><path d="M10 10v2"/><path d="M14 10v2"/><path d="M9 12h6"/><path d="M10 12v3"/><path d="M14 12v3"/><path d="M9 15h6"/><path d="M11 15v5"/><path d="M13 15v5"/><path d="M10 20h4"/></svg>
+              )}
+              {s.icon === 'root' && (
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="M12 2C8 2 6 5 6 8c0 2 1 4 2 5l-1 9h10l-1-9c1-1 2-3 2-5 0-3-2-6-6-6z"/><path d="M10 8h4"/><path d="M12 6v4"/></svg>
+              )}
+              {s.icon === 'child' && (
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9 11.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z" fill="var(--color-secondary)"/><path d="M15 11.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z" fill="var(--color-secondary)"/><path d="M8 15c1 1 2.5 1.5 4 1.5s3-.5 4-1.5"/></svg>
+              )}
+            </div>
+            <h3 class="service-title">{s.nombre}</h3>
+            <p class="service-desc">{s.desc}</p>
+            <span class="service-cta">
+              Ver más información
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       POR QUE NOSOTROS
+       ═══════════════════════════════════ -->
+  <section class="section why-section" id="nosotros">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-content" data-animate="fade-right">
+          <span class="section-tag">Por qué elegirnos</span>
+          <h2>No somos una clínica más.<br/><span style="color: var(--color-secondary);">Somos tu clínica.</span></h2>
+          <p>Con 27 años de trayectoria en Medellín, hemos construido algo que pocos pueden ofrecer: la confianza que solo da la experiencia, combinada con la innovación de la odontología moderna.</p>
+
+          <div class="why-features">
+            <div class="why-feature">
+              <div class="why-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <h4>27 años de confianza</h4>
+                <p>Casi tres décadas creando relaciones de largo plazo con nuestros pacientes y sus familias.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <h4>Pacientes internacionales</h4>
+                <p>Recibimos pacientes de todo el mundo que confían en nuestra calidad y estándares internacionales.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <div>
+                <h4>Laboratorio propio</h4>
+                <p>Control total de calidad con nuestro laboratorio dental integrado para resultados impecables.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="why-visual" data-animate="fade-left">
+          <div class="why-image-placeholder">
+            <div class="why-image-inner">
+              <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1" opacity="0.6"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+              <p>Foto de la clínica</p>
+            </div>
+          </div>
+          <div class="why-floating-card">
+            <span class="why-float-number">98%</span>
+            <span class="why-float-label">Satisfacción de pacientes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       PROCESO
+       ═══════════════════════════════════ -->
+  <section class="section process-section">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Tu experiencia</span>
+        <h2>Del primer contacto a tu sonrisa ideal</h2>
+        <p class="section-subtitle">Un proceso claro, transparente y sin sorpresas. Asi es como trabajamos contigo.</p>
+      </div>
+
+      <div class="process-grid" data-animate="stagger">
+        {pasos.map(p => (
+          <div class="process-step">
+            <div class="process-number">{p.num}</div>
+            <h3>{p.titulo}</h3>
+            <p>{p.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       CTA BANNER
+       ═══════════════════════════════════ -->
+  <section class="cta-banner">
+    <div class="container cta-content" data-animate="scale-in">
+      <h2>Tu mejor sonrisa está a una cita de distancia</h2>
+      <p>Agenda tu valoración sin costo y descubre todo lo que podemos hacer por ti.</p>
+      <div class="cta-actions">
+        <a href="#contacto" class="btn btn-white">Agenda tu cita</a>
+        <a href="https://wa.me/573001234567?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" class="btn btn-ghost-light">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Escríbenos por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       TESTIMONIOS
+       ═══════════════════════════════════ -->
+  <section class="section" id="testimonios">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Testimonios</span>
+        <h2>Lo que dicen nuestros pacientes</h2>
+      </div>
+
+      <div class="testimonials-track" data-animate="fade-up">
+        {testimonios.map(t => (
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              {[1,2,3,4,5].map(() => (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--color-accent)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              ))}
+            </div>
+            <p class="testimonial-text">"{t.texto}"</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">{t.iniciales}</div>
+              <div>
+                <strong>{t.nombre}</strong>
+                <span>{t.servicio}</span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       FAQ
+       ═══════════════════════════════════ -->
+  <section class="section faq-section">
+    <div class="container">
+      <div class="faq-layout">
+        <div class="faq-header" data-animate="fade-right">
+          <span class="section-tag">Preguntas Frecuentes</span>
+          <h2>Resolvemos tus dudas</h2>
+          <p>Si no encuentras la respuesta que buscas, escríbenos por WhatsApp o agenda una consulta de valoración sin costo.</p>
+        </div>
+        <div class="faq-list" data-animate="fade-left">
+          {faqs.map(f => (
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">
+                <span>{f.pregunta}</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>{f.respuesta}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       CONTACTO
+       ═══════════════════════════════════ -->
+  <section class="section contact-section" id="contacto">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info" data-animate="fade-right">
+          <span class="section-tag">Contacto</span>
+          <h2>Agenda tu cita hoy</h2>
+          <p>Estamos listos para atenderte. Elige el canal que prefieras y te responderemos lo antes posible.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>2 sedes en Medellín</strong>
+                <p>Medellín, Antioquia, Colombia</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>Teléfonos</strong>
+                <p>(604) 444 5555 / (604) 333 2222</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <p>citas@bocasyrisas.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <strong>Horarios</strong>
+                <p>Lunes a Viernes: 8:00 am - 6:00 pm<br/>Sábados: 8:00 am - 1:00 pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper" data-animate="fade-left">
+          <form class="contact-form" action="#" method="POST">
+            <div class="field">
+              <input type="text" id="name" name="name" placeholder=" " required />
+              <label for="name">Nombre completo</label>
+            </div>
+            <div class="field">
+              <input type="email" id="email" name="email" placeholder=" " required />
+              <label for="email">Correo electrónico</label>
+            </div>
+            <div class="field">
+              <input type="tel" id="phone" name="phone" placeholder=" " required />
+              <label for="phone">Teléfono / WhatsApp</label>
+            </div>
+            <div class="field field-select">
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Servicio de interés</option>
+                <option value="diseno-sonrisa">Diseño de Sonrisa</option>
+                <option value="blanqueamiento">Blanqueamiento Dental</option>
+                <option value="ortodoncia">Ortodoncia</option>
+                <option value="implantes">Implantes Dentales</option>
+                <option value="endodoncia">Endodoncia</option>
+                <option value="odontopediatria">Odontopediatría</option>
+                <option value="otro">Otro servicio</option>
+              </select>
+            </div>
+            <div class="field">
+              <textarea id="message" name="message" rows="4" placeholder=" "></textarea>
+                <label for="message">Mensaje (opcional)</label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              Enviar solicitud
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       MODAL SERVICIO
+       ═══════════════════════════════════ -->
+  <div class="modal-overlay" id="serviceModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+      <div class="modal-body">
+        <div class="modal-image" id="modalImage">
+          <div class="modal-image-inner">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1" opacity="0.6"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+        </div>
+        <div class="modal-content">
+          <span class="section-tag" id="modalTag">Servicio</span>
+          <h3 class="modal-title" id="modalTitle"></h3>
+          <p class="modal-desc" id="modalDesc"></p>
+          <a href="#contacto" class="btn btn-primary modal-cta" id="modalCta">
+            Agenda tu cita
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* ═══════════════════════════════════
+     HERO
+     ═══════════════════════════════════ */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 5rem;
+  }
+
+  .hero-bg-gradient {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 70% 30%, var(--color-secondary-glow) 0%, transparent 50%),
+      radial-gradient(ellipse at 20% 70%, rgba(27, 42, 92, 0.08) 0%, transparent 50%),
+      linear-gradient(180deg, var(--color-bg) 0%, var(--color-surface) 100%);
+    z-index: 0;
+  }
+
+  .hero-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .hero-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s cubic-bezier(0.16,1,0.3,1) 0.4s both;
+  }
+
+  .hero-logo img {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    border-radius: var(--radius-lg);
+    filter: drop-shadow(0 20px 40px rgba(27, 42, 92, 0.15));
+  }
+
+  .hero-tag {
+    animation: slideUp 0.6s cubic-bezier(0.16,1,0.3,1) 0.1s both;
+  }
+
+  .hero-title {
+    font-size: var(--text-hero);
+    font-weight: 700;
+    line-height: 1.05;
+    color: var(--color-primary);
+    animation: slideUp 0.8s cubic-bezier(0.16,1,0.3,1) 0.2s both;
+  }
+
+  .hero-accent {
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-sub {
+    font-size: clamp(1rem, 1.3vw, 1.2rem);
+    color: var(--color-text-muted);
+    max-width: 55ch;
+    animation: fadeIn 0.8s ease 0.5s both;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    animation: slideUp 0.6s cubic-bezier(0.16,1,0.3,1) 0.7s both;
+  }
+
+  .hero-proof {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    animation: fadeIn 0.6s ease 1s both;
+  }
+
+  .proof-item {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+  }
+
+  .proof-item strong {
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .proof-divider {
+    width: 1px;
+    height: 24px;
+    background: var(--color-text-muted);
+    opacity: 0.3;
+  }
+
+  .scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fadeIn 1s ease 1.2s both;
+  }
+
+  .scroll-line {
+    width: 1px;
+    height: 40px;
+    background: var(--color-primary);
+    opacity: 0.3;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .scroll-line::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 50%;
+    background: var(--color-secondary);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+
+  @keyframes scrollPulse {
+    0% { top: -50%; }
+    100% { top: 150%; }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  /* ═══════════════════════════════════
+     METRICS BAR
+     ═══════════════════════════════════ */
+  .metrics-bar {
+    background: var(--color-primary);
+    padding: var(--space-6) 0;
+  }
+
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-4);
+    text-align: center;
+  }
+
+  .metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .metric-value {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.1em;
+  }
+
+  .metric-number {
+    font-family: var(--font-display);
+    font-size: var(--text-h1);
+    font-weight: 700;
+    color: var(--color-secondary-light);
+    line-height: 1;
+  }
+
+  .metric-suffix {
+    font-family: var(--font-display);
+    font-size: var(--text-h2);
+    color: var(--color-secondary-light);
+    line-height: 1;
+  }
+
+  .metric-label {
+    font-size: var(--text-small);
+    color: var(--color-text-on-dark-muted);
+    margin-top: 0.5rem;
+  }
+
+  /* ═══════════════════════════════════
+     SECTIONS COMMON
+     ═══════════════════════════════════ */
+  .section-header {
+    text-align: center;
+    margin-bottom: var(--space-8);
+  }
+
+  .section-header h2 {
+    margin-top: 0.75rem;
+    color: var(--color-primary);
+  }
+
+  .section-subtitle {
+    margin-top: 1rem;
+    color: var(--color-text-muted);
+    max-width: 55ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ═══════════════════════════════════
+     SERVICES
+     ═══════════════════════════════════ */
+  .services-label {
+    margin-bottom: var(--space-3);
+  }
+
+  .services-label span {
+    font-family: var(--font-display);
+    font-size: var(--text-h3);
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: var(--space-4);
+    transition: all 0.35s var(--ease-out-expo);
+    cursor: pointer;
+  }
+
+  .service-card:hover {
+    transform: translateY(-6px) scale(1.01);
+  }
+
+  .service-card:focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 2px;
+  }
+
+  .service-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-lg);
+    background: var(--color-surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-title {
+    font-size: var(--text-h3);
+    color: var(--color-primary);
+  }
+
+  .service-desc {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    flex: 1;
+  }
+
+  .service-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: var(--text-small);
+    font-weight: 600;
+    color: var(--color-secondary-dark);
+    transition: gap 0.25s ease;
+  }
+
+  .service-cta:hover {
+    gap: 0.8rem;
+  }
+
+  /* ═══════════════════════════════════
+     WHY US
+     ═══════════════════════════════════ */
+  .why-section {
+    background: var(--color-surface);
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--space-8);
+    align-items: center;
+  }
+
+  .why-content h2 {
+    margin-top: 0.75rem;
+    color: var(--color-primary);
+  }
+
+  .why-content > p {
+    margin-top: 1rem;
+    color: var(--color-text-muted);
+  }
+
+  .why-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .why-feature {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .why-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-card);
+  }
+
+  .why-feature h4 {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+  }
+
+  .why-feature p {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+  }
+
+  .why-visual {
+    position: relative;
+  }
+
+  .why-image-placeholder {
+    aspect-ratio: 4/5;
+    border-radius: var(--radius-xl);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    overflow: hidden;
+  }
+
+  .why-image-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--color-text-on-dark-muted);
+    font-size: var(--text-small);
+  }
+
+  .why-floating-card {
+    position: absolute;
+    bottom: -1.5rem;
+    left: -1.5rem;
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow-hover);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .why-float-number {
+    font-family: var(--font-display);
+    font-size: var(--text-h2);
+    font-weight: 700;
+    color: var(--color-secondary-dark);
+    line-height: 1;
+  }
+
+  .why-float-label {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    margin-top: 0.25rem;
+  }
+
+  /* ═══════════════════════════════════
+     PROCESS
+     ═══════════════════════════════════ */
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-4);
+    text-align: center;
+  }
+
+  .process-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .process-number {
+    font-family: var(--font-display);
+    font-size: var(--text-h1);
+    font-weight: 700;
+    color: var(--color-secondary);
+    opacity: 0.3;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  .process-step h3 {
+    font-size: var(--text-h3);
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+
+  .process-step p {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    max-width: 26ch;
+    margin: 0 auto;
+    line-height: var(--leading-body);
+  }
+
+  /* ═══════════════════════════════════
+     CTA BANNER
+     ═══════════════════════════════════ */
+  .cta-banner {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    padding: var(--space-12) 0;
+    text-align: center;
+  }
+
+  .cta-content h2 {
+    color: var(--color-text-on-dark);
+    font-size: var(--text-h1);
+    max-width: 20ch;
+    margin: 0 auto;
+  }
+
+  .cta-content p {
+    color: var(--color-text-on-dark-muted);
+    margin: 1rem auto 0;
+    max-width: 45ch;
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .btn-ghost-light {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: var(--text-small);
+    padding: 0.875rem 2rem;
+    border-radius: var(--radius-full);
+    border: 2px solid rgba(255,255,255,0.3);
+    color: var(--color-text-on-dark);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+
+  .btn-ghost-light:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.5);
+  }
+
+  /* ═══════════════════════════════════
+     TESTIMONIALS
+     ═══════════════════════════════════ */
+  .testimonials-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: var(--space-3);
+    scrollbar-width: none;
+    padding: var(--space-2) 0;
+  }
+
+  .testimonials-track::-webkit-scrollbar { display: none; }
+
+  .testimonial-card {
+    scroll-snap-align: start;
+    flex: 0 0 clamp(300px, 80vw, 400px);
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: var(--space-4);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .testimonial-stars {
+    display: flex;
+    gap: 2px;
+  }
+
+  .testimonial-text {
+    font-size: var(--text-body);
+    color: var(--color-text);
+    font-style: italic;
+    flex: 1;
+    line-height: var(--leading-body);
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border-top: 1px solid var(--color-surface);
+    padding-top: 1rem;
+  }
+
+  .testimonial-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: var(--color-secondary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+
+  .testimonial-author strong {
+    display: block;
+    font-size: var(--text-small);
+    color: var(--color-text);
+  }
+
+  .testimonial-author span {
+    font-size: var(--text-tag);
+    color: var(--color-text-muted);
+  }
+
+  /* ═══════════════════════════════════
+     FAQ
+     ═══════════════════════════════════ */
+  .faq-section {
+    background: var(--color-surface);
+  }
+
+  .faq-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--space-8);
+    align-items: start;
+  }
+
+  .faq-header h2 {
+    margin-top: 0.75rem;
+    color: var(--color-primary);
+  }
+
+  .faq-header p {
+    margin-top: 1rem;
+    color: var(--color-text-muted);
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .faq-item {
+    background: white;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+
+  .faq-trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    font-weight: 600;
+    color: var(--color-text);
+    text-align: left;
+  }
+
+  .faq-trigger svg {
+    flex-shrink: 0;
+    transition: transform 0.3s var(--ease-out-expo);
+    color: var(--color-secondary);
+  }
+
+  .faq-item.open .faq-trigger svg {
+    transform: rotate(180deg);
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s var(--ease-out-expo), padding 0.4s ease;
+    padding: 0 1.5rem;
+  }
+
+  .faq-item.open .faq-answer {
+    max-height: 300px;
+    padding: 0 1.5rem 1.25rem;
+  }
+
+  .faq-answer p {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    line-height: var(--leading-body);
+  }
+
+  /* ═══════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════ */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--space-8);
+    align-items: start;
+  }
+
+  .contact-info h2 {
+    margin-top: 0.75rem;
+    color: var(--color-primary);
+  }
+
+  .contact-info > p {
+    margin-top: 1rem;
+    color: var(--color-text-muted);
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .contact-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .contact-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--color-secondary-dark);
+  }
+
+  .contact-item strong {
+    display: block;
+    font-size: var(--text-body);
+    color: var(--color-text);
+    margin-bottom: 0.15rem;
+  }
+
+  .contact-item p {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+  }
+
+  .contact-form-wrapper {
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    box-shadow: var(--shadow-card);
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .field {
+    position: relative;
+  }
+
+  .field input,
+  .field textarea {
+    width: 100%;
+    padding: 1rem 0 0.75rem;
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    color: var(--color-text);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--color-surface);
+    outline: none;
+    transition: border-color 0.25s ease;
+    resize: none;
+  }
+
+  .field input:focus,
+  .field textarea:focus {
+    border-color: var(--color-secondary);
+  }
+
+  .field label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: var(--text-body);
+    color: var(--color-text-muted);
+    pointer-events: none;
+    transition: all 0.2s ease;
+  }
+
+  .field textarea ~ label {
+    top: 1rem;
+    transform: none;
+  }
+
+  .field input:focus + label,
+  .field input:not(:placeholder-shown) + label,
+  .field textarea:focus + label,
+  .field textarea:not(:placeholder-shown) + label {
+    top: -0.5rem;
+    transform: none;
+    font-size: var(--text-tag);
+    color: var(--color-secondary-dark);
+    font-weight: 500;
+  }
+
+  .field-select select {
+    width: 100%;
+    padding: 0.75rem 0;
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    color: var(--color-text);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--color-surface);
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .field-select select:focus {
+    border-color: var(--color-secondary);
+  }
+
+  /* ═══════════════════════════════════
+     RESPONSIVE
+     ═══════════════════════════════════ */
+  @media (max-width: 768px) {
+    .hero {
+      min-height: auto;
+      padding-top: 6rem;
+      padding-bottom: 3rem;
+    }
+
+    .hero-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .hero-logo {
+      order: -1;
+    }
+
+    .hero-logo img {
+      max-width: 280px;
+    }
+
+    .hero-content {
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 8vw, 3.5rem);
+    }
+
+    .hero-cta {
+      justify-content: center;
+    }
+
+    .hero-proof {
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .proof-divider {
+      display: none;
+    }
+
+    .metrics-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-4);
+    }
+
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .why-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .why-visual {
+      order: -1;
+    }
+
+    .why-floating-card {
+      bottom: auto;
+      top: -1rem;
+      left: auto;
+      right: -0.5rem;
+    }
+
+    .process-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .faq-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-form-wrapper {
+      padding: var(--space-4);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .metrics-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .process-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* ═══════════════════════════════════
+     MODAL SERVICIO
+     ═══════════════════════════════════ */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background: rgba(26, 29, 43, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--container-padding);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s var(--ease-out-expo);
+  }
+
+  .modal-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .modal-card {
+    position: relative;
+    background: var(--color-bg);
+    border-radius: var(--radius-xl);
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 24px 80px rgba(27, 42, 92, 0.25);
+    transform: scale(0.95) translateY(16px);
+    transition: transform 0.4s var(--ease-out-expo);
+  }
+
+  .modal-overlay.active .modal-card {
+    transform: scale(1) translateY(0);
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color-surface);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+    transition: all 0.25s ease;
+  }
+
+  .modal-close:hover {
+    background: var(--color-primary);
+    color: white;
+  }
+
+  .modal-body {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+  }
+
+  .modal-image {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    border-radius: var(--radius-xl) 0 0 var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    overflow: hidden;
+  }
+
+  .modal-image-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--color-text-on-dark-muted);
+    font-size: var(--text-small);
+  }
+
+  .modal-content {
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .modal-title {
+    font-size: var(--text-h2);
+    color: var(--color-primary);
+    line-height: var(--leading-snug);
+  }
+
+  .modal-desc {
+    font-size: var(--text-body);
+    color: var(--color-text-muted);
+    line-height: var(--leading-body);
+    max-width: none;
+  }
+
+  .modal-cta {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .modal-body {
+      grid-template-columns: 1fr;
+    }
+
+    .modal-image {
+      border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+      min-height: 200px;
+    }
+
+    .modal-content {
+      padding: var(--space-4);
+    }
+  }
+</style>

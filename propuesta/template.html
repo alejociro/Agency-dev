@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propuesta — {{NEGOCIO}}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --color-accent: #0d9488;
+      --color-accent-dark: #0d7377;
+      --color-accent-light: #0ea5e9;
+      --color-bg: #fafafa;
+      --color-bg-screen: #e0e0e0;
+      --color-text: #1a1a1a;
+      --color-text-secondary: #475569;
+      --color-text-muted: #94a3b8;
+      --color-text-dim: #64748b;
+      --color-border: #e2e8f0;
+      --color-surface: #f8fafc;
+      --color-surface-alt: white;
+      --color-red: #ef4444;
+      --color-red-light: #f87171;
+      --color-yellow: #f59e0b;
+      --color-yellow-light: #fbbf24;
+      --color-yellow-dark: #d97706;
+      --color-green: #10b981;
+      --color-green-light: #34d399;
+      --color-green-dark: #059669;
+      --font-body: 'Inter', sans-serif;
+      --font-display: 'Playfair Display', serif;
+    }
+
+    body { font-family: var(--font-body); color: var(--color-text); background: var(--color-bg-screen); line-height: 1.6; font-size: 14px; }
+
+    .page {
+      width: 794px; min-height: 1100px; margin: 0 auto; background: var(--color-bg);
+      padding: 60px 64px; page-break-after: always; position: relative; overflow: hidden;
+    }
+
+    @media print {
+      body { background: white; }
+      .page { margin: 0; padding: 50px 60px; box-shadow: none; min-height: auto; }
+    }
+    @media screen {
+      .page { margin-top: 24px; margin-bottom: 24px; box-shadow: 0 4px 24px rgba(0,0,0,0.12); }
+    }
+
+    h1 { font-family: var(--font-display); }
+    h2 { font-family: var(--font-display); font-weight: 700; font-size: 26px; color: var(--color-accent-dark); margin-bottom: 28px; }
+    h3 { font-size: 15px; font-weight: 600; color: var(--color-text); margin-bottom: 8px; }
+    p { margin-bottom: 12px; }
+
+    /* --- PORTADA --- */
+    .cover { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; min-height: 1000px; background: linear-gradient(160deg, #f0fdfa 0%, var(--color-bg) 40%, var(--color-bg) 60%, #f0f9ff 100%); }
+    .cover-line { width: 80px; height: 4px; background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light)); border-radius: 2px; margin: 0 auto 32px; }
+    .cover h1 { font-size: 44px; font-weight: 800; color: var(--color-accent-dark); letter-spacing: -0.5px; margin-bottom: 12px; }
+    .cover .subtitle { font-size: 20px; font-weight: 300; color: var(--color-text-secondary); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 48px; }
+    .cover .date { font-size: 14px; color: var(--color-text-muted); margin-bottom: 8px; }
+    .cover .agency { font-size: 16px; font-weight: 600; color: var(--color-accent); letter-spacing: 1px; }
+    .cover-decoration { position: absolute; width: 300px; height: 300px; border-radius: 50%; opacity: 0.04; background: var(--color-accent); }
+    .cover-decoration.top-right { top: -80px; right: -80px; }
+    .cover-decoration.bottom-left { bottom: -100px; left: -100px; width: 400px; height: 400px; }
+
+    /* --- DIAGNOSTICO --- */
+    .score-row { display: flex; align-items: center; margin-bottom: 18px; }
+    .score-label { width: 110px; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-secondary); }
+    .score-bar-wrap { flex: 1; height: 28px; background: var(--color-border); border-radius: 14px; position: relative; overflow: hidden; }
+    .score-bar-fill { height: 100%; border-radius: 14px; position: relative; }
+    .score-bar-fill.red { background: linear-gradient(90deg, var(--color-red), var(--color-red-light)); }
+    .score-bar-fill.yellow { background: linear-gradient(90deg, var(--color-yellow), var(--color-yellow-light)); }
+    .score-bar-fill.green { background: linear-gradient(90deg, var(--color-green), var(--color-green-light)); }
+    .score-number { width: 50px; text-align: right; font-weight: 700; font-size: 18px; margin-left: 12px; }
+    .score-number.red { color: var(--color-red); }
+    .score-number.yellow { color: var(--color-yellow-dark); }
+    .score-number.green { color: var(--color-green-dark); }
+    .benchmark-tag { width: 85px; text-align: center; font-size: 11px; color: var(--color-text-muted); margin-left: 8px; }
+    .benchmark-tag span { font-weight: 600; color: var(--color-text-dim); }
+    .total-score-box { text-align: center; padding: 28px; border-radius: 16px; margin-top: 28px; margin-bottom: 32px; border: 1px solid; }
+    .total-score-box.red { background: linear-gradient(135deg, #fef2f2, #fff1f2); border-color: #fecaca; }
+    .total-score-box.yellow { background: linear-gradient(135deg, #fefce8, #fef9c3); border-color: #fde68a; }
+    .total-score-box.green { background: linear-gradient(135deg, #ecfdf5, #d1fae5); border-color: #a7f3d0; }
+    .total-score-box .big-number { font-family: var(--font-display); font-size: 56px; font-weight: 800; line-height: 1; }
+    .total-score-box.red .big-number { color: var(--color-red); }
+    .total-score-box.yellow .big-number { color: var(--color-yellow-dark); }
+    .total-score-box.green .big-number { color: var(--color-green-dark); }
+    .total-score-box .of-100 { font-size: 20px; color: var(--color-text-muted); font-weight: 300; }
+    .total-score-box p { font-size: 13px; color: var(--color-text-dim); margin-top: 8px; margin-bottom: 0; }
+    .summary-box { background: var(--color-surface); border-left: 4px solid var(--color-accent); padding: 20px 24px; border-radius: 0 12px 12px 0; font-size: 13.5px; line-height: 1.7; color: #334155; }
+
+    /* --- PROBLEMAS --- */
+    .problem-dimension { margin-bottom: 28px; }
+    .dimension-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .dimension-icon { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 16px; color: white; flex-shrink: 0; }
+    .dimension-icon.seo { background: var(--color-red); }
+    .dimension-icon.ux { background: var(--color-yellow); }
+    .dimension-icon.mkt { background: #8b5cf6; }
+    .dimension-icon.cont { background: var(--color-accent-light); }
+    .dimension-icon.tech { background: var(--color-text-dim); }
+    .dimension-title { font-size: 16px; font-weight: 700; color: var(--color-text); }
+    .problem-item { padding: 10px 16px; background: var(--color-surface-alt); border: 1px solid var(--color-border); border-radius: 10px; margin-bottom: 8px; font-size: 13px; color: var(--color-text-secondary); line-height: 1.5; }
+    .problem-item.alta { border-left: 3px solid var(--color-red); }
+
+    /* --- LO QUE VAMOS A CONSTRUIR --- */
+    .stack-table { width: 100%; border-collapse: separate; border-spacing: 0; margin-bottom: 28px; border-radius: 12px; overflow: hidden; border: 1px solid var(--color-border); }
+    .stack-table th { background: var(--color-accent-dark); color: white; padding: 12px 20px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+    .stack-table td { padding: 14px 20px; border-bottom: 1px solid #f1f5f9; font-size: 13px; }
+    .stack-table tr:last-child td { border-bottom: none; }
+    .stack-table tr:nth-child(even) td { background: var(--color-surface); }
+    .stack-tag { display: inline-block; background: #f0fdfa; color: var(--color-accent-dark); padding: 3px 10px; border-radius: 6px; font-weight: 600; font-size: 12px; }
+    .sections-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 28px; }
+    .section-card { padding: 14px 18px; background: var(--color-surface-alt); border: 1px solid var(--color-border); border-radius: 10px; font-size: 13px; color: #334155; }
+    .section-card strong { display: block; color: var(--color-accent-dark); font-size: 13px; margin-bottom: 2px; }
+    .demo-placeholder { border: 2px dashed #cbd5e1; border-radius: 16px; padding: 40px; text-align: center; color: var(--color-text-muted); font-size: 14px; margin-top: 20px; }
+    .demo-placeholder .icon { font-size: 32px; margin-bottom: 12px; }
+    .demo-iframe { width: 100%; height: 500px; border: 1px solid var(--color-border); border-radius: 12px; margin-bottom: 16px; }
+
+    /* --- POR QUE ACTUAR AHORA --- */
+    .urgency-card { padding: 24px; background: var(--color-surface-alt); border: 1px solid var(--color-border); border-radius: 14px; margin-bottom: 16px; position: relative; padding-left: 56px; }
+    .urgency-number { position: absolute; left: 18px; top: 22px; width: 28px; height: 28px; background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; }
+    .urgency-card h3 { color: var(--color-accent-dark); margin-bottom: 6px; }
+    .urgency-card p { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 0; }
+
+    /* --- INVERSION --- */
+    .invest-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--color-border); margin-bottom: 20px; }
+    .invest-table th { background: var(--color-accent-dark); color: white; padding: 14px 20px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+    .invest-table td { padding: 16px 20px; border-bottom: 1px solid #f1f5f9; font-size: 13px; vertical-align: top; }
+    .invest-table tr:last-child td { border-bottom: none; }
+    .invest-table tr:nth-child(even) td { background: var(--color-surface); }
+    .invest-table .price { font-weight: 700; color: var(--color-accent-dark); font-size: 15px; white-space: nowrap; }
+    .invest-table ul { list-style: none; padding: 0; }
+    .invest-table ul li { padding: 2px 0; font-size: 12px; color: var(--color-text-secondary); }
+    .invest-table ul li::before { content: "\2713 "; color: var(--color-accent); font-weight: 700; }
+    .invest-note { font-size: 12px; color: var(--color-text-muted); font-style: italic; text-align: center; }
+
+    /* --- PROXIMOS PASOS --- */
+    .timeline { position: relative; padding-left: 32px; }
+    .timeline::before { content: ''; position: absolute; left: 11px; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(180deg, var(--color-accent), var(--color-accent-light)); }
+    .timeline-phase { position: relative; margin-bottom: 32px; }
+    .timeline-dot { position: absolute; left: -32px; top: 4px; width: 24px; height: 24px; border-radius: 50%; background: var(--color-surface-alt); border: 3px solid var(--color-accent); z-index: 1; }
+    .timeline-dot.active { background: var(--color-accent); }
+    .timeline-phase h3 { font-size: 16px; font-weight: 700; color: var(--color-accent-dark); margin-bottom: 10px; }
+    .timeline-phase ul { list-style: none; padding: 0; }
+    .timeline-phase ul li { padding: 6px 0; font-size: 13px; color: var(--color-text-secondary); padding-left: 18px; position: relative; }
+    .timeline-phase ul li::before { content: ''; position: absolute; left: 0; top: 13px; width: 8px; height: 8px; background: var(--color-border); border-radius: 50%; }
+    .cta-box { background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark)); color: white; padding: 28px 32px; border-radius: 16px; text-align: center; margin-top: 36px; }
+    .cta-box p { font-size: 17px; font-weight: 600; margin-bottom: 6px; }
+    .cta-box .sub { font-size: 13px; font-weight: 300; opacity: 0.85; }
+
+    /* --- CIERRE --- */
+    .closing { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; min-height: 1000px; }
+    .closing h2 { font-size: 28px; color: var(--color-text); margin-bottom: 16px; }
+    .closing .phrase { font-size: 18px; color: var(--color-text-secondary); font-weight: 300; max-width: 480px; line-height: 1.7; margin-bottom: 40px; }
+    .closing .agency-name { font-size: 22px; font-weight: 700; color: var(--color-accent); letter-spacing: 1px; margin-bottom: 8px; }
+    .closing .contact { font-size: 14px; color: var(--color-text-muted); }
+    .closing-line { width: 120px; height: 3px; background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light)); border-radius: 2px; margin: 40px auto 0; }
+  </style>
+</head>
+<body>
+
+  <!-- ========== 1. PORTADA ========== -->
+  <div class="page cover">
+    <div class="cover-decoration top-right"></div>
+    <div class="cover-decoration bottom-left"></div>
+    <div class="cover-line"></div>
+    <h1>{{NEGOCIO}}</h1>
+    <div class="subtitle">Propuesta de Transformaci&oacute;n Digital</div>
+    <div class="date">{{FECHA}}</div>
+    <div class="agency">[NOMBRE TU AGENCIA]</div>
+  </div>
+
+  <!-- ========== 2. DIAGNOSTICO ACTUAL ========== -->
+  <div class="page">
+    <h2>Diagn&oacute;stico actual</h2>
+    {{SCORE_BARS}}
+    {{TOTAL_SCORE_BOX}}
+    <div class="summary-box">{{RESUMEN_EJECUTIVO}}</div>
+  </div>
+
+  <!-- ========== 3. PROBLEMAS ========== -->
+  <div class="page">
+    <h2>Los problemas que encontramos</h2>
+    {{PROBLEMAS}}
+  </div>
+
+  <!-- ========== 4. LO QUE VAMOS A CONSTRUIR ========== -->
+  <div class="page">
+    <h2>Lo que vamos a construir</h2>
+    {{CONSTRUCCION}}
+  </div>
+
+  <!-- ========== 5. POR QUE ACTUAR AHORA ========== -->
+  <div class="page">
+    <h2>Por qu&eacute; actuar ahora</h2>
+    <p style="margin-bottom: 28px; color: var(--color-text-secondary);">Los n&uacute;meros de la auditor&iacute;a revelan oportunidades concretas que su competencia podr&iacute;a estar aprovechando hoy:</p>
+    {{URGENCIA}}
+  </div>
+
+  <!-- ========== 6. INVERSION ========== -->
+  <div class="page">
+    <h2>Inversi&oacute;n</h2>
+    {{INVERSION}}
+    <p class="invest-note">Precios adaptados seg&uacute;n alcance final del proyecto</p>
+  </div>
+
+  <!-- ========== 7. PROXIMOS PASOS ========== -->
+  <div class="page">
+    <h2>Pr&oacute;ximos pasos</h2>
+    <div class="timeline">
+      {{TIMELINE}}
+    </div>
+    <div class="cta-box">
+      <p>Para comenzar, responda este correo o ll&aacute;menos</p>
+      <div class="sub">Agendaremos la reuni&oacute;n de arranque esta misma semana</div>
+    </div>
+  </div>
+
+  <!-- ========== 8. CIERRE ========== -->
+  <div class="page closing">
+    <h2>{{FRASE_CIERRE}}</h2>
+    <div class="phrase">{{PARRAFO_CIERRE}}</div>
+    <div class="agency-name">[NOMBRE TU AGENCIA]</div>
+    <div class="contact">[CONTACTO AGENCIA]</div>
+    <div class="closing-line"></div>
+  </div>
+
+</body>
+</html>

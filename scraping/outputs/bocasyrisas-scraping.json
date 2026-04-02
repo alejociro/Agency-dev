@@ -1,0 +1,235 @@
+{
+  "negocio": "Bocas & Risas",
+  "url": "https://bocasyrisas.com/",
+  "sector": "Salud / Clínica Odontológica",
+  "requiere_render": true,
+  "nota_scraping": "Sitio WordPress con JavaScript pesado. El body se renderiza vía JS, por lo que el contenido editorial (secciones, párrafos, imágenes) no fue accesible directamente desde el HTML estático. Información obtenida combinando sitemaps XML, metadata SEO (Open Graph, Schema.org), y búsqueda externa. Considerar scraping con browser headless para obtener contenido visual completo.",
+
+  "meta": {
+    "title": "Clínicas odontológicas Medellín, Diseño de sonrisa Medellín",
+    "description": "Expertos en restaurar tu sonrisa con procedimientos innovadores como implantes dentales, diseño de sonrisa en Medellín y más.",
+    "keywords": null
+  },
+
+  "favicon": "https://bocasyrisas.com/wp-content/uploads/2021/06/logo-img-dest-boicasyrisas.jpg",
+
+  "paleta": {
+    "primario": "#209aae",
+    "secundario": "#263692",
+    "acento": "#19235c",
+    "fondo": "#ffffff",
+    "texto": "#313131",
+    "otros": ["#000000"]
+  },
+
+  "logo": {
+    "url": "https://bocasyrisas.com/wp-content/uploads/2021/06/logo-img-dest-boicasyrisas.jpg",
+    "descripcion": "Logo marca Bocas & Risas / B&R Odontología. Imagen cuadrada 300x300px.",
+    "posicion": "header superior izquierdo",
+    "colores": ["#209aae", "#263692", "#ffffff"]
+  },
+
+  "tipografias": [
+    {
+      "nombre": "No determinada (stack WordPress del tema — probablemente sans-serif genérica)",
+      "uso": "general",
+      "peso": null,
+      "tamanio_aprox": null
+    }
+  ],
+
+  "navegacion": [
+    { "label": "Home", "url": "https://bocasyrisas.com/" },
+    { "label": "Nosotros", "url": "https://bocasyrisas.com/nosotros/" },
+    {
+      "label": "Odontología Estética o Cosmética",
+      "url": "https://bocasyrisas.com/odontologia-estetica/"
+    },
+    {
+      "label": "Diseño de Sonrisa Medellín",
+      "url": "https://bocasyrisas.com/odontologia-estetica/diseno-de-sonrisa-medellin/"
+    },
+    {
+      "label": "Implantes Dentales Medellín",
+      "url": "https://bocasyrisas.com/odontologia-estetica/implantes-dentales-medellin/"
+    },
+    {
+      "label": "Ortodoncia Medellín",
+      "url": "https://bocasyrisas.com/odontologia-estetica/ortodoncia-medellin/"
+    },
+    {
+      "label": "Blanqueamiento Dental Medellín",
+      "url": "https://bocasyrisas.com/odontologia-estetica/blanqueamiento-dental-medellin/"
+    },
+    {
+      "label": "Rehabilitación Oral Medellín",
+      "url": "https://bocasyrisas.com/odontologia-estetica/rehabilitacion-oral-medellin/"
+    },
+    {
+      "label": "Laboratorio Dental Medellín",
+      "url": "https://bocasyrisas.com/odontologia-estetica/laboratorio-dental-medellin-antioquia/"
+    },
+    {
+      "label": "Odontología Medellín",
+      "url": "https://bocasyrisas.com/odontologia-medellin/"
+    },
+    {
+      "label": "Periodoncia Medellín",
+      "url": "https://bocasyrisas.com/odontologia-medellin/periodoncista-medellin/"
+    },
+    {
+      "label": "Endodoncia Medellín",
+      "url": "https://bocasyrisas.com/odontologia-medellin/endodoncista-medellin/"
+    },
+    {
+      "label": "Cirugía Oral Maxilofacial Medellín",
+      "url": "https://bocasyrisas.com/odontologia-medellin/cirugia-maxilofacial-medellin/"
+    },
+    {
+      "label": "Cirugía Oral",
+      "url": "https://bocasyrisas.com/odontologia-medellin/especializacion-en-cirugia-oral/"
+    },
+    {
+      "label": "Urgencias Odontológicas Medellín",
+      "url": "https://bocasyrisas.com/odontologia-medellin/urgencias-odontologicas-medellin/"
+    },
+    {
+      "label": "Ortopedia Maxilar",
+      "url": "https://bocasyrisas.com/odontologia-medellin/ortopedia-maxilar/"
+    },
+    { "label": "Nuestro Equipo", "url": "https://bocasyrisas.com/nuestro-equipo/" },
+    { "label": "Galería", "url": "https://bocasyrisas.com/galeria/" },
+    { "label": "Testimonios", "url": "https://bocasyrisas.com/testimonios/" },
+    { "label": "Blog", "url": "https://bocasyrisas.com/blog/" },
+    { "label": "Preguntas Frecuentes", "url": "https://bocasyrisas.com/preguntas-frecuentes/" },
+    { "label": "Contacto", "url": "https://bocasyrisas.com/contacto/" }
+  ],
+
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Clínicas Odontológicas Medellín — Bocas & Risas",
+      "contenido": "Expertos en restaurar tu sonrisa con procedimientos innovadores como implantes dentales, diseño de sonrisa en Medellín y más. 27 años de experiencia. Atención a pacientes nacionales e internacionales con los más altos estándares de calidad.",
+      "cta": "Agenda tu cita",
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Odontología Estética o Cosmética",
+      "contenido": "Bocas & Risas ofrece los siguientes servicios de odontología estética: Diseño de Sonrisa (armoniza tamaño, forma y color de los dientes), Implantes Dentales (tornillos de titanio para sostener coronas), Ortodoncia (ortodoncia invisible y lingual), Blanqueamiento Dental (corrige el color oscuro o amarillento), Rehabilitación Oral (restauración dental completa), Laboratorio Dental propio.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Odontología General",
+      "contenido": "Servicios de odontología general: Periodoncia (prevención y tratamiento de enfermedades de los tejidos que soportan los dientes), Endodoncia (limpieza de canales radiculares), Cirugía Oral y Maxilofacial, Cirugía Oral, Urgencias Odontológicas, Ortopedia Maxilar.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "nosotros",
+      "titulo": "Bocas & Risas — Clínicas Odontológicas Medellín",
+      "contenido": "Bocas y Risas formamos parte de los centros odontológicos en Medellín de mayor referencia, con 27 años de experiencia. Clínica odontológica que utiliza odontología estética para corregir imperfecciones relacionadas con la salud bucal y armonía estética. Ofrecemos atención a pacientes nacionales e internacionales con los más altos estándares de calidad.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "equipo",
+      "titulo": "Nuestros Odontólogos en Medellín",
+      "contenido": "Nuestros profesionales estudiarán tu caso, y en colaboración de todo el equipo médico, encontrarán la solución adecuada para ti.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "testimonios",
+      "titulo": "Testimonios de Odontología en Medellín",
+      "contenido": "Sección dedicada a testimonios de pacientes. Slogan: 'Una sonrisa vale más que mil palabras'.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "galeria",
+      "titulo": "Galería — Instalaciones Bocas & Risas",
+      "contenido": "Conoce las instalaciones de nuestra clínica odontológica en Medellín, disponemos de espacios cómodos y privados, con equipos de alta tecnología.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "faq",
+      "titulo": "¡Aclara tus dudas con las preguntas frecuentes sobre odontología!",
+      "contenido": "Con nuestras preguntas frecuentes nos encargamos de aclarar cualquier duda que se te pueda presentar, incluso antes de contactarnos.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "contacto",
+      "titulo": "B&R Odontología Medellín, ¡Contáctanos!",
+      "contenido": "Para cualquier duda e inquietud que se te pueda presentar, te brindamos a continuación nuestras vías de contacto. Formulario de contacto disponible.",
+      "cta": "Contáctanos",
+      "imagenes": []
+    },
+    {
+      "tipo": "blog",
+      "titulo": "Blog de Odontología",
+      "contenido": "Blog con 108 artículos sobre odontología, salud bucal, tratamientos estéticos, implantes dentales, ortodoncia, y cuidado dental. Última publicación: marzo 2026.",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+
+  "textos_clave": {
+    "slogan": "Una sonrisa vale más que mil palabras",
+    "propuesta_valor": "Expertos en restaurar tu sonrisa con procedimientos innovadores. 27 años de experiencia. Atención a pacientes nacionales e internacionales con los más altos estándares de calidad.",
+    "ctas": [
+      "Agenda tu cita",
+      "Contáctanos",
+      "¿Tienes una urgencia odontológica? ¡Llama ya!"
+    ]
+  },
+
+  "imagenes": [
+    {
+      "url": "https://bocasyrisas.com/wp-content/uploads/2021/06/logo-img-dest-boicasyrisas.jpg",
+      "alt": "Logo B&R Odontología",
+      "descripcion": "Logo marca Bocas & Risas",
+      "tipo": "logo",
+      "dimensiones": "300x300"
+    }
+  ],
+
+  "videos": [],
+
+  "contacto": {
+    "telefono": "+57 604 2541616 / +57 604 4117136",
+    "whatsapp": "+57 301 324 8706",
+    "email": null,
+    "direccion": "Carrera 49 # 61-42, Medellín, Antioquia, Colombia",
+    "horarios": null
+  },
+
+  "redes": [
+    { "plataforma": "Instagram", "url": "https://www.instagram.com/bocasyrisas/" },
+    { "plataforma": "Facebook", "url": "https://www.facebook.com/BocasyRisas/" }
+  ],
+
+  "formularios": [
+    {
+      "proposito": "Contacto general / solicitud de cita",
+      "campos": ["nombre", "email", "teléfono", "mensaje (inferidos — formulario Gravity Forms activo en /contacto/)"]
+    }
+  ],
+
+  "footer": {
+    "contenido": "Footer con múltiples columnas (estructura WordPress con widgets). Incluye logo, datos de contacto, menú de navegación secundario, redes sociales y copyright.",
+    "links": [
+      { "label": "Política de privacidad", "url": null },
+      { "label": "Nosotros", "url": "https://bocasyrisas.com/nosotros/" },
+      { "label": "Contacto", "url": "https://bocasyrisas.com/contacto/" },
+      { "label": "Blog", "url": "https://bocasyrisas.com/blog/" }
+    ],
+    "copyright": "Bocas & Risas / B&R Odontología Medellín"
+  },
+
+  "tecnologia": "WordPress + Gravity Forms + Google Tag Manager (GTM-MTB2WJNL) + Google Analytics (G-LR6QD15ZND). Tema personalizado con clases dt-sc-*. Renderizado server-side (SSR). No es SPA."
+}

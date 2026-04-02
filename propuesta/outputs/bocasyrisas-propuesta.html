@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propuesta — Bocas & Risas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1a1a1a;
+      background: #e0e0e0;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .page {
+      width: 794px;
+      min-height: 1100px;
+      margin: 0 auto;
+      background: #fafafa;
+      padding: 60px 64px;
+      page-break-after: always;
+      position: relative;
+      overflow: hidden;
+    }
+
+    @media print {
+      body { background: white; }
+      .page {
+        margin: 0;
+        padding: 50px 60px;
+        box-shadow: none;
+        min-height: auto;
+      }
+    }
+
+    @media screen {
+      .page {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+      }
+    }
+
+    h1 { font-family: 'Playfair Display', serif; }
+    h2 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 26px; color: #0d7377; margin-bottom: 28px; }
+    h3 { font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 8px; }
+
+    p { margin-bottom: 12px; }
+
+    .accent { color: #0d9488; }
+    .accent-bg { background: #0d9488; }
+
+    /* ---------- PORTADA ---------- */
+    .cover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 1000px;
+      background: linear-gradient(160deg, #f0fdfa 0%, #fafafa 40%, #fafafa 60%, #f0f9ff 100%);
+    }
+
+    .cover-line {
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #0d9488, #0ea5e9);
+      border-radius: 2px;
+      margin: 0 auto 32px;
+    }
+
+    .cover h1 {
+      font-size: 44px;
+      font-weight: 800;
+      color: #0d7377;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+
+    .cover .subtitle {
+      font-size: 20px;
+      font-weight: 300;
+      color: #475569;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 48px;
+    }
+
+    .cover .date {
+      font-size: 14px;
+      color: #94a3b8;
+      margin-bottom: 8px;
+    }
+
+    .cover .agency {
+      font-size: 16px;
+      font-weight: 600;
+      color: #0d9488;
+      letter-spacing: 1px;
+    }
+
+    .cover-decoration {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      opacity: 0.04;
+      background: #0d9488;
+    }
+    .cover-decoration.top-right { top: -80px; right: -80px; }
+    .cover-decoration.bottom-left { bottom: -100px; left: -100px; width: 400px; height: 400px; }
+
+    /* ---------- DIAGNOSTICO ---------- */
+    .score-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .score-label {
+      width: 110px;
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #475569;
+    }
+
+    .score-bar-wrap {
+      flex: 1;
+      height: 28px;
+      background: #e2e8f0;
+      border-radius: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .score-bar-fill {
+      height: 100%;
+      border-radius: 14px;
+      transition: width 0.3s;
+      position: relative;
+    }
+
+    .score-bar-fill.red { background: linear-gradient(90deg, #ef4444, #f87171); }
+    .score-bar-fill.yellow { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+    .score-bar-fill.green { background: linear-gradient(90deg, #10b981, #34d399); }
+
+    .score-number {
+      width: 50px;
+      text-align: right;
+      font-weight: 700;
+      font-size: 18px;
+      margin-left: 12px;
+    }
+
+    .score-number.red { color: #ef4444; }
+    .score-number.yellow { color: #d97706; }
+    .score-number.green { color: #059669; }
+
+    .benchmark-tag {
+      width: 85px;
+      text-align: center;
+      font-size: 11px;
+      color: #94a3b8;
+      margin-left: 8px;
+    }
+
+    .benchmark-tag span {
+      font-weight: 600;
+      color: #64748b;
+    }
+
+    .total-score-box {
+      text-align: center;
+      padding: 28px;
+      background: linear-gradient(135deg, #fef2f2, #fff1f2);
+      border-radius: 16px;
+      margin-top: 28px;
+      margin-bottom: 32px;
+      border: 1px solid #fecaca;
+    }
+
+    .total-score-box .big-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      font-weight: 800;
+      color: #ef4444;
+      line-height: 1;
+    }
+
+    .total-score-box .of-100 {
+      font-size: 20px;
+      color: #94a3b8;
+      font-weight: 300;
+    }
+
+    .total-score-box p {
+      font-size: 13px;
+      color: #64748b;
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+
+    .summary-box {
+      background: #f8fafc;
+      border-left: 4px solid #0d9488;
+      padding: 20px 24px;
+      border-radius: 0 12px 12px 0;
+      font-size: 13.5px;
+      line-height: 1.7;
+      color: #334155;
+    }
+
+    /* ---------- PROBLEMAS ---------- */
+    .problem-dimension {
+      margin-bottom: 28px;
+    }
+
+    .dimension-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .dimension-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .dimension-icon.seo { background: #ef4444; }
+    .dimension-icon.ux { background: #f59e0b; }
+    .dimension-icon.mkt { background: #8b5cf6; }
+    .dimension-icon.cont { background: #0ea5e9; }
+    .dimension-icon.tech { background: #64748b; }
+
+    .dimension-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    .problem-item {
+      padding: 10px 16px;
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      font-size: 13px;
+      color: #475569;
+      line-height: 1.5;
+    }
+
+    .problem-item.alta {
+      border-left: 3px solid #ef4444;
+    }
+
+    /* ---------- LO QUE VAMOS A CONSTRUIR ---------- */
+    .stack-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-bottom: 28px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+    }
+
+    .stack-table th {
+      background: #0d7377;
+      color: white;
+      padding: 12px 20px;
+      text-align: left;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .stack-table td {
+      padding: 14px 20px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 13px;
+    }
+
+    .stack-table tr:last-child td { border-bottom: none; }
+    .stack-table tr:nth-child(even) td { background: #f8fafc; }
+
+    .stack-tag {
+      display: inline-block;
+      background: #f0fdfa;
+      color: #0d7377;
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    .sections-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .section-card {
+      padding: 14px 18px;
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      font-size: 13px;
+      color: #334155;
+    }
+
+    .section-card strong {
+      display: block;
+      color: #0d7377;
+      font-size: 13px;
+      margin-bottom: 2px;
+    }
+
+    .demo-placeholder {
+      border: 2px dashed #cbd5e1;
+      border-radius: 16px;
+      padding: 40px;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+
+    .demo-placeholder .icon { font-size: 32px; margin-bottom: 12px; }
+
+    /* ---------- POR QUE ACTUAR AHORA ---------- */
+    .urgency-card {
+      padding: 24px;
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      margin-bottom: 16px;
+      position: relative;
+      padding-left: 56px;
+    }
+
+    .urgency-number {
+      position: absolute;
+      left: 18px;
+      top: 22px;
+      width: 28px;
+      height: 28px;
+      background: linear-gradient(135deg, #0d9488, #0ea5e9);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .urgency-card h3 { color: #0d7377; margin-bottom: 6px; }
+    .urgency-card p { font-size: 13px; color: #475569; margin-bottom: 0; }
+
+    /* ---------- INVERSION ---------- */
+    .invest-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+      margin-bottom: 20px;
+    }
+
+    .invest-table th {
+      background: #0d7377;
+      color: white;
+      padding: 14px 20px;
+      text-align: left;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .invest-table td {
+      padding: 16px 20px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 13px;
+      vertical-align: top;
+    }
+
+    .invest-table tr:last-child td { border-bottom: none; }
+    .invest-table tr:nth-child(even) td { background: #f8fafc; }
+
+    .invest-table .price {
+      font-weight: 700;
+      color: #0d7377;
+      font-size: 15px;
+      white-space: nowrap;
+    }
+
+    .invest-table ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .invest-table ul li {
+      padding: 2px 0;
+      font-size: 12px;
+      color: #475569;
+    }
+
+    .invest-table ul li::before {
+      content: "✓ ";
+      color: #0d9488;
+      font-weight: 700;
+    }
+
+    .invest-note {
+      font-size: 12px;
+      color: #94a3b8;
+      font-style: italic;
+      text-align: center;
+    }
+
+    /* ---------- PROXIMOS PASOS ---------- */
+    .timeline {
+      position: relative;
+      padding-left: 32px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 11px;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: linear-gradient(180deg, #0d9488, #0ea5e9);
+    }
+
+    .timeline-phase {
+      position: relative;
+      margin-bottom: 32px;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -32px;
+      top: 4px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: white;
+      border: 3px solid #0d9488;
+      z-index: 1;
+    }
+
+    .timeline-dot.active {
+      background: #0d9488;
+    }
+
+    .timeline-phase h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0d7377;
+      margin-bottom: 10px;
+    }
+
+    .timeline-phase ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .timeline-phase ul li {
+      padding: 6px 0;
+      font-size: 13px;
+      color: #475569;
+      padding-left: 18px;
+      position: relative;
+    }
+
+    .timeline-phase ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 8px;
+      height: 8px;
+      background: #e2e8f0;
+      border-radius: 50%;
+    }
+
+    .cta-box {
+      background: linear-gradient(135deg, #0d9488, #0d7377);
+      color: white;
+      padding: 28px 32px;
+      border-radius: 16px;
+      text-align: center;
+      margin-top: 36px;
+    }
+
+    .cta-box p {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .cta-box .sub {
+      font-size: 13px;
+      font-weight: 300;
+      opacity: 0.85;
+    }
+
+    /* ---------- CIERRE ---------- */
+    .closing {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 1000px;
+    }
+
+    .closing-line {
+      width: 120px;
+      height: 3px;
+      background: linear-gradient(90deg, #0d9488, #0ea5e9);
+      border-radius: 2px;
+      margin: 40px auto 0;
+    }
+
+    .closing h2 {
+      font-size: 28px;
+      color: #1a1a1a;
+      margin-bottom: 16px;
+    }
+
+    .closing .phrase {
+      font-size: 18px;
+      color: #475569;
+      font-weight: 300;
+      max-width: 480px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .closing .agency-name {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0d9488;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .closing .contact {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== 1. PORTADA ========== -->
+  <div class="page cover">
+    <div class="cover-decoration top-right"></div>
+    <div class="cover-decoration bottom-left"></div>
+    <div class="cover-line"></div>
+    <h1>Bocas & Risas</h1>
+    <div class="subtitle">Propuesta de Transformaci&oacute;n Digital</div>
+    <div class="date">31 de marzo de 2026</div>
+    <div class="agency">[NOMBRE TU AGENCIA]</div>
+  </div>
+
+  <!-- ========== 2. DIAGNOSTICO ACTUAL ========== -->
+  <div class="page">
+    <h2>Diagn&oacute;stico actual</h2>
+
+    <!-- SEO -->
+    <div class="score-row">
+      <div class="score-label">SEO</div>
+      <div class="score-bar-wrap">
+        <div class="score-bar-fill red" style="width: 38%;"></div>
+      </div>
+      <div class="score-number red">38</div>
+      <div class="benchmark-tag">Meta: <span>55</span></div>
+    </div>
+
+    <!-- UX/UI -->
+    <div class="score-row">
+      <div class="score-label">UX / UI</div>
+      <div class="score-bar-wrap">
+        <div class="score-bar-fill red" style="width: 32%;"></div>
+      </div>
+      <div class="score-number red">32</div>
+      <div class="benchmark-tag">Meta: <span>60</span></div>
+    </div>
+
+    <!-- Marketing -->
+    <div class="score-row">
+      <div class="score-label">Marketing</div>
+      <div class="score-bar-wrap">
+        <div class="score-bar-fill red" style="width: 40%;"></div>
+      </div>
+      <div class="score-number red">40</div>
+      <div class="benchmark-tag">Meta: <span>60</span></div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="score-row">
+      <div class="score-label">Contenido</div>
+      <div class="score-bar-wrap">
+        <div class="score-bar-fill red" style="width: 45%;"></div>
+      </div>
+      <div class="score-number red">45</div>
+      <div class="benchmark-tag">Meta: <span>65</span></div>
+    </div>
+
+    <!-- Tecnico -->
+    <div class="score-row">
+      <div class="score-label">T&eacute;cnico</div>
+      <div class="score-bar-wrap">
+        <div class="score-bar-fill red" style="width: 30%;"></div>
+      </div>
+      <div class="score-number red">30</div>
+      <div class="benchmark-tag">Meta: <span>50</span></div>
+    </div>
+
+    <!-- Total -->
+    <div class="total-score-box">
+      <div class="big-number">37 <span class="of-100">/ 100</span></div>
+      <p>Puntuaci&oacute;n general &mdash; por debajo del benchmark del sector salud local</p>
+    </div>
+
+    <!-- Resumen ejecutivo -->
+    <div class="summary-box">
+      Bocas &amp; Risas tiene 27 a&ntilde;os de experiencia y 12 servicios especializados, pero su sitio web no refleja ese nivel de profesionalismo &mdash; un tema WordPress gen&eacute;rico con JavaScript pesado impide la crawlabilidad, presenta una experiencia visual plana y no diferencia a la cl&iacute;nica de su competencia en Medell&iacute;n. La oportunidad principal est&aacute; en reconstruir la presencia digital con un sitio premium que convierta la autoridad cl&iacute;nica real (27 a&ntilde;os, laboratorio propio, pacientes internacionales) en confianza visual e itinerarios claros hacia la conversi&oacute;n.
+    </div>
+  </div>
+
+  <!-- ========== 3. LOS PROBLEMAS QUE ENCONTRAMOS ========== -->
+  <div class="page">
+    <h2>Los problemas que encontramos</h2>
+
+    <!-- SEO -->
+    <div class="problem-dimension">
+      <div class="dimension-header">
+        <div class="dimension-icon seo">S</div>
+        <div class="dimension-title">Posicionamiento en buscadores (SEO)</div>
+      </div>
+      <div class="problem-item alta">El contenido principal del sitio depende de JavaScript para mostrarse &mdash; los buscadores como Google pueden no ver ni indexar la informaci&oacute;n de servicios, lo que significa p&eacute;rdida de visibilidad frente a pacientes que buscan en l&iacute;nea.</div>
+      <div class="problem-item alta">No se detecta un t&iacute;tulo principal visible en las p&aacute;ginas &mdash; esto confunde a Google sobre cu&aacute;l es el tema de cada secci&oacute;n, afectando el posicionamiento.</div>
+      <div class="problem-item alta">Las im&aacute;genes del sitio no tienen descripciones alternativas &mdash; Google no puede &ldquo;ver&rdquo; las fotos, desaprovechando oportunidades de aparecer en b&uacute;squedas de im&aacute;genes.</div>
+    </div>
+
+    <!-- UX/UI -->
+    <div class="problem-dimension">
+      <div class="dimension-header">
+        <div class="dimension-icon ux">U</div>
+        <div class="dimension-title">Experiencia del usuario (UX/UI)</div>
+      </div>
+      <div class="problem-item alta">El dise&ntilde;o actual usa una plantilla gen&eacute;rica que no transmite los 27 a&ntilde;os de trayectoria ni diferencia a la cl&iacute;nica de consultorios nuevos &mdash; la primera impresi&oacute;n no genera la confianza que el paciente necesita.</div>
+      <div class="problem-item alta">El men&uacute; de navegaci&oacute;n muestra 22 opciones simult&aacute;neamente &mdash; los visitantes se sienten abrumados y abandonan antes de encontrar lo que buscan.</div>
+      <div class="problem-item alta">El sitio no est&aacute; dise&ntilde;ado pensando primero en celulares &mdash; y hoy m&aacute;s del 70% de las b&uacute;squedas de salud se hacen desde el tel&eacute;fono.</div>
+    </div>
+
+    <!-- Marketing -->
+    <div class="problem-dimension">
+      <div class="dimension-header">
+        <div class="dimension-icon mkt">M</div>
+        <div class="dimension-title">Conversi&oacute;n y marketing</div>
+      </div>
+      <div class="problem-item alta">Las p&aacute;ginas de servicios no tienen un bot&oacute;n para agendar cita &mdash; el paciente interesado no tiene un camino claro para dar el siguiente paso.</div>
+      <div class="problem-item alta">No hay cifras de impacto visibles (pacientes atendidos, a&ntilde;os, especialistas) &mdash; datos que generan confianza instant&aacute;nea y se est&aacute;n desperdiciando.</div>
+      <div class="problem-item">WhatsApp existe pero no est&aacute; visible como bot&oacute;n flotante permanente &mdash; el canal de contacto m&aacute;s directo queda escondido.</div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="problem-dimension">
+      <div class="dimension-header">
+        <div class="dimension-icon cont">C</div>
+        <div class="dimension-title">Contenido</div>
+      </div>
+      <div class="problem-item alta">No se muestran horarios de atenci&oacute;n &mdash; dato esencial para una cl&iacute;nica de salud que genera llamadas innecesarias o p&eacute;rdida de pacientes.</div>
+      <div class="problem-item">No hay perfiles visibles del equipo m&eacute;dico con nombres y credenciales &mdash; los pacientes quieren saber qui&eacute;n los va a atender.</div>
+      <div class="problem-item">Las descripciones de servicios son gen&eacute;ricas &mdash; no explican el proceso, los tiempos ni qu&eacute; esperar, dejando dudas sin resolver.</div>
+    </div>
+
+    <!-- Tecnico -->
+    <div class="problem-dimension">
+      <div class="dimension-header">
+        <div class="dimension-icon tech">T</div>
+        <div class="dimension-title">Rendimiento t&eacute;cnico</div>
+      </div>
+      <div class="problem-item alta">El sitio tiene instalados plugins que probablemente no se usan (WooCommerce, BuddyPress, bbPress, Events Calendar) &mdash; cada uno a&ntilde;ade peso y lentitud innecesaria.</div>
+      <div class="problem-item alta">Todo el contenido depende de JavaScript para renderizarse &mdash; si el script falla, el visitante ve una p&aacute;gina en blanco.</div>
+      <div class="problem-item">El favicon es una imagen JPG de 300x300 en lugar del formato correcto &mdash; peque&ntilde;o detalle que suma a una percepci&oacute;n de descuido t&eacute;cnico.</div>
+    </div>
+  </div>
+
+  <!-- ========== 4. LO QUE VAMOS A CONSTRUIR ========== -->
+  <div class="page">
+    <h2>Lo que vamos a construir</h2>
+
+    <p style="margin-bottom: 24px; color: #475569;">Un sitio web completamente nuevo, dise&ntilde;ado a medida para Bocas &amp; Risas, construido con tecnolog&iacute;a moderna que garantiza velocidad, visibilidad en Google y una experiencia premium acorde a 27 a&ntilde;os de trayectoria.</p>
+
+    <!-- Stack -->
+    <table class="stack-table">
+      <thead>
+        <tr>
+          <th style="width: 180px;">Componente</th>
+          <th>Tecnolog&iacute;a</th>
+          <th>Beneficio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="stack-tag">Framework</span></td>
+          <td style="font-weight: 600;">Astro 4</td>
+          <td>P&aacute;ginas est&aacute;ticas ultra r&aacute;pidas, 100% visibles para Google sin depender de JavaScript</td>
+        </tr>
+        <tr>
+          <td><span class="stack-tag">Estilos</span></td>
+          <td style="font-weight: 600;">Tailwind CSS</td>
+          <td>Dise&ntilde;o visual premium, responsive desde el d&iacute;a uno, optimizado para m&oacute;viles</td>
+        </tr>
+        <tr>
+          <td><span class="stack-tag">SEO Local</span></td>
+          <td style="font-weight: 600;">Schema JSON-LD</td>
+          <td>Datos estructurados tipo MedicalBusiness para aparecer en resultados locales de Google</td>
+        </tr>
+        <tr>
+          <td><span class="stack-tag">Contacto</span></td>
+          <td style="font-weight: 600;">Widget WhatsApp</td>
+          <td>Bot&oacute;n flotante visible en todas las p&aacute;ginas &mdash; un toque para contactar</td>
+        </tr>
+        <tr>
+          <td><span class="stack-tag">Animaciones</span></td>
+          <td style="font-weight: 600;">Intersection Observer</td>
+          <td>Transiciones suaves al hacer scroll &mdash; sensaci&oacute;n moderna sin sacrificar velocidad</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Secciones del nuevo sitio -->
+    <h3 style="font-size: 16px; margin-bottom: 14px;">Secciones del nuevo sitio</h3>
+    <div class="sections-grid">
+      <div class="section-card"><strong>Inicio</strong>Hero con m&eacute;tricas de confianza, servicios destacados, testimonios y CTA</div>
+      <div class="section-card"><strong>Servicios (12)</strong>P&aacute;gina individual por servicio con proceso paso a paso y bot&oacute;n de cita</div>
+      <div class="section-card"><strong>Nosotros</strong>Historia de 27 a&ntilde;os, diferenciadores, laboratorio propio</div>
+      <div class="section-card"><strong>Equipo m&eacute;dico</strong>Perfiles con foto, especialidad y credenciales</div>
+      <div class="section-card"><strong>Testimonios</strong>Rese&ntilde;as de pacientes con prueba social real</div>
+      <div class="section-card"><strong>Blog</strong>Migraci&oacute;n de los 108 art&iacute;culos con SEO optimizado</div>
+      <div class="section-card"><strong>Galer&iacute;a</strong>Instalaciones y casos antes/despu&eacute;s</div>
+      <div class="section-card"><strong>Contacto y sedes</strong>Mapa, horarios, 2 sedes con datos completos</div>
+    </div>
+
+    <p style="font-size: 13px; color: #475569;">El dise&ntilde;o se adaptar&aacute; a la identidad visual de Bocas &amp; Risas con paleta de azules/turquesa, tipograf&iacute;as premium que transmiten confianza m&eacute;dica, y un enfoque en convertir visitantes en pacientes.</p>
+
+    <div class="demo-placeholder">
+      <div class="icon">&#9998;</div>
+      Demo interactivo disponible tras aprobaci&oacute;n de la propuesta
+    </div>
+  </div>
+
+  <!-- ========== 5. POR QUE ACTUAR AHORA ========== -->
+  <div class="page">
+    <h2>Por qu&eacute; actuar ahora</h2>
+
+    <p style="margin-bottom: 28px; color: #475569;">Los n&uacute;meros de la auditor&iacute;a revelan oportunidades concretas que su competencia podr&iacute;a estar aprovechando hoy:</p>
+
+    <div class="urgency-card">
+      <div class="urgency-number">1</div>
+      <h3>Su sitio es invisible para Google &mdash; score t&eacute;cnico de 30/100</h3>
+      <p>El contenido del sitio actual depende de JavaScript para mostrarse. Esto significa que Google puede no estar indexando sus 12 servicios ni sus 108 art&iacute;culos de blog. Con un score t&eacute;cnico 20 puntos por debajo del m&iacute;nimo del sector, cada d&iacute;a sin migraci&oacute;n es un d&iacute;a en que pacientes potenciales en Medell&iacute;n buscan &ldquo;dise&ntilde;o de sonrisa&rdquo; y encuentran a la competencia en lugar de a Bocas &amp; Risas.</p>
+    </div>
+
+    <div class="urgency-card">
+      <div class="urgency-number">2</div>
+      <h3>27 a&ntilde;os de autoridad que no se est&aacute;n convirtiendo &mdash; marketing a 40/100</h3>
+      <p>Tienen laboratorio propio, pacientes internacionales y 27 a&ntilde;os de trayectoria, pero ninguna de estas cifras es visible en el sitio. Sin m&eacute;tricas de confianza, sin CTAs por servicio, y sin WhatsApp flotante, los visitantes que llegan no tienen motivos claros para elegirlos. Identificamos 5 mejoras r&aacute;pidas que pueden implementarse en la primera semana para comenzar a convertir.</p>
+    </div>
+
+    <div class="urgency-card">
+      <div class="urgency-number">3</div>
+      <h3>La primera impresi&oacute;n no refleja qui&eacute;nes son &mdash; UX/UI a 32/100</h3>
+      <p>Un paciente que busca una cl&iacute;nica odontol&oacute;gica decide en segundos si conf&iacute;a o no. Con un dise&ntilde;o basado en plantilla gen&eacute;rica, 22 items de men&uacute; y sin dise&ntilde;o mobile-first, la experiencia actual comunica improvisaci&oacute;n &mdash; exactamente lo opuesto a lo que 27 a&ntilde;os de experiencia deber&iacute;an transmitir. Cada mes sin redise&ntilde;o es reputaci&oacute;n desaprovechada.</p>
+    </div>
+  </div>
+
+  <!-- ========== 6. INVERSION ========== -->
+  <div class="page">
+    <h2>Inversi&oacute;n</h2>
+
+    <table class="invest-table">
+      <thead>
+        <tr>
+          <th>Servicio</th>
+          <th>Incluye</th>
+          <th style="text-align: right;">Inversi&oacute;n</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight: 600;">Dise&ntilde;o y desarrollo web</td>
+          <td>
+            <ul>
+              <li>Dise&ntilde;o a medida con identidad de Bocas &amp; Risas</li>
+              <li>Desarrollo con Astro + Tailwind CSS</li>
+              <li>12 p&aacute;ginas de servicios individuales</li>
+              <li>Migraci&oacute;n de 108 art&iacute;culos del blog</li>
+              <li>Dise&ntilde;o responsive mobile-first</li>
+              <li>Schema JSON-LD MedicalBusiness</li>
+              <li>Widget de WhatsApp flotante</li>
+            </ul>
+          </td>
+          <td class="price" style="text-align: right;">[PRECIO]</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600;">SEO inicial</td>
+          <td>
+            <ul>
+              <li>Optimizaci&oacute;n de meta tags en todas las p&aacute;ginas</li>
+              <li>Alt text en todas las im&aacute;genes</li>
+              <li>Sitemap XML optimizado</li>
+              <li>Configuraci&oacute;n de Google Search Console</li>
+              <li>SEO local para 2 sedes en Medell&iacute;n</li>
+            </ul>
+          </td>
+          <td class="price" style="text-align: right;">[PRECIO]</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600;">Contenido</td>
+          <td>
+            <ul>
+              <li>Redacci&oacute;n de textos para 12 servicios</li>
+              <li>Perfiles del equipo m&eacute;dico</li>
+              <li>P&aacute;gina &ldquo;Nosotros&rdquo; con historia y diferenciadores</li>
+              <li>FAQs por servicio</li>
+            </ul>
+          </td>
+          <td class="price" style="text-align: right;">[PRECIO]</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600;">Mantenimiento mensual</td>
+          <td>
+            <ul>
+              <li>Actualizaciones de seguridad y rendimiento</li>
+              <li>Publicaci&oacute;n de nuevos art&iacute;culos de blog</li>
+              <li>Monitoreo de analytics y reportes mensuales</li>
+              <li>Soporte t&eacute;cnico prioritario</li>
+            </ul>
+          </td>
+          <td class="price" style="text-align: right;">[PRECIO]</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="invest-note">Precios adaptados seg&uacute;n alcance final del proyecto</p>
+  </div>
+
+  <!-- ========== 7. PROXIMOS PASOS ========== -->
+  <div class="page">
+    <h2>Pr&oacute;ximos pasos</h2>
+
+    <div class="timeline">
+      <!-- Dia 1 -->
+      <div class="timeline-phase">
+        <div class="timeline-dot active"></div>
+        <h3>D&iacute;a 1 &mdash; Arranque</h3>
+        <ul>
+          <li>Reuni&oacute;n de kick-off para alinear objetivos, tono y prioridades</li>
+          <li>Recopilaci&oacute;n de activos: logo en alta, fotos del equipo, datos de las 2 sedes</li>
+          <li>Definici&oacute;n de m&eacute;tricas del hero (pacientes atendidos, especialistas, a&ntilde;os)</li>
+        </ul>
+      </div>
+
+      <!-- Semana 1 -->
+      <div class="timeline-phase">
+        <div class="timeline-dot active"></div>
+        <h3>Semana 1 &mdash; Quick wins + dise&ntilde;o</h3>
+        <ul>
+          <li>Implementar bot&oacute;n flotante de WhatsApp en todas las p&aacute;ginas</li>
+          <li>Agregar barra de m&eacute;tricas en hero con datos reales del negocio</li>
+          <li>Agregar horarios de atenci&oacute;n + email de contacto en header/footer</li>
+          <li>Simplificar men&uacute; de navegaci&oacute;n principal a 5-6 items</li>
+          <li>Crear favicon.ico dedicado (32x32)</li>
+          <li>Agregar CTA individual en cada tarjeta de servicio</li>
+        </ul>
+      </div>
+
+      <!-- Mes 1 -->
+      <div class="timeline-phase">
+        <div class="timeline-dot"></div>
+        <h3>Mes 1 &mdash; Nuevo sitio completo</h3>
+        <ul>
+          <li>Redise&ntilde;o completo con identidad visual premium</li>
+          <li>Migraci&oacute;n a Astro + Tailwind para performance y crawlabilidad &oacute;ptimas</li>
+          <li>Schema JSON-LD tipo MedicalBusiness con datos de cada sede</li>
+          <li>Secci&oacute;n de diferenciadores: laboratorio propio, equipo, atenci&oacute;n internacional</li>
+          <li>P&aacute;ginas de servicios expandidas con proceso paso a paso</li>
+          <li>Perfiles del equipo m&eacute;dico con foto y credenciales</li>
+          <li>Tipograf&iacute;as premium y paleta de color refinada</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta-box">
+      <p>Para comenzar, responda este correo o ll&aacute;menos</p>
+      <div class="sub">Agendaremos la reuni&oacute;n de arranque esta misma semana</div>
+    </div>
+  </div>
+
+  <!-- ========== 8. CIERRE ========== -->
+  <div class="page closing">
+    <h2>Bocas &amp; Risas merece un sitio web a la altura de sus 27 a&ntilde;os</h2>
+    <div class="phrase">
+      Construyamos juntos la presencia digital que convierta su autoridad cl&iacute;nica en la primera opci&oacute;n para pacientes en Medell&iacute;n y m&aacute;s all&aacute;.
+    </div>
+    <div class="agency-name">[NOMBRE TU AGENCIA]</div>
+    <div class="contact">[CONTACTO AGENCIA]</div>
+    <div class="closing-line"></div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,506 @@
+{
+  "scraping_metadata": {
+    "fecha_extraccion": "2026-03-30",
+    "url_base": "https://bocasyrisas.com/",
+    "metodo": "WebFetch + WebSearch",
+    "notas": "Sitio WordPress con JavaScript pesado. El body se renderiza via JS, por lo que parte del contenido editorial fue obtenido via búsquedas externas y sitemaps."
+  },
+
+  "identidad": {
+    "nombre_comercial": "Bocas & Risas",
+    "nombre_legal": "Clínica Odontológica Bocas & Risas",
+    "nombre_alternativo": "B&R Odontología",
+    "slogan": "Una sonrisa vale más que mil palabras",
+    "descripcion_corta": "Expertos en restaurar tu sonrisa con procedimientos innovadores como implantes dentales, diseño de sonrisa en Medellín y más.",
+    "descripcion_larga": "Bocas y Risas formamos parte de los centros odontológicos en Medellín de mayor referencia, con 27 años de experiencia. Clínica odontológica que utiliza odontología estética para corregir imperfecciones relacionadas con la salud bucal y armonía estética. Ofrecemos atención a pacientes nacionales e internacionales con los más altos estándares de calidad.",
+    "anos_experiencia": 27,
+    "tipo_negocio": "Clínica Odontológica",
+    "ciudad": "Medellín",
+    "pais": "Colombia",
+    "idioma": "es-CO"
+  },
+
+  "marca": {
+    "logo": {
+      "url": "https://bocasyrisas.com/wp-content/uploads/2021/06/logo-img-dest-boicasyrisas.jpg",
+      "dimensiones": "300x300px",
+      "alt_text": "Logo B&R Odontología"
+    },
+    "colores_corporativos": {
+      "primario": "#209aae",
+      "primario_nombre": "Azul turquesa / Teal",
+      "secundario": "#263692",
+      "secundario_nombre": "Azul oscuro",
+      "terciario": "#19235c",
+      "terciario_nombre": "Azul marino"
+    },
+    "google_analytics_id": "G-LR6QD15ZND",
+    "google_tag_manager_id": "GTM-MTB2WJNL"
+  },
+
+  "contacto": {
+    "telefono_fijo_1": "+57 604 2541616",
+    "telefono_fijo_2": "+57 604 4117136",
+    "celular_whatsapp": "+57 301 324 8706",
+    "whatsapp_url": "https://wa.me/573013248706",
+    "email": null,
+    "sitio_web": "https://bocasyrisas.com"
+  },
+
+  "ubicacion": {
+    "sede_principal": {
+      "direccion": "Carrera 49 # 61-42",
+      "ciudad": "Medellín",
+      "departamento": "Antioquia",
+      "pais": "Colombia",
+      "coordenadas": {
+        "latitud": 6.25771802,
+        "longitud": -75.56195078
+      }
+    },
+    "sede_secundaria": {
+      "direccion": "Medellín - Antioquia (sin dirección específica confirmada)",
+      "coordenadas": {
+        "latitud": 6.24128648,
+        "longitud": -75.59910727
+      }
+    }
+  },
+
+  "redes_sociales": {
+    "instagram": {
+      "url": "https://www.instagram.com/bocasyrisas/",
+      "handle": "@bocasyrisas",
+      "seguidores_aproximados": 3058
+    },
+    "facebook": {
+      "url": "https://www.facebook.com/BocasyRisas/",
+      "handle": "BocasyRisas"
+    }
+  },
+
+  "tecnologia_web": {
+    "cms": "WordPress",
+    "plugins_detectados": [
+      "Gravity Forms",
+      "WooCommerce",
+      "BuddyPress",
+      "bbPress",
+      "The Events Calendar"
+    ]
+  },
+
+  "paginas": {
+    "home": {
+      "url": "https://bocasyrisas.com/",
+      "titulo_seo": "Clínicas odontológicas Medellín, Diseño de sonrisa Medellín",
+      "meta_descripcion": "Expertos en restaurar tu sonrisa con procedimientos innovadores como implantes dentales, diseño de sonrisa en Medellín y más.",
+      "ultima_modificacion": "2024-04-16",
+      "schema_type": "Organization"
+    },
+    "contacto": {
+      "url": "https://bocasyrisas.com/contacto/",
+      "titulo": "B&R Odontología Medellín, ¡Contáctanos!",
+      "h1": "B&R Odontología Medellín, ¡Contáctanos!",
+      "meta_descripcion": "Para cualquier duda e inquietud que se te pueda presentar, te brindamos a continuación nuestras vías de contacto.",
+      "breadcrumb": "Home > Contacto Medellín",
+      "formulario": "Gravity Forms (activo)",
+      "ultima_modificacion": "2024-04-09"
+    },
+    "nosotros": {
+      "url": "https://bocasyrisas.com/nosotros/",
+      "titulo": "Bocas&Risas Clínicas Odontológicas Medellín",
+      "h1": "Bocas&Risas Clínicas Odontológicas Medellín",
+      "meta_descripcion": "En Bocas y Risas formamos parte de los centros odontológicos en Medellín de mayor referencia, con 19 años de experiencia.",
+      "breadcrumb": "Home > Clínicas Dentales en Medellín",
+      "ultima_modificacion": "2023-06-29"
+    },
+    "nuestro_equipo": {
+      "url": "https://bocasyrisas.com/nuestro-equipo/",
+      "titulo_seo": "Nuestros Odontólogos en Medellín | Bocas & Risas",
+      "meta_descripcion": "Nuestros profesionales estudiarán tu caso, y en colaboración de todo el equipo médico, encontrarán la solución adecuada para ti.",
+      "breadcrumb": "Home > Odontólogos en Medellín",
+      "ultima_modificacion": "2021-07-23"
+    },
+    "preguntas_frecuentes": {
+      "url": "https://bocasyrisas.com/preguntas-frecuentes/",
+      "h1": "¡Aclara tus dudas con las preguntas frecuentes sobre odontología!",
+      "meta_descripcion": "Con nuestras preguntas frecuentes nos encargamos de aclarar cualquier duda que se te pueda presentar, incluso antes de contactarnos.",
+      "ultima_modificacion": "2021-07-09"
+    },
+    "galeria": {
+      "url": "https://bocasyrisas.com/galeria/",
+      "meta_descripcion": "Conoce las instalaciones de nuestra clínica odontológica en Medellín, disponemos de espacios cómodos y privados, con equipos alta tecnología.",
+      "ultima_modificacion": "2024-04-16"
+    },
+    "testimonios": {
+      "url": "https://bocasyrisas.com/testimonios/",
+      "titulo_seo": "Testimonios de Odontología en Medellín",
+      "slogan_seccion": "Una sonrisa vale más que mil palabras",
+      "ultima_modificacion": "2026-03-11"
+    },
+    "blog": {
+      "url": "https://bocasyrisas.com/blog/",
+      "ultima_modificacion": "2022-05-31"
+    }
+  },
+
+  "servicios": {
+    "odontologia_estetica": {
+      "url_categoria": "https://bocasyrisas.com/odontologia-estetica/",
+      "titulo_seo": "Bocas & Risas, Odontólogos Estéticos en Medellín",
+      "h1": "Bocas & Risas, Odontólogos Estéticos en Medellín",
+      "ultima_modificacion": "2023-06-29",
+      "servicios": [
+        {
+          "nombre": "Diseño de Sonrisa",
+          "nombre_alternativo": "Microdiseño de Sonrisa",
+          "url": "https://bocasyrisas.com/odontologia-estetica/diseno-de-sonrisa-medellin/",
+          "titulo_seo": "Diseño de sonrisa en Medellín | Microdiseño de sonrisa en Medellín",
+          "h1": "Diseño de sonrisa en Medellín | Microdiseño de sonrisa en Medellín",
+          "meta_descripcion": "Encuentra el mejor diseño de sonrisa en Medellín en Bocas & Risas. ¡Agenda tu diseño o microdiseño de sonrisa en Medellín!",
+          "descripcion": "Tratamiento estético que armoniza el tamaño, forma y color de los dientes.",
+          "ultima_modificacion": "2025-10-10",
+          "breadcrumb": "Home > Odontología Estética o Cosmética > Diseño de sonrisa en Medellín"
+        },
+        {
+          "nombre": "Implantes Dentales",
+          "url": "https://bocasyrisas.com/odontologia-estetica/implantes-dentales-medellin/",
+          "titulo_seo": "Implantes dentales en Medellín | Mejores implantes dentales",
+          "h1": "Implantes dentales en Medellín | Clínica de implantes dentales",
+          "meta_descripcion": "Brindamos el procedimiento de implantes dentales en Medellín para recuperar tu sonrisa. Solicita tu cita para implantes dentales.",
+          "descripcion": "Tornillos de titanio instalados bajo la encía para sostener coronas dentales.",
+          "ultima_modificacion": "2025-10-10",
+          "breadcrumb": "Home > Odontología Estética o Cosmética > Implantes dentales en Medellín"
+        },
+        {
+          "nombre": "Ortodoncia",
+          "url": "https://bocasyrisas.com/odontologia-estetica/ortodoncia-medellin/",
+          "titulo_seo": "Ortodoncia Medellín: ortodoncia invisible, ortodoncia lingual",
+          "h1": "Ortodoncia Medellín: ortodoncia invisible, ortodoncia lingual",
+          "meta_descripcion": "Nuestro equipo de ortodoncistas son profesionales expertos en su especialidad, llevan a cabo tratamientos muy avanzados.",
+          "descripcion": "Tratamientos ortodóncicos para mejorar la funcionalidad y salud dental estética. Incluye ortodoncia invisible y ortodoncia lingual.",
+          "ultima_modificacion": "2024-12-02",
+          "breadcrumb": "Home > Odontología Estética o Cosmética > Ortodoncia Medellín"
+        },
+        {
+          "nombre": "Blanqueamiento Dental",
+          "url": "https://bocasyrisas.com/odontologia-estetica/blanqueamiento-dental-medellin/",
+          "titulo_seo": "Blanqueamiento Dental Medellín - Bocas & Risas",
+          "h1": "Blanqueamiento Dental Medellín - Bocas & Risas",
+          "meta_descripcion": "Es un tratamiento de la odontología estética que consiste en corregir el color oscuro o amarillento de los dientes.",
+          "descripcion": "Tratamiento estético para corregir el color oscuro o amarillento de los dientes. Uno de los procedimientos más demandados.",
+          "ultima_modificacion": "2024-12-02",
+          "breadcrumb": "Home > Odontología Estética o Cosmética > Blanqueamiento dental Medellín"
+        },
+        {
+          "nombre": "Rehabilitación Oral",
+          "url": "https://bocasyrisas.com/odontologia-estetica/rehabilitacion-oral-medellin/",
+          "titulo_seo": "Rehabilitación oral en Medellín | Restauración dental completa",
+          "h1": "Rehabilitación oral en Medellín | Restauración dental completa",
+          "meta_descripcion": "En Bocas y Risas ofrecemos la rehabilitación oral en Medellín para restauración dental completa.",
+          "ultima_modificacion": "2025-10-14",
+          "breadcrumb": "Home > Odontología Estética o Cosmética > Rehabilitación oral en Medellín"
+        },
+        {
+          "nombre": "Laboratorio Dental",
+          "url": "https://bocasyrisas.com/odontologia-estetica/laboratorio-dental-medellin-antioquia/",
+          "titulo_seo": "Laboratorio dental en Medellín - Profesionalismo y estética",
+          "meta_descripcion": "Laboratorio dental propio en Medellín con profesionalismo y estética.",
+          "ultima_modificacion": "2024-04-16"
+        }
+      ]
+    },
+    "odontologia_general": {
+      "url_categoria": "https://bocasyrisas.com/odontologia-medellin/",
+      "titulo_seo": "Odontología General Medellín en Bocas & Risas",
+      "meta_descripcion": "Procedimiento integral que empleamos en el diagnóstico, tratamiento y prevención de las enfermedades del aparato estomatognático.",
+      "ultima_modificacion": "2024-12-02",
+      "servicios": [
+        {
+          "nombre": "Periodoncia",
+          "url": "https://bocasyrisas.com/odontologia-medellin/periodoncista-medellin/",
+          "titulo_seo": "Periodoncia Medellín Bocas & Risas",
+          "meta_descripcion": "Nuestros periodoncistas son profesionales certificados en su especialidad, cualificados para efectuar procedimientos avanzados.",
+          "descripcion": "Prevención, diagnóstico y tratamiento de enfermedades que afectan los tejidos que soportan los dientes.",
+          "ultima_modificacion": "2024-12-02"
+        },
+        {
+          "nombre": "Endodoncia",
+          "url": "https://bocasyrisas.com/odontologia-medellin/endodoncista-medellin/",
+          "titulo_seo": "Endodoncia Medellín con Bocas y Risas",
+          "descripcion": "Limpieza de canales radiculares contaminados y sellado de la cámara pulpar.",
+          "ultima_modificacion": "2024-12-02"
+        },
+        {
+          "nombre": "Cirugía Oral y Maxilofacial",
+          "url": "https://bocasyrisas.com/odontologia-medellin/cirugia-maxilofacial-medellin/",
+          "titulo_seo": "Cirugía Oral Maxilofacial Medellín",
+          "ultima_modificacion": "2024-12-02"
+        },
+        {
+          "nombre": "Cirugía Oral",
+          "url": "https://bocasyrisas.com/odontologia-medellin/especializacion-en-cirugia-oral/",
+          "titulo_seo": "Cirugía Oral en Medellín con B&R",
+          "ultima_modificacion": "2024-12-02"
+        },
+        {
+          "nombre": "Urgencias Odontológicas",
+          "url": "https://bocasyrisas.com/odontologia-medellin/urgencias-odontologicas-medellin/",
+          "titulo": "¿Tienes una urgencia odontológica en Medellín? ¡Llama ya!",
+          "h1": "¿Tienes una urgencia odontológica en Medellín? ¡Llama ya!",
+          "ultima_modificacion": "2024-04-12"
+        },
+        {
+          "nombre": "Ortopedia Maxilar",
+          "url": "https://bocasyrisas.com/odontologia-medellin/ortopedia-maxilar/",
+          "ultima_modificacion": "2025-10-14"
+        }
+      ]
+    }
+  },
+
+  "navegacion_principal": {
+    "notas": "Estructura inferida de breadcrumbs y sitemaps. El menú JS no pudo ser renderizado.",
+    "items": [
+      {
+        "label": "Home",
+        "url": "https://bocasyrisas.com/"
+      },
+      {
+        "label": "Nosotros",
+        "url": "https://bocasyrisas.com/nosotros/"
+      },
+      {
+        "label": "Odontología Estética o Cosmética",
+        "url": "https://bocasyrisas.com/odontologia-estetica/",
+        "submenu": [
+          { "label": "Diseño de Sonrisa Medellín", "url": "https://bocasyrisas.com/odontologia-estetica/diseno-de-sonrisa-medellin/" },
+          { "label": "Implantes Dentales Medellín", "url": "https://bocasyrisas.com/odontologia-estetica/implantes-dentales-medellin/" },
+          { "label": "Ortodoncia Medellín", "url": "https://bocasyrisas.com/odontologia-estetica/ortodoncia-medellin/" },
+          { "label": "Blanqueamiento Dental Medellín", "url": "https://bocasyrisas.com/odontologia-estetica/blanqueamiento-dental-medellin/" },
+          { "label": "Rehabilitación Oral Medellín", "url": "https://bocasyrisas.com/odontologia-estetica/rehabilitacion-oral-medellin/" },
+          { "label": "Laboratorio Dental Medellín", "url": "https://bocasyrisas.com/odontologia-estetica/laboratorio-dental-medellin-antioquia/" }
+        ]
+      },
+      {
+        "label": "Odontología Medellín",
+        "url": "https://bocasyrisas.com/odontologia-medellin/",
+        "submenu": [
+          { "label": "Periodoncia Medellín", "url": "https://bocasyrisas.com/odontologia-medellin/periodoncista-medellin/" },
+          { "label": "Endodoncia Medellín", "url": "https://bocasyrisas.com/odontologia-medellin/endodoncista-medellin/" },
+          { "label": "Cirugía Oral Maxilofacial Medellín", "url": "https://bocasyrisas.com/odontologia-medellin/cirugia-maxilofacial-medellin/" },
+          { "label": "Cirugía Oral en Medellín", "url": "https://bocasyrisas.com/odontologia-medellin/especializacion-en-cirugia-oral/" },
+          { "label": "Urgencias Odontológicas Medellín", "url": "https://bocasyrisas.com/odontologia-medellin/urgencias-odontologicas-medellin/" },
+          { "label": "Ortopedia Maxilar", "url": "https://bocasyrisas.com/odontologia-medellin/ortopedia-maxilar/" }
+        ]
+      },
+      {
+        "label": "Nuestro Equipo",
+        "url": "https://bocasyrisas.com/nuestro-equipo/"
+      },
+      {
+        "label": "Galería",
+        "url": "https://bocasyrisas.com/galeria/"
+      },
+      {
+        "label": "Testimonios",
+        "url": "https://bocasyrisas.com/testimonios/"
+      },
+      {
+        "label": "Blog",
+        "url": "https://bocasyrisas.com/blog/"
+      },
+      {
+        "label": "Preguntas Frecuentes",
+        "url": "https://bocasyrisas.com/preguntas-frecuentes/"
+      },
+      {
+        "label": "Contacto",
+        "url": "https://bocasyrisas.com/contacto/"
+      }
+    ]
+  },
+
+  "sitemap_completo": {
+    "paginas": [
+      { "url": "https://bocasyrisas.com/", "ultima_modificacion": "2024-04-16" },
+      { "url": "https://bocasyrisas.com/preguntas-frecuentes/", "ultima_modificacion": "2021-07-09" },
+      { "url": "https://bocasyrisas.com/nuestro-equipo/", "ultima_modificacion": "2021-07-23" },
+      { "url": "https://bocasyrisas.com/blog/", "ultima_modificacion": "2022-05-31" },
+      { "url": "https://bocasyrisas.com/odontologia-estetica/", "ultima_modificacion": "2023-06-29" },
+      { "url": "https://bocasyrisas.com/nosotros/", "ultima_modificacion": "2023-06-29" },
+      { "url": "https://bocasyrisas.com/contacto/", "ultima_modificacion": "2024-04-09" },
+      { "url": "https://bocasyrisas.com/odontologia-medellin/urgencias-odontologicas-medellin/", "ultima_modificacion": "2024-04-12" },
+      { "url": "https://bocasyrisas.com/odontologia-estetica/laboratorio-dental-medellin-antioquia/", "ultima_modificacion": "2024-04-16" },
+      { "url": "https://bocasyrisas.com/galeria/", "ultima_modificacion": "2024-04-16" },
+      { "url": "https://bocasyrisas.com/odontologia-estetica/blanqueamiento-dental-medellin/", "ultima_modificacion": "2024-12-02" },
+      { "url": "https://bocasyrisas.com/odontologia-estetica/ortodoncia-medellin/", "ultima_modificacion": "2024-12-02" },
+      { "url": "https://bocasyrisas.com/odontologia-medellin/", "ultima_modificacion": "2024-12-02" },
+      { "url": "https://bocasyrisas.com/odontologia-medellin/especializacion-en-cirugia-oral/", "ultima_modificacion": "2024-12-02" },
+      { "url": "https://bocasyrisas.com/odontologia-medellin/cirugia-maxilofacial-medellin/", "ultima_modificacion": "2024-12-02" },
+      { "url": "https://bocasyrisas.com/odontologia-medellin/endodoncista-medellin/", "ultima_modificacion": "2024-12-02" },
+      { "url": "https://bocasyrisas.com/odontologia-medellin/periodoncista-medellin/", "ultima_modificacion": "2024-12-02" },
+      { "url": "https://bocasyrisas.com/odontologia-estetica/diseno-de-sonrisa-medellin/", "ultima_modificacion": "2025-10-10" },
+      { "url": "https://bocasyrisas.com/odontologia-estetica/implantes-dentales-medellin/", "ultima_modificacion": "2025-10-10" },
+      { "url": "https://bocasyrisas.com/odontologia-estetica/rehabilitacion-oral-medellin/", "ultima_modificacion": "2025-10-14" },
+      { "url": "https://bocasyrisas.com/odontologia-medellin/ortopedia-maxilar/", "ultima_modificacion": "2025-10-14" },
+      { "url": "https://bocasyrisas.com/testimonios/", "ultima_modificacion": "2026-03-11" }
+    ],
+    "total_paginas": 22,
+    "total_posts_blog": 108
+  },
+
+  "blog_posts": [
+    { "url": "https://bocasyrisas.com/blog/que-es-ortodoncia-estetica-en-medellin/", "fecha": "2021-07-12" },
+    { "url": "https://bocasyrisas.com/blog/emergencias-odontologicas-mas-comunes/", "fecha": "2021-10-15" },
+    { "url": "https://bocasyrisas.com/blog/5-consejos-para-mantener-tu-blanqueamiento-dental/", "fecha": "2021-12-03" },
+    { "url": "https://bocasyrisas.com/blog/odontologia-general-y-estetica-en-medellin-diferencias/", "fecha": "2021-12-29" },
+    { "url": "https://bocasyrisas.com/blog/causas-de-la-caries/", "fecha": "2022-05-31" },
+    { "url": "https://bocasyrisas.com/blog/cuando-es-necesario-utilizar-implantes-dentales/", "fecha": "2022-05-31" },
+    { "url": "https://bocasyrisas.com/blog/cual-es-la-causa-de-la-caries-dental/", "fecha": "2022-05-31" },
+    { "url": "https://bocasyrisas.com/blog/en-que-casos-son-necesarias-las-coronas-dentales/", "fecha": "2022-06-15" },
+    { "url": "https://bocasyrisas.com/blog/mejora-tu-sonrisa-gingival-con-bocas-y-risas/", "fecha": "2022-07-06" },
+    { "url": "https://bocasyrisas.com/blog/muelas-del-juicio-sintomas-y-tratamiento/", "fecha": "2022-07-22" },
+    { "url": "https://bocasyrisas.com/blog/dientes-perfectos-medellin/", "fecha": "2022-08-17" },
+    { "url": "https://bocasyrisas.com/blog/que-son-las-protesis-hibridas-dentales/", "fecha": "2022-11-11" },
+    { "url": "https://bocasyrisas.com/blog/mantenimiento-de-carillas-dentales/", "fecha": "2022-11-11" },
+    { "url": "https://bocasyrisas.com/blog/rehabilitacion-oral-medellin/", "fecha": "2022-11-15" },
+    { "url": "https://bocasyrisas.com/blog/quien-pude-utilizar-ortodoncia-lingual/", "fecha": "2022-11-16" },
+    { "url": "https://bocasyrisas.com/blog/clinica-colombiana-de-implantes/", "fecha": "2022-11-21" },
+    { "url": "https://bocasyrisas.com/blog/blanqueamiento-de-sonrisa-medellin/", "fecha": "2023-02-16" },
+    { "url": "https://bocasyrisas.com/blog/ortodoncia-invisible-medellin/", "fecha": "2023-05-23" },
+    { "url": "https://bocasyrisas.com/blog/que-son-las-tinciones-dentales-causas-y-soluciones/", "fecha": "2023-05-23" },
+    { "url": "https://bocasyrisas.com/blog/restauraciones-dentales/", "fecha": "2023-05-23" },
+    { "url": "https://bocasyrisas.com/blog/protocolo-para-incrustaciones-dentales/", "fecha": "2023-05-23" },
+    { "url": "https://bocasyrisas.com/blog/tratamiento-para-la-fluorosis-dental/", "fecha": "2023-05-23" },
+    { "url": "https://bocasyrisas.com/blog/dientes-supernumerarios-tratamientos/", "fecha": "2023-05-23" },
+    { "url": "https://bocasyrisas.com/blog/como-corregir-medida-cruzada/", "fecha": "2023-05-23" },
+    { "url": "https://bocasyrisas.com/blog/perdida-de-diente-medellin/", "fecha": "2023-05-23" },
+    { "url": "https://bocasyrisas.com/blog/como-evitar-el-calculo-dental-guia-facial/", "fecha": "2023-05-24" },
+    { "url": "https://bocasyrisas.com/blog/como-curar-las-aftas-bucales-en-ninos/", "fecha": "2023-05-29" },
+    { "url": "https://bocasyrisas.com/blog/tipos-y-usos-de-la-ferula-dental/", "fecha": "2023-05-29" },
+    { "url": "https://bocasyrisas.com/blog/enfermedades-de-la-lengua/", "fecha": "2023-06-21" },
+    { "url": "https://bocasyrisas.com/blog/diastema-dental-medellin/", "fecha": "2023-06-21" },
+    { "url": "https://bocasyrisas.com/blog/a-que-se-debe-la-sensibilidad-dental/", "fecha": "2023-07-30" },
+    { "url": "https://bocasyrisas.com/blog/6-pautas-para-un-buen-postoperatorio-de-implante-dental/", "fecha": "2023-07-30" },
+    { "url": "https://bocasyrisas.com/blog/procedimientos-de-odontologia-estetica-medellin/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/ortopedia-maxilar-en-medellin/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/a-que-edad-me-deberian-realizar-una-extraccion-de-cordales/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/beneficios-de-la-ortopedia-maxilar-en-ninos/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/agenesia-dental-clinica-odontologica-medellin/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/como-eliminar-la-placa-dental/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/como-se-usa-la-seda-dental/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/como-saber-si-tengo-mal-aliento/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/restauracion-temporal-dental/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/aparatos-para-corregir-los-dientes/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/como-cuidar-las-carillas-dentales/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/razones-para-realizar-una-extraccion-dental/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/beneficios-del-diseno-de-sonrisa/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/indicaciones-post-blanqueamiento-dental/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/como-tratar-la-periodontitis/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/paso-a-paso-de-un-tratamiento-de-conducto/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/que-no-hacer-con-un-diseno-de-sonrisa/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/obturacion-dental-con-resina-de-fotocurado/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/mitos-del-blanqueamiento-dental/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/tipos-de-blanqueamiento-dental-y-precios/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/carillas-dentales-sin-tallar-el-diente/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/caninos-montados/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/cuando-retirar-un-implante-dental/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/alineadores-transparentes-precio-colombia/", "fecha": "2024-04-09" },
+    { "url": "https://bocasyrisas.com/blog/obten-la-sonrisa-perfecta-con-microdiseno-sonrisa-medellin/", "fecha": "2024-04-12" },
+    { "url": "https://bocasyrisas.com/blog/calzas-dentales-de-resina/", "fecha": "2024-04-30" },
+    { "url": "https://bocasyrisas.com/blog/implante-corona-de-porcelana/", "fecha": "2024-04-30" },
+    { "url": "https://bocasyrisas.com/blog/precio-de-ortodoncia-invisible/", "fecha": "2024-05-16" },
+    { "url": "https://bocasyrisas.com/blog/como-restaurar-una-abrasion-dental/", "fecha": "2024-05-22" },
+    { "url": "https://bocasyrisas.com/blog/dientes-retenidos-e-incluidos-que-son/", "fecha": "2024-06-16" },
+    { "url": "https://bocasyrisas.com/blog/esteticas-de-las-encias/", "fecha": "2024-06-24" },
+    { "url": "https://bocasyrisas.com/blog/cuidados-despues-de-cirugia-de-implante-dental/", "fecha": "2024-07-01" },
+    { "url": "https://bocasyrisas.com/blog/como-calmar-el-dolor-en-los-dientes/", "fecha": "2024-08-15" },
+    { "url": "https://bocasyrisas.com/blog/cuidados-despues-de-una-resina-dental/", "fecha": "2024-09-06" },
+    { "url": "https://bocasyrisas.com/blog/cuanto-tiempo-dura-el-dolor-cuando-te-sacan-una-muela/", "fecha": "2024-10-01" },
+    { "url": "https://bocasyrisas.com/blog/el-cafe-mancha-los-dientes/", "fecha": "2024-10-29" },
+    { "url": "https://bocasyrisas.com/blog/dientes-que-necesitan-ortodoncia-como-saber/", "fecha": "2024-12-03" },
+    { "url": "https://bocasyrisas.com/blog/a-que-edad-se-colocan-los-frenillos/", "fecha": "2024-12-03" },
+    { "url": "https://bocasyrisas.com/blog/que-tan-buenas-son-las-carillas-dentales/", "fecha": "2024-12-03" },
+    { "url": "https://bocasyrisas.com/blog/las-cremas-dentales-funcionan/", "fecha": "2024-12-03" },
+    { "url": "https://bocasyrisas.com/blog/cuidado-bucal-en-el-embarazo/", "fecha": "2024-12-30" },
+    { "url": "https://bocasyrisas.com/blog/como-prevenir-el-sangrado-de-encias/", "fecha": "2024-12-30" },
+    { "url": "https://bocasyrisas.com/blog/para-que-sirven-las-ceras-dentales/", "fecha": "2025-01-21" },
+    { "url": "https://bocasyrisas.com/blog/se-puede-hacer-un-levantamiento-de-mordida-con-coronas/", "fecha": "2025-01-24" },
+    { "url": "https://bocasyrisas.com/blog/cuanto-dura-una-corona-dental-libre-de-metal/", "fecha": "2025-02-12" },
+    { "url": "https://bocasyrisas.com/blog/que-tan-doloroso-es-un-tratamiento-de-conducto/", "fecha": "2025-02-17" },
+    { "url": "https://bocasyrisas.com/blog/blanqueamiento-dental-medellin/", "fecha": "2025-02-18" },
+    { "url": "https://bocasyrisas.com/blog/dientes-torcidos-en-ninos/", "fecha": "2025-02-18" },
+    { "url": "https://bocasyrisas.com/blog/limpieza-dental-medellin/", "fecha": "2025-02-18" },
+    { "url": "https://bocasyrisas.com/blog/tratamiento-ortodoncia-invisalign/", "fecha": "2025-02-18" },
+    { "url": "https://bocasyrisas.com/blog/como-se-toman-las-radiografias-dentales/", "fecha": "2025-03-01" },
+    { "url": "https://bocasyrisas.com/blog/como-desinflamar-un-absceso-dental/", "fecha": "2025-03-28" },
+    { "url": "https://bocasyrisas.com/blog/riesgos-de-ponerse-un-piercing-en-la-lengua/", "fecha": "2025-04-22" },
+    { "url": "https://bocasyrisas.com/blog/a-que-edad-mudan-los-dientes/", "fecha": "2025-04-22" },
+    { "url": "https://bocasyrisas.com/blog/cual-es-el-kit-dental-viajero/", "fecha": "2025-05-27" },
+    { "url": "https://bocasyrisas.com/blog/guia-de-prevencion-de-las-urgencias-medicas-en-el-consultorio-dental/", "fecha": "2025-05-30" },
+    { "url": "https://bocasyrisas.com/blog/cuanto-tiempo-tarda-en-crecer-un-diente-permanente/", "fecha": "2025-06-27" },
+    { "url": "https://bocasyrisas.com/blog/cuantas-veces-al-dia-usar-enjuague-bucal/", "fecha": "2025-07-01" },
+    { "url": "https://bocasyrisas.com/blog/colocacion-de-implantes-dentales-con-perdida-de-hueso/", "fecha": "2025-07-21" },
+    { "url": "https://bocasyrisas.com/blog/si-una-muela-esta-floja-se-puede-salvar/", "fecha": "2025-07-21" },
+    { "url": "https://bocasyrisas.com/blog/es-posible-regenerar-el-hueso-de-los-dientes/", "fecha": "2025-08-26" },
+    { "url": "https://bocasyrisas.com/blog/porque-los-implantes-dentales-se-caen/", "fecha": "2025-09-08" },
+    { "url": "https://bocasyrisas.com/blog/implantes-dentales-o-protesis-fija-cual-elegir/", "fecha": "2025-09-08" },
+    { "url": "https://bocasyrisas.com/blog/como-arreglar-dientes-torcidos-en-adultos/", "fecha": "2025-10-07" },
+    { "url": "https://bocasyrisas.com/blog/que-hace-un-odontologo-maxilofacial/", "fecha": "2025-10-07" },
+    { "url": "https://bocasyrisas.com/blog/por-que-se-caen-los-dientes-con-la-diabetes/", "fecha": "2025-10-21" },
+    { "url": "https://bocasyrisas.com/blog/es-necesario-realizar-terapias-despues-de-una-cirugia-maxilofacial/", "fecha": "2025-10-22" },
+    { "url": "https://bocasyrisas.com/blog/que-es-un-quiste-dental/", "fecha": "2025-11-25" },
+    { "url": "https://bocasyrisas.com/blog/que-hacer-si-tengo-un-alambre-de-brackets-suelto/", "fecha": "2025-11-25" },
+    { "url": "https://bocasyrisas.com/blog/mito-o-realidad-las-carillas-danan-los-dientes/", "fecha": "2026-01-09" },
+    { "url": "https://bocasyrisas.com/blog/cada-cuanto-se-debe-hacer-una-limpieza-dental/", "fecha": "2026-01-13" },
+    { "url": "https://bocasyrisas.com/blog/como-se-ve-un-diente-con-caries/", "fecha": "2026-01-29" },
+    { "url": "https://bocasyrisas.com/blog/3-cuidados-despues-de-sacar-una-muela/", "fecha": "2026-03-09" },
+    { "url": "https://bocasyrisas.com/blog/que-es-la-alveolitis/", "fecha": "2026-03-13" },
+    { "url": "https://bocasyrisas.com/blog/enjuague-bucal-para-protesis-dentales/", "fecha": "2026-03-13" },
+    { "url": "https://bocasyrisas.com/blog/beneficio-del-diseno-de-sonrisa-en-medellin/", "fecha": "2026-03-24" }
+  ],
+
+  "imagenes_conocidas": [
+    {
+      "url": "https://bocasyrisas.com/wp-content/uploads/2021/06/logo-img-dest-boicasyrisas.jpg",
+      "alt_text": "Logo B&R Odontología",
+      "dimensiones": "300x300px",
+      "tipo": "logo"
+    }
+  ],
+
+  "seo_y_analytics": {
+    "google_analytics": "G-LR6QD15ZND",
+    "google_tag_manager": "GTM-MTB2WJNL",
+    "schema_org": true,
+    "schema_type": "Organization",
+    "sitemap_index": "https://bocasyrisas.com/sitemap.xml",
+    "sitemap_paginas": "https://bocasyrisas.com/page-sitemap.xml",
+    "sitemap_posts": "https://bocasyrisas.com/post-sitemap.xml"
+  },
+
+  "fuentes_externas": [
+    "https://bocasyrisas.com/",
+    "https://bocasyrisas.com/contacto/",
+    "https://bocasyrisas.com/nosotros/",
+    "https://bocasyrisas.com/nuestro-equipo/",
+    "https://bocasyrisas.com/testimonios/",
+    "https://bocasyrisas.com/galeria/",
+    "https://bocasyrisas.com/preguntas-frecuentes/",
+    "https://bocasyrisas.com/odontologia-estetica/",
+    "https://bocasyrisas.com/odontologia-medellin/",
+    "https://bocasyrisas.com/odontologia-estetica/diseno-de-sonrisa-medellin/",
+    "https://bocasyrisas.com/odontologia-estetica/implantes-dentales-medellin/",
+    "https://bocasyrisas.com/odontologia-estetica/ortodoncia-medellin/",
+    "https://bocasyrisas.com/odontologia-estetica/blanqueamiento-dental-medellin/",
+    "https://bocasyrisas.com/odontologia-estetica/rehabilitacion-oral-medellin/",
+    "https://bocasyrisas.com/odontologia-medellin/urgencias-odontologicas-medellin/",
+    "https://bocasyrisas.com/odontologia-medellin/periodoncista-medellin/",
+    "https://bocasyrisas.com/sitemap.xml",
+    "https://bocasyrisas.com/page-sitemap.xml",
+    "https://bocasyrisas.com/post-sitemap.xml",
+    "https://www.paginasamarillas.com.co/empresas/clinica-odontologica-bocas-y-risas/medellin-15497446"
+  ]
+}

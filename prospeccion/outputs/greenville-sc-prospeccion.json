@@ -1,0 +1,124 @@
+{
+  "zona": "Greenville, South Carolina",
+  "categoria": null,
+  "fecha": "2026-04-01",
+  "total_evaluados": 18,
+  "prospectos": [
+    {
+      "negocio": "The Gilreath Law Firm, P.A.",
+      "categoria": "abogados",
+      "url": "http://www.gilreathlaw.com",
+      "google_maps": null,
+      "telefono": "(864) 242-4727",
+      "score": "A",
+      "problemas": [
+        "Certificado SSL inválido — navegadores muestran advertencia de seguridad",
+        "URL principal en HTTP, no HTTPS",
+        "Sitio inaccesible por error de certificado — posibles clientes no pueden entrar"
+      ],
+      "oportunidad": "Firma de abogados con presencia establecida en Greenville (litigios, sucesiones, contratos). Su sitio tiene un certificado SSL roto que impide el acceso desde navegadores modernos. Cliente de alto valor — los bufetes necesitan credibilidad digital.",
+      "siguiente_paso": "Contactar directamente — sitio inaccesible para scraping por error SSL"
+    },
+    {
+      "negocio": "Greenville Handyman Services",
+      "categoria": "servicios para el hogar",
+      "url": "http://greenvillehandymanservices.com",
+      "google_maps": null,
+      "telefono": "(864) 299-1005",
+      "score": "A",
+      "problemas": [
+        "Sitio caído o extremadamente lento — conexión interrumpida",
+        "Sin HTTPS — solo HTTP",
+        "Servidor no responde de forma confiable"
+      ],
+      "oportunidad": "Empresa de handyman con licencia, seguro y fianza que aparece en búsquedas locales pero su sitio no carga. Negocio activo perdiendo 100% de tráfico web. Oportunidad de crear sitio nuevo desde cero.",
+      "siguiente_paso": "Contactar directamente — sitio caído, no hay contenido para scraping"
+    },
+    {
+      "negocio": "Greenville Family Restaurant Tacos",
+      "categoria": "restaurante",
+      "url": "https://tacos.edan.io/",
+      "google_maps": "https://www.waze.com/live-map/directions/us/sc/greenville/greenville-family-restaurant-tacos",
+      "telefono": "(864) 268-5452",
+      "score": "A",
+      "problemas": [
+        "Dominio propio redirige a plataforma genérica (tacos.poi.place → tacos.edan.io)",
+        "Sin meta description",
+        "Datos placeholder rotos (clima muestra 'N/A °F')",
+        "Tracking obsoleto (Yandex Analytics — plataforma rusa en negocio local de SC)",
+        "Navegación móvil con problemas",
+        "Sin cookie consent"
+      ],
+      "oportunidad": "Taquería familiar popular en 1354 Rutherford Rd con buenas reseñas (111+). Usa una plataforma de directorio genérica en vez de sitio propio — no refleja la identidad del negocio. Oportunidad de sitio profesional con menú, fotos y pedidos.",
+      "siguiente_paso": "/scraping https://tacos.edan.io/"
+    },
+    {
+      "negocio": "Powerhouse Gym Greenville",
+      "categoria": "gimnasio",
+      "url": "https://powerhousegym.com/locations/greenville/",
+      "google_maps": null,
+      "telefono": "(864) 801-2480",
+      "score": "B",
+      "problemas": [
+        "Contenido spam de casino embebido en la página (sitio posiblemente comprometido/hackeado)",
+        "Sin meta description",
+        "Contenido mezclado daña credibilidad de la marca"
+      ],
+      "oportunidad": "Gimnasio en 1018 South Batesville Road con comunidad activa. Su página de ubicación en Greenville tiene contenido spam inyectado (apuestas), señal de que el sitio fue comprometido. Necesitan un sitio local independiente y seguro.",
+      "siguiente_paso": "/scraping https://powerhousegym.com/locations/greenville/"
+    },
+    {
+      "negocio": "SC Handyman Services",
+      "categoria": "servicios para el hogar",
+      "url": "https://sc-handyman-services.ueniweb.com/",
+      "google_maps": null,
+      "telefono": "(619) 346-4963",
+      "score": "B",
+      "problemas": [
+        "Sin dominio propio — usa subdominio de builder (ueniweb.com)",
+        "Sin meta description",
+        "Apariencia genérica de template sin personalización",
+        "CSS pesado para lo que muestra"
+      ],
+      "oportunidad": "Handyman en 2 A W Stone Ave, Greenville activo en búsquedas locales pero sin dominio propio. Usa subdirectorio de plataforma gratuita que no transmite profesionalismo. Un sitio propio con dominio .com aumentaría confianza y conversiones.",
+      "siguiente_paso": "/scraping https://sc-handyman-services.ueniweb.com/"
+    },
+    {
+      "negocio": "Home & Happy",
+      "categoria": "servicios para el hogar",
+      "url": "https://www.homeandhappy.us/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "B",
+      "problemas": [
+        "Sin meta description — SEO básico ausente",
+        "Sin número de teléfono visible en el sitio",
+        "Dominio .us en vez de .com (menos confianza percibida)",
+        "JavaScript y CSS excesivamente pesados para el contenido"
+      ],
+      "oportunidad": "Servicio de handyman con sitio Squarespace que carece de información de contacto visible y SEO básico. El negocio activo en Greenville pierde leads por no tener teléfono accesible ni posicionamiento en buscadores.",
+      "siguiente_paso": "/scraping https://www.homeandhappy.us/"
+    },
+    {
+      "negocio": "GNR Automotive",
+      "categoria": "taller mecánico",
+      "url": "https://www.gnrautomotivegreenville.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "B",
+      "problemas": [
+        "Sitio bloquea acceso automatizado (error 403)",
+        "Posible configuración de servidor incorrecta que también afecta bots de Google",
+        "Taller familiar que depende de visibilidad local"
+      ],
+      "oportunidad": "Taller mecánico familiar en Greenville cuyo sitio retorna error 403 a ciertos visitantes. Si Google recibe el mismo error, el sitio no se indexa correctamente. Taller activo que necesita presencia web confiable.",
+      "siguiente_paso": "/scraping https://www.gnrautomotivegreenville.com/"
+    }
+  ],
+  "resumen": {
+    "score_a": 3,
+    "score_b": 4,
+    "descartados": 11
+  },
+  "descartados_nota": "11 negocios evaluados tenían sitios profesionales y modernos (WordPress/Divi, Wix, Squarespace bien implementados): Artistic Cutters, To Dye For Salon, The Mane Lounge, Ivy Salon & Spa, North Hills Auto, Details & Dents, Hemly Automotive, Tim's Automotive, Roper Mountain Auto Care, J&J Automotive, The Barkery Bistro."
+}

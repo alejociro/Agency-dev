@@ -1,0 +1,184 @@
+{
+  "cliente": "Bocas & Risas",
+  "url_auditada": "https://bocasyrisas.com/",
+  "sector": "Salud / Clínica Odontológica",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 50. Clínica odontológica con 27 años y 12 servicios especializados. Se evalúa como servicio local de salud en Medellín — el benchmark exige presencia local fuerte, contenido de confianza, y facilidad de contacto/agendamiento.",
+  "fecha": "2026-03-30",
+
+  "scores": {
+    "seo": 38,
+    "ux_ui": 32,
+    "marketing": 40,
+    "contenido": 45,
+    "tecnico": 30,
+    "total": 37
+  },
+
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title presente con keywords relevantes: 'Clínicas odontológicas Medellín, Diseño de sonrisa Medellín'",
+        "Meta description presente y descriptiva con propuesta de valor y keywords locales",
+        "Sitemap XML bien estructurado con 22 páginas y 108 posts de blog indexados",
+        "URLs amigables con keywords por servicio (ej: /odontologia-estetica/diseno-de-sonrisa-medellin/)",
+        "Blog activo con 108 artículos — última publicación marzo 2026, buena frecuencia de contenido"
+      ],
+      "negativos": [
+        "Meta keywords ausente (campo null) — aunque Google no lo pondera, otros motores sí",
+        "No se detecta H1 visible en el HTML estático — dependencia de JS para renderizar headings",
+        "Imágenes sin alt text descriptivo — solo 1 imagen detectada (logo) en todo el scraping",
+        "Favicon usa la misma imagen del logo (JPG 300x300) en lugar de un ICO/PNG optimizado",
+        "El sitio depende de JavaScript para renderizar contenido — bots de Google pueden tener problemas de crawlabilidad"
+      ],
+      "recomendaciones": [
+        { "accion": "Implementar H1 visible con keyword principal en cada página sin depender de JS", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar alt text descriptivo con keywords en todas las imágenes del sitio", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear favicon.ico dedicado (32x32, 16x16) en lugar del logo JPG de 300x300", "prioridad": "baja", "tipo": "quick_win" },
+        { "accion": "Implementar Schema JSON-LD tipo MedicalBusiness con datos de cada sede, horarios y servicios", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Migrar a un stack que sirva HTML server-side para garantizar crawlabilidad completa por Google", "prioridad": "alta", "tipo": "mejora_estructural" }
+      ]
+    },
+
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores coherente con 3 tonos de azul/turquesa que transmiten confianza médica",
+        "Navegación organizada en 2 categorías de servicios (Estética + General) con submenús lógicos",
+        "Estructura del sitio incluye páginas clave: Nosotros, Equipo, Testimonios, Galería, FAQ, Contacto"
+      ],
+      "negativos": [
+        "Tema WordPress genérico (clases dt-sc-*) — diseño no se diferencia de otros consultorios",
+        "Fondo blanco puro (#ffffff) sin matices — apariencia plana y poco premium para 27 años de trayectoria",
+        "Tipografías no definidas — usa stack genérico del tema, sin personalidad tipográfica",
+        "Navegación con 22 items visibles puede abrumar al usuario — demasiadas opciones sin jerarquía clara",
+        "No hay indicios de diseño mobile-first — tema WordPress clásico con adaptación responsive básica",
+        "El contenido depende de JS para renderizarse — posibles flashes de contenido vacío (FOUC) al cargar"
+      ],
+      "recomendaciones": [
+        { "accion": "Rediseñar con identidad visual única que refleje 27 años de experiencia y profesionalismo", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reducir navegación principal a 5-6 items con mega menú para servicios", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Seleccionar tipografías premium (ej: DM Sans + Playfair Display) que transmitan confianza médica", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Diseñar mobile-first con touch targets mínimos de 44x44px y menú hamburguesa funcional", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Cambiar fondo a off-white (#f8f9fa o similar) para dar profundidad visual", "prioridad": "baja", "tipo": "quick_win" }
+      ]
+    },
+
+    "marketing": {
+      "positivos": [
+        "Propuesta de valor clara: 'Expertos en restaurar tu sonrisa con procedimientos innovadores'",
+        "CTA principal con verbo de acción: 'Agenda tu cita'",
+        "Sección de testimonios presente — genera confianza con prueba social",
+        "Slogan memorable y emocional: 'Una sonrisa vale más que mil palabras'",
+        "Urgencias odontológicas con CTA directo: '¿Tienes una urgencia? ¡Llama ya!' — buen sentido de urgencia"
+      ],
+      "negativos": [
+        "No hay cifras visibles de pacientes atendidos, casos exitosos o años (el 27 está en la meta pero no destacado en hero)",
+        "Secciones de servicios sin CTAs individuales — el usuario no tiene ruta clara para agendar desde cada servicio",
+        "No hay diferenciadores claros vs competencia — ¿por qué elegir B&R sobre otras clínicas en Medellín?",
+        "WhatsApp presente pero no integrado como botón flotante visible en todo momento",
+        "Galería e instalaciones existen pero las imágenes no pudieron extraerse — posiblemente mal optimizadas o poco impactantes"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar barra de métricas en hero: '27 años | +X pacientes | X especialistas | 2 sedes'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar botón flotante de WhatsApp visible en todas las páginas", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar CTA 'Agenda tu cita' en cada tarjeta de servicio", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear sección de diferenciadores: laboratorio propio, 27 años, equipo especializado, atención internacional", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Agregar sección 'Antes y Después' con casos reales (con consentimiento) para prueba social visual", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+
+    "contenido": {
+      "positivos": [
+        "Descripción del negocio específica y completa: 27 años, pacientes internacionales, estándares de calidad",
+        "12 servicios bien categorizados en 2 verticales (Estética y General) con URLs dedicadas",
+        "Blog activo con 108 artículos de contenido educativo — excelente para SEO de cola larga",
+        "Sección de FAQ presente para resolver dudas y reducir fricción pre-conversión",
+        "Información de contacto incluye 2 teléfonos fijos + WhatsApp + dirección física con 2 sedes"
+      ],
+      "negativos": [
+        "Descripción de servicios genérica en el home — no explica procesos, tiempos, ni qué esperar",
+        "Email de contacto ausente (null) — canal básico para comunicación profesional",
+        "Horarios de atención no disponibles — dato crítico para un servicio de salud",
+        "No hay información del equipo médico visible (nombres, especialidades, credenciales) en el scraping",
+        "No hay precios orientativos ni rangos de inversión — genera incertidumbre en el paciente"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar horarios de atención en header/footer y en página de contacto", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Incluir email de contacto profesional (ej: citas@bocasyrisas.com)", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Expandir cada servicio con: descripción del proceso paso a paso, tiempo estimado, FAQ específica", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Agregar perfiles del equipo médico con foto, nombre, especialidad y años de experiencia", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Incluir rangos de precio o 'desde $X' en servicios principales para reducir fricción", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+
+    "tecnico": {
+      "positivos": [
+        "WordPress como CMS — robusto y con amplio ecosistema de plugins",
+        "Google Analytics (GA4) y Google Tag Manager implementados para tracking",
+        "Gravity Forms activo para formularios de contacto — plugin confiable",
+        "Sitemap XML funcional y bien estructurado para indexación"
+      ],
+      "negativos": [
+        "WordPress con tema pesado (clases dt-sc-*) y renderizado JS — el body no es crawleable sin ejecutar JavaScript",
+        "El sitio marca requiere_render: true — indica dependencia excesiva de JavaScript para contenido básico",
+        "Plugins innecesarios detectados: WooCommerce, BuddyPress, bbPress, The Events Calendar — probablemente no se usan activamente y añaden peso",
+        "Favicon es un JPG de 300x300 — formato y tamaño incorrectos, genera carga innecesaria",
+        "Solo 1 imagen con alt text en todo el sitio (el logo) — las demás no se sirven en el HTML estático"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a un sitio estático/SSR que sirva todo el contenido sin dependencia de JS client-side", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Eliminar plugins no utilizados (WooCommerce, BuddyPress, bbPress, Events Calendar) para reducir peso", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Optimizar imágenes con formatos modernos (WebP/AVIF) y servir con lazy loading nativo", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar carga diferida de scripts no esenciales y CSS crítico inline", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Integrar sistema de agendamiento online (Calendly, SimplyBook.me, o similar) para automatizar citas", "prioridad": "media", "tipo": "mejora_estructural" }
+      ],
+      "stack_actual": "WordPress + tema personalizado (dt-sc-*) + Gravity Forms + WooCommerce + BuddyPress + bbPress + The Events Calendar + GA4 + GTM",
+      "stack_recomendado": "Astro 4 + Tailwind CSS — sitio informativo con múltiples páginas (12 servicios + blog), no necesita SPA pero sí SSG/SSR con buena performance",
+      "integraciones": ["Google Analytics GA4", "Google Tag Manager", "Gravity Forms", "WhatsApp Business"],
+      "complejidad": "media"
+    }
+  },
+
+  "quick_wins": [
+    "Implementar botón flotante de WhatsApp visible en todas las páginas — conversión directa inmediata",
+    "Agregar barra de métricas en hero: '27 años | +X pacientes | X especialistas | 2 sedes' — genera confianza instantánea",
+    "Agregar horarios de atención y email de contacto en header y footer",
+    "Simplificar navegación a 5-6 items principales con mega menú para servicios",
+    "Agregar CTA 'Agenda tu cita' en cada tarjeta de servicio individual"
+  ],
+
+  "plan_de_accion": {
+    "semana_1": [
+      "Implementar botón flotante de WhatsApp en todas las páginas",
+      "Agregar barra de métricas en hero con datos reales del negocio",
+      "Agregar horarios de atención + email de contacto en header/footer",
+      "Simplificar menú de navegación principal a 5-6 items",
+      "Crear favicon.ico dedicado (32x32)",
+      "Agregar CTA individual en cada tarjeta de servicio"
+    ],
+    "mes_1": [
+      "Rediseñar sitio completo con identidad visual premium acorde a 27 años de trayectoria",
+      "Migrar a Astro + Tailwind para performance y crawlabilidad óptimas",
+      "Implementar Schema JSON-LD tipo MedicalBusiness con datos completos",
+      "Crear sección de diferenciadores: laboratorio propio, equipo especializado, atención internacional",
+      "Expandir páginas de servicios con proceso paso a paso y FAQ específica",
+      "Agregar perfiles del equipo médico con foto y credenciales",
+      "Seleccionar e implementar tipografías premium con personalidad"
+    ],
+    "largo_plazo": [
+      "Integrar sistema de agendamiento online (Calendly, SimplyBook.me)",
+      "Crear sección 'Antes y Después' con casos reales",
+      "Incluir rangos de precio orientativos en servicios principales",
+      "Optimizar todas las imágenes a WebP/AVIF con lazy loading",
+      "Implementar blog con mejor SEO y estructura de categorías"
+    ]
+  },
+
+  "resumen_ejecutivo": "Bocas & Risas tiene 27 años de experiencia y 12 servicios especializados, pero su sitio web no refleja ese nivel de profesionalismo — un tema WordPress genérico con JavaScript pesado impide la crawlabilidad, presenta una experiencia visual plana y no diferencia a la clínica de su competencia en Medellín. La oportunidad principal está en reconstruir la presencia digital con un sitio premium que convierta la autoridad clínica real (27 años, laboratorio propio, pacientes internacionales) en confianza visual e itinerarios claros hacia la conversión. El próximo paso es un rediseño completo con Astro + Tailwind que priorice: métricas de confianza visibles, WhatsApp flotante, CTAs por servicio, y Schema MedicalBusiness para posicionamiento local.",
+
+  "stack_para_web": {
+    "framework": "astro",
+    "estilos": "tailwind",
+    "extras": ["schema-json-ld", "whatsapp-widget", "intersection-observer-animations"],
+    "justificacion": "Complejidad media: sitio informativo con 12 páginas de servicios, blog con 108 posts, 2 sedes, y necesidad de SEO local fuerte. Astro ofrece SSG con HTML estático crawleable (resuelve el problema principal del sitio actual), island architecture para componentes interactivos (formularios, galería, FAQ accordion), y excelente performance out-of-the-box. No requiere React full SPA — el contenido es mayormente estático con interactividad puntual."
+  }
+}
