@@ -1,0 +1,173 @@
+{
+  "cliente": "Greenville Handyman Services, LLC.",
+  "url_auditada": "http://greenvillehandymanservices.com/",
+  "sector": "Servicios de mantenimiento y reparación del hogar / Handyman Services",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 50. Se aplica este benchmark porque handyman services es un negocio de servicio local dirigido a clientes residenciales y comerciales en un área geográfica específica (Greenville, SC).",
+  "fecha": "2026-04-01",
+  "scores": {
+    "seo": 36,
+    "ux_ui": 34,
+    "marketing": 39,
+    "contenido": 41,
+    "tecnico": 26,
+    "total": 35
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title incluye el nombre del negocio y keyword 'Handyman Service'",
+        "Meta description presente con keywords relevantes como 'handyman services', 'home remodeling', 'contractor'",
+        "Meta keywords definidas con términos del sector como 'home improvement', 'bathroom remodel', 'residential contractor'",
+        "Algunas imágenes tienen alt text descriptivo como 'Residential, Commercial & Industrial'"
+      ],
+      "negativos": [
+        "No se detecta un H1 explícito con keyword principal en la página; el hero carece de título",
+        "Meta description tiene errores gramaticales y es demasiado larga con formato tipo listado",
+        "Los CTAs son genéricos ('Details') sin texto descriptivo ni verbos de acción específicos",
+        "No hay estructura clara de headings H1→H2→H3; las secciones usan títulos sin jerarquía semántica evidente",
+        "La propuesta de valor no aparece en los primeros 200px — el hero solo tiene una imagen sin texto"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir un H1 único en el hero con keyword principal: 'Greenville Handyman Services — Home Repair & Remodeling'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reescribir meta description a máximo 155 caracteres con CTA y keyword principal", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reemplazar todos los CTAs 'Details' por verbos de acción específicos como 'Ver servicios', 'Solicitar presupuesto'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar jerarquía de headings semántica H1→H2→H3 en todas las secciones", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Añadir alt text descriptivo y con keywords a todas las imágenes", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Navegación con 7 items claros que cubren las áreas de servicio principales",
+        "Logo posicionado correctamente en header izquierda",
+        "Badge de valores (Prompt, Safe, Reliable, Licensed, Bonded, Insured) aporta confianza visual"
+      ],
+      "negativos": [
+        "Paleta con más de 5 colores diferentes (naranja, amarillo, verde, grises varios) sin cohesión visual",
+        "Tipografía base Arial a 12px es demasiado pequeña para legibilidad moderna; mínimo recomendado 16px",
+        "Thumbnails muy pequeños (182x144px) no generan impacto visual ni comunican calidad",
+        "No hay indicios de diseño responsive o mobile-first; CMS antiguo sugiere layout fijo",
+        "Diseño visual anticuado con poco espaciado y sin respiración entre secciones"
+      ],
+      "recomendaciones": [
+        { "accion": "Rediseñar con paleta reducida a 3 colores: naranja principal, blanco fondo, gris oscuro texto", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Aumentar tamaño base de tipografía a 16px mínimo y usar tipografía moderna con buena legibilidad", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar diseño mobile-first responsive con breakpoints para móvil, tablet y desktop", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Usar imágenes de alta calidad a ancho completo en secciones de servicios", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Añadir espaciado generoso entre secciones (mínimo 64px) para mejorar respiración visual", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Propuesta de valor menciona beneficio concreto: 'One call will cover it all'",
+        "Credenciales de confianza presentes: Licensed, Bonded, Insured",
+        "Experiencia destacada como diferenciador: 'over 35 successful years' y '#1 local service provider'"
+      ],
+      "negativos": [
+        "CTA principal es 'Details' — no tiene verbo de acción ni genera urgencia",
+        "No hay testimonios de clientes ni reseñas visibles",
+        "Inconsistencia en años de experiencia: dice '35 years' en una sección y '15 years' en otra, daña credibilidad",
+        "No hay oferta concreta ni incentivo para contactar (descuento, presupuesto gratis, etc.)",
+        "El mensaje no aborda un dolor específico del cliente — es descriptivo pero no persuasivo"
+      ],
+      "recomendaciones": [
+        { "accion": "Crear CTA principal claro y visible: 'Solicita tu presupuesto gratis' o 'Call Now for a Free Estimate'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir sección de testimonios con al menos 3 reseñas de clientes reales", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Unificar el mensaje de años de experiencia a una cifra consistente en todo el sitio", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reformular propuesta de valor orientada al dolor: 'Deja de posponer esas reparaciones — nosotros nos encargamos de todo en una sola visita'", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Añadir números concretos: proyectos completados, clientes satisfechos, tiempo de respuesta", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Texto de propuesta de valor es claro y comunica el servicio integral",
+        "Slogan memorable y conciso: 'Prompt. Safe. Reliable. Licensed. Bonded. Insured.'",
+        "Navegación organiza bien las categorías de servicio: Residential, Commercial, Additions/Remodel, Handicap, Sunrooms"
+      ],
+      "negativos": [
+        "No hay email de contacto ni dirección física — genera desconfianza para servicio local",
+        "No existe sección de FAQ ni manejo de objeciones comunes",
+        "Textos son genéricos y breves — la sección About tiene solo una oración",
+        "No hay horarios de atención publicados",
+        "Contradicción en años de experiencia (35 vs 15 años) indica contenido desactualizado o descuidado"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir información de contacto completa: email, dirección física, horarios de atención", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear sección FAQ con al menos 5 preguntas frecuentes del sector handyman", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Expandir textos de cada servicio con descripción detallada, proceso y beneficios", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Corregir inconsistencia de años de experiencia y verificar todos los datos del sitio", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir página de proyectos realizados con fotos antes/después", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "jQuery 3.6.3 es una versión relativamente reciente de la librería",
+        "El sitio carga sin necesidad de JavaScript rendering (requiere_render: false)",
+        "Estructura simple adecuada para un negocio de servicio local"
+      ],
+      "negativos": [
+        "NetMinistry CMS es una plataforma obsoleta y poco conocida con limitaciones severas de personalización",
+        "Dependencia de jQuery y jQuery UI es innecesaria para un sitio informativo simple",
+        "Se detecta 'Bootstrap (fake)' — implementación parcial o incorrecta del framework",
+        "No se detectan formularios de contacto funcionales a pesar de tener página 'Contact Us'",
+        "Hosting en StableRack sin CDN ni optimización de assets evidente",
+        "Sitio usa HTTP en lugar de HTTPS — vulnerabilidad de seguridad y penalización SEO"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a un stack moderno ligero: HTML estático + Tailwind CSS + Alpine.js", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar formulario de contacto funcional con validación y notificación por email", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Migrar a HTTPS con certificado SSL", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar hosting moderno con CDN (Netlify, Vercel o Cloudflare Pages)", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Eliminar dependencias innecesarias (jQuery, jQuery UI, Bootstrap fake) para reducir peso de carga", "prioridad": "media", "tipo": "mejora_estructural" }
+      ],
+      "stack_actual": "NetMinistry CMS (StableRack hosting), jQuery 3.6.3, jQuery UI 1.13.2, Bootstrap (fake), Font Awesome 6, Animate.css",
+      "stack_recomendado": "HTML estático + Tailwind CSS + Alpine.js, desplegado en Netlify o Cloudflare Pages con SSL automático",
+      "integraciones": [
+        "Formulario de contacto con envío de email (Formspree o Netlify Forms)",
+        "Google Maps embed para ubicación",
+        "Google Business Profile link",
+        "Click-to-call en móvil"
+      ],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Añadir H1 con keyword principal en el hero: 'Greenville Handyman Services — Home Repair & Remodeling'",
+    "Reescribir meta description optimizada a 155 caracteres con CTA",
+    "Reemplazar CTAs genéricos 'Details' por verbos de acción como 'Get a Free Estimate'",
+    "Unificar años de experiencia a una cifra consistente en todo el sitio",
+    "Añadir información de contacto completa: email, dirección, horarios"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Migrar a HTTPS con certificado SSL",
+      "Añadir H1 optimizado con keyword principal",
+      "Reescribir meta description",
+      "Reemplazar todos los CTAs genéricos por verbos de acción",
+      "Corregir inconsistencia de años de experiencia",
+      "Añadir email, dirección y horarios de contacto",
+      "Crear CTA principal: 'Call Now for a Free Estimate'"
+    ],
+    "mes_1": [
+      "Rediseñar sitio con paleta reducida y tipografía moderna",
+      "Implementar diseño mobile-first responsive",
+      "Añadir sección de testimonios de clientes",
+      "Crear sección FAQ con preguntas frecuentes",
+      "Implementar formulario de contacto funcional",
+      "Expandir textos de servicios con descripciones detalladas",
+      "Migrar a stack moderno (HTML + Tailwind + Alpine.js)"
+    ],
+    "largo_plazo": [
+      "Crear galería de proyectos antes/después",
+      "Implementar hosting con CDN para mejor rendimiento",
+      "Añadir integración con Google Business Profile",
+      "Desarrollar estrategia de contenido local SEO"
+    ]
+  },
+  "resumen_ejecutivo": "El sitio de Greenville Handyman Services opera sobre un CMS obsoleto (NetMinistry) con un diseño anticuado que no transmite la profesionalidad ni los 35 años de experiencia del negocio, resultando en una presencia digital que probablemente ahuyenta clientes en lugar de captarlos. La mayor oportunidad está en reconstruir el sitio con un diseño moderno, mobile-first, CTAs claros y prueba social, lo cual podría aumentar significativamente las conversiones dado que el negocio ya tiene credenciales sólidas (licensed, bonded, insured) y amplia experiencia. El próximo paso inmediato es migrar a un sitio estático moderno con formulario de contacto funcional, CTAs orientados a acción y contenido optimizado para SEO local.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["Alpine.js", "Formspree o similar para formulario de contacto"],
+    "justificacion": "Complejidad baja — sitio informativo de servicio local con pocas páginas. HTML estático + Tailwind + Alpine.js ofrece máximo rendimiento, facilidad de mantenimiento y costo de hosting mínimo (o gratuito en Netlify/Cloudflare Pages). No se justifica un framework SPA para este volumen de contenido."
+  }
+}

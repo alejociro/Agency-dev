@@ -1,0 +1,354 @@
+{
+  "zona": "greenville south carolina",
+  "categoria": "multi-vertical (servicios locales)",
+  "fecha": "2026-04-01",
+  "total_evaluados": 32,
+  "prospectos": [
+    {
+      "negocio": "Greenville Handy Man Service",
+      "categoria": "handyman / reparaciones",
+      "url": "http://greenvillehandymanservices.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "A",
+      "problemas": [
+        "Sin HTTPS (HTTP plano)",
+        "Sitio no responde / conexion cerrada",
+        "Posible sitio caido o abandonado",
+        "Sin accesibilidad desde navegadores modernos"
+      ],
+      "oportunidad": "Negocio de handyman con dominio propio pero sitio completamente inaccesible. Necesita reconstruccion total desde cero.",
+      "siguiente_paso": "Contactar directamente — sitio caido, no hay contenido para scraping"
+    },
+    {
+      "negocio": "Custom Commercial Cleaning Corporation",
+      "categoria": "limpieza comercial",
+      "url": "https://customcommercialcleaning.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "A",
+      "problemas": [
+        "Diseno severamente obsoleto (estetica 2012-2015)",
+        "Google Analytics legacy (GA3 deprecado desde 2012)",
+        "Sin meta description",
+        "Imagenes placeholder con lazy-load deficiente",
+        "Carrusel simplista y sin jerarquia visual",
+        "Fotografia de stock generica"
+      ],
+      "oportunidad": "Empresa de limpieza comercial con clientes reconocidos (logos de marcas) pero sitio web con calidad 4/10, completamente desactualizado. Candidato ideal para rediseno profesional que refleje su cartera de clientes.",
+      "siguiente_paso": "/scraping https://customcommercialcleaning.com/"
+    },
+    {
+      "negocio": "SC Tow Pros of Greenville",
+      "categoria": "grua / asistencia vial",
+      "url": "https://www.greenvillewrecker.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "A",
+      "problemas": [
+        "Texto placeholder visible ('Slide title / Write your caption here')",
+        "Sin meta description",
+        "Diseno generico con contenido excesivamente denso",
+        "Plataforma DM/Multiscreen obsoleta",
+        "Fotografia de stock repetitiva",
+        "Sin innovacion visual"
+      ],
+      "oportunidad": "Servicio de grua 24/7 con sitio que aun tiene texto placeholder visible — claramente un sitio construido a medias. Calidad 5/10. Oportunidad clara de rediseno.",
+      "siguiente_paso": "/scraping https://www.greenvillewrecker.com/"
+    },
+    {
+      "negocio": "Greenville Chiropractic",
+      "categoria": "quiropractico / salud",
+      "url": "http://www.greenvillechiropractic.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "A",
+      "problemas": [
+        "Sin HTTPS (HTTP plano)",
+        "Sitio no responde / conexion cerrada",
+        "Dominio posiblemente abandonado o con hosting caido",
+        "Centro de salud integral sin presencia web funcional"
+      ],
+      "oportunidad": "Centro quiropractico con reputacion en Greenville pero sitio web completamente caido y sin HTTPS. Para un negocio de salud, la confianza online es critica. Necesita sitio nuevo desde cero.",
+      "siguiente_paso": "Contactar directamente — sitio caido, no hay contenido para scraping"
+    },
+    {
+      "negocio": "MANSCAPERS Barbershop and Spa",
+      "categoria": "barberia / spa",
+      "url": "https://manscapersgreenville.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "A",
+      "problemas": [
+        "Sitio con timeout (no carga en 60 segundos)",
+        "Rendimiento extremadamente pobre",
+        "Posible hosting deficiente o sitio abandonado"
+      ],
+      "oportunidad": "Barberia y spa en Greenville cuyo sitio web no carga — timeout completo. Un negocio que combina barberia con spa necesita presencia web premium que refleje su servicio. Oportunidad de crear experiencia digital acorde.",
+      "siguiente_paso": "Contactar directamente — sitio con timeout, no disponible para scraping"
+    },
+    {
+      "negocio": "GNR Automotive",
+      "categoria": "taller mecanico",
+      "url": "https://www.gnrautomotivegreenville.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "A",
+      "problemas": [
+        "Sitio devuelve error 403 (acceso prohibido)",
+        "Posible configuracion de servidor rota",
+        "Clientes no pueden acceder a informacion del negocio"
+      ],
+      "oportunidad": "Taller mecanico lider en Greenville, Simpsonville y Travelers Rest con sitio que devuelve error 403. Los clientes literalmente no pueden ver sus servicios online. Necesita sitio funcional urgentemente.",
+      "siguiente_paso": "Contactar directamente — sitio con error 403, no disponible para scraping"
+    },
+    {
+      "negocio": "JMC Services, LLC",
+      "categoria": "handyman / reparaciones",
+      "url": "https://jmcservicesllc01.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "B",
+      "problemas": [
+        "Diseno generico de GoDaddy builder",
+        "Sin meta description",
+        "Paleta de colores obsoleta (grises oscuros, azules basicos)",
+        "Imagenes de stock genericas",
+        "Sin elementos interactivos ni jerarquia visual",
+        "Sin personalidad de marca"
+      ],
+      "oportunidad": "Negocio de handyman con licencia y credenciales visibles pero sitio GoDaddy con calidad 5/10. Template sin personalizar que no transmite profesionalismo. Mejoraria significativamente con diseno a medida.",
+      "siguiente_paso": "/scraping https://jmcservicesllc01.com/"
+    },
+    {
+      "negocio": "Honey Dos Done Right",
+      "categoria": "handyman / reparaciones",
+      "url": "https://honeydosdoneright.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "B",
+      "problemas": [
+        "Sin meta description — fallo SEO critico",
+        "Diseno GoDaddy basico y estatico",
+        "Estetica corporativa que no transmite confianza local",
+        "Sin galerias de proyectos ni testimonios en video",
+        "Paleta de colores gris/azul apagada"
+      ],
+      "oportunidad": "Handyman desde 2013 con tarifas de $100-150/hr (cliente premium) pero sitio GoDaddy generico 5/10. Un negocio con esos precios necesita presencia web que justifique el valor.",
+      "siguiente_paso": "/scraping https://honeydosdoneright.com/"
+    },
+    {
+      "negocio": "Hemly Automotive",
+      "categoria": "taller mecanico",
+      "url": "https://www.hemlyautomotive.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "B",
+      "problemas": [
+        "Sin meta description — SEO deficiente",
+        "Diseno de mediados de 2010s, estetica vieja",
+        "PHP custom con patrones JavaScript obsoletos",
+        "Typo en archivo PHP ('appoiintment')",
+        "Formularios dependientes de JavaScript sin fallback",
+        "Accesibilidad pobre"
+      ],
+      "oportunidad": "Taller mecanico con buena reputacion y enfoque en honestidad, pero sitio custom PHP con calidad 6/10, codigo con typos y patrones obsoletos. Rediseno moderno mejoraria confianza y conversiones.",
+      "siguiente_paso": "/scraping https://www.hemlyautomotive.com/"
+    },
+    {
+      "negocio": "The Barkery Bistro",
+      "categoria": "tienda de mascotas / grooming",
+      "url": "https://www.thebarkerybistro.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "B",
+      "problemas": [
+        "Template Squarespace generico sin personalizar",
+        "Galeria con transiciones obsoletas (slideshow/fade)",
+        "Jerarquia visual minima",
+        "JavaScript innecesario excesivo",
+        "Sin identidad de marca distintiva"
+      ],
+      "oportunidad": "Negocio familiar de 15 anos con 3 ubicaciones (Greenville, Anderson, Clemson) pero sitio Squarespace con calidad 5.5/10. Una marca establecida con expansion activa merece web premium que refleje su crecimiento.",
+      "siguiente_paso": "/scraping https://www.thebarkerybistro.com/"
+    },
+    {
+      "negocio": "Reel Video and Stills",
+      "categoria": "fotografia / videografia",
+      "url": "https://www.reelvideoandstills.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "B",
+      "problemas": [
+        "Imagenes de fondo de 2015-2016 — sitio no actualizado",
+        "Sin meta description",
+        "Tema WordPress Altitude Pro obsoleto",
+        "CSS inflado con mala optimizacion",
+        "Diseno estatico sin patrones modernos",
+        "Portafolio visual que no aprovecha diseno contemporaneo"
+      ],
+      "oportunidad": "Empresa de fotografia y video profesional con testimonios 5 estrellas pero sitio anclado en 2015 con calidad 5/10. Un fotografo/videografo necesita portafolio web que demuestre excelencia visual — su sitio actual contradice su trabajo.",
+      "siguiente_paso": "/scraping https://www.reelvideoandstills.com/"
+    },
+    {
+      "negocio": "Sargent Pest Solutions",
+      "categoria": "control de plagas",
+      "url": "https://sargentpest.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "B",
+      "problemas": [
+        "Diseno de 2015-2018, estetica obsoleta",
+        "Fotografia de stock generica",
+        "Uso repetitivo de logos/iconos",
+        "Sin jerarquia visual moderna",
+        "Botones y links con estilo viejo",
+        "Paleta de colores basica"
+      ],
+      "oportunidad": "Control de plagas familiar con buenas resenas y enfoque eco-friendly, pero sitio WordPress 5/10 con estetica pre-2018. Buen SEO tecnico (schema markup) pero diseno visual muy por debajo del estandar actual.",
+      "siguiente_paso": "/scraping https://sargentpest.com/"
+    },
+    {
+      "negocio": "Davis Services Inc",
+      "categoria": "HVAC / plomeria / electrico",
+      "url": "https://davisservicesinc.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "B",
+      "problemas": [
+        "CSS inflado con estilos inline excesivos",
+        "jQuery y polyfills obsoletos",
+        "Divi builder con deuda tecnica visible",
+        "Optimizacion de codigo deficiente",
+        "Espaciado y padding inconsistentes"
+      ],
+      "oportunidad": "Empresa familiar de HVAC, plomeria y electricidad en Upstate SC con sitio Divi 6.5/10. Funcional pero con deuda tecnica significativa. Empresa multi-servicio que se beneficiaria de sitio moderno que organice mejor su oferta.",
+      "siguiente_paso": "/scraping https://davisservicesinc.com/"
+    },
+    {
+      "negocio": "Small Engine Solutions",
+      "categoria": "reparacion de equipos / landscaping",
+      "url": "https://www.smallenginesolutionssc.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "B",
+      "problemas": [
+        "Sin meta description — fallo SEO",
+        "Diseno basico y generico",
+        "Esquema de colores (teal/blanco) sin personalidad",
+        "Plataforma Duda con aspecto de template",
+        "Posibles remanentes de template en navegacion",
+        "19 anos de experiencia no reflejados en la web"
+      ],
+      "oportunidad": "Negocio con 19+ anos de experiencia en reparacion de equipos de jardineria pero sitio Duda generico 6/10. La longevidad y expertise del negocio merecen presencia web que genere confianza.",
+      "siguiente_paso": "/scraping https://www.smallenginesolutionssc.com/"
+    },
+    {
+      "negocio": "Tara Ashton Brand Photography",
+      "categoria": "fotografia de marca / producto",
+      "url": "https://tarashton.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "B",
+      "problemas": [
+        "Meta description completamente vacia — fallo SEO critico",
+        "Template Squarespace sin personalizar suficiente",
+        "Elementos interactivos minimos",
+        "CTAs poco visibles",
+        "Falta de engagement visual para un negocio visual"
+      ],
+      "oportunidad": "Fotografa de marca y producto que ayuda negocios a mejorar su imagen online, pero su propio sitio Squarespace 6/10 tiene meta description vacia y diseno generico. Ironia que fortalece el argumento de venta.",
+      "siguiente_paso": "/scraping https://tarashton.com/"
+    },
+    {
+      "negocio": "Dobson Law Group",
+      "categoria": "abogados / derecho empresarial",
+      "url": "https://dobsonlaw.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "B",
+      "problemas": [
+        "CSS inline inflado (40+ KB)",
+        "Visual Composer / WPBakery obsoleto",
+        "Slider Revolution — plugin pesado y datado",
+        "Dependencias JavaScript legacy",
+        "Patrones de animacion anticuados",
+        "Meta description con errores gramaticales"
+      ],
+      "oportunidad": "Firma de abogados con ratings AV Preeminent y Best Lawyers pero sitio WordPress/Visual Composer 6.5/10 con infraestructura tecnica datada. Firma prestigiosa que necesita presencia web acorde a su reputacion.",
+      "siguiente_paso": "/scraping https://dobsonlaw.com/"
+    },
+    {
+      "negocio": "Door Tech Garage Doors",
+      "categoria": "puertas de garaje",
+      "url": "https://doortechgaragedoors.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "B",
+      "problemas": [
+        "Sin meta description",
+        "Sin evidencia de responsive/viewport meta",
+        "Plataforma custom basica (Drastic Impact)",
+        "Diseno funcional pero sin sofisticacion",
+        "Tipografia y espaciado basicos"
+      ],
+      "oportunidad": "Empresa familiar con casi 20 anos de experiencia en puertas de garaje pero sitio custom basico 6/10 sin responsive confirmado. Un negocio establecido que perderia clientes moviles por falta de adaptacion.",
+      "siguiente_paso": "/scraping https://doortechgaragedoors.com/"
+    },
+    {
+      "negocio": "Psalm 23 Handyman",
+      "categoria": "handyman / electricista",
+      "url": "https://psalm23handyman.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "B",
+      "problemas": [
+        "Template Divi WordPress generico",
+        "Implementacion basada en template default",
+        "Sin personalizacion de marca mas alla del template",
+        "Diseno funcional pero sin diferenciacion visual"
+      ],
+      "oportunidad": "Handyman con dueno electricista certificado (Journeyman Electrician) pero sitio Divi template 6/10 sin personalidad. La credencial tecnica del dueno merece un sitio que transmita profesionalismo.",
+      "siguiente_paso": "/scraping https://psalm23handyman.com/"
+    },
+    {
+      "negocio": "Fork and Plough",
+      "categoria": "restaurante farm-to-table / catering",
+      "url": "https://www.forkandplough.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "B",
+      "problemas": [
+        "Beaver Builder con CSS inflado",
+        "Paleta de colores conservadora",
+        "Tipografia que podria ser mas contemporanea",
+        "Diseno que no destaca en sector restaurantes competitivo",
+        "Sin identidad visual memorable"
+      ],
+      "oportunidad": "Restaurante farm-to-table con carniceria y tienda local — concepto premium — pero sitio Beaver Builder 7/10 que no transmite la experiencia culinaria. En el sector restaurantes, el diseno web vende tanto como el menu.",
+      "siguiente_paso": "/scraping https://www.forkandplough.com/"
+    },
+    {
+      "negocio": "Allspice Photography",
+      "categoria": "fotografia de eventos / negocios",
+      "url": "https://allspicephotography.com/",
+      "google_maps": null,
+      "telefono": null,
+      "score": "B",
+      "problemas": [
+        "Sin meta description — fallo SEO",
+        "JavaScript inflado (analytics, tracking, welcome bar)",
+        "Diseno formulaico a pesar de ser negocio visual",
+        "Impacto en tiempos de carga por scripts excesivos",
+        "WordPress/Elementor sin optimizar"
+      ],
+      "oportunidad": "Fotografa de eventos, negocios y comida en Greenville con portafolio solido pero sitio WordPress 7/10 sin meta description y con performance afectada por scripts. Un sitio mas ligero y optimizado mejoraria su visibilidad en busquedas.",
+      "siguiente_paso": "/scraping https://allspicephotography.com/"
+    }
+  ],
+  "resumen": {
+    "score_a": 6,
+    "score_b": 14,
+    "descartados": 12
+  }
+}

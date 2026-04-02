@@ -1,0 +1,147 @@
+{
+  "negocio": "Greenville Handyman Services, LLC.",
+  "url": "http://greenvillehandymanservices.com/",
+  "sector": "Servicios de mantenimiento y reparación del hogar / Handyman Services",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Greenville Handy Man Service",
+    "description": "Greenville Handyman Services License, bond and Insured technicians. We do commercial contractor and residential contractor in the area South Carolina We are a profession service that do it all. Call 864-299-1005",
+    "keywords": "handyman services, home remodeling, home improvement, Custom Home Renovations, bathroom remodel, remodel contractor, bathroom designs, bathroom design, contractor for bathroom, remodeling contractor, remodeling companies, remodeling, residential contract"
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#e17a00",
+    "secundario": "#fbcf00",
+    "acento": "#006400",
+    "fondo": "#ffffff",
+    "texto": "#555555",
+    "otros": [
+      "#000000",
+      "#f07d00",
+      "#c29521",
+      "#424242",
+      "#d5d5d2",
+      "#afafae",
+      "#2d2d2d"
+    ]
+  },
+  "logo": {
+    "url": "http://greenvillehandymanservices.com/images/TopLogo.jpg",
+    "descripcion": "Logo de Greenville Handyman Services, LLC. con texto del nombre del negocio",
+    "posicion": "header izquierda",
+    "colores": []
+  },
+  "tipografias": [
+    {
+      "nombre": "Arial, Helvetica, sans-serif",
+      "uso": "cuerpo de texto, navegación, general",
+      "peso": "normal / bold",
+      "tamanio_aprox": "12px (body), 10pt (nav)"
+    },
+    {
+      "nombre": "Calibri",
+      "uso": "texto destacado en sección Contact Us",
+      "peso": "normal",
+      "tamanio_aprox": "12px"
+    }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "http://greenvillehandymanservices.com/" },
+    { "label": "Contact Us", "url": "http://greenvillehandymanservices.com/Contact-Us" },
+    { "label": "Residential", "url": "http://greenvillehandymanservices.com/Residential-Services" },
+    { "label": "Commercial", "url": "http://greenvillehandymanservices.com/Commercial-Services" },
+    { "label": "Additions/Remodel", "url": "http://greenvillehandymanservices.com/Additions--Remodel" },
+    { "label": "Handicap", "url": "http://greenvillehandymanservices.com/Custom-Handicap-Needs" },
+    { "label": "Sunrooms/Screen Porches", "url": "http://greenvillehandymanservices.com/Sunrooms--Screen-Porches" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": null,
+      "contenido": null,
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "http://greenvillehandymanservices.com/images/TopPOV.jpg",
+          "alt": "Residential, Commercial & Industrial",
+          "descripcion": "Banner principal mostrando texto Residential, Commercial & Industrial",
+          "tipo": "banner",
+          "dimensiones": "962x424"
+        }
+      ]
+    },
+    {
+      "tipo": "about",
+      "titulo": "About Us",
+      "contenido": "We strive to raise the bar by compiling a handyman team of general contractors to handle all your maintenance and repair needs.",
+      "cta": "Details",
+      "imagenes": [
+        {
+          "url": "https://files.stablerack.com/WebFiles/78010/HP-TN-OurServices.jpg",
+          "alt": "Our Services",
+          "descripcion": "Thumbnail de servicios ofrecidos",
+          "tipo": "thumbnail",
+          "dimensiones": "182x144"
+        }
+      ]
+    },
+    {
+      "tipo": "contacto",
+      "titulo": "Contact Us",
+      "contenido": "PROMPT,SAFE, RELIABLE, LICENSED, BONDED, INSURED\n\nFamily owned and operated for over 35 successful years.",
+      "cta": "Details",
+      "imagenes": [
+        {
+          "url": "https://files.stablerack.com/WebFiles/78010/HP-TN-ContactUs.jpg",
+          "alt": "Contact Us",
+          "descripcion": "Thumbnail de contacto",
+          "tipo": "thumbnail",
+          "dimensiones": "182x144"
+        }
+      ]
+    },
+    {
+      "tipo": "bienvenida",
+      "titulo": "Welcome to Our Website!",
+      "contenido": "Our handyman team are the experts in home remodeling, maintenance, and repair. We have the tools, skills and time for those odd jobs you've been planning to do. One call will cover it all. We are the #1 local service provider. Serving Greenville and surrounding areas for over 15 years. Individually owned and operated.",
+      "cta": "Details",
+      "imagenes": [
+        {
+          "url": "https://files.stablerack.com/WebFiles/78010/HP-Box.jpg",
+          "alt": "Prompt. Safe. Reliable. Licensed. Bonded. Insured.",
+          "descripcion": "Banner con valores de la empresa: Prompt. Safe. Reliable. Licensed. Bonded. Insured.",
+          "tipo": "badge",
+          "dimensiones": "369x81"
+        }
+      ]
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Prompt. Safe. Reliable. Licensed. Bonded. Insured.",
+    "propuesta_valor": "Our handyman team are the experts in home remodeling, maintenance, and repair. We have the tools, skills and time for those odd jobs you've been planning to do. One call will cover it all. We are the #1 local service provider.",
+    "ctas": [
+      "Details",
+      "Contact Us"
+    ]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(864) 444-1598 / (864) 299-1005",
+    "whatsapp": null,
+    "email": null,
+    "direccion": null,
+    "horarios": null
+  },
+  "redes": [],
+  "formularios": [],
+  "footer": {
+    "contenido": "© 2012 - 2026 Greenville Handy Man Service - All Rights Reserved.",
+    "links": [
+      { "label": "Church Websites | Ministry Websites", "url": "http://www.netministry.com/?affiliateid=2874" },
+      { "label": "NetMinistry", "url": "http://www.netministry.com/?affiliateid=2874" }
+    ],
+    "copyright": "© 2012 - 2026 Greenville Handy Man Service - All Rights Reserved."
+  },
+  "tecnologia": "NetMinistry CMS (StableRack hosting), jQuery 3.6.3, jQuery UI 1.13.2, Bootstrap (fake), Font Awesome 6, Animate.css"
+}
