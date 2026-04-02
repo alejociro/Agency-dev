@@ -1,0 +1,249 @@
+{
+  "cliente": "Rudy's Rug Cleaning",
+  "url_auditada": "https://rudysrugcleaning.com/",
+  "sector": "Area rug cleaning services",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 50. Rudy's es un negocio de limpieza de alfombras con cobertura local en Charlottesville, VA. Se aplica el benchmark de servicio local porque opera con alcance geográfico limitado, clientela residencial y modelo de negocio basado en confianza y proximidad.",
+  "fecha": "2026-04-02",
+  "scores": {
+    "seo": 58,
+    "ux_ui": 62,
+    "marketing": 78,
+    "contenido": 74,
+    "tecnico": 70,
+    "total": 68
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title bien optimizado con keyword principal 'Area Rug Cleaning' + ubicación geográfica 'Charlottesville, VA' + nombre del negocio",
+        "H1 en hero incluye keyword relevante y localización: 'Trusted Rug Cleaning in Charlottesville, VA Since the 1960s'",
+        "Propuesta de valor visible inmediatamente en el hero, por encima del fold",
+        "JSON-LD LocalBusiness schema implementado, lo que mejora rich snippets en Google"
+      ],
+      "negativos": [
+        "Meta description completamente ausente — Google generará un snippet automático que puede no representar bien al negocio",
+        "Meta keywords ausentes (menor impacto pero indica falta de optimización on-page)",
+        "Imagen hero sin alt text — desperdicia oportunidad de keyword y afecta accesibilidad",
+        "CTAs genéricos como 'Learn more' no aportan valor semántico ni SEO",
+        "Navegación con 9 items es excesiva para un servicio local — diluye el link juice interno"
+      ],
+      "recomendaciones": [
+        {
+          "accion": "Añadir meta description optimizada: 'Professional area rug cleaning in Charlottesville, VA. Trusted since the 1960s. Gentle soap-based cleaning, pickup & delivery, transparent pricing. Call 434-296-7166.'",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Añadir alt text descriptivo a la imagen hero con keyword principal: 'Professional area rug cleaning service in Charlottesville Virginia'",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Reemplazar CTAs genéricos 'Learn more' por textos descriptivos como 'See our cleaning process' o 'View rug cleaning services'",
+          "prioridad": "media",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Consolidar navegación de 9 a 5-6 items: combinar 'Services' y 'Our Process', combinar 'Get a Quote' y 'Book Now' en un solo CTA",
+          "prioridad": "media",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Crear páginas de servicio individuales optimizadas para keywords long-tail: 'oriental rug cleaning charlottesville', 'pet stain rug cleaning VA', 'rug pad installation'",
+          "prioridad": "baja",
+          "tipo": "mejora_estructural"
+        }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Flujo de secciones lógico: hero → propuesta de valor → prueba social → servicios → diferenciadores — guía bien al usuario",
+        "Squarespace garantiza responsive/mobile-first por defecto con logo scaling adaptado (125px desktop, 61px mobile)",
+        "Paleta navy + blanco transmite profesionalismo y confianza, alineada con un servicio de cuidado del hogar"
+      ],
+      "negativos": [
+        "Paleta extremadamente limitada: solo navy (#1b2d45) y blanco (#ffffff), sin color de acento — los CTAs no destacan visualmente",
+        "Tipografía genérica de Squarespace sin personalización — no genera identidad visual memorable",
+        "Imágenes 100% stock de Unsplash — no hay fotos reales del negocio, equipo ni instalaciones, lo que reduce autenticidad",
+        "Sección de testimonios como carrusel de 20 items puede ser abrumadora y difícil de navegar en móvil"
+      ],
+      "recomendaciones": [
+        {
+          "accion": "Definir un color de acento (naranja cálido o dorado) para CTAs y elementos interactivos que contrasten con el navy y generen urgencia visual",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Reemplazar stock photos por fotografías reales del taller, proceso de limpieza, equipo y before/after de alfombras",
+          "prioridad": "alta",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Seleccionar una tipografía con personalidad (serif para headings como Playfair Display o Lora) que refuerce la tradición del negocio desde los 60s",
+          "prioridad": "media",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Limitar testimonios visibles a 4-6 destacados con opción de ver más, en lugar de carrusel de 20",
+          "prioridad": "media",
+          "tipo": "quick_win"
+        }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Prueba social excepcional: 20 testimonios reales con nombres, cubriendo diversos aspectos del servicio (calidad, puntualidad, precio, amabilidad)",
+        "Mensaje hero resuelve directamente la confianza: '60+ años sirviendo a Charlottesville' establece credibilidad inmediata",
+        "Propuesta de valor clara y específica: 'simple, honest, and effective' con diferenciadores concretos (soap-based, transparent pricing, pickup/delivery)",
+        "Múltiples canales de conversión: teléfono, booking online, quote request — reduce fricción según preferencia del usuario"
+      ],
+      "negativos": [
+        "CTA principal en hero es solo un número de teléfono — excluye a usuarios que prefieren acción digital inmediata (formulario, booking)",
+        "No hay pricing visible ni rango de precios — 'transparent pricing' se promete pero no se demuestra en la homepage",
+        "Falta urgencia o incentivo: el 10% de descuento por drop-off está enterrado en la sección de servicios, no se destaca",
+        "No hay sección de before/after que demuestre visualmente la transformación del servicio"
+      ],
+      "recomendaciones": [
+        {
+          "accion": "Añadir botón 'Book Now' o 'Get Free Quote' como CTA secundario en el hero junto al teléfono",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Destacar el 10% de descuento por drop-off como banner o badge visible — es un incentivo real que está oculto",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Añadir galería de before/after con fotos reales para demostrar resultados tangibles del servicio",
+          "prioridad": "media",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Incluir rango de precios orientativo o tabla de pricing por tamaño de alfombra para respaldar la promesa de 'transparent pricing'",
+          "prioridad": "media",
+          "tipo": "mejora_estructural"
+        }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Textos originales y específicos del negocio, con referencias concretas a la ubicación, historia y proceso",
+        "Información de contacto completa: teléfono, email, dirección física, horarios detallados por día",
+        "Proceso de limpieza explicado paso a paso con 5 etapas claras — genera transparencia y confianza",
+        "Sección FAQs existe como página dedicada en la navegación"
+      ],
+      "negativos": [
+        "Sección de Rug Pads es muy escueta — una sola oración sin detallar tipos, materiales ni beneficios específicos",
+        "FAQs no están presentes en la homepage — el usuario tiene que navegar a otra página para resolver objeciones",
+        "No hay contenido sobre el equipo, historia detallada ni valores del negocio en la homepage — 'About' está en otra página",
+        "Copyright y términos legales incompletos en el footer — no hay aviso de copyright visible"
+      ],
+      "recomendaciones": [
+        {
+          "accion": "Expandir la sección de Rug Pads con tipos disponibles (felt, rubber, custom-cut), beneficios y rangos de precio",
+          "prioridad": "media",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Añadir 3-5 preguntas frecuentes directamente en la homepage como sección FAQ para resolver objeciones sin navegación adicional",
+          "prioridad": "media",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Incluir mini-sección 'Meet the Team' o historia breve con foto real en la homepage para humanizar el negocio",
+          "prioridad": "baja",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Añadir copyright '© 2026 Rudy's Rugs LLC. All rights reserved.' en el footer",
+          "prioridad": "baja",
+          "tipo": "quick_win"
+        }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "JSON-LD LocalBusiness schema correctamente implementado con OpeningHoursSpecification y PostalAddress — mejora visibilidad en búsquedas locales",
+        "Integraciones de analytics completas: Google Analytics, Google Ads conversion tracking y Facebook Pixel — permite medir y optimizar campañas",
+        "HTTPS enforced con HSTS habilitado — seguridad correcta",
+        "reCAPTCHA Enterprise en formularios — protección contra spam"
+      ],
+      "negativos": [
+        "Squarespace 7.1 limita control sobre performance: JavaScript bundling pesado con múltiples rollups que afectan Core Web Vitals",
+        "Vendor lock-in total con Squarespace — migración futura requiere reconstrucción completa",
+        "No hay evidencia de optimización de imágenes (lazy loading nativo, WebP, srcset) más allá de lo que Squarespace ofrece por defecto",
+        "Campos de formularios no especificados en el scraping — posible falta de campos esenciales para calificación de leads"
+      ],
+      "recomendaciones": [
+        {
+          "accion": "Migrar a sitio estático (HTML + Tailwind) para mejorar velocidad de carga, eliminar JS innecesario de Squarespace y tener control total del código",
+          "prioridad": "alta",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Implementar imágenes en formato WebP con srcset responsive y lazy loading nativo para reducir peso de página",
+          "prioridad": "media",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Diseñar formulario de quote con campos específicos: tipo de alfombra, tamaño aproximado, tipo de limpieza, pickup/drop-off — para calificar leads antes del contacto",
+          "prioridad": "media",
+          "tipo": "mejora_estructural"
+        }
+      ],
+      "stack_actual": "Squarespace 7.1, Google Analytics, Google Ads, Facebook Pixel, reCAPTCHA Enterprise, JSON-LD schema",
+      "stack_recomendado": "HTML estático + Tailwind CSS + Alpine.js, con Formspree/Netlify Forms para formularios",
+      "integraciones": [
+        "Google Analytics (G-638W937X1C)",
+        "Google Ads Conversion (AW-17421408838)",
+        "Facebook Pixel (3412045742298152)",
+        "reCAPTCHA Enterprise",
+        "JSON-LD LocalBusiness schema",
+        "Trustpilot",
+        "Google Reviews"
+      ],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Añadir meta description optimizada con keywords locales y CTA — impacto directo en CTR de búsqueda orgánica",
+    "Definir color de acento para CTAs (naranja/dorado) para que los botones de conversión destaquen visualmente",
+    "Añadir botón 'Get Free Quote' como CTA digital en el hero junto al número de teléfono",
+    "Destacar el 10% de descuento por drop-off como badge o banner visible en la homepage",
+    "Añadir alt text descriptivo con keywords a todas las imágenes sin alt"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Añadir meta description optimizada",
+      "Añadir alt text a todas las imágenes",
+      "Definir color de acento y aplicar a CTAs",
+      "Añadir CTA digital (botón Book Now/Get Quote) en el hero",
+      "Destacar descuento 10% drop-off como elemento visual prominente",
+      "Reemplazar CTAs genéricos 'Learn more' por textos descriptivos"
+    ],
+    "mes_1": [
+      "Migrar sitio a HTML estático + Tailwind + Alpine.js",
+      "Reemplazar stock photos por fotografías reales del negocio y proceso",
+      "Añadir galería before/after de alfombras",
+      "Incluir sección FAQ en homepage con 3-5 preguntas principales",
+      "Diseñar formulario de quote con campos de calificación de leads",
+      "Seleccionar tipografía con personalidad que refuerce la tradición del negocio",
+      "Consolidar navegación de 9 a 5-6 items"
+    ],
+    "largo_plazo": [
+      "Crear páginas de servicio individuales optimizadas para keywords long-tail",
+      "Incluir sección 'Meet the Team' con historia y fotos reales",
+      "Expandir contenido de Rug Pads con tipos, materiales y pricing",
+      "Implementar tabla de pricing orientativa por tamaño de alfombra",
+      "Añadir copyright y completar información legal en footer"
+    ]
+  },
+  "resumen_ejecutivo": "El sitio de Rudy's Rug Cleaning tiene una base sólida de marketing con 20 testimonios reales y una propuesta de valor clara, pero está frenado por una presencia visual genérica (stock photos, sin color de acento, tipografía por defecto) y gaps críticos de SEO como la ausencia de meta description. La mayor oportunidad está en migrar de Squarespace a un sitio estático rápido con identidad visual propia que convierta la excelente reputación del negocio en más leads digitales. El próximo paso inmediato es ejecutar los 5 quick wins de SEO y UX que pueden mejorar conversiones sin tocar la estructura del sitio.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["alpinejs", "formspree"],
+    "justificacion": "Negocio local de baja complejidad con sitio informativo + formularios de contacto. HTML estático + Tailwind + Alpine.js ofrece máxima velocidad de carga, cero dependencias de framework, fácil mantenimiento y hosting gratuito en Netlify/Vercel. Alpine.js cubre interactividad mínima (menú móvil, carrusel de testimonios, FAQ accordion). Formspree maneja formularios sin backend."
+  }
+}

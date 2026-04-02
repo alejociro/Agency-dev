@@ -1,0 +1,177 @@
+{
+  "negocio": "Rudy's Rug Cleaning",
+  "url": "https://rudysrugcleaning.com/",
+  "sector": "Area rug cleaning services",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Area Rug Cleaning in Charlottesville, VA | Rudy's Rug Cleaning",
+    "description": null,
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#1b2d45",
+    "secundario": "#ffffff",
+    "acento": null,
+    "fondo": "#ffffff",
+    "texto": "#1b2d45",
+    "otros": []
+  },
+  "logo": {
+    "url": "https://images.squarespace-cdn.com/content/v1/680bb78b9e5fdd092291740a/22a6b5c1-2c90-416d-bf7b-a32acb80eb24/Logo_Navy.png?format=1500w",
+    "descripcion": "Logo en color navy, formato rectangular",
+    "posicion": "Header",
+    "colores": ["navy"]
+  },
+  "tipografias": [
+    {
+      "nombre": null,
+      "uso": "Squarespace default typography system",
+      "peso": "Regular, Bold",
+      "tamanio_aprox": null
+    }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "/" },
+    { "label": "About", "url": "/about" },
+    { "label": "Services", "url": "/services" },
+    { "label": "Our Process", "url": "/rudys-rug-cleaning-process" },
+    { "label": "FAQs", "url": "/faqs" },
+    { "label": "Tips & Advice", "url": "/tips" },
+    { "label": "Get a Quote", "url": "/get-a-quote" },
+    { "label": "Book Now", "url": "/book" },
+    { "label": "Contact", "url": "/contact" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Trusted Rug Cleaning in Charlottesville, VA Since the 1960s",
+      "contenido": "Locally-owned and operated, Rudy's Rug Cleaning has been helping Charlottesville and Albemarle area families care for their rugs for over 60 years.",
+      "cta": "Call or text 434-296-7166",
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/680bb78b9e5fdd092291740a/1745605626315-ICMXEVVNQKXTU8LXQSXV/unsplash-image-dWm94DekLBg.jpg",
+          "alt": null,
+          "descripcion": "Hero background image",
+          "tipo": "background",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "propuesta-de-valor",
+      "titulo": null,
+      "contenido": "At Rudy's Rug Cleaning, we believe caring for your rugs should be simple, honest, and effective. Since the 1960s, families across the greater Charlottesville area have trusted us to refresh and restore their favorite rugs using time-tested methods, gentle soap-based cleaning, and transparent pricing. Whether you're dealing with everyday dirt or stubborn pet stains, we're here to help — with pickup and delivery options to make it even easier.",
+      "cta": "Learn more",
+      "imagenes": []
+    },
+    {
+      "tipo": "testimonios",
+      "titulo": "Rated EXCELLENT on TrustPilot and Google:",
+      "contenido": "Holly F.: \"Hands down the best in the biz. I have used them for 14 years...\"\nPat P.: \"Great job on my rug, and I was so happy to meet the new owners...\"\nBrian T.: \"The experience from start to finish was excellent! Very good communication...\"\nLynne B.: \"Very professional, efficient service. I used Rudy's once before when I moved...\"\nTG: \"Rudy's friendly staff and expert rug cleaning make them my go-to...\"\nKris: \"I have no worries when I use the Rudy's rug cleaning services...\"\nAllan T.: \"Rudy's did an outstanding job cleaning our rug! They took the heavy rug...\"\nTerry H.: \"Easy to drop off and pick up, cleaned in a timely manner...\"\nFred G.: \"First-rate. Rudy's picked-up, cleaned, delivered and put-back four carpets...\"\nKatie F.: \"Our first time getting high-end wool rugs cleaned. After reading reviews...\"\nAlyce: \"The people were great. The carpet came out better than new...\"\nNancy S.: \"I am always concerned that handmade rugs be carefully cleaned...\"\nMary M.: \"They were friendly, trusting and knowledgeable about rug cleaning...\"\nOutlaw Design Company: \"My drop off experience couldn't have been better...\"\nLiza E.: \"Pick up and delivery were right on time! And the rug looks so good!\"\nElizabeth L.: \"ALWAYS timely, thorough, and terrific.\"\nLeslie: \"Helpful, careful, and friendly\"\nAmy G.: \"Guys were pleasant and very helpful about rug placement...\"\nJohn & Kathy D.: \"Always welcoming, rugs cleaned and affordable. Thank you so much!\"\nLinda H.: \"Really nice staff and my rugs look fantastic. I don't live in Charlottesville...\"",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Professional Rug Cleaning",
+      "contenido": "We follow a multi-step process that gently but thoroughly washes your rug:\n- Dusting to remove embedded grit\n- Soaking in cold water with plant-based detergent\n- Gentle agitation to release soil and odors\n- Centrifuge spinning for moisture removal\n- Hanging & drying in a climate-controlled room\n\nLearn more about our rug cleaning process and the services we offer.",
+      "cta": "Learn more",
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/680bb78b9e5fdd092291740a/1745605936784-RHQQ3J49RZK4U3HQ8VN7/unsplash-image-gB9hryu1q40.jpg",
+          "alt": "Close-up of a colorful woven rug with traditional patterns, partially rolled up to reveal the underside, on a tiled floor with a person's bare feet nearby.",
+          "descripcion": "Imagen de limpieza profesional de alfombras",
+          "tipo": "content",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Convenient Pick Up & Delivery",
+      "contenido": "Busy schedule? Let us handle the logistics. We offer:\n- Pickup and delivery services in Charlottesville and surrounding areas\n- 10% discount for customers who drop off at our location\n\nVisit us at 605 Cami Lane, or schedule a pickup through our online booking link.",
+      "cta": "Book Now",
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/680bb78b9e5fdd092291740a/1745606122519-TAP9KDHTZZ4PJN1AH4HX/unsplash-image-YiSD-1eJ_1g.jpg",
+          "alt": "A small cardboard box labeled 'Fragile Handle With Care' is being held on a person's hand with sunlight in the background.",
+          "descripcion": "Imagen de servicio de recogida y entrega",
+          "tipo": "content",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Rug Pads",
+      "contenido": "Protect your floors and extend the life of your rug with our high-quality rug pads — customized to fit your space perfectly. Click here to get a quote.",
+      "cta": "Get a Quote",
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/680bb78b9e5fdd092291740a/1745606227810-HCN5AH1KDG0ZZ0ZKQ3KZ/unsplash-image-i2NNdKaJQh0.jpg",
+          "alt": "Close-up of a rolled-up patterned Persian rug with intricate circular and geometric designs in black, red, beige, and orange colors.",
+          "descripcion": "Imagen de rug pads",
+          "tipo": "content",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "diferenciadores",
+      "titulo": "Why choose Rudy's?",
+      "contenido": "- Serving Charlottesville since the 1960s\n- Locally owned and operated\n- Simple, soap-based cleaning formulas\n- Transparent pricing — no hidden fees\n- Trusted by generations of local families",
+      "cta": "Learn more",
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/680bb78b9e5fdd092291740a/c7ce68a4-b92d-4392-b6b0-32185d449412/unsplash-image-qvWnGmoTbik.jpg",
+          "alt": "Chalkboard sign with wooden frame displaying a handwritten message that reads, 'Thank you for shopping local' in white chalk.",
+          "descripcion": "Imagen de apoyo local",
+          "tipo": "content",
+          "dimensiones": null
+        }
+      ]
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Trusted Rug Cleaning in Charlottesville, VA Since the 1960s",
+    "propuesta_valor": "At Rudy's Rug Cleaning, we believe caring for your rugs should be simple, honest, and effective. Since the 1960s, families across the greater Charlottesville area have trusted us to refresh and restore their favorite rugs using time-tested methods, gentle soap-based cleaning, and transparent pricing.",
+    "ctas": [
+      "Call or text 434-296-7166",
+      "Learn more",
+      "Book Now",
+      "Get a Quote",
+      "Leave us a review on Google"
+    ]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "434-296-7166",
+    "whatsapp": null,
+    "email": "hello@rudysrugcleaning.com",
+    "direccion": "605 Cami Lane, Charlottesville, VA 22902",
+    "horarios": "Monday: 8am–5pm | Tuesday–Friday: 8am–2pm | Saturday: 9am–12pm | Sunday: Closed"
+  },
+  "redes": [
+    { "plataforma": "Instagram", "url": "https://www.instagram.com/rudysrugcleaning/" },
+    { "plataforma": "Facebook", "url": "https://www.facebook.com/profile.php?id=61578800618063&mibextid=LQQJ4d" },
+    { "plataforma": "Trustpilot", "url": "https://www.trustpilot.com/review/rudysrugcleaning.com" },
+    { "plataforma": "Google Reviews", "url": "https://g.page/r/CVz9O4No32NZEBM" }
+  ],
+  "formularios": [
+    { "proposito": "Get a Quote", "campos": [] },
+    { "proposito": "Book Now", "campos": [] },
+    { "proposito": "Contact", "campos": [] }
+  ],
+  "footer": {
+    "contenido": "Rudy's Rug Cleaning\n605 Cami Lane, Charlottesville, VA 22902\nhello@rudysrugcleaning.com\n434-296-7166\n\nHours:\nMonday: 8am–5pm\nTuesday–Friday: 8am–2pm\nSaturday: 9am–12pm\n\nLeave us a review by scanning the QR code or clicking the link!",
+    "links": [
+      { "label": "Terms of Service", "url": "/policies" },
+      { "label": "Leave us a review on Google", "url": "https://g.page/r/CVz9O4No32NZEBM" },
+      { "label": "Trustpilot", "url": "https://www.trustpilot.com/review/rudysrugcleaning.com" }
+    ],
+    "copyright": null
+  },
+  "tecnologia": "Squarespace 7.1, Google Analytics (G-638W937X1C), Google Ads (AW-17421408838), Facebook Pixel (3412045742298152), reCAPTCHA Enterprise, JSON-LD LocalBusiness schema"
+}
