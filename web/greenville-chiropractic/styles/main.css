@@ -526,4 +526,13 @@
     background: var(--color-surface-alt);
     border-radius: var(--radius-md);
   }
+
+  /* ---- FAQ header sticky (desktop only) ---- */
+
+  .faq__header {
+    @media (min-width: 768px) {
+      position: sticky;
+      top: 6rem;
+    }
+  }
 }

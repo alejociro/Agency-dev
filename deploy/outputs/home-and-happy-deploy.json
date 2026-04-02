@@ -1,0 +1,7 @@
+{
+  "negocio": "home-and-happy",
+  "url_produccion": "https://home-and-happy.vercel.app",
+  "fecha_deploy": "2026-04-02",
+  "stack": "html",
+  "carpeta_origen": "web/home-and-happy"
+}
