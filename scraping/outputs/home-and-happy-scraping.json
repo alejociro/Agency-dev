@@ -1,0 +1,311 @@
+{
+  "negocio": "Home & Happy",
+  "url": "https://www.homeandhappy.us/",
+  "sector": "Home Improvement / Handyman Services",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Home & Happy | Get Your Home Improved Today",
+    "description": null,
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#2d6a4f",
+    "secundario": "#ffffff",
+    "acento": "#40916c",
+    "fondo": "#ffffff",
+    "texto": "#1a1a1a",
+    "otros": []
+  },
+  "logo": {
+    "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/67cf6e9d-33c5-4aad-b020-7e14dcd653ce/Home+%26+Happy+4+light.png?format=1500w",
+    "descripcion": "Logo de Home & Happy en versión clara",
+    "posicion": "header top-left",
+    "colores": ["blanco", "verde"]
+  },
+  "tipografias": [
+    {
+      "nombre": "primeform-pro-demo",
+      "uso": "títulos y encabezados",
+      "peso": "400",
+      "tamanio_aprox": "48px / 3rem"
+    },
+    {
+      "nombre": "millaris-personal-use-only",
+      "uso": "texto decorativo / cuerpo",
+      "peso": "400",
+      "tamanio_aprox": "22px / 1.4rem"
+    }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "/" },
+    { "label": "Services", "url": "/services" },
+    { "label": "Gallery", "url": "/gallery" },
+    { "label": "Reviews", "url": "/reviews" },
+    { "label": "About", "url": "/about" },
+    { "label": "Contact", "url": "/contact" },
+    { "label": "Blog", "url": "/new-blog" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "More than a h❤ndyman",
+      "contenido": "local, insured & family-run",
+      "cta": "GET A QUOTE",
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/9164824a-198a-4efa-852d-f9f8352b968b/IMG_8761-1+copy.jpg",
+          "alt": null,
+          "descripcion": "Imagen de fondo hero — familia o trabajo de mejora del hogar",
+          "tipo": "background",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "about",
+      "titulo": "Who we are",
+      "contenido": "We are family owned and operated, with a vision of providing fantastic service at great value whilst making strong and stable connections with our clients. We have earned a reputation locally for providing impeccable customer service through our reliability, professionalism and genuine warmth.",
+      "cta": "About Us",
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/08842e3f-a44c-408e-92de-d6615462fba8/Family+professh.jpg",
+          "alt": "We are a family-run, local, small business that loves to serve our wonderful city of Greenville, SC",
+          "descripcion": "Foto familiar profesional del equipo de Home & Happy",
+          "tipo": "foto",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Our Services",
+      "contenido": null,
+      "cta": "Contact Us",
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/6c6050b2-faa2-4813-991c-0d0011f1d58d/After+1.jpg",
+          "alt": "Interior painting services at affordable prices with friendly painters",
+          "descripcion": "Interior Painting",
+          "tipo": "servicio",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/a9b958d5-be7a-409f-ad93-b65f3fe2c47c/Bathroom+reno+before.jpg",
+          "alt": "Bathroom renovation and tiling projects in Greenville SC - handyman near me",
+          "descripcion": "Tiling",
+          "tipo": "servicio",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/1763647164066-6FBCLX6F7VHU6ZNUJZ2C/unsplash-image-NfG4rXmceFM.jpg",
+          "alt": "Skilled carpenter near me and handyman near me in Greenville, SC",
+          "descripcion": "Light Plumbing",
+          "tipo": "servicio",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/7e097dc9-9d57-4be9-8327-9aafae58b501/Railings+BEFORE.jpg",
+          "alt": "Deck repair and deck railing replacement in Greenville SC - handyman near me",
+          "descripcion": "Fascia & Soffit Repair",
+          "tipo": "servicio",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/0234148d-8130-4f82-becf-7aa42c53962b/KITCHEN+AFTER+JPEG.jpg",
+          "alt": "Kitchen renovation in Greenville, SC for a stunning transformation",
+          "descripcion": "Drywall Repair",
+          "tipo": "servicio",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/a3d471f0-78dd-4d9f-9cdc-b7a4b384a4c0/Shelving+unit.jpg",
+          "alt": "Custom shelving by skilled carpenter and handyman near me in Greenville, SC",
+          "descripcion": "Custom Shelving",
+          "tipo": "servicio",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/86c8af4c-f3c7-4145-9a7a-b70248c2ea61/Accent+wall+2+AFTER.jpg",
+          "alt": "Ceiling fan replacement - light fixture replacement near me in Greenville, SC",
+          "descripcion": "Light Electrical",
+          "tipo": "servicio",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/da2c35b1-79a5-413a-a721-734b3945a79e/Accent+wall+1+AFTER.jpg",
+          "alt": "Feature walls - custom shelves - carpenter near me",
+          "descripcion": "Vinyl Flooring",
+          "tipo": "servicio",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/e006a063-4539-4674-a1b9-a74389cadde7/Wainscoting+after.jpg",
+          "alt": "Wainscoting and feature walls are easy and fast with our skilled handyman in Greenville SC",
+          "descripcion": "Wainscoting",
+          "tipo": "servicio",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/237438c2-fd12-404f-bb2b-c67c46fd6e30/Deck+steps+after.jpg",
+          "alt": "Deck stairs - deck repair and renovation near me",
+          "descripcion": "Deck/Fence Repair",
+          "tipo": "servicio",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/4458777a-6d77-4d1f-9a1e-ca792b3b2883/Tile+job+after+2.jpg",
+          "alt": null,
+          "descripcion": "Ceramic Tiling",
+          "tipo": "servicio",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "galeria",
+      "titulo": null,
+      "contenido": "Carrusel de 45 imágenes de proyectos completados (before/after)",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/c8d67b87-a2fa-44b0-9d28-fa789be2478a/POrch+pillar+after+2.jpg",
+          "alt": "Porch column repair",
+          "descripcion": "Reparación de columna de porche — después",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/4458777a-6d77-4d1f-9a1e-ca792b3b2883/Tile+job+after+2.jpg",
+          "alt": "Tiling - kitchen tiling",
+          "descripcion": "Trabajo de azulejo de cocina — después",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/1689f7a9-ee27-4d30-9b5b-28776f356988/Tile+job+after+1.jpg",
+          "alt": "Retiling kitchen",
+          "descripcion": "Re-azulejo de cocina — después",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/c43ba29a-523a-40d2-8951-51a83799e5a8/Stone+arch.jpg",
+          "alt": "Masonry - mason near me",
+          "descripcion": "Arco de piedra — trabajo de mampostería",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/45429c11-c7fa-41a4-a2c7-da749ca596c4/Wheelchair+ramp.jpg",
+          "alt": "Custom built wheelchair ramp",
+          "descripcion": "Rampa para silla de ruedas construida a medida",
+          "tipo": "galeria",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "testimonios",
+      "titulo": null,
+      "contenido": null,
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "premio",
+      "titulo": null,
+      "contenido": null,
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6792ea414aa0dd341fef50af/7c7dea8f-3336-4e7f-b2a7-68290b5648c8/Digital+Badge+-+2024+Award+Winner.png",
+          "alt": "2024 Award Winner Badge",
+          "descripcion": "Insignia digital de ganador de premio 2024",
+          "tipo": "badge",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "cta",
+      "titulo": "Schedule a time with us",
+      "contenido": "Ready to embark on your next home project? Schedule an appointment with our friendly team today and let's bring your vision to life together!",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "More than a handyman",
+    "propuesta_valor": "We are family owned and operated, with a vision of providing fantastic service at great value whilst making strong and stable connections with our clients. We have earned a reputation locally for providing impeccable customer service through our reliability, professionalism and genuine warmth.",
+    "ctas": ["GET A QUOTE", "About Us", "Contact Us", "Schedule a time with us"]
+  },
+  "testimonios": [
+    {
+      "texto": "They treat our rental property like they would their own home",
+      "autor": "Kayla Leader"
+    },
+    {
+      "texto": "Very thorough and pay attention to every detail of your home",
+      "autor": "Jennifer Bishop"
+    },
+    {
+      "texto": "I look forward to using Home and Happy again!",
+      "autor": "Ali Teeslink"
+    },
+    {
+      "texto": "Incredibly kind, easy to work with, professional and thorough",
+      "autor": "Ivan Lacey"
+    },
+    {
+      "texto": "I could not recommend this business highly enough",
+      "autor": "Taylor Warren"
+    },
+    {
+      "texto": "Personable and professional...quality work!",
+      "autor": "Peggy Collins"
+    }
+  ],
+  "servicios_lista": [
+    "Interior Painting",
+    "Tiling",
+    "Light Plumbing",
+    "Fascia & Soffit Repair",
+    "Drywall Repair",
+    "Custom Shelving",
+    "Light Electrical",
+    "Vinyl Flooring",
+    "Kitchen Reno",
+    "Wainscoting",
+    "Carpentry",
+    "Deck/Fence Repair",
+    "Ceramic Tiling"
+  ],
+  "videos": [],
+  "contacto": {
+    "telefono": null,
+    "whatsapp": null,
+    "email": null,
+    "direccion": "Greenville, SC",
+    "horarios": null
+  },
+  "redes": [
+    { "plataforma": "Facebook", "url": "http://facebook.com" },
+    { "plataforma": "Instagram", "url": "http://instagram.com" },
+    { "plataforma": "X/Twitter", "url": "http://x.com" },
+    { "plataforma": "Pinterest", "url": "http://pinterest.com" }
+  ],
+  "formularios": [
+    {
+      "proposito": "Solicitar cotización / agendar cita",
+      "campos": ["Nombre", "Dirección (US format)", "Teléfono", "Campos adicionales"]
+    }
+  ],
+  "footer": {
+    "contenido": null,
+    "links": [],
+    "copyright": null
+  },
+  "tecnologia": "Squarespace 7.1 (template triangle-green-n3n9) — SSR con JS enhancement, Google Analytics G-FGSF294N25, reCAPTCHA Enterprise, Facebook SDK"
+}

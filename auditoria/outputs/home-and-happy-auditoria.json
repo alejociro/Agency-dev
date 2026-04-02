@@ -1,0 +1,221 @@
+{
+  "cliente": "Home & Happy",
+  "url_auditada": "https://www.homeandhappy.us/",
+  "sector": "Home Improvement / Handyman Services",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO:55 UX:60 Marketing:60 Contenido:65 Técnico:50. Aplicado por ser negocio de servicios locales (handyman) en Greenville, SC, orientado a clientes residenciales de su zona.",
+  "fecha": "2026-04-01",
+  "scores": {
+    "seo": 52,
+    "ux_ui": 68,
+    "marketing": 70,
+    "contenido": 42,
+    "tecnico": 65,
+    "total": 59
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title presente y descriptivo: 'Home & Happy | Get Your Home Improved Today' — incluye keyword principal",
+        "Imágenes de servicios con alt text optimizado incluyendo keywords locales ('handyman near me', 'Greenville SC')",
+        "CTA principal 'GET A QUOTE' es directo y orientado a acción"
+      ],
+      "negativos": [
+        "Meta description ausente — se pierde control sobre el snippet en resultados de búsqueda",
+        "H1 usa emoji ('More than a h❤ndyman') lo que puede dificultar el crawleo y no es ideal para SEO",
+        "No hay keywords definidas en meta tags",
+        "Estructura de headings no clara — secciones sin jerarquía H2/H3 visible",
+        "Varias imágenes de galería y hero sin alt text (null)"
+      ],
+      "recomendaciones": [
+        {
+          "accion": "Añadir meta description optimizada: 'Home & Happy — family-owned handyman services in Greenville, SC. Painting, tiling, carpentry & more. Get a free quote today.'",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Reemplazar emoji en H1 por texto plano: 'More Than a Handyman' para mejorar crawleabilidad",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Añadir alt text descriptivo a todas las imágenes que actualmente tienen null",
+          "prioridad": "media",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Establecer jerarquía de headings clara: H1 en hero, H2 para cada sección (Services, Gallery, Reviews), H3 para servicios individuales",
+          "prioridad": "media",
+          "tipo": "mejora_estructural"
+        }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores consistente y profesional — verde (#2d6a4f) transmite confianza y naturaleza, alineado con el sector home improvement",
+        "Flujo de secciones lógico: Hero → About → Services → Gallery → Testimonials → CTA final",
+        "Galería extensa con 45 imágenes de proyectos before/after — genera confianza visual"
+      ],
+      "negativos": [
+        "Tipografías son versiones demo/personal-use ('primeform-pro-demo', 'millaris-personal-use-only') — riesgo legal y percepción poco profesional",
+        "Acento (#40916c) es muy cercano al primario (#2d6a4f) — poca diferenciación, los CTAs pueden no destacar suficiente",
+        "Sin evidencia de diseño mobile-first propio — depende completamente del template de Squarespace"
+      ],
+      "recomendaciones": [
+        {
+          "accion": "Reemplazar tipografías demo por fuentes con licencia comercial (ej: Montserrat o Poppins para títulos, Inter o Open Sans para cuerpo)",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Elegir un color de acento con mayor contraste respecto al verde principal (ej: dorado/ámbar #D4A843) para destacar CTAs",
+          "prioridad": "media",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Optimizar la galería: limitar a 12–15 mejores proyectos con filtros por categoría en lugar de 45 imágenes en carrusel",
+          "prioridad": "media",
+          "tipo": "mejora_estructural"
+        }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Propuesta de valor diferenciada: 'family owned and operated' + 'local, insured' genera confianza inmediata",
+        "6 testimonios reales de clientes con nombre completo — buena prueba social",
+        "Insignia de premio 2024 (Award Winner Badge) refuerza credibilidad"
+      ],
+      "negativos": [
+        "El mensaje hero ('More than a handyman') es aspiracional pero no resuelve un dolor concreto del cliente",
+        "No hay números ni datos cuantificables (años de experiencia, proyectos completados, calificación promedio)",
+        "CTAs secundarios son genéricos ('About Us', 'Contact Us') — no comunican beneficio"
+      ],
+      "recomendaciones": [
+        {
+          "accion": "Reformular hero para incluir dolor + solución: 'Your Greenville Home Deserves Better — Trusted, Insured Handyman Services for Every Room'",
+          "prioridad": "alta",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Añadir métricas de confianza: número de proyectos completados, años en servicio, rating promedio de reseñas",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Cambiar CTAs secundarios a texto orientado a beneficio: 'See Our Work' en vez de 'About Us', 'Get Your Free Quote' en vez de 'Contact Us'",
+          "prioridad": "media",
+          "tipo": "quick_win"
+        }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Sección 'Who we are' con texto original, personal y específico al negocio",
+        "Lista completa de 13 servicios ofrecidos — cobertura amplia",
+        "Testimonios con textos variados que destacan diferentes cualidades (detalle, profesionalismo, amabilidad)"
+      ],
+      "negativos": [
+        "Información de contacto gravemente incompleta: sin teléfono, sin email, sin horarios — solo ciudad 'Greenville, SC'",
+        "Servicios listados sin descripción individual — el cliente no sabe qué incluye cada servicio ni rangos de precio",
+        "No existe sección FAQ ni manejo de objeciones comunes (costos, tiempos, garantías, seguros)",
+        "Enlaces de redes sociales son genéricos (facebook.com, instagram.com) — no apuntan a perfiles reales del negocio",
+        "Footer vacío: sin copyright, sin enlaces, sin información de contacto"
+      ],
+      "recomendaciones": [
+        {
+          "accion": "Añadir información de contacto completa: teléfono, email, horarios de atención y área de servicio",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Crear descripción breve (2-3 oraciones) para cada servicio explicando qué incluye y beneficio principal",
+          "prioridad": "alta",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Añadir sección FAQ con 5-8 preguntas frecuentes: áreas de cobertura, proceso de cotización, seguros, garantías, tiempos estimados",
+          "prioridad": "media",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Corregir enlaces de redes sociales para apuntar a los perfiles reales del negocio",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Squarespace 7.1 ofrece hosting, SSL y CDN integrados — mantenimiento bajo para un negocio pequeño",
+        "Google Analytics (G-FGSF294N25) implementado para tracking",
+        "reCAPTCHA Enterprise en formularios — protección anti-spam moderna"
+      ],
+      "negativos": [
+        "Template genérico de Squarespace (triangle-green-n3n9) limita personalización y diferenciación",
+        "Tipografías demo/personal-use pueden generar problemas legales de licencia",
+        "Facebook SDK cargado pero enlaces sociales son genéricos — peso innecesario sin funcionalidad real"
+      ],
+      "recomendaciones": [
+        {
+          "accion": "Migrar a sitio propio con stack ligero (HTML + Tailwind + Alpine.js) para mayor control, velocidad y diferenciación visual",
+          "prioridad": "media",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Eliminar Facebook SDK si no se usa activamente — reduce peso de carga innecesario",
+          "prioridad": "baja",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Implementar schema markup LocalBusiness para mejorar presencia en búsquedas locales y Google Maps",
+          "prioridad": "alta",
+          "tipo": "mejora_estructural"
+        }
+      ],
+      "stack_actual": "Squarespace 7.1 (template triangle-green-n3n9) — SSR con JS enhancement, Google Analytics, reCAPTCHA Enterprise, Facebook SDK",
+      "stack_recomendado": "HTML estático + Tailwind CSS + Alpine.js — sitio ligero, rápido y totalmente personalizable para un negocio local de baja complejidad",
+      "integraciones": [
+        "Google Analytics (mantener)",
+        "reCAPTCHA o Turnstile para formulario de contacto",
+        "Schema markup LocalBusiness + Service",
+        "Google Business Profile integración"
+      ],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Añadir meta description optimizada con keywords locales y de servicio",
+    "Completar información de contacto: teléfono, email, horarios",
+    "Reemplazar tipografías demo por fuentes con licencia comercial (Google Fonts)",
+    "Corregir enlaces de redes sociales a los perfiles reales del negocio",
+    "Añadir métricas de confianza en hero o sección dedicada (proyectos, años, rating)"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Añadir meta description y corregir H1 sin emoji",
+      "Completar datos de contacto (teléfono, email, horarios)",
+      "Corregir URLs de redes sociales a perfiles reales",
+      "Reemplazar fuentes demo por fuentes con licencia",
+      "Añadir métricas de confianza cuantificables"
+    ],
+    "mes_1": [
+      "Crear descripciones individuales para cada servicio",
+      "Añadir sección FAQ (5-8 preguntas frecuentes)",
+      "Rediseñar CTAs con texto orientado a beneficio",
+      "Optimizar galería con filtros por categoría",
+      "Implementar schema markup LocalBusiness",
+      "Migrar a sitio propio HTML + Tailwind + Alpine.js"
+    ],
+    "largo_plazo": [
+      "Desarrollar blog con contenido SEO local (guías de home improvement para Greenville)",
+      "Eliminar dependencias innecesarias (Facebook SDK)",
+      "Implementar sistema de reseñas integrado con Google Business Profile"
+    ]
+  },
+  "resumen_ejecutivo": "El sitio de Home & Happy tiene una identidad visual coherente y buena prueba social, pero falla críticamente en contenido: sin datos de contacto, servicios sin descripción y enlaces sociales rotos. La mayor oportunidad está en completar la información básica del negocio y optimizar SEO local, lo que tendría impacto inmediato en conversiones dado que opera en un mercado geográfico definido (Greenville, SC). El próximo paso es corregir los quick wins de contenido y contacto en la primera semana, seguido de la migración a un sitio propio que permita control total sobre diseño y rendimiento.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["alpine.js", "schema-markup-localBusiness"],
+    "justificacion": "Negocio local de baja complejidad con sitio informativo + formulario de contacto. No requiere framework JS pesado. HTML estático + Tailwind + Alpine.js ofrece máxima velocidad de carga, SEO nativo y fácil mantenimiento, ideal para un handyman local que necesita presencia web profesional sin overhead técnico."
+  }
+}
