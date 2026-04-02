@@ -1,0 +1,161 @@
+{
+  "cliente": "Downtown Dental, LLC",
+  "url_auditada": "https://downtowndentalsc.com/",
+  "sector": "Clínica dental",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 50. Elegido porque es una clínica dental local en Greenville, SC que atiende pacientes de la zona.",
+  "fecha": "2026-04-02",
+  "scores": {
+    "seo": 42,
+    "ux_ui": 35,
+    "marketing": 40,
+    "contenido": 48,
+    "tecnico": 30,
+    "total": 39
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "H1 presente con keywords relevantes: 'Comprehensive Family, Implant and Sedation Dentistry'",
+        "Meta description presente y descriptiva, incluye servicios clave del negocio",
+        "La mayoría de imágenes tienen alt text descriptivo (lobby, doctores, exterior)",
+        "Datos estructurados JSON-LD tipo Dentist con información completa del negocio"
+      ],
+      "negativos": [
+        "Meta title débil: comienza con 'Welcome to' en vez de keywords de búsqueda local como 'Dentist Greenville SC'",
+        "Sin meta keywords definidas",
+        "Sin favicon detectado — afecta reconocimiento en pestañas y bookmarks",
+        "Solo 3 secciones en homepage — estructura de headings extremadamente plana, sin H2/H3 jerárquicos",
+        "Logo de Invisalign sin alt text",
+        "URL del logo usa HTTP en vez de HTTPS"
+      ],
+      "recomendaciones": [
+        { "accion": "Reescribir meta title a formato 'Dentist in Greenville SC | Downtown Dental — Family, Implant & Sedation Dentistry'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar favicon con el logo o ícono de muela", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir secciones con H2 para servicios destacados, equipo y testimonios en homepage", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar alt text a la imagen de Invisalign y verificar que todas las URLs de imagen usen HTTPS", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Crear páginas de servicio con contenido optimizado para keywords locales (ej: 'dental implants Greenville SC')", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores reducida y consistente: azul profesional (#066aab) + gris oscuro (#32373c) + blanco",
+        "Navegación principal bien organizada con submenús lógicos por categoría",
+        "Hero section con galería de fotos reales del consultorio y doctores genera confianza"
+      ],
+      "negativos": [
+        "No se detectan tipografías nombradas — probable uso de fuentes por defecto del sistema, aspecto genérico",
+        "Sin evidencia de diseño responsive o mobile-first en el HTML",
+        "Diseño visualmente anticuado: galería con prettyPhoto (lightbox de 2012), estructura tipo sidebar",
+        "Solo 3 secciones en la homepage — falta contenido visual para guiar al usuario",
+        "Contraste del texto secundario insuficiente: rgba(0,0,0,0.7) sobre blanco puede no cumplir WCAG AA"
+      ],
+      "recomendaciones": [
+        { "accion": "Rediseño completo con layout moderno: hero full-width, secciones de servicios con iconos, testimonios con fotos", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar diseño mobile-first con breakpoints responsive", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Seleccionar tipografía profesional (ej: Inter, DM Sans o similar) con pesos definidos para jerarquía", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Verificar y corregir contrastes de color para cumplir WCAG AA (mínimo 4.5:1)", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "CTA 'Request an Appointment' con verbo de acción claro y directo",
+        "'Now Welcoming New Patients!' reduce barrera de entrada para pacientes nuevos",
+        "Presencia en 5 plataformas de reseñas (Google, Yelp, Facebook, Foursquare) para prueba social"
+      ],
+      "negativos": [
+        "El mensaje principal no aborda un dolor concreto del paciente — es descriptivo pero no empático (ej: no menciona miedo al dentista, emergencias, seguros)",
+        "CTA 'See what others are saying' es pasivo y vago, no dirige a una acción concreta",
+        "Sin testimonios visibles directamente en la homepage — el usuario debe navegar para encontrarlos",
+        "Sin diferenciador claro frente a otros dentistas de Greenville — ¿por qué elegir Downtown Dental?",
+        "Sin mención de seguros aceptados, financiamiento o precios — objeciones comunes sin resolver"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar 2-3 testimonios de pacientes directamente en la homepage con nombre y foto", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reescribir propuesta de valor enfocada en el paciente: 'Nervous about the dentist? We specialize in comfortable, sedation dentistry for anxious patients.'", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar sección de seguros aceptados y opciones de financiamiento", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Cambiar CTA del hero a algo directo: 'Book Your Visit Today' o 'Schedule a Free Consultation'", "prioridad": "alta", "tipo": "quick_win" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Texto de bienvenida es original, específico y menciona al doctor por nombre y credenciales (DMD, FAGD)",
+        "Información de contacto completa: teléfono, email, dirección, horarios detallados por día",
+        "Navegación lista 6 servicios específicos con páginas individuales"
+      ],
+      "negativos": [
+        "Homepage extremadamente escasa — solo un párrafo de contenido real más datos de contacto",
+        "Sin sección de FAQ ni resolución de objeciones comunes (dolor, costos, seguros, emergencias)",
+        "Sin descripción de servicios en homepage — el usuario debe navegar a cada subpágina",
+        "Sin información sobre tecnología del consultorio, certificaciones o experiencia del equipo",
+        "El contenido no menciona IV sedation en el cuerpo principal a pesar de ser un diferenciador clave del negocio"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar resumen de servicios principales en homepage con iconos y descripción corta + link a cada servicio", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Crear sección FAQ con 5-8 preguntas frecuentes (seguros, emergencias, primera visita, sedación, costos)", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Destacar IV Sedation como diferenciador en el hero o sección destacada — es un servicio premium poco común", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar bio corta de cada doctor en homepage con foto y credenciales", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "WordPress es un CMS adecuado para el volumen y tipo de negocio",
+        "Google Analytics implementado con tag moderno (gtag.js + G-Y9SETLN5GB)",
+        "WPForms para formularios — solución probada y mantenida"
+      ],
+      "negativos": [
+        "jQuery 1.7.2 es de 2012 — extremadamente obsoleto, con vulnerabilidades de seguridad conocidas",
+        "prettyPhoto es una librería abandonada con vulnerabilidades XSS documentadas",
+        "Tema WordPress custom sin framework CSS moderno — difícil de mantener y actualizar",
+        "URLs mixtas HTTP/HTTPS en recursos (logo, imágenes de Dr. Martin)",
+        "Sin evidencia de caché, minificación o optimización de assets"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a sitio estático moderno (HTML + Tailwind) — elimina dependencia de WordPress, hosting, plugins y vulnerabilidades", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Forzar HTTPS en todas las URLs de recursos para eliminar mixed content warnings", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Si se mantiene WordPress: actualizar jQuery a 3.x+ y eliminar prettyPhoto por lightbox moderno", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar lazy loading de imágenes y formatos modernos (WebP/AVIF)", "prioridad": "media", "tipo": "mejora_estructural" }
+      ],
+      "stack_actual": "WordPress con tema custom 'downtowndental', jQuery 1.7.2, prettyPhoto, WPForms, Google Analytics (gtag.js), MonsterInsights v8.15",
+      "stack_recomendado": "HTML estático + Tailwind CSS + Alpine.js — sitio simple, no requiere CMS dinámico",
+      "integraciones": ["Google Analytics (G-Y9SETLN5GB)", "WPForms", "MonsterInsights", "Patient Portal (phiportal.com)"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Reescribir meta title con keywords locales: 'Dentist in Greenville SC | Downtown Dental'",
+    "Agregar favicon del negocio",
+    "Cambiar CTA del hero a 'Book Your Visit Today' con link directo al formulario de cita",
+    "Forzar HTTPS en todas las URLs de recursos (logo, imágenes)",
+    "Destacar IV Sedation como diferenciador en posición prominente del hero"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Reescribir meta title y verificar meta description",
+      "Agregar favicon",
+      "Forzar HTTPS en todos los recursos",
+      "Cambiar CTA principal del hero a verbo de acción directo",
+      "Destacar IV Sedation en hero o banner"
+    ],
+    "mes_1": [
+      "Rediseño completo de homepage: hero full-width, secciones de servicios, testimonios, FAQ, equipo",
+      "Implementar diseño mobile-first responsive",
+      "Seleccionar e implementar tipografía profesional",
+      "Agregar testimonios de pacientes en homepage",
+      "Crear sección FAQ con preguntas frecuentes",
+      "Agregar sección de seguros aceptados y financiamiento"
+    ],
+    "largo_plazo": [
+      "Migrar de WordPress a sitio estático moderno (HTML + Tailwind + Alpine.js)",
+      "Optimizar imágenes con formatos modernos (WebP/AVIF) y lazy loading",
+      "Crear contenido SEO para cada página de servicio con keywords locales",
+      "Implementar sistema de reseñas/testimonios automatizado"
+    ]
+  },
+  "resumen_ejecutivo": "Downtown Dental tiene un sitio web técnicamente obsoleto (jQuery 2012, prettyPhoto abandonado) con una homepage extremadamente escasa que no aprovecha sus diferenciadores clave como IV Sedation y su equipo de dos doctores acreditados. La mayor oportunidad es un rediseño completo que convierta la homepage en una herramienta de conversión con testimonios, servicios destacados y CTAs directos — esto puede incrementar significativamente las solicitudes de cita de pacientes nuevos en Greenville. El próximo paso inmediato es construir un sitio estático moderno con Tailwind que reemplace el WordPress actual, enfocado en SEO local y conversión de pacientes.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["Alpine.js para interactividad ligera (menú mobile, FAQ accordion, lightbox)", "Google Analytics gtag.js", "Formspree o similar para formulario de contacto sin backend"],
+    "justificacion": "Sitio de complejidad baja — clínica dental local con contenido estático, sin e-commerce ni funcionalidad dinámica. HTML + Tailwind + Alpine.js ofrece máximo rendimiento, zero dependencias de servidor, hosting gratuito en Netlify/Vercel, y elimina las vulnerabilidades del stack WordPress actual."
+  }
+}

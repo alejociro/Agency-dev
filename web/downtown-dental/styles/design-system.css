@@ -1,0 +1,288 @@
+/* BRIEF CREATIVO
+   Negocio    : Downtown Dental, LLC
+   Sector     : Clínica dental — servicio local de salud (Greenville, SC)
+   Tono       : neo-orgánico + minimalista premium
+   Concepto   : "Dentistry that feels like a deep breath" — calma y confianza
+   Diferenciador visual: Hero con gradient mesh orgánico que "respira";
+                         blobs suaves detrás de fotos de doctores;
+                         tarjeta CTA flotante pill-shaped al scroll
+   Tipografía : Fraunces (display — optical size axis) + Outfit (body)
+   Mood       : calmo · confiable · luminoso
+   Paleta base: Azul profundo calmante + crema cálido + coral suave + grises azulados
+*/
+
+/* ═══════════════════════════════════════
+   LAYERS
+   ═══════════════════════════════════════ */
+@layer base, components, utilities;
+
+/* ═══════════════════════════════════════
+   CUSTOM PROPERTIES
+   ═══════════════════════════════════════ */
+:root {
+  /* ── Paleta principal ── */
+  --color-primary:        oklch(0.50 0.12 240);
+  --color-primary-dark:   oklch(0.40 0.13 240);
+  --color-primary-deeper: oklch(0.30 0.10 245);
+  --color-primary-glow:   oklch(0.50 0.12 240 / 0.20);
+  --color-primary-light:  oklch(0.88 0.04 240);
+
+  /* ── Secundario (gris azulado profundo) ── */
+  --color-secondary:      oklch(0.25 0.025 250);
+  --color-secondary-glow: oklch(0.25 0.025 250 / 0.15);
+
+  /* ── Acento coral/terracota ── */
+  --color-accent:         oklch(0.65 0.15 35);
+  --color-accent-dark:    oklch(0.55 0.15 35);
+  --color-accent-light:   oklch(0.85 0.08 35);
+  --color-accent-glow:    oklch(0.65 0.15 35 / 0.25);
+
+  /* ── Fondos y superficies ── */
+  --color-bg:             oklch(0.97 0.008 75);
+  --color-bg-alt:         oklch(0.94 0.012 75);
+  --color-bg-warm:        oklch(0.95 0.015 60);
+  --color-surface:        oklch(0.99 0.004 75);
+  --color-surface-hover:  oklch(0.98 0.006 75);
+
+  /* ── Texto ── */
+  --color-text:           oklch(0.22 0.02 250);
+  --color-text-muted:     oklch(0.45 0.02 250);
+  --color-text-light:     oklch(0.60 0.015 250);
+  --color-text-on-dark:   oklch(0.95 0.005 75);
+  --color-text-on-primary: oklch(0.97 0.005 75);
+
+  /* ── Bordes ── */
+  --color-border:         oklch(0.88 0.008 250);
+  --color-border-light:   oklch(0.92 0.005 250);
+
+  /* ── Blanco cálido (nunca #fff) ── */
+  --color-white:          oklch(0.98 0.005 75);
+
+  /* ═══ Espaciado (base 8px) ═══ */
+  --space-1:  0.5rem;
+  --space-2:  1rem;
+  --space-3:  1.5rem;
+  --space-4:  2rem;
+  --space-5:  2.5rem;
+  --space-6:  3rem;
+  --space-8:  4rem;
+  --space-10: 5rem;
+  --space-12: 6rem;
+  --space-16: 8rem;
+  --space-20: 10rem;
+
+  /* ═══ Tipografía fluida ═══ */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body:    'Outfit', system-ui, sans-serif;
+
+  --text-hero:    clamp(2.8rem, 7vw, 5.5rem);
+  --text-display: clamp(2.2rem, 5.5vw, 4.5rem);
+  --text-h1:      clamp(2rem, 4.5vw, 3.5rem);
+  --text-h2:      clamp(1.5rem, 3vw, 2.5rem);
+  --text-h3:      clamp(1.2rem, 2vw, 1.75rem);
+  --text-h4:      clamp(1.05rem, 1.5vw, 1.25rem);
+  --text-body:    clamp(1rem, 1.1vw, 1.125rem);
+  --text-body-lg: clamp(1.1rem, 1.3vw, 1.25rem);
+  --text-small:   clamp(0.8rem, 0.95vw, 0.9rem);
+  --text-xs:      clamp(0.7rem, 0.8vw, 0.8rem);
+
+  --leading-tight:  1.1;
+  --leading-snug:   1.3;
+  --leading-normal: 1.5;
+  --leading-body:   1.7;
+  --leading-loose:  1.9;
+
+  --tracking-tight:   -0.025em;
+  --tracking-normal:   0;
+  --tracking-wide:     0.03em;
+  --tracking-wider:    0.06em;
+  --tracking-widest:   0.1em;
+
+  /* Fraunces optical size: smaller values = more expressive */
+  --opsz-display: 144;
+  --opsz-heading: 48;
+  --opsz-body:    9;
+
+  /* ═══ Bordes ═══ */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
+  --radius-2xl:  40px;
+  --radius-pill: 9999px;
+
+  /* ═══ Sombras con personalidad ═══ */
+  --shadow-sm:    0 1px 3px oklch(0.22 0.02 250 / 0.05),
+                  0 1px 2px oklch(0.22 0.02 250 / 0.03);
+  --shadow-md:    0 4px 12px oklch(0.22 0.02 250 / 0.07),
+                  0 2px 4px oklch(0.22 0.02 250 / 0.04);
+  --shadow-lg:    0 8px 30px oklch(0.22 0.02 250 / 0.09),
+                  0 4px 8px oklch(0.22 0.02 250 / 0.05);
+  --shadow-xl:    0 20px 60px oklch(0.22 0.02 250 / 0.12),
+                  0 8px 16px oklch(0.22 0.02 250 / 0.06);
+
+  /* Sombras cromáticas */
+  --shadow-primary: 0 8px 30px var(--color-primary-glow),
+                    0 2px 6px oklch(0.22 0.02 250 / 0.05);
+  --shadow-accent:  0 8px 30px var(--color-accent-glow),
+                    0 2px 6px oklch(0.22 0.02 250 / 0.05);
+  --shadow-glow:    0 0 50px var(--color-primary-glow);
+
+  /* ═══ Layout ═══ */
+  --section-padding:    clamp(4.5rem, 10vw, 9rem);
+  --container-max:      1200px;
+  --container-wide:     1400px;
+  --container-narrow:   800px;
+  --container-padding:  clamp(1.25rem, 5vw, 2rem);
+
+  /* ═══ Transiciones ═══ */
+  --ease-out:     cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out:  cubic-bezier(0.45, 0, 0.55, 1);
+  --ease-spring:  cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-bounce:  cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  --duration-fast:    180ms;
+  --duration-base:    350ms;
+  --duration-slow:    600ms;
+  --duration-glacial: 1000ms;
+}
+
+/* ═══════════════════════════════════════
+   BASE LAYER
+   ═══════════════════════════════════════ */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    font-weight: 400;
+    line-height: var(--leading-body);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    overflow-x: hidden;
+  }
+
+  /* ── Headings con Fraunces optical sizing ── */
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-text);
+    text-wrap: balance;
+    font-variation-settings: 'opsz' var(--opsz-heading);
+  }
+
+  h1 {
+    font-size: var(--text-h1);
+    font-weight: 700;
+    font-variation-settings: 'opsz' var(--opsz-display);
+  }
+
+  h2 {
+    font-size: var(--text-h2);
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: var(--text-h3);
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: var(--text-h4);
+    font-weight: 500;
+    line-height: var(--leading-snug);
+  }
+
+  p {
+    max-width: 65ch;
+  }
+
+  /* ── Links ── */
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--duration-fast) var(--ease-out);
+
+    &:hover {
+      color: var(--color-primary-dark);
+    }
+  }
+
+  /* ── Images ── */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ── Focus visible ── */
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+  }
+
+  /* ── Selection ── */
+  ::selection {
+    background: oklch(0.50 0.12 240 / 0.15);
+    color: var(--color-text);
+  }
+
+  /* ── Scrollbar ── */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--color-bg); }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: var(--radius-pill);
+
+    &:hover { background: var(--color-text-light); }
+  }
+}
+
+/* ═══════════════════════════════════════
+   GRAIN OVERLAY — premium texture
+   ═══════════════════════════════════════ */
+@layer components {
+  .grain {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 256px 256px;
+    }
+  }
+}
+
+/* ═══════════════════════════════════════
+   REDUCED MOTION
+   ═══════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

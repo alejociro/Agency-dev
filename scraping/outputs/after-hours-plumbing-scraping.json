@@ -1,0 +1,184 @@
+{
+  "negocio": "After Hours Plumbing, Inc.",
+  "url": "https://afterhoursplumbing.com/",
+  "sector": "Plomería y electricidad residencial y comercial",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "After Hours Plumbing, Inc. Plumber in Wenatchee, WA",
+    "description": null,
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#1a3a5c",
+    "secundario": "#ffffff",
+    "acento": "#c8a96e",
+    "fondo": "#ffffff",
+    "texto": "#333333",
+    "otros": []
+  },
+  "logo": {
+    "url": "https://images.squarespace-cdn.com/content/v1/62e84ddaf30de427a5987a68/4c52132c-e845-4ae8-9d1c-a83e020e3132/After+Hours+Web+Logo.png?format=1500w",
+    "descripcion": "Logo de After Hours Plumbing, Inc.",
+    "posicion": "header top-left",
+    "colores": ["azul", "blanco"]
+  },
+  "tipografias": [
+    {
+      "nombre": "System fonts (Squarespace default)",
+      "uso": "cuerpo y encabezados",
+      "peso": "400, 700",
+      "tamanio_aprox": "16px body, responsive headings"
+    }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "/" },
+    { "label": "Recent Projects & Reviews", "url": "/recent-projects-reviews" },
+    { "label": "Contact Us", "url": "/contact-us" },
+    { "label": "Facebook", "url": "https://www.facebook.com/profile.php?id=100074994754355" },
+    { "label": "Call Us! 509-663-4171", "url": "tel:509-663-4171" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "A local plumbing & electrical company you can trust to help protect and enhance your most valuable asset: your home.",
+      "contenido": "Serving the Wenatchee Valley since 1996",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/62e84ddaf30de427a5987a68/386c26a6-8cd6-4a23-a8d2-5621614a6e57/Wenatchee+Valley+for+Web.jpg",
+          "alt": null,
+          "descripcion": "Vista panorámica del valle de Wenatchee, imagen de fondo del hero",
+          "tipo": "hero-background",
+          "dimensiones": "full-width"
+        }
+      ]
+    },
+    {
+      "tipo": "sobre-nosotros",
+      "titulo": "After Hours Plumbing, Inc. is a full-service plumbing company for residential & commercial customers. Now offering electrical service for residential customers!",
+      "contenido": "What's in a name? After Hours Plumbing, Inc. offers more than just after hours plumbing service. In fact, the majority of the work we perform happens between 8:30 AM and 4:00 PM Monday through Friday. For all the plumbing emergencies that can occur, we have an on-call plumbing technician to help when you need it most.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "cta",
+      "titulo": "GIVE US A CALL TODAY!",
+      "contenido": "509-663-4171",
+      "cta": "509-663-4171",
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios-grid",
+      "titulo": "Residential Plumbing & Electrical / Commercial Plumbing",
+      "contenido": "Residential Plumbing & Electrical: We understand that your home is one of your most valuable assets. Our primary objective is to help you protect and enhance that investment. We work closely with homeowners to solve problems creatively, quickly and with longevity in mind.\n\nCommercial Plumbing: Keeping your business running smoothly and protecting your commercial property is at the forefront of our commercial work. Our team has the skill to get you back in business quickly while providing long-term solutions to mitigate future plumbing issues.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/62e84ddaf30de427a5987a68/d076456c-99a8-4bae-a885-d500dae288fc/Untitled+design+%2813%29.jpg",
+          "alt": null,
+          "descripcion": "Imagen representativa de servicios residenciales de plomería y electricidad",
+          "tipo": "card",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/62e84ddaf30de427a5987a68/5d269114-ee6e-4fb9-b6fd-f4848b1d146f/Untitled+design+%2812%29.jpg",
+          "alt": null,
+          "descripcion": "Imagen representativa de servicios comerciales de plomería",
+          "tipo": "card",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "cta-link",
+      "titulo": "Check Out Our Recent Work & Reviews",
+      "contenido": null,
+      "cta": "/recent-projects-reviews",
+      "imagenes": []
+    },
+    {
+      "tipo": "lista-servicios",
+      "titulo": "Our qualified plumbers are ready to help with your project! Our plumbing services include:",
+      "contenido": "Drain Cleaning\nWater Leak Repair\nSewer Line Repair\nEmergency Service\nKitchen & Bathroom Remodels\nWater Heater Installation\nWhole-House Repiping\nWater Service Replacement\nSewer Mainline Replacement",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "equipo",
+      "titulo": "MEET OUR TEAM",
+      "contenido": "Our plumbing & electrical technicians are highly trained, licensed, and ready to handle any plumbing challenge you may have. Our primary objective is to help our customers protect and enhance their real estate investments. From our office team to our plumbing & electrical technicians, we're here to help you navigate any plumbing or electrical challenges that may arise.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/62e84ddaf30de427a5987a68/b088b709-6a00-46c8-87b9-945cc8bc8e96/SF3A0909.jpg",
+          "alt": null,
+          "descripcion": "Foto del equipo de After Hours Plumbing",
+          "tipo": "team-photo",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "testimonios",
+      "titulo": null,
+      "contenido": "\"After Hours Plumbing did a great job with all of my plumbing needs. I was scheduled to have some hose bibs changed out but remembered a couple other projects that I needed help with when the crew showed up. They were able to fix all of my issues. The crew was friendly, knowledgable and timely. They presented me with options and let me choose what I thought was best and even better, they didn't try to upsell me on anything. Give them a call for your plumbing needs!\" — Cy Grimmett, WA",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/62e84ddaf30de427a5987a68/1664217148767-WQFG0VFGJTMMEISB77Z6/unsplash-image-IYE0ImQlY90.jpg",
+          "alt": null,
+          "descripcion": "Imagen decorativa sección testimonios",
+          "tipo": "decorativa",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/62e84ddaf30de427a5987a68/1664229697667-ZZNHMCKYBGWPI4FJZB4C/unsplash-image-rrfdqjJWwmU.jpg",
+          "alt": null,
+          "descripcion": "Imagen decorativa sección testimonios 2",
+          "tipo": "decorativa",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "cta",
+      "titulo": "GIVE US A CALL TODAY!",
+      "contenido": "509-663-4171",
+      "cta": "509-663-4171",
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "A local plumbing & electrical company you can trust to help protect and enhance your most valuable asset: your home.",
+    "propuesta_valor": "Serving the Wenatchee Valley since 1996. Full-service plumbing company for residential & commercial customers, now offering electrical service for residential customers.",
+    "ctas": [
+      "GIVE US A CALL TODAY! 509-663-4171",
+      "Call Us! 509-663-4171",
+      "Check Out Our Recent Work & Reviews",
+      "Contact Us"
+    ]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(509) 663-4171",
+    "whatsapp": null,
+    "email": "dispatch@afterhoursplumbing.com",
+    "direccion": "3030 GS Center Road, Wenatchee, WA 98801",
+    "horarios": null
+  },
+  "redes": [
+    {
+      "plataforma": "Facebook",
+      "url": "https://www.facebook.com/profile.php?id=100074994754355"
+    }
+  ],
+  "formularios": [],
+  "footer": {
+    "contenido": "(509) 663-4171 | dispatch@afterhoursplumbing.com\n3030 GS Center Road, Wenatchee, WA 98801",
+    "links": [],
+    "copyright": null
+  },
+  "tecnologia": "Squarespace CMS, SSR, Google Analytics, reCAPTCHA Enterprise, sistema responsivo 8/24 columnas"
+}

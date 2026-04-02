@@ -1,0 +1,159 @@
+{
+  "cliente": "After Hours Plumbing, Inc.",
+  "url_auditada": "https://afterhoursplumbing.com/",
+  "sector": "Plomería y electricidad residencial y comercial",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Técnico: 50. Aplicado porque es una empresa de servicios de plomería y electricidad orientada a clientes residenciales y comerciales en una zona geográfica específica (Wenatchee Valley, WA).",
+  "fecha": "2026-04-02",
+  "scores": {
+    "seo": 38,
+    "ux_ui": 58,
+    "marketing": 48,
+    "contenido": 55,
+    "tecnico": 56,
+    "total": 51
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "H1 del hero incluye keywords relevantes: plumbing, electrical, trust, home",
+        "Meta title presente con nombre del negocio y localización (Wenatchee, WA)",
+        "Propuesta de valor visible en los primeros 200px con antigüedad del negocio (since 1996)"
+      ],
+      "negativos": [
+        "Meta description ausente — Google generará un snippet automático de baja calidad",
+        "Meta keywords ausentes — aunque tienen poco peso SEO, indican falta de optimización general",
+        "Ninguna imagen tiene atributo alt (todas null) — pérdida total de SEO en imágenes y accesibilidad",
+        "No hay estructura clara de headings H1→H2→H3; los títulos de sección no siguen jerarquía semántica",
+        "CTAs genéricos ('GIVE US A CALL TODAY!') sin keywords ni texto descriptivo optimizado",
+        "Sin página de servicios individuales — todo comprimido en una sola página"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir meta description optimizada: 'After Hours Plumbing offers 24/7 plumbing & electrical services in Wenatchee, WA. Residential & commercial. Call (509) 663-4171.'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir alt text descriptivo a todas las imágenes incluyendo keywords locales y de servicio", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reestructurar headings con jerarquía semántica H1→H2→H3 para cada sección de servicios", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Reescribir CTAs con verbos de acción y keywords: 'Schedule Your Plumbing Service Today' en lugar de 'GIVE US A CALL'", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores consistente y profesional: azul marino (#1a3a5c), dorado (#c8a96e) y blanco — transmite confianza",
+        "Squarespace proporciona diseño responsive por defecto con sistema de columnas 8/24",
+        "Logo posicionado correctamente en header top-left con colores alineados a la marca"
+      ],
+      "negativos": [
+        "Tipografía genérica (system fonts por defecto de Squarespace) — no refuerza identidad de marca",
+        "Sin diferenciación visual notable entre secciones; diseño estándar de template",
+        "Navegación con solo 3 páginas internas más enlace a Facebook y teléfono — estructura mínima",
+        "Imágenes decorativas en testimonios no aportan valor visual relevante (fotos de stock genéricas)"
+      ],
+      "recomendaciones": [
+        { "accion": "Seleccionar una tipografía con personalidad para headings (ej. Montserrat o Raleway) manteniendo system fonts para body", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Añadir separadores visuales o cambios de fondo entre secciones para mejorar el ritmo de lectura", "prioridad": "baja", "tipo": "mejora_estructural" },
+        { "accion": "Reemplazar imágenes de stock en testimonios por fotos reales de proyectos completados", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Mensaje hero transmite confianza y protección del hogar — alineado con el dolor del cliente",
+        "Antigüedad del negocio (since 1996) comunica experiencia y estabilidad",
+        "Teléfono visible en navegación y repetido en múltiples CTAs — facilita contacto inmediato"
+      ],
+      "negativos": [
+        "Solo 1 testimonio presente — prueba social insuficiente para generar confianza",
+        "Sin números concretos de impacto (proyectos completados, clientes atendidos, años de experiencia como cifra destacada)",
+        "No hay diferenciador claro frente a la competencia — el mensaje podría ser de cualquier plomero",
+        "Sin oferta o incentivo para el primer contacto (presupuesto gratis, descuento, diagnóstico sin cargo)",
+        "CTA principal es solo un número de teléfono — no hay formulario de contacto visible en la home"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar al menos 3-5 testimonios con nombre, ubicación y tipo de servicio realizado", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Destacar métricas de confianza: '30+ años de experiencia', 'X+ proyectos completados', 'servicio de emergencia 24/7'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir formulario de contacto/cotización en la página principal con CTA 'Get a Free Estimate'", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Crear un diferenciador claro (ej. 'The only plumber in Wenatchee with 24/7 emergency service since 1996')", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Lista detallada de servicios de plomería (9 servicios específicos)",
+        "Información de contacto completa: teléfono, email, dirección física",
+        "Texto del 'sobre nosotros' explica el origen del nombre y aclara horarios de operación"
+      ],
+      "negativos": [
+        "Sin sección de FAQ ni manejo de objeciones comunes (precios, tiempos, garantías)",
+        "Textos de servicios genéricos — no explican proceso, tiempos estimados ni rangos de precio",
+        "Sin horarios de atención publicados (el campo horarios es null)",
+        "Servicios eléctricos mencionados pero no detallados — solo se dice 'now offering electrical service'",
+        "Sin página de copyright ni políticas de privacidad visible"
+      ],
+      "recomendaciones": [
+        { "accion": "Crear sección FAQ con 5-8 preguntas frecuentes: costos aproximados, tiempos de respuesta, áreas de servicio, garantías", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Detallar servicios eléctricos ofrecidos con la misma profundidad que los de plomería", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Publicar horarios de atención regulares y de emergencia de forma visible", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir descripciones individuales por servicio con proceso y beneficios para el cliente", "prioridad": "baja", "tipo": "mejora_estructural" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Squarespace CMS proporciona hosting, SSL y CDN integrados sin mantenimiento",
+        "Google Analytics implementado para tracking de visitantes",
+        "reCAPTCHA Enterprise integrado para protección contra spam"
+      ],
+      "negativos": [
+        "Sin formularios funcionales detectados en la página (formularios: []) — la única vía de contacto es teléfono o email",
+        "Squarespace limita personalización y rendimiento comparado con soluciones modernas",
+        "Sin integraciones de booking/scheduling para agendar citas online",
+        "Sin schema markup local business para mejorar presencia en búsquedas locales"
+      ],
+      "recomendaciones": [
+        { "accion": "Implementar formulario de contacto funcional con campos: nombre, teléfono, servicio necesario, descripción del problema", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir schema markup LocalBusiness con datos de contacto, horarios y área de servicio", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Considerar migración a stack moderno (HTML + Tailwind) para mejor rendimiento y control total del diseño", "prioridad": "baja", "tipo": "mejora_estructural" },
+        { "accion": "Integrar sistema de booking online para que clientes agenden citas directamente", "prioridad": "media", "tipo": "opcional" }
+      ],
+      "stack_actual": "Squarespace CMS, SSR, Google Analytics, reCAPTCHA Enterprise, sistema responsivo 8/24 columnas",
+      "stack_recomendado": "HTML + Tailwind CSS + Alpine.js — sitio de baja complejidad que no requiere framework pesado",
+      "integraciones": ["Google Analytics", "reCAPTCHA Enterprise", "Facebook (red social)"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Añadir meta description optimizada con keywords locales y de servicio",
+    "Añadir alt text a todas las imágenes con keywords relevantes",
+    "Publicar horarios de atención regulares y de emergencia",
+    "Implementar formulario de contacto funcional en la página principal",
+    "Destacar métricas de confianza: 30+ años, servicio de emergencia 24/7"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Añadir meta description optimizada",
+      "Añadir alt text a todas las imágenes",
+      "Publicar horarios de atención",
+      "Implementar formulario de contacto",
+      "Destacar métricas de confianza (años, emergencia 24/7)",
+      "Añadir schema markup LocalBusiness",
+      "Crear diferenciador claro en el hero"
+    ],
+    "mes_1": [
+      "Agregar 3-5 testimonios reales con nombre y servicio",
+      "Reestructurar headings con jerarquía semántica",
+      "Seleccionar tipografía con personalidad para headings",
+      "Detallar servicios eléctricos ofrecidos",
+      "Reemplazar imágenes de stock por fotos reales de proyectos",
+      "Reescribir CTAs con verbos de acción y keywords"
+    ],
+    "largo_plazo": [
+      "Crear sección FAQ completa con 5-8 preguntas frecuentes",
+      "Migrar a stack moderno (HTML + Tailwind + Alpine.js)",
+      "Añadir descripciones individuales por servicio",
+      "Integrar sistema de booking online",
+      "Añadir separadores visuales entre secciones"
+    ]
+  },
+  "resumen_ejecutivo": "El sitio de After Hours Plumbing tiene un problema central de conversión: carece de formulario de contacto, meta description, y prueba social suficiente, lo que limita severamente la captación de clientes online. La oportunidad principal está en que el negocio tiene 30 años de trayectoria y servicio de emergencia 24/7, diferenciadores potentes que no se están comunicando con fuerza. El próximo paso inmediato es implementar los quick wins de SEO y marketing (meta description, formulario, métricas de confianza) que pueden aumentar las conversiones sin rediseñar el sitio.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["Alpine.js", "Schema markup LocalBusiness", "Formulario de contacto con validación"],
+    "justificacion": "Sitio de baja complejidad para servicio local — no requiere framework SPA. HTML + Tailwind + Alpine.js ofrece máximo rendimiento, SEO nativo y control total del diseño sin la sobrecarga de Squarespace."
+  }
+}

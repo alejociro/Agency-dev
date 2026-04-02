@@ -1,0 +1,193 @@
+{
+  "negocio": "Downtown Dental, LLC",
+  "url": "https://downtowndentalsc.com/",
+  "sector": "Clínica dental",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Welcome to Downtown Dental, LLC! - Downtown Dental",
+    "description": "We are a full-service, general dental practice that provides cosmetic, family, implant placement and restoration, extractions, bonegrafting and IV sedation dentistry.",
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#066aab",
+    "secundario": "#32373c",
+    "acento": "#066aab",
+    "fondo": "#ffffff",
+    "texto": "#000000",
+    "otros": ["#d63637"]
+  },
+  "logo": {
+    "url": "https://downtowndentalsc.com/wp-content/themes/downtowndental/images/downtown-dental-greenville-sc.png",
+    "descripcion": "Logo de Downtown Dental con texto del nombre del negocio",
+    "posicion": "header superior",
+    "colores": []
+  },
+  "tipografias": [
+    {
+      "nombre": null,
+      "uso": "cuerpo",
+      "peso": "normal",
+      "tamanio_aprox": "16px"
+    },
+    {
+      "nombre": null,
+      "uso": "botones",
+      "peso": "normal",
+      "tamanio_aprox": "17px"
+    },
+    {
+      "nombre": null,
+      "uso": "títulos grandes",
+      "peso": "bold",
+      "tamanio_aprox": "36px-42px"
+    }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://downtowndentalsc.com/" },
+    { "label": "About Us", "url": "https://downtowndentalsc.com/about-us/" },
+    { "label": "Meet the Doctors", "url": "https://downtowndentalsc.com/about-us/meet-doctors/" },
+    { "label": "Meet the Team", "url": "https://downtowndentalsc.com/meet-the-staff/" },
+    { "label": "Services", "url": "https://downtowndentalsc.com/services/" },
+    { "label": "Dental Implants", "url": "https://downtowndentalsc.com/services/dental-implants/" },
+    { "label": "Extractions", "url": "https://downtowndentalsc.com/services/extractions/" },
+    { "label": "Teeth Whitening", "url": "https://downtowndentalsc.com/services/teeth-whitening/" },
+    { "label": "Root Canal", "url": "https://downtowndentalsc.com/services/root-canal/" },
+    { "label": "Oral Surgery", "url": "https://downtowndentalsc.com/services/oral-surgery/" },
+    { "label": "IV Sedation", "url": "https://downtowndentalsc.com/services/iv-sedation/" },
+    { "label": "Patients", "url": "https://downtowndentalsc.com/patients/" },
+    { "label": "Patient Paperwork", "url": "https://downtowndentalsc.com/patients/" },
+    { "label": "Patient Reviews", "url": "https://downtowndentalsc.com/patients/reviews/" },
+    { "label": "Recent News", "url": "https://downtowndentalsc.com/recent-news/" },
+    { "label": "Contact Us", "url": "https://downtowndentalsc.com/contact-us/" },
+    { "label": "Patient Portal", "url": "https://downtowndentalllc.phiportal.com" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Comprehensive Family, Implant and Sedation Dentistry",
+      "contenido": "Now Welcoming New Patients! 794 East Washington Street, Greenville, SC // 864-438-2646 | See what others are saying",
+      "cta": "See what others are saying",
+      "imagenes": [
+        {
+          "url": "https://downtowndentalsc.com/wp-content/themes/downtowndental/images/downtown-dental-entrance-thumb.jpg",
+          "alt": "The lobby at Downtown Dental",
+          "descripcion": "Vista de la entrada y lobby del consultorio dental",
+          "tipo": "foto galería",
+          "dimensiones": null
+        },
+        {
+          "url": "https://downtowndentalsc.com/wp-content/themes/downtowndental/images/downtown-dental-entrance-full.jpg",
+          "alt": "The lobby at Downtown Dental",
+          "descripcion": "Imagen completa de la entrada y lobby",
+          "tipo": "foto galería full",
+          "dimensiones": null
+        },
+        {
+          "url": "https://downtowndentalsc.com/wp-content/themes/downtowndental/images/trey-kenna-thumb.jpg",
+          "alt": "Meet Dr. Trey Kenna, DMD",
+          "descripcion": "Foto del Dr. Trey Kenna",
+          "tipo": "foto equipo",
+          "dimensiones": null
+        },
+        {
+          "url": "https://downtowndentalsc.com/wp-content/themes/downtowndental/images/trey-kenna-full.jpg",
+          "alt": "Meet Dr. Trey Kenna, DMD",
+          "descripcion": "Foto completa del Dr. Trey Kenna",
+          "tipo": "foto equipo full",
+          "dimensiones": null
+        },
+        {
+          "url": "https://downtowndentalsc.com/wp-content/uploads/2017/01/downtown-dental-dr-martin-thumb.jpg",
+          "alt": "Meet Dr. Martin, DMD",
+          "descripcion": "Foto del Dr. Martin",
+          "tipo": "foto equipo",
+          "dimensiones": null
+        },
+        {
+          "url": "https://downtowndentalsc.com/wp-content/uploads/2017/01/downtown-dental-dr-martin-1.jpg",
+          "alt": "Meet Dr. Martin, DMD",
+          "descripcion": "Foto completa del Dr. Martin",
+          "tipo": "foto equipo full",
+          "dimensiones": null
+        },
+        {
+          "url": "https://downtowndentalsc.com/wp-content/themes/downtowndental/images/downtown-dental-sign-thumb.jpg",
+          "alt": "Our sign in front of the office",
+          "descripcion": "Letrero exterior del consultorio",
+          "tipo": "foto exterior",
+          "dimensiones": null
+        },
+        {
+          "url": "https://downtowndentalsc.com/wp-content/themes/downtowndental/images/downtown-dental-sign-full.jpg",
+          "alt": "Our sign in front of the office",
+          "descripcion": "Imagen completa del letrero exterior",
+          "tipo": "foto exterior full",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "bienvenida",
+      "titulo": "Welcome to Downtown Dental, LLC!",
+      "contenido": "We are a full-service, general dental practice that provides cosmetic, family, implant placement and restoration, extractions, bonegrafting and IV sedation dentistry. If you are looking for a dentist who genuinely cares about you and your total health, we invite you to learn more about Trey Kenna DMD, FAGD.",
+      "cta": "Learn more about us »",
+      "imagenes": [
+        {
+          "url": "https://downtowndentalsc.com/wp-content/uploads/2018/04/invisalign.png",
+          "alt": null,
+          "descripcion": "Logo de Invisalign, indicando que ofrecen este servicio",
+          "tipo": "logo partner",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "contacto",
+      "titulo": null,
+      "contenido": "794 East Washington Street, Greenville, SC 29601. (864) 438-2646. info@downtowndentalsc.com. Monday-Friday: 8:00am - 5:00pm.",
+      "cta": "Request an Appointment",
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Comprehensive Family, Implant and Sedation Dentistry",
+    "propuesta_valor": "We are a full-service, general dental practice that provides cosmetic, family, implant placement and restoration, extractions, bonegrafting and IV sedation dentistry. If you are looking for a dentist who genuinely cares about you and your total health.",
+    "ctas": [
+      "See what others are saying",
+      "Learn more about us »",
+      "Request an Appointment",
+      "Now Welcoming New Patients!"
+    ]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(864) 438-2646",
+    "whatsapp": null,
+    "email": "info@downtowndentalsc.com",
+    "direccion": "794 East Washington Street, Greenville, SC 29601",
+    "horarios": "Monday, Tuesday, Thursday, Friday: 8:00am - 5:00pm; Wednesday: 10:00am - 7:00pm"
+  },
+  "redes": [
+    { "plataforma": "Facebook", "url": "https://www.facebook.com/downtowndentalsc/" },
+    { "plataforma": "Twitter", "url": "https://twitter.com/DwntwnDentalSC" },
+    { "plataforma": "Google Places", "url": "http://maps.google.com/maps/place?cid=13707838212675742103" },
+    { "plataforma": "Yelp", "url": "http://www.yelp.com/biz/downtown-dental-greenville" },
+    { "plataforma": "Foursquare", "url": "https://foursquare.com/v/downtown-dental-llc/4f327fbbe5e8657f88ec5774" }
+  ],
+  "formularios": [
+    {
+      "proposito": "Solicitar cita (Request an Appointment)",
+      "campos": []
+    }
+  ],
+  "footer": {
+    "contenido": "794 East Washington Street, Greenville, SC 29601 // (864) 438-2646 // Find us on Google",
+    "links": [
+      "https://search.google.com/local/reviews?placeid=ChIJbXwFo9MxWIgRlykQKToGPL4&q=Downtown+Dental&hl=en&gl=IN"
+    ],
+    "copyright": "© 2026 Downtown Dental, LLC"
+  },
+  "tecnologia": "WordPress con tema custom 'downtowndental', WPForms, jQuery 1.7.2, prettyPhoto, Google Analytics (G-Y9SETLN5GB), MonsterInsights v8.15"
+}
