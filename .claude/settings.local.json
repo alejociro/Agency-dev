@@ -12,7 +12,9 @@
       "Bash(grep -oP '#[0-9a-fA-F]{3,8}\\\\b')",
       "Bash(grep -oE '\"#[0-9a-fA-F]{3,8}\"')",
       "Bash(grep -oP '--[a-zA-Z0-9_-]+\\\\s*:\\\\s*[^;]+')",
-      "Bash(grep -oE '>[^<>\"]{3,}<')"
+      "Bash(grep -oE '>[^<>\"]{3,}<')",
+      "Bash(git reset:*)",
+      "Bash(git rm:*)"
     ]
   }
 }

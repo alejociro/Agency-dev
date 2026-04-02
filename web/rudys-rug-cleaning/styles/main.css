@@ -1,0 +1,4 @@
+/* main.css — imports design system + animations */
+
+@import './design-system.css';
+@import './animations.css';
