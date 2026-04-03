@@ -1,0 +1,7 @@
+{
+  "negocio": "after-hours-plumbing",
+  "url_produccion": "https://after-hours-plumbing.vercel.app",
+  "fecha_deploy": "2026-04-02",
+  "stack": "html",
+  "carpeta_origen": "web/after-hours-plumbing"
+}

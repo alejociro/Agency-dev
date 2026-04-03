@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposal — Home & Happy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --color-accent: #2d6a4f;
+      --color-accent-dark: #1b4332;
+      --color-accent-light: #40916c;
+      --color-bg: #fafafa;
+      --color-bg-screen: #e0e0e0;
+      --color-text: #1a1a1a;
+      --color-text-secondary: #475569;
+      --color-text-muted: #94a3b8;
+      --color-text-dim: #64748b;
+      --color-border: #e2e8f0;
+      --color-surface: #f8fafc;
+      --color-surface-alt: white;
+      --color-red: #ef4444;
+      --color-red-light: #f87171;
+      --color-yellow: #f59e0b;
+      --color-yellow-light: #fbbf24;
+      --color-yellow-dark: #d97706;
+      --color-green: #10b981;
+      --color-green-light: #34d399;
+      --color-green-dark: #059669;
+      --font-body: 'Inter', sans-serif;
+      --font-display: 'Playfair Display', serif;
+    }
+
+    body { font-family: var(--font-body); color: var(--color-text); background: var(--color-bg-screen); line-height: 1.6; font-size: 14px; }
+
+    .page {
+      width: 794px; min-height: 1100px; margin: 0 auto; background: var(--color-bg);
+      padding: 60px 64px; page-break-after: always; position: relative; overflow: hidden;
+    }
+
+    @media print {
+      body { background: white; }
+      .page { margin: 0; padding: 50px 60px; box-shadow: none; min-height: auto; }
+    }
+    @media screen {
+      .page { margin-top: 24px; margin-bottom: 24px; box-shadow: 0 4px 24px rgba(0,0,0,0.12); }
+    }
+
+    h1 { font-family: var(--font-display); }
+    h2 { font-family: var(--font-display); font-weight: 700; font-size: 26px; color: var(--color-accent-dark); margin-bottom: 28px; }
+    h3 { font-size: 15px; font-weight: 600; color: var(--color-text); margin-bottom: 8px; }
+    p { margin-bottom: 12px; }
+
+    /* --- COVER --- */
+    .cover { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; min-height: 1000px; background: linear-gradient(160deg, #ecfdf5 0%, var(--color-bg) 40%, var(--color-bg) 60%, #f0fdf4 100%); }
+    .cover-line { width: 80px; height: 4px; background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light)); border-radius: 2px; margin: 0 auto 32px; }
+    .cover h1 { font-size: 44px; font-weight: 800; color: var(--color-accent-dark); letter-spacing: -0.5px; margin-bottom: 12px; }
+    .cover .subtitle { font-size: 20px; font-weight: 300; color: var(--color-text-secondary); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 48px; }
+    .cover .date { font-size: 14px; color: var(--color-text-muted); margin-bottom: 8px; }
+    .cover .agency { font-size: 16px; font-weight: 600; color: var(--color-accent); letter-spacing: 1px; }
+    .cover-decoration { position: absolute; width: 300px; height: 300px; border-radius: 50%; opacity: 0.04; background: var(--color-accent); }
+    .cover-decoration.top-right { top: -80px; right: -80px; }
+    .cover-decoration.bottom-left { bottom: -100px; left: -100px; width: 400px; height: 400px; }
+
+    /* --- SCORES --- */
+    .score-row { display: flex; align-items: center; margin-bottom: 18px; }
+    .score-label { width: 110px; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-secondary); }
+    .score-bar-wrap { flex: 1; height: 28px; background: var(--color-border); border-radius: 14px; position: relative; overflow: hidden; }
+    .score-bar-fill { height: 100%; border-radius: 14px; position: relative; }
+    .score-bar-fill.red { background: linear-gradient(90deg, var(--color-red), var(--color-red-light)); }
+    .score-bar-fill.yellow { background: linear-gradient(90deg, var(--color-yellow), var(--color-yellow-light)); }
+    .score-bar-fill.green { background: linear-gradient(90deg, var(--color-green), var(--color-green-light)); }
+    .score-number { width: 50px; text-align: right; font-weight: 700; font-size: 18px; margin-left: 12px; }
+    .score-number.red { color: var(--color-red); }
+    .score-number.yellow { color: var(--color-yellow-dark); }
+    .score-number.green { color: var(--color-green-dark); }
+    .benchmark-tag { width: 85px; text-align: center; font-size: 11px; color: var(--color-text-muted); margin-left: 8px; }
+    .benchmark-tag span { font-weight: 600; color: var(--color-text-dim); }
+    .total-score-box { text-align: center; padding: 28px; border-radius: 16px; margin-top: 28px; margin-bottom: 32px; border: 1px solid; }
+    .total-score-box.yellow { background: linear-gradient(135deg, #fefce8, #fef9c3); border-color: #fde68a; }
+    .total-score-box .big-number { font-family: var(--font-display); font-size: 56px; font-weight: 800; line-height: 1; }
+    .total-score-box.yellow .big-number { color: var(--color-yellow-dark); }
+    .total-score-box .of-100 { font-size: 20px; color: var(--color-text-muted); font-weight: 300; }
+    .total-score-box p { font-size: 13px; color: var(--color-text-dim); margin-top: 8px; margin-bottom: 0; }
+    .summary-box { background: var(--color-surface); border-left: 4px solid var(--color-accent); padding: 20px 24px; border-radius: 0 12px 12px 0; font-size: 13.5px; line-height: 1.7; color: #334155; }
+
+    /* --- PROBLEMS --- */
+    .problem-dimension { margin-bottom: 28px; }
+    .dimension-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .dimension-icon { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 16px; color: white; flex-shrink: 0; }
+    .dimension-icon.seo { background: var(--color-red); }
+    .dimension-icon.ux { background: var(--color-yellow); }
+    .dimension-icon.mkt { background: #8b5cf6; }
+    .dimension-icon.cont { background: #0ea5e9; }
+    .dimension-icon.tech { background: var(--color-text-dim); }
+    .dimension-title { font-size: 16px; font-weight: 700; color: var(--color-text); }
+    .problem-item { padding: 10px 16px; background: var(--color-surface-alt); border: 1px solid var(--color-border); border-radius: 10px; margin-bottom: 8px; font-size: 13px; color: var(--color-text-secondary); line-height: 1.5; }
+    .problem-item.alta { border-left: 3px solid var(--color-red); }
+
+    /* --- WHAT WE BUILD --- */
+    .stack-table { width: 100%; border-collapse: separate; border-spacing: 0; margin-bottom: 28px; border-radius: 12px; overflow: hidden; border: 1px solid var(--color-border); }
+    .stack-table th { background: var(--color-accent-dark); color: white; padding: 12px 20px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+    .stack-table td { padding: 14px 20px; border-bottom: 1px solid #f1f5f9; font-size: 13px; }
+    .stack-table tr:last-child td { border-bottom: none; }
+    .stack-table tr:nth-child(even) td { background: var(--color-surface); }
+    .stack-tag { display: inline-block; background: #ecfdf5; color: var(--color-accent-dark); padding: 3px 10px; border-radius: 6px; font-weight: 600; font-size: 12px; }
+    .sections-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 28px; }
+    .section-card { padding: 14px 18px; background: var(--color-surface-alt); border: 1px solid var(--color-border); border-radius: 10px; font-size: 13px; color: #334155; }
+    .section-card strong { display: block; color: var(--color-accent-dark); font-size: 13px; margin-bottom: 2px; }
+    .demo-box { border: 2px solid var(--color-accent); border-radius: 16px; padding: 24px; text-align: center; color: var(--color-accent-dark); font-size: 14px; margin-top: 20px; background: #ecfdf5; }
+    .demo-box .icon { font-size: 28px; margin-bottom: 8px; }
+    .demo-box a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; border-bottom: 2px solid var(--color-accent); }
+    .demo-iframe { width: 100%; height: 500px; border: 1px solid var(--color-border); border-radius: 12px; margin-bottom: 16px; }
+
+    /* --- WHY ACT NOW --- */
+    .urgency-card { padding: 24px; background: var(--color-surface-alt); border: 1px solid var(--color-border); border-radius: 14px; margin-bottom: 16px; position: relative; padding-left: 56px; }
+    .urgency-number { position: absolute; left: 18px; top: 22px; width: 28px; height: 28px; background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; }
+    .urgency-card h3 { color: var(--color-accent-dark); margin-bottom: 6px; }
+    .urgency-card p { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 0; }
+
+    /* --- INVESTMENT --- */
+    .invest-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--color-border); margin-bottom: 20px; }
+    .invest-table th { background: var(--color-accent-dark); color: white; padding: 14px 20px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+    .invest-table td { padding: 16px 20px; border-bottom: 1px solid #f1f5f9; font-size: 13px; vertical-align: top; }
+    .invest-table tr:last-child td { border-bottom: none; }
+    .invest-table tr:nth-child(even) td { background: var(--color-surface); }
+    .invest-table .price { font-weight: 700; color: var(--color-accent-dark); font-size: 15px; white-space: nowrap; }
+    .invest-table ul { list-style: none; padding: 0; }
+    .invest-table ul li { padding: 2px 0; font-size: 12px; color: var(--color-text-secondary); }
+    .invest-table ul li::before { content: "\2713 "; color: var(--color-accent); font-weight: 700; }
+    .invest-note { font-size: 12px; color: var(--color-text-muted); font-style: italic; text-align: center; }
+
+    /* --- COMPARISON --- */
+    .compare-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--color-border); margin-bottom: 28px; }
+    .compare-table th { background: #f1f5f9; color: var(--color-text); padding: 14px 20px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+    .compare-table th.highlight { background: var(--color-accent-dark); color: white; }
+    .compare-table td { padding: 12px 20px; border-bottom: 1px solid #f1f5f9; font-size: 13px; vertical-align: top; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table td.highlight { background: #ecfdf5; }
+    .compare-table .check { color: var(--color-green); font-weight: 700; }
+    .compare-table .cross { color: var(--color-red); font-weight: 700; }
+    .compare-table .partial { color: var(--color-yellow-dark); font-weight: 600; }
+
+    /* --- TIMELINE --- */
+    .timeline { position: relative; padding-left: 32px; }
+    .timeline::before { content: ''; position: absolute; left: 11px; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(180deg, var(--color-accent), var(--color-accent-light)); }
+    .timeline-phase { position: relative; margin-bottom: 32px; }
+    .timeline-dot { position: absolute; left: -32px; top: 4px; width: 24px; height: 24px; border-radius: 50%; background: var(--color-surface-alt); border: 3px solid var(--color-accent); z-index: 1; }
+    .timeline-dot.active { background: var(--color-accent); }
+    .timeline-phase h3 { font-size: 16px; font-weight: 700; color: var(--color-accent-dark); margin-bottom: 10px; }
+    .timeline-phase ul { list-style: none; padding: 0; }
+    .timeline-phase ul li { padding: 6px 0; font-size: 13px; color: var(--color-text-secondary); padding-left: 18px; position: relative; }
+    .timeline-phase ul li::before { content: ''; position: absolute; left: 0; top: 13px; width: 8px; height: 8px; background: var(--color-border); border-radius: 50%; }
+    .cta-box { background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark)); color: white; padding: 28px 32px; border-radius: 16px; text-align: center; margin-top: 36px; }
+    .cta-box p { font-size: 17px; font-weight: 600; margin-bottom: 6px; }
+    .cta-box .sub { font-size: 13px; font-weight: 300; opacity: 0.85; }
+
+    /* --- CLOSING --- */
+    .closing { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; min-height: 1000px; }
+    .closing h2 { font-size: 28px; color: var(--color-text); margin-bottom: 16px; }
+    .closing .phrase { font-size: 18px; color: var(--color-text-secondary); font-weight: 300; max-width: 480px; line-height: 1.7; margin-bottom: 40px; }
+    .closing .agency-name { font-size: 22px; font-weight: 700; color: var(--color-accent); letter-spacing: 1px; margin-bottom: 8px; }
+    .closing .contact { font-size: 14px; color: var(--color-text-muted); }
+    .closing-line { width: 120px; height: 3px; background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light)); border-radius: 2px; margin: 40px auto 0; }
+  </style>
+</head>
+<body>
+
+  <!-- ========== 1. COVER ========== -->
+  <div class="page cover">
+    <div class="cover-decoration top-right"></div>
+    <div class="cover-decoration bottom-left"></div>
+    <div class="cover-line"></div>
+    <h1>Home &amp; Happy</h1>
+    <div class="subtitle">Website &amp; Digital Presence Proposal</div>
+    <div class="date">April 2, 2026</div>
+    <div class="agency">DEXEL</div>
+  </div>
+
+  <!-- ========== 2. CURRENT DIAGNOSIS ========== -->
+  <div class="page">
+    <h2>Current Website Diagnosis</h2>
+
+    <p style="margin-bottom: 24px; color: var(--color-text-secondary);">We performed a comprehensive audit of your current Squarespace website across 5 key dimensions. Here&rsquo;s how your site scores against the benchmark for local service businesses in the Greenville area:</p>
+
+    <!-- SEO -->
+    <div class="score-row">
+      <div class="score-label">SEO</div>
+      <div class="score-bar-wrap">
+        <div class="score-bar-fill yellow" style="width: 52%;"></div>
+      </div>
+      <div class="score-number yellow">52</div>
+      <div class="benchmark-tag">Goal: <span>55</span></div>
+    </div>
+
+    <!-- UX/UI -->
+    <div class="score-row">
+      <div class="score-label">UX / UI</div>
+      <div class="score-bar-wrap">
+        <div class="score-bar-fill green" style="width: 68%;"></div>
+      </div>
+      <div class="score-number green">68</div>
+      <div class="benchmark-tag">Goal: <span>60</span></div>
+    </div>
+
+    <!-- Marketing -->
+    <div class="score-row">
+      <div class="score-label">Marketing</div>
+      <div class="score-bar-wrap">
+        <div class="score-bar-fill green" style="width: 70%;"></div>
+      </div>
+      <div class="score-number green">70</div>
+      <div class="benchmark-tag">Goal: <span>60</span></div>
+    </div>
+
+    <!-- Content -->
+    <div class="score-row">
+      <div class="score-label">Content</div>
+      <div class="score-bar-wrap">
+        <div class="score-bar-fill red" style="width: 42%;"></div>
+      </div>
+      <div class="score-number red">42</div>
+      <div class="benchmark-tag">Goal: <span>65</span></div>
+    </div>
+
+    <!-- Technical -->
+    <div class="score-row">
+      <div class="score-label">Technical</div>
+      <div class="score-bar-wrap">
+        <div class="score-bar-fill green" style="width: 65%;"></div>
+      </div>
+      <div class="score-number green">65</div>
+      <div class="benchmark-tag">Goal: <span>50</span></div>
+    </div>
+
+    <!-- Total -->
+    <div class="total-score-box yellow">
+      <div class="big-number">59 <span class="of-100">/ 100</span></div>
+      <p>Overall score &mdash; below the benchmark for local service businesses</p>
+    </div>
+
+    <!-- Executive Summary -->
+    <div class="summary-box">
+      Home &amp; Happy has a solid visual identity and great social proof &mdash; real testimonials, an award-winning badge, and a strong &ldquo;family-owned&rdquo; message. However, the site falls critically short on content: no phone number, no email, no business hours, services listed without descriptions, and social media links that don&rsquo;t go anywhere. The biggest opportunity is completing the basic business information and optimizing local SEO to convert more of the people already searching for handyman services in Greenville.
+    </div>
+  </div>
+
+  <!-- ========== 3. PROBLEMS WE FOUND ========== -->
+  <div class="page">
+    <h2>What We Found</h2>
+
+    <!-- Content -->
+    <div class="problem-dimension">
+      <div class="dimension-header">
+        <div class="dimension-icon cont">C</div>
+        <div class="dimension-title">Missing Critical Information (Score: 42/100)</div>
+      </div>
+      <div class="problem-item alta">No phone number, no email address, no business hours displayed anywhere on the site &mdash; potential customers can&rsquo;t reach you easily.</div>
+      <div class="problem-item alta">13 services listed but none have descriptions &mdash; customers don&rsquo;t know what&rsquo;s included, what to expect, or how to request a specific service.</div>
+      <div class="problem-item alta">Social media links (Facebook, Instagram) point to generic URLs, not your actual business profiles.</div>
+      <div class="problem-item">No FAQ section addressing common questions about pricing, timelines, insurance, or service areas.</div>
+      <div class="problem-item">Footer is completely empty &mdash; no copyright, no links, no contact information.</div>
+    </div>
+
+    <!-- SEO -->
+    <div class="problem-dimension">
+      <div class="dimension-header">
+        <div class="dimension-icon seo">S</div>
+        <div class="dimension-title">Search Engine Visibility (Score: 52/100)</div>
+      </div>
+      <div class="problem-item alta">Missing meta description &mdash; Google creates its own snippet, which may not represent your business well.</div>
+      <div class="problem-item alta">The main heading uses an emoji character that search engines can&rsquo;t properly read or index.</div>
+      <div class="problem-item">Several gallery and hero images have no alt text &mdash; Google can&rsquo;t &ldquo;see&rdquo; your work photos.</div>
+      <div class="problem-item">No structured data (Schema markup) for local business &mdash; missing from Google Maps and local search results.</div>
+    </div>
+
+    <!-- UX -->
+    <div class="problem-dimension">
+      <div class="dimension-header">
+        <div class="dimension-icon ux">U</div>
+        <div class="dimension-title">User Experience (Score: 68/100)</div>
+      </div>
+      <div class="problem-item alta">Fonts used are demo/personal-use versions (&lsquo;primeform-pro-demo&rsquo;, &lsquo;millaris-personal-use-only&rsquo;) &mdash; potential licensing issues and an unprofessional impression.</div>
+      <div class="problem-item">CTA button colors don&rsquo;t stand out enough from the background &mdash; the accent color is too close to the primary green.</div>
+      <div class="problem-item">Gallery shows 45 images without categories or filters &mdash; overwhelming for visitors looking for specific types of work.</div>
+    </div>
+  </div>
+
+  <!-- ========== 4. WHAT WE BUILT ========== -->
+  <div class="page">
+    <h2>What We Built For You</h2>
+
+    <p style="margin-bottom: 24px; color: var(--color-text-secondary);">We&rsquo;ve already designed and developed a completely custom website for Home &amp; Happy &mdash; faster, more professional, and built to convert visitors into quote requests.</p>
+
+    <!-- Stack -->
+    <table class="stack-table">
+      <thead>
+        <tr>
+          <th style="width: 160px;">Component</th>
+          <th>Technology</th>
+          <th>Benefit for You</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="stack-tag">Site</span></td>
+          <td style="font-weight: 600;">Custom HTML</td>
+          <td>Lightning-fast pages, fully visible to Google &mdash; no template limitations</td>
+        </tr>
+        <tr>
+          <td><span class="stack-tag">Design</span></td>
+          <td style="font-weight: 600;">Tailwind CSS</td>
+          <td>Professional, mobile-first design that looks great on any device</td>
+        </tr>
+        <tr>
+          <td><span class="stack-tag">Local SEO</span></td>
+          <td style="font-weight: 600;">Schema JSON-LD</td>
+          <td>LocalBusiness structured data so you show up in Google Maps and local searches</td>
+        </tr>
+        <tr>
+          <td><span class="stack-tag">Hosting</span></td>
+          <td style="font-weight: 600;">Vercel (Global CDN)</td>
+          <td>Enterprise-grade hosting with SSL, 99.99% uptime, instant page loads worldwide</td>
+        </tr>
+        <tr>
+          <td><span class="stack-tag">Animations</span></td>
+          <td style="font-weight: 600;">Alpine.js</td>
+          <td>Smooth, modern transitions that feel premium without slowing anything down</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Sections -->
+    <h3 style="font-size: 16px; margin-bottom: 14px;">Sections in the new site</h3>
+    <div class="sections-grid">
+      <div class="section-card"><strong>Hero</strong>Award badge, trust metrics, clear &ldquo;Get a Quote&rdquo; CTA</div>
+      <div class="section-card"><strong>About</strong>Your story, family values, and what makes you different</div>
+      <div class="section-card"><strong>Services (13)</strong>Each service with description, details, and CTA</div>
+      <div class="section-card"><strong>Gallery</strong>Curated before/after project photos with categories</div>
+      <div class="section-card"><strong>Reviews</strong>Real testimonials with names for trust &amp; credibility</div>
+      <div class="section-card"><strong>Contact</strong>Phone, email, hours, service area, and quote form</div>
+    </div>
+
+    <!-- Demo -->
+    <div class="demo-box">
+      <div class="icon">&#127760;</div>
+      <p style="margin-bottom: 8px; font-weight: 600;">Your new website is live and ready to preview:</p>
+      <a href="https://home-and-happy.vercel.app/">home-and-happy.vercel.app</a>
+    </div>
+  </div>
+
+  <!-- ========== 5. WHY ACT NOW ========== -->
+  <div class="page">
+    <h2>Why This Matters Now</h2>
+
+    <p style="margin-bottom: 28px; color: var(--color-text-secondary);">Every day your website isn&rsquo;t working for you, potential customers are finding your competitors instead:</p>
+
+    <div class="urgency-card">
+      <div class="urgency-number">1</div>
+      <h3>Customers can&rsquo;t contact you &mdash; content score 42/100</h3>
+      <p>Your current site doesn&rsquo;t show a phone number, email, or business hours. When someone in Greenville needs a handyman and lands on your page, they have to hunt for how to reach you &mdash; most will just hit the back button and call the next company on Google instead. Your new site puts contact info front and center on every page.</p>
+    </div>
+
+    <div class="urgency-card">
+      <div class="urgency-number">2</div>
+      <h3>You&rsquo;re paying for a template that limits you &mdash; Squarespace at $33+/month</h3>
+      <p>With Squarespace Business, you&rsquo;re paying $33/month ($396/year) for a generic template with demo fonts, broken social links, and no local SEO. Your new custom site includes professional hosting at a fraction of the cost, with none of the template restrictions and full control over your content and design.</p>
+    </div>
+
+    <div class="urgency-card">
+      <div class="urgency-number">3</div>
+      <h3>Your reputation isn&rsquo;t reflected online &mdash; SEO score 52/100</h3>
+      <p>You&rsquo;re a 2024 award winner with great reviews and loyal customers, but Google can&rsquo;t properly index your site. Missing meta descriptions, emoji characters in headings, and no Schema markup mean you&rsquo;re invisible in local search. Every month without proper SEO is months of lost leads from people searching &ldquo;handyman Greenville SC.&rdquo;</p>
+    </div>
+
+    <div class="urgency-card">
+      <div class="urgency-number">4</div>
+      <h3>First impressions matter &mdash; and demo fonts send the wrong message</h3>
+      <p>Your site currently uses fonts labeled &ldquo;personal-use-only&rdquo; and &ldquo;demo&rdquo; &mdash; this is both a legal risk and a credibility issue. Visitors may not notice the font name, but they notice when something feels &ldquo;off.&rdquo; A custom-designed site with licensed, professional typography immediately communicates trust and quality craftsmanship.</p>
+    </div>
+  </div>
+
+  <!-- ========== 6. INVESTMENT — COMPARISON ========== -->
+  <div class="page">
+    <h2>Investment</h2>
+
+    <p style="margin-bottom: 20px; color: var(--color-text-secondary);">Here&rsquo;s how we compare to your current Squarespace setup:</p>
+
+    <!-- Comparison Table -->
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th style="width: 200px;">Feature</th>
+          <th>Squarespace (Current)</th>
+          <th class="highlight">Dexel (New Site)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight: 600;">Monthly cost</td>
+          <td>$33/mo (Business plan)</td>
+          <td class="highlight"><strong>$30/mo</strong></td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600;">Custom design</td>
+          <td><span class="cross">&times;</span> Generic template</td>
+          <td class="highlight"><span class="check">&check;</span> Built for your brand</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600;">Local SEO (Schema)</td>
+          <td><span class="cross">&times;</span> Not included</td>
+          <td class="highlight"><span class="check">&check;</span> LocalBusiness markup</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600;">Page speed</td>
+          <td><span class="partial">~</span> Template overhead</td>
+          <td class="highlight"><span class="check">&check;</span> Instant load, global CDN</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600;">Text &amp; image updates</td>
+          <td><span class="partial">~</span> You do it yourself</td>
+          <td class="highlight"><span class="check">&check;</span> We handle it for you</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600;">Technical support</td>
+          <td><span class="partial">~</span> Squarespace ticket queue</td>
+          <td class="highlight"><span class="check">&check;</span> Direct, personal support</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600;">Uptime monitoring</td>
+          <td><span class="cross">&times;</span> Not included</td>
+          <td class="highlight"><span class="check">&check;</span> 24/7 site monitoring</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600;">SSL &amp; security</td>
+          <td><span class="check">&check;</span> Included</td>
+          <td class="highlight"><span class="check">&check;</span> Included</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Pricing Table -->
+    <table class="invest-table">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Includes</th>
+          <th style="text-align: right;">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight: 600;">Custom Website<br><span style="font-weight: 400; font-size: 11px; color: var(--color-text-muted);">One-time purchase</span></td>
+          <td>
+            <ul>
+              <li>Fully custom design matching your brand</li>
+              <li>Mobile-first, responsive on all devices</li>
+              <li>13 services with descriptions &amp; CTAs</li>
+              <li>Project gallery with categories</li>
+              <li>Contact form, phone, email, hours</li>
+              <li>LocalBusiness Schema for Google</li>
+              <li>SEO-optimized meta tags &amp; headings</li>
+              <li>Professional licensed fonts</li>
+              <li>Full ownership &mdash; the site is yours</li>
+            </ul>
+          </td>
+          <td class="price" style="text-align: right;">$200</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600;">Monthly Maintenance<br><span style="font-weight: 400; font-size: 11px; color: var(--color-text-muted);">Ongoing plan</span></td>
+          <td>
+            <ul>
+              <li>Hosting on Vercel (global CDN, SSL, 99.99% uptime)</li>
+              <li>Text &amp; image updates as needed</li>
+              <li>Technical support for any issues during the month</li>
+              <li>24/7 uptime monitoring &mdash; we catch problems before you do</li>
+              <li>Security updates and performance checks</li>
+            </ul>
+          </td>
+          <td class="price" style="text-align: right;">$30/mo</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600;">Strategy Sessions<br><span style="font-weight: 400; font-size: 11px; color: var(--color-text-muted);">Optional add-on</span></td>
+          <td>
+            <ul>
+              <li>Monthly consultation to identify growth opportunities</li>
+              <li>Review analytics &amp; visitor behavior</li>
+              <li>Recommend new features or process automation</li>
+              <li>Tailored advice to improve lead generation</li>
+            </ul>
+          </td>
+          <td class="price" style="text-align: right;">Quoted<br><span style="font-weight: 400; font-size: 11px; color: var(--color-text-muted);">per session</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="invest-note">New features and functionality beyond maintenance updates are quoted separately based on scope.</p>
+
+    <div style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 12px; padding: 20px 24px; margin-top: 20px; text-align: center;">
+      <p style="font-weight: 700; color: var(--color-accent-dark); font-size: 15px; margin-bottom: 4px;">You save with Dexel vs. Squarespace</p>
+      <p style="font-size: 13px; color: var(--color-text-secondary); margin-bottom: 0;">$30/mo with Dexel includes custom design, personal support, and content updates &mdash; things Squarespace charges extra for or doesn&rsquo;t offer at all. No more fighting with templates or doing everything yourself.</p>
+    </div>
+  </div>
+
+  <!-- ========== 7. NEXT STEPS ========== -->
+  <div class="page">
+    <h2>Next Steps</h2>
+
+    <div class="timeline">
+      <!-- Step 1 -->
+      <div class="timeline-phase">
+        <div class="timeline-dot active"></div>
+        <h3>Step 1 &mdash; Review &amp; Approve</h3>
+        <ul>
+          <li>Check out the live demo at <strong>home-and-happy.vercel.app</strong></li>
+          <li>Let us know any changes you&rsquo;d like to the design, text, or photos</li>
+          <li>Send us your real contact info (phone, email, hours) to add to the site</li>
+          <li>Send us your real social media links (Facebook, Instagram)</li>
+        </ul>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="timeline-phase">
+        <div class="timeline-dot active"></div>
+        <h3>Step 2 &mdash; Finalize &amp; Launch</h3>
+        <ul>
+          <li>We make your requested changes within 24&ndash;48 hours</li>
+          <li>Connect your domain (homeandhappy.us) to the new site</li>
+          <li>Cancel your Squarespace subscription &mdash; no more template fees</li>
+          <li>Your new site is live and working for you</li>
+        </ul>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="timeline-phase">
+        <div class="timeline-dot"></div>
+        <h3>Step 3 &mdash; Ongoing Support</h3>
+        <ul>
+          <li>We handle hosting, security, and uptime monitoring</li>
+          <li>Need a text or image changed? Just email us and we take care of it</li>
+          <li>Any issues? We respond directly &mdash; no ticket queues</li>
+          <li>Optional strategy sessions to grow your digital presence</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta-box">
+      <p>Ready to get started? Reply to this email or give us a call</p>
+      <div class="sub">We can have your new site live this week</div>
+    </div>
+  </div>
+
+  <!-- ========== 8. CLOSING ========== -->
+  <div class="page closing">
+    <h2>Home &amp; Happy deserves a website as good as its reputation</h2>
+    <div class="phrase">
+      You&rsquo;ve built a trusted, award-winning business in Greenville. Let&rsquo;s make sure your website reflects that &mdash; professional, fast, and built to bring in more customers.
+    </div>
+    <div class="agency-name">DEXEL</div>
+    <div class="contact">Local Web Development &amp; Digital Services &mdash; Greenville/Spartanburg, SC</div>
+    <div class="closing-line"></div>
+  </div>
+
+</body>
+</html>

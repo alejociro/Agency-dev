@@ -1,0 +1,189 @@
+{
+  "negocio": "Greenville Chiropractic",
+  "url": "https://greenvillechiro.net/",
+  "sector": "Salud — Quiropráctica",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Home | Chiropractor in GREENVILLE, MI | Greenville Chiropractic",
+    "description": "Home in GREENVILLE, MI. Greenville Chiropractic is your local Chiropractor in GREENVILLE serving all of your needs. Call us today at (616) 754-9172 for an appointment.",
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#193227",
+    "secundario": "#4BB685",
+    "acento": "#FF9D00",
+    "fondo": "#F0EDEB",
+    "texto": "#193227",
+    "otros": ["#e0e0e0", "#ff0000", "#4caf50"]
+  },
+  "logo": {
+    "url": "https://greenvillechiro.net/storage/app/media/Logo-Chiro-1-White.png",
+    "descripcion": "Logo blanco de Greenville Chiropractic",
+    "posicion": "top-left header",
+    "colores": ["#ffffff"]
+  },
+  "tipografias": [
+    {
+      "nombre": "Sans-serif (genérica)",
+      "uso": "body, headings",
+      "peso": "400, 700",
+      "tamanio_aprox": null
+    }
+  ],
+  "navegacion": [
+    { "label": "New Patient Information", "url": "/new-patient-information" },
+    { "label": "What to Expect", "url": "/what-to-expect" },
+    { "label": "Your First Visit", "url": "/your-first-visit" },
+    { "label": "Phase 1: Relief Care", "url": "/phase-1-relief-care" },
+    { "label": "Phase 2: Corrective Care", "url": "/phase-2-corrective-care" },
+    { "label": "Phase 3: Wellness Care", "url": "/phase-3-wellness-care" },
+    { "label": "Health Resources", "url": "/health-resources" },
+    { "label": "3D Spine Simulator", "url": "/3d-spine-simulator" },
+    { "label": "Services", "url": "/services" },
+    { "label": "Payment Options", "url": "/payment-options" },
+    { "label": "About Us", "url": "/about-us" },
+    { "label": "Meet the Doctors", "url": "/meet-the-doctors" },
+    { "label": "Testimonials", "url": "/testimonials" },
+    { "label": "Contact Us", "url": "/contact-us" },
+    { "label": "Book Online", "url": "https://greenvillechiropractic.janeapp.com/" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": null,
+      "contenido": null,
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://cdcssl.ibsrv.net/ibimg/smb/1168x775_80/webmgr/08/j/2/Partners_20250121_2012.jpg.webp",
+          "alt": "gcc",
+          "descripcion": "Imagen principal del banner hero — foto de los doctores/equipo",
+          "tipo": "hero-banner",
+          "dimensiones": "1168x775"
+        }
+      ]
+    },
+    {
+      "tipo": "bienvenida",
+      "titulo": "Welcome to Greenville Chiropractic",
+      "contenido": "Your GREENVILLE Chiropractor\n\nOur scheduled hours are as follows:\n\nMonday: 8:00AM-12:15PM, 2:00PM-5:00PM\nTuesday: 8:00AM-12:15PM, 2:00PM-5:00PM\nWednesday: 8:00AM-12:15PM, 2:00PM-5:00PM\nThursday: 8:00AM-12:15PM, 2:00PM-6:00PM\nFriday: 8:00AM-1:00PM\n\nCall the office to make an appointment! 616-754-9172\n\nGreenville Chiropractic has served Greenville and surrounding area for over 50 years! Dr. Matthew DeKraker and Dr. Craig Cushman offer patients finest facility and treatment.",
+      "cta": "616-754-9172",
+      "imagenes": []
+    },
+    {
+      "tipo": "about",
+      "titulo": "About Greenville Chiropractic",
+      "contenido": "Dr. Matthew DeKraker and Dr. Craig Cushman are chiropractors serving GREENVILLE and the surrounding area. Our chiropractors and the rest of the welcoming team at Greenville Chiropractic are committed to providing chiropractic solutions to address your unique needs, whether you are experiencing back pain, neck pain, headaches, or even muscular tightness and tension. You may be searching for pain relief after an accident, experiencing an injury, or if you suffer from a specific condition like chronic back pain or a spinal condition. Even if you looking to improve your overall health, our chiropractors can help you attain your everyday wellness goals! Visit our testimonials page to find out what our patients are saying about our GREENVILLE chiropractor and our chiropractic care plans.\n\nAt your first visit to Greenville Chiropractic, Dr. Matthew DeKraker or Dr. Craig Cushman will explain how chiropractic works and give you a full evaluation to see if chiropractic care may benefit you. If the doctor believes chiropractic can benefit you, we will customize a plan of care for your condition and health goals.\n\nIf you have not been to a chiropractor before and want to find out more, please email us or call (616) 754-9172 to receive the answers to your questions from our experienced team. We also welcome referrals, so we invite you to share our chiropractic and wellness information with your friends and loved ones.\n\nIf you would like to stay informed about the latest in chiropractic care or if you want to start receiving free articles about health and wellness news, subscribe to our bi-weekly newsletter, even if you are not a patient. We also offer a community content area, which includes wellness articles and other healthcare resources.",
+      "cta": "(616) 754-9172",
+      "imagenes": [
+        {
+          "url": "https://cdcssl.ibsrv.net/ibimg/smb/445x450_80/webmgr/08/j/2/images/blade-img.png.webp",
+          "alt": "Title",
+          "descripcion": "Imagen del equipo o doctores de la clínica",
+          "tipo": "about-image",
+          "dimensiones": "445x450"
+        }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Services",
+      "contenido": "Spinal Adjustment\nSpinal Decompression Herniated Disc\nOn-Premise X-ray Services\nMassage Therapy",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "interactivo",
+      "titulo": "WHERE IS YOUR PAIN?",
+      "contenido": "Learn how we can help with your pain\n\n- Head and Neck\n- Upper Back\n- Shoulder or Clavicle\n- Mid-Back\n- Lower Back\n- Elbow, Hand, and Wrist",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://cdcssl.ibsrv.net/ibimg/smb/2400x1000_80/webmgr/08/j/2/images/5fff7381225fe_wheresyourpaintransparent.png.webp",
+          "alt": null,
+          "descripcion": "Imagen interactiva de silueta humana para señalar zonas de dolor",
+          "tipo": "infographic",
+          "dimensiones": "2400x1000"
+        }
+      ]
+    },
+    {
+      "tipo": "testimonios",
+      "titulo": "Testimonials",
+      "contenido": "Reviews By Our Satisfied Clients\n\n\"This is a great office! I have seen both doctors and they both do a great job. I am a hygienist and they keep me working!\" — Amanda S.\n\n\"This is the best in the business. I have been going here for a lot of years. Back when the office was on Benton st to current. Great staff and Awesome Doc's.\" — Rich R.\n\n\"I love GCC. They are so friendly and very helpful. I have been going there for years.\" — Victoria N.",
+      "cta": "SCHEDULE YOUR NEXT VISIT NOW — BOOK AN APPOINTMENT",
+      "imagenes": []
+    },
+    {
+      "tipo": "blog",
+      "titulo": "Featured Articles",
+      "contenido": "Interesting Health Topics\n\n1. February Newsletter: The Benefits of Regular Chiropractic Adjustments — Could regular chiropractic adjustments improve your health and comfort?\n2. January Newsletter: How an Auto Accident Impacts Your Posture and How Chiropractic Care Can Help — Chiropractic care offers the perfect solution to your post-accident posture issues.\n3. November Newsletter: Chiropractic Care for Headache Relief — Struggling with headaches? Chiropractic care offers natural relief.\n4. January Newsletter: Top Benefits of Combining Chiropractic Care and Physical Therapy — Struggling with pain and stiffness? The chiropractic/physical therapy combination approach may offer ideal solution.\n5. February Newsletter: The Benefits of Chiropractic Care Across All Ages — Wondering if chiropractic treatments are good idea for everyone?\n6. March Newsletter: How Chiropractic Care May Improve Your Stress Levels — Has stress taken control of your life? Chiropractic care could help you relax.\n7. December Newsletter: How to Choose the Best Chiropractor for Your Needs — Not sure which chiropractor is right for you? Check out our search tips.\n8. March Newsletter: What Disc Conditions Can a Chiropractor Help With? — Wondering if chiropractic treatment is right for your disc condition?",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "newsletter",
+      "titulo": "Newsletter Signup",
+      "contenido": "Suscripción a boletín quincenal de salud y bienestar",
+      "cta": "Subscribe",
+      "imagenes": []
+    },
+    {
+      "tipo": "contacto",
+      "titulo": "Contact Form",
+      "contenido": "Formulario de consulta general",
+      "cta": "Submit",
+      "imagenes": []
+    },
+    {
+      "tipo": "mapa",
+      "titulo": "Our Location",
+      "contenido": "Find us on the map\n\n710 E Washington St, Greenville, MI 48838\nCoordinates: 43.177888, -85.241976",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Your GREENVILLE Chiropractor",
+    "propuesta_valor": "Greenville Chiropractic has served Greenville and surrounding area for over 50 years! Dr. Matthew DeKraker and Dr. Craig Cushman offer patients finest facility and treatment.",
+    "ctas": [
+      "Call (616) 754-9172",
+      "Book Online",
+      "SCHEDULE YOUR NEXT VISIT NOW — BOOK AN APPOINTMENT",
+      "Subscribe to newsletter"
+    ]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(616) 754-9172",
+    "whatsapp": null,
+    "email": "greenvillechiroassistant@gmail.com",
+    "direccion": "710 E Washington St, Greenville, MI 48838, United States",
+    "horarios": "Monday: 8:00AM-12:15PM, 2:00PM-5:00PM | Tuesday: 8:00AM-12:15PM, 2:00PM-5:00PM | Wednesday: 8:00AM-12:15PM, 2:00PM-5:00PM | Thursday: 8:00AM-12:15PM, 2:00PM-6:00PM | Friday: 8:00AM-1:00PM | Saturday: Closed | Sunday: Closed"
+  },
+  "redes": [
+    { "plataforma": "Facebook", "url": "https://www.facebook.com/greenvillechiro/" }
+  ],
+  "formularios": [
+    {
+      "proposito": "Newsletter subscription (bi-weekly health & wellness)",
+      "campos": ["email"]
+    },
+    {
+      "proposito": "Contact / General inquiry",
+      "campos": ["name", "email", "phone", "message"]
+    }
+  ],
+  "footer": {
+    "contenido": "Greenville Chiropractic, PC\n710 E Washington St, Greenville, MI 48838\n(616) 754-9172\ngreenvillechiroassistant@gmail.com",
+    "links": [
+      { "label": "Facebook", "url": "https://www.facebook.com/greenvillechiro/" },
+      { "label": "Site Map", "url": "https://greenvillechiro.net/sitemap" },
+      { "label": "Admin Log In", "url": "https://portal.chiromatrixbase.com" }
+    ],
+    "copyright": "Copyright © 2026 MH Sub I, LLC dba iMatrix"
+  },
+  "tecnologia": "ChiroMatrix CMS, iSMB backend, Google Analytics, Piwik, Jane App (booking), reCAPTCHA v2, ibsrv.net CDN, Schema.org (MedicalClinic, WebSite), UserWay (accessibility)"
+}

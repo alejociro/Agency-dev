@@ -1,0 +1,180 @@
+{
+  "cliente": "Greenville Chiropractic",
+  "url_auditada": "https://greenvillechiro.net/",
+  "sector": "Salud — Quiropráctica",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 50. Clínica quiropráctica local con 50+ años, competencia directa con otras prácticas de salud en Greenville, MI. El benchmark exige presencia local sólida, confianza profesional y facilidad de reserva.",
+  "fecha": "2026-04-01",
+  "scores": {
+    "seo": 42,
+    "ux_ui": 45,
+    "marketing": 48,
+    "contenido": 55,
+    "tecnico": 40,
+    "total": 46
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title incluye keyword principal 'Chiropractor in GREENVILLE, MI' y nombre del negocio",
+        "Meta description presente con teléfono y localización",
+        "Schema.org MedicalClinic y WebSite implementados correctamente — favorece rich snippets locales",
+        "Múltiples CTAs con texto descriptivo: 'Book Online', 'SCHEDULE YOUR NEXT VISIT NOW'"
+      ],
+      "negativos": [
+        "Alt text de imágenes pésimo: 'gcc', 'Title', null — penaliza accesibilidad y SEO de imágenes",
+        "Meta title comienza con 'Home |' desperdiciando caracteres valiosos en SERP",
+        "Meta description genérica tipo plantilla ('Home in GREENVILLE, MI') — no diferencia ni invita al click",
+        "Hero sin H1 visible ni texto — los primeros 200px no comunican nada al crawler ni al usuario",
+        "Keywords meta ausentes (menor impacto directo pero indica falta de estrategia SEO)",
+        "No hay evidencia de estructura jerárquica H1→H2→H3 coherente en la página"
+      ],
+      "recomendaciones": [
+        { "accion": "Reescribir alt text de todas las imágenes con descripciones relevantes y keywords locales", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Cambiar meta title a 'Greenville Chiropractic | Chiropractor in Greenville, MI — 50+ Years' eliminando 'Home |'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reescribir meta description con propuesta de valor y CTA: 'Over 50 years of chiropractic care in Greenville, MI. Dr. DeKraker & Dr. Cushman — book your appointment today.'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir H1 con keyword principal en la sección hero, visible above the fold", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar estructura de headings semántica H1→H2→H3 en toda la página", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de 3 colores principales (verde oscuro, verde sage, naranja) coherente con el sector salud",
+        "Flujo de secciones lógico: hero → bienvenida → about → servicios → dolor → testimonios → blog → contacto → mapa",
+        "Sección 'WHERE IS YOUR PAIN?' es un elemento interactivo diferenciador que guía al usuario"
+      ],
+      "negativos": [
+        "Hero es solo imagen sin overlay de texto, CTA ni mensaje — desperdicia el espacio más valioso",
+        "Tipografía genérica sans-serif sin personalidad de marca — no transmite profesionalismo ni calidez",
+        "Colores de sistema (#ff0000 para error, #4caf50 para success) expuestos, sugiriendo falta de diseño personalizado",
+        "Sección de bienvenida mezcla horarios con propuesta de valor — sobrecarga cognitiva",
+        "Navegación con 15 items incluyendo sub-niveles es excesiva para un sitio de esta complejidad",
+        "Sin evidencia de diseño mobile-first — template ChiroMatrix probablemente responsive pero desactualizado"
+      ],
+      "recomendaciones": [
+        { "accion": "Rediseñar hero con headline potente, subtítulo y botón 'Book Appointment' sobre la imagen", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Seleccionar 1-2 tipografías con personalidad (ej. Inter + Playfair Display) que refuercen confianza médica", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Simplificar navegación a 5-6 items principales con dropdown limpio para sub-páginas", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Separar horarios de la sección de bienvenida — mover a sidebar, footer o sección dedicada", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Asegurar diseño mobile-first con menú hamburguesa, botón de llamada sticky y formulario simplificado", "prioridad": "alta", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "CTA 'Book Online' siempre visible en navegación con integración Jane App funcional",
+        "Prueba social presente: 3 testimonios reales con nombre, sección 'WHERE IS YOUR PAIN?' conecta con dolencia del usuario",
+        "Credencial de '50+ years' genera confianza inmediata — diferenciador fuerte para servicio local",
+        "Múltiples canales de conversión: teléfono, email, booking online, formulario de contacto"
+      ],
+      "negativos": [
+        "Hero no tiene NINGÚN mensaje de marketing — la imagen sola no convierte",
+        "Propuesta de valor enterrada en párrafo largo debajo del fold — el usuario debe hacer scroll para entender qué ofrece la clínica",
+        "Solo 3 testimonios sin estrellas, sin volumen de reviews ni enlace a Google Reviews",
+        "Textos de about son extensos y genéricos — parecen plantilla de ChiroMatrix, no voz propia del negocio",
+        "No hay oferta concreta para nuevos pacientes (ej. evaluación gratuita, descuento primera visita)",
+        "Sección de servicios es solo una lista de 4 items sin explicación de beneficios"
+      ],
+      "recomendaciones": [
+        { "accion": "Crear headline hero enfocado en el dolor del paciente: '50+ Years Relieving Pain in Greenville — Book Your First Visit Today'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir oferta para nuevos pacientes (consulta inicial, evaluación) como gancho de conversión", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Integrar Google Reviews widget o mostrar rating agregado (ej. '4.8★ — 120+ Reviews') junto a testimonios", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reescribir sección de servicios con beneficios orientados al paciente, no solo nombres técnicos", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Condensar texto de about a 2-3 párrafos con voz propia y foco en experiencia del paciente", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Información de contacto completa: teléfono, email, dirección, horarios detallados por día",
+        "8 artículos de blog/newsletter demuestran actividad de contenido y autoridad temática",
+        "Sección interactiva 'WHERE IS YOUR PAIN?' con 6 zonas es contenido útil y diferenciador",
+        "Descripción de las 3 fases de tratamiento (Relief, Corrective, Wellness) en navegación muestra proceso claro"
+      ],
+      "negativos": [
+        "Texto del about es extenso, repetitivo y con tono de plantilla — menciona 'GREENVILLE' en mayúsculas de forma forzada",
+        "Alt text 'Title' y 'gcc' son placeholders no reemplazados — indica descuido en contenido",
+        "No hay sección FAQ en homepage que resuelva objeciones comunes (costo, duración, seguro médico)",
+        "Servicios listados sin descripción — el usuario no puede evaluar si el servicio le aplica",
+        "Artículos de blog son newsletters genéricas sin fecha clara ni estructura de contenido SEO"
+      ],
+      "recomendaciones": [
+        { "accion": "Reescribir about con voz auténtica del negocio — eliminar repeticiones de 'GREENVILLE' y tono plantilla", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Añadir sección FAQ en homepage: '¿Acepta mi seguro?', '¿Cuánto dura una visita?', '¿Necesito referido?'", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Expandir cada servicio con descripción de 2-3 líneas, beneficio principal y link a detalle", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Reemplazar todos los alt text placeholder con descripciones reales de las imágenes", "prioridad": "alta", "tipo": "quick_win" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Schema.org bien implementado (MedicalClinic, WebSite, PostalAddress, GeoCoordinates, OpeningHoursSpecification)",
+        "Jane App como sistema de booking externo — solución probada para clínicas de salud",
+        "reCAPTCHA en formularios protege contra spam",
+        "CDN de ibsrv.net para imágenes con formato WebP y dimensiones optimizadas"
+      ],
+      "negativos": [
+        "ChiroMatrix es un CMS cerrado y obsoleto — limita personalización, velocidad y SEO técnico",
+        "Piwik (ahora Matomo) junto con Google Analytics es redundante y añade carga innecesaria",
+        "reCAPTCHA v2 es obsoleto — v3 es invisible y mejor para UX",
+        "Copyright asignado a 'MH Sub I, LLC dba iMatrix' — el cliente no es dueño técnico de su sitio",
+        "Sin favicon detectado — descuido técnico básico",
+        "Dependencia total de plataforma propietaria — migración compleja si quiere cambiar"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a sitio propio con stack moderno (HTML/Tailwind) — libera al cliente de dependencia ChiroMatrix", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar Google Analytics 4 como único sistema de analytics y eliminar Piwik", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Añadir favicon profesional que refuerce identidad de marca", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Migrar a reCAPTCHA v3 o solución invisible como Turnstile para mejor UX en formularios", "prioridad": "baja", "tipo": "mejora_estructural" },
+        { "accion": "Mantener integración Jane App para booking y formulario de contacto con Formspree o similar", "prioridad": "media", "tipo": "mejora_estructural" }
+      ],
+      "stack_actual": "ChiroMatrix CMS, iSMB backend, Google Analytics + Piwik, Jane App (booking), reCAPTCHA v2, ibsrv.net CDN, UserWay (accessibility)",
+      "stack_recomendado": "HTML + Tailwind + Alpine.js, Google Analytics 4, Jane App (booking), Formspree (contacto), Cloudflare Turnstile",
+      "integraciones": [
+        "Jane App (booking online)",
+        "Google Analytics",
+        "Piwik/Matomo",
+        "reCAPTCHA v2",
+        "UserWay (accessibility)",
+        "Facebook Page",
+        "Schema.org structured data"
+      ],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Reescribir meta title eliminando 'Home |' y añadiendo '50+ Years' como diferenciador",
+    "Corregir todos los alt text de imágenes (de 'gcc'/'Title'/null a descripciones reales)",
+    "Reescribir meta description con propuesta de valor y CTA claro",
+    "Añadir headline + botón CTA sobre la imagen hero",
+    "Añadir favicon profesional al sitio"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Reescribir meta title y meta description con keywords y propuesta de valor",
+      "Corregir alt text de todas las imágenes",
+      "Diseñar y añadir headline + CTA al hero section",
+      "Añadir favicon",
+      "Crear oferta para nuevos pacientes (evaluación inicial)"
+    ],
+    "mes_1": [
+      "Migrar sitio a stack propio HTML + Tailwind liberando de ChiroMatrix",
+      "Rediseñar hero con overlay de texto, CTA prominente y diseño mobile-first",
+      "Simplificar navegación a 5-6 items principales",
+      "Reescribir textos de about y servicios con voz propia y foco en beneficios",
+      "Añadir sección FAQ en homepage",
+      "Integrar Google Reviews o widget de reseñas con rating agregado",
+      "Implementar GA4 como único analytics"
+    ],
+    "largo_plazo": [
+      "Desarrollar páginas de servicio individuales con contenido SEO optimizado",
+      "Crear estrategia de blog con artículos optimizados para keywords locales",
+      "Implementar Cloudflare Turnstile como reemplazo de reCAPTCHA v2",
+      "Ampliar presencia en redes sociales más allá de Facebook (Google Business, Instagram)",
+      "Añadir sistema de reviews automatizado post-visita"
+    ]
+  },
+  "resumen_ejecutivo": "El sitio de Greenville Chiropractic está atrapado en una plataforma obsoleta (ChiroMatrix) que limita severamente su capacidad de conversión, SEO y diferenciación — el hero no comunica nada, los textos son plantilla genérica y los alt text son placeholders sin corregir. La oportunidad principal es que el negocio tiene 50+ años de trayectoria, testimonios reales y un sistema de booking funcional, pero nada de esto se presenta de forma efectiva al visitante. El próximo paso es migrar a un sitio propio con diseño moderno que ponga la propuesta de valor y el CTA de reserva above the fold desde el primer segundo.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["alpinejs", "jane-app-embed", "google-analytics-4", "formspree"],
+    "justificacion": "Complejidad baja — sitio informativo de servicio local con booking externo (Jane App). HTML + Tailwind + Alpine.js cubre todas las necesidades sin overhead de framework: landing page rápida, formularios, interactividad ligera para FAQ/acordeones y menú mobile. Máximo rendimiento, mínimo mantenimiento."
+  }
+}

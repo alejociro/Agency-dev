@@ -1,0 +1,7 @@
+{
+  "negocio": "downtown-dental",
+  "url_produccion": "https://downtown-dental-mu.vercel.app",
+  "fecha_deploy": "2026-04-02",
+  "stack": "html",
+  "carpeta_origen": "web/downtown-dental"
+}
