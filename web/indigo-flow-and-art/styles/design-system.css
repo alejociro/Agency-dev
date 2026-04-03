@@ -1,0 +1,321 @@
+/* BRIEF CREATIVO
+   Negocio    : Indigo Flow and Art
+   Sector     : Wellness / Arte (Pilates Clasico + Galeria de Arte)
+   Tono       : editorial sofisticado + neo-organico
+   Concepto   : "Where movement meets canvas" — el cuerpo como arte,
+                 el estudio como galeria. Dos disciplinas que fluyen
+                 en un mismo espacio indigo.
+   Diferenciador visual: Hero con composicion split-panel asimetrico
+                 (Pilates | Arte) que se funde en un gradiente indigo
+                 al hacer scroll, como tinta que sangra sobre papel.
+                 Imagenes con overlay granulado estilo art-print.
+                 Lineas finas decorativas que evocan trazos de pincel
+                 y la precision del movimiento clasico.
+   Tipografia : Fraunces (display) + Outfit (body)
+   Mood       : indigo - fluido - galeria
+   Paleta base: navy #2e3a59 expandida
+*/
+
+/* ========================================
+   DESIGN SYSTEM — Indigo Flow and Art
+   ======================================== */
+
+@layer base, components, utilities;
+
+@layer base {
+
+  :root {
+    /* --- Paleta --- */
+    --color-primary:        #2e3a59;
+    --color-primary-dark:   #1a1d2e;
+    --color-primary-glow:   rgba(46, 58, 89, 0.25);
+    --color-secondary:      #4b5fa6;
+    --color-secondary-glow: rgba(75, 95, 166, 0.2);
+    --color-accent:         #c4856a;
+    --color-accent-light:   #d4a08a;
+    --color-accent-glow:    rgba(196, 133, 106, 0.25);
+    --color-sage:           #8a9a7b;
+    --color-sage-light:     #a8b69c;
+    --color-bg:             #f5f0e8;
+    --color-bg-warm:        #ede7db;
+    --color-surface:        #faf7f2;
+    --color-surface-alt:    #eee8dd;
+    --color-text:           #1a1d2e;
+    --color-text-muted:     rgba(26, 29, 46, 0.6);
+    --color-text-light:     rgba(26, 29, 46, 0.45);
+    --color-text-on-dark:   #f5f0e8;
+    --color-text-on-dark-muted: rgba(245, 240, 232, 0.65);
+    --color-border:         rgba(26, 29, 46, 0.1);
+    --color-border-strong:  rgba(26, 29, 46, 0.2);
+
+    /* --- Gradientes --- */
+    --gradient-indigo:      linear-gradient(135deg, #1a1d2e 0%, #2e3a59 40%, #4b5fa6 100%);
+    --gradient-warm:        linear-gradient(135deg, #f5f0e8 0%, #ede7db 100%);
+    --gradient-hero-fade:   linear-gradient(to bottom, transparent 0%, rgba(26, 29, 46, 0.85) 100%);
+
+    /* --- Espaciado (base 8px) --- */
+    --space-1:  0.5rem;
+    --space-2:  1rem;
+    --space-3:  1.5rem;
+    --space-4:  2rem;
+    --space-5:  2.5rem;
+    --space-6:  3rem;
+    --space-8:  4rem;
+    --space-10: 5rem;
+    --space-12: 6rem;
+    --space-16: 8rem;
+    --space-20: 10rem;
+
+    /* --- Tipografia fluida --- */
+    --font-display: 'Fraunces', serif;
+    --font-body:    'Outfit', sans-serif;
+
+    --text-hero:   clamp(3rem, 8vw, 7rem);
+    --text-h1:     clamp(2rem, 5vw, 4rem);
+    --text-h2:     clamp(1.5rem, 3vw, 2.5rem);
+    --text-h3:     clamp(1.2rem, 2vw, 1.75rem);
+    --text-h4:     clamp(1.05rem, 1.5vw, 1.25rem);
+    --text-body:   clamp(1rem, 1.2vw, 1.125rem);
+    --text-small:  clamp(0.8rem, 1vw, 0.9rem);
+    --text-tiny:   clamp(0.7rem, 0.8vw, 0.8rem);
+
+    /* --- Line heights --- */
+    --leading-tight: 1.1;
+    --leading-snug:  1.3;
+    --leading-body:  1.6;
+    --leading-loose: 1.8;
+
+    /* --- Letter spacing --- */
+    --tracking-tight:   -0.02em;
+    --tracking-normal:  0;
+    --tracking-wide:    0.05em;
+    --tracking-wider:   0.1em;
+    --tracking-widest:  0.2em;
+
+    /* --- Font weights --- */
+    --weight-light:    300;
+    --weight-regular:  400;
+    --weight-medium:   500;
+    --weight-semibold: 600;
+    --weight-bold:     700;
+
+    /* --- Border radius --- */
+    --radius-sm:   4px;
+    --radius-md:   8px;
+    --radius-lg:   16px;
+    --radius-xl:   24px;
+    --radius-2xl:  32px;
+    --radius-full: 9999px;
+
+    /* --- Secciones --- */
+    --section-padding:   clamp(5rem, 10vw, 10rem);
+    --container-max:     1200px;
+    --container-narrow:  800px;
+    --container-padding: clamp(1rem, 5vw, 2rem);
+
+    /* --- Sombras --- */
+    --shadow-sm:    0 1px 3px rgba(26, 29, 46, 0.06);
+    --shadow-md:    0 4px 12px rgba(26, 29, 46, 0.08);
+    --shadow-lg:    0 8px 30px rgba(26, 29, 46, 0.12);
+    --shadow-xl:    0 16px 50px rgba(26, 29, 46, 0.16);
+    --shadow-glow:  0 0 30px var(--color-primary-glow);
+    --shadow-warm:  0 4px 20px rgba(196, 133, 106, 0.15);
+
+    /* --- Transiciones --- */
+    --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-in-out:  cubic-bezier(0.65, 0, 0.35, 1);
+    --ease-spring:  cubic-bezier(0.34, 1.56, 0.64, 1);
+    --duration-fast:   150ms;
+    --duration-base:   300ms;
+    --duration-slow:   500ms;
+    --duration-slower: 800ms;
+
+    /* --- Z-index --- */
+    --z-behind:  -1;
+    --z-base:    1;
+    --z-above:   10;
+    --z-nav:     100;
+    --z-modal:   1000;
+    --z-toast:   1100;
+
+    /* --- Grain overlay --- */
+    --grain-opacity: 0.04;
+  }
+
+  /* ----- Reduced motion ----- */
+  @media (prefers-reduced-motion: reduce) {
+    :root {
+      --duration-fast:   0ms;
+      --duration-base:   0ms;
+      --duration-slow:   0ms;
+      --duration-slower: 0ms;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* ----- Reset & base ----- */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    font-weight: var(--weight-regular);
+    line-height: var(--leading-body);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* ----- Typography base ----- */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: var(--weight-semibold);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-text);
+    text-wrap: balance;
+  }
+
+  h1 { font-size: var(--text-h1); }
+  h2 { font-size: var(--text-h2); }
+  h3 { font-size: var(--text-h3); }
+  h4 { font-size: var(--text-h4); }
+
+  p {
+    max-width: 65ch;
+    text-wrap: pretty;
+  }
+
+  a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    transition: color var(--duration-fast) var(--ease-out);
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ----- Focus-visible accessibility ----- */
+  :focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* ----- Utility classes ----- */
+  .container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+  }
+
+  .container--narrow {
+    max-width: var(--container-narrow);
+  }
+
+  .section {
+    padding-block: var(--section-padding);
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  /* ----- Grain texture overlay ----- */
+  .grain::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)'/%3E%3C/svg%3E");
+    background-size: 200px;
+    opacity: var(--grain-opacity);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* ----- Fine decorative line ----- */
+  .line-accent {
+    width: 60px;
+    height: 1px;
+    background: var(--color-accent);
+    border: none;
+  }
+
+  .line-accent--wide {
+    width: 120px;
+  }
+
+  /* ----- Text on dark backgrounds ----- */
+  .on-dark {
+    color: var(--color-text-on-dark);
+
+    & h1, & h2, & h3, & h4, & h5, & h6 {
+      color: var(--color-text-on-dark);
+    }
+
+    & p {
+      color: var(--color-text-on-dark-muted);
+    }
+
+    & a {
+      color: var(--color-accent-light);
+
+      &:hover {
+        color: var(--color-accent);
+      }
+    }
+  }
+
+  /* ----- Performance: content-visibility ----- */
+  .section:not(:first-of-type) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 500px;
+  }
+
+  /* ----- Performance: will-change ----- */
+  .hero-panel__bg {
+    will-change: transform;
+  }
+}

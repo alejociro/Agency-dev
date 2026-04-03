@@ -1,0 +1,547 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  ogImage?: string;
+}
+
+const siteName = 'Greenville Executive Limo Service';
+const siteUrl = 'https://gvllimo.com';
+const defaultOgImage = 'https://img1.wsimg.com/isteam/ip/7cfeebe0-8cbc-4d8b-810f-8f41f13db67a/327713036_242818518104058_5945976781124740666_.jpg';
+
+const {
+  title,
+  description = 'Premium executive transportation in Greenville, SC. 24/7 limo, sedan & SUV service with SLED-certified armed security. Book now — (864) 920-3342.',
+  canonical = siteUrl + Astro.url.pathname,
+  ogImage = defaultOgImage,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Primary -->
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="keywords" content="limo service Greenville SC, executive transportation, airport transfer Greenville, party bus Greenville, luxury SUV service, SLED armed transport, GVL Limo, wedding limo SC, corporate car service Upstate" />
+  <link rel="canonical" href={canonical} />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:site_name" content={siteName} />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+  <meta name="twitter:site" content="@GvlLimo" />
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://img1.wsimg.com/isteam/ip/7cfeebe0-8cbc-4d8b-810f-8f41f13db67a/327713036_242818518104058_5945976781124740666_.jpg" as="image" fetchpriority="high" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Jost:wght@300;400;500;600;700&display=swap" as="style" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Jost:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Design System + Animations -->
+  <link rel="stylesheet" href="/src/styles/design-system.css" />
+  <link rel="stylesheet" href="/src/styles/animations.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
+  <link rel="apple-touch-icon" href="/assets/icons/favicon.svg" />
+
+  <!-- Speculation Rules — prefetch likely navigation targets -->
+  <script type="speculationrules">
+  {
+    "prerender": [
+      { "where": { "href_matches": "/contact" } }
+    ],
+    "prefetch": [
+      { "where": { "href_matches": "/services" } },
+      { "where": { "href_matches": "/about" } },
+      { "where": { "href_matches": "/experiences" } }
+    ]
+  }
+  </script>
+
+  <!-- Schema JSON-LD: Organization + LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LimousineBus",
+    "name": "Greenville Executive Limo Service",
+    "alternateName": "GVL Limo",
+    "description": "Premium 24/7 executive transportation in Greenville, SC. Sedan, SUV, limousine & party bus service. USDOT certified, SLED-licensed armed security available.",
+    "url": "https://gvllimo.com",
+    "telephone": "+18649203342",
+    "email": "info@gvllimo.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "155 Riverplace Suite 206",
+      "addressLocality": "Greenville",
+      "addressRegion": "SC",
+      "postalCode": "29601",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.8526,
+      "longitude": -82.3940
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "priceRange": "$$-$$$",
+    "areaServed": [
+      {"@type": "City", "name": "Greenville", "containedInPlace": {"@type": "State", "name": "South Carolina"}},
+      {"@type": "City", "name": "Spartanburg"},
+      {"@type": "City", "name": "Asheville"},
+      {"@type": "City", "name": "Clemson"},
+      {"@type": "City", "name": "Anderson"},
+      {"@type": "City", "name": "Charlotte"},
+      {"@type": "City", "name": "Atlanta"}
+    ],
+    "sameAs": [
+      "https://www.facebook.com/107789328182081",
+      "https://www.instagram.com/gvllimo",
+      "https://www.linkedin.com/company/greenville-executive-limo-service-llc/",
+      "https://www.tiktok.com/@gvllimo",
+      "https://www.x.com/GvlLimo",
+      "https://www.yelp.com/biz/jQTpLcSbhyOb__TQ4WOv-g",
+      "https://www.youtube.com/channel/UCHINlly5C97aLuaVqIkOShA"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Transportation Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Airport Transfers"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Executive Transportation"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Wedding & Event Limos"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Party Bus Rental"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GVL SAFE Armed Security Transport"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Greenville Tours & Experiences"}}
+      ]
+    }
+  }
+  </script>
+
+  <slot name="head" />
+</head>
+<body>
+  <!-- Reading progress bar -->
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <!-- Film grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Custom cursor (pointer devices) -->
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="GVL Limo — Home">
+        <span class="logo-text">GVL</span>
+        <span class="logo-accent">Limo</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Fleet</a></li>
+          <li><a href="/experiences">Experiences</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+18649015075" class="header-phone" aria-label="Call us">
+          (864) 901-5075
+        </a>
+        <a href="/contact" class="btn btn-primary btn-sm">Book Now</a>
+      </div>
+
+      <!-- Mobile toggle -->
+      <button
+        class="mobile-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Fleet</a></li>
+          <li><a href="/experiences">Experiences</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="mobile-actions">
+          <a href="tel:+18649015075" class="btn btn-outline">(864) 901-5075</a>
+          <a href="/contact" class="btn btn-primary">Book Now</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="main-content">
+    <slot />
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="gold-seam"></div>
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text">GVL</span><span class="logo-accent">Limo</span>
+          <p class="text-muted footer-tagline">
+            Greenville's premier executive transportation since day one.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/services">Fleet</a></li>
+            <li><a href="/experiences">Experiences</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-services">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/services#sedan">Executive Sedan</a></li>
+            <li><a href="/services#suv">Luxury SUV</a></li>
+            <li><a href="/services#limo">Stretch Limousine</a></li>
+            <li><a href="/experiences">Tours & Experiences</a></li>
+            <li><a href="/about#gvl-safe">GVL SAFE</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+18649015075">(864) 901-5075</a></li>
+            <li><a href="mailto:info@gvllimo.com">info@gvllimo.com</a></li>
+            <li>Greenville, SC</li>
+            <li>Available 24/7</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="gold-seam"></div>
+
+      <div class="footer-bottom">
+        <p class="text-muted text-small">
+          &copy; {new Date().getFullYear()} Greenville Executive Limo Service. All rights reserved.
+        </p>
+        <p class="text-muted text-small">
+          USDOT Certified &bull; SLED Licensed &bull; Fully Insured
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/src/scripts/animations.js"></script>
+
+  <script>
+    // Mobile menu toggle
+    const toggle = document.querySelector('.mobile-toggle');
+    const menu = document.getElementById('mobile-menu');
+
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!isOpen));
+        toggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+        menu.hidden = isOpen;
+        document.body.style.overflow = isOpen ? '' : 'hidden';
+      });
+    }
+
+    // Header scroll effect
+    const header = document.getElementById('site-header');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const current = window.scrollY;
+      if (current > 80) {
+        header?.classList.add('header-scrolled');
+      } else {
+        header?.classList.remove('header-scrolled');
+      }
+      lastScroll = current;
+    }, { passive: true });
+  </script>
+
+  <style>
+    /* ============================================
+       HEADER
+       ============================================ */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding-block: var(--space-3);
+      transition: all var(--duration-base) var(--ease-out-expo);
+      background: transparent;
+    }
+
+    .header-scrolled {
+      background: rgba(13, 13, 13, 0.95);
+      backdrop-filter: blur(12px);
+      padding-block: var(--space-2);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 0.25em;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover { color: var(--color-text); }
+    }
+
+    .logo-text {
+      color: var(--color-text);
+    }
+
+    .logo-accent {
+      color: var(--color-primary);
+      font-style: italic;
+    }
+
+    .nav-list {
+      display: flex;
+      gap: var(--space-4);
+      list-style: none;
+
+      & a {
+        font-family: 'Jost', sans-serif;
+        font-size: var(--text-small);
+        font-weight: 400;
+        letter-spacing: var(--tracking-wide);
+        text-transform: uppercase;
+        color: var(--color-text-muted);
+        transition: color var(--duration-fast) var(--ease-out-expo);
+        text-decoration: none;
+
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+    }
+
+    .header-phone {
+      font-family: 'Jost', sans-serif;
+      font-size: var(--text-small);
+      font-weight: 500;
+      letter-spacing: var(--tracking-wide);
+      color: var(--color-primary) !important;
+      text-decoration: none;
+    }
+
+    .btn-sm {
+      padding: var(--space-1) var(--space-3);
+      font-size: 0.75rem;
+    }
+
+    /* Mobile toggle */
+    .mobile-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: var(--space-1);
+    }
+
+    .toggle-bar {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--color-primary);
+      transition: all var(--duration-fast) var(--ease-out-expo);
+    }
+
+    /* Mobile menu */
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      top: 70px;
+      background: var(--color-bg);
+      padding: var(--space-8) var(--container-padding);
+      z-index: 99;
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+
+      & a {
+        font-family: 'Playfair Display', serif;
+        font-size: var(--text-h2);
+        color: var(--color-text);
+        text-decoration: none;
+
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+    }
+
+    .mobile-actions {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+      margin-top: var(--space-8);
+    }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    .site-footer {
+      background: var(--color-surface);
+      padding-top: 0;
+    }
+
+    .footer-inner {
+      padding-block: var(--space-8);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: var(--space-6);
+      margin-bottom: var(--space-6);
+    }
+
+    .footer-tagline {
+      margin-top: var(--space-2);
+      max-width: 28ch;
+    }
+
+    .footer-grid h4 {
+      font-family: 'Jost', sans-serif;
+      font-size: var(--text-small);
+      font-weight: 600;
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-primary);
+      margin-bottom: var(--space-3);
+    }
+
+    .footer-grid ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+
+      & a {
+        font-size: var(--text-small);
+        color: var(--color-text-muted);
+
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+
+      & li:not(:has(a)) {
+        font-size: var(--text-small);
+        color: var(--color-text-muted);
+      }
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: var(--space-4);
+    }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 768px) {
+      .main-nav,
+      .header-actions {
+        display: none;
+      }
+
+      .mobile-toggle {
+        display: flex;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-4);
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: var(--space-1);
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</html>

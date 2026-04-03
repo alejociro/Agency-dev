@@ -1,0 +1,419 @@
+/* ============================================
+   ANIMACIONES — GVL LIMO
+   4 capas: Load → Scroll → Micro → Especiales
+   ============================================ */
+
+/* ============================================
+   CAPA 1 — PAGE LOAD (impacto inmediato)
+   ============================================ */
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes revealLetterbox {
+  from { clip-path: inset(45% 0); }
+  to   { clip-path: inset(8% 0); }
+}
+
+@keyframes goldLineExpand {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* Hero stagger sequence */
+.hero-kicker   { animation: fadeIn  0.6s var(--ease-out-expo) 0.2s both; }
+.hero-title    { animation: slideUp 1.0s var(--ease-out-expo) 0.3s both; }
+.hero-subtitle { animation: fadeIn  0.8s ease                 0.7s both; }
+.hero-cta      { animation: slideUp 0.6s var(--ease-out-expo) 0.9s both; }
+.hero-proof    { animation: fadeIn  0.6s ease                 1.2s both; }
+
+/* Letterbox cinematic reveal */
+.hero-letterbox {
+  animation: revealLetterbox 1.4s var(--ease-out-expo) 0.1s both;
+}
+
+/* Gold seam entrance */
+.gold-seam-animated {
+  transform-origin: center;
+  animation: goldLineExpand 1.2s var(--ease-out-expo) 0.5s both;
+}
+
+/* ============================================
+   CAPA 2 — SCROLL REVEAL (Intersection Observer)
+   ============================================ */
+
+[data-animate] {
+  opacity: 0;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s var(--ease-out-expo);
+}
+
+[data-animate="fade-up"]    { transform: translateY(40px); }
+[data-animate="fade-down"]  { transform: translateY(-40px); }
+[data-animate="fade-left"]  { transform: translateX(-40px); }
+[data-animate="fade-right"] { transform: translateX(40px); }
+[data-animate="scale-in"]   { transform: scale(0.92); }
+[data-animate="fade"]       { transform: none; }
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Stagger children */
+[data-animate="stagger"] > * {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s var(--ease-out-expo);
+}
+
+[data-animate="stagger"].is-visible > *:nth-child(1)  { transition-delay: 0.05s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(2)  { transition-delay: 0.12s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(3)  { transition-delay: 0.19s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(4)  { transition-delay: 0.26s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(5)  { transition-delay: 0.33s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(6)  { transition-delay: 0.40s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(7)  { transition-delay: 0.47s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(8)  { transition-delay: 0.54s; opacity: 1; transform: none; }
+
+/* Custom delay via data attribute */
+[data-delay="100"] { transition-delay: 0.1s; }
+[data-delay="200"] { transition-delay: 0.2s; }
+[data-delay="300"] { transition-delay: 0.3s; }
+[data-delay="400"] { transition-delay: 0.4s; }
+[data-delay="500"] { transition-delay: 0.5s; }
+
+/* ============================================
+   SCROLL-DRIVEN ANIMATIONS (CSS nativo)
+   ============================================ */
+
+/* Reading progress bar */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transform-origin: left;
+  z-index: 200;
+  animation: scaleProgress linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scaleProgress {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* Hero parallax — image drifts slower than scroll */
+.hero-parallax {
+  animation: heroParallax linear;
+  animation-timeline: scroll();
+  animation-range: 0vh 100vh;
+}
+
+@keyframes heroParallax {
+  from { transform: translateY(0); }
+  to   { transform: translateY(120px) scale(1.05); }
+}
+
+/* Fade header on scroll past hero */
+.hero-fade-overlay {
+  animation: fadeToBlack linear;
+  animation-timeline: scroll();
+  animation-range: 60vh 100vh;
+}
+
+@keyframes fadeToBlack {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ============================================
+   CAPA 3 — MICRO-INTERACCIONES
+   ============================================ */
+
+/* Card spring hover */
+.card,
+.card-vehicle,
+.card-accent {
+  transition:
+    transform 300ms var(--ease-out-back),
+    box-shadow 300ms ease,
+    border-color 300ms ease;
+}
+
+.card:hover,
+.card-accent:hover {
+  transform: translateY(-6px);
+}
+
+/* Primary button shimmer */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      105deg,
+      transparent 40%,
+      oklch(1 0 0 / 0.15) 50%,
+      transparent 60%
+    );
+    transform: translateX(-100%);
+    transition: transform 600ms var(--ease-out-expo);
+  }
+
+  &:hover::after {
+    transform: translateX(100%);
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0) scale(0.98);
+  }
+}
+
+/* Outline button fill */
+.btn-outline {
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    var(--color-primary) 50%
+  );
+  background-position: left bottom;
+  transition:
+    background-position var(--duration-base) var(--ease-out-expo),
+    color var(--duration-fast) ease,
+    border-color var(--duration-fast) ease;
+
+  &:hover {
+    background-position: right bottom;
+  }
+}
+
+/* Nav link underline grow */
+.nav-link {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background: var(--color-primary);
+    transition: width 300ms var(--ease-out-expo);
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+/* Image reveal on scroll */
+.img-reveal {
+  overflow: hidden;
+
+  & img {
+    transition: transform var(--duration-slow) var(--ease-out-expo);
+  }
+
+  &:hover img {
+    transform: scale(1.06);
+  }
+}
+
+/* Gold seam shimmer on hover */
+.gold-seam {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      oklch(1 0 0 / 0.4),
+      transparent
+    );
+    animation: seamShimmer 4s ease-in-out infinite;
+  }
+}
+
+@keyframes seamShimmer {
+  0%, 100% { left: -40%; }
+  50%      { left: 100%; }
+}
+
+/* ============================================
+   CAPA 4 — ELEMENTOS ESPECIALES
+   ============================================ */
+
+/* Custom cursor — luxury feel (pointer devices only) */
+@media (pointer: fine) {
+  .custom-cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    pointer-events: none;
+    z-index: 10001;
+    mix-blend-mode: difference;
+    transition: transform 150ms ease;
+  }
+
+  .cursor-ring {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--color-primary);
+    pointer-events: none;
+    z-index: 10000;
+    transition: transform 400ms var(--ease-out-expo),
+                width 300ms var(--ease-out-expo),
+                height 300ms var(--ease-out-expo),
+                border-color 300ms ease;
+  }
+
+  /* Expand ring on interactive elements */
+  .cursor-ring.is-hovering {
+    width: 60px;
+    height: 60px;
+    border-color: var(--color-accent);
+  }
+}
+
+/* Stat counter pulse on reveal */
+.stat-value {
+  transition: color 300ms ease;
+}
+
+.stat:hover .stat-value {
+  text-shadow: 0 0 20px var(--color-primary-glow);
+}
+
+/* Vehicle card image cinematic bars */
+.card-vehicle-img {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 12%;
+    background: var(--color-bg);
+    z-index: 1;
+    transition: height 500ms var(--ease-out-expo);
+  }
+
+  &::before { top: 0; }
+  &::after  { bottom: 0; }
+}
+
+.card-vehicle:hover .card-vehicle-img {
+  &::before,
+  &::after {
+    height: 0%;
+  }
+}
+
+/* Testimonial quote mark float */
+.testimonial::before {
+  transition: transform 500ms var(--ease-out-expo),
+              opacity 300ms ease;
+}
+
+.testimonial:hover::before {
+  transform: translateY(-4px) scale(1.1);
+  opacity: 0.8;
+}
+
+/* View Transitions (Astro page navigation) */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: vtFadeOut 0.2s ease forwards;
+}
+
+::view-transition-new(root) {
+  animation: vtFadeIn 0.3s ease forwards;
+}
+
+@keyframes vtFadeOut {
+  to { opacity: 0; filter: brightness(0.8); }
+}
+
+@keyframes vtFadeIn {
+  from { opacity: 0; filter: brightness(1.2); }
+  to   { opacity: 1; filter: brightness(1); }
+}
+
+/* Persistent elements across page transitions */
+.logo       { view-transition-name: site-logo; }
+.hero-title { view-transition-name: page-title; }
+
+/* ============================================
+   PREFERS-REDUCED-MOTION — override everything
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-animate] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  [data-animate="stagger"] > * {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .reading-progress,
+  .custom-cursor,
+  .cursor-ring {
+    display: none !important;
+  }
+}

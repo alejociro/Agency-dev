@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Handyman Services in Greenville SC — Drywall, Kitchen Remodels, Flooring &amp; More</title>
+  <meta name="description" content="Full list of handyman services in Greenville, SC: drywall repair, kitchen &amp; bathroom remodels, flooring, electrical, doors &amp; windows. Free estimates. Call (864) 651-9356.">
+  <meta name="keywords" content="handyman services greenville sc, drywall repair near me, kitchen remodel greenville, bathroom renovation simpsonville, flooring installation greenville sc, electrical work greer">
+  <link rel="canonical" href="https://www.handymangreenville.com/services.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.handymangreenville.com/services.html">
+  <meta property="og:title" content="Handyman Services in Greenville SC — Full Service List">
+  <meta property="og:description" content="Drywall, kitchen remodels, bathroom renovations, flooring, electrical, doors &amp; windows. Free estimates.">
+  <meta property="og:image" content="https://www.handymangreenville.com/assets/images/og-image.jpg">
+  <meta property="og:site_name" content="Handyman Greenville SC">
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Handyman Services in Greenville SC">
+  <meta name="twitter:description" content="Drywall, kitchen remodels, flooring, electrical &amp; more. Free estimates — call (864) 651-9356.">
+  <meta name="twitter:image" content="https://www.handymangreenville.com/assets/images/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Tailwind CSS v4 CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Design System + Main Styles -->
+  <link rel="stylesheet" href="styles/design-system.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Alpine.js + Collapse plugin -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <!-- Schema: Service List -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Handyman Services in Greenville SC",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "item": { "@type": "Service", "name": "Drywall Repair", "provider": { "@type": "LocalBusiness", "name": "Handyman Greenville SC" } } },
+      { "@type": "ListItem", "position": 2, "item": { "@type": "Service", "name": "Kitchen Remodels" } },
+      { "@type": "ListItem", "position": 3, "item": { "@type": "Service", "name": "Bathroom Renovations" } },
+      { "@type": "ListItem", "position": 4, "item": { "@type": "Service", "name": "Flooring Installation" } },
+      { "@type": "ListItem", "position": 5, "item": { "@type": "Service", "name": "Electrical Work" } },
+      { "@type": "ListItem", "position": 6, "item": { "@type": "Service", "name": "Doors & Windows" } }
+    ]
+  }
+  </script>
+
+  <!-- Speculation Rules -->
+  <script type="speculationrules">
+  {
+    "prerender": [
+      { "where": { "href_matches": "contact.html" } }
+    ],
+    "prefetch": [
+      { "where": { "href_matches": "index.html" } },
+      { "where": { "href_matches": "about.html" } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Reading progress bar -->
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ══ NAVIGATION ══════════════════════════════════ -->
+  <nav class="nav" x-data="{ open: false }">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        Handyman <span>Greenville</span>
+      </a>
+
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="services.html" class="nav__link" aria-current="page" style="color: var(--color-primary);">Services</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+
+      <a href="contact.html#quote" class="btn-primary nav__cta">Get a Free Quote</a>
+
+      <button
+        class="nav__hamburger"
+        @click="open = !open"
+        :aria-expanded="open.toString()"
+        aria-label="Toggle menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav__mobile" :class="{ 'is-open': open }">
+        <a href="index.html" @click="open = false">Home</a>
+        <a href="about.html" @click="open = false">About</a>
+        <a href="services.html" @click="open = false" style="color: var(--color-primary);">Services</a>
+        <a href="contact.html" @click="open = false">Contact</a>
+        <a href="contact.html#quote" @click="open = false" class="btn-primary" style="margin-top: var(--space-4);">Get a Free Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══ PAGE HEADER ═════════════════════════════════ -->
+  <header class="page-header">
+    <div class="container" data-animate="fade-up">
+      <p class="section-label" style="color: var(--color-primary); justify-content: center;">What We Do</p>
+      <h1 class="text-balance">Our Services</h1>
+      <p class="page-header__subtitle text-pretty">Every home repair and improvement you need, under one roof.</p>
+    </div>
+  </header>
+
+  <!-- ══ SERVICE DETAILS ═════════════════════════════ -->
+  <section class="section" id="services">
+    <div class="container">
+
+      <!-- 1. Drywall Repair -->
+      <article class="service-detail" data-animate="fade-up">
+        <div class="service-detail__content">
+          <h3 style="font-size: var(--text-h2);">Drywall Repair</h3>
+          <p>From small nail holes to large water-damaged sections, we restore your walls to a seamless finish. Our technicians match existing textures so repairs blend invisibly with the surrounding surface.</p>
+          <ul class="service-detail__features">
+            <li>Patch and hole repair</li>
+            <li>Water damage restoration</li>
+            <li>Skim coating</li>
+            <li>Texture matching</li>
+            <li>Full drywall installations</li>
+          </ul>
+          <a href="contact.html#quote" class="btn-primary">Request a Quote</a>
+        </div>
+        <div class="service-detail__visual">
+          <span>Drywall Repair Photo</span>
+        </div>
+      </article>
+
+      <!-- 2. Kitchen Remodels -->
+      <article class="service-detail" data-animate="fade-up">
+        <div class="service-detail__content">
+          <h3 style="font-size: var(--text-h2);">Kitchen Remodels</h3>
+          <p>Transform your kitchen into the heart of your home. Whether you need updated cabinets, new countertops, or a complete layout redesign, we handle every detail from demo to final walk-through.</p>
+          <ul class="service-detail__features">
+            <li>Cabinet installation and refacing</li>
+            <li>Countertop replacement</li>
+            <li>Backsplash tiling</li>
+            <li>Layout redesign</li>
+            <li>Appliance installation</li>
+          </ul>
+          <a href="contact.html#quote" class="btn-primary">Request a Quote</a>
+        </div>
+        <div class="service-detail__visual">
+          <span>Kitchen Remodel Photo</span>
+        </div>
+      </article>
+
+      <!-- 3. Bathroom Renovations -->
+      <article class="service-detail" data-animate="fade-up">
+        <div class="service-detail__content">
+          <h3 style="font-size: var(--text-h2);">Bathroom Renovations</h3>
+          <p>Upgrade your bathroom with modern fixtures, beautiful tile work, and functional layouts. We specialize in making small spaces feel bigger and ensuring every renovation meets your daily needs.</p>
+          <ul class="service-detail__features">
+            <li>Tile installation</li>
+            <li>Fixture upgrades</li>
+            <li>Vanity replacement</li>
+            <li>Tub-to-shower conversions</li>
+            <li>Accessibility upgrades</li>
+          </ul>
+          <a href="contact.html#quote" class="btn-primary">Request a Quote</a>
+        </div>
+        <div class="service-detail__visual">
+          <span>Bathroom Renovation Photo</span>
+        </div>
+      </article>
+
+      <!-- 4. Flooring -->
+      <article class="service-detail" data-animate="fade-up">
+        <div class="service-detail__content">
+          <h3 style="font-size: var(--text-h2);">Flooring</h3>
+          <p>New floors change the entire feel of a room. We install and repair all major flooring types, handle subfloor prep, and ensure clean transitions between different materials throughout your home.</p>
+          <ul class="service-detail__features">
+            <li>Hardwood installation and refinishing</li>
+            <li>Laminate flooring</li>
+            <li>Tile flooring</li>
+            <li>Vinyl and LVP</li>
+            <li>Subfloor repair</li>
+            <li>Transitions between rooms</li>
+          </ul>
+          <a href="contact.html#quote" class="btn-primary">Request a Quote</a>
+        </div>
+        <div class="service-detail__visual">
+          <span>Flooring Photo</span>
+        </div>
+      </article>
+
+      <!-- 5. Electrical -->
+      <article class="service-detail" data-animate="fade-up">
+        <div class="service-detail__content">
+          <h3 style="font-size: var(--text-h2);">Electrical</h3>
+          <p>Keep your home safe and well-lit with our electrical services. From swapping out outlets and switches to installing ceiling fans and light fixtures, we handle everyday electrical needs with care.</p>
+          <ul class="service-detail__features">
+            <li>Outlet and switch replacement</li>
+            <li>Light fixture installation</li>
+            <li>Ceiling fan mounting</li>
+            <li>Basic wiring</li>
+            <li>Code compliance updates</li>
+          </ul>
+          <a href="contact.html#quote" class="btn-primary">Request a Quote</a>
+        </div>
+        <div class="service-detail__visual">
+          <span>Electrical Work Photo</span>
+        </div>
+      </article>
+
+      <!-- 6. Doors & Windows -->
+      <article class="service-detail" data-animate="fade-up">
+        <div class="service-detail__content">
+          <h3 style="font-size: var(--text-h2);">Doors &amp; Windows</h3>
+          <p>Improve your home's curb appeal, security, and energy efficiency. We install and replace interior and exterior doors, add pet doors, upgrade storm windows, and seal gaps with professional weatherstripping.</p>
+          <ul class="service-detail__features">
+            <li>Interior and exterior door installation</li>
+            <li>Pet door installation</li>
+            <li>Storm window replacement</li>
+            <li>Weatherstripping and sealing</li>
+          </ul>
+          <a href="contact.html#quote" class="btn-primary">Request a Quote</a>
+        </div>
+        <div class="service-detail__visual">
+          <span>Doors &amp; Windows Photo</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══ FAQ ═════════════════════════════════════════ -->
+  <section class="section" id="faq" style="background-color: var(--color-bg-alt);" data-animate="fade-up">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <p class="section-label">Common Questions</p>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list" x-data="{ active: null }">
+        <div class="faq-item" data-animate="fade-up">
+          <button class="faq-question"
+            @click="active = active === 1 ? null : 1"
+            :aria-expanded="(active === 1).toString()">
+            <span>What's included in a kitchen remodel?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer" x-show="active === 1" x-collapse>
+            <div class="faq-answer__inner">
+              Our kitchen remodels can include cabinet installation or refacing, countertop replacement, backsplash tiling, layout redesign, and appliance installation. We tailor each project to your budget and vision — from a simple refresh to a full gut renovation.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-animate="fade-up">
+          <button class="faq-question"
+            @click="active = active === 2 ? null : 2"
+            :aria-expanded="(active === 2).toString()">
+            <span>How long does a bathroom renovation take?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer" x-show="active === 2" x-collapse>
+            <div class="faq-answer__inner">
+              A typical bathroom renovation takes 1 to 3 weeks depending on the scope. A simple fixture and vanity swap can be done in a few days, while a full gut with new tile, plumbing changes, and a tub-to-shower conversion may take closer to 3 weeks. We provide a timeline estimate before work begins.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-animate="fade-up">
+          <button class="faq-question"
+            @click="active = active === 3 ? null : 3"
+            :aria-expanded="(active === 3).toString()">
+            <span>Do you handle permits?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer" x-show="active === 3" x-collapse>
+            <div class="faq-answer__inner">
+              Yes. For projects that require permits — such as electrical work or significant structural changes — we handle the permitting process so you don't have to. We ensure all work meets local building codes and passes inspection.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-animate="fade-up">
+          <button class="faq-question"
+            @click="active = active === 4 ? null : 4"
+            :aria-expanded="(active === 4).toString()">
+            <span>Can you match existing flooring/drywall texture?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer" x-show="active === 4" x-collapse>
+            <div class="faq-answer__inner">
+              Absolutely. Matching existing textures is one of our specialties. Whether it's knockdown, orange peel, or smooth drywall finishes — or blending new hardwood planks with an existing floor — we take the time to ensure repairs look seamless and consistent with the rest of your home.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA BAND ════════════════════════════════════ -->
+  <section class="cta-band" data-animate="fade-up">
+    <div class="container cta-band__inner">
+      <h2 class="cta-band__title text-balance">Have a project in mind? Let's talk.</h2>
+      <p class="cta-band__desc">Free estimates, honest pricing, and work you can count on.</p>
+      <div class="cta-band__actions">
+        <a href="contact.html#quote" class="btn-primary" style="background-color: var(--color-text-inverse); color: var(--color-primary);">Get a Free Quote</a>
+        <a href="tel:+18646519356" class="cta-band__phone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (864) 651-9356
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>Handyman <span>Greenville</span></h3>
+          <p>Professional home repair and improvement services for Greenville, SC and the Upstate. Big and small, we do it all.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services.html">Drywall Repair</a></li>
+            <li><a href="services.html">Kitchen Remodels</a></li>
+            <li><a href="services.html">Bathroom Renovations</a></li>
+            <li><a href="services.html">Flooring</a></li>
+            <li><a href="services.html">Electrical Work</a></li>
+            <li><a href="services.html">Doors &amp; Windows</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+18646519356" style="color: inherit;">(864) 651-9356</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <a href="mailto:info@handymangreenville.com" style="color: inherit;">info@handymangreenville.com</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon&ndash;Fri: 7 AM &ndash; 6 PM<br>Sat: 8 AM &ndash; 2 PM</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Serving Greenville, Taylors,<br>Simpsonville, Greer &amp; Mauldin</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2026 Handyman Greenville SC. All rights reserved.</span>
+        <span>Locally owned &amp; operated in Greenville, SC</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══ STICKY CTA (mobile) ════════════════════════ -->
+  <div class="sticky-cta" aria-label="Quick actions">
+    <a href="tel:+18646519356" class="sticky-cta__btn btn-primary">
+      Call Now
+    </a>
+    <a href="contact.html#quote" class="sticky-cta__btn btn-secondary" style="color: var(--color-surface); border-color: var(--color-surface);">
+      Free Quote
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>

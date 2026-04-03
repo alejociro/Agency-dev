@@ -1,0 +1,218 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const tours = [
+  { name: 'Essential GVL', price: '$130', duration: '1 hour', capacity: 'Up to 14', description: 'Downtown Greenville basics — Falls Park, Main Street, local landmarks. The perfect introduction to the city.' },
+  { name: 'Essential GVL Plus', price: '$260', duration: '2 hours', capacity: 'Up to 14', description: 'Extended tour: downtown, Furman University, Travelers Rest, Paris Mountain. See what makes the Upstate special.' },
+  { name: 'Downtown Cart Tour', price: '$80', duration: '1 hour', capacity: 'Up to 5', description: 'Open-air golf cart ride through Main Street. End-to-end downtown experience at $5/person walking pace.' },
+];
+
+const experiences = [
+  { name: 'Brewery Tours', icon: 'M6 4h8v12c0 2-2 4-4 4H10c-2 0-4-2-4-4V4zM6 10h8M10 4V2', description: 'Greenville\'s best craft breweries. We drive, you taste.' },
+  { name: 'Wine Tours', icon: 'M10 2v4M7 6h6l-1 8c0 2-1 4-2 4h0c-1 0-2-2-2-4L7 6z', description: 'Upstate vineyards and wineries. Full-day or half-day routes.' },
+  { name: 'Tailgate Packages', icon: 'M4 10h12M4 14h12M6 6l4-4 4 4', description: 'Clemson, Furman, USC — arrive in style with the whole crew.' },
+  { name: 'Ghost Tours', icon: 'M10 2c-3 0-6 3-6 7 0 5 6 9 6 9s6-4 6-9c0-4-3-7-6-7zM8 8h4', description: 'Greenville\'s haunted history after dark. Seasonal availability.' },
+  { name: 'Golf Packages', icon: 'M10 4v12M6 16h8M10 4l4 4', description: 'CEO Sprinter to the course and back. Clubs stay safe, you stay relaxed.' },
+  { name: 'Range Day', icon: 'M4 10h12M10 4v12', description: 'Firearms training with ex-law enforcement officers. Transport included.' },
+  { name: 'Kids Birthday', icon: 'M6 8h8v6H6zM8 6v2M12 6v2M6 11h8', description: 'Downtown ride with ice cream stop. The birthday kid rides up front.' },
+  { name: 'Helicopter Tour', icon: 'M10 6v10M6 6h8M4 10h12', description: 'Aerial view of Greenville. See the city from a perspective nobody else offers.' },
+];
+
+const seasonal = [
+  'Holiday Lights Tours',
+  'Fall Foliage Tours',
+  'Halloween Package (includes MADWORLD with discounted tickets)',
+];
+---
+
+<BaseLayout title="Tours & Experiences | Greenville Downtown, Wine Tours | GVL Limo" description="Curated Greenville experiences: downtown tours from $80, brewery crawls, wine tours, ghost tours, golf packages and more. Book your unforgettable ride." canonical="https://gvllimo.com/experiences">
+
+  <Fragment slot="head">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "GVL Limo Tours & Experiences",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "item": {"@type": "TouristTrip", "name": "Essential GVL Tour", "description": "Downtown Greenville basics — Falls Park, Main Street, local landmarks", "offers": {"@type": "Offer", "price": "130.00", "priceCurrency": "USD"}, "touristType": "Groups up to 14"}},
+        {"@type": "ListItem", "position": 2, "item": {"@type": "TouristTrip", "name": "Essential GVL Plus Tour", "description": "Extended tour: downtown, Furman University, Travelers Rest, Paris Mountain", "offers": {"@type": "Offer", "price": "260.00", "priceCurrency": "USD"}, "touristType": "Groups up to 14"}},
+        {"@type": "ListItem", "position": 3, "item": {"@type": "TouristTrip", "name": "Downtown Cart Tour", "description": "Open-air golf cart ride through Main Street", "offers": {"@type": "Offer", "price": "80.00", "priceCurrency": "USD"}, "touristType": "Groups up to 5"}}
+      ]
+    }
+    </script>
+  </Fragment>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="kicker hero-kicker">Tours &amp; Experiences</span>
+      <h1 class="hero-title">
+        Greenville, the way<br/>
+        <em class="text-gold">locals live it</em>
+      </h1>
+      <p class="hero-subtitle text-muted">
+        New to town, visiting, or just looking for something unforgettable?
+        Ride with expert drivers who know every corner of the Upstate.
+      </p>
+    </div>
+  </section>
+
+  <div class="gold-seam gold-seam-animated"></div>
+
+  <!-- ========== CITY TOURS ========== -->
+  <section class="section">
+    <div class="container">
+      <span class="kicker" data-animate="fade-up">City Tours</span>
+      <h2 data-animate="fade-up" data-delay="100">See Greenville <em class="text-gold">right</em></h2>
+
+      <div class="tours-grid" data-animate="stagger">
+        {tours.map((tour) => (
+          <div class="tour-card card-accent">
+            <div class="tour-price-row">
+              <span class="tour-price">{tour.price}</span>
+              <span class="tour-duration text-muted">{tour.duration}</span>
+            </div>
+            <h3>{tour.name}</h3>
+            <p class="text-muted">{tour.description}</p>
+            <div class="tour-meta">
+              <span class="card-vehicle-capacity">{tour.capacity}</span>
+            </div>
+            <a href="/contact" class="btn btn-outline" style="margin-top:auto;">Book This Tour</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCES ========== -->
+  <div class="gold-seam"></div>
+  <section class="section">
+    <div class="container">
+      <span class="kicker" data-animate="fade-up">Curated Experiences</span>
+      <h2 data-animate="fade-up" data-delay="100">Pick your <em class="text-gold">adventure</em></h2>
+
+      <div class="exp-grid" data-animate="stagger">
+        {experiences.map((exp) => (
+          <div class="exp-card card">
+            <div class="exp-icon">
+              <svg width="32" height="32" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d={exp.icon} stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>{exp.name}</h3>
+            <p class="text-muted text-small">{exp.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-muted" style="text-align:center; margin-top:var(--space-6);" data-animate="fade-up">
+        Don't see what you need? <a href="/contact">Tell us your idea</a> and we'll plan it for you.
+        Industrial and commercial site tours also available.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== SEASONAL ========== -->
+  <div class="gold-seam"></div>
+  <section class="section" style="background:var(--color-surface);">
+    <div class="container" style="text-align:center;">
+      <span class="kicker" data-animate="fade-up">Seasonal Specials</span>
+      <h2 data-animate="fade-up" data-delay="100">Limited-time <em class="text-gold">experiences</em></h2>
+      <div class="seasonal-list" data-animate="stagger">
+        {seasonal.map((s) => (
+          <div class="seasonal-item">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1l2.1 4.3 4.7.7-3.4 3.3.8 4.7L8 11.8 3.8 14l.8-4.7L1.2 6l4.7-.7L8 1z" fill="#C9A84C"/></svg>
+            <span>{s}</span>
+          </div>
+        ))}
+      </div>
+      <a href="/contact" class="btn btn-primary" style="margin-top:var(--space-6);">Ask About Seasonal Tours</a>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding-top: calc(var(--space-16) + 80px);
+    padding-bottom: var(--space-12);
+    background: var(--color-surface);
+    text-align: center;
+  }
+  .page-hero .hero-title { font-size: var(--text-h1); margin-bottom: var(--space-3); & em { font-style: italic; } }
+  .page-hero .hero-subtitle { max-width: 52ch; margin-inline: auto; }
+
+  .tours-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+  }
+
+  .tour-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .tour-price-row {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+  }
+
+  .tour-price {
+    font-family: 'Playfair Display', serif;
+    font-size: var(--text-h2);
+    color: var(--color-primary);
+  }
+
+  .tour-duration {
+    font-size: var(--text-small);
+  }
+
+  .tour-meta {
+    margin-top: auto;
+    padding-top: var(--space-2);
+  }
+
+  .exp-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+  }
+
+  .exp-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .exp-icon {
+    margin-bottom: var(--space-1);
+  }
+
+  .seasonal-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-6);
+  }
+
+  .seasonal-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-body);
+  }
+
+  @media (max-width: 768px) {
+    .tours-grid { grid-template-columns: 1fr; }
+    .exp-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (max-width: 480px) {
+    .exp-grid { grid-template-columns: 1fr; }
+  }
+</style>

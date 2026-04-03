@@ -1,0 +1,25 @@
+---
+interface Props {
+  variant?: 'primary' | 'outline' | 'ghost';
+  href?: string;
+  full?: boolean;
+  [key: string]: any;
+}
+
+const { variant = 'primary', href, full = false, ...rest } = Astro.props;
+const Tag = href ? 'a' : 'button';
+const cls = `btn btn-${variant}${full ? ' btn-full' : ''}`;
+---
+
+{href ? (
+  <a href={href} class={cls} {...rest}><slot /></a>
+) : (
+  <button class={cls} {...rest}><slot /></button>
+)}
+
+<style>
+  .btn-full {
+    width: 100%;
+    justify-content: center;
+  }
+</style>
