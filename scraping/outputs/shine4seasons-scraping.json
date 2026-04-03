@@ -1,0 +1,139 @@
+{
+  "negocio": "Shine 4 Seasons Salon",
+  "url": "https://shine4seasons.com/",
+  "sector": "Nail Salon / Beauty Salon",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Shine 4 Seasons Salon",
+    "description": "Located conveniently in Greenville, SC 29615, Shine 4 Seasons Salon is the ideal destination for you to immerse yourself in a luxury environment.",
+    "keywords": ""
+  },
+  "favicon": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/png/attach/1715032439_favicon_vc.webp",
+  "paleta": {
+    "primario": "#039E06",
+    "secundario": "#a5dca5",
+    "acento": "#039E06",
+    "fondo": "#ffffff",
+    "texto": "#000000",
+    "otros": []
+  },
+  "logo": {
+    "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/png/attach/1715032416_logo_vc.webp",
+    "descripcion": "Logo de Shine 4 Seasons Salon",
+    "posicion": "header izquierda",
+    "colores": ["#039E06", "#a5dca5"]
+  },
+  "tipografias": [
+    { "nombre": "Montserrat", "uso": "cuerpo, navegación", "peso": "400, 500, 700", "tamanio_aprox": "16px-20px" },
+    { "nombre": "Dancing Script", "uso": "decorativa", "peso": "400", "tamanio_aprox": "variable" },
+    { "nombre": "Baumans", "uso": "decorativa", "peso": "400", "tamanio_aprox": "variable" }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://shine4seasons.com/" },
+    { "label": "About Us", "url": "https://shine4seasons.com/about" },
+    { "label": "Services", "url": "https://shine4seasons.com/service" },
+    { "label": "Gallery", "url": "https://shine4seasons.com/gallery" },
+    { "label": "Coupons", "url": "https://shine4seasons.com/coupons" },
+    { "label": "Videos", "url": "https://shine4seasons.com/videos" },
+    { "label": "Booking", "url": "https://booking.gocheckin.net/v2/15459" },
+    { "label": "Contact Us", "url": "https://shine4seasons.com/contact" }
+  ],
+  "secciones": [
+    {
+      "tipo": "slider",
+      "titulo": null,
+      "contenido": null,
+      "cta": null,
+      "imagenes": [
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/logo/2024/08/01/ID15459-07172024-2.webp", "alt": "ID15459 07172024 - 2.jpg", "descripcion": "Slide 1 del slider principal", "tipo": "slider", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/logo/2024/08/01/ID15459-07172024-1.webp", "alt": "ID15459 07172024 - 1.jpg", "descripcion": "Slide 2 del slider principal", "tipo": "slider", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/png/logo/2023/07/07/dreamstime_s_144516158.webp", "alt": "dreamstime_s_144516158.png", "descripcion": "Slide 3 — enlaza a servicios", "tipo": "slider", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/png/logo/2023/07/12/dreamstime_m_22945999.webp", "alt": "dreamstime_l_34957022.png", "descripcion": "Slide 4 del slider principal", "tipo": "slider", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "about",
+      "titulo": "Welcome to Shine 4 Seasons Salon",
+      "contenido": "Conveniently situated in Greenville, SC 29615, Shine 4 Seasons Salon offers an ideal retreat for indulging in a luxurious atmosphere.\n\nAt Shine 4 Seasons Salon, let us pamper you in our serene nail spa setting. We deliver top-notch services in Hair, Manicures, Pedicures, Waxing, and Facials at reasonable prices for our valued customers. Rest assured, you will receive attentive and thorough care every time.\n\nGift Certificate Available",
+      "cta": "View More",
+      "imagenes": [
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/filemanager/dreamstime_s_53198174.webp", "alt": "dreamstime_s_53198174.webp", "descripcion": "Imagen decorativa sección about — manos con manicure", "tipo": "about", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Our Services",
+      "contenido": null,
+      "cta": "READ MORE",
+      "imagenes": [
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/product/dreamstime_s_89231528.webp", "alt": "Hair Services", "descripcion": "Imagen del servicio Hair Services", "tipo": "servicio", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/png/product/dreamstime_s_28806725.webp", "alt": "PEDICURE", "descripcion": "Imagen del servicio Pedicure — All pedicure services included A personal spa protective liner, pumice Bar, nail file and Buffer set.", "tipo": "servicio", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/product/thumbnail/dreamstime_m_35878958-w576.webp", "alt": "MANICURE", "descripcion": "Imagen del servicio Manicure", "tipo": "servicio", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/png/product/dreamstime_s_117330176.webp", "alt": "NAIL EXTENSIONS & POWDER", "descripcion": "Imagen del servicio Nail Extensions & Powder", "tipo": "servicio", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/product/thumbnail/kid-dreamstime_s_31693497-w576.webp", "alt": "KID SERVICE", "descripcion": "Imagen del servicio Kid Service", "tipo": "servicio", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/png/product/dreamstime_s_106080833.webp", "alt": "ADDITIONAL SERVICES", "descripcion": "Imagen del servicio Additional Services", "tipo": "servicio", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/product/thumbnail/dreamstime_m_79205084-w576.webp", "alt": "WAXING", "descripcion": "Imagen del servicio Waxing", "tipo": "servicio", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/product/thumbnail/dreamstime_s_22945999-w576.webp", "alt": "FACIAL", "descripcion": "Imagen del servicio Facial — Please send the deposit for a Facial appointment via Zelle to Shine4SeasonsSalon@gmail.com", "tipo": "servicio", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/product/thumbnail/dreamstime_l_108989908-w576.webp", "alt": "EYELASH", "descripcion": "Imagen del servicio Eyelash", "tipo": "servicio", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/product/thumbnail/dreamstime_s_50315340-w576.webp", "alt": "DRINK", "descripcion": "Imagen del servicio Drink — We Serve Soda & Water", "tipo": "servicio", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "galeria",
+      "titulo": "Our Photos",
+      "contenido": null,
+      "cta": null,
+      "imagenes": [
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Shine-4-Seasons-Salon-jul-23-2025-2.webp", "alt": "Shine 4 Seasons Salon jul 23 2025 (2)", "descripcion": "Foto de galería del salón", "tipo": "galeria", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Shine-4-Seasons-Salon-jul-23-2025-1.webp", "alt": "Shine 4 Seasons Salon jul 23 2025 (1)", "descripcion": "Foto de galería del salón", "tipo": "galeria", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Nail-art-design-13.webp", "alt": "Nail art design (13)", "descripcion": "Diseño de nail art", "tipo": "galeria", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Nail-art-design-9.webp", "alt": "Nail art design (9)", "descripcion": "Diseño de nail art", "tipo": "galeria", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Nail-art-design-8.webp", "alt": "Nail art design (8)", "descripcion": "Diseño de nail art", "tipo": "galeria", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Eyelash-Extensions-5.webp", "alt": "Eyelash Extensions (5)", "descripcion": "Extensiones de pestañas", "tipo": "galeria", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Eyelash-Extensions-4.webp", "alt": "Eyelash Extensions (4)", "descripcion": "Extensiones de pestañas", "tipo": "galeria", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Eyelash-Extensions-3.webp", "alt": "Eyelash Extensions (3)", "descripcion": "Extensiones de pestañas", "tipo": "galeria", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Eyelash-Extensions-2.webp", "alt": "Eyelash Extensions (2)", "descripcion": "Extensiones de pestañas", "tipo": "galeria", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Eyelash-Extensions-1.webp", "alt": "Eyelash Extensions (1)", "descripcion": "Extensiones de pestañas", "tipo": "galeria", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/5-Nail-art-design-6.webp", "alt": "5 Nail art design (6)", "descripcion": "Diseño de nail art", "tipo": "galeria", "dimensiones": null },
+        { "url": "https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/5-Nail-art-design-5.webp", "alt": "5 Nail art design (5)", "descripcion": "Diseño de nail art", "tipo": "galeria", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "footer-cta",
+      "titulo": "Make an Appointment",
+      "contenido": "Address: 2017 Wade Hampton Blvd C, Greenville, SC 29615\nPhone: 864-203-3947\nMon - Sat: 9:00 am - 7:00 pm\nSunday: Closed",
+      "cta": "Booking",
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Welcome to Shine 4 Seasons Salon",
+    "propuesta_valor": "Conveniently situated in Greenville, SC 29615, Shine 4 Seasons Salon offers an ideal retreat for indulging in a luxurious atmosphere. We deliver top-notch services in Hair, Manicures, Pedicures, Waxing, and Facials at reasonable prices.",
+    "ctas": ["View More", "READ MORE", "Booking", "864-203-3947"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "864-203-3947",
+    "whatsapp": null,
+    "email": "shine4seasonssalon@gmail.com",
+    "direccion": "2017 Wade Hampton Blvd C, Greenville, SC 29615",
+    "horarios": "Mon - Sat: 9:00 am - 7:00 pm | Sunday: Closed"
+  },
+  "redes": [
+    { "plataforma": "Facebook", "url": "https://www.facebook.com/shine4seasons/" },
+    { "plataforma": "Google", "url": "https://www.google.com/search?q=Shine+4+Seasons+Salon+greenville+29615" },
+    { "plataforma": "Instagram", "url": "https://instagram.com/shine4seasons" },
+    { "plataforma": "Yelp", "url": "https://www.yelp.com/biz/shine-4-seasons-salon-greenville" }
+  ],
+  "formularios": [],
+  "footer": {
+    "contenido": "Make an Appointment\nAddress: 2017 Wade Hampton Blvd C, Greenville, SC 29615\nPhone: 864-203-3947\nMon - Sat: 9:00 am - 7:00 pm\nSunday: Closed",
+    "links": [
+      { "label": "Blog", "url": "https://shine4seasons.com/shine-4-seasons-salon-nail-care-beauty-tips" },
+      { "label": "Shine 4 Seasons Salon in Greenville, SC 29615", "url": "https://shine4seasons.com/contact" }
+    ],
+    "copyright": "© Copyright by Shine 4 Seasons Salon. All Rights Reserved."
+  },
+  "tecnologia": "newzensite/gocheckin platform, jQuery, Google Tag Manager (GTM-TWW643L), Slider Pro, Magnific Popup, Google Fonts"
+}

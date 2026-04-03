@@ -1,0 +1,158 @@
+{
+  "cliente": "Greenville Maintenance Services, Inc.",
+  "url_auditada": "https://greenvillemaintenance.com/",
+  "sector": "Mantenimiento de propiedades comerciales y gestión de instalaciones",
+  "benchmark_aplicado": "Servicio local / Industria B2B (híbrido). Se aplica el benchmark de servicio local (SEO 55, UX 60, Marketing 60, Contenido 65, Técnico 50) con ajuste B2B por tratarse de un servicio comercial dirigido a administradores de propiedades, no a consumidor final.",
+  "fecha": "2026-04-02",
+  "scores": {
+    "seo": 48,
+    "ux_ui": 43,
+    "marketing": 47,
+    "contenido": 54,
+    "tecnico": 45,
+    "total": 47
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title incluye keywords relevantes: 'Parking Lot Sweeping', 'Sealcoating', 'Property Management' y la localidad 'Greenville, SC'",
+        "CTAs con texto descriptivo y orientado a la acción: 'Request a FREE Estimate »' y 'Contact us today'",
+        "Imágenes de servicios cuentan con atributos alt descriptivos: 'Commercial Sweeping', 'Parking Lot Maintenance', 'Facilities Maintenance', 'General Contracting'"
+      ],
+      "negativos": [
+        "No existe meta description — Google generará un snippet aleatorio del contenido de la página",
+        "No hay meta keywords (menor impacto pero indica abandono del SEO on-page)",
+        "Hero sin H1 ni texto: el banner principal es solo una imagen sin alt text ni título superpuesto",
+        "La propuesta de valor está enterrada en la sección 'about', no visible en los primeros 200px del viewport",
+        "No hay estructura clara de headings H1→H2→H3 derivable del scraping"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir meta description optimizada (~155 caracteres) con keywords principales y llamada a la acción", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear un H1 visible en el hero con keyword principal: ej. 'Commercial Property Maintenance in Greenville, SC'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir alt text descriptivo a la imagen del banner principal del hero", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reestructurar headings en jerarquía semántica H1→H2→H3 en todas las secciones", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Mover la propuesta de valor al hero para que sea lo primero que el visitante lee", "prioridad": "alta", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores contenida: grises (#313131, #444444) con un acento azul (#007cba) sobre fondo blanco — no hay sobrecarga cromática",
+        "Navegación clara con 10 enlaces bien etiquetados incluyendo páginas de servicio individuales y CTA de estimación",
+        "Tipografía con tamaños diferenciados (16px cuerpo, 20px subtítulos, 36px títulos) que sugiere jerarquía básica"
+      ],
+      "negativos": [
+        "Diseño visualmente anticuado — tema WordPress custom 'gm' sin indicios de rediseño reciente",
+        "Hero reducido a un banner de 864x288px sin contenido textual ni CTA, desperdiciando el espacio más valioso",
+        "No hay evidencia de diseño mobile-first o responsive en los datos del scraping",
+        "Paleta excesivamente gris/neutra — carece de diferenciación visual y energía para un servicio comercial",
+        "Sin indicadores de espaciado moderno, respiración visual o grid system"
+      ],
+      "recomendaciones": [
+        { "accion": "Rediseñar el hero con imagen a ancho completo, headline potente, subtítulo y CTA prominente", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar diseño responsive/mobile-first — crítico dado que gestores de propiedades consultan desde móvil", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Ampliar la paleta con un segundo color de acento para CTAs y elementos interactivos que destaquen sobre los grises", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Modernizar la tipografía con fuentes web profesionales (ej. Inter, Open Sans) para refrescar la apariencia", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "CTA 'Request a FREE Estimate' presente en la navegación principal — siempre accesible",
+        "Propuesta de valor con datos concretos: '75 combined years of experience' y cobertura geográfica específica (Upstate SC, western NC, NE Georgia)",
+        "Sección de responsabilidad social con 4 organizaciones benéficas locales — genera confianza y conexión comunitaria"
+      ],
+      "negativos": [
+        "No hay testimonios de clientes ni casos de éxito — falta la prueba social más convincente para B2B",
+        "No se muestran logos de clientes, certificaciones o cifras de proyectos completados",
+        "El mensaje principal ('Your eyes and ears for your commercial property') es vago y no ataca un dolor específico del administrador de propiedades",
+        "No hay urgencia ni diferenciador claro frente a competidores en la región"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir sección de testimonios con al menos 3 reseñas de administradores de propiedades comerciales", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Incluir logos de clientes o cifras concretas: nº de propiedades mantenidas, m² gestionados, contratos activos", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reformular el mensaje principal para atacar un dolor concreto: ej. 'Reduce liability and maintain property value with 33 years of trusted maintenance'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir badge o banner de '33 Years in Business' más prominente como diferenciador de confianza", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Texto del about es original, específico y con datos reales: fundadores property managers, 75 años combinados, desde 1993",
+        "Cobertura geográfica explícita: Upstate South Carolina, western North Carolina, northeastern Georgia",
+        "Información de contacto presente: teléfono (864) 235-1090 y dirección postal en footer y contacto"
+      ],
+      "negativos": [
+        "No hay email de contacto visible — barrera para clientes B2B que prefieren comunicación escrita",
+        "No existe sección de FAQ ni manejo de objeciones comunes",
+        "Las páginas de servicios individuales existen en la navegación pero no hay contenido descriptivo en la home sobre cada servicio",
+        "No hay horarios de operación publicados",
+        "Las secciones de servicios en home son solo imágenes con labels — sin descripción de qué incluye cada servicio"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir email de contacto visible junto al teléfono en header y footer", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar descripción breve (2-3 líneas) debajo de cada servicio en la home page", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear sección FAQ con 5-8 preguntas frecuentes: áreas de cobertura, tipos de contrato, tiempos de respuesta, seguros", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Publicar horarios de operación y disponibilidad para emergencias", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "WordPress 6.9.1 — versión reciente del CMS, indica que al menos se mantiene actualizado",
+        "Schema.org markup presente — buena base para datos estructurados",
+        "Formulario de solicitud de presupuesto existe como funcionalidad de conversión"
+      ],
+      "negativos": [
+        "Tema custom 'gm' probablemente sin mantenimiento ni actualizaciones de seguridad",
+        "NextGen Gallery y Photocrati — plugins legacy pesados y con historial de vulnerabilidades",
+        "Google Analytics con código UA (Universal Analytics) — obsoleto desde julio 2023, debería ser GA4",
+        "Dependencia de jQuery — indica codebase front-end anticuado",
+        "No hay evidencia de HTTPS enforcement, caching, CDN o optimización de rendimiento"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar de Google Analytics UA a GA4 inmediatamente — UA ya no procesa datos", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Eliminar NextGen Gallery y Photocrati — reemplazar con galería nativa o solución ligera", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reconstruir el sitio con stack moderno ligero (HTML + Tailwind + Alpine.js) dado el bajo volumen de contenido", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Implementar lazy loading de imágenes y optimización WebP para mejorar tiempos de carga", "prioridad": "media", "tipo": "mejora_estructural" }
+      ],
+      "stack_actual": "WordPress 6.9.1, tema custom 'gm', NextGen Gallery, Photocrati, Google Analytics (UA), jQuery, PHP, Schema.org",
+      "stack_recomendado": "HTML estático + Tailwind CSS + Alpine.js — sitio informativo de baja complejidad que no requiere CMS dinámico",
+      "integraciones": ["Formulario de solicitud de presupuesto", "Google Analytics (requiere migración a GA4)"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Añadir meta description optimizada con keywords y CTA (~155 caracteres)",
+    "Crear H1 visible en el hero con keyword principal de servicio + localidad",
+    "Añadir email de contacto visible en header y footer",
+    "Migrar de Google Analytics UA a GA4",
+    "Reformular headline principal para atacar dolor concreto del property manager"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Añadir meta description y alt text al banner del hero",
+      "Crear H1 con keyword en hero",
+      "Publicar email de contacto y horarios",
+      "Migrar Google Analytics UA → GA4",
+      "Reformular mensaje principal con enfoque en dolor del cliente"
+    ],
+    "mes_1": [
+      "Rediseñar hero completo con headline, subtítulo, CTA e imagen profesional",
+      "Implementar diseño responsive/mobile-first",
+      "Añadir sección de testimonios de clientes comerciales",
+      "Agregar descripciones de servicios en home page",
+      "Crear sección FAQ con preguntas frecuentes del sector",
+      "Eliminar plugins legacy (NextGen Gallery, Photocrati)"
+    ],
+    "largo_plazo": [
+      "Reconstruir sitio con stack moderno (HTML + Tailwind + Alpine.js)",
+      "Modernizar tipografía y paleta de colores",
+      "Incluir logos de clientes y cifras de impacto",
+      "Implementar lazy loading, WebP y optimización de rendimiento"
+    ]
+  },
+  "resumen_ejecutivo": "El sitio de Greenville Maintenance transmite estabilidad (33 años) pero su diseño anticuado, hero vacío y ausencia de prueba social no convierten visitantes en leads calificados para un servicio B2B de alto valor. La mayor oportunidad está en reconstruir la primera impresión: hero con propuesta de valor clara, testimonios de property managers y un flujo directo hacia la solicitud de presupuesto. El próximo paso inmediato es implementar los 5 quick wins de SEO y contenido que pueden mejorar visibilidad y conversión en menos de una semana.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["alpine.js", "google-analytics-ga4"],
+    "justificacion": "Sitio informativo de baja complejidad con ~8 páginas estáticas, sin e-commerce ni funcionalidad dinámica. HTML + Tailwind + Alpine.js ofrece máximo rendimiento, zero dependencias de servidor y facilidad de mantenimiento sin necesidad de CMS."
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "cliente": "Greenville Process Service",
+  "url_auditada": "https://www.greenvilleprocessservice.com/",
+  "sector": "Servicios Legales / Notificación de Procesos",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Técnico: 50. Negocio local de servicios legales cuyo público son bufetes y firmas de abogados en el Upstate de SC. El benchmark exige presencia local sólida, confianza profesional y contacto accesible.",
+  "fecha": "2026-04-02",
+  "scores": {
+    "seo": 18,
+    "ux_ui": 20,
+    "marketing": 25,
+    "contenido": 42,
+    "tecnico": 15,
+    "total": 24
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "El nombre del negocio aparece como título de la página",
+        "La propuesta de valor (negocio familiar desde 1990) está visible al inicio de la página",
+        "Navegación clara con 3 secciones principales bien etiquetadas"
+      ],
+      "negativos": [
+        "Sin meta description ni meta keywords — Google genera snippet automático sin control",
+        "Ninguna imagen tiene atributo alt text — penalización severa en accesibilidad y SEO de imágenes",
+        "No hay estructura de headings HTML semánticos (H1, H2, H3) — el sitio usa imágenes para títulos",
+        "Sin CTAs con texto descriptivo — no hay botones de acción en ninguna sección",
+        "Title genérico ('Greenville Process Service') sin keywords de servicio ni ubicación",
+        "Sin schema markup de LocalBusiness ni datos estructurados"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir meta description optimizada: 'Professional process service in Greenville, Anderson, Pickens, Oconee & Spartanburg SC. Family-owned since 1990. Call 864-242-0712.'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir alt text descriptivo a todas las imágenes del sitio", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar estructura semántica de headings H1→H2→H3 con keywords locales", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Optimizar title tag: 'Process Service Greenville SC | Serving Upstate Since 1990 | Greenville Process Service'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir schema markup LocalBusiness con dirección, teléfono y horarios", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Crear perfil de Google Business Profile vinculado al sitio", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Navegación simple con 3 opciones — no confunde al usuario",
+        "Información de contacto claramente presentada en página dedicada",
+        "Contenido directo sin distracciones ni pop-ups"
+      ],
+      "negativos": [
+        "Sin paleta de colores definida — el diseño depende enteramente de imágenes estáticas",
+        "Sin tipografías web definidas — depende de fuentes del sistema sin jerarquía visual",
+        "No hay indicios de diseño responsive ni mobile-first — sitio basado en imágenes de ancho fijo",
+        "Sin espaciado ni respiración visual controlada — layout plano sin sistema de grid",
+        "Títulos de sección son imágenes, no texto — imposible de escalar o adaptar",
+        "Sin hover states, transiciones ni feedback visual de interacción"
+      ],
+      "recomendaciones": [
+        { "accion": "Rediseñar con paleta profesional de 3 colores: azul oscuro (confianza legal), blanco y un acento dorado", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar diseño responsive mobile-first con Tailwind CSS", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reemplazar títulos-imagen por texto HTML con tipografía profesional (ej. Inter o Source Serif)", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Crear jerarquía visual con tamaños de fuente, pesos y espaciado consistentes", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Mensaje claro de confianza: negocio familiar desde 1990 transmite estabilidad",
+        "Lista concreta de diferenciadores ('Why Greenville Process Service?') con 7 puntos",
+        "Tono profesional y directo adecuado al sector legal"
+      ],
+      "negativos": [
+        "Sin ningún CTA en todo el sitio — ni botón 'Call Now', ni 'Request a Quote', ni 'Contact Us'",
+        "Sin prueba social: cero testimonios, cero logos de clientes, cero casos atendidos",
+        "No resuelve un dolor concreto del cliente — dice qué hacen pero no por qué elegirlos sobre la competencia",
+        "Sin urgencia ni incentivo para contactar ahora",
+        "La lista de diferenciadores es genérica — 'professionalism' y 'experience' no son argumentos diferenciadores"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir CTA principal visible en hero: 'Call Now — 864-242-0712' y botón secundario 'Request Service'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Solicitar y añadir 3-5 testimonios de bufetes o clientes frecuentes", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Cuantificar diferenciadores: años de experiencia (36+), número de condados (5), casos atendidos", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Añadir sección de confianza: 'Trusted by law firms across the Upstate since 1990'", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Información de contacto completa: dirección, teléfono, fax, email y horarios",
+        "Textos originales y específicos al negocio — no son plantilla genérica",
+        "Cobertura geográfica clara con los 5 condados mencionados"
+      ],
+      "negativos": [
+        "Contenido muy escaso — secciones con 1-2 oraciones que no explican el servicio en profundidad",
+        "Sin sección de FAQ ni manejo de objeciones comunes del sector",
+        "Sin explicación del proceso: qué pasa después de contactar, tiempos de servicio, procedimiento",
+        "El servicio de 'Skip Trace' tiene una sola oración sin detalle",
+        "Sin página o sección de 'About Us' con historia del negocio, equipo o valores",
+        "Typo detectado en scraping: 'subpoena's' debería ser 'subpoenas'"
+      ],
+      "recomendaciones": [
+        { "accion": "Expandir descripción de cada servicio a 3-4 párrafos con proceso, beneficios y casos de uso", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Crear sección FAQ: '¿Cuánto tarda el servicio?', '¿Qué pasa si no se localiza?', '¿Cuál es el costo?'", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Añadir sección About con historia familiar, años de experiencia y fotos del equipo Watson", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Añadir explicación visual del proceso paso a paso (contactar → servir → confirmar)", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Sitio extremadamente ligero — HTML estático carga rápido",
+        "Sin dependencias externas pesadas ni frameworks innecesarios",
+        "Estructura simple y fácil de migrar a stack moderno"
+      ],
+      "negativos": [
+        "HTML estático sin responsividad — no se adapta a móviles",
+        "Sin favicon configurado",
+        "Sin formulario de contacto — el único canal es teléfono y email manual",
+        "Sin HTTPS enforced ni headers de seguridad verificables desde el scraping",
+        "Sin analytics ni tracking — no hay forma de medir visitas ni conversiones",
+        "Imágenes usadas como elementos de layout en lugar de CSS — no escalable"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a HTML + Tailwind CSS con diseño responsive", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Añadir formulario de contacto funcional con validación básica", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Instalar Google Analytics 4 y configurar evento de click en teléfono como conversión", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Añadir favicon profesional derivado del logo", "prioridad": "baja", "tipo": "quick_win" }
+      ],
+      "stack_actual": "HTML estático con JavaScript básico para precarga de imágenes",
+      "stack_recomendado": "HTML + Tailwind CSS + Alpine.js — sitio informativo de baja complejidad que necesita responsividad, formulario y SEO básico sin overhead de framework",
+      "integraciones": [
+        "Google Analytics 4",
+        "Google Business Profile",
+        "Formulario de contacto con envío por email (Formspree o similar)",
+        "Schema markup LocalBusiness"
+      ],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Añadir meta description y optimizar title tag con keywords locales y de servicio",
+    "Añadir CTA principal 'Call Now — 864-242-0712' visible en la parte superior del sitio",
+    "Añadir alt text descriptivo a todas las imágenes",
+    "Cuantificar experiencia en la propuesta de valor: '36+ years serving the Upstate'",
+    "Instalar Google Analytics 4 para medir tráfico y conversiones"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Optimizar meta title y añadir meta description con keywords locales",
+      "Añadir alt text a todas las imágenes del sitio",
+      "Añadir CTA 'Call Now' y 'Request Service' visibles en hero y footer",
+      "Instalar favicon profesional"
+    ],
+    "mes_1": [
+      "Rediseñar sitio completo con HTML + Tailwind responsive mobile-first",
+      "Expandir contenido de cada servicio con descripciones detalladas",
+      "Crear sección FAQ con 5-8 preguntas frecuentes del sector",
+      "Implementar formulario de contacto funcional",
+      "Añadir sección About Us con historia y equipo",
+      "Configurar Google Analytics 4 y schema markup LocalBusiness",
+      "Solicitar testimonios a clientes existentes"
+    ],
+    "largo_plazo": [
+      "Crear blog con contenido sobre proceso legal en SC para SEO orgánico",
+      "Integrar Google Business Profile con reseñas",
+      "Explorar landing pages específicas por condado para SEO local",
+      "Considerar chat en vivo o formulario de cotización rápida"
+    ]
+  },
+  "resumen_ejecutivo": "El sitio de Greenville Process Service es un HTML estático de los años 90 que no tiene meta tags, no es responsive, carece de CTAs y no tiene ninguna imagen con alt text — está prácticamente invisible para Google y es inutilizable en móviles. La oportunidad es enorme: un rediseño profesional con SEO local y CTAs claros puede convertir a este negocio de 36 años de experiencia en la opción dominante del Upstate de SC frente a competidores con webs igual de débiles. El próximo paso inmediato es construir un sitio moderno con Tailwind que capitalice su trayectoria, añada formulario de contacto y posicione en búsquedas locales de process service.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["Alpine.js para interactividad del formulario y menú móvil", "Formspree o EmailJS para envío de formulario", "Schema markup LocalBusiness"],
+    "justificacion": "Sitio informativo de baja complejidad (3 páginas, sin e-commerce ni app). HTML + Tailwind + Alpine.js ofrece máxima velocidad de carga, SEO nativo y zero build step — ideal para un negocio local que necesita presencia profesional sin overhead de mantenimiento."
+  }
+}

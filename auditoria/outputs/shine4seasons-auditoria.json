@@ -1,0 +1,157 @@
+{
+  "cliente": "Shine 4 Seasons Salon",
+  "url_auditada": "https://shine4seasons.com/",
+  "sector": "Nail Salon / Beauty Salon",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 50. Aplicado porque un salón de uñas/belleza es un servicio local con clientela geográficamente concentrada, donde la presencia digital debe facilitar reservas y generar confianza local.",
+  "fecha": "2026-04-03",
+  "scores": {
+    "seo": 50,
+    "ux_ui": 63,
+    "marketing": 46,
+    "contenido": 59,
+    "tecnico": 46,
+    "total": 53
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta description presente y con ubicación geográfica incluida (Greenville, SC 29615)",
+        "Imágenes de servicios tienen alt text descriptivo relevante (Hair Services, PEDICURE, MANICURE, etc.)",
+        "Estructura de navegación clara con 8 páginas bien etiquetadas incluyendo Booking directo"
+      ],
+      "negativos": [
+        "Meta title es solo el nombre del negocio sin keywords de búsqueda local (falta 'Nail Salon Greenville SC')",
+        "No hay keyword principal en el H1 — 'Welcome to Shine 4 Seasons Salon' no posiciona para búsquedas transaccionales",
+        "Alt text de imágenes del slider son nombres de archivo técnicos (dreamstime_s_144516158.png) sin valor SEO",
+        "No hay propuesta de valor visible en los primeros 200px — el slider ocupa todo el viewport sin texto",
+        "CTAs genéricos: 'View More' y 'READ MORE' no contienen keywords ni describen la acción"
+      ],
+      "recomendaciones": [
+        { "accion": "Reescribir meta title a 'Shine 4 Seasons Salon | Nail Salon & Beauty Services in Greenville, SC'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Cambiar H1 a 'Premier Nail Salon & Beauty Services in Greenville, SC' con el nombre del negocio como subtítulo", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir texto overlay al slider con propuesta de valor y CTA principal visible en los primeros 200px", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reemplazar alt text de imágenes del slider con descripciones relevantes al servicio", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Cambiar CTAs a texto descriptivo con keywords: 'View Our Services' → 'Explore Nail & Beauty Services', 'Book Your Appointment Today'", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores consistente con solo 2 tonos principales (verde #039E06 y verde claro #a5dca5) sobre fondo blanco",
+        "Flujo de contenido lógico: slider → about → servicios → galería → contacto/booking",
+        "Tipografía principal Montserrat es legible y profesional con buenos pesos (400, 500, 700)"
+      ],
+      "negativos": [
+        "Uso de 3 familias tipográficas distintas (Montserrat, Dancing Script, Baumans) genera inconsistencia visual",
+        "El color verde brillante (#039E06) no es convencional para el sector belleza/spa — transmite más ecología que lujo",
+        "Sin evidencia de diseño mobile-first; la plataforma newzensite genera layouts genéricos",
+        "Slider ocupa todo el viewport inicial sin jerarquía clara ni guía visual hacia el contenido"
+      ],
+      "recomendaciones": [
+        { "accion": "Reducir a 2 familias tipográficas máximo — mantener Montserrat para cuerpo y una decorativa para acentos", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Rediseñar paleta hacia tonos más alineados con belleza/spa: dorados, rosados o nude con acentos oscuros", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reemplazar slider de página completa por hero section con imagen, texto y CTA visible sin scroll", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar diseño mobile-first con navegación hamburger y secciones adaptadas a thumb-zone", "prioridad": "alta", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "CTA de booking directo en la navegación principal con enlace a sistema de reservas externo (gocheckin)",
+        "Listado amplio de servicios (10 categorías) que muestra variedad y capacidad del salón",
+        "Presencia en 4 plataformas sociales (Facebook, Google, Instagram, Yelp) que refuerza credibilidad"
+      ],
+      "negativos": [
+        "Propuesta de valor genérica: 'ideal retreat for indulging in a luxurious atmosphere' no diferencia del competidor",
+        "Cero prueba social: no hay testimonios, reseñas, conteo de clientes satisfechos ni calificaciones",
+        "No existe sección de objeciones, FAQ ni garantías que reduzcan fricción antes de la reserva",
+        "El mensaje principal no aborda ningún dolor concreto del cliente (tiempo, confianza, calidad)"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar sección de testimonios con 3-5 reseñas reales de Google/Yelp con nombre y foto", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reescribir propuesta de valor enfocada en beneficio concreto: 'Relax & Rejuvenate — Expert Nail Care With Premium Products in Greenville'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir badge o widget de Google Reviews con calificación visible en el hero", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Crear sección FAQ con 5-8 preguntas frecuentes (precios, duración, productos, walk-ins, etc.)", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Información de contacto completa: teléfono, email, dirección física y horarios claramente visibles",
+        "Galería de fotos extensa (12+ imágenes) mostrando trabajos reales de nail art y eyelash extensions",
+        "Catálogo de servicios bien categorizado con 10 servicios diferenciados"
+      ],
+      "negativos": [
+        "Textos genéricos y corporativos: 'top-notch services', 'attentive and thorough care' — sin personalidad de marca",
+        "No hay descripciones detalladas de servicios en la home — solo nombres e imágenes",
+        "Mención de 'Gift Certificate Available' sin link, precio ni explicación — parece incompleto",
+        "No hay información sobre el equipo, experiencia o especialidades de los profesionales"
+      ],
+      "recomendaciones": [
+        { "accion": "Reescribir textos del about con tono cercano, mencionando años de experiencia, especialidades y qué hace único al salón", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar descripción breve (1-2 líneas) y rango de precios debajo de cada servicio en la home", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Crear sección 'Meet Our Team' con foto y especialidad de cada profesional", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Completar la información de Gift Certificates con link de compra o instrucciones claras", "prioridad": "baja", "tipo": "quick_win" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Imágenes optimizadas en formato WebP para mejor rendimiento",
+        "Integración con sistema de reservas externo (gocheckin) funcional",
+        "Google Tag Manager implementado (GTM-TWW643L) para tracking"
+      ],
+      "negativos": [
+        "Plataforma propietaria newzensite/gocheckin limita personalización y control del código",
+        "Dependencia de jQuery y plugins legacy (Slider Pro, Magnific Popup) añade peso innecesario",
+        "No hay formulario de contacto propio — toda la interacción depende de plataformas externas",
+        "Sin evidencia de SSL, schema markup o optimizaciones de Core Web Vitals"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a sitio propio con HTML + Tailwind + Alpine.js para control total y mejor rendimiento", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar schema markup LocalBusiness y NailSalon para rich snippets en Google", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar formulario de contacto nativo con validación básica como alternativa al booking externo", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Eliminar jQuery y plugins legacy — reemplazar slider con CSS/Alpine.js y lightbox con solución moderna", "prioridad": "baja", "tipo": "mejora_estructural" }
+      ]
+    },
+    "stack_actual": "newzensite/gocheckin platform, jQuery, Google Tag Manager, Slider Pro, Magnific Popup, Google Fonts",
+    "stack_recomendado": "HTML + Tailwind CSS + Alpine.js (sitio estático con interactividad ligera)",
+    "integraciones": ["gocheckin (reservas online)", "Google Tag Manager", "Facebook", "Instagram", "Yelp", "Google Business"],
+    "complejidad": "baja"
+  },
+  "quick_wins": [
+    "Reescribir meta title incluyendo 'Nail Salon Greenville SC' para posicionamiento local inmediato",
+    "Reescribir H1 con keyword principal transaccional en lugar de saludo genérico",
+    "Redactar propuesta de valor diferenciada enfocada en beneficio concreto del cliente",
+    "Implementar schema markup LocalBusiness + NailSalon para rich snippets en buscadores",
+    "Reemplazar alt text de imágenes del slider con descripciones relevantes al servicio"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Reescribir meta title y H1 con keywords locales",
+      "Redactar nueva propuesta de valor diferenciada",
+      "Implementar schema markup LocalBusiness y NailSalon",
+      "Corregir alt text de todas las imágenes del slider",
+      "Reemplazar CTAs genéricos por texto descriptivo con keywords"
+    ],
+    "mes_1": [
+      "Rediseñar paleta de colores alineada al sector belleza/spa",
+      "Reemplazar slider por hero section con texto y CTA visible",
+      "Agregar sección de testimonios con reseñas reales",
+      "Crear sección FAQ con preguntas frecuentes del salón",
+      "Reescribir textos del about con personalidad de marca y diferenciación",
+      "Agregar descripciones y precios a cada servicio en la home",
+      "Agregar formulario de contacto nativo"
+    ],
+    "largo_plazo": [
+      "Migrar a sitio propio HTML + Tailwind + Alpine.js",
+      "Crear sección Meet Our Team con profesionales del salón",
+      "Completar sección de Gift Certificates con funcionalidad de compra",
+      "Eliminar dependencias legacy (jQuery, Slider Pro, Magnific Popup)",
+      "Implementar diseño mobile-first completo"
+    ]
+  },
+  "resumen_ejecutivo": "Shine 4 Seasons Salon tiene un sitio funcional pero genérico que no diferencia al negocio de sus competidores locales — la propuesta de valor, los textos y el diseño carecen de personalidad y no explotan el potencial visual del sector belleza. La mayor oportunidad está en agregar prueba social, optimizar SEO local y rediseñar la experiencia visual para transmitir el lujo que el salón promete verbalmente. El próximo paso es migrar a un sitio propio con diseño alineado al sector, comenzando por los quick wins de SEO y contenido que pueden mejorar la visibilidad de búsqueda local de inmediato.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["Alpine.js", "Schema markup LocalBusiness + NailSalon", "Google Fonts (Montserrat)"],
+    "justificacion": "Complejidad baja — salón de belleza local con catálogo de servicios estático, galería y enlace a booking externo. No requiere framework SPA ni SSR. HTML + Tailwind + Alpine.js ofrece máximo rendimiento, SEO nativo y facilidad de mantenimiento."
+  }
+}

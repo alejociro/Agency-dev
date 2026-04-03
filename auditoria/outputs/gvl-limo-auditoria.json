@@ -1,0 +1,159 @@
+{
+  "cliente": "Greenville Executive Limo Service",
+  "url_auditada": "https://gvllimo.com/",
+  "sector": "Transporte ejecutivo y limusinas",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 50. Se aplica este benchmark porque el negocio opera como servicio local de transporte en Greenville, SC, aunque con componente premium/lujo. El sitio requiere renderizado JS (Wix), lo que limita el score técnico a un máximo de 60/100.",
+  "fecha": "2026-04-02",
+  "scores": {
+    "seo": 45,
+    "ux_ui": 48,
+    "marketing": 60,
+    "contenido": 70,
+    "tecnico": 38,
+    "total": 52
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "H1 presente con keyword principal 'Limo Service' y localización 'Greenville'",
+        "CTAs con verbos de acción claros: 'BOOK NOW', 'DOWNLOAD OUR APP', 'APPLY NOW'",
+        "Teléfono visible en el hero junto al CTA principal, facilita conversión directa",
+        "Múltiples páginas internas con títulos descriptivos (Experiences, Downtown Cart, GVL SAFE)"
+      ],
+      "negativos": [
+        "Meta description ausente — Google generará un snippet automático probablemente irrelevante",
+        "Meta keywords ausentes, sin estrategia de keywords visible",
+        "Título de página genérico: 'Greenville Executive Limo Service - Home' — el sufijo '- Home' desperdicia caracteres",
+        "Sitio renderizado por JS (Wix) — los crawlers no pueden indexar contenido dinámico correctamente",
+        "Jerarquía de headings caótica: todo en MAYÚSCULAS, sin distinción visual clara entre H1/H2/H3",
+        "Imágenes de carruseles dinámicos (testimonios, equipo) sin alt text accesible al crawler"
+      ],
+      "recomendaciones": [
+        { "accion": "Escribir meta description optimizada (~155 chars) con keywords: 'limo service Greenville SC', 'airport transportation', 'executive car service'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reescribir meta title a formato: 'Greenville Limo Service | 24/7 Executive Transportation | GVL Limo'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Establecer jerarquía de headings semántica: un solo H1 por página, H2 para secciones, H3 para subsecciones", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Migrar a plataforma con SSR/SSG para que el contenido sea crawleable sin JavaScript", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Añadir schema markup (LocalBusiness, Vehicle, Review) para rich snippets en Google", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta coherente y premium: negro (#161616) + blanco + amarillo acento — transmite lujo y exclusividad",
+        "Tipografías profesionales: Lato (cuerpo) y Cabin (headings) con buena jerarquía de pesos",
+        "Video de fondo en hero aporta dinamismo y muestra la flota visualmente"
+      ],
+      "negativos": [
+        "Uso excesivo de ALL CAPS en todas las secciones reduce legibilidad y jerarquía visual",
+        "Demasiados colores secundarios (#585858, #757575, #919191, etc.) — 8 grises diferentes crean inconsistencia",
+        "Contenido dinámico (testimonios, equipo, reseñas en vivo) no carga sin JS — experiencia degradada",
+        "Página sobrecargada con demasiadas secciones en la home — scroll excesivo sin navegación ancla",
+        "Imágenes de vehículos con nombres técnicos internos en URLs, sin lazy loading optimizado"
+      ],
+      "recomendaciones": [
+        { "accion": "Reducir uso de ALL CAPS solo a CTAs y títulos principales, usar sentence case en contenido", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Consolidar paleta de grises a máximo 3 tonos: claro, medio, oscuro", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Añadir navegación con scroll-to-section o índice sticky para la home extensa", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Implementar lazy loading nativo en imágenes de vehículos y carruseles", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "CTA principal 'BOOK NOW' prominente en hero junto con número telefónico directo — doble canal de conversión",
+        "Sección de seguridad y credenciales (USDOT, SLED, licencias) genera confianza institucional fuerte",
+        "Oferta diferenciadora clara: GVL SAFE (transporte armado con ex-policías) es un servicio único en SC",
+        "Listado extenso de áreas de servicio cubre todo el Upstate y más — captura búsquedas locales"
+      ],
+      "negativos": [
+        "Propuesta de valor genérica: 'No matter where you're going... we can help' no diferencia del competidor",
+        "Testimonios de clientes inaccesibles (carrusel dinámico) — la prueba social más valiosa está oculta",
+        "No hay precios visibles para servicios estándar (sedán, SUV) — solo tours tienen precio",
+        "Falta urgencia o escasez en el messaging principal — la sección de cancelaciones es un buen intento pero está muy abajo"
+      ],
+      "recomendaciones": [
+        { "accion": "Reescribir propuesta de valor hero: enfocarse en el diferenciador (flota premium + seguridad + 24/7) con un dolor concreto del cliente", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Mover 2-3 testimonios estáticos al hero o justo debajo, con nombre y foto — no depender de carrusel dinámico", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir tabla de precios base para servicios más populares (airport, hourly) — reduce fricción de cotización", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Subir la sección de ofertas por cancelación más arriba en la página y conectarla con CTA de urgencia", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "About Us extremadamente detallado: historia, proceso de reserva, protocolos de comunicación — genera confianza",
+        "Descripción exhaustiva de cada vehículo con capacidad, características de entretenimiento y tipo de servicio",
+        "Sección de seguridad con protocolos específicos: background checks, equipamiento médico NAR, GPS, radios",
+        "Información de contacto completa: dirección física, teléfono, email, horarios 24/7, redes sociales (7 plataformas)",
+        "Contenido de Experiences y tours con precios, duración y capacidad — listo para decisión de compra"
+      ],
+      "negativos": [
+        "Secciones de testimonios, equipo y reseñas en vivo son placeholders dinámicos sin contenido estático accesible",
+        "Términos y condiciones extensos pero sin resumen amigable — lenguaje legal puro puede espantar clientes",
+        "Contenido de la home repite información que también está en páginas internas — redundancia sin valor"
+      ],
+      "recomendaciones": [
+        { "accion": "Convertir testimonios más impactantes a contenido estático HTML para que sean indexables y siempre visibles", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear resumen visual de T&C con iconos: política de cancelación, qué incluye, qué no — formato amigable", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Eliminar duplicación de contenido entre home y páginas internas — home como hub, páginas como detalle", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Añadir sección FAQ con las preguntas más comunes: precios, proceso de reserva, política de cancelación", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Integraciones funcionales múltiples: HubSpot (formularios/marketing), EverTransit (reservas), Vimeo (video)",
+        "Service Worker implementado (/sw.js) — indica intención de performance offline/PWA",
+        "Google Analytics activo (G-9XJSZBB9QS) para tracking de métricas"
+      ],
+      "negativos": [
+        "Wix como plataforma limita severamente SEO, performance y personalización",
+        "Sitio 100% dependiente de JS para renderizar contenido — no crawleable (requiere_render: true)",
+        "Formularios son embeds externos (HubSpot, Google Forms, EverTransit) — sin control de UX ni datos unificados",
+        "Múltiples dependencias de terceros sin fallback: si Vimeo cae, el hero pierde su video"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar de Wix a stack estático (Astro + Tailwind) con pre-rendering para eliminar dependencia de JS", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reemplazar embeds de formularios por formularios nativos con Formspree o similar para unificar UX", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Implementar hosting en Netlify/Vercel con CDN para mejorar TTFB y disponibilidad global", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Optimizar imágenes: convertir a WebP/AVIF, definir dimensiones explícitas, implementar srcset responsive", "prioridad": "baja", "tipo": "opcional" }
+      ],
+      "stack_actual": "Wix (wsimg.com hosting) + Google Analytics + HubSpot (formularios) + Vimeo (video) + EverTransit (reservas) + Google Forms + Service Worker",
+      "stack_recomendado": "Astro + Tailwind CSS + formularios nativos + Netlify/Vercel hosting",
+      "integraciones": ["EverTransit (booking/reservas)", "HubSpot (formularios y marketing)", "Google Analytics (G-9XJSZBB9QS)", "Vimeo (video hosting)", "Google Forms (aplicaciones de empleo)"],
+      "complejidad": "media"
+    }
+  },
+  "quick_wins": [
+    "Escribir meta description y optimizar meta title con keywords locales de transporte ejecutivo",
+    "Mover 2-3 testimonios reales a contenido estático visible sin JS — prueba social inmediata",
+    "Reescribir propuesta de valor del hero con diferenciador concreto: flota premium + seguridad SLED + 24/7",
+    "Reducir ALL CAPS a solo CTAs y títulos de sección — mejorar legibilidad general",
+    "Convertir contenido dinámico crítico (testimonios, equipo) a HTML estático indexable"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Optimizar meta title y meta description en todas las páginas",
+      "Reescribir propuesta de valor del hero con messaging diferenciador",
+      "Fijar 2-3 testimonios como contenido estático en la home",
+      "Reducir ALL CAPS y mejorar jerarquía tipográfica"
+    ],
+    "mes_1": [
+      "Migrar sitio de Wix a Astro + Tailwind con contenido pre-renderizado",
+      "Implementar jerarquía de headings semántica (H1→H2→H3) en todas las páginas",
+      "Añadir schema markup LocalBusiness y Vehicle para rich snippets",
+      "Crear tabla de precios base para servicios principales",
+      "Reemplazar embeds de formularios por formularios nativos",
+      "Crear resumen visual amigable de términos y condiciones"
+    ],
+    "largo_plazo": [
+      "Implementar navegación con scroll-to-section en home",
+      "Añadir sección FAQ completa",
+      "Optimizar todas las imágenes a WebP/AVIF con srcset responsive",
+      "Subir sección de ofertas por cancelación más arriba con CTA de urgencia"
+    ]
+  },
+  "resumen_ejecutivo": "GVL Limo tiene contenido rico y diferenciadores fuertes (flota premium, servicio armado SLED, 24/7) pero la plataforma Wix los entierra tras un muro de JavaScript que ni Google ni usuarios con conexión lenta pueden penetrar. La oportunidad principal es migrar a un stack estático que exponga todo ese contenido valioso a buscadores y acelere la experiencia del usuario, combinado con un messaging de hero que comunique inmediatamente por qué GVL Limo no es 'otro servicio de transporte'. El próximo paso es construir el nuevo sitio en Astro + Tailwind, priorizando SEO técnico y una propuesta de valor que convierta desde el primer scroll.",
+  "stack_para_web": {
+    "framework": "astro",
+    "estilos": "tailwind",
+    "extras": ["alpine.js para interactividad ligera", "formularios nativos con Formspree", "lazy loading nativo de imágenes", "schema markup JSON-LD"],
+    "justificacion": "Complejidad media: múltiples páginas con contenido rico pero sin necesidad de SPA. Astro genera HTML estático pre-renderizado que resuelve el problema principal (sitio no crawleable por JS). Tailwind permite replicar la estética premium oscura con precisión. Alpine.js cubre las interacciones ligeras (menú móvil, carruseles, tabs de vehículos) sin el peso de React."
+  }
+}

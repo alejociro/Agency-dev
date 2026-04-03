@@ -1,0 +1,188 @@
+{
+  "negocio": "Greenville Maintenance Services, Inc.",
+  "url": "https://greenvillemaintenance.com/",
+  "sector": "Mantenimiento de propiedades comerciales y gestión de instalaciones",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Parking Lot Sweeping | Sealcoating | Property Management | Greenville, SC",
+    "description": null,
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#313131",
+    "secundario": "#444444",
+    "acento": "#007cba",
+    "fondo": "#ffffff",
+    "texto": "#313131",
+    "otros": ["#dddddd", "#eeeeee", "#32373c"]
+  },
+  "logo": {
+    "url": "https://greenvillemaintenance.com/wp-content/themes/gm/images/greenville-maintenance.jpg",
+    "descripcion": "Logo de Greenville Maintenance Services",
+    "posicion": "header, esquina superior izquierda",
+    "colores": []
+  },
+  "tipografias": [
+    {
+      "nombre": null,
+      "uso": "cuerpo de texto",
+      "peso": "400",
+      "tamanio_aprox": "16px"
+    },
+    {
+      "nombre": null,
+      "uso": "encabezados grandes",
+      "peso": "600",
+      "tamanio_aprox": "36px"
+    },
+    {
+      "nombre": null,
+      "uso": "encabezados medianos",
+      "peso": "600",
+      "tamanio_aprox": "20px"
+    }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://greenvillemaintenance.com/" },
+    { "label": "About", "url": "https://greenvillemaintenance.com/about" },
+    { "label": "Tommy Jenkins", "url": "https://greenvillemaintenance.com/about/tommy-jenkins" },
+    { "label": "Rex Jones", "url": "https://greenvillemaintenance.com/about/rex-jones" },
+    { "label": "Commercial Parking Lot Sweeping", "url": "https://greenvillemaintenance.com/commercial-parking-lot-sweeping" },
+    { "label": "Parking Lot Maintenance", "url": "https://greenvillemaintenance.com/sealcoating-parking-lot-maintenance" },
+    { "label": "Facilities Maintenance", "url": "https://greenvillemaintenance.com/building-grounds-maintenance" },
+    { "label": "General Contracting", "url": "https://greenvillemaintenance.com/general-contracting" },
+    { "label": "Contact", "url": "https://greenvillemaintenance.com/contact" },
+    { "label": "Request a FREE Estimate", "url": "https://greenvillemaintenance.com/estimate-request" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": null,
+      "contenido": null,
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://greenvillemaintenance.com/wp-content/uploads/2012/02/greenville-maintenance-services-864x288.jpg",
+          "alt": null,
+          "descripcion": "Banner principal de Greenville Maintenance Services",
+          "tipo": "banner",
+          "dimensiones": "864x288"
+        }
+      ]
+    },
+    {
+      "tipo": "banner-aniversario",
+      "titulo": "1993-2026 - Celebrating 33 Years of Quality Service",
+      "contenido": "1993-2026 - Celebrating 33 Years of Quality Service",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Servicios",
+      "contenido": null,
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://greenvillemaintenance.com/wp-content/themes/gm/images/parking-lot-sweeping.jpg",
+          "alt": "Commercial Sweeping",
+          "descripcion": "Imagen del servicio de barrido comercial de estacionamientos",
+          "tipo": "servicio",
+          "dimensiones": null
+        },
+        {
+          "url": "https://greenvillemaintenance.com/wp-content/themes/gm/images/sealcoating-parking-lot.jpg",
+          "alt": "Parking Lot Maintenance",
+          "descripcion": "Imagen del servicio de mantenimiento de estacionamientos y sellado",
+          "tipo": "servicio",
+          "dimensiones": null
+        },
+        {
+          "url": "https://greenvillemaintenance.com/wp-content/themes/gm/images/landscaping-greenville-sc.jpg",
+          "alt": "Facilities Maintenance",
+          "descripcion": "Imagen del servicio de mantenimiento de instalaciones y jardinería",
+          "tipo": "servicio",
+          "dimensiones": null
+        },
+        {
+          "url": "https://greenvillemaintenance.com/wp-content/themes/gm/images/general-contracting-greenville-sc.jpg",
+          "alt": "General Contracting",
+          "descripcion": "Imagen del servicio de contratación general",
+          "tipo": "servicio",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "about",
+      "titulo": "Welcome to Greenville Maintenance Services, Inc.",
+      "contenido": "Greenville Maintenance Services, Inc. provides full maintenance services for commercial properties including commercial sweeping, parking lot maintenance, building and grounds maintenance and general contracting. Founded by two commercial property managers in 1993, we offer over 75 combined years of property management and construction experience. Contact us today and let us be your eyes and ears for your commercial property in Upstate South Carolina, western North Carolina and northeastern Georgia.",
+      "cta": "Contact us today",
+      "imagenes": []
+    },
+    {
+      "tipo": "responsabilidad-social",
+      "titulo": "Through our many blessings, Greenville Maintenance Services is pleased to support these local charities:",
+      "contenido": "Through our many blessings, Greenville Maintenance Services is pleased to support these local charities: Meyer Center, Water of Life, Set Free Alliance, Meals on Wheels.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://greenvillemaintenance.com/wp-content/uploads/2012/02/meyer-center.png",
+          "alt": "Meyer Center",
+          "descripcion": "Logo de Meyer Center",
+          "tipo": "logo-charity",
+          "dimensiones": null
+        },
+        {
+          "url": "https://greenvillemaintenance.com/wp-content/uploads/2012/02/water-of-life.png",
+          "alt": "Water of Life",
+          "descripcion": "Logo de Water of Life",
+          "tipo": "logo-charity",
+          "dimensiones": null
+        },
+        {
+          "url": "https://greenvillemaintenance.com/wp-content/uploads/2012/02/set-free-alliance.png",
+          "alt": "Set Free Alliance",
+          "descripcion": "Logo de Set Free Alliance",
+          "tipo": "logo-charity",
+          "dimensiones": null
+        },
+        {
+          "url": "https://greenvillemaintenance.com/wp-content/uploads/2012/02/meals-on-wheels.png",
+          "alt": "Meals on Wheels",
+          "descripcion": "Logo de Meals on Wheels",
+          "tipo": "logo-charity",
+          "dimensiones": null
+        }
+      ]
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Celebrating 33 Years of Quality Service",
+    "propuesta_valor": "Over 75 combined years of property management and construction experience. Your eyes and ears for your commercial property in Upstate South Carolina, western North Carolina and northeastern Georgia.",
+    "ctas": ["Request a FREE Estimate »", "Contact us today"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(864) 235-1090",
+    "whatsapp": null,
+    "email": null,
+    "direccion": "PO Box 27036 Greenville, SC 29616",
+    "horarios": null
+  },
+  "redes": [],
+  "formularios": [
+    {
+      "proposito": "Solicitud de presupuesto gratuito",
+      "campos": []
+    }
+  ],
+  "footer": {
+    "contenido": "© 2026 Greenville Maintenance Services, Inc. | (864) 235-1090 | PO Box 27036 Greenville, SC 29616",
+    "links": [],
+    "copyright": "© 2026 Greenville Maintenance Services, Inc."
+  },
+  "tecnologia": "WordPress 6.9.1, tema custom 'gm', NextGen Gallery, Photocrati, Google Analytics (UA-2716516-50), jQuery, PHP, Schema.org markup"
+}

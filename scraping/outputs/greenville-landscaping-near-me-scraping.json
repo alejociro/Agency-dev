@@ -1,0 +1,263 @@
+{
+  "negocio": "Greenville Landscaping Near Me",
+  "url": "https://www.greenvillelandscapingnearme.com",
+  "sector": "Landscaping Services",
+  "requiere_render": true,
+  "nota_scraping": "Sitio renderizado por Wix Thunderbolt (SPA). El contenido SSR fue extraído del HTML estático. Algunos datos pueden estar incompletos. Considerar scraping con browser headless para contenido adicional.",
+  "meta": {
+    "title": "Greenville Landscaping Near Me | Expert Lawn Care in Greenville SC",
+    "description": "Greenville Landscaping Near Me offers top-rated lawn care services in Greenville, SC, including mowing, edging, hedge trimming, weed treatment, and more. Discover customizable year-round packages for a lush, healthy lawn.",
+    "keywords": null
+  },
+  "favicon": "https://static.parastorage.com/client/pfavico.ico",
+  "paleta": {
+    "primario": "#4FBFB7",
+    "secundario": "#2b5672",
+    "acento": "#1FB55D",
+    "fondo": "#FFFFFF",
+    "texto": "#000000",
+    "otros": ["#555555", "#212121", "#116dff", "#EEEEEE", "#757575", "#9E3B1B", "#646464", "#d3d3d3", "#767574", "#5d5d61"]
+  },
+  "logo": {
+    "url": "https://static.wixstatic.com/media/04bcbf_102440b280da45a8b28a8fa58b50a97f~mv2.png",
+    "descripcion": "Logo de Greenville Landscaping Near Me - diseño circular verde",
+    "posicion": "header izquierda",
+    "colores": ["#4FBFB7", "#1FB55D"]
+  },
+  "tipografias": [
+    { "nombre": "montserrat", "uso": "headings", "peso": "bold", "tamanio_aprox": "24-48px" },
+    { "nombre": "raleway", "uso": "body", "peso": "regular", "tamanio_aprox": "14-16px" },
+    { "nombre": "questrial", "uso": "subheadings", "peso": "regular", "tamanio_aprox": "16-20px" },
+    { "nombre": "avenir-lt-w01_85-heavy1475544", "uso": "emphasis", "peso": "heavy", "tamanio_aprox": "14-18px" },
+    { "nombre": "avenir-lt-w01_35-light1475496", "uso": "light text", "peso": "light", "tamanio_aprox": "14-16px" },
+    { "nombre": "din-next-w01-light", "uso": "secondary text", "peso": "light", "tamanio_aprox": "14-16px" },
+    { "nombre": "helveticaneuew01-65medi", "uso": "navigation", "peso": "medium", "tamanio_aprox": "14px" },
+    { "nombre": "proxima-n-w01-reg", "uso": "body alternativo", "peso": "regular", "tamanio_aprox": "14-16px" }
+  ],
+  "navegacion": [
+    { "label": "HOME", "url": "https://www.greenvillelandscapingnearme.com" },
+    { "label": "SERVICES", "url": "https://www.greenvillelandscapingnearme.com/services" },
+    { "label": "OUR TEAM", "url": "https://www.greenvillelandscapingnearme.com/ourteam" },
+    { "label": "FAQ", "url": "https://www.greenvillelandscapingnearme.com/faq" },
+    { "label": "CONTACT", "url": "https://app.singleops.com/accounts/GreenvilleLandscapingNearMe/portal" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Greenville Landscaping Near Me",
+      "contenido": "Most Reputable Landscaping Company in the Upstate",
+      "cta": "Schedule a Property Visit",
+      "imagenes": [
+        {
+          "url": "https://static.wixstatic.com/media/04bcbf_74fbbb5cd94f4601a800a66883e959b4~mv2.jpg",
+          "alt": "greenville 2.JPG",
+          "descripcion": "Vista panorámica de downtown Greenville con Liberty Bridge",
+          "tipo": "background",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "ubicacion",
+      "titulo": "Greenville, SC",
+      "contenido": "We provide over 20 different services to Greenville, Greer, Taylors, Simpsonville, Easley, and the surrounding areas.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://static.wixstatic.com/media/04bcbf_74fbbb5cd94f4601a800a66883e959b4~mv2.jpg",
+          "alt": "downtown greenville liberty bridge",
+          "descripcion": "Downtown Greenville con puente Liberty Bridge",
+          "tipo": "foto",
+          "dimensiones": "800x533"
+        }
+      ]
+    },
+    {
+      "tipo": "estadisticas",
+      "titulo": "Most Reputable Landscaping Company in the Upstate",
+      "contenido": "55+ Year Round Contracts | 695+ Year Round Customers | 40+ Repeat Projects",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Services",
+      "contenido": "Mowing, Edging, Blowing, Hedge Trimming, Debris Removal, Weed Treatment",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://static.wixstatic.com/media/04bcbf_f567c777cf2146f4945aef5186db6ec0~mv2.png",
+          "alt": "2157621_plant_flower_garden_mowing_soil_machine.png",
+          "descripcion": "Icono de mowing - cortadora de césped",
+          "tipo": "icono",
+          "dimensiones": "51x51"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/04bcbf_76dc0b0c2c3e49b38d5f44276b6145f8~mv2.png",
+          "alt": "7999981_nature_ground_plant_grass.png",
+          "descripcion": "Icono de edging - césped y plantas",
+          "tipo": "icono",
+          "dimensiones": "51x51"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/04bcbf_1ca5608285d241ea9c68875e8bd022d2~mv2.png",
+          "alt": "6207238_sprayer_cleaning_device_blower_leaf_equipment_electronic.png",
+          "descripcion": "Icono de blowing - soplador de hojas",
+          "tipo": "icono",
+          "dimensiones": "51x51"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/04bcbf_30cc338dc9b84102850ed8adc1bac2f7~mv2.png",
+          "alt": "6111110_pruners_scissors_trimming_garden_garden scissors_clipping.png",
+          "descripcion": "Icono de hedge trimming - tijeras de podar",
+          "tipo": "icono",
+          "dimensiones": "51x51"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/04bcbf_5b037a8169aa40cf9fd221eed83616f2~mv2.png",
+          "alt": "1464899_management_disaster_garbage_debris_clean_construction_prevention.png",
+          "descripcion": "Icono de debris removal - limpieza de escombros",
+          "tipo": "icono",
+          "dimensiones": "51x51"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/04bcbf_68bf83d35bf04f8d80f4f9ab67f60f20~mv2.png",
+          "alt": "3638950_sprinkle_gardening_pesticide_sprayer_farming_gardeningtools.png",
+          "descripcion": "Icono de weed treatment - rociador de pesticida",
+          "tipo": "icono",
+          "dimensiones": "51x51"
+        }
+      ]
+    },
+    {
+      "tipo": "paquetes",
+      "titulo": "Packages That Fit The Needs of Every Customer",
+      "contenido": "Committed to excellence and personalized care, we work with our customers to improve and maintain their property. We make sure we understand the customer's needs and vision, gather property information, solve any site challenges and select the right materials for each project.",
+      "cta": "Request a Quote",
+      "imagenes": []
+    },
+    {
+      "tipo": "paquete-detalle",
+      "titulo": "Weekly Service",
+      "contenido": "52 Visits a Year. 52 weeks of the year, our crew will deliver tailored landscape services. Weekly / Bi-Weekly. Our crew will deliver weekly tailored services during the growing season and biweekly services during the non-growing season.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "paquete-detalle",
+      "titulo": "Bi-Weekly Service",
+      "contenido": "26 Visits a Year. 26 weeks of the year, our crew will deliver tailored landscape services. Bi-Weekly / Monthly. 19 Visits a Year. Our crew will deliver bi-weekly tailored services during the growing season and monthly services during the non-growing season.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "paquete-detalle",
+      "titulo": "Year Round Work",
+      "contenido": "We offer both weekly and biweekly year round service tailored to your landscape needs.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "paquete-detalle",
+      "titulo": "Seasonal Work",
+      "contenido": "Only need us seasonally? We offer weekly and biweekly service during the growing season.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "paquete-detalle",
+      "titulo": "Don't See What You Need?",
+      "contenido": "Give us a call and we will put together a custom quote specific to your landscape needs.",
+      "cta": "Call us today for an estimate: (864) 794-1315",
+      "imagenes": []
+    },
+    {
+      "tipo": "testimonios",
+      "titulo": "Read more about what your neighbors think about us",
+      "contenido": null,
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://static.wixstatic.com/media/04bcbf_453c9bd9ad6c4ef2b24db62a3e8021db~mv2.jpg",
+          "alt": null,
+          "descripcion": "Foto de proyecto de landscaping completado",
+          "tipo": "foto",
+          "dimensiones": "480x480"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/04bcbf_65303c7cb9a8448a8b619d4fb29a7a77~mv2.jpg",
+          "alt": null,
+          "descripcion": "Foto de proyecto de landscaping completado",
+          "tipo": "foto",
+          "dimensiones": "480x480"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/04bcbf_ca24b9ae43d3470e9fc7b0321080c522~mv2.jpg",
+          "alt": null,
+          "descripcion": "Foto de proyecto de landscaping completado",
+          "tipo": "foto",
+          "dimensiones": "480x480"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/04bcbf_dea2424a197a499db9fd141345027a1c~mv2.jpg",
+          "alt": null,
+          "descripcion": "Foto de proyecto de landscaping completado",
+          "tipo": "foto",
+          "dimensiones": "480x480"
+        }
+      ]
+    },
+    {
+      "tipo": "resenas",
+      "titulo": null,
+      "contenido": "Robert C. — Used this company to have compost and mulch laid around my home. Paige maintained great communication on the project and Jackie and the Landscaping crew did an excellent job. Would highly recommend this company!\n\nHunter G. — They have always gone above and beyond to get something done right when needed. Would highly recommend working with them.\n\nTara D. — Professional and reliable. Maintained our property efficiently and we never had any trouble with scheduling. Highly recommend\n\nTerry D. — We were so happy with the work that Greenville Landscaping Near Me did a few weeks ago, we asked them back to complete a tough leaf removal in our back yard.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "cobertura",
+      "titulo": "We Serve The Following Surrounding Communities",
+      "contenido": "Anderson, Easly, Fountain Inn, Greenville, Greer, Duncan, Mauldin, Piedmont, Powdersville, Simpsonville, Spartanburg, Taylors, Travelers Rest, Marietta, Pickens",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "formulario",
+      "titulo": "Schedule a Property Visit",
+      "contenido": null,
+      "cta": "Schedule a Property Visit",
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Most Reputable Landscaping Company in the Upstate",
+    "propuesta_valor": "Committed to excellence and personalized care, we work with our customers to improve and maintain their property. We make sure we understand the customer's needs and vision, gather property information, solve any site challenges and select the right materials for each project.",
+    "ctas": ["Schedule a Property Visit", "Request a Quote", "Call us today for an estimate: (864) 794-1315"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(864) 794-1315",
+    "whatsapp": null,
+    "email": null,
+    "direccion": "Greenville, SC",
+    "horarios": null
+  },
+  "redes": [
+    {
+      "plataforma": "Google Reviews",
+      "url": "https://www.google.com/search?q=Greenville+Landscaping+Near+Me,+LLC+Reviews"
+    }
+  ],
+  "formularios": [
+    {
+      "proposito": "Agendar visita a propiedad / solicitar cotización",
+      "campos": ["First name", "Last name", "Email", "Phone", "Address (1234 Street, City, SC 12345)", "Date (Day/Month/Year)", "Time (HH:MM)"]
+    }
+  ],
+  "footer": {
+    "contenido": "© Greenville Landscaping Near Me 2025.",
+    "links": [],
+    "copyright": "© Greenville Landscaping Near Me 2025"
+  },
+  "tecnologia": "Wix Thunderbolt v1.17094.0, rspack@1.6.6, React 18, SingleOps (portal de clientes)"
+}

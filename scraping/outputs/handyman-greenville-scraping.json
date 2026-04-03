@@ -1,0 +1,269 @@
+{
+  "negocio": "Handyman Greenville SC",
+  "url": "https://www.handymangreenville.com/",
+  "sector": "Home Repair & Home Improvement Services",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Handyman Greenville SC, Services Near Me",
+    "description": null,
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#3f3f3f",
+    "secundario": "#2a2a2a",
+    "acento": "#d5d5d5",
+    "fondo": "#ffffff",
+    "texto": "#626262",
+    "otros": ["#000000"]
+  },
+  "logo": {
+    "url": null,
+    "descripcion": "Texto 'Handyman Greenville' como branding principal, sin imagen de logo dedicada",
+    "posicion": "header",
+    "colores": ["#3f3f3f"]
+  },
+  "tipografias": [
+    { "nombre": "Quattrocento", "uso": "body/parrafos", "peso": "400", "tamanio_aprox": "18px" },
+    { "nombre": "Crimson Text", "uso": "h2/subtitulos", "peso": "400", "tamanio_aprox": "31px" },
+    { "nombre": "Montserrat", "uso": "titulo del sitio/logo", "peso": "400", "tamanio_aprox": null },
+    { "nombre": "Playfair Display", "uso": "headlines", "peso": "400", "tamanio_aprox": null },
+    { "nombre": "Lora", "uso": "parrafos de header", "peso": "400", "tamanio_aprox": null }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://www.handymangreenville.com/" },
+    { "label": "Services", "url": "https://www.handymangreenville.com/services.html" },
+    { "label": "Drywall Repair, Greenville SC", "url": "https://www.handymangreenville.com/services.html" },
+    { "label": "Flooring and Carpentry", "url": "https://www.handymangreenville.com/services.html" },
+    { "label": "Doors", "url": "https://www.handymangreenville.com/services.html" },
+    { "label": "Electrical", "url": "https://www.handymangreenville.com/services.html" },
+    { "label": "Roof Repair", "url": "https://www.handymangreenville.com/services.html" },
+    { "label": "Decks", "url": "https://www.handymangreenville.com/services.html" },
+    { "label": "Kitchen and Bathroom Remodel", "url": "https://www.handymangreenville.com/services.html" },
+    { "label": "Contact", "url": "https://www.handymangreenville.com/contact.html" },
+    { "label": "Handyman Spartanburg SC", "url": "https://www.handymangreenville.com/" },
+    { "label": "Handyman Services Greer SC", "url": "https://www.handymangreenville.com/" },
+    { "label": "Home Improvement Greenville SC", "url": "https://www.handymangreenville.com/home-improvement-greenville-sc.html" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Handyman Greenville",
+      "contenido": "Call Today 864-651-9356",
+      "cta": "tel:8646519356",
+      "imagenes": []
+    },
+    {
+      "tipo": "headline",
+      "titulo": "Handyman Greenville SC",
+      "contenido": "We are quick and professional home repair and home improvement specialists.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Big and Small, we do it all!",
+      "contenido": "Here is a quick list of just some of the handyman services that we do in Greenville, SC and surrounding areas: Drywall Repair, Electrical, Flooring repair, Welding Door repair, Painting, Kitchen and Bathroom Remodel, Roof repair, Fence repair, gate repair, Decks and Deck repairs, and the list goes on. Give us a call today and im sure we can get your home looking just the way you want it.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.handymangreenville.com/uploads/1/3/0/3/130338175/editor/kitchen.jpg?1579319967",
+          "alt": null,
+          "descripcion": "Foto de proyecto de cocina",
+          "tipo": "proyecto",
+          "dimensiones": null
+        },
+        {
+          "url": "https://www.handymangreenville.com/uploads/1/3/0/3/130338175/free-instant-quote-2-1-orig_orig.jpg",
+          "alt": null,
+          "descripcion": "Grafico CTA - Free Instant Quote",
+          "tipo": "cta",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "about",
+      "titulo": null,
+      "contenido": "Here at Handyman Greenville we take repairing or improving your home very seriously. Why you ask? because we actually care about our clients. We are in this business for the long hall, so it doesnt really makes sense for us to not do a dang good job and make our customers very happy. That way they will use us in the future next time they need some drywall repaired, an exterior wall painted, or some carpentry work done just for example.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.handymangreenville.com/uploads/1/3/0/3/130338175/tile-and-sink_orig.jpg",
+          "alt": null,
+          "descripcion": "Trabajo de lavabo y azulejos de bano",
+          "tipo": "proyecto",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "formulario",
+      "titulo": "Quick Quote",
+      "contenido": "Formulario de cotizacion rapida integrado en la pagina principal",
+      "cta": "Submit",
+      "imagenes": []
+    },
+    {
+      "tipo": "contenido",
+      "titulo": "Handyman Near Me",
+      "contenido": "If you had family over for the holidays and the boys decided to play some indoor football and ended up putting a foot through your dry wall. Then searching handyman near me, or home repair near me might be your next best move. Some people will try to fix it them selves. If you can, then more power to you. But if you are the average busy human being in todays world and doesnt specialize in fixing drywall,replacing faucets, doing bathroom tile work or kitchen backsplashes then try giving us a call. These are just a couple of the things that we specialize in. Click on our services page to see all that we can offer.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.handymangreenville.com/uploads/1/3/0/3/130338175/line_6.png",
+          "alt": null,
+          "descripcion": "Linea decorativa separadora",
+          "tipo": "decorativo",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "contenido",
+      "titulo": "Handyman Services in Greenville, SC",
+      "contenido": "I know, I know you are probably wondering what type of handyman services we offer in Greenville. We actually have an entire services page and then some of those services have their own pages. Lets just say we do A LOT. Honestly the quickest way to figure out what we do or dont do is to just click or call our number at the top and bottom of this site and we can quickly help you know weather we can tackle what ever project you need done.",
+      "cta": "Services",
+      "imagenes": [
+        {
+          "url": "https://www.handymangreenville.com/uploads/1/3/0/3/130338175/tile-and-sink-2_orig.jpg",
+          "alt": null,
+          "descripcion": "Trabajo de azulejos y lavabo",
+          "tipo": "proyecto",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "contenido",
+      "titulo": "Honey Do List",
+      "contenido": "Is your 'to do' list or 'honey do list' getting a little long? Or is it really starting to stack on the dust? All it takes is just 1 quick call to Handyman Greenville SC and we will take care of everything. Quick, professional, honest, hardworking, and handy are words our customers use to describe us. Some people think that your not a 'handy man'if you dont fix your own stuff. Look, even if you have a table saw, a carpet stretcher, seem rollers, and a boom truck sometimes its just easier to let someone else worry about it. We wont take a long time. We wont make too big of a mess. (promise we will clean up) Give us a call and give us a chance to make a lifetime customer out of you.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.handymangreenville.com/uploads/1/3/0/3/130338175/handyman-saw_orig.jpg",
+          "alt": null,
+          "descripcion": "Foto de herramientas y equipo de handyman",
+          "tipo": "proyecto",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "contenido",
+      "titulo": "Home Improvement in Greenville SC",
+      "contenido": "Some people think that all we do as a handyman service is repair holes in walls and fix broken tile. Actually most of what we do is home improvement. Thats taking your awesome home and simply improving on it. If you have a nice kitchen but think that a back splash could take it to the next level but dont want to take the risk of messing it up by trying it yourself, let us come do a quick professional job. You will be shocked what that will do for a kitchen.\n\nAreas: Kitchen, Bathroom, Faucets, Counter tops, Siding, Shrubbery, Painting, Flooring\n\nJust to name a few... Bottom Line is we know that you are a handy man (or your husband is). We know that you could fix, restore, or improve on your home in all the ways it needs if you had the time. The problem is you have to take the kids to soccer, feed the dog, make dinner, clean up after dinner, do taxes, the game is on, take the trash out, and get the kids ready for bed. And thats after you get off of work. Look being the best Handyman in greenville SC is what we specialize in. Its what we do. So as that honey do list is getting bigger and bigger let us quickly and proffessionally help you take some of things off the list.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.handymangreenville.com/uploads/1/3/0/3/130338175/kitchen_orig.jpg",
+          "alt": null,
+          "descripcion": "Proyecto de remodelacion de cocina",
+          "tipo": "proyecto",
+          "dimensiones": null
+        },
+        {
+          "url": "https://www.handymangreenville.com/uploads/1/3/0/3/130338175/kitchen-white_orig.jpg",
+          "alt": null,
+          "descripcion": "Cocina remodelada en blanco",
+          "tipo": "proyecto",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "contenido",
+      "titulo": "Doggy Doors & Furniture",
+      "contenido": "Yep! We do doggy doors. Your furry friends will love you for making them not stay out in the weather any longer than they want to and you will love us for making it look like it came built with the house. Oh we even put furniture together just like the one next to this doggy door. If you have any questions just give us a call. 864-651-9356\n\nAlso, with any of the handyman work we do on your home you can be sure that we will cover it back up with the best matching paint possible. We also do interior painting if you need one bedroom, the kitchen, or the whole house painted we have you covered with years of experience.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.handymangreenville.com/uploads/1/3/0/3/130338175/doggy-door_orig.jpeg",
+          "alt": null,
+          "descripcion": "Instalacion de puerta para perros",
+          "tipo": "proyecto",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "contenido",
+      "titulo": "Remodel Greenville SC",
+      "contenido": "We are very familiar with remodeling bathrooms and Kitchens. We can do everything from a simple backslash to a totally new kitchen. If your house was built in the 50's or 2020 we can help you out. Floors and bedrooms are right down our alley as well and fall under the remodeling term. If you want to add on another bedroom we can actually do that as well. Not many handyman services can say that. We can do everything short of building the entire house from the ground up. And we can do that we just leave that to the home builders and we focus on the slightly smaller stuff. So we do the little repairs like light switches, gates, roof repair, doors, and fences. We also do the big remodels like total kitchen remodel in greenville sc. Or Bathroom remodels or adding on a bedroom a closet or tile work. We do it all and like the small jobs just as much as the big ones.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "area-servicio",
+      "titulo": "Find a Handyman",
+      "contenido": "If you need help finding a great all around handy man to help you with big projects or small than look no further. Especially if you are in any of these locations and surrounding areas. Greenville SC, Taylors SC, Simpsonville SC, Fountain Inn SC, Piedmont SC, Greer SC, Travelers Rest SC and many more. If you have a question on if we cover your area, we probably do, but feel free to give us a quick call and we'll let you know if we cover your area or when we could make it out that way.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.handymangreenville.com/uploads/1/3/0/3/130338175/reedy-river-greenville_orig.jpg",
+          "alt": null,
+          "descripcion": "Imagen del Reedy River en Greenville, SC - referencia local",
+          "tipo": "localizacion",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "cta-final",
+      "titulo": "Handyman Service in Greenville South Carolina",
+      "contenido": "Call Today 864-651-9356 Click To Call For Mobile",
+      "cta": "tel:8646519356",
+      "imagenes": [
+        {
+          "url": "https://www.handymangreenville.com/uploads/1/3/0/3/130338175/line_7.png",
+          "alt": null,
+          "descripcion": "Linea decorativa separadora",
+          "tipo": "decorativo",
+          "dimensiones": null
+        }
+      ]
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Big and Small, we do it all!",
+    "propuesta_valor": "We are quick and professional home repair and home improvement specialists.",
+    "ctas": [
+      "Call Today 864-651-9356",
+      "Free Instant Quote",
+      "Click To Call For Mobile"
+    ]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "864-651-9356",
+    "whatsapp": null,
+    "email": null,
+    "direccion": null,
+    "horarios": null
+  },
+  "redes": [],
+  "formularios": [
+    {
+      "proposito": "Cotizacion rapida / Quick Quote",
+      "campos": [
+        "What do you need done? (dropdown: Drywall, Flooring, Tile, Bathroom Remodel, Electrical, Painting, Roof Repair, Welding, Other)",
+        "Other (texto libre)",
+        "How soon do you need it done? (radio: ASAP, This Week, Flexible)",
+        "Name (First/Last)",
+        "Phone Number",
+        "Email"
+      ]
+    }
+  ],
+  "footer": {
+    "contenido": "Partners: Rendering Sydney, Cabinetry Charleston SC, Commercial Painter in Joliet IL, General Contractor Barcelona",
+    "links": [
+      { "label": "Terms & Services", "url": "https://www.handymangreenville.com/tc.html" },
+      { "label": "Privacy Policy", "url": "https://www.handymangreenville.com/privacy-policy.html" },
+      { "label": "Disclaimer", "url": "https://www.handymangreenville.com/disclaimer.html" }
+    ],
+    "copyright": null
+  },
+  "tecnologia": "Weebly CMS, jQuery, Backbone.js, Google Analytics (UA-151920216-1, UA-159267295-1), Google Tag Manager, Typekit (nxe1ajf), Snowplow Analytics"
+}

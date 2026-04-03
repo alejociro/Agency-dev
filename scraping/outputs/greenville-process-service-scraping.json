@@ -1,0 +1,182 @@
+{
+  "negocio": "Greenville Process Service",
+  "url": "https://www.greenvilleprocessservice.com/",
+  "sector": "Servicios Legales / Notificación de Procesos",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Greenville Process Service",
+    "description": null,
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": null,
+    "secundario": null,
+    "acento": null,
+    "fondo": null,
+    "texto": null,
+    "otros": []
+  },
+  "logo": {
+    "url": "https://www.greenvilleprocessservice.com/top_home.png",
+    "descripcion": "Logo de Greenville Process Service en la parte superior de la página",
+    "posicion": "top",
+    "colores": []
+  },
+  "tipografias": [],
+  "navegacion": [
+    { "label": "Home", "url": "https://www.greenvilleprocessservice.com/" },
+    { "label": "Services", "url": "https://www.greenvilleprocessservice.com/services/" },
+    { "label": "Contact", "url": "https://www.greenvilleprocessservice.com/contact/" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Welcome",
+      "contenido": "Greenville Process Service is a family owned business and has been providing service of process in the Upstate of South Carolina since 1990.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.greenvilleprocessservice.com/banner.jpg",
+          "alt": null,
+          "descripcion": "Banner principal del sitio",
+          "tipo": "banner",
+          "dimensiones": null
+        },
+        {
+          "url": "https://www.greenvilleprocessservice.com/welcome.jpg",
+          "alt": null,
+          "descripcion": "Imagen de bienvenida",
+          "tipo": "decorativa",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "about",
+      "titulo": "Specializations",
+      "contenido": "We specialize in foreclosure, debt collection, subpoena's and divorce and child support cases.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.greenvilleprocessservice.com/image.jpg",
+          "alt": null,
+          "descripcion": "Imagen decorativa de la sección",
+          "tipo": "decorativa",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "cobertura",
+      "titulo": "Service Area",
+      "contenido": "Greenville Process Service proudly provides service in Anderson, Greenville, Oconee, Pickens and Spartanburg Counties in South Carolina.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.greenvilleprocessservice.com/sc_counties.jpg",
+          "alt": null,
+          "descripcion": "Mapa de condados de South Carolina donde operan",
+          "tipo": "mapa",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Service of Process",
+      "contenido": "Service in Anderson, Greenville, Oconee, Pickens and Spartanburg Counties of South Carolina. We specialize in foreclosure, debt collections, subpoena's and divorce and child support cases.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.greenvilleprocessservice.com/services_title.jpg",
+          "alt": null,
+          "descripcion": "Título de sección de servicios",
+          "tipo": "titulo",
+          "dimensiones": null
+        },
+        {
+          "url": "https://www.greenvilleprocessservice.com/service_image.jpg",
+          "alt": null,
+          "descripcion": "Imagen de la sección de servicios",
+          "tipo": "decorativa",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "File/Obtain Legal Documents",
+      "contenido": "We have the ability to file or obtain legal documents in Anderson, Greenville, Oconee, Pickens and Spartanburg County court houses on a daily basis. Documents can be clocked/retrieved and scanned to your office same day.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Skip Trace",
+      "contenido": "We provide skip trace searches at clients request.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "precios",
+      "titulo": "Rates",
+      "contenido": "Please contact us for rates. We are extremely competitive and provide fair pricing on all requests.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "diferenciadores",
+      "titulo": "Why Greenville Process Service?",
+      "contenido": "Fast, reliable, dependable and honest service. Competitive rates. Follow state laws governing service of process. Ability to locate defendants and minimize non-service costs. Communication with clients. Professionalism. Experience.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "contacto",
+      "titulo": "Contact",
+      "contenido": "Ownership: Pat Watson, Travis Watson, Jim Watson. Address: 25 Woods Lake Road, Suite 216, Greenville, SC 29607. Phone: 864-242-0712. Fax: 864-242-0713. E-Mail: greenvilleps@bellsouth.net. Office Hours: 8:00 am until 5:00 pm Monday through Friday.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.greenvilleprocessservice.com/contact_title.jpg",
+          "alt": null,
+          "descripcion": "Título de sección de contacto",
+          "tipo": "titulo",
+          "dimensiones": null
+        },
+        {
+          "url": "https://www.greenvilleprocessservice.com/contact_image.jpg",
+          "alt": null,
+          "descripcion": "Imagen de la sección de contacto",
+          "tipo": "decorativa",
+          "dimensiones": null
+        }
+      ]
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Family owned business providing service of process since 1990",
+    "propuesta_valor": "Fast, reliable, dependable and honest service of process in the Upstate of South Carolina since 1990",
+    "ctas": []
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "864-242-0712",
+    "whatsapp": null,
+    "email": "greenvilleps@bellsouth.net",
+    "direccion": "25 Woods Lake Road, Suite 216, Greenville, SC 29607",
+    "horarios": "8:00 am until 5:00 pm Monday through Friday"
+  },
+  "redes": [],
+  "formularios": [],
+  "footer": {
+    "contenido": "Greenville Process Service",
+    "links": [
+      { "label": "Morning Glory SC", "url": "https://www.morninglorysc.com" }
+    ],
+    "copyright": null
+  },
+  "tecnologia": "HTML estático con JavaScript básico para precarga de imágenes"
+}

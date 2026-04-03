@@ -1,0 +1,145 @@
+{
+  "cliente": "Capello Salon and Suites",
+  "url_auditada": "https://www.capello-salon.com/home-1",
+  "sector": "Hair Salon / Beauty Salon / Boutique",
+  "benchmark_aplicado": "Servicio local (salud, legal) — benchmark SEO 55, UX 60, Marketing 60, Contenido 65, Técnico 50. Elegido porque un salón de belleza es un servicio local con clientela geográfica definida; el componente boutique no justifica el benchmark Retail/Moda completo. Nota: requiere_render=true limita el score técnico a un máximo de 60/100 por falta de crawleabilidad.",
+  "fecha": "2026-04-03",
+  "scores": {
+    "seo": 57,
+    "ux_ui": 61,
+    "marketing": 71,
+    "contenido": 69,
+    "tecnico": 55,
+    "total": 63
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta description bien redactada con propuesta de valor clara y keywords relevantes",
+        "CTAs descriptivos y variados: 'Book Online', 'View Service Menu', 'Shop Birdie Boutique'",
+        "Keywords relevantes definidas en meta: balayage, foilayage, scalp lounge, Greenville SC"
+      ],
+      "negativos": [
+        "H1 es el nombre del negocio ('Capello Salon and Suites') sin keyword principal — debería incluir 'Hair Salon Greenville SC' o similar",
+        "Meta title excesivamente largo y keyword-stuffed: repite 'Salon', 'Boutique' y 'Greenville' múltiples veces",
+        "Solo 1 imagen detectada en todo el sitio con alt text — el resto de secciones carecen de imágenes indexables",
+        "Sitio SPA (Wix Thunderbolt) con renderizado JS — los motores de búsqueda pueden tener dificultad para indexar contenido dinámico"
+      ],
+      "recomendaciones": [
+        { "accion": "Reescribir meta title a ≤60 caracteres: 'Capello Salon | Expert Hair Color & Scalp Care | Greenville SC'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Cambiar H1 del hero a incluir keyword principal: 'Luxury Hair Salon & Scalp Lounge in Downtown Greenville'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir alt text descriptivo a todas las imágenes del sitio, incluyendo portfolio de trabajos", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Migrar a un framework con SSR/SSG para mejorar crawleabilidad y eliminar dependencia de JS rendering", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores cálida y cohesiva (#ED8CC2, #FF7F6E, #D4956A) alineada con estética de salón de belleza premium",
+        "Tipografías Brandon Grotesque + Avenir son elegantes y complementarias, dan personalidad de marca",
+        "Uso de unidades responsivas (vw) indica diseño adaptable a diferentes tamaños de pantalla"
+      ],
+      "negativos": [
+        "Ambas tipografías en peso 300 (Light) — riesgo de baja legibilidad en pantallas pequeñas y fondos claros",
+        "Paleta tiene más de 5 colores adicionales (#F5F0EB, #E8DDD4, #C9B8A8, etc.) lo que puede dispersar la jerarquía visual",
+        "Navegación con 15 items es excesiva — dificulta el escaneo rápido y la toma de decisión del usuario"
+      ],
+      "recomendaciones": [
+        { "accion": "Reducir navegación principal a 6-7 items agrupando secciones secundarias (Policies, Join Our Team, New Guests) en submenú o footer", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Subir peso tipográfico del body text a 400 (Regular) para mejorar legibilidad, especialmente en móvil", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Consolidar paleta secundaria: usar máximo 2 tonos neutros complementarios en lugar de 5", "prioridad": "baja", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Slogan efectivo que conecta emoción con servicio: 'Helping women feel confident with expert color, scalp care + boutique finds'",
+        "Prueba social sólida: 5.0 de rating en Vagaro, 20+ años de trayectoria, negocio familiar",
+        "Diferenciador claro con Scalp Lounge — servicio de nicho con tratamientos de tricología que pocos salones ofrecen",
+        "Múltiples CTAs de conversión: booking online, gift certificates, party bookings"
+      ],
+      "negativos": [
+        "No hay números concretos de impacto (cuántos clientes atendidos, cuántos estilistas certificados, etc.)",
+        "Las reseñas (12 en Yelp) son pocas para 20+ años de operación — debilita la prueba social",
+        "No hay sección de antes/después o portfolio visual que demuestre la calidad del trabajo"
+      ],
+      "recomendaciones": [
+        { "accion": "Crear galería de antes/después con trabajos de color y balayage — el portfolio visual es el principal driver de conversión en salones", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar campaña activa de recolección de reseñas en Google Business Profile para superar las 50 reseñas", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar cifras concretas en la sección hero o about: '20+ años', '14 estilistas', '2 ubicaciones'", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Descripción de servicios específica y detallada: menciona técnicas concretas (balayage, foilayage, highlighting)",
+        "Información de contacto completa: teléfono, dirección, horarios detallados por día, segunda ubicación",
+        "Sección de equipo con nombres reales de 14 estilistas — genera confianza y permite al cliente elegir"
+      ],
+      "negativos": [
+        "Email de contacto parece incorrecto o poco profesional: 'facebook@capello-salon.com'",
+        "No hay sección FAQ que aborde objeciones comunes (precios, duración de citas, política de cancelación)",
+        "Sin información de precios en el scraping — la página de pricing existe pero no está integrada al contenido principal",
+        "Falta contenido específico sobre la segunda ubicación en Travelers Rest más allá de la mención en el footer"
+      ],
+      "recomendaciones": [
+        { "accion": "Crear sección FAQ con 8-10 preguntas frecuentes: precios orientativos, duración de servicios, política de cancelación, preparación para citas", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Actualizar email de contacto a uno profesional tipo info@capello-salon.com o hello@capello-salon.com", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Integrar rangos de precios orientativos en la sección de servicios para reducir fricción pre-booking", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Integración con Vagaro para booking online — sistema especializado en salones con gestión de citas, pagos y clientes",
+        "Tres formularios funcionales cubriendo booking, intake de nuevos clientes y contacto general",
+        "Presencia en múltiples plataformas (Instagram, Facebook, Yelp, Vagaro) con perfiles activos"
+      ],
+      "negativos": [
+        "Wix Thunderbolt SPA requiere JavaScript para renderizar contenido — SEO y accesibilidad comprometidos",
+        "No se detectan integraciones de analytics, heatmaps o tracking de conversiones",
+        "Sitio depende de plataforma cerrada (Wix) — limitaciones en personalización, velocidad y optimización avanzada",
+        "Sin favicon detectado"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a framework con SSG (Astro o HTML estático + Tailwind) para eliminar dependencia de JS rendering y mejorar Core Web Vitals", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar Google Analytics 4 + Google Tag Manager para tracking de conversiones (clics en Book Now, llamadas, formularios)", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir favicon personalizado con el isotipo de Capello para reforzar branding en pestañas del navegador", "prioridad": "baja", "tipo": "quick_win" }
+      ],
+      "stack_actual": "Wix (Thunderbolt renderer v1.17110.0, React-based SPA)",
+      "stack_recomendado": "Astro + Tailwind CSS — SSG para performance y SEO, con integración Vagaro embebida",
+      "integraciones": ["Vagaro (booking online)", "Instagram", "Facebook", "Yelp"],
+      "complejidad": "media"
+    }
+  },
+  "quick_wins": [
+    "Reescribir meta title a ≤60 caracteres con keyword principal y ubicación",
+    "Cambiar H1 del hero para incluir 'Hair Salon Greenville' en lugar de solo el nombre de marca",
+    "Actualizar email de contacto a uno profesional (info@capello-salon.com)",
+    "Agregar cifras concretas en hero/about: '20+ años', '14 estilistas', '2 ubicaciones'",
+    "Añadir favicon personalizado"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Reescribir meta title y H1 con keywords optimizadas",
+      "Actualizar email de contacto",
+      "Reducir navegación principal a 6-7 items",
+      "Implementar GA4 + GTM para tracking de conversiones"
+    ],
+    "mes_1": [
+      "Crear galería de antes/después con portfolio de trabajos",
+      "Diseñar y publicar sección FAQ con 8-10 preguntas",
+      "Migrar sitio de Wix a Astro + Tailwind con SSG",
+      "Añadir alt text a todas las imágenes",
+      "Iniciar campaña de recolección de reseñas en Google"
+    ],
+    "largo_plazo": [
+      "Consolidar paleta de colores secundarios",
+      "Integrar rangos de precios en la sección de servicios",
+      "Desarrollar contenido específico para la ubicación de Travelers Rest"
+    ]
+  },
+  "resumen_ejecutivo": "Capello Salon tiene una marca emocional sólida y 20+ años de credibilidad, pero su sitio Wix SPA es invisible para buscadores y carece de portfolio visual que demuestre la calidad de su trabajo. La mayor oportunidad está en migrar a un sitio estático optimizado con galería antes/después y SEO local agresivo, lo que convertiría su reputación offline en tráfico orgánico. El próximo paso es ejecutar los quick wins de SEO on-page mientras se planifica la migración del stack.",
+  "stack_para_web": {
+    "framework": "astro",
+    "estilos": "tailwind",
+    "extras": ["alpine.js para interacciones ligeras", "integración embebida de Vagaro para booking", "Google Analytics 4"],
+    "justificacion": "Complejidad media: múltiples páginas de contenido (servicios, equipo, blog, boutique) que requieren routing pero sin lógica dinámica compleja. Astro con SSG ofrece la mejor combinación de performance, SEO y facilidad de mantenimiento para un sitio de salón multi-página. Tailwind permite replicar la estética premium de la marca con paleta personalizada."
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "negocio": "Greenville Executive Limo Service",
+  "url": "https://gvllimo.com/",
+  "sector": "Transporte ejecutivo y limusinas",
+  "requiere_render": true,
+  "nota_scraping": "Sitio renderizado por JS (Wix). Algunos datos pueden estar incompletos. Considerar scraping con browser headless. Imágenes de carruseles (testimonios, equipo, vehículos) se cargan dinámicamente y no fueron completamente extraíbles.",
+  "meta": {
+    "title": "Greenville Executive Limo Service - Home",
+    "description": null,
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#000000",
+    "secundario": "#FFFFFF",
+    "acento": "#FFFF00",
+    "fondo": "#161616",
+    "texto": "#FFFFFF",
+    "otros": ["#585858", "#757575", "#919191", "#949494", "#B5B5B5", "#E2E2E2", "#F7F7F7", "#5C5C5C"]
+  },
+  "logo": {
+    "url": "https://img1.wsimg.com/isteam/ip/7cfeebe0-8cbc-4d8b-810f-8f41f13db67a/GVL%20Limo%20Rounded%20Icon.png",
+    "descripcion": "Icono circular con el logo de GVL Limo",
+    "posicion": "header izquierda",
+    "colores": ["#000000", "#FFFFFF"]
+  },
+  "tipografias": [
+    { "nombre": "Lato", "uso": "tipografía principal (cuerpo, títulos, subtítulos)", "peso": "100, 300, 400, 700, 900", "tamanio_aprox": "14px-98px" },
+    { "nombre": "Cabin", "uso": "tipografía secundaria (encabezados destacados)", "peso": "700", "tamanio_aprox": "22px-48px" }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://gvllimo.com/" },
+    { "label": "Terms & Conditions", "url": "https://gvllimo.com/terms-%26-conditions" },
+    { "label": "Book Now", "url": "https://gvllimo.com/book" },
+    { "label": "Experiences", "url": "https://gvllimo.com/experiences" },
+    { "label": "Downtown Cart", "url": "https://gvllimo.com/downtown-cart" },
+    { "label": "Join The Team", "url": "https://gvllimo.com/join-the-team" },
+    { "label": "GVL SAFE", "url": "https://gvllimo.com/gvl-safe" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "GREENVILLE EXECUTIVE LIMO SERVICE",
+      "contenido": "24/7 Sedan, SUV, Van, Limo, Bus Transportation For Any Occasion",
+      "cta": "BOOK NOW | (864) 920-3342",
+      "imagenes": [
+        { "url": "https://img1.wsimg.com/isteam/ip/7cfeebe0-8cbc-4d8b-810f-8f41f13db67a/327713036_242818518104058_5945976781124740666_.jpg", "alt": "Hero background limo", "descripcion": "Imagen principal del hero mostrando vehículo de la flota", "tipo": "hero-background", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "servicios-destacados",
+      "titulo": "GVL LIMO - THE UPSTATE'S EXECUTIVE SEDAN, SUV, LIMO SERVICE",
+      "contenido": "NO MATTER WHERE YOU'RE GOING OR HOW YOU NEED TO GET THERE...WE CAN HELP!\n\nAIRPORT RIDES | EXECUTIVE TRANSPORTATION | BIRTHDAY PARTIES | WEDDINGS | EVENTS | GROUP TRANSPORTATION | EARLY MORNING & LATE NIGHT SERVICE | CROSS-COUNTRY TRANSPORTATION | SPORTING EVENTS | PACKAGES AVAILABLE",
+      "cta": null,
+      "imagenes": [
+        { "url": "https://img1.wsimg.com/isteam/ip/7cfeebe0-8cbc-4d8b-810f-8f41f13db67a/LimoStock-013a.jpg", "alt": "Limo stock image", "descripcion": "Imagen de limusina en servicio", "tipo": "sección", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "areas-servicio",
+      "titulo": "SERVICE AREAS",
+      "contenido": "GREENVILLE | SPARTANBURG | ASHEVILLE | CLEMSON | ANDERSON | SENECA | HIGHLANDS | GREER | HENDERSONVILLE | ATLANTA | CHARLOTTE | LAURENS | TAYLORS | EASLEY | SIMPSONVILLE | DUNCAN | TRAVELERS REST | GREENWOOD | FAIR PLAY & WHEREVER ELSE YOU NEED US!",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "herramienta-reserva",
+      "titulo": "QUICK QUOTE & RESERVATION TOOL",
+      "contenido": "Herramienta de cotización y reserva integrada. También disponible como app móvil.",
+      "cta": "DOWNLOAD OUR APP",
+      "imagenes": []
+    },
+    {
+      "tipo": "testimonios",
+      "titulo": "What our riders are saying",
+      "contenido": "Carrusel de reseñas de clientes (contenido dinámico no extraíble sin render JS).",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "sobre-nosotros",
+      "titulo": "About Us",
+      "contenido": "Looking for an affordable and professional limousine rental or executive car/sedan/SUV service in Greenville, South Carolina? Look no further. Give us a call, download our app, or click 'Book Online' today to check availability, rates, and to book! Our rates will surprise you! Airport rides, to trips home to Hilton Head, to Weddings we've got you covered. Our lineup of vehicles is here to serve you with whatever you may need. We are with you every step of the way. As soon as you book, you'll receive a confirmation with your reservation as well as text alerts reminding you about your ride prior to the pickup. You'll also receive an email with the driver's name, photo, cell phone number, and vehicle information prior to pickup to insure we keep you and your passengers safe! Finally, you'll be updated each step of the way through live text alerts when your driver is on the way and when they arrive. GVL Limo is proud to have the nicest fleet in the region with vehicles to suit any occasion! Our party limos/busses are unlike any other and feature WiFi, Karaoke, YoutubeTV, XBOX/Wii Video Game system with Mario Cart, Spotify, up to 50\" TV Screens, iPad Controlled Entertainment with Amazon Alexa Voice Control, Phone Chargers, Drinks, Snacks, and Nightclub Style Light and Sound Systems.\n\nFully Licensed In South Carolina, North Carolina, Georgia, Tennessee, & Anywhere Else In The U.S.\nUSDOT Number: 3650584\nMC Number: 1271873\nSouth Carolina Charter Certificate Number: 9576\nSouth Carolina Charter Bus Certificate Number: 0426\nCity of Greenville License Number: 47979, 66812",
+      "cta": "Book Transportation Online",
+      "imagenes": []
+    },
+    {
+      "tipo": "procedimientos-viaje",
+      "titulo": "Stress-Free Travel — Trip Procedures",
+      "contenido": "Upon booking a ride, you'll receive a few things from us! (2) Emails - One Confirmation and One Receipt for the 25% non-refundable deposit. As soon as a driver is assigned, you'll receive an email with the driver's photo, cell phone number, vehicle information, and license plate. You'll receive text alerts leading up to the trip and then a message when the driver is on the way and when they have arrived!",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "seguridad",
+      "titulo": "Safety Protocols",
+      "contenido": "Safe Drivers: Drivers Must Have: Background Check (Criminal & Driving Records), Drug Testing, DOT Physicals.\n\nQuality Vehicles: All Vehicles Are Equipped with Video Recording, GPS Tracking, & Speed Monitoring. All Vehicles Are Equipped with 'Stop the Bleed' Emergency kits from our partners at North American Rescue - Drivers undergo training by NAR on proper use. All Vehicles are Fully Insured.\n\nCommunication: To maximize safety and efficiency, all drivers carry a radio at all times so they are always accessible, handsfree, and able to communicate with dispatch. Driver's also wear earpieces so this will not disturb your experience.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "equipo",
+      "titulo": "MEET THE TEAM",
+      "contenido": "Carrusel con fotos del equipo (18 miembros, contenido dinámico).",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "gvl-safe",
+      "titulo": "GVL LIMO 'SAFE' — SLED Licensed - Executive Protection & Armed Transportation",
+      "contenido": "VIP customers, ask about GVL Limo 'SAFE' armed private security options. Ran by ex-law enforcement professionals, GVL Limo is the only company in the State licensed by the South Carolina Law Enforcement Division to provide discrete and effective private secure transportation with concealed armed highly trained details.",
+      "cta": "Learn More",
+      "imagenes": []
+    },
+    {
+      "tipo": "vehiculos",
+      "titulo": "CURRENT POPULAR VEHICLES",
+      "contenido": "CLICK VEHICLE TO LEARN MORE\n\nVehículos destacados: Q3 (Audi Q3 Compact SUV, 4 pasajeros), Sprinter Limo (Mercedes-Benz 3500 Sprinter, 14 pasajeros), Maserati (Ghibli S, sedán VIP), Escalade (Cadillac Escalade ESV, 6 pasajeros), Limo Party Bus (BCI Falcon Motor-Coach, 45 pasajeros), Lux Bus (Freightliner M2 Grech Mini Coach, 38 pasajeros), Stretch (Chrysler 300 Stretch Limo, 10 pasajeros).",
+      "cta": null,
+      "imagenes": [
+        { "url": "https://img1.wsimg.com/isteam/ip/7cfeebe0-8cbc-4d8b-810f-8f41f13db67a/2022%20Audi%20Q3%20GVL%20Limo%20Horizontal.jpg", "alt": "Audi Q3 GVL Limo", "descripcion": "Audi Q3 Compact SUV, vehículo para hasta 4 pasajeros", "tipo": "vehiculo", "dimensiones": null },
+        { "url": "https://img1.wsimg.com/isteam/ip/7cfeebe0-8cbc-4d8b-810f-8f41f13db67a/1.%20AB.%20sprinter%20main%20shot%20crop.jpg", "alt": "Mercedes-Benz 3500 Sprinter Limo", "descripcion": "Sprinter Limo para 14 pasajeros con sistema de entretenimiento completo", "tipo": "vehiculo", "dimensiones": null },
+        { "url": "https://img1.wsimg.com/isteam/ip/7cfeebe0-8cbc-4d8b-810f-8f41f13db67a/b%20Maserati%20Ghibli%20S%20-%20Horizontal.jpg", "alt": "Maserati Ghibli S", "descripcion": "Maserati Ghibli S sedán VIP con motor twin-turbo Ferrari de 424hp", "tipo": "vehiculo", "dimensiones": null },
+        { "url": "https://img1.wsimg.com/isteam/ip/7cfeebe0-8cbc-4d8b-810f-8f41f13db67a/IMG_2704.jpg", "alt": "Cadillac Escalade ESV", "descripcion": "Cadillac Escalade ESV 2025, SUV de lujo para hasta 6 pasajeros", "tipo": "vehiculo", "dimensiones": null },
+        { "url": "https://img1.wsimg.com/isteam/ip/7cfeebe0-8cbc-4d8b-810f-8f41f13db67a/GVL%20LIMO%20BUS%20Exterior%20-%20Prof%20-%206.jpg", "alt": "BCI Falcon Motor-Coach Party Bus", "descripcion": "Bus de fiesta para 45 pasajeros con DJ booth, bar y sistema de luces", "tipo": "vehiculo", "dimensiones": null },
+        { "url": "https://img1.wsimg.com/isteam/ip/7cfeebe0-8cbc-4d8b-810f-8f41f13db67a/blob-0b5ef24.png", "alt": "Freightliner M2 Grech Luxury Mini Coach", "descripcion": "Mini coach de lujo para 38 pasajeros con 8 pantallas TV y WiFi", "tipo": "vehiculo", "dimensiones": null },
+        { "url": "https://img1.wsimg.com/isteam/ip/7cfeebe0-8cbc-4d8b-810f-8f41f13db67a/1.%20Chrystler%20Stretch%20Limo%20-%20GVL%20Limo%20ext-min.jpg", "alt": "Chrysler 300 Stretch Limo", "descripcion": "Limusina stretch para 10 pasajeros con karaoke, videojuegos y bar", "tipo": "vehiculo", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "ofertas-cancelacion",
+      "titulo": "Flexible on timing & looking for a sweet deal?",
+      "contenido": "When we get last minute cancellations, you save! Find out how to get alerted when a vehicle you're interested in has a cancelation special rate drop!",
+      "cta": "Alert Me!",
+      "imagenes": []
+    },
+    {
+      "tipo": "contacto",
+      "titulo": "Contact Us",
+      "contenido": "Greenville Executive Limo Service\n155 Riverplace Suite 206, Greenville, South Carolina 29601, United States\n(864) 920-3342\ninfo@gvllimo.com\nHorario: 24/7 (12:00 am – 11:45 pm todos los días)",
+      "cta": "Get directions",
+      "imagenes": []
+    },
+    {
+      "tipo": "resenas-en-vivo",
+      "titulo": "Live Ride Review Feed",
+      "contenido": "Feed dinámico de reseñas de clientes en tiempo real.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "pagina-experiences",
+      "titulo": "Check Out Our Experiences",
+      "contenido": "New to Greenville, visiting, thinking about moving here, or just looking for something fun to do? Ride along with one of our expert drivers and guides and see what GVL has to offer!\n\nGreenville Tours:\n- Essential GVL: $130 — Downtown basics (1 hora, hasta 14 personas)\n- Essential GVL Plus: $260 — Downtown, Furman University, Travelers Rest, Paris Mountain (2 horas, hasta 14 personas)\n- Downtown Cart Tour: $80 — Main Street end-to-end golf cart tour (1 hora, hasta 5 personas)\n\nSeasonal Tours:\n- Holiday Lights Tours\n- Fall Foliage Tours\n- Halloween Package (incluye MADWORLD con boletos con descuento)\n\nExperiences:\n- Brewery Tours\n- Wine Tours\n- Tailgate Packages\n- Ghost Tours\n- Golf Packages (transporte en CEO Sprinter)\n- Range Day Package (entrenamiento con ex-policías)\n- Kids Birthday Package (paseo downtown con parada por helado)\n- Helicopter Tour (tour aéreo de la ciudad)\n\nAsk about our industrial / commercial site tours! Don't see something you need? Let us know and we'll plan it for you!",
+      "cta": "Call for more info",
+      "imagenes": []
+    },
+    {
+      "tipo": "pagina-downtown-cart",
+      "titulo": "GREENVILLE'S ONLY CITY APPROVED $5 RIDE CART — DOWNTOWN LIMO CART",
+      "contenido": "Need a quick ride downtown? Give us a call or text us to see if the cart is out.\n\nCapacidad: 5 pasajeros\nCosto: $5 por persona\nVehículo eléctrico con horario variable según nivel de carga; se mantiene en/alrededor de Main Street; no puede acceder a vías de más de 35 mph.\n\nHorario típico:\n- Mañanas: 11am - 1pm\n- Tardes: 4pm - 7 u 8pm\n- Noche: 11pm - 3am\n\nDowntown Hospitality Package — Give Your Guests Free Rides!\nDirigido a: hoteles, complejos de apartamentos, restaurantes, negocios downtown.\n\nPlanes mensuales:\n- 100 Tokens: $400/mes ($1/token de ahorro)\n- 50 Tokens: $225/mes ($0.50/token de ahorro)\n- 25 Tokens: $120/mes ($0.20/token de ahorro)\n\nReserva por hora: $200/hr\n\nGVL Limo ha trabajado con la Oficina de Personal Regulatorio del Estado de SC y la Ciudad de Greenville y es el único vehículo de baja velocidad aprobado para transportar pasajeros en el downtown.\n\nGVL LIMO FEATURED ON FOX CAROLINA",
+      "cta": "Request A Ride",
+      "imagenes": [
+        { "url": "https://img1.wsimg.com/isteam/ip/7cfeebe0-8cbc-4d8b-810f-8f41f13db67a/blob.png", "alt": "Downtown Cart", "descripcion": "Golf cart del servicio downtown", "tipo": "vehiculo", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "pagina-gvl-safe",
+      "titulo": "GVL SAFE — Specialized Armed Executive Protective Transportation",
+      "contenido": "Executive Protection Division\n\nWe understand that our principals demands more than just transportation. GVL Limo provides highly trained and certified executive protection specialists who can ensure the safety and security of our clients throughout their journeys.\n\nFrom Point A to point B - safely\n\nSLED Licensed & Bonded: GVL Limo is the only company in South Carolina currently licensed under SLED (South Carolina Law Enforcement Division) to provide secure armed transportation services. License Number: 4044\n\nHighly Trained: Our drivers and detail personnel are all SLED Licensed as Private Security Agents with Concealed Armed Certifications. We require our personnel have a background in law enforcement, most being ex-police officers. All personnel must go through a rigorous training to go through everything from Weapons Handling, to Vehicle Maneuvering and Performance Driving, to First Aid and Vehicle Concealment. Our training programs are not only tailored to meet South Carolina Law Enforcement Standards, but also are hand crafted by industry professionals from Secret Service members to Navy Seals.\n\nState of The Art Equipment & Technology: GVL Limo not only operates top of the line vehicles but provides its agents with the best equipment available from body armor and communications to firearms and emergency medical supplies. We leverage advanced technology systems to enhance our service quality and efficiency. This includes real-time GPS tracking, secure communication channels, and vehicle monitoring systems.\n\nPersonalization and Customization: Personalized service packages tailored to each client's unique needs and preferences. This customization extends to preferred routes, additional security measures, and special requests.\n\nDiscreet and Professional Approach: We recognize the importance of confidentiality for our executive clients. Our team maintains the highest level of professionalism, discretion, and confidentiality.\n\nEmergency Medical: All vehicles are equipped with top-of-the-line Crisis Response Kits from North American Rescue. Our security officers are also trained in utilizing the equipment.\n\nLead Security Officers:\n- Eric Baade: Recently retired police sergeant with 26 years of law enforcement experience. Recipient of Distinguished Service Award and Ben Ali Shriners Award for Law Enforcement Excellence.\n- Isaac Yopp: 13 years in public service including SC State Trooper, EMT and Firefighter. Two years as firearms instructor. Six years on Civil Emergency Response Team (CERT). Recognized by Governor John R. Kasich for work at 2016 RNC.\n\n33% of CEOs have received physical threats in 2020. VIPs are most at risk when leaving their home and while entering the office. — Center for Protective Intelligence",
+      "cta": "COMPLETE QUESTIONNAIRE",
+      "imagenes": [
+        { "url": "https://img1.wsimg.com/isteam/ip/7cfeebe0-8cbc-4d8b-810f-8f41f13db67a/security%20video%20screen%20grab013%20-%20eric%20isaac%20pro.jpg", "alt": "GVL SAFE security officers", "descripcion": "Imagen de los oficiales de seguridad Eric Baade e Isaac Yopp", "tipo": "equipo-seguridad", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "pagina-join-the-team",
+      "titulo": "JOIN THE TEAM — DRIVE WITH US",
+      "contenido": "We are always searching for outstanding individuals to join the GVL Limo family. Click below to apply to drive with us!\n\nNOW Hiring:\n- Non CDL Drivers\n- CDL Class B with passenger Endorsement\n- Downtown Limo GOLF CART Drivers\n- Armed/Unarmed Security Officers\n- Detailers",
+      "cta": "APPLY NOW",
+      "imagenes": [
+        { "url": "https://img1.wsimg.com/isteam/ip/7cfeebe0-8cbc-4d8b-810f-8f41f13db67a/GVL%20Limo%20Team%20%20Headshots061-min.jpg.jpeg", "alt": "GVL Limo Team", "descripcion": "Foto grupal del equipo de GVL Limo", "tipo": "equipo", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "pagina-terms-conditions",
+      "titulo": "Terms & Conditions",
+      "contenido": "La empresa se reserva el derecho de rechazar servicio. Los vehículos pueden tener restricciones de millaje. No son responsables por retrasos causados por condiciones fuera de su control (tráfico, clima, problemas mecánicos). Los choferes pueden cancelar viajes si se sienten amenazados, sin reembolso.\n\nNo se aceptan contenedores abiertos de alcohol. Uso de drogas ilegales resulta en terminación inmediata sin reembolso. Prohibido ponerse de pie en techos solares. Prohibido fumar en todos los vehículos.\n\nConductores no pueden exceder la capacidad del vehículo. La empresa no se hace responsable por lesiones de altercados entre pasajeros o intoxicación.\n\nPolítica de cancelación: Depósito del 25% no reembolsable reserva la fecha. Cancelaciones antes del día anterior al viaje no serán cobradas por el balance restante. Cancelaciones post-facturación no son reembolsables.\n\n5 minutos de gracia antes de cargos por no-show. Servicios por hora que excedan 10+ minutos incurren en cargo de hora adicional.\n\nVuelos comerciales retrasados (mismo número de vuelo): seguimiento sin cargo adicional. Cancelaciones de vuelo reciben 40% de crédito hacia viajes reprogramados.\n\nCargos por daños: $375 mínimo por limpieza por enfermedad, $250 por daño electrónico, $150 por robo de dispositivos de entretenimiento, $100 por violación de no-fumar.\n\nSolo se aceptan tarjetas de crédito. No efectivo ni cheques.",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "24/7 Sedan, SUV, Van, Limo, Bus Transportation For Any Occasion",
+    "propuesta_valor": "GVL LIMO - THE UPSTATE'S EXECUTIVE SEDAN, SUV, LIMO SERVICE. NO MATTER WHERE YOU'RE GOING OR HOW YOU NEED TO GET THERE...WE CAN HELP!",
+    "ctas": [
+      "BOOK NOW",
+      "(864) 920-3342",
+      "DOWNLOAD OUR APP",
+      "Alert Me!",
+      "Learn More",
+      "Request A Ride",
+      "APPLY NOW",
+      "COMPLETE QUESTIONNAIRE",
+      "Get directions"
+    ]
+  },
+  "videos": [
+    { "url": "https://i.vimeocdn.com/video/1788999270-8da2c027520a5b077aab636a69d0684bbed3f4c67a160f8dbec63262afda3ffa-d", "plataforma": "Vimeo", "descripcion": "Video de fondo del hero — muestra vehículos y servicios de GVL Limo" }
+  ],
+  "contacto": {
+    "telefono": "(864) 920-3342",
+    "whatsapp": null,
+    "email": "info@gvllimo.com",
+    "direccion": "155 Riverplace Suite 206, Greenville, South Carolina 29601, United States",
+    "horarios": "24/7 — Lunes a Domingo: 12:00 am – 11:45 pm"
+  },
+  "redes": [
+    { "plataforma": "Facebook", "url": "https://www.facebook.com/107789328182081" },
+    { "plataforma": "Instagram", "url": "https://www.instagram.com/gvllimo" },
+    { "plataforma": "LinkedIn", "url": "https://www.linkedin.com/company/greenville-executive-limo-service-llc/" },
+    { "plataforma": "TikTok", "url": "https://www.tiktok.com/@gvllimo" },
+    { "plataforma": "X (Twitter)", "url": "https://www.x.com/GvlLimo" },
+    { "plataforma": "Yelp", "url": "https://www.yelp.com/biz/jQTpLcSbhyOb__TQ4WOv-g" },
+    { "plataforma": "YouTube", "url": "https://www.youtube.com/channel/UCHINlly5C97aLuaVqIkOShA" }
+  ],
+  "formularios": [
+    { "proposito": "Alertas de ofertas por cancelaciones de último minuto", "campos": ["HubSpot form embebido"] },
+    { "proposito": "Cuestionario GVL SAFE para protección ejecutiva", "campos": ["Pre-service questionnaire"] },
+    { "proposito": "Solicitud de empleo", "campos": ["Google Forms application"] },
+    { "proposito": "Solicitud de ride Downtown Cart", "campos": ["EverTransit booking embed"] }
+  ],
+  "footer": {
+    "contenido": "Greenville Executive Limo Service, LLC",
+    "links": [
+      "Home", "Terms & Conditions", "Book Now", "Experiences", "Downtown Cart", "Join The Team", "GVL SAFE",
+      "Facebook", "Instagram", "LinkedIn", "TikTok", "X (Twitter)", "Yelp", "YouTube"
+    ],
+    "copyright": "Copyright © 2025 Greenville Executive Limo Service, LLC - All Rights Reserved."
+  },
+  "tecnologia": "Wix (wsimg.com hosting, Wix utility CSS classes), Google Analytics (G-9XJSZBB9QS), HubSpot (formularios), Vimeo (video hosting), EverTransit (booking/reservas), Service Worker (/sw.js), Google Fonts (Lato, Cabin)"
+}

@@ -1,0 +1,155 @@
+{
+  "cliente": "Studio 17",
+  "url_auditada": "https://www.studio17greenville.com/",
+  "sector": "Pilates Studio / Fitness",
+  "benchmark_aplicado": "Servicio local (salud, legal) — Studio 17 es un estudio de Pilates clásico que opera como servicio local/bienestar en Greenville, SC. Se aplica este benchmark por ser un negocio presencial orientado a clientela local, con exigencias similares a servicios de salud en cuanto a confianza y credibilidad.",
+  "fecha": "2026-04-03",
+  "nota_tecnica": "requiere_render=true: sitio Squarespace SPA renderizado por JS. Scores técnicos limitados a máximo 60/100. Datos de scraping pueden estar incompletos.",
+  "scores": {
+    "seo": 47,
+    "ux_ui": 60,
+    "marketing": 48,
+    "contenido": 62,
+    "tecnico": 58,
+    "total": 55
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title presente y con keyword relevante: 'Studio 17 | Start Your Pilates Journey Today'",
+        "CTAs descriptivos con verbos de acción: 'Explore Classes', 'Browse Classes', 'Book an Appointment'",
+        "Propuesta de valor visible en el hero con descripción clara de Classical Pilates"
+      ],
+      "negativos": [
+        "Meta description ausente — pérdida total de control sobre snippet en SERPs",
+        "H1 ('A System That Lengthens, Strengthens, and Balances') no contiene keywords geográficas ni de sector como 'Pilates Greenville'",
+        "Ninguna imagen tiene atributo alt — todas las imágenes son invisibles para buscadores",
+        "Meta keywords ausentes (aunque de bajo impacto directo, indica falta de estrategia SEO)",
+        "Solo 3 secciones indexables en homepage — contenido escaso para posicionar"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir meta description optimizada: 'Classical Pilates studio in Greenville, SC. Private and group reformer classes. Book your first session at Studio 17.'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reformular H1 para incluir keyword principal: 'Classical Pilates in Greenville — Lengthen, Strengthen, and Balance'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir alt text descriptivo a todas las imágenes con keywords relevantes", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear contenido adicional en homepage: sección de beneficios, tipos de clases, FAQ sobre Pilates", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta minimalista blanco/negro coherente con estética de estudio premium de bienestar",
+        "Squarespace garantiza diseño responsive y mobile-friendly por defecto",
+        "Estructura de navegación clara y concisa con solo 4 items: Home, Classes, About, Contact"
+      ],
+      "negativos": [
+        "Sin color de acento definido — los CTAs no destacan visualmente sobre el fondo",
+        "Tipografía basada en fuentes del sistema sin personalización — falta identidad visual",
+        "Solo 2 colores (blanco y negro) resulta plano; carece de calidez que el sector wellness requiere",
+        "Tamaño tipográfico en vw (4vw-6vw) puede generar texto excesivamente grande en pantallas anchas"
+      ],
+      "recomendaciones": [
+        { "accion": "Definir un color de acento cálido (dorado, terracota o sage green) para CTAs y elementos destacados", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar tipografía personalizada que transmita elegancia y bienestar (ej. serif para títulos, sans-serif para cuerpo)", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Limitar tamaño máximo de fuente con clamp() para evitar texto gigante en monitores grandes", "prioridad": "baja", "tipo": "quick_win" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Mensaje personal de la fundadora BeLinda genera confianza y conexión humana",
+        "Múltiples CTAs distribuidos en la página: 'Explore Classes', 'About Me', 'Browse Classes', 'Book an Appointment'",
+        "Mención específica de equipamiento profesional (Contrology by Balanced Body) refuerza credibilidad técnica"
+      ],
+      "negativos": [
+        "Cero prueba social: no hay testimonios, reseñas, número de alumnos ni años de experiencia",
+        "El headline principal describe el método, no resuelve un dolor del cliente (ej. dolor de espalda, postura, estrés)",
+        "No hay oferta de entrada clara (clase de prueba, descuento primera sesión) para reducir fricción de conversión",
+        "Falta urgencia o escasez — no se comunica disponibilidad limitada de sesiones privadas"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir sección de testimonios con 3-5 reseñas de alumnos reales", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reformular headline para orientarlo al beneficio del cliente: 'Recover Your Posture and Strength with Classical Pilates in Greenville'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear oferta de entrada visible: 'Book Your Intro Session — $X' como CTA principal", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Incluir credenciales y años de experiencia de BeLinda de forma prominente", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Textos originales y personales, no genéricos — la voz de BeLinda es auténtica",
+        "Información de contacto presente: teléfono, email, dirección física, horarios generales",
+        "Descripción específica del equipamiento y método (Classical Pilates, Joseph Pilates, Contrology by Balanced Body)"
+      ],
+      "negativos": [
+        "Email malformado: 'info@studio17@gmail.com' contiene dos símbolos @ — no es funcional",
+        "No existe sección de FAQ ni resolución de objeciones comunes (precio, nivel requerido, qué llevar)",
+        "Horarios vagos: 'Monday-Saturday (ver schedule en /classes)' — no hay detalle visible en homepage",
+        "Solo 3 secciones de contenido — homepage demasiado escueta para un negocio que necesita educar al cliente sobre Pilates"
+      ],
+      "recomendaciones": [
+        { "accion": "Corregir email de contacto — verificar dirección correcta (probablemente info@studio17greenville.com o studio17greenville@gmail.com)", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir sección FAQ: ¿Necesito experiencia previa? ¿Qué debo llevar? ¿Cuánto cuesta la primera clase? ¿Hay clases grupales?", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Publicar horarios completos con precios en la homepage o enlace directo visible", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Expandir contenido de homepage con secciones de beneficios del Pilates, tipos de clase y perfil de instructora", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Squarespace 7.1 ofrece hosting gestionado, SSL, CDN y uptime confiable sin mantenimiento",
+        "Integración con reCAPTCHA Enterprise para protección de formularios",
+        "Google Analytics implementado para seguimiento de tráfico"
+      ],
+      "negativos": [
+        "Sitio SPA renderizado por JS — perjudica crawleabilidad por buscadores y tiempo de First Contentful Paint",
+        "Formulario de contacto detectado pero sin campos capturables — posible problema de accesibilidad o implementación",
+        "Facebook SDK cargado pero sin integración visible (no hay pixel de conversión documentado ni feed social)",
+        "Sin favicon detectado — aspecto poco profesional en pestañas del navegador"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir favicon con el logo de Studio 17 para reforzar branding en pestañas", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Verificar y documentar campos del formulario de contacto — asegurar que captura nombre, email, teléfono y mensaje", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Configurar Facebook Pixel correctamente si se hace publicidad en Meta, o eliminar SDK innecesario para mejorar carga", "prioridad": "baja", "tipo": "mejora_estructural" },
+        { "accion": "Considerar migración a stack estático (HTML + Tailwind o Astro) para eliminar dependencia de JS en renderizado y mejorar SEO", "prioridad": "baja", "tipo": "mejora_estructural" }
+      ],
+      "stack_actual": "Squarespace 7.1 (SPA/JS-heavy), reCAPTCHA Enterprise, Google Analytics, Facebook SDK",
+      "stack_recomendado": "HTML estático + Tailwind CSS + Alpine.js — sitio de baja complejidad que no requiere CMS dinámico",
+      "integraciones": ["Google Analytics", "reCAPTCHA Enterprise", "Facebook SDK", "Instagram (@studio17greenvillesc)"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Añadir meta description optimizada con keywords 'Classical Pilates Greenville SC'",
+    "Corregir email malformado (info@studio17@gmail.com → dirección válida)",
+    "Añadir alt text a todas las imágenes con keywords descriptivos",
+    "Definir color de acento cálido para CTAs y elementos interactivos",
+    "Añadir favicon con logo del estudio"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Corregir email de contacto malformado",
+      "Añadir meta description optimizada",
+      "Reformular H1 con keyword geográfica",
+      "Añadir alt text a todas las imágenes",
+      "Implementar favicon",
+      "Definir color de acento y aplicar a CTAs"
+    ],
+    "mes_1": [
+      "Crear sección de testimonios con reseñas reales de alumnos",
+      "Añadir sección FAQ con preguntas frecuentes sobre Pilates y el estudio",
+      "Implementar tipografía personalizada alineada con identidad wellness",
+      "Expandir contenido de homepage: beneficios, tipos de clases, perfil de BeLinda",
+      "Publicar horarios y precios de forma accesible",
+      "Verificar y optimizar formulario de contacto"
+    ],
+    "largo_plazo": [
+      "Evaluar migración a stack estático para mejorar rendimiento y SEO",
+      "Configurar o eliminar Facebook SDK según estrategia publicitaria",
+      "Implementar sistema de reservas online integrado en el sitio",
+      "Crear páginas dedicadas por tipo de clase con contenido SEO optimizado"
+    ]
+  },
+  "resumen_ejecutivo": "Studio 17 tiene una base de contenido auténtica y personal pero carece de elementos críticos de conversión: no hay prueba social, el headline no conecta con dolores del cliente y el email de contacto está roto. La mayor oportunidad está en quick wins de SEO local (meta description, H1 con keywords, alt text) y añadir testimonios que conviertan visitantes en alumnos. El siguiente paso inmediato es corregir los errores técnicos (email, favicon) e implementar las mejoras SEO que posicionarán el estudio para búsquedas de 'Pilates Greenville'.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["Alpine.js", "Google Analytics", "reCAPTCHA"],
+    "justificacion": "Sitio de baja complejidad (4 páginas, sin e-commerce ni contenido dinámico). HTML estático + Tailwind + Alpine.js ofrece máximo rendimiento, SEO nativo sin hidratación JS y cero dependencia de plataforma. Ideal para estudio de Pilates local que necesita velocidad de carga y crawleabilidad."
+  }
+}

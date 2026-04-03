@@ -1,0 +1,156 @@
+{
+  "cliente": "Spotless Magic World LLC",
+  "url_auditada": "https://www.spotlessmagicworld.com/",
+  "sector": "Servicios profesionales de limpieza",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 50. Aplicado porque el negocio es un servicio local de limpieza en Greenville, SC que atiende hogares y oficinas en un área geográfica definida.",
+  "fecha": "2026-04-02",
+  "scores": {
+    "seo": 56,
+    "ux_ui": 62,
+    "marketing": 37,
+    "contenido": 44,
+    "tecnico": 40,
+    "total": 48
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "H1 presente con keyword principal 'Cleaning Services in Greenville, SC' bien posicionada",
+        "Meta title optimizado con keyword geográfica y nombre de marca",
+        "Meta description presente con servicios principales y localización",
+        "Keyword principal consistente entre H1, meta title y meta description"
+      ],
+      "negativos": [
+        "El único CTA detectado es 'View cart' — no hay CTAs de acción como 'Get a Free Quote' o 'Book Now'",
+        "Alt text de imágenes genérico y repetitivo ('Cleaning service image' duplicado)",
+        "No hay estructura jerárquica clara de headings — los títulos de sección son nombres de servicio planos sin H2/H3 diferenciados",
+        "No se detectan keywords secundarias ni long-tail en los textos de las secciones"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar CTA principal en el hero con texto descriptivo: 'Get Your Free Cleaning Estimate'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reescribir alt text de imágenes con descripciones únicas y keywords relevantes", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar estructura de headings H1→H2→H3 con keywords secundarias en cada sección de servicio", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Crear páginas individuales de servicio con contenido detallado para capturar long-tail keywords", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores coherente con 3 tonos principales (#48bca2, #25ad99, #2a3549) que transmiten limpieza y profesionalismo",
+        "Tipografía Sen legible y moderna, con pesos 400/700 bien diferenciados para jerarquía",
+        "Hero con imagen de fondo contextual al servicio ofrecido",
+        "Navegación clara con 5 items principales bien organizados"
+      ],
+      "negativos": [
+        "Una sola familia tipográfica para todo el sitio limita la jerarquía visual entre secciones",
+        "Secciones de servicios sin imágenes (Disinfection y Junk Removal) generan bloques de texto planos",
+        "Sin evidencia de diseño mobile-first — Elementor tiende a priorizar desktop",
+        "GIF animado de branding (816x256) agrega peso visual sin valor funcional claro"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar iconografía o imágenes a las secciones de Disinfection y Junk Removal para romper la monotonía visual", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Introducir una tipografía secundaria para diferenciar encabezados del cuerpo de texto", "prioridad": "baja", "tipo": "mejora_estructural" },
+        { "accion": "Optimizar o reemplazar el GIF animado por un formato más ligero (WebP animado o CSS animation)", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Propuesta de valor menciona los 3 servicios principales en el hero",
+        "Testimonio real presente con lenguaje auténtico y recomendación directa",
+        "Información de disponibilidad 24/7 comunica accesibilidad"
+      ],
+      "negativos": [
+        "Propuesta de valor completamente genérica — 'Professional and affordable' no diferencia de ningún competidor",
+        "Solo 1 testimonio visible — insuficiente para generar confianza sólida",
+        "No hay CTA de conversión visible — 'View cart' es un CTA de e-commerce, no de servicio",
+        "No hay números, estadísticas ni indicadores de experiencia (años, clientes atendidos, propiedades)",
+        "No hay oferta de entrada clara (presupuesto gratis, descuento primera limpieza, etc.)"
+      ],
+      "recomendaciones": [
+        { "accion": "Reescribir propuesta de valor con diferenciador concreto: qué hace Spotless Magic World distinto a los demás servicios de limpieza en Greenville", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar mínimo 3-5 testimonios con nombre y tipo de servicio contratado", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear oferta de entrada visible en hero: 'Free Estimate' o 'First Cleaning 20% Off'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Incluir indicadores de confianza: años en operación, número de propiedades atendidas, certificaciones", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Información de contacto completa: teléfono, email, dirección física y horarios",
+        "Presencia en 4 redes sociales activas (Facebook, X, LinkedIn, Instagram)",
+        "Servicios principales claramente identificados: Cleaning, Disinfection, Junk Removal"
+      ],
+      "negativos": [
+        "Descripciones de servicios extremadamente escuetas — Disinfection y Junk Removal tienen una sola oración genérica cada uno",
+        "No existe sección FAQ ni manejo de objeciones comunes",
+        "No hay información sobre proceso de trabajo, qué esperar, ni políticas de satisfacción",
+        "Contenido del hero se repite casi textualmente en la meta description y la sección de servicios",
+        "No hay página About visible en el scraping con información sobre el equipo o historia"
+      ],
+      "recomendaciones": [
+        { "accion": "Desarrollar descripciones detalladas de cada servicio: qué incluye, proceso, duración estimada, áreas cubiertas", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Crear sección FAQ con 5-8 preguntas frecuentes (precios, productos usados, cancelaciones, áreas de cobertura)", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar sección 'How It Works' con 3-4 pasos del proceso de contratación", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Escribir contenido único para cada sección eliminando repeticiones del texto del hero", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "WP Rocket instalado para caché y optimización de carga",
+        "WebP Express activo para conversión de imágenes a formato moderno",
+        "Google Analytics GA4 implementado para tracking"
+      ],
+      "negativos": [
+        "WordPress + Elementor + WooCommerce es stack excesivo para un sitio de servicios locales — WooCommerce no aporta valor si no vende productos online",
+        "Plugin bloat: Element Pack Lite + Essential Addons son dos librerías de widgets redundantes que agregan peso innecesario",
+        "No se detectan formularios de contacto o cotización — fallo crítico para un negocio de servicios",
+        "Dependencia de múltiples plugins para funcionalidades básicas aumenta superficie de ataque y mantenimiento"
+      ],
+      "recomendaciones": [
+        { "accion": "Implementar formulario de cotización prominente con campos: nombre, teléfono, tipo de servicio, frecuencia deseada", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Eliminar WooCommerce si no se venden productos online — simplifica el stack y mejora velocidad", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Consolidar Element Pack + Essential Addons en un solo plugin o eliminar ambos en favor de Elementor nativo", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Considerar migración a sitio estático (HTML+Tailwind) para eliminar overhead de WordPress en un sitio informativo", "prioridad": "baja", "tipo": "opcional" }
+      ],
+      "stack_actual": "WordPress, Elementor, WooCommerce, WP Rocket, Element Pack Lite, Essential Addons for Elementor, WebP Express, Google Analytics GA4",
+      "stack_recomendado": "HTML + Tailwind CSS + Alpine.js — sitio informativo de baja complejidad que no requiere CMS ni e-commerce",
+      "integraciones": ["Google Analytics GA4 (G-XE42RLSBB3)"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Agregar CTA principal en hero: 'Get Your Free Cleaning Estimate' con enlace a formulario de contacto",
+    "Implementar formulario de cotización con campos: nombre, teléfono, tipo de servicio, frecuencia",
+    "Agregar 3-5 testimonios reales con nombre del cliente y tipo de servicio",
+    "Crear oferta de entrada visible: 'Free Estimate' o descuento en primera limpieza",
+    "Reescribir propuesta de valor con diferenciador concreto frente a competidores locales"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Agregar CTA de conversión en hero y en cada sección de servicio",
+      "Implementar formulario de cotización/contacto funcional",
+      "Agregar testimonios adicionales con datos verificables",
+      "Reescribir propuesta de valor con diferenciador claro",
+      "Corregir alt text de imágenes con descripciones únicas"
+    ],
+    "mes_1": [
+      "Desarrollar contenido detallado para cada servicio (Disinfection, Junk Removal)",
+      "Crear sección FAQ con 5-8 preguntas frecuentes",
+      "Agregar sección 'How It Works' con proceso paso a paso",
+      "Incluir indicadores de confianza: años, clientes, certificaciones",
+      "Eliminar WooCommerce y consolidar plugins redundantes",
+      "Implementar estructura de headings H2/H3 con keywords secundarias"
+    ],
+    "largo_plazo": [
+      "Migrar a sitio estático HTML+Tailwind para mejor rendimiento y menor mantenimiento",
+      "Crear páginas individuales por servicio para SEO long-tail",
+      "Introducir tipografía secundaria para mejorar jerarquía visual",
+      "Optimizar assets multimedia (reemplazar GIF por formatos ligeros)"
+    ]
+  },
+  "resumen_ejecutivo": "El sitio de Spotless Magic World carece de elementos críticos de conversión: no tiene formulario de contacto, su único CTA es 'View cart' y la propuesta de valor es genérica e indistinguible de cualquier competidor. La mayor oportunidad está en implementar un embudo de conversión básico (CTA claro → formulario de cotización → prueba social) que transforme visitantes en leads, aprovechando que ya tiene presencia online y contacto completo. El próximo paso inmediato es agregar un formulario de cotización prominente y un CTA de acción en el hero con oferta de entrada clara.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["alpine.js", "formspree o similar para formulario de contacto"],
+    "justificacion": "Sitio informativo de baja complejidad para servicio local — no requiere CMS, e-commerce ni rendering dinámico. HTML estático + Tailwind + Alpine.js ofrece máximo rendimiento, cero mantenimiento de plugins y carga rápida en móvil, que es donde la mayoría de clientes locales buscan servicios de limpieza."
+  }
+}

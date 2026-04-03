@@ -1,0 +1,161 @@
+{
+  "cliente": "Golden Nails & Spa",
+  "url_auditada": "https://goldennailsandspagreenville.com/",
+  "sector": "Nail Salon & Spa",
+  "benchmark_aplicado": "Servicio local (salud, legal) — Los nail salons son negocios de servicio local con clientela geográficamente delimitada. Benchmark: SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 45.",
+  "fecha": "2026-04-03",
+  "scores": {
+    "seo": 44,
+    "ux_ui": 62,
+    "marketing": 43,
+    "contenido": 70,
+    "tecnico": 47,
+    "total": 53
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title incluye keywords relevantes: 'Nail Salon', 'Greenville, SC 29615'",
+        "Estructura de navegación clara con páginas dedicadas: Home, Services, Booking, Gallery, Contact Us",
+        "Textos de CTA incluyen número de teléfono directamente, facilitando llamadas desde móvil"
+      ],
+      "negativos": [
+        "Meta description vacía — oportunidad perdida de captar clics en resultados de búsqueda",
+        "H1 ('Glowing Care, Nurturing Service!') no contiene keywords de búsqueda como 'nail salon' o 'Greenville'",
+        "Todas las imágenes de galería tienen alt text vacío — perjudica SEO de imágenes y accesibilidad",
+        "Meta title con formato de keyword stuffing: repite '29615' dos veces y usa pipe separators poco naturales",
+        "Sin keywords meta definidas"
+      ],
+      "recomendaciones": [
+        { "accion": "Escribir meta description optimizada (150-160 chars) incluyendo 'nail salon Greenville SC', servicios principales y CTA", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reformular H1 para incluir keyword principal: ej. 'Premier Nail Salon & Spa in Greenville, SC'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar alt text descriptivo a todas las imágenes de galería con keywords relevantes", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Optimizar meta title eliminando duplicación de zip code y mejorando estructura natural", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Implementar schema markup LocalBusiness y NailSalon para rich snippets en Google", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Tipografía Open Sans es legible, versátil y con amplio rango de pesos disponibles (300-800)",
+        "Divi Theme proporciona diseño responsive por defecto, cubriendo experiencia móvil básica",
+        "Navegación sencilla con 5 items claros — no sobrecarga al usuario"
+      ],
+      "negativos": [
+        "Paleta de colores inconsistente: mezcla azul (#2ea3f2), rojo (#ae0000), rosa (#ff9292, #ff7272) y múltiples grises sin cohesión visual",
+        "Galería sin lightbox aparente ni diseño curado — lista plana de imágenes sin jerarquía",
+        "Hero section sin imagen de fondo ni visual impactante — solo texto sobre fondo neutro",
+        "Exceso de colores secundarios (7 adicionales) genera ruido visual"
+      ],
+      "recomendaciones": [
+        { "accion": "Reducir paleta a 3 colores principales: un tono dorado/warm (alineado al nombre), un neutro oscuro y un acento sutil", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Añadir imagen hero de alta calidad mostrando el salón o un servicio en acción", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Rediseñar galería con grid masonry y lightbox para mejor experiencia de navegación", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Establecer jerarquía tipográfica clara: títulos en peso 700, subtítulos 600, body 400", "prioridad": "baja", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Propuesta de valor en About Us menciona diferenciadores concretos: skilled workmanship, high-quality products, 5-star customer service",
+        "Información de contacto omnipresente: teléfono en hero, footer y página de contacto",
+        "Menú de servicios detallado con precios transparentes — reduce fricción de decisión"
+      ],
+      "negativos": [
+        "Slogan 'Glowing Care, Nurturing Service!' es genérico — no diferencia de competidores ni resuelve un dolor específico",
+        "Cero prueba social: no hay testimonios, reseñas, calificaciones ni conteo de clientes atendidos",
+        "CTA principal es solo un número de teléfono — falta urgencia, beneficio o incentivo para actuar",
+        "No hay oferta de bienvenida, descuento para primera visita ni programa de fidelización visible",
+        "Servicios para niños no se destacan como diferenciador cuando muchos salones no los ofrecen"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar sección de testimonios/reseñas de Google con al menos 5 testimonios reales de clientes", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Crear CTA principal con propuesta de valor: ej. 'Book Your Relaxing Experience Today' en lugar de solo el teléfono", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Destacar servicios para niños como diferenciador competitivo con sección dedicada visible", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Añadir oferta de primera visita o programa de referidos para incentivar conversión", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Reformular slogan para comunicar beneficio concreto: ej. 'Your Greenville Sanctuary for Beautiful Nails'", "prioridad": "baja", "tipo": "quick_win" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Descripciones de servicios detalladas con listado de lo que incluye cada paquete — transparencia total",
+        "Precios publicados para todos los servicios — elimina incertidumbre del cliente",
+        "Información de contacto completa: dirección, teléfono, email y horarios de atención",
+        "Sección About Us con narrativa específica del negocio, no texto genérico"
+      ],
+      "negativos": [
+        "No existe sección de FAQ ni manejo de objeciones comunes (higiene, productos, tiempos de espera)",
+        "About Us repite el mismo texto en body y footer — contenido duplicado",
+        "Email de contacto es un correo personal Yahoo (lanho30021@yahoo.com) — no transmite profesionalismo",
+        "Galería sin descripciones ni contexto de los trabajos mostrados"
+      ],
+      "recomendaciones": [
+        { "accion": "Crear sección FAQ con 5-8 preguntas frecuentes: higiene, productos usados, política de cancelación, walk-ins, etc.", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Configurar email profesional con dominio propio: ej. info@goldennailsandspagreenville.com", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Eliminar duplicación de About Us entre body y footer — usar versión resumida en footer", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Agregar descripciones a las fotos de galería indicando tipo de servicio mostrado", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "WordPress es un CMS maduro con ecosistema amplio de plugins y soporte",
+        "Sitio funcional y accesible — carga sin requerir JavaScript para contenido principal",
+        "Página de booking dedicada indica integración con sistema de reservas"
+      ],
+      "negativos": [
+        "Divi Theme es pesado: carga CSS/JS innecesario que impacta velocidad de carga",
+        "Múltiples plugins adicionales (Divi Carousel, Supreme Modules, Simple Side Tab) añaden bloat",
+        "No se detectaron formularios de contacto en el scraping — posible falta de formulario funcional",
+        "Dependencia de jQuery cuando el sitio no requiere interactividad compleja"
+      ],
+      "recomendaciones": [
+        { "accion": "Reemplazar stack completo por sitio estático con HTML + Tailwind + Alpine.js para máxima velocidad", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar formulario de contacto funcional con validación y confirmación", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Integrar sistema de booking inline (ej. Calendly, Square Appointments) en vez de página separada", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Optimizar imágenes de galería: WebP format, lazy loading, dimensiones definidas", "prioridad": "media", "tipo": "quick_win" }
+      ],
+      "stack_actual": "WordPress + Divi Theme v4.25.1 (Elegant Themes), jQuery, ETmodules icon font, Divi Carousel plugin, Supreme Modules for Divi, Simple Side Tab",
+      "stack_recomendado": "HTML + Tailwind CSS + Alpine.js — sitio de baja complejidad que no requiere CMS ni framework pesado",
+      "integraciones": ["Sistema de booking (existente en /booking/)", "Facebook page"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Escribir meta description optimizada con keywords 'nail salon Greenville SC' y CTA",
+    "Agregar alt text descriptivo a las 8 imágenes de galería",
+    "Reformular H1 para incluir 'Nail Salon' y 'Greenville'",
+    "Crear CTA principal orientado a beneficio: 'Book Your Relaxing Experience Today'",
+    "Configurar email profesional con dominio propio"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Escribir meta description y optimizar meta title",
+      "Reformular H1 con keywords de búsqueda",
+      "Agregar alt text a todas las imágenes de galería",
+      "Crear CTA principal con propuesta de valor clara",
+      "Configurar email profesional con dominio propio",
+      "Implementar formulario de contacto funcional"
+    ],
+    "mes_1": [
+      "Agregar sección de testimonios/reseñas con prueba social real",
+      "Crear sección FAQ con 5-8 preguntas frecuentes",
+      "Reducir y unificar paleta de colores",
+      "Añadir imagen hero de alta calidad",
+      "Destacar servicios para niños como diferenciador",
+      "Integrar sistema de booking inline",
+      "Optimizar imágenes (WebP, lazy loading)"
+    ],
+    "largo_plazo": [
+      "Migrar a stack estático (HTML + Tailwind + Alpine.js) para máxima velocidad",
+      "Rediseñar galería con grid masonry y lightbox",
+      "Implementar schema markup LocalBusiness",
+      "Añadir programa de referidos o incentivo de primera visita",
+      "Agregar descripciones contextuales a fotos de galería"
+    ]
+  },
+  "resumen_ejecutivo": "Golden Nails & Spa tiene contenido de servicios sólido con precios transparentes, pero carece de elementos críticos de conversión: no hay prueba social, el mensaje principal es genérico y la meta description está vacía. La mayor oportunidad es agregar testimonios reales y optimizar SEO básico para captar tráfico local que actualmente se pierde. El próximo paso inmediato es corregir los quick wins de SEO (meta description, H1, alt texts) y añadir una sección de reseñas para generar confianza.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["alpinejs", "google-fonts"],
+    "justificacion": "Sitio de baja complejidad (salón de uñas local con ~5 páginas informativas). No requiere CMS, SSR ni framework JavaScript. HTML + Tailwind + Alpine.js ofrece máxima velocidad de carga, cero dependencias de servidor y facilidad de mantenimiento."
+  }
+}

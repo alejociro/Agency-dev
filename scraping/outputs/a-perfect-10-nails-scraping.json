@@ -1,0 +1,153 @@
+{
+  "negocio": "A Perfect 10 Nails",
+  "url": "http://aperfect10nails.com/",
+  "sector": "Nail Salon",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "a perfect 10 nails | Best nail salon in GREENVILLE, SC 29607",
+    "description": "we take pride in our professional manicure, pedicure and waxing service that delivered in a healthy and hygienic environment so you may look and feel great.",
+    "keywords": "a perfect 10 nails,greenville,nail enhancement,kid's menu,manicure,pedicure,policy,waxing"
+  },
+  "favicon": "http://aperfect10nails.com/img/myfavicon.ico",
+  "paleta": {
+    "primario": "#DAA520",
+    "secundario": "#232323",
+    "acento": "#000000",
+    "fondo": "#FFFFFF",
+    "texto": "#696969",
+    "otros": ["#F8F8F8", "#DAA52050", "#DAA52020", "#C0C0C0", "#808080"]
+  },
+  "logo": {
+    "url": null,
+    "descripcion": "Texto 'A PERFECT 10 NAILS' en color Goldenrod con sombra negra como logo en la barra de navegación",
+    "posicion": "navbar izquierda",
+    "colores": ["#DAA520", "#000000"]
+  },
+  "tipografias": [
+    { "nombre": "Arial", "uso": "cuerpo, encabezados, nombre del negocio", "peso": "400, 700, 1000", "tamanio_aprox": "25px navbar, estándar en body" },
+    { "nombre": "Times New Roman", "uso": "títulos de sección (About Us, Services)", "peso": "400", "tamanio_aprox": "h2" },
+    { "nombre": "Open Sans", "uso": "fuente secundaria cargada por Google Fonts", "peso": "300, 400, 600, 700, 800", "tamanio_aprox": "variable" },
+    { "nombre": "Merriweather", "uso": "fuente serif cargada por Google Fonts", "peso": "300, 400, 700, 900", "tamanio_aprox": "variable" }
+  ],
+  "navegacion": [
+    { "label": "About", "url": "#about" },
+    { "label": "Services", "url": "#services" },
+    { "label": "Gallery", "url": "#portfolio" },
+    { "label": "Contact", "url": "#contact" },
+    { "label": "Specials", "url": "http://aperfect10nails.com/Coupon/ShowCoupons" },
+    { "label": "Online_Booking", "url": "http://aperfect10nails.com/Home/AppointmentLink" },
+    { "label": "Subscribe", "url": "http://aperfect10nails.com/Customer/Subcribe" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero/slider",
+      "titulo": "A PERFECT 10 NAILS",
+      "contenido": "Professional Nail Care for Ladies & Gentlemen",
+      "cta": "Book Now",
+      "imagenes": [
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/newbanner8.jpg", "alt": "A PERFECT 10 NAILS banner", "descripcion": "Banner principal del salón, imagen de slider 1", "tipo": "banner", "dimensiones": null },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/newbanner6.jpg", "alt": "A PERFECT 10 NAILS banner", "descripcion": "Banner del salón, imagen de slider 2", "tipo": "banner", "dimensiones": null },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/newbanner3.jpg", "alt": "A PERFECT 10 NAILS banner", "descripcion": "Banner del salón, imagen de slider 3", "tipo": "banner", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "barra-contacto",
+      "titulo": null,
+      "contenido": "Barra de información de contacto con horarios, teléfono y dirección sobre fondo oscuro (#232323)",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "about",
+      "titulo": "ABOUT US",
+      "contenido": "We take pride in our professional manicure, pedicure and waxing service that delivered in a healthy and hygienic environment so you may look and feel great.",
+      "cta": "Get Started!",
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "SERVICES",
+      "contenido": "Categorías de servicios ofrecidos: Nail Enhancement, Kid's Menu, Waxing, Manicure, Pedicure, Policy",
+      "cta": "Services Details »",
+      "imagenes": [
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/IMG_4743.JPG", "alt": "nail enhancement", "descripcion": "Imagen de servicio nail enhancement", "tipo": "servicio", "dimensiones": "160x160" },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/kid070520065441AM.jpg", "alt": "kid's menu", "descripcion": "Imagen de servicio kid's menu", "tipo": "servicio", "dimensiones": "160x160" },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/waxing1.jpg", "alt": "waxing", "descripcion": "Imagen de servicio waxing", "tipo": "servicio", "dimensiones": "160x160" },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/IMG_8565.JPG", "alt": "manicure", "descripcion": "Imagen de servicio manicure", "tipo": "servicio", "dimensiones": "160x160" },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/IMG_9285.JPG", "alt": "pedicure", "descripcion": "Imagen de servicio pedicure", "tipo": "servicio", "dimensiones": "160x160" },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/ITIR-POLICY070520065441AM.jpg", "alt": "policy", "descripcion": "Imagen de política del salón", "tipo": "servicio", "dimensiones": "160x160" }
+      ]
+    },
+    {
+      "tipo": "galería",
+      "titulo": "PHOTOS GALLERY",
+      "contenido": null,
+      "cta": "Show More...",
+      "imagenes": [
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/IMG_9407.JPG", "alt": "A PERFECT 10 NAILS", "descripcion": "Foto de galería del salón", "tipo": "galería", "dimensiones": null },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/IMG_4182.JPG", "alt": "A PERFECT 10 NAILS", "descripcion": "Foto de galería del salón", "tipo": "galería", "dimensiones": null },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/manicure4.jpg", "alt": "A PERFECT 10 NAILS", "descripcion": "Foto de manicure", "tipo": "galería", "dimensiones": null },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/IMG_4741.JPG", "alt": "A PERFECT 10 NAILS", "descripcion": "Foto de galería del salón", "tipo": "galería", "dimensiones": null },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/pedicure4.jpg", "alt": "A PERFECT 10 NAILS", "descripcion": "Foto de pedicure", "tipo": "galería", "dimensiones": null },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/facial.jpg", "alt": "A PERFECT 10 NAILS", "descripcion": "Foto de facial", "tipo": "galería", "dimensiones": null },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/IMG_4740.JPG", "alt": "A PERFECT 10 NAILS", "descripcion": "Foto de galería del salón", "tipo": "galería", "dimensiones": null },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/IMG_9070.JPG", "alt": "A PERFECT 10 NAILS", "descripcion": "Foto de galería del salón", "tipo": "galería", "dimensiones": null },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/IMG_9285.JPG", "alt": "A PERFECT 10 NAILS", "descripcion": "Foto de pedicure", "tipo": "galería", "dimensiones": null },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/IMG_9408.JPG", "alt": "A PERFECT 10 NAILS", "descripcion": "Foto de galería del salón", "tipo": "galería", "dimensiones": null },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/manicure5.jpg", "alt": "A PERFECT 10 NAILS", "descripcion": "Foto de manicure", "tipo": "galería", "dimensiones": null },
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/IMG_8565.JPG", "alt": "A PERFECT 10 NAILS", "descripcion": "Foto de manicure", "tipo": "galería", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "anuncio/popup",
+      "titulo": "IMPORTANT!",
+      "contenido": "*Gift Certificate Available.\n*Appt & Walk-Ins Welcome.\n*We use ultra-hygienic diposable liners for each customer to prevent cross-contamination",
+      "cta": null,
+      "imagenes": [
+        { "url": "http://aperfect10nails.com/MyPhotosGalary/CouponsAndAdsIMG/IMG_0559181225102548PM.jpeg", "alt": "Anuncio del salón", "descripcion": "Imagen de promoción/cupón del salón", "tipo": "promoción", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "footer",
+      "titulo": "A PERFECT 10 NAILS",
+      "contenido": "Footer con nombre del negocio, enlaces rápidos, información de contacto completa y mapa de Google embebido",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Professional Nail Care for Ladies & Gentlemen",
+    "propuesta_valor": "We take pride in our professional manicure, pedicure and waxing service that delivered in a healthy and hygienic environment so you may look and feel great.",
+    "ctas": ["Book Now", "Get Started!", "Services Details »", "Show More...", "BOOK NOW"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(864) 282-8683",
+    "whatsapp": null,
+    "email": "DOANTHAI1195@GMAIL.COM",
+    "direccion": "27 S Pleasantburg Dr Ste 150, Greenville, SC 29607",
+    "horarios": "Mon.Tue.Wed.Thu.Fri.Sat: 9:30 am-7:30 pm | Sun: closed"
+  },
+  "redes": [
+    { "plataforma": "Yelp", "url": "https://www.yelp.com/biz/a-perfect-10-nails-and-spa-greenville" },
+    { "plataforma": "Google", "url": "https://www.google.com/search?q=a+perfect+10+nails+%26+spa+greenville+sc" },
+    { "plataforma": "Facebook", "url": "https://www.facebook.com/aperfect10nailsandspa/" }
+  ],
+  "formularios": [],
+  "footer": {
+    "contenido": "Nombre del negocio, enlaces rápidos (Home, About, Services, Gallery, Contact, Specials, Online_Booking, Subscribe), información de contacto, mapa de Google embebido, iconos de redes sociales",
+    "links": [
+      { "label": "Home", "url": "http://aperfect10nails.com/Home/Index#page-top" },
+      { "label": "About", "url": "#about" },
+      { "label": "Services", "url": "#services" },
+      { "label": "Gallery", "url": "#portfolio" },
+      { "label": "Contact", "url": "#contact" },
+      { "label": "Specials", "url": "http://aperfect10nails.com/Coupon/ShowCoupons" },
+      { "label": "Online_Booking", "url": "http://aperfect10nails.com/Home/AppointmentLink" },
+      { "label": "Subscribe", "url": "http://aperfect10nails.com/Customer/Subcribe" }
+    ],
+    "copyright": "@2026 | Designed By: NAILSOLUTION.US | All rights reserved."
+  },
+  "tecnologia": "HTML estático, Bootstrap 3, jQuery, Font Awesome, ScrollReveal, Magnific Popup, plataforma nailsolution.us"
+}

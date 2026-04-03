@@ -1,0 +1,195 @@
+{
+  "negocio": "Nail Salon Greenville SC",
+  "url": "https://www.nailsalongreenville.com",
+  "sector": "Directorio de salones de uñas / Belleza",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Nail Salon Greenville SC | Near Me Nail Salon",
+    "description": null,
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": null,
+    "secundario": null,
+    "acento": null,
+    "fondo": null,
+    "texto": null,
+    "otros": []
+  },
+  "logo": {
+    "url": null,
+    "descripcion": "No se detectó logo propio del directorio",
+    "posicion": null,
+    "colores": []
+  },
+  "tipografias": [],
+  "navegacion": [
+    { "label": "Homepage", "url": "https://www.nailsalongreenville.com/" },
+    { "label": "Salons", "url": "https://www.nailsalongreenville.com/salons/" },
+    { "label": "Blog", "url": "https://www.nailsalongreenville.com/blog/" },
+    { "label": "Corporate", "url": "https://www.nailsalongreenville.com/corporate/" },
+    { "label": "Contact", "url": "https://www.nailsalongreenville.com/contact/" }
+  ],
+  "secciones": [
+    {
+      "tipo": "directorio-destacados",
+      "titulo": "Showcase Companies",
+      "contenido": "Grid de salones destacados: Fabulous Nail Spa, Nails on the River, Highscale Nails Bar, Shine 4 Seasons Salon, Angel Nails, Lovely Nails, Lily Nails, Venetian Nails & Spa, Lavish Nails & Spa.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.nailsalongreenville.com/front/uploads/logolar/676a7ed798e73_fabulous-nails-spa-greenville-south-carolina-logo.png",
+          "alt": "Fabulous Nail Spa Logosu",
+          "descripcion": "Logo de Fabulous Nail Spa",
+          "tipo": "logo",
+          "dimensiones": null
+        },
+        {
+          "url": "https://www.nailsalongreenville.com/front/uploads/logolar/6769860a4fb21_newnailslogo.png",
+          "alt": "Nails on the River Logosu",
+          "descripcion": "Logo de Nails on the River",
+          "tipo": "logo",
+          "dimensiones": null
+        },
+        {
+          "url": "https://www.nailsalongreenville.com/front/uploads/logolar/677850d96518f_highscale-nails-bar-greenville-south-carolina-logo.png",
+          "alt": "Highscale Nails Bar Logosu",
+          "descripcion": "Logo de Highscale Nails Bar",
+          "tipo": "logo",
+          "dimensiones": null
+        },
+        {
+          "url": "https://www.nailsalongreenville.com/front/uploads/logolar/676b22e4796d0_shine-4-seasons-salon-nails-greenville-south-carolina-logo.png",
+          "alt": "Shine 4 Seasons Salon Logosu",
+          "descripcion": "Logo de Shine 4 Seasons Salon",
+          "tipo": "logo",
+          "dimensiones": null
+        },
+        {
+          "url": "https://www.nailsalongreenville.com/front/uploads/logolar/6769de432665d_venetian-nails-spa-greenville-south-carolina-logo.jpg",
+          "alt": "Venetian Nails & Spa Logosu",
+          "descripcion": "Logo de Venetian Nails & Spa",
+          "tipo": "logo",
+          "dimensiones": null
+        },
+        {
+          "url": "https://www.nailsalongreenville.com/front/uploads/logolar/676dc0244c346_lavish-nails-greenville-south-carolina-logo.png",
+          "alt": "Lavish Nails & Spa Logosu",
+          "descripcion": "Logo de Lavish Nails & Spa",
+          "tipo": "logo",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "hero",
+      "titulo": "Nail Salon Greenville SC",
+      "contenido": "Welcome To Nail Salon Greenville , We have created this page for you to find the best nail salons in Greenville, South Carolina. We will ensure that you can reach the companies in the best way by keeping the content up-to-date at all times. Our mission is simple: to connect you with the top-rated nail salons in the area. Greenville boasts a vibrant beauty scene, and we aim to make it easier than ever for you to find the perfect spot to pamper yourself. From trendy boutiques to family-owned salons, you'll find options for every style and budget. With NailSalonGreenville.com, you can browse through a curated list of salons, explore their services, check reviews, and even find special promotions. Whether you're planning a relaxing spa day or need last-minute touch-ups for a big event, we're here to help you make informed choices. Discover the convenience of having all Greenville nail salons in one place. Start exploring now and take the first step toward flawless nails and an unforgettable salon experience. At Nail Salon Greenville, your perfect manicure is just a click away. Our most important goal is to provide the correct information to all users in the fastest way.",
+      "cta": "Start exploring now",
+      "imagenes": []
+    },
+    {
+      "tipo": "informativa",
+      "titulo": "Near Me Nail Salon Greenville SC",
+      "contenido": "You can check out the nail salons on our website for the nail salon closest to you. You can see how close it is to you using communication tools such as whatsapp or google map. If you're looking for a nail salon on Greenville SC, you've come to the right place.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicio",
+      "titulo": "Enhance Your Style with Nail Extensions",
+      "contenido": "Nail extensions are the perfect solution for achieving elegant, long nails without the wait. Whether you prefer a natural look or bold, creative designs, nail extensions offer endless possibilities to express your style. Ideal for special occasions or everyday wear, they provide a durable and flawless finish that lasts. Greenville's top salons specialize in expertly applied extensions, ensuring a comfortable and professional experience. Explore options like acrylic, gel, or dip powder extensions to match your needs and preferences. Let your nails make a statement with perfectly crafted extensions that complement your unique personality.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicio",
+      "titulo": "Long-Lasting Elegance with Gel Polish",
+      "contenido": "Gel polish is the ultimate choice for a flawless, chip-free manicure that stays vibrant for weeks. Perfect for those with busy schedules, this durable polish provides a glossy, salon-quality finish that resists wear and tear. Whether you prefer classic neutrals, bold colors, or trendy designs, gel polish offers endless options to match your style. Applied with precision and cured under UV or LED light, it ensures a smooth and long-lasting result. Discover Greenville's best nail salons for professional gel polish applications and enjoy nails that look freshly done, day after day.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "directorio-recientes",
+      "titulo": "Recent Companies",
+      "contenido": "Nail Spa, Regency Salon and Spa, 5 Sisters Nails & Spa.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.nailsalongreenville.com/front/uploads/logolar/677856350fa17_regency-salon-spa-nails-greenville-south-carolina-logo.png",
+          "alt": "Regency Salon and Spa Logosu",
+          "descripcion": "Logo de Regency Salon and Spa",
+          "tipo": "logo",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "blog",
+      "titulo": "Recent Blogs",
+      "contenido": "Artículos recientes: 'What is Permanent Nail Polish?' y 'How Long Do Artificial Nails Last?'",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.nailsalongreenville.com/front/uploads/bloglar/6777bdfd31eae_what-is-permanent-nail-polish.jpg",
+          "alt": "What is Permanent Nail Polish? Blog",
+          "descripcion": "Imagen del artículo sobre esmalte permanente",
+          "tipo": "blog-thumbnail",
+          "dimensiones": null
+        },
+        {
+          "url": "https://www.nailsalongreenville.com/front/uploads/bloglar/6769d2c88380f_how-long-do-artificial-nails-last-greenville.jpg",
+          "alt": "How Long Do Artificial Nails Last? Blog",
+          "descripcion": "Imagen del artículo sobre duración de uñas artificiales",
+          "tipo": "blog-thumbnail",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "about",
+      "titulo": "Briefly About Us",
+      "contenido": "You can see all of the nail salons located in and near Greenville, South Carolina on our website. We have listed the salons on our website and have combined a lot of their data on a single page by researching. Nail salon or nail studios can send the most up-to-date information by contacting us. You can contact us quickly by filling out the form in the contact section of our website or by sending a direct e-mail to our e-mail address. You can get information about nail art by reading the blogs we publish from the blog section. Thank you for coming to the bottom of our website and reading this article. We hope that we could be useful to you. Goodbye always.",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Near Me Nail Salon",
+    "propuesta_valor": "Connect you with the top-rated nail salons in the area",
+    "ctas": [
+      "Start exploring now",
+      "Your perfect manicure is just a click away"
+    ]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": null,
+    "whatsapp": null,
+    "email": null,
+    "direccion": "Greenville, South Carolina",
+    "horarios": null
+  },
+  "redes": [],
+  "formularios": [
+    {
+      "proposito": "Contacto general",
+      "campos": []
+    }
+  ],
+  "footer": {
+    "contenido": "Links a Homepage, Corporate, Terms of Services, Privacy Policy, Cookie Policy, Contact",
+    "links": [
+      { "label": "Homepage", "url": "https://www.nailsalongreenville.com/" },
+      { "label": "Corporate", "url": "https://www.nailsalongreenville.com/corporate/" },
+      { "label": "Terms of Services", "url": "https://www.nailsalongreenville.com/terms-of-services/" },
+      { "label": "Privacy Policy", "url": "https://www.nailsalongreenville.com/privacy-policy/" },
+      { "label": "Cookie Policy", "url": "https://www.nailsalongreenville.com/cookie-policy-page/" },
+      { "label": "Contact", "url": "https://www.nailsalongreenville.com/contact/" }
+    ],
+    "copyright": "Copyright © 2024 - 2026 Nail Salon Greenville SC"
+  },
+  "tecnologia": "Sitio estático/SSR, posible backend PHP personalizado"
+}

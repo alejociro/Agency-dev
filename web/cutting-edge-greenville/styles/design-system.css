@@ -1,0 +1,431 @@
+/* BRIEF CREATIVO
+   Negocio    : Cutting Edge Mowing and Washing
+   Sector     : Lawn Care & Landscaping Services
+   Tono       : neo-orgánico con filo minimalista — naturaleza + precisión
+   Concepto   : "The Perfect Cut" — la obsesión por el detalle que separa
+                un jardín cuidado de un jardín transformado. El nombre
+                "Cutting Edge" se convierte en lenguaje visual: líneas
+                diagonales afiladas que cortan composiciones orgánicas.
+   Diferenciador visual: Hero fullscreen con macro-textura de césped
+                recién cortado como fondo, atravesado por una diagonal
+                chartreuse que divide la composición — el headline en
+                tipografía oversized se alinea al filo del corte.
+                Secciones alternas usan bordes diagonales (clip-path)
+                en lugar de divisiones rectas, evocando la línea de
+                un corte perfecto en el césped.
+   Tipografía : Fraunces (display) + Outfit (body)
+   Mood       : fresco · afilado · verde
+   Paleta base: #1B4332 · #2D6A4F · #D4F34E · #F5F1EB · #1A1A1A · #6B7280
+*/
+
+/* ============================================
+   DESIGN SYSTEM — Cutting Edge Greenville
+   ============================================ */
+
+@layer base, components, utilities;
+
+/* --- Custom Properties --- */
+:root {
+  /* Paleta principal — oklch for perceptual uniformity */
+  --color-primary:        oklch(0.32 0.08 160);   /* #1B4332 forest green */
+  --color-primary-dark:   oklch(0.24 0.06 160);   /* deeper */
+  --color-primary-light:  oklch(0.44 0.10 160);   /* #2D6A4F */
+  --color-primary-glow:   oklch(0.32 0.08 160 / 0.25);
+
+  /* Hex fallbacks for contexts that need them */
+  --color-primary-hex:    #1B4332;
+  --color-accent-hex:     #D4F34E;
+
+  --color-secondary:      oklch(0.44 0.10 160);
+  --color-secondary-dark: oklch(0.36 0.08 160);
+  --color-secondary-glow: oklch(0.44 0.10 160 / 0.25);
+
+  --color-accent:         oklch(0.90 0.20 110);   /* #D4F34E chartreuse */
+  --color-accent-dark:    oklch(0.80 0.18 110);
+  --color-accent-glow:    oklch(0.90 0.20 110 / 0.30);
+
+  --color-bg:             oklch(0.96 0.01 80);     /* #F5F1EB warm cream */
+  --color-surface:        oklch(0.93 0.01 80);     /* #EDE8E0 */
+  --color-surface-light:  oklch(0.98 0.005 80);    /* #FAF8F5 */
+  --color-text:           oklch(0.15 0.00 0);      /* #1A1A1A */
+  --color-text-muted:     oklch(0.55 0.02 250);    /* #6B7280 */
+  --color-text-on-dark:   oklch(0.96 0.01 80);
+  --color-text-on-primary:oklch(0.96 0.01 80);
+  --color-text-on-accent: oklch(0.15 0.00 0);
+
+  --color-border:         oklch(0.15 0.00 0 / 0.10);
+  --color-border-strong:  oklch(0.15 0.00 0 / 0.20);
+
+  /* Dark sections */
+  --color-dark-section:   oklch(0.32 0.08 160);
+  --color-hero-overlay:   oklch(0.32 0.08 160 / 0.80);
+
+  /* Espaciado (base 8px) */
+  --space-1:  0.5rem;
+  --space-2:  1rem;
+  --space-3:  1.5rem;
+  --space-4:  2rem;
+  --space-5:  2.5rem;
+  --space-6:  3rem;
+  --space-8:  4rem;
+  --space-10: 5rem;
+  --space-12: 6rem;
+  --space-16: 8rem;
+  --space-20: 10rem;
+
+  /* Tipografía fluida */
+  --text-hero:  clamp(3rem, 8vw, 7rem);
+  --text-h1:    clamp(2rem, 5vw, 4rem);
+  --text-h2:    clamp(1.5rem, 3vw, 2.5rem);
+  --text-h3:    clamp(1.2rem, 2vw, 1.75rem);
+  --text-body:  clamp(1rem, 1.2vw, 1.125rem);
+  --text-small: clamp(0.8rem, 1vw, 0.9rem);
+  --text-xs:    clamp(0.7rem, 0.8vw, 0.8rem);
+
+  /* Font families */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body:    'Outfit', system-ui, sans-serif;
+
+  /* Font weights */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* Line heights */
+  --leading-tight: 1.1;
+  --leading-snug:  1.3;
+  --leading-body:  1.6;
+  --leading-loose: 1.8;
+
+  /* Border radius */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-full: 9999px;
+
+  /* Secciones */
+  --section-padding:   clamp(5rem, 10vw, 10rem);
+  --container-max:     1200px;
+  --container-padding: clamp(1rem, 5vw, 2rem);
+
+  /* Shadows — branded with primary glow */
+  --shadow-sm:   0 1px 3px oklch(0 0 0 / 0.06);
+  --shadow-md:   0 4px 12px oklch(0 0 0 / 0.08),
+                 0 2px 8px var(--color-primary-glow);
+  --shadow-lg:   0 8px 30px oklch(0 0 0 / 0.10),
+                 0 4px 16px var(--color-primary-glow);
+  --shadow-xl:   0 16px 50px oklch(0 0 0 / 0.12),
+                 0 8px 24px var(--color-primary-glow);
+  --shadow-card: 0 4px 24px -4px var(--color-primary-glow),
+                 0 1px 4px oklch(0 0 0 / 0.06);
+  --shadow-hover:0 16px 48px -8px var(--color-primary-glow),
+                 0 4px 12px oklch(0 0 0 / 0.08);
+  --shadow-btn:  0 4px 16px var(--color-accent-glow);
+
+  /* Transitions */
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast:   150ms;
+  --duration-normal: 300ms;
+  --duration-slow:   500ms;
+
+  /* Diagonal angle for clip-paths */
+  --diagonal-angle: 4deg;
+  --diagonal-height: 80px;
+}
+
+/* --- Base Layer --- */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    font-weight: var(--weight-regular);
+    line-height: var(--leading-body);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: var(--weight-bold);
+    line-height: var(--leading-tight);
+    color: var(--color-text);
+    text-wrap: balance;
+  }
+
+  h1 { font-size: var(--text-h1); }
+  h2 { font-size: var(--text-h2); }
+  h3 { font-size: var(--text-h3); }
+
+  p {
+    text-wrap: pretty;
+    max-width: 65ch;
+  }
+
+  a {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    transition: color var(--duration-fast) var(--ease-out);
+
+    &:hover {
+      color: var(--color-accent-dark);
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Focus visible for accessibility */
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Selection */
+  ::selection {
+    background-color: var(--color-accent);
+    color: var(--color-text-on-accent);
+  }
+}
+
+/* --- Component Layer --- */
+@layer components {
+  /* Container */
+  .container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+  }
+
+  /* Section spacing */
+  .section {
+    padding-block: var(--section-padding);
+  }
+
+  /* Diagonal section dividers */
+  .diagonal-top {
+    clip-path: polygon(0 var(--diagonal-height), 100% 0, 100% 100%, 0 100%);
+    margin-top: calc(var(--diagonal-height) * -1);
+    padding-top: calc(var(--section-padding) + var(--diagonal-height));
+  }
+
+  .diagonal-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--diagonal-height)), 0 100%);
+    padding-bottom: calc(var(--section-padding) + var(--diagonal-height));
+  }
+
+  .diagonal-both {
+    clip-path: polygon(0 var(--diagonal-height), 100% 0, 100% calc(100% - var(--diagonal-height)), 0 100%);
+    margin-top: calc(var(--diagonal-height) * -1);
+    padding-top: calc(var(--section-padding) + var(--diagonal-height));
+    padding-bottom: calc(var(--section-padding) + var(--diagonal-height));
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    padding: 0.875rem 2rem;
+    font-family: var(--font-body);
+    font-size: var(--text-small);
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all var(--duration-normal) var(--ease-out);
+    text-decoration: none;
+    line-height: 1;
+    min-height: 44px;
+  }
+
+  .btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-text-on-accent);
+
+    &:hover {
+      background-color: var(--color-accent-dark);
+      color: var(--color-text-on-accent);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px var(--color-accent-glow);
+    }
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    color: var(--color-text-on-dark);
+    border: 2px solid var(--color-text-on-dark);
+
+    &:hover {
+      background-color: var(--color-text-on-dark);
+      color: var(--color-primary);
+    }
+  }
+
+  .btn-outline-dark {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+
+    &:hover {
+      background-color: var(--color-primary);
+      color: var(--color-text-on-primary);
+    }
+  }
+
+  /* Section heading pattern */
+  .section-label {
+    font-family: var(--font-body);
+    font-size: var(--text-small);
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-accent-dark);
+    margin-bottom: var(--space-2);
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 2px;
+      background-color: var(--color-accent);
+    }
+  }
+
+  .section-label--light {
+    color: var(--color-accent);
+
+    &::before {
+      background-color: var(--color-accent);
+    }
+  }
+
+  /* Card base — container query enabled */
+  .card {
+    container-type: inline-size;
+    background-color: var(--color-surface-light);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: transform var(--duration-normal) var(--ease-out),
+                box-shadow var(--duration-normal) var(--ease-out);
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    @container (min-width: 400px) {
+      .card-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-4);
+      }
+    }
+  }
+
+  /* Grain overlay — subtle premium texture */
+  .grain {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 50;
+      opacity: 0.035;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      mix-blend-mode: overlay;
+    }
+  }
+
+  /* Gradient mesh — for accent backgrounds */
+  .mesh-bg {
+    background:
+      radial-gradient(ellipse at 20% 50%, var(--color-primary-glow) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 20%, var(--color-accent-glow) 0%, transparent 50%),
+      var(--color-bg);
+  }
+
+  /* Decorative divider */
+  .divider {
+    height: 1px;
+    border: none;
+    background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  }
+
+  .divider--accent {
+    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+  }
+}
+
+/* --- Utility Layer --- */
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-accent), var(--color-primary-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-dark {
+    background-color: var(--color-dark-section);
+    color: var(--color-text-on-dark);
+  }
+
+  .bg-surface {
+    background-color: var(--color-surface);
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "cliente": "Kara Day Spa",
+  "url_auditada": "https://karaspa.com/",
+  "sector": "Wellness / Day Spa",
+  "benchmark_aplicado": "Servicio local (salud, legal) — el sector wellness/spa encaja como servicio local orientado a salud y bienestar personal. Benchmarks: SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 50. Nota: requiere_render=true limita score técnico a máximo 60.",
+  "fecha": "2026-04-03",
+  "scores": {
+    "seo": 42,
+    "ux_ui": 48,
+    "marketing": 38,
+    "contenido": 52,
+    "tecnico": 35,
+    "total": 43
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title incluye keywords de servicio relevantes: Massage, Facials, Wraps, Waxing, Nail Care",
+        "Meta description presente y descriptiva con servicios principales mencionados",
+        "CTAs 'Book Online' y 'Gift Certificates' usan texto descriptivo y orientado a acción"
+      ],
+      "negativos": [
+        "H1 'Experience the Kara Difference' no contiene keywords de servicio ni localización (Greenville, SC)",
+        "No se detectan imágenes con alt text — el scraping no encontró ninguna imagen accesible",
+        "Meta keywords ausente (campo null)",
+        "Estructura de headings no verificable por bloqueo de WAF — el sitio no es crawleable correctamente",
+        "No hay evidencia de schema markup específico para LocalBusiness o Spa más allá del JSON-LD genérico"
+      ],
+      "recomendaciones": [
+        { "accion": "Reescribir H1 incluyendo keyword principal y localización: 'Day Spa & Massage in Downtown Greenville, SC'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir alt text descriptivo con keywords a todas las imágenes del sitio", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar schema markup LocalBusiness y HealthAndBeautyBusiness con servicios, precios y horarios", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Crear páginas individuales optimizadas por servicio con H1 único y meta description específica por página", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Agregar blog con contenido local sobre wellness en Greenville para captar tráfico orgánico long-tail", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores definida con tonos teal/cyan (#226D7A, #22B8D1) coherentes con sector wellness",
+        "Navegación clara con 14 items organizados por tipo de servicio",
+        "Divi Theme proporciona estructura responsive por defecto"
+      ],
+      "negativos": [
+        "4 familias tipográficas cargadas (Open Sans, Poppins, Rubik, Lato) — excesivo, genera inconsistencia visual y penaliza rendimiento",
+        "Color de texto principal #666666 sobre fondo blanco tiene contraste insuficiente (ratio ~5.9:1 para texto grande, borderline para texto pequeño)",
+        "Navegación con 14 items sin agrupación visible — sobrecarga cognitiva para el usuario",
+        "No hay CTAs visibles en las secciones de servicios — todas tienen cta: null",
+        "Sin imágenes accesibles en ninguna sección — experiencia visual plana para un negocio que vende experiencias sensoriales"
+      ],
+      "recomendaciones": [
+        { "accion": "Reducir tipografías a máximo 2 familias: una para headings (Poppins) y una para cuerpo (Open Sans)", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agrupar navegación en mega-menu o dropdown: Services (con subcategorías), About, Contact", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar CTA 'Book Now' visible en cada sección de servicio", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Incorporar fotografía profesional del spa, tratamientos y ambiente para transmitir la experiencia", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Oscurecer color de texto a #333333 para mejorar legibilidad y cumplir WCAG AA", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Propuesta de valor articula diferenciadores: ubicación downtown, servicios completos incluyendo quiropráctica",
+        "Precios publicados en múltiples servicios genera transparencia y confianza",
+        "Sección 'How to Spa' reduce fricción para clientes nuevos"
+      ],
+      "negativos": [
+        "Slogan 'Experience the Kara Difference' es genérico — no comunica qué diferencia concreta ofrece",
+        "Zero prueba social: no hay testimonios, reseñas, calificaciones ni conteo de clientes",
+        "No hay sección hero con CTA prominente — el hero carece de botón de acción",
+        "Sin urgencia ni oferta visible que incentive la conversión inmediata",
+        "Email corporativo usa Gmail (karaspa1@gmail.com) — resta profesionalismo"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar sección de testimonios con reseñas reales de Google/Facebook (el negocio tiene presencia en ambas plataformas)", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir CTA prominente en hero: 'Book Your Escape' con botón visible y contrastante", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reescribir slogan para comunicar beneficio concreto: 'Greenville's Full-Service Wellness Retreat — Massage, Facials & Chiropractic Under One Roof'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Configurar email con dominio propio (info@karaspa.com) para mayor credibilidad", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Crear oferta para primera visita o paquete introductorio visible en homepage", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Descripciones de servicios con precios específicos (faciales $80-$180, masajes $110-$150, pedicure $90)",
+        "Información de contacto completa: teléfono, email, dirección física y horarios",
+        "Paquetes bien estructurados con nombre, precio y contenido detallado (Ultimate $443, Wellness $184.50, Escape $133)"
+      ],
+      "negativos": [
+        "Varias secciones de servicio con contenido excesivamente genérico: 'Body wraps and specialty body treatments available' no describe nada concreto",
+        "Sección Hair Removal/Waxing con descripción mínima de una línea sin servicios ni precios específicos",
+        "No hay FAQ ni sección que aborde objeciones comunes (cancelaciones, qué esperar, contraindicaciones)",
+        "'How to Spa' mencionada pero sin contenido real en el scraping",
+        "Sin descripción del equipo/terapeutas — la sección Staff solo referencia una foto grupal"
+      ],
+      "recomendaciones": [
+        { "accion": "Expandir descripciones de Body Treatments y Hair Removal con servicios específicos, duración y precios", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear sección FAQ con preguntas frecuentes: política de cancelación, preparación pre-tratamiento, contraindicaciones", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar bios individuales del equipo con especialidades y certificaciones", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Completar contenido de 'How to Spa' con guía visual paso a paso para primera visita", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Agregar sección 'Antes y Después' o galería de resultados para faciales y tratamientos corporales", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "WordPress + Divi es un stack ampliamente soportado con actualizaciones regulares",
+        "Yoast SEO instalado proporciona herramientas básicas de optimización",
+        "Schema.org JSON-LD implementado para datos estructurados"
+      ],
+      "negativos": [
+        "WAF bloquea requests no-browser con 403 — afecta crawlers de buscadores y herramientas de auditoría",
+        "Sitio requiere render JavaScript completo — no es crawleable estáticamente, penaliza SEO",
+        "Divi Theme v4.27.6 carga CSS/JS excesivo — frameworks page builder generan código inflado",
+        "4 fuentes Google Fonts cargadas simultáneamente impactan rendimiento (múltiples HTTP requests)",
+        "No se detectan integraciones de booking/reservas online funcionales"
+      ],
+      "recomendaciones": [
+        { "accion": "Configurar WAF para permitir crawlers legítimos (Googlebot, Bingbot) sin restricciones", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Migrar a stack moderno (Astro + Tailwind) para eliminar dependencia de Divi y mejorar rendimiento drásticamente", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Integrar sistema de reservas online (Vagaro, Acuity, o Square Appointments) para conversión directa", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reducir fuentes a 2 familias y usar font-display: swap para optimizar carga", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Implementar pre-rendering o SSG para que el contenido sea accesible sin JavaScript", "prioridad": "media", "tipo": "mejora_estructural" }
+      ],
+      "stack_actual": "WordPress + Divi Theme v4.27.6, Google Fonts, Yoast SEO, jQuery, Schema.org JSON-LD",
+      "stack_recomendado": "Astro + Tailwind CSS — sitio multi-página con contenido mayormente estático, ideal para SSG con rendimiento superior",
+      "integraciones": ["Vagaro o Acuity Scheduling para reservas", "Google Business Profile para reseñas", "Mailchimp o similar para email marketing", "Google Analytics 4"],
+      "complejidad": "media"
+    }
+  },
+  "quick_wins": [
+    "Reescribir H1 con keywords de servicio y localización: 'Day Spa & Massage in Downtown Greenville'",
+    "Agregar CTA prominente en hero section con botón 'Book Your Escape'",
+    "Incorporar 3-5 testimonios reales de Google/Facebook en homepage",
+    "Expandir descripciones de servicios genéricos (Body Treatments, Hair Removal) con precios y detalles",
+    "Configurar WAF para permitir crawlers de buscadores (Googlebot, Bingbot)"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Reescribir H1 con keywords y localización",
+      "Añadir CTA 'Book Your Escape' en hero",
+      "Agregar testimonios reales de clientes",
+      "Configurar WAF para crawlers legítimos",
+      "Reducir tipografías a 2 familias (Poppins + Open Sans)"
+    ],
+    "mes_1": [
+      "Migrar sitio a Astro + Tailwind eliminando Divi",
+      "Integrar sistema de reservas online (Vagaro/Acuity)",
+      "Crear sección FAQ con política de cancelación y preparación",
+      "Reorganizar navegación en estructura agrupada",
+      "Agregar fotografía profesional del spa y tratamientos",
+      "Configurar email con dominio propio",
+      "Agregar bios individuales del equipo"
+    ],
+    "largo_plazo": [
+      "Crear blog con contenido local sobre wellness en Greenville",
+      "Implementar galería de antes/después para tratamientos",
+      "Desarrollar programa de email marketing con ofertas estacionales",
+      "Crear landing pages por servicio optimizadas para búsqueda local"
+    ]
+  },
+  "resumen_ejecutivo": "Kara Day Spa tiene un sitio WordPress/Divi que no es crawleable correctamente (WAF bloquea y requiere render JS), penalizando severamente su visibilidad en buscadores y su capacidad de convertir visitantes. La mayor oportunidad está en la combinación de contenido de servicios con precios ya existente, presencia en redes sociales y ubicación premium en downtown Greenville — activos que un rediseño moderno con booking integrado puede capitalizar inmediatamente. El próximo paso es migrar a un stack SSG (Astro + Tailwind) con sistema de reservas online, testimonios reales y SEO local optimizado para capturar búsquedas de 'spa near me' en Greenville.",
+  "stack_para_web": {
+    "framework": "astro",
+    "estilos": "tailwind",
+    "extras": ["alpine.js para interactividad ligera", "integración con plataforma de booking externa", "schema markup LocalBusiness + HealthAndBeautyBusiness"],
+    "justificacion": "Complejidad media: sitio multi-página (14 secciones de navegación) con contenido mayormente estático pero necesidad de integración de booking. Astro genera HTML estático con hidratación selectiva, resolviendo el problema actual de crawleabilidad. Tailwind elimina el CSS inflado de Divi. Alpine.js cubre las interacciones ligeras (menú mobile, tabs de servicios) sin necesidad de React."
+  }
+}

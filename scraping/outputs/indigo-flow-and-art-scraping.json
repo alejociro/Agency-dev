@@ -1,0 +1,227 @@
+{
+  "negocio": "Indigo Flow and Art",
+  "url": "https://www.indigoflowandart.com/",
+  "sector": "Wellness / Arte (Estudio de Pilates Clásico + Galería de Arte)",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Indigo",
+    "description": null,
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#2e3a59",
+    "secundario": "#ffffff",
+    "acento": "#4a6fa5",
+    "fondo": "#ffffff",
+    "texto": "#2e3a59",
+    "otros": []
+  },
+  "logo": {
+    "url": null,
+    "descripcion": "Logo basado en texto 'Indigo' en la navegación del header",
+    "posicion": "header",
+    "colores": []
+  },
+  "tipografias": [
+    {
+      "nombre": null,
+      "uso": "Títulos y cuerpo",
+      "peso": "400-700",
+      "tamanio_aprox": null
+    }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://www.indigoflowandart.com/" },
+    { "label": "Classical Pilates", "url": "https://www.indigoflowandart.com/classicalpilates" },
+    { "label": "Fine Art", "url": "https://www.indigoflowandart.com/indigoart" },
+    { "label": "About Us", "url": "https://www.indigoflowandart.com/about-us" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "The Art of Movement",
+      "contenido": "Indigo Flow and Art combines Classical Pilates and Fine Art into a space that invites your creativity and vitality to bloom.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/050af7b3-0fc6-4a5a-99ee-7ef3db93bb3b/IndigoFlowArt-31.jpg",
+          "alt": null,
+          "descripcion": "Fotografía del espacio del estudio/galería",
+          "tipo": "jpg",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "contenido",
+      "titulo": null,
+      "contenido": "Pilates registration is located in the vibrant gallery of local artist and co-owner, Julie Hughes, at 1272 Pendleton Street. Following check-in, walk through our old French doors into the beautiful, light-filled Pilates room where a fully equipped Gratz Pilates studio awaits.\n\nThe Pilates studio and Art Gallery are open by appointment. Please see contact information below to schedule a Pilates session or gallery walk-through.\n\nPILATES STUDIO: Katie at 864.884.5606\n\nART GALLERY: Julie at 864.884.5607",
+      "cta": "Katie at 864.884.5606 / Julie at 864.884.5607",
+      "imagenes": []
+    },
+    {
+      "tipo": "pagina-pilates",
+      "titulo": "Classical Pilates",
+      "contenido": "Indigo Pilates is a Classical Pilates studio instructing students in Joseph Pilates' original Contrology Method.\n\nAll students at Indigo begin with private sessions to understand the fundamentals of 'connection' before progressing through the system.\n\nHow To Begin:\nStep 1: Review pricing and time-slot tabs; calendar books monthly and becomes available when recurring students cancel.\nStep 2: Text Katie at 864.884.5606 for upcoming availabilities within the month to reserve your time-slot.\nStep 3: Arrive at the studio 10 mins prior to first appointment to complete paperwork and pay for session.",
+      "cta": "Text Katie at 864.884.5606 for openings",
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/1590762960461-O5STIR14MJTSYXOD60VK/IndigoFlowArt-23.jpg",
+          "alt": null,
+          "descripcion": "Imagen del estudio de Pilates",
+          "tipo": "jpg",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/7797301b-9933-440e-84b8-7c4091188fcb/website+2.jpg",
+          "alt": null,
+          "descripcion": "Imagen del estudio de Pilates",
+          "tipo": "jpg",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/2799c042-f6c1-4932-a2b9-d86c0dd7ff6d/website+3.JPG",
+          "alt": null,
+          "descripcion": "Imagen del estudio de Pilates",
+          "tipo": "jpg",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/7fa913ce-6f70-427f-9603-217c69971277/DSCF0419_websize.jpg",
+          "alt": null,
+          "descripcion": "Imagen de la instructora Katie Hughes Ryan",
+          "tipo": "jpg",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "precios",
+      "titulo": "Pricing",
+      "contenido": "New Student Special:\n- 3 Intro Privates: $210 (new students only)\n\nDrop-In Sessions:\n- 1 Private: $95\n- 1 Duet: $120 ($60/student)\n- Small Group: $150 ($50/student)\n\n10-Session Packages:\n- 10 Private Sessions: $750\n- 10 Duet Sessions: $550 (per student)\n- 10 Small Group Sessions: $400 (per student)\n\nAll rates listed are the 'cash price' accepted via cash, check or zelle. All Debit/Credit cards purchases incur a 3% transaction fee. All sales final.",
+      "cta": "Please text Katie at 864.884.5606 for openings",
+      "imagenes": []
+    },
+    {
+      "tipo": "horarios",
+      "titulo": "Time Slots Available",
+      "contenido": "Monday–Thursday:\n- 7:15am\n- 8:15am\n- 9:15am\n- 10:15am\n- 11:15am\n\nStudio calendar is booked out one month at a time. Please text Katie at 864.884.5606 for this month's openings!",
+      "cta": "Text Katie at 864.884.5606",
+      "imagenes": []
+    },
+    {
+      "tipo": "instructor",
+      "titulo": "Katie Hughes Ryan",
+      "contenido": "Fully Certified Classical Pilates Instructor (Power Pilates, Charlotte & NYC). 500-hour Registered Yoga Instructor. 300-hour AYAMA Applied Yoga Anatomy Muscle Activation Instructor. Background includes ballet, contemporary dance, competitive figure-skating, yoga, and Pilates. Emphasizes form-focused, athletic yet attainable approach.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "pagina-arte",
+      "titulo": "Fine Art",
+      "contenido": "Through my work, I strive to combine the every-day with the ephemeral. To capture real moments that are viewed from a surreal lens.\n\nMy themes are not concerned with what the world should be, but rather with what the world is—while choosing to see reality with slight distortions.\n\nI strive to communicate the essence, power and movement of a scene or a person.\n\nMy recent works are all about motion, specifically motion as we see it in the art of bicycle racing.\n\nIt's all about speed, motion, and gravity-defying angles, and how such intangible things can be put on canvas.",
+      "cta": "Schedule a Viewing",
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/1590769141691-7TO0ASKD4227B2TP5988/_MG_9679.jpg",
+          "alt": null,
+          "descripcion": "Obra de arte de Julie Hughes",
+          "tipo": "jpg",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/c03de3e3-6c71-463e-b152-a2b8afc7e144/0216.ubj.firstlook.indigoyogastudio.7.williamcrooks.jpg",
+          "alt": null,
+          "descripcion": "Interior de la galería de arte Indigo",
+          "tipo": "jpg",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "horarios-galeria",
+      "titulo": "Gallery Hours",
+      "contenido": "Weekly Hours:\nMonday-Sunday by Appointment\n\nSpecial Event Hours:\nMonthly First Friday Art Crawl 6-9pm\nAnnual Open Studio Tour, November 12-13, SAT 10am-6pm & SUN 12pm-6pm",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "pagina-about",
+      "titulo": "About Us",
+      "contenido": "Directions to Indigo\nThe Village of West Greenville\n1270 Pendleton Street\nGreenville, SC 29611\n\n\"When we invest in women and girls, we invest in the people who invest in everyone else.\" — Melinda Gates",
+      "cta": "Directions-to-Indigo-Flow-and-Art.pdf",
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/1590883589936-SE3E8XFLOZB780E1QNQL/IMG_3775.jpg",
+          "alt": null,
+          "descripcion": "Imagen principal de la página About",
+          "tipo": "jpg",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/1590886166368-Z8YY187B24FJT4ORK6RS/IMG_9403+2.JPG",
+          "alt": null,
+          "descripcion": "Imagen secundaria del estudio",
+          "tipo": "jpg",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "equipo",
+      "titulo": "Co-Owners",
+      "contenido": "Katie Hughes Ryan — CO-OWNER, Indigo Pilates\nCertified Classical Pilates Instructor, 500-hour Registered Yoga Instructor, 300-hour AYAMA instructor. Background includes ballet, contemporary dance, figure-skating, yoga and Pilates. Specializes in form-focused, athletic movement with emphasis on Joseph Pilates' Contrology methodology.\n\nJulie Hughes — CO-OWNER, Indigo Art\nArtist focusing on capturing everyday moments through surreal lens. Recent works emphasize motion, particularly bicycle racing and human figure painting. Seeks to convey speed, movement, and energy in tangible visual form.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/30e0bd66-493f-469f-921c-669be787a11e/WAC_7375.jpg",
+          "alt": null,
+          "descripcion": "Retrato de Katie Hughes Ryan",
+          "tipo": "jpg",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/2d5e49a2-3b49-46f2-9bce-3a26f978ccdb/mom+art+original.JPG",
+          "alt": null,
+          "descripcion": "Retrato de Julie Hughes",
+          "tipo": "jpg",
+          "dimensiones": null
+        }
+      ]
+    }
+  ],
+  "textos_clave": {
+    "slogan": "The Art of Movement",
+    "propuesta_valor": "Indigo Flow and Art combines Classical Pilates and Fine Art into a space that invites your creativity and vitality to bloom.",
+    "ctas": [
+      "Text Katie at 864.884.5606",
+      "Julie at 864.884.5607",
+      "Schedule a Viewing",
+      "hello.indigoflowandart@gmail.com"
+    ]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(864) 884-5606",
+    "whatsapp": null,
+    "email": "hello.indigoflowandart@gmail.com",
+    "direccion": "1272 Pendleton Street, Greenville, SC 29611",
+    "horarios": "By appointment only. Monday-Thursday Pilates: 7:15am-11:15am. Gallery: Monday-Sunday by appointment. First Friday Art Crawl 6-9pm."
+  },
+  "redes": [
+    { "plataforma": "Instagram", "url": "https://www.instagram.com/indigoflowart" },
+    { "plataforma": "Facebook", "url": "https://www.facebook.com/indigoflowart" }
+  ],
+  "formularios": [],
+  "footer": {
+    "contenido": "1272 Pendleton Street Greenville SC, 29611\n(864) 884-5606 (text only, please)\nEmail: hello.indigoflowandart@gmail.com",
+    "links": [
+      "https://www.instagram.com/indigoflowart",
+      "https://www.facebook.com/indigoflowart"
+    ],
+    "copyright": null
+  },
+  "tecnologia": "Squarespace v7.1, reCAPTCHA Enterprise, Moment.js, CSS Grid"
+}

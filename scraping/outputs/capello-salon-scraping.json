@@ -1,0 +1,168 @@
+{
+  "negocio": "Capello Salon and Suites",
+  "url": "https://www.capello-salon.com/home-1",
+  "sector": "Hair Salon / Beauty Salon / Boutique",
+  "requiere_render": true,
+  "nota_scraping": "Sitio renderizado por JS (Wix Thunderbolt SPA). Datos extraídos combinando fuentes externas (Vagaro, Yelp, QuickLocal, Locally, Instagram). Algunos datos visuales pueden estar incompletos. Considerar scraping con browser headless para obtener imágenes y contenido exacto de cada sección.",
+  "meta": {
+    "title": "Capello Salon and Suites | Hair Salon | Beauty Salon | Women's Boutique | Birdie Boutique | Greenville, SC | Downtown Greenville, SC",
+    "description": "Helping women feel confident with expert color, scalp care + boutique finds. Luxury Hair & Scalp Lounge in Greenville, SC. Family-owned salon serving the Greenville community for over 20 years.",
+    "keywords": "hair salon, beauty salon, balayage, foilayage, hair color, scalp lounge, boutique, Greenville SC, downtown Greenville, extensions, bridal hair"
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#ED8CC2",
+    "secundario": "#FF7F6E",
+    "acento": "#D4956A",
+    "fondo": "#FFFDF8",
+    "texto": "#5C4A3A",
+    "otros": ["#F5F0EB", "#E8DDD4", "#C9B8A8", "#8B7565", "#3D2E22"]
+  },
+  "logo": {
+    "url": null,
+    "descripcion": "Logo de Capello Salon and Suites",
+    "posicion": "header",
+    "colores": []
+  },
+  "tipografias": [
+    {
+      "nombre": "Brandon Grotesque Light",
+      "uso": "headings / display",
+      "peso": "300",
+      "tamanio_aprox": "responsive (vw units)"
+    },
+    {
+      "nombre": "Avenir Light",
+      "uso": "body / paragraphs",
+      "peso": "300",
+      "tamanio_aprox": "responsive (vw units)"
+    }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://www.capello-salon.com/" },
+    { "label": "About / Book Online", "url": "https://www.capello-salon.com/about" },
+    { "label": "Service Menu", "url": "https://www.capello-salon.com/service-menu" },
+    { "label": "Pricing", "url": "https://www.capello-salon.com/pricing" },
+    { "label": "Scalp Lounge", "url": "https://www.capello-salon.com/scalplounge" },
+    { "label": "Meet the Team", "url": "https://www.capello-salon.com/meet-the-team" },
+    { "label": "Reviews", "url": "https://www.capello-salon.com/reviews" },
+    { "label": "Contact", "url": "https://www.capello-salon.com/contact" },
+    { "label": "Blog", "url": "https://www.capello-salon.com/blog" },
+    { "label": "Gift Certificates", "url": "https://www.capello-salon.com/giftcertificates" },
+    { "label": "Parties", "url": "https://www.capello-salon.com/parties" },
+    { "label": "Birdie Boutique", "url": "https://www.capello-salon.com/birdie-boutique" },
+    { "label": "New Guests", "url": "https://www.capello-salon.com/new-guests" },
+    { "label": "Policies", "url": "https://www.capello-salon.com/policies" },
+    { "label": "Join Our Team", "url": "https://www.capello-salon.com/join-our-team" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Capello Salon and Suites",
+      "contenido": "Hair Salon | Beauty Salon | Women's Boutique | Birdie Boutique | Greenville, SC | Downtown Greenville, SC. Helping women feel confident with expert color, scalp care + boutique finds.",
+      "cta": "Book Online",
+      "imagenes": [
+        {
+          "url": "https://quicklocal.com/wp-content/uploads/2024/08/AF1QipN9kk0tecHaYclhs39S0MQW3dnGq8mc8o8-K51aw800-h500-k-no.jpeg",
+          "alt": "Capello Salon exterior",
+          "descripcion": "Vista exterior del salón Capello en 102 Mills Ave, Greenville SC",
+          "tipo": "hero",
+          "dimensiones": "800x500"
+        }
+      ]
+    },
+    {
+      "tipo": "about",
+      "titulo": "About Capello Salon",
+      "contenido": "A preferred salon located in downtown Greenville & Travelers Rest, SC. For over 20 years, our team has been creating effortlessly beautiful hair for the Greenville community. Family-owned and operated with a reputation for a welcoming atmosphere, exceptional hair care and pleasing customer service experiences. Both Capello salons are very classy and clean.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "services",
+      "titulo": "Services",
+      "contenido": "Specialty color services including hand painting, balayage, foilayage, highlighting and lowlighting. Precision short and long haircuts, dimensional color, perms, and chemical straightening. Haircutting for the entire family, the latest in color techniques as well as extensions and other chemical services. Barbering, bridal services, blowouts, and facial waxing. 55 services available across Hair, Waxing, and Hair Extensions categories.",
+      "cta": "View Service Menu",
+      "imagenes": []
+    },
+    {
+      "tipo": "services",
+      "titulo": "Capello Scalp Lounge",
+      "contenido": "The Capello Scalp Lounge offers targeted solutions for scalp health, thinning hair, and hair loss through advanced trichology-based treatments. Luxurious head spa treatments, scalp facials, and head massages for relaxation and rejuvenation. A new spa-like scalp lounge at locations in Greenville or Travelers Rest.",
+      "cta": "Learn More",
+      "imagenes": []
+    },
+    {
+      "tipo": "boutique",
+      "titulo": "Birdie Boutique",
+      "contenido": "Birdie is a boutique nestled into the walls of the salon, offering jewelry, baby blankets, purses, candles, hair accessories and tote bags to little girls hair bows. Complimentary gift wrap available.",
+      "cta": "Shop Birdie",
+      "imagenes": []
+    },
+    {
+      "tipo": "team",
+      "titulo": "Meet the Team",
+      "contenido": "Owner: Chelsea McBride. Team members include Jamie, Hannah, Courtney, Lindsey, Debi, Autumn, Heather, Olivia, Billy, Lilly, Susannah, Robin, and Chelsea. Apprentice program also available.",
+      "cta": "Meet the Team",
+      "imagenes": []
+    },
+    {
+      "tipo": "reviews",
+      "titulo": "Reviews",
+      "contenido": "5.0 rating across all categories (Venue, Punctuality, Value, Service) on Vagaro. 12 reviews on Yelp. Clients frequently commend Capello Salon for its talented staff who provide excellent service quality.",
+      "cta": "Read Reviews",
+      "imagenes": []
+    },
+    {
+      "tipo": "cta",
+      "titulo": "Book Your Appointment",
+      "contenido": "Online booking available through Vagaro. Walk-ins also accepted.",
+      "cta": "Book Now",
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Helping women feel confident with expert color, scalp care + boutique finds",
+    "propuesta_valor": "For over 20 years, creating effortlessly beautiful hair for the Greenville community. Family-owned salon with specialty color, scalp care, and boutique shopping under one roof.",
+    "ctas": ["Book Online", "View Service Menu", "Meet the Team", "Shop Birdie Boutique", "Read Reviews", "Gift Certificates"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(864) 271-7155",
+    "whatsapp": null,
+    "email": "facebook@capello-salon.com",
+    "direccion": "102 Mills Ave, Greenville, SC 29605",
+    "horarios": "Monday 9:00 AM - 4:00 PM | Tuesday 9:00 AM - 6:00 PM | Wednesday 9:00 AM - 6:00 PM | Thursday 9:00 AM - 6:00 PM | Friday 9:00 AM - 4:00 PM | Saturday 9:00 AM - 2:00 PM | Sunday Closed"
+  },
+  "redes": [
+    { "plataforma": "Instagram", "url": "https://www.instagram.com/capello_salon/" },
+    { "plataforma": "Facebook", "url": "https://www.facebook.com/capellosalon.102/" },
+    { "plataforma": "Yelp", "url": "https://www.yelp.com/biz/capello-salon-and-scalp-lounge-greenville-2" },
+    { "plataforma": "Vagaro", "url": "https://www.vagaro.com/capellosalon1" }
+  ],
+  "formularios": [
+    {
+      "proposito": "Reserva de cita online",
+      "campos": ["servicio", "estilista", "fecha", "hora"]
+    },
+    {
+      "proposito": "Cuestionario para nuevos clientes",
+      "campos": ["nombre", "contacto", "historial capilar", "preferencias"]
+    },
+    {
+      "proposito": "Contacto general",
+      "campos": ["nombre", "email", "mensaje"]
+    }
+  ],
+  "footer": {
+    "contenido": "Capello Salon and Suites. 102 Mills Ave, Greenville, SC 29605. (864) 271-7155. Segunda ubicación en Travelers Rest, SC — (864) 689-1101.",
+    "links": [
+      "https://www.capello-salon.com/policies",
+      "https://www.capello-salon.com/contact",
+      "https://www.instagram.com/capello_salon/",
+      "https://www.facebook.com/capellosalon.102/"
+    ],
+    "copyright": "Capello Salon and Suites"
+  },
+  "tecnologia": "Wix (Thunderbolt renderer v1.17110.0, React-based SPA)"
+}

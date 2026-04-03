@@ -1,0 +1,248 @@
+{
+  "cliente": "Cutting Edge Mowing and Washing",
+  "url_auditada": "https://www.cuttingedgegreenville.com/",
+  "sector": "Lawn Care & Landscaping Services",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Técnico: 50. Aplicado porque es un negocio de servicios locales (lawn care/landscaping) que depende de visibilidad geográfica y confianza del cliente local, similar al perfil de servicios profesionales locales.",
+  "fecha": "2026-04-02",
+  "scores": {
+    "seo": 52,
+    "ux_ui": 35,
+    "marketing": 58,
+    "contenido": 48,
+    "tecnico": 38,
+    "total": 46
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title incluye keyword principal 'Lawn Mowing and Landscaping' + ubicación 'Greenville SC' + marca",
+        "Meta description presente con keywords relevantes y servicios mencionados",
+        "Imágenes tienen alt text descriptivo con keywords locales (ej: 'Lawn Mowing Services Greenville SC')",
+        "CTAs con texto descriptivo y verbos de acción ('Contact Us today about your Lawn', 'Request Quote')"
+      ],
+      "negativos": [
+        "H1 débil: 'Welcome TO Cutting Edge Mowing and Washing' — no contiene keyword principal ni ubicación, capitalización inconsistente",
+        "No hay keywords en meta tags (campo keywords ausente)",
+        "La propuesta de valor no aparece en los primeros 200px — el hero lleva un mensaje genérico de bienvenida en lugar del beneficio clave",
+        "Estructura de headings probablemente plana — sin jerarquía clara H1→H2→H3 visible en las secciones",
+        "Sección 'about' sin título/heading — bloque de texto largo sin estructura"
+      ],
+      "recomendaciones": [
+        {
+          "accion": "Reescribir H1 con keyword principal + ubicación: 'Professional Lawn Care & Landscaping in Greenville, SC'",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Mover la propuesta de valor al hero — reemplazar 'Welcome TO...' con el beneficio diferenciador",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Agregar headings H2 a cada sección (About, Testimonials, Service Area) para crear jerarquía semántica",
+          "prioridad": "media",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Añadir schema markup LocalBusiness con datos estructurados de servicios, área y horarios",
+          "prioridad": "media",
+          "tipo": "mejora_estructural"
+        }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Navegación clara con estructura lógica: Home, Services (dropdown), About, Blog, Contact + CTA 'Request Quote'",
+        "Cards de servicios con imagen + descripción + CTA proporcionan estructura visual reconocible",
+        "Testimonios con fotos de clientes reales añaden credibilidad visual"
+      ],
+      "negativos": [
+        "Paleta extremadamente limitada y sin identidad: solo #32373c (gris oscuro), #000000 y #ffffff — sin color de marca ni acento",
+        "Una sola tipografía genérica (Arial) sin jerarquía tipográfica — no hay fuente display para headings ni diferenciación visual",
+        "Sin indicios de diseño mobile-first — WordPress + Elementor default sin evidencia de optimización responsive personalizada",
+        "Hero sin imagen de fondo o visual impactante — solo badges y texto",
+        "Sección about es un bloque de texto denso sin respiración visual, sin imágenes ni elementos de apoyo"
+      ],
+      "recomendaciones": [
+        {
+          "accion": "Definir paleta de marca con color primario verde (asociado a lawn care), secundario y acento para CTAs",
+          "prioridad": "alta",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Implementar par tipográfico: fuente display para headings + fuente body legible (ej: Montserrat + Open Sans)",
+          "prioridad": "alta",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Agregar hero image profesional de césped/jardín bien cuidado como fondo del banner principal",
+          "prioridad": "alta",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Fragmentar sección about en bloques con iconos, imágenes intercaladas y espaciado generoso",
+          "prioridad": "media",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Asegurar diseño responsive con breakpoints claros y navegación hamburger en mobile",
+          "prioridad": "alta",
+          "tipo": "mejora_estructural"
+        }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Prueba social sólida: 3 testimonios reales con nombres, ubicaciones y fotos — mencionan al dueño por nombre (Ian Wright)",
+        "CTA principal visible en header ('Request Quote') y repetido en hero y about",
+        "Diferenciador claro: 'quality care to an industry that likes to focus on quantity' — posicionamiento efectivo contra competencia masiva"
+      ],
+      "negativos": [
+        "El hero NO comunica el beneficio principal — 'Welcome TO Cutting Edge' es un saludo, no una propuesta de valor",
+        "No hay urgencia ni incentivo en los CTAs — 'Contact Us today' es genérico, falta oferta concreta (ej: 'Free Quote in 24h')",
+        "No hay números ni métricas de credibilidad (años de experiencia, clientes atendidos, proyectos completados)",
+        "Falta sección de antes/después que es estándar en lawn care para demostrar resultados visualmente"
+      ],
+      "recomendaciones": [
+        {
+          "accion": "Reescribir hero con fórmula: beneficio principal + ubicación + CTA con incentivo ('Get Your Free Quote — Response in 24 Hours')",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Agregar barra de credibilidad: años en negocio, número de clientes, calificación Google Reviews",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Crear sección galería antes/después de trabajos realizados",
+          "prioridad": "media",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Agregar Google Reviews widget o badge con calificación para reforzar prueba social",
+          "prioridad": "media",
+          "tipo": "mejora_estructural"
+        }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Texto de la sección about es original, específico y transmite la filosofía del negocio con voz auténtica",
+        "Testimonios reales y detallados — no genéricos, mencionan servicios específicos (pruning, mulching, maintenance)",
+        "Listado claro de áreas de servicio con ciudades específicas del Upstate SC"
+      ],
+      "negativos": [
+        "Descripciones de servicios extremadamente cortas — solo listas de una línea sin explicar qué incluye cada servicio ni precios orientativos",
+        "No hay sección de FAQ ni manejo de objeciones comunes (pricing, frequency, guarantees, cancellation)",
+        "Falta email de contacto — solo teléfono y dirección, limita opciones del usuario",
+        "No hay horarios de atención publicados",
+        "Copyright desactualizado: '2020-2024' — estamos en 2026"
+      ],
+      "recomendaciones": [
+        {
+          "accion": "Expandir descripciones de cada servicio: qué incluye, proceso, frecuencia recomendada",
+          "prioridad": "alta",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Agregar sección FAQ con 5-8 preguntas frecuentes (pricing, scheduling, cancellation, areas served, guarantees)",
+          "prioridad": "alta",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Completar información de contacto: agregar email, horarios de atención y mapa de área de servicio",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Actualizar copyright a 2026",
+          "prioridad": "baja",
+          "tipo": "quick_win"
+        }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Sitio SSR (WordPress) — contenido crawleable por motores de búsqueda sin problemas",
+        "HTTPS activo con redirección forzada",
+        "Protección anti-spam en formularios (Maspik plugin)"
+      ],
+      "negativos": [
+        "WordPress + Elementor genera HTML pesado con divs anidados innecesarios y CSS inline — impacto negativo en performance",
+        "Sin favicon configurado — aspecto no profesional en pestañas del navegador",
+        "URLs de redes sociales rotas/inexistentes (Facebook, Twitter, YouTube con url: null)",
+        "Stack sobredimensionado para un sitio informativo de servicio local — WordPress + Elementor Pro es excesivo para contenido estático",
+        "Sin evidencia de optimización de imágenes (lazy loading nativo de Elementor pero sin WebP/AVIF)"
+      ],
+      "recomendaciones": [
+        {
+          "accion": "Migrar a sitio estático (HTML + Tailwind) para eliminar overhead de WordPress y mejorar velocidad de carga drásticamente",
+          "prioridad": "alta",
+          "tipo": "mejora_estructural"
+        },
+        {
+          "accion": "Configurar favicon con el logo del negocio",
+          "prioridad": "alta",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Corregir o eliminar links de redes sociales rotos — si no hay perfiles activos, no mostrarlos",
+          "prioridad": "media",
+          "tipo": "quick_win"
+        },
+        {
+          "accion": "Implementar imágenes en formato WebP con srcset para optimizar carga en distintos dispositivos",
+          "prioridad": "media",
+          "tipo": "mejora_estructural"
+        }
+      ]
+    },
+    "stack_actual": "WordPress 6.9.4, Elementor 3.34.0, Elementor Pro, Maspik (spam protection)",
+    "stack_recomendado": "HTML estático + Tailwind CSS + Alpine.js — sitio informativo de baja complejidad que no requiere CMS",
+    "integraciones": [
+      "Formulario de contacto (Elementor Forms + Maspik)",
+      "Google Schema.org (Organization, WebPage)"
+    ],
+    "complejidad": "baja"
+  },
+  "quick_wins": [
+    "Reescribir H1 con keyword 'Lawn Care Greenville SC' + propuesta de valor en lugar de 'Welcome TO...'",
+    "Agregar barra de credibilidad en hero: años de experiencia, número de clientes satisfechos, rating de Google",
+    "Completar info de contacto: agregar email y horarios de atención",
+    "Configurar favicon profesional",
+    "Corregir/eliminar links de redes sociales sin URL"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Reescribir H1 y hero con keyword principal + propuesta de valor clara",
+      "Agregar barra de credibilidad con métricas del negocio",
+      "Completar información de contacto (email, horarios)",
+      "Configurar favicon",
+      "Eliminar links de redes sociales sin destino"
+    ],
+    "mes_1": [
+      "Definir nueva paleta de colores de marca con verde como primario",
+      "Implementar par tipográfico profesional",
+      "Expandir descripciones de cada servicio con detalles del proceso",
+      "Crear sección FAQ con 5-8 preguntas frecuentes",
+      "Agregar galería antes/después de trabajos",
+      "Integrar Google Reviews widget",
+      "Diseñar hero con imagen profesional de fondo"
+    ],
+    "largo_plazo": [
+      "Migrar de WordPress/Elementor a sitio estático (HTML + Tailwind + Alpine.js) para máxima performance",
+      "Optimizar imágenes a WebP con responsive srcset",
+      "Implementar schema markup LocalBusiness completo",
+      "Actualizar copyright automáticamente",
+      "Crear landing pages específicas por servicio y por ciudad para SEO local"
+    ]
+  },
+  "resumen_ejecutivo": "El sitio de Cutting Edge Mowing tiene contenido auténtico y buena prueba social, pero falla en diseño visual, estructura SEO y presentación profesional — la ausencia de paleta de marca, tipografía genérica y hero sin impacto hacen que no transmita la calidad que el negocio promete. La mayor oportunidad está en rediseñar con identidad visual profesional y reestructurar el hero para convertir visitantes en leads, ya que el contenido base (testimonios, diferenciador, servicios) ya existe. El próximo paso es construir un sitio estático moderno con Tailwind que proyecte profesionalismo, optimice SEO local y maximice conversiones con un hero orientado a beneficios y formulario de contacto prominente.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["alpine.js", "google-fonts", "formspree-o-similar"],
+    "justificacion": "Sitio informativo de baja complejidad para servicio local — no requiere CMS ni framework JS. HTML + Tailwind + Alpine.js ofrece máxima velocidad de carga, SEO óptimo y cero mantenimiento de servidor. Alpine.js cubre interactividad ligera (menú mobile, testimonios carousel, FAQ accordion)."
+  }
+}

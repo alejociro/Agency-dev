@@ -1,0 +1,114 @@
+{
+  "negocio": "Studio 17",
+  "url": "https://www.studio17greenville.com/",
+  "sector": "Pilates Studio / Fitness",
+  "requiere_render": true,
+  "nota_scraping": "Sitio renderizado por JS (Squarespace SPA). Algunos datos pueden estar incompletos. Considerar scraping con browser headless.",
+  "meta": {
+    "title": "Studio 17 | Start Your Pilates Journey Today",
+    "description": null,
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#ffffff",
+    "secundario": "#000000",
+    "acento": null,
+    "fondo": "#ffffff",
+    "texto": "#333333",
+    "otros": []
+  },
+  "logo": {
+    "url": "https://images.squarespace-cdn.com/content/v1/68e1557acc9b4e509628a381/bec9ff0f-1934-4944-94b3-39452aae69ea/Studio17-Logo.png",
+    "descripcion": "Logo de texto 'Studio 17'",
+    "posicion": "header",
+    "colores": []
+  },
+  "tipografias": [
+    {
+      "nombre": "System fonts (Squarespace default)",
+      "uso": "general",
+      "peso": "regular",
+      "tamanio_aprox": "responsive (4vw-6vw)"
+    }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://www.studio17greenville.com/" },
+    { "label": "Classes", "url": "https://www.studio17greenville.com/classes" },
+    { "label": "About", "url": "https://www.studio17greenville.com/about" },
+    { "label": "Contact", "url": "https://www.studio17greenville.com/contact" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "A System That Lengthens, Strengthens, and Balances",
+      "contenido": "Classical Pilates is a system developed by Joseph Pilates. It focuses on precise, controlled movements, breath, and a strong mind-body connection. It can improve posture, balance and flexibility. Studio 17 is a fully equipped Classical Studio - all of the equipment used at Studio 17 is Contrology, by Balanced Body including the Cadillac, Reformer, Barrels, Chairs, and supporting small apparatus, designed to help the body become stronger on the Mat.",
+      "cta": "Explore Classes",
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/68e1557acc9b4e509628a381/d5a0260a-7c5a-476e-86e3-bc431d761b3b/BLB-1002495.jpeg",
+          "alt": null,
+          "descripcion": "Imagen hero del estudio de Pilates",
+          "tipo": "jpeg",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "split-image-text",
+      "titulo": "Welcome to Studio 17",
+      "contenido": "I love Pilates, it has truly changed my body. My hope is that it becomes your lifelong practice - no matter where or how you practice. I want everyone who walks through the doors of Studio 17 to feel welcome, supported, and at home in their bodies. Teaching aids are provided and BeLinda oversees the studio to make certain everyone is safe and to answer any questions if needed.",
+      "cta": "About Me",
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/68e1557acc9b4e509628a381/19ed5838-cadd-4b3c-803c-ef6e2f5acb77/Image+2-7-26+at+12.52%E2%80%AFPM.png",
+          "alt": null,
+          "descripcion": "Imagen de bienvenida del estudio",
+          "tipo": "png",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "cta-section",
+      "titulo": "Discover Your Practice",
+      "contenido": null,
+      "cta": "Browse Classes",
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "A System That Lengthens, Strengthens, and Balances",
+    "propuesta_valor": "Classical Pilates is a system developed by Joseph Pilates. It focuses on precise, controlled movements, breath, and a strong mind-body connection. It can improve posture, balance and flexibility.",
+    "ctas": ["Explore Classes", "About Me", "Browse Classes", "Book an Appointment", "Contact Us"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "1-864-326-0626",
+    "whatsapp": null,
+    "email": "info@studio17@gmail.com",
+    "direccion": "1320 Hampton Street Ext, Suite 601, Greenville, SC 29601",
+    "horarios": "Monday-Saturday (ver schedule en /classes)"
+  },
+  "redes": [
+    { "plataforma": "Instagram", "url": "http://instagram.com/studio17greenvillesc" }
+  ],
+  "formularios": [
+    {
+      "proposito": "Contacto general",
+      "campos": []
+    }
+  ],
+  "footer": {
+    "contenido": "Studio 17 — 1320 Hampton Street Ext, Suite 601, Greenville, SC 29601 | Monday-Saturday | Phone: 1-864-326-0626 | Email: info@studio17@gmail.com",
+    "links": [
+      { "label": "Home", "url": "/home" },
+      { "label": "Classes", "url": "/classes" },
+      { "label": "About", "url": "/about" },
+      { "label": "Contact", "url": "/contact" },
+      { "label": "Book an Appointment", "url": "/contact" }
+    ],
+    "copyright": null
+  },
+  "tecnologia": "Squarespace 7.1 (Template ID: 5c5a519771c10ba3470d8101) — SPA/JS-heavy, reCAPTCHA Enterprise, Google Analytics, Facebook SDK"
+}

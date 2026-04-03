@@ -1,0 +1,190 @@
+/* BRIEF CREATIVO
+   Negocio    : A Perfect 10 Nails
+   Sector     : Nail Salon
+   Tono       : luxury refinado
+   Concepto   : "Pristine Luxury" — donde la higiene clinica se viste de oro
+   Diferenciador visual: Hero con tipografia serif oversized cortada por una
+                         linea dorada diagonal que divide "arte" y "pureza";
+                         seccion de higiene con iconos en circulos de vidrio
+                         esmerilado (glassmorphism dorado) flotando sobre
+                         textura de grano sutil — el mensaje de higiene es
+                         protagonista, no un popup escondido.
+   Tipografia : Cormorant Garamond (display) + Jost (body)
+   Mood       : dorado . inmaculado . preciso
+   Paleta base: #C8A96E (oro viejo) . #1A1714 (negro calido) .
+                #FAF6F0 (crema) . #E8D5B7 (champagne) . #8B7355 (bronce)
+*/
+
+@layer base, components, utilities;
+
+@layer base {
+  :root {
+    /* Paleta — oklch + color-mix para variantes perceptuales */
+    --color-primary:       oklch(0.74 0.08 75);        /* oro viejo #C8A96E */
+    --color-primary-dark:  color-mix(in oklch, var(--color-primary) 78%, black);
+    --color-primary-light: color-mix(in oklch, var(--color-primary) 45%, white);
+    --color-primary-glow:  oklch(0.74 0.08 75 / 0.25);
+    --color-secondary:     oklch(0.55 0.05 65);        /* bronce #8B7355 */
+    --color-accent:        oklch(0.88 0.04 80);        /* champagne #E8D5B7 */
+    --color-bg:            oklch(0.97 0.008 80);       /* crema #FAF6F0 */
+    --color-surface:       oklch(0.95 0.012 75);       /* superficie #F3EDE4 */
+    --color-text:          oklch(0.15 0.005 260);       /* carbón neutro */
+    --color-text-muted:    oklch(0.15 0.005 260 / 0.6);
+    --color-dark-bg:       oklch(0.15 0.005 260);       /* carbón azulado neutro */
+    --color-dark-surface:  oklch(0.20 0.008 260);      /* superficie carbón */
+
+    /* Sombras con personalidad */
+    --shadow-card:   0 4px 24px -4px var(--color-primary-glow),
+                     0 1px 4px oklch(0 0 0 / 0.06);
+    --shadow-hover:  0 16px 48px -8px var(--color-primary-glow),
+                     0 4px 12px oklch(0 0 0 / 0.08);
+    --shadow-btn:    0 4px 16px var(--color-primary-glow);
+    --shadow-subtle: 0 2px 8px oklch(0 0 0 / 0.04);
+
+    /* Espaciado (base 8px) */
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 2rem;
+    --space-6: 3rem;
+    --space-8: 4rem;
+    --space-12: 6rem;
+    --space-16: 8rem;
+
+    /* Tipografia fluida */
+    --text-hero:  clamp(3rem, 8vw, 7rem);
+    --text-h1:    clamp(2rem, 5vw, 4rem);
+    --text-h2:    clamp(1.5rem, 3vw, 2.5rem);
+    --text-h3:    clamp(1.2rem, 2vw, 1.75rem);
+    --text-body:  clamp(1rem, 1.2vw, 1.125rem);
+    --text-small: clamp(0.8rem, 1vw, 0.9rem);
+
+    /* Line heights */
+    --leading-tight: 1.1;
+    --leading-snug:  1.3;
+    --leading-body:  1.6;
+
+    /* Border radius */
+    --radius-sm:   4px;
+    --radius-md:   8px;
+    --radius-lg:   16px;
+    --radius-xl:   24px;
+    --radius-full: 9999px;
+
+    /* Secciones */
+    --section-padding:   clamp(5rem, 10vw, 10rem);
+    --container-max:     1200px;
+    --container-padding: clamp(1rem, 5vw, 2rem);
+
+    /* Transiciones */
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --duration-fast: 200ms;
+    --duration-base: 400ms;
+    --duration-slow: 800ms;
+
+    /* Fuentes */
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body:    'Jost', system-ui, sans-serif;
+  }
+
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: var(--leading-tight);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+  }
+
+  /* Focus visible */
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+  }
+
+  /* Grain overlay — textura premium global */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+  }
+
+  /* Divider decorativo */
+  .divider {
+    height: 1px;
+    border: none;
+    background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+    margin-block: var(--space-2);
+  }
+
+  /* Section label con dash decorativo */
+  .section-label {
+    font-family: var(--font-body);
+    font-size: var(--text-small);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+
+    &::before {
+      content: '\2014\00a0';
+      color: var(--color-primary);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

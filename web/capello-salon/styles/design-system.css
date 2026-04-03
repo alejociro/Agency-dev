@@ -1,0 +1,239 @@
+/* BRIEF CREATIVO
+   Negocio    : Capello Salon and Suites
+   Sector     : Hair Salon / Beauty Salon / Boutique
+   Tono       : luxury refinado + neo-orgánico (calidez familiar con sofisticación premium)
+   Concepto   : "El ritual de sentirse extraordinaria" — cada visita es una experiencia
+                 sensorial, no solo un corte. 20 años transformando confianza.
+   Diferenciador visual: Hero con gradiente fluido coral→rosa→dorado que simula
+                 mechones de cabello en movimiento, superpuesto sobre fotografía
+                 con efecto grain sutil. Secciones conectadas por una "cinta"
+                 ondulante SVG en la paleta cálida que fluye por toda la página.
+   Tipografía : Fraunces (display — serifas orgánicas con personalidad)
+                + Jost (body — geométrica limpia que contrasta sin competir)
+   Mood       : cálido · rosado · sensorial
+   Paleta base: #ED8CC2 (rosa signature) · #FF7F6E (coral energía)
+                · #D4956A (dorado cálido) · #F5F0EB (crema fondo)
+                · #E8DDD4 (beige soporte) · #2D2424 (casi-negro cálido para texto)
+*/
+
+/* ============================================
+   DESIGN SYSTEM — Capello Salon and Suites
+   ============================================ */
+
+@layer base, components, utilities;
+
+@layer base {
+
+  :root {
+    /* ── Paleta principal ── */
+    --color-primary:       #ED8CC2;
+    --color-primary-dark:  #D672A8;
+    --color-primary-glow:  rgba(237, 140, 194, 0.25);
+    --color-secondary:     #FF7F6E;
+    --color-secondary-dark:#E5655A;
+    --color-accent:        #D4956A;
+    --color-accent-dark:   #B87D55;
+
+    /* ── Fondos y superficies ── */
+    --color-bg:            #F5F0EB;
+    --color-surface:       #FAF7F4;
+    --color-surface-alt:   #E8DDD4;
+
+    /* ── Texto ── */
+    --color-text:          #2D2424;
+    --color-text-muted:    rgba(45, 36, 36, 0.65);
+    --color-text-light:    #F5F0EB;
+
+    /* ── Variantes avanzadas con color-mix ── */
+    --color-primary-light: color-mix(in oklch, #ED8CC2 40%, white);
+    --color-secondary-glow:rgba(255, 127, 110, 0.25);
+    --color-accent-light:  color-mix(in oklch, #D4956A 40%, white);
+
+    /* ── Overlays y efectos ── */
+    --color-overlay:       rgba(45, 36, 36, 0.5);
+    --color-overlay-warm:  rgba(237, 140, 194, 0.12);
+    --color-gradient-start:#ED8CC2;
+    --color-gradient-mid:  #FF7F6E;
+    --color-gradient-end:  #D4956A;
+
+    /* ── Sombras con personalidad ── */
+    --shadow-card:  0 4px 24px -4px var(--color-primary-glow),
+                    0 1px 4px rgba(0, 0, 0, 0.06);
+    --shadow-hover: 0 16px 48px -8px var(--color-primary-glow),
+                    0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-btn:   0 4px 16px var(--color-primary-glow);
+    --shadow-soft:  0 2px 12px rgba(45, 36, 36, 0.08);
+    --shadow-lifted:0 24px 64px -16px rgba(45, 36, 36, 0.15);
+
+    /* ── Espaciado (base 8px) ── */
+    --space-1:  0.5rem;
+    --space-2:  1rem;
+    --space-3:  1.5rem;
+    --space-4:  2rem;
+    --space-6:  3rem;
+    --space-8:  4rem;
+    --space-12: 6rem;
+    --space-16: 8rem;
+
+    /* ── Tipografía fluida ── */
+    --font-display: 'Fraunces', serif;
+    --font-body:    'Jost', sans-serif;
+
+    --text-hero:  clamp(3rem, 8vw, 7rem);
+    --text-h1:    clamp(2rem, 5vw, 4rem);
+    --text-h2:    clamp(1.5rem, 3vw, 2.5rem);
+    --text-h3:    clamp(1.2rem, 2vw, 1.75rem);
+    --text-body:  clamp(1rem, 1.2vw, 1.125rem);
+    --text-small: clamp(0.8rem, 1vw, 0.9rem);
+
+    /* ── Line heights ── */
+    --leading-tight: 1.1;
+    --leading-snug:  1.3;
+    --leading-body:  1.6;
+
+    /* ── Border radius ── */
+    --radius-sm:   4px;
+    --radius-md:   8px;
+    --radius-lg:   16px;
+    --radius-xl:   24px;
+    --radius-full: 9999px;
+
+    /* ── Layout ── */
+    --section-padding:   clamp(5rem, 10vw, 10rem);
+    --container-max:     1200px;
+    --container-padding: clamp(1rem, 5vw, 2rem);
+
+    /* ── Transiciones ── */
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --duration-fast:   200ms;
+    --duration-normal: 400ms;
+    --duration-slow:   800ms;
+  }
+
+  /* ── Reset & Base ── */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    font-weight: 400;
+    line-height: var(--leading-body);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: var(--leading-tight);
+    color: var(--color-text);
+    text-wrap: balance;
+  }
+
+  h1 { font-size: var(--text-h1); }
+  h2 { font-size: var(--text-h2); }
+  h3 { font-size: var(--text-h3); }
+
+  p {
+    text-wrap: pretty;
+    max-width: 65ch;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--duration-fast) var(--ease-out-expo);
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ── Selection ── */
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+  }
+
+  /* ── Focus visible ── */
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+  }
+
+  /* ── Scrollbar ── */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-bg);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-surface-alt);
+    border-radius: var(--radius-full);
+
+    &:hover {
+      background: var(--color-primary);
+    }
+  }
+
+  /* ── Container ── */
+  .container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+  }
+
+  .container--wide {
+    max-width: 1400px;
+  }
+
+  .container--narrow {
+    max-width: 800px;
+  }
+
+  /* ── Section spacing ── */
+  .section {
+    padding-block: var(--section-padding);
+    position: relative;
+  }
+
+  /* ── Performance: lazy render below-fold sections ── */
+  .section:not(:first-of-type) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 500px;
+  }
+
+  /* ── Reduced motion ── */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+}

@@ -1,0 +1,229 @@
+{
+  "negocio": "Golden Nails & Spa",
+  "url": "https://goldennailsandspagreenville.com/",
+  "sector": "Nail Salon & Spa",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Nail Salon 29615 | GOLDEN NAILS & SPA | Greenville, SC 29615 – Best Nail Salon",
+    "description": "",
+    "keywords": ""
+  },
+  "favicon": "https://goldennailsandspagreenville.com/wp-content/uploads/2024/04/cropped-340728694027-32x32.jpg",
+  "paleta": {
+    "primario": "#262626",
+    "secundario": "#2ea3f2",
+    "acento": "#ae0000",
+    "fondo": "#ffffff",
+    "texto": "#666666",
+    "otros": ["#333333", "#555555", "#494949", "#4e4e4e", "#ff9292", "#ff7272", "#000000"]
+  },
+  "logo": {
+    "url": "https://goldennailsandspagreenville.com/wp-content/uploads/2024/04/864-568-5026-GOLDEN-NAILS-SPA-logoheader1.png",
+    "descripcion": "Logo de Golden Nails & Spa con nombre del negocio",
+    "posicion": "header",
+    "colores": ["#262626"]
+  },
+  "tipografias": [
+    {
+      "nombre": "Open Sans",
+      "uso": "Tipografía principal (body, navegación, contenido)",
+      "peso": "300, 400, 500, 600, 700, 800",
+      "tamanio_aprox": "14px base"
+    },
+    {
+      "nombre": "ETmodules",
+      "uso": "Iconos del tema Divi",
+      "peso": "400",
+      "tamanio_aprox": "variable"
+    }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://goldennailsandspagreenville.com/" },
+    { "label": "Services", "url": "https://goldennailsandspagreenville.com/services/" },
+    { "label": "Booking", "url": "https://goldennailsandspagreenville.com/booking/" },
+    { "label": "Gallery", "url": "https://goldennailsandspagreenville.com/gallery/" },
+    { "label": "Contact Us", "url": "https://goldennailsandspagreenville.com/contact-us/" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Glowing Care, Nurturing Service!",
+      "contenido": "Glowing Care, Nurturing Service!",
+      "cta": "Call: (864) 568-5026",
+      "imagenes": []
+    },
+    {
+      "tipo": "about",
+      "titulo": "About Us",
+      "contenido": "Having long been offering thoughtful nail and spa services, Golden Nails & Spa is dubbed the sanctuary in Greenville, SC 29615 by the locals, where they'll come whenever they feel like prettifying themselves or simply escaping from all the hustle and bustle of life. Skilled Workmanship. Every nail set is a combination of your favorite shape, length, color, design, and/or ornament. Rest assured you'll be served by professionals. High-quality Products. We only use nail polishes and spa products from trusted brands to ensure that they are safe for both adults and children. 5-Star Customer Service. Our staff will welcome you with their courtesy from the moment you walk in, carefully listen to your request, meticulously perform the service, and ask for your feedback after you leave. We aim to deliver you a personalized experience. Golden Nails & Spa is located at 27 Milestone Plaza, Greenville, SC 29615. See you there!",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "services",
+      "titulo": "Our Services",
+      "contenido": "Manicures, Pedicures, Nail Enhancements, More Services",
+      "cta": "Menu Services",
+      "imagenes": []
+    },
+    {
+      "tipo": "services-detail-manicures",
+      "titulo": "Manicures",
+      "contenido": "CLASSIC MANICURE — $25: Take a much-needed break from your busy schedule and relax your hands. The package includes: Nail trimming and shaping, cuticle treatment, Lotion massage, Regular polish, Hot towel.\n\nSIGNATURE MANICURE — $35: This is a therapeutic union of high-quality skin smoothing, moisturizers, and advanced exfoliation, making your hands look gorgeous and healthier. The package includes: Nail trimming and shaping, cuticle treatment, Sugar scrub, Hot oil massage, Hot towel, Regular polish.\n\nCOLLAGEN SPA MANICURE — $45: Extra $15 For Gel Polish. This signature manicure offers intense nourishment and long-lasting hydration for soft, healthy-looking hands. Collagen gloves provide deep moisturizing to fine lines and wrinkles and promote soft skin for a youthful glow. The package includes: Nail trimming and shaping, cuticle treatment, Sugar scrub, Hot oil massage, Hot towel & collagen gloves, Regular polish.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "services-detail-pedicures",
+      "titulo": "Pedicures",
+      "contenido": "1. REGULAR PEDICURE — $35\n\n2. SPA PEDICURE — $45\n\n3. DELUXE PEDICURE — $55\n\n4. LOVELY PEDICURE — $65 (20-Minute Massage): Immerse yourself in an extraordinary blend preloaded with the powerful duo of vitamin E and a collagen-rich emulsion, penetrating deeply to lavish your skin with replenishing moisture. Witness the transformative effects as it works tirelessly to rejuvenate aging skin, while simultaneously whisking away impurities to envelop your tired feet in a soothing embrace. The package includes: Collagen Bubble-Crystal, Sea salt soak, Nail trimming and shaping, cuticle treatment, Callus removal & Collagen Sugar Cane Scrub, Collagen Cream Mask, Collagen Muscle-Relaxing Gel, Collagen Massage Lotion, hot oil, cream massage with hot stone, Hot towel & regular polish, Collagen Serum Lotion. Choice of your scent: No.5 Perfume / Sweet Orange / Crystal Water / Luxury Pearl / Lemon Splash.\n\nCOLLAGEN SOCKS — $10: Collagen natural protein provides intense hydration that helps fill in fines & wrinkles. Restores moisture for smoother and softer feet. Extra $15 For Gel Polish.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "services-detail-nail-enhancements",
+      "titulo": "Nail Enhancements",
+      "contenido": "Full Set/Fill-In:\n- Pink & White: $65+ / $55+\n- Acrylic: $45+ / $35+\n- Acrylic with Gel Polish: $55+ / $50+\n- Nail Removal/Take-Off: $10+\n- Nail Repair: $4+\n\nDipping Powder Full Set/Fill-In:\n- Pink & White: $55+ / $50+\n- Ombre: $65+ / $60+\n- Color: $50+ / $45+\n- Color (Overlay) Full Set: $45\n- Additional Services: $5+",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "services-detail-additional",
+      "titulo": "Additional Services",
+      "contenido": "Shellac/Gel Polish Change on Fingernails: $25\nShellac/Gel Polish Change on Toenails: $30\nRegular Polish Change on Fingernails: $15\nRegular Polish Change on Toenails: $20\nWhite Tip: Extra $5\nNail Design: $7+",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "services-detail-kids",
+      "titulo": "Kid's Services",
+      "contenido": "NAILS SERVICES Full Set/Fill-In:\n- NexGen (Pink & White): $45 / $38\n- NexGen (Colors): $40 / $35\n- Acrylic (White Tips): $35 / $28\n- Acrylic: $30 / $23\n- Acrylic with Gel Polish: $40 / $35\n- Manicure: $20\n- Manicure with Gel Polish: $35\n- Gel Polish Change: $20\n\nPEDICURE SERVICES:\n- Regular Pedicure: $25\n- Spa Pedicure: $35\n- Deluxe Pedicure: $45\n- Toenail Polish Change: $15\n- Fingernail Polish Change: $12\n- Gel Polish: Extra $15",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "services-detail-waxing",
+      "titulo": "Waxing",
+      "contenido": "Eyebrows: $12\nUpper Lip: $8\nBottom Lip & Chin: $20+\nEyebrows, Lip & Chin: $25+\nFull Face: $35+\nArms: $50+\nUnderarms: $30+\nLeg (Knees Down): $60+",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "gallery",
+      "titulo": "Our Gallery",
+      "contenido": null,
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g1.jpg",
+          "alt": "",
+          "descripcion": "Foto de galería del salón 1",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g2.jpg",
+          "alt": "",
+          "descripcion": "Foto de galería del salón 2",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g3.jpg",
+          "alt": "",
+          "descripcion": "Foto de galería del salón 3",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g4-400x284.jpg",
+          "alt": "",
+          "descripcion": "Foto de galería del salón 4",
+          "tipo": "galeria",
+          "dimensiones": "400x284"
+        },
+        {
+          "url": "https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g5.jpg",
+          "alt": "",
+          "descripcion": "Foto de galería del salón 5",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g6.jpg",
+          "alt": "",
+          "descripcion": "Foto de galería del salón 6",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g7-400x284.jpg",
+          "alt": "",
+          "descripcion": "Foto de galería del salón 7",
+          "tipo": "galeria",
+          "dimensiones": "400x284"
+        },
+        {
+          "url": "https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g8.jpg",
+          "alt": "",
+          "descripcion": "Foto de galería del salón 8",
+          "tipo": "galeria",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "footer-about",
+      "titulo": "ABOUT US",
+      "contenido": "Having long been offering thoughtful nail and spa services, Golden Nails & Spa is dubbed the sanctuary in Greenville, SC 29615 by the locals, where they'll come whenever they feel like prettifying themselves or simply escaping from all the hustle and bustle of life.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "footer-contact",
+      "titulo": "CONTACT US",
+      "contenido": "27 Milestone Plaza, Greenville, SC 29615\n(864) 568-5026\nlanho30021@yahoo.com",
+      "cta": "Call Now",
+      "imagenes": []
+    },
+    {
+      "tipo": "footer-hours",
+      "titulo": "BUSINESS HOURS",
+      "contenido": "Mon – Sat: 9:30 AM – 7 PM\nSun: 11 AM – 5 PM",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Glowing Care, Nurturing Service!",
+    "propuesta_valor": "Having long been offering thoughtful nail and spa services, Golden Nails & Spa is dubbed the sanctuary in Greenville, SC 29615 by the locals, where they'll come whenever they feel like prettifying themselves or simply escaping from all the hustle and bustle of life.",
+    "ctas": ["Call: (864) 568-5026", "Menu Services", "Call Now", "BOOKING"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(864) 568-5026",
+    "whatsapp": null,
+    "email": "lanho30021@yahoo.com",
+    "direccion": "27 Milestone Plaza, Greenville, SC 29615",
+    "horarios": "Mon – Sat: 9:30 AM – 7 PM | Sun: 11 AM – 5 PM"
+  },
+  "redes": [
+    {
+      "plataforma": "Facebook",
+      "url": "https://www.facebook.com/goldennailsandspagreenville"
+    }
+  ],
+  "formularios": [],
+  "footer": {
+    "contenido": "ABOUT US | CONTACT US | BUSINESS HOURS\nNail Salon in Greenville, SC 29615 | Nail Salon SC 29615",
+    "links": [
+      "https://goldennailsandspagreenville.com/services/",
+      "https://goldennailsandspagreenville.com/booking/",
+      "https://goldennailsandspagreenville.com/gallery/",
+      "https://goldennailsandspagreenville.com/contact-us/"
+    ],
+    "copyright": "Copyright © by Golden Nails & Spa. All Rights Reserved. Designed by ZOTA"
+  },
+  "tecnologia": "WordPress + Divi Theme v4.25.1 (Elegant Themes), jQuery, ETmodules icon font, Divi Carousel plugin, Supreme Modules for Divi, Simple Side Tab"
+}

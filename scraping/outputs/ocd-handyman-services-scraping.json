@@ -1,0 +1,189 @@
+{
+  "negocio": "OCD Handyman Services, LLC",
+  "url": "https://ocdupgrades.com/",
+  "sector": "Construcción / Renovación / Servicios de Handyman",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "OCD Handyman Services, LLC – We are OCD about your Project!",
+    "description": null,
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#66A1C3",
+    "secundario": "#F4BC16",
+    "acento": "#F4BC16",
+    "fondo": "#F5F5F5",
+    "texto": "#444444",
+    "otros": ["#25282A", "#E2E6E7"]
+  },
+  "logo": {
+    "url": "https://ocdupgrades.com/wp-content/uploads/2022/01/ocd-handyman-2.jpg",
+    "descripcion": "Logo de OCD Handyman Services, LLC",
+    "posicion": "header",
+    "colores": []
+  },
+  "tipografias": [
+    {
+      "nombre": "Raleway",
+      "uso": "Encabezados (h1-h6), precios",
+      "peso": "400, 700",
+      "tamanio_aprox": "14px–40px"
+    }
+  ],
+  "navegacion": [
+    { "label": "HOME", "url": "https://ocdupgrades.com/" },
+    { "label": "SERVICES", "url": "https://ocdupgrades.com/services/interior-renovation/" },
+    { "label": "OUR TEAM", "url": "https://ocdupgrades.com/our-team/" },
+    { "label": "CONTACT", "url": "https://ocdupgrades.com/contact-style-1/" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": null,
+      "contenido": "Logo e imagen de marca de OCD Handyman Services, LLC.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://ocdupgrades.com/wp-content/uploads/2022/01/ocd-handyman-2.jpg",
+          "alt": "OCD Handyman Services logo",
+          "descripcion": "Logo principal del negocio",
+          "tipo": "logo",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "OUR SERVICES",
+      "contenido": "OCD was established September of 2021 and is an extension of my commercial and residential business that I have owned and operated since November of 2018. OCD offers a focus on customer satisfaction, you can rely on us for your next renovation, Concrete, Asphalt Driveways, Kitchen Remodels, Bathroom Remodels, Home Addition or Home repair. We at OCD provide a professional service for private and commercial customers.\n\nHouse Remodel-Additions-Flooring-Roof Repairs — We can help you bring new life to existing rooms and develop unused spaces.\n\nDESIGN AND BUILD — From initial design and project specification to achieving a high end finish.\n\nTILING AND PAINTING — We offer quality tiling and painting solutions for interior and exterior.",
+      "cta": "VIEW ALL SERVICES",
+      "imagenes": []
+    },
+    {
+      "tipo": "proyectos",
+      "titulo": "RECENT PROJECTS",
+      "contenido": "Here are a few of many projects we have completed for our customers. We provide a professional service which includes consultation, free estimate, design, supply of materials and installation.\n\nPainting — https://ocdupgrades.com/projects/painting/\nGarden Renovation — https://ocdupgrades.com/projects/garden-renovation/\nInterior Renovation — https://ocdupgrades.com/projects/interior-renovation/\nSolar Systems — https://ocdupgrades.com/projects/solar-systems/",
+      "cta": "VIEW PROJECT",
+      "imagenes": []
+    },
+    {
+      "tipo": "galeria",
+      "titulo": "BEFORE AND AFTERS",
+      "contenido": "Galería de imágenes antes y después de proyectos completados.",
+      "cta": "EXPLORE OUR PROJECTS",
+      "imagenes": [
+        {
+          "url": "https://ocdupgrades.com/wp-content/uploads/2024/01/IMG_0339-1-300x225.jpg",
+          "alt": "Before and after project",
+          "descripcion": "Proyecto antes y después",
+          "tipo": "galeria",
+          "dimensiones": "300x225"
+        },
+        {
+          "url": "https://ocdupgrades.com/wp-content/uploads/2024/01/IMG_0294-225x300.jpg",
+          "alt": "Before and after project",
+          "descripcion": "Proyecto antes y después",
+          "tipo": "galeria",
+          "dimensiones": "225x300"
+        },
+        {
+          "url": "https://ocdupgrades.com/wp-content/uploads/2024/01/IMG_0293-225x300.jpg",
+          "alt": "Before and after project",
+          "descripcion": "Proyecto antes y después",
+          "tipo": "galeria",
+          "dimensiones": "225x300"
+        },
+        {
+          "url": "https://ocdupgrades.com/wp-content/uploads/2024/01/IMG_0292-2-225x300.jpg",
+          "alt": "Before and after project",
+          "descripcion": "Proyecto antes y después",
+          "tipo": "galeria",
+          "dimensiones": "225x300"
+        },
+        {
+          "url": "https://ocdupgrades.com/wp-content/uploads/2024/01/IMG_0284-225x300.jpg",
+          "alt": "Before and after project",
+          "descripcion": "Proyecto antes y después",
+          "tipo": "galeria",
+          "dimensiones": "225x300"
+        },
+        {
+          "url": "https://ocdupgrades.com/wp-content/uploads/2024/01/IMG_0276-6-225x300.jpg",
+          "alt": "Before and after project",
+          "descripcion": "Proyecto antes y después",
+          "tipo": "galeria",
+          "dimensiones": "225x300"
+        }
+      ]
+    },
+    {
+      "tipo": "about",
+      "titulo": "ABOUT US",
+      "contenido": "We provide a professional renovation and installation services with a real focus on customer satisfaction. Our installations are carried out by fully trained staff to the highest professional standards.\n\nWE OFFER: We Offer On Time Quotes, Professionalism, Constant Communication until your project is complete. We will be as OCD on your project as if it was our own property.\n\nWE GUARANTEE: Our Warranty varies on project and will be discussed prior to acceptance of any job we complete.\n\nWE PROVIDE: We offer a wide variety of services from small home repairs to large additions. We can handle anything you throw at us. We do all floorings, all renovations, all roof repairs, all painting and sheet rock needs, minor plumbing and electrical and we have licensed plumbers and electricians if the job requires. Contact us for your project needs for your free one on one quote. WE WILL SHOW UP!",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://ocdupgrades.com/wp-content/uploads/2022/01/qtq80-ixS13h-480x480.jpeg",
+          "alt": "About OCD Handyman Services",
+          "descripcion": "Imagen representativa de la sección about",
+          "tipo": "decorativa",
+          "dimensiones": "480x480"
+        }
+      ]
+    },
+    {
+      "tipo": "features",
+      "titulo": null,
+      "contenido": "INSURED TO DO BUSINESS IN SOUTH CAROLINA — Insured to do business in South Carolina.\n\nBEST MATERIALS — We have the experience, personnel and resources to make the project run smoothly. We can ensure a job is done on time.\n\nPROFESSIONAL STANDARDS — Working with us involves a carefully planned series of steps, centered around a schedule we stick to and daily communication.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "diferenciadores",
+      "titulo": "WHY CHOOSE OCD Handyman Services, LLC",
+      "contenido": "Founded by Bryan Callaham back in 2021, OCD has established itself as one of the greatest and prestigious providers of construction focused interior renovation services and building.\n\nINSURED TO DO BUSINESS IN SC — OCD can handle any project large or small. OCD does them all. 'WE ARE OCD ABOUT YOUR PROJECT'\n\nBEST MATERIALS — OCD has already established accounts with local companies that supply only the best materials at a great price to us. We pass this knowledge and professional relationships on to driving the cost of your project down.\n\nPROFESSIONAL STANDARDS — Our name says it all. WE ARE OCD about your project. We will build everything to code and we follow standardized work ethics for completing your project safely, correct and on time.",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "We are OCD about your Project!",
+    "propuesta_valor": "Professional renovation and installation services with a real focus on customer satisfaction. On Time Quotes, Professionalism, Constant Communication until your project is complete.",
+    "ctas": [
+      "VIEW ALL SERVICES",
+      "VIEW PROJECT",
+      "EXPLORE OUR PROJECTS",
+      "VIEW ALL PROJECTS"
+    ]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "+1 864-283-6201",
+    "whatsapp": null,
+    "email": null,
+    "direccion": "204 Branchester Ct, Greenville SC 29607",
+    "horarios": "Monday–Friday: 08:00–17:00, Saturday & Sunday: Closed"
+  },
+  "redes": [],
+  "formularios": [
+    {
+      "proposito": "Contacto / Solicitud de presupuesto",
+      "campos": ["message"]
+    },
+    {
+      "proposito": "Calculadora de costos de proyecto",
+      "campos": ["checkboxes", "sliders", "date", "select", "text", "email", "number", "textarea", "recaptcha", "terms"]
+    }
+  ],
+  "footer": {
+    "contenido": "© Copyright 2021 Renovate Theme by QuanticaLabs",
+    "links": [
+      "https://1.envato.market/renovate-construction-renovation-wordpress-theme",
+      "https://quanticalabs.com"
+    ],
+    "copyright": "© Copyright 2021 Renovate Theme by QuanticaLabs"
+  },
+  "tecnologia": "WordPress 6.9.4, Elementor 4.0.1, Theme Renovate, Contact Form 7, Cost Calculator, Revolution Slider, jQuery, PHP 8.3.30, Hosting GoDaddy, CloudFlare CDN, Google reCAPTCHA"
+}

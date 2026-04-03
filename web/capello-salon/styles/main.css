@@ -1,0 +1,800 @@
+/* ============================================
+   MAIN STYLES — Capello Salon and Suites
+   Design system visual: componentes, efectos,
+   botones, cards, navegación, decorativos.
+   ============================================ */
+
+/* ── 1. EFECTOS GLOBALES ── */
+
+@layer components {
+
+  /* Grain overlay — textura premium sutil */
+  .grain::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  }
+
+  /* Gradient mesh — fondo con manchas de color orgánicas */
+  .mesh-bg {
+    background:
+      radial-gradient(ellipse at 20% 50%, var(--color-primary-glow) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 20%, var(--color-secondary-glow) 0%, transparent 50%),
+      radial-gradient(ellipse at 60% 80%, rgba(212, 149, 106, 0.15) 0%, transparent 50%),
+      var(--color-bg);
+  }
+
+  /* ── 2. NAVEGACIÓN ── */
+
+  .nav {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline: 0;
+    z-index: 50;
+    padding-block: var(--space-2);
+    transition: background var(--duration-normal) var(--ease-out-expo),
+                box-shadow var(--duration-normal) var(--ease-out-expo);
+
+    &.scrolled {
+      background: rgba(245, 240, 235, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 1px 0 var(--color-surface-alt);
+    }
+
+    & .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+    }
+
+    & .nav__logo {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 2vw, 1.5rem);
+      font-weight: 500;
+      color: var(--color-text);
+      letter-spacing: -0.02em;
+    }
+
+    & .nav__links {
+      display: none;
+      list-style: none;
+      gap: var(--space-4);
+      align-items: center;
+
+      @media (min-width: 768px) {
+        display: flex;
+      }
+    }
+
+    & .nav__link {
+      font-family: var(--font-body);
+      font-size: var(--text-small);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      position: relative;
+      transition: color var(--duration-fast) var(--ease-out-expo);
+
+      &::after {
+        content: '';
+        position: absolute;
+        inset-block-end: -4px;
+        inset-inline-start: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+        border-radius: var(--radius-full);
+        transition: width var(--duration-normal) var(--ease-out-expo);
+      }
+
+      &:hover {
+        color: var(--color-text);
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    & .nav__cta {
+      font-family: var(--font-body);
+      font-size: var(--text-small);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: var(--space-1) var(--space-3);
+      background: var(--color-primary);
+      color: var(--color-text-light);
+      border-radius: var(--radius-full);
+      transition: all var(--duration-fast) var(--ease-out-expo);
+
+      &:hover {
+        background: var(--color-primary-dark);
+        box-shadow: var(--shadow-btn);
+        transform: translateY(-1px);
+      }
+    }
+
+    & .nav__hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: var(--space-1);
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+
+      & span {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: var(--color-text);
+        border-radius: var(--radius-full);
+        transition: all var(--duration-normal) var(--ease-out-expo);
+      }
+
+      &.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      &.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      &.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+    }
+  }
+
+  /* Mobile menu */
+  .nav__mobile {
+    position: fixed;
+    inset: 0;
+    z-index: 49;
+    background: rgba(245, 240, 235, 0.97);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--duration-normal) var(--ease-out-expo);
+
+    &.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    & a {
+      font-family: var(--font-display);
+      font-size: var(--text-h2);
+      font-weight: 400;
+      color: var(--color-text);
+      transition: color var(--duration-fast) var(--ease-out-expo);
+
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  /* ── 3. BOTONES ── */
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: var(--text-small);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-full);
+    border: none;
+    cursor: pointer;
+    transition: all var(--duration-normal) var(--ease-out-expo);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn--primary {
+    background: var(--color-primary);
+    color: var(--color-text-light);
+    box-shadow: var(--shadow-btn);
+
+    &:hover {
+      background: var(--color-primary-dark);
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  .btn--secondary {
+    background: transparent;
+    color: var(--color-text);
+    border: 1.5px solid var(--color-surface-alt);
+
+    &:hover {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+      background: var(--color-overlay-warm);
+    }
+  }
+
+  .btn--accent {
+    background: var(--color-accent);
+    color: var(--color-text-light);
+
+    &:hover {
+      background: var(--color-accent-dark);
+      box-shadow: 0 4px 16px rgba(212, 149, 106, 0.3);
+      transform: translateY(-2px);
+    }
+  }
+
+  .btn--large {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-body);
+  }
+
+  /* ── 4. CARDS ── */
+
+  .card {
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4);
+    box-shadow: var(--shadow-soft);
+    transition: all var(--duration-normal) var(--ease-out-expo);
+    container-type: inline-size;
+
+    &:hover {
+      box-shadow: var(--shadow-card);
+      transform: translateY(-4px);
+    }
+  }
+
+  .card--glass {
+    background: rgba(250, 247, 244, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(232, 221, 212, 0.5);
+  }
+
+  .card--accent-border {
+    border-inline-start: 3px solid var(--color-primary);
+  }
+
+  /* ── 5. SEPARADORES DECORATIVOS ── */
+
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-primary), var(--color-secondary), transparent);
+    border: none;
+    margin-block: var(--space-8);
+  }
+
+  .divider--subtle {
+    background: linear-gradient(90deg, transparent, var(--color-surface-alt), transparent);
+  }
+
+  .section-tag {
+    font-family: var(--font-body);
+    font-size: var(--text-small);
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    margin-block-end: var(--space-3);
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+      border-radius: var(--radius-full);
+    }
+  }
+
+  /* ── 6. CINTA ONDULANTE SVG (diferenciador visual) ── */
+
+  .ribbon-wave {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    line-height: 0;
+
+    & svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    &--top {
+      inset-block-start: -1px;
+    }
+
+    &--bottom {
+      inset-block-end: -1px;
+    }
+  }
+
+  /* ── 7. GRILLA ASIMÉTRICA (rompe la grilla) ── */
+
+  .grid-asymmetric {
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: 1fr;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 3fr 2fr;
+    }
+  }
+
+  .grid-asymmetric--reverse {
+    @media (min-width: 768px) {
+      grid-template-columns: 2fr 3fr;
+    }
+  }
+
+  /* Elemento que desborda su contenedor */
+  .bleed-right {
+    @media (min-width: 768px) {
+      margin-inline-end: calc(-1 * var(--container-padding));
+      border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+    }
+  }
+
+  .bleed-left {
+    @media (min-width: 768px) {
+      margin-inline-start: calc(-1 * var(--container-padding));
+      border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+    }
+  }
+
+  /* ── 8. ROTACIÓN DECORATIVA (rompe la grilla #2) ── */
+
+  .tilt-section {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: -2rem -5vw;
+      background: var(--color-surface);
+      transform: rotate(-2deg);
+      z-index: -1;
+      border-radius: var(--radius-lg);
+    }
+  }
+
+  /* ── 9. TIPOGRAFÍA DECORATIVA ── */
+
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-hero {
+    font-family: var(--font-display);
+    font-size: var(--text-hero);
+    font-weight: 400;
+    line-height: var(--leading-tight);
+    letter-spacing: -0.03em;
+    font-variation-settings: 'SOFT' 100, 'WONK' 1;
+  }
+
+  .text-serif-accent {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--color-primary);
+  }
+
+  /* ── 10. IMÁGENES CON ESTILO ── */
+
+  .img-frame {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--duration-slow) var(--ease-out-expo);
+    }
+
+    &:hover img {
+      transform: scale(1.03);
+    }
+  }
+
+  .img-frame--organic {
+    border-radius: 40% 60% 55% 45% / 55% 45% 60% 40%;
+  }
+
+  .img-frame--offset {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: var(--space-2);
+      border: 2px solid var(--color-primary);
+      border-radius: inherit;
+      transform: translate(var(--space-2), var(--space-2));
+      z-index: -1;
+    }
+  }
+
+  /* ── 11. BADGE / PILL ── */
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    font-family: var(--font-body);
+    font-size: var(--text-small);
+    font-weight: 500;
+    border-radius: var(--radius-full);
+    background: var(--color-overlay-warm);
+    color: var(--color-primary-dark);
+  }
+
+  /* ── 12. STAR RATING ── */
+
+  .stars {
+    display: inline-flex;
+    gap: 2px;
+    color: var(--color-accent);
+    font-size: 1.1rem;
+  }
+
+  /* ── 13. TESTIMONIAL QUOTE ── */
+
+  .blockquote {
+    font-family: var(--font-display);
+    font-size: var(--text-h3);
+    font-style: italic;
+    font-weight: 400;
+    line-height: var(--leading-snug);
+    color: var(--color-text);
+    position: relative;
+    padding-inline-start: var(--space-4);
+
+    &::before {
+      content: '\201C';
+      position: absolute;
+      inset-inline-start: 0;
+      inset-block-start: -0.3em;
+      font-size: 4rem;
+      line-height: 1;
+      color: var(--color-primary);
+      font-family: var(--font-display);
+      opacity: 0.5;
+    }
+  }
+
+  /* ── 14. LISTA DE SERVICIOS ── */
+
+  .service-list {
+    list-style: none;
+
+    & li {
+      padding-block: var(--space-3);
+      border-block-end: 1px solid var(--color-surface-alt);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: var(--space-2);
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+
+  /* ── 15. FORMULARIO ── */
+
+  .form-input {
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    color: var(--color-text);
+    background: var(--color-surface);
+    border: 1.5px solid var(--color-surface-alt);
+    border-radius: var(--radius-md);
+    transition: all var(--duration-fast) var(--ease-out-expo);
+    outline: none;
+
+    &::placeholder {
+      color: var(--color-text-muted);
+    }
+
+    &:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px var(--color-primary-glow);
+    }
+  }
+
+}
+
+/* ── 16. UTILIDADES ── */
+
+@layer utilities {
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .text-center { text-align: center; }
+  .text-balance { text-wrap: balance; }
+  .mx-auto { margin-inline: auto; }
+  .relative { position: relative; }
+  .overflow-hidden { overflow: hidden; }
+
+  .flex { display: flex; }
+  .flex-col { flex-direction: column; }
+  .items-center { align-items: center; }
+  .justify-center { justify-content: center; }
+  .justify-between { justify-content: space-between; }
+  .gap-1 { gap: var(--space-1); }
+  .gap-2 { gap: var(--space-2); }
+  .gap-3 { gap: var(--space-3); }
+  .gap-4 { gap: var(--space-4); }
+  .gap-6 { gap: var(--space-6); }
+  .gap-8 { gap: var(--space-8); }
+
+  .grid { display: grid; }
+  .grid-cols-1 { grid-template-columns: 1fr; }
+
+  @media (min-width: 640px) {
+    .sm\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (min-width: 768px) {
+    .md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .md\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .lg\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  .mb-2 { margin-block-end: var(--space-2); }
+  .mb-3 { margin-block-end: var(--space-3); }
+  .mb-4 { margin-block-end: var(--space-4); }
+  .mb-6 { margin-block-end: var(--space-6); }
+
+  .pt-nav { padding-block-start: 5rem; }
+}
+
+/* ============================================
+   ANIMACIONES — 4 Capas
+   ============================================ */
+
+/* ── CAPA 1: Page Load (hero stagger) ── */
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes shimmer {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(100%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+
+@keyframes ribbonFlow {
+  0%   { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.hero-tag   { animation: slideUp 0.6s var(--ease-out-expo) 0.1s both; }
+.hero-title { animation: slideUp 0.8s var(--ease-out-expo) 0.2s both; }
+.hero-sub   { animation: fadeIn  0.8s ease                 0.5s both; }
+.hero-cta   { animation: slideUp 0.6s var(--ease-out-expo) 0.7s both; }
+.hero-proof { animation: fadeIn  0.6s ease                 1.0s both; }
+.hero-image { animation: scaleIn 1.0s var(--ease-out-expo) 0.3s both; }
+
+/* ── CAPA 2: Scroll Reveal (data-animate) ── */
+
+[data-animate] {
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s var(--ease-out-expo);
+}
+
+[data-animate="fade-up"]    { transform: translateY(32px); }
+[data-animate="fade-down"]  { transform: translateY(-32px); }
+[data-animate="fade-left"]  { transform: translateX(-32px); }
+[data-animate="fade-right"] { transform: translateX(32px); }
+[data-animate="scale-in"]   { transform: scale(0.93); }
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Stagger para children */
+[data-animate="stagger"] > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s var(--ease-out-expo);
+}
+
+[data-animate="stagger"].is-visible > *:nth-child(1) { transition-delay: 0.05s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(2) { transition-delay: 0.12s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(3) { transition-delay: 0.19s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(4) { transition-delay: 0.26s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(5) { transition-delay: 0.33s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(6) { transition-delay: 0.40s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(7) { transition-delay: 0.47s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(8) { transition-delay: 0.54s; opacity: 1; transform: none; }
+
+/* Custom delay con data-delay */
+[data-animate][data-delay="100"] { transition-delay: 100ms; }
+[data-animate][data-delay="200"] { transition-delay: 200ms; }
+[data-animate][data-delay="300"] { transition-delay: 300ms; }
+[data-animate][data-delay="400"] { transition-delay: 400ms; }
+[data-animate][data-delay="500"] { transition-delay: 500ms; }
+
+/* ── CAPA 3: Micro-interacciones ── */
+
+/* Shimmer en botón primario */
+.btn--primary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+  transform: translateX(-100%);
+  transition: transform 400ms ease;
+}
+
+.btn--primary:hover::after {
+  transform: translateX(0);
+}
+
+/* Card spring (refuerzo sobre lo existente) */
+.card {
+  transition: transform 250ms var(--ease-out-back),
+              box-shadow 250ms ease;
+}
+
+/* Image zoom suave en hover */
+.img-frame img {
+  transition: transform 0.8s var(--ease-out-expo);
+}
+
+.img-frame:hover img {
+  transform: scale(1.05);
+}
+
+/* Float para elementos decorativos */
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.float--delayed {
+  animation: float 6s ease-in-out 2s infinite;
+}
+
+/* Ribbon SVG animado */
+.ribbon-svg path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+.ribbon-svg.is-visible path {
+  animation: ribbonFlow 2s var(--ease-out-expo) forwards;
+}
+
+/* ── CAPA 4: Elementos especiales ── */
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-accent));
+  transform-origin: left;
+  transform: scaleX(0);
+  z-index: 60;
+  transition: transform 100ms linear;
+}
+
+/* Counter animated — el estilo del número */
+[data-counter] {
+  font-family: var(--font-display);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Parallax hero bg */
+.hero-parallax {
+  will-change: transform;
+  transition: transform 0ms linear;
+}
+
+/* Floating gradient orbs (decorativos del hero) */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.orb--primary {
+  background: var(--color-primary);
+  width: clamp(200px, 30vw, 400px);
+  height: clamp(200px, 30vw, 400px);
+  animation: float 8s ease-in-out infinite;
+}
+
+.orb--secondary {
+  background: var(--color-secondary);
+  width: clamp(150px, 25vw, 350px);
+  height: clamp(150px, 25vw, 350px);
+  animation: float 10s ease-in-out 3s infinite;
+}
+
+.orb--accent {
+  background: var(--color-accent);
+  width: clamp(180px, 20vw, 300px);
+  height: clamp(180px, 20vw, 300px);
+  animation: float 7s ease-in-out 1.5s infinite;
+}

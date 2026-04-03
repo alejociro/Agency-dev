@@ -1,0 +1,167 @@
+{
+  "cliente": "A Perfect 10 Nails",
+  "url_auditada": "http://aperfect10nails.com/",
+  "sector": "Nail Salon",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 50. Un nail salon es un servicio local orientado a clientela de proximidad; se aplica este benchmark porque las expectativas digitales son similares a otros servicios locales de atención personal.",
+  "fecha": "2026-04-03",
+  "scores": {
+    "seo": 42,
+    "ux_ui": 38,
+    "marketing": 32,
+    "contenido": 40,
+    "tecnico": 28,
+    "total": 36
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title incluye keyword principal 'nail salon' y localización 'GREENVILLE, SC 29607'",
+        "Meta description presente y describe los servicios principales del negocio",
+        "Keywords meta tag incluye términos relevantes del sector y localización",
+        "Imágenes de servicios tienen alt text descriptivo y relevante (nail enhancement, manicure, pedicure, waxing)"
+      ],
+      "negativos": [
+        "H1 es solo el nombre del negocio sin keyword de servicio ni localización",
+        "Meta title en minúsculas ('a perfect 10 nails') — pierde profesionalismo y potencial de CTR",
+        "Todas las imágenes de galería (12 fotos) comparten el mismo alt text genérico 'A PERFECT 10 NAILS' — desperdicio de oportunidad SEO",
+        "No hay estructura jerárquica clara de headings H1→H2→H3; las secciones usan títulos planos",
+        "CTAs genéricos como 'Get Started!' y 'Show More...' sin keywords descriptivos"
+      ],
+      "recomendaciones": [
+        { "accion": "Reescribir H1 a 'Nail Salon in Greenville, SC — Manicure, Pedicure & Waxing' para capturar búsquedas locales", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Capitalizar y optimizar meta title: 'A Perfect 10 Nails | Best Nail Salon in Greenville, SC 29607'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Asignar alt texts únicos y descriptivos a cada imagen de galería (ej: 'gel manicure design at A Perfect 10 Nails Greenville')", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Implementar estructura semántica de headings: H1 único → H2 por sección → H3 para sub-servicios", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Reemplazar CTAs genéricos por textos con keywords: 'View Our Services', 'Book Your Appointment'", "prioridad": "baja", "tipo": "quick_win" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores dorado/negro proyecta imagen premium acorde al sector belleza",
+        "Layout de una sola página facilita navegación sin fricción para el usuario",
+        "Barra de contacto con horarios, teléfono y dirección visible en la parte superior"
+      ],
+      "negativos": [
+        "4 familias tipográficas cargadas (Arial, Times New Roman, Open Sans, Merriweather) — inconsistencia visual y peso innecesario",
+        "Bootstrap 3 es un framework obsoleto (2013) — diseño se percibe anticuado y no sigue estándares modernos de UI",
+        "Imágenes de servicios muy pequeñas (160x160px) — dificultan la apreciación visual del trabajo",
+        "Pop-up de anuncio 'IMPORTANT!' interrumpe la experiencia del usuario sin aportar valor real",
+        "Sin indicios de diseño mobile-first; Bootstrap 3 es responsive pero con patrones de hace una década"
+      ],
+      "recomendaciones": [
+        { "accion": "Reducir a 2 fuentes máximo: una sans-serif moderna (Inter o DM Sans) para cuerpo y una serif elegante para títulos", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Rediseñar sección de servicios con tarjetas más grandes e imágenes de alta calidad que muestren el trabajo", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Eliminar el popup intrusivo y convertir su contenido en una barra informativa sutil o sección dedicada", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Migrar a un diseño mobile-first con componentes modernos y espaciado generoso", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Implementar galería con lightbox moderno y navegación táctil para móviles", "prioridad": "baja", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "CTA principal 'Book Now' visible en el hero — acción directa y clara",
+        "Mención explícita de higiene y liners desechables — diferenciador real post-pandemia",
+        "Disponibilidad de sistema de reservas online (Online_Booking) y cupones (Specials)"
+      ],
+      "negativos": [
+        "Propuesta de valor completamente genérica: 'Professional Nail Care for Ladies & Gentlemen' no diferencia del resto de salones",
+        "Cero prueba social: no hay testimonios, reseñas, rating de Google, número de clientes atendidos ni años de experiencia",
+        "No hay oferta de bienvenida ni incentivo para nuevos clientes a pesar de tener sistema de cupones",
+        "El mensaje de higiene (diferenciador real) está enterrado en un popup en lugar de ser protagonista",
+        "Sin storytelling ni historia del negocio — la sección About es una sola frase genérica"
+      ],
+      "recomendaciones": [
+        { "accion": "Reescribir propuesta de valor destacando el diferenciador de higiene: 'Greenville's Most Hygienic Nail Salon — Disposable Liners for Every Client'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Integrar reseñas de Google/Yelp en la página con rating promedio y testimonios destacados", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Crear oferta de bienvenida visible en el hero: '15% Off Your First Visit — Book Online Today'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Mover el mensaje de higiene y seguridad a una sección dedicada con iconos y explicación visual", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Desarrollar sección About con historia del negocio, años de experiencia y filosofía de servicio", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Información de contacto completa: teléfono, email, dirección física y horarios detallados por día",
+        "Catálogo de servicios definido con 6 categorías claras (Nail Enhancement, Kid's Menu, Waxing, Manicure, Pedicure)",
+        "Galería con 12 fotos reales del trabajo del salón — contenido auténtico"
+      ],
+      "negativos": [
+        "Sección About es una sola oración — insuficiente para generar confianza",
+        "No hay descripciones individuales de servicios, precios ni duración estimada",
+        "Ausencia total de FAQ o sección de preguntas frecuentes (políticas de cancelación, tipos de productos usados, etc.)",
+        "No hay contenido sobre el equipo, experiencia o certificaciones del personal",
+        "Email en formato MAYÚSCULAS (DOANTHAI1195@GMAIL.COM) se percibe como no profesional"
+      ],
+      "recomendaciones": [
+        { "accion": "Expandir sección About a mínimo 3 párrafos: historia, filosofía de higiene y compromiso con el cliente", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Añadir descripciones, precios base y duración para cada categoría de servicio", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Crear sección FAQ con 5-8 preguntas frecuentes: productos usados, política de cancelación, walk-ins, métodos de pago", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Obtener un email profesional con dominio propio (ej: info@aperfect10nails.com)", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Añadir sección de equipo con fotos y especialidades de los nail technicians", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Sitio es crawleable y no requiere renderizado JavaScript para mostrar contenido",
+        "Tiene sistema de reservas online integrado (Online_Booking)",
+        "Mapa de Google embebido en el footer para localización fácil"
+      ],
+      "negativos": [
+        "Bootstrap 3 es un framework obsoleto (última actualización 2019) con vulnerabilidades conocidas",
+        "jQuery como dependencia principal — peso innecesario para un sitio de esta complejidad",
+        "Plataforma nailsolution.us — template genérico compartido con cientos de salones, sin personalización real",
+        "Sin HTTPS (usa http://) — penalización de Google y advertencia de navegadores modernos",
+        "Sin formularios de contacto propios; depende completamente de la plataforma externa"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a HTTPS — crítico para SEO y confianza del usuario", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reemplazar Bootstrap 3 + jQuery por stack moderno ligero (HTML + Tailwind CSS + Alpine.js)", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Abandonar la plataforma nailsolution.us y crear sitio propio con dominio personalizado", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar formulario de contacto nativo con validación y notificación por email", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Añadir Schema.org markup (LocalBusiness, NailSalon) para rich snippets en Google", "prioridad": "media", "tipo": "quick_win" }
+      ],
+      "stack_actual": "HTML estático, Bootstrap 3, jQuery, Font Awesome, ScrollReveal, Magnific Popup, plataforma nailsolution.us",
+      "stack_recomendado": "HTML + Tailwind CSS + Alpine.js — sitio estático moderno, rápido y sin dependencias pesadas",
+      "integraciones": ["Sistema de reservas online (nailsolution.us)", "Google Maps embebido", "Yelp", "Facebook", "Google Business"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Migrar a HTTPS para eliminar advertencias de navegador y mejorar ranking SEO",
+    "Reescribir H1 y meta title con keywords locales: 'Nail Salon Greenville SC'",
+    "Reescribir propuesta de valor destacando el diferenciador de higiene ultra-higiénica",
+    "Crear oferta de bienvenida para nuevos clientes visible en el hero",
+    "Añadir Schema.org LocalBusiness markup para rich snippets en búsquedas locales"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Migrar a HTTPS",
+      "Reescribir H1 con keyword principal + localización",
+      "Optimizar meta title y description",
+      "Reescribir propuesta de valor con diferenciador de higiene",
+      "Eliminar popup intrusivo y reubicar su contenido",
+      "Crear oferta de bienvenida para nuevos clientes"
+    ],
+    "mes_1": [
+      "Rediseñar sitio completo con stack moderno (HTML + Tailwind + Alpine.js)",
+      "Integrar reseñas de Google/Yelp con testimonios destacados",
+      "Expandir contenido de About, servicios con precios y descripciones",
+      "Crear sección FAQ con preguntas frecuentes del sector",
+      "Implementar formulario de contacto nativo",
+      "Añadir Schema.org markup para SEO local",
+      "Mover mensaje de higiene a sección dedicada con diseño visual"
+    ],
+    "largo_plazo": [
+      "Obtener email profesional con dominio propio",
+      "Crear sección de equipo con fotos y especialidades",
+      "Implementar galería moderna con lightbox y navegación táctil",
+      "Desarrollar sistema de blog o tips de nail care para SEO de contenido",
+      "Integrar Google Analytics y seguimiento de conversiones"
+    ]
+  },
+  "resumen_ejecutivo": "El sitio de A Perfect 10 Nails está construido sobre una plataforma genérica de templates (nailsolution.us) con tecnología obsoleta (Bootstrap 3, sin HTTPS), lo que lo hace indistinguible de cientos de salones y penaliza su posicionamiento. La mayor oportunidad está en capitalizar su diferenciador real de higiene ultra-higiénica con liners desechables, que actualmente está enterrado en un popup, combinado con prueba social de sus perfiles en Yelp, Google y Facebook. El próximo paso es construir un sitio propio con stack moderno, propuesta de valor clara centrada en higiene, y contenido expandido de servicios con precios y testimonios reales.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["alpine.js", "google-maps-embed", "schema-org-local-business"],
+    "justificacion": "Complejidad baja — sitio de una sola página para servicio local. HTML estático + Tailwind + Alpine.js ofrece máximo rendimiento, carga instantánea y cero dependencias pesadas. Ideal para SEO local y Core Web Vitals."
+  }
+}

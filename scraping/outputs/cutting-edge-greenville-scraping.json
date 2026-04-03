@@ -1,0 +1,195 @@
+{
+  "negocio": "Cutting Edge Mowing and Washing",
+  "url": "https://www.cuttingedgegreenville.com/",
+  "sector": "Lawn Care & Landscaping Services",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Lawn Mowing and Landscaping | Greenville SC | Cutting Edge",
+    "description": "Lawn Mowing and Landscaping along with power washing is available from Cutting Edge in Greenville SC, Yard Cleanup, Trimming and more.",
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#32373c",
+    "secundario": "#ffffff",
+    "acento": "#000000",
+    "fondo": "#ffffff",
+    "texto": "#000000",
+    "otros": []
+  },
+  "logo": {
+    "url": "https://www.cuttingedgegreenville.com/wp-content/uploads/2022/02/Cutting-Edge-Mowing-Logo.jpg",
+    "descripcion": "Logo de Cutting Edge Mowing con texto del nombre del negocio",
+    "posicion": "header izquierda",
+    "colores": []
+  },
+  "tipografias": [
+    {
+      "nombre": "Arial",
+      "uso": "cuerpo y encabezados",
+      "peso": "400, 600",
+      "tamanio_aprox": "13px-42px"
+    }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://www.cuttingedgegreenville.com/" },
+    { "label": "Services", "url": "#" },
+    { "label": "Lawn-Mowing", "url": "https://www.cuttingedgegreenville.com/lawn-mowing/" },
+    { "label": "Landscaping-Services", "url": "https://www.cuttingedgegreenville.com/landscaping-services/" },
+    { "label": "Water Services", "url": "https://www.cuttingedgegreenville.com/water-services/" },
+    { "label": "About-Us", "url": "https://www.cuttingedgegreenville.com/about-us/" },
+    { "label": "Blog", "url": "https://www.cuttingedgegreenville.com/blog/" },
+    { "label": "Contact-Us", "url": "https://www.cuttingedgegreenville.com/contact-us/" },
+    { "label": "Request Quote", "url": "https://www.cuttingedgegreenville.com/contact-us/" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Welcome TO Cutting Edge Mowing and Washing",
+      "contenido": "Keep Your Lawn Looking its Best All Year",
+      "cta": "Contact Us today about your Lawn",
+      "imagenes": [
+        {
+          "url": "https://www.cuttingedgegreenville.com/wp-content/uploads/2022/02/Locally-Owned-Mowing.png",
+          "alt": "Locally Owned Mowing Company",
+          "descripcion": "Badge de negocio local",
+          "tipo": "badge",
+          "dimensiones": null
+        },
+        {
+          "url": "https://www.cuttingedgegreenville.com/wp-content/uploads/2022/02/Satisfaction-Guaranteed.png",
+          "alt": "Mowing Satisfaction Guaranteed",
+          "descripcion": "Badge de satisfacción garantizada",
+          "tipo": "badge",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Lawn Care Services",
+      "contenido": "Lawn Mowing, Trimming, Edging, Fertilizing, Seeding and more.",
+      "cta": "Learn More",
+      "imagenes": [
+        {
+          "url": "https://www.cuttingedgegreenville.com/wp-content/uploads/2022/02/Lawn-Services-Greenville.jpg",
+          "alt": "Lawn Mowing Services Greenville SC",
+          "descripcion": "Imagen de servicios de corte de césped",
+          "tipo": "foto",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Landscaping Services",
+      "contenido": "Mulching, Yard Cleanup, Leaf Raking, Shrub Maintence, and more.",
+      "cta": "Learn More",
+      "imagenes": [
+        {
+          "url": "https://www.cuttingedgegreenville.com/wp-content/uploads/2022/02/Raking-Leaves-Greenville-SC.jpg",
+          "alt": "Landscape Services Greenville",
+          "descripcion": "Imagen de servicios de paisajismo y rastrillado",
+          "tipo": "foto",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Pressure Washing & More",
+      "contenido": "Pressure Washing, Soft Wash technique for homes. Sprinkler & Irrigation Repairs.",
+      "cta": "Learn More",
+      "imagenes": [
+        {
+          "url": "https://www.cuttingedgegreenville.com/wp-content/uploads/2022/02/Pressure-Washing-Greenville-SC.jpg",
+          "alt": "Pressure Washing Service Greenville SC",
+          "descripcion": "Imagen de servicio de lavado a presión",
+          "tipo": "foto",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "about",
+      "titulo": null,
+      "contenido": "When you need lawn care or any landscaping services in Greenville SC, we've got your back. Our philosophy here at Cutting Edge Mowing & Water is to approach every project with a personalized, custom game plan. We understand that no two clients' yards are the same. Some homeowners like their yards cut a certain way, some business owners need specific weekly maintenance on their daylilies — we are bringing quality care to an industry that likes to focus on quantity. Offering high-quality lawn care, landscaping, and property pressure washing in the Upstate area. We are a holistic option for home and business owners and are able to take care of your property needs through all four seasons. From weed prevention to landscaping maintenance, our experienced team of lawn care professionals is ready to bring your vision to life. Learn why Cutting Edge Mowing & Water is the most dependable and honest landscaping company in Greenville, South Carolina. Contact us today for a free quote!",
+      "cta": "Contact us today for a free quote!",
+      "imagenes": []
+    },
+    {
+      "tipo": "testimonios",
+      "titulo": "What are the neighbors saying?",
+      "contenido": "Michele D. — Taylors, SC: \"We have used Cutting Edge for 2 years now and we couldn't be more happy with the service we get. Besides mowing, they take care of our pruning needs and mulching seasonal. Excellent at pruning also. A+ Recommendation.\"\n\nTina R. — Greenville: \"Through out the years I have tried different lawn care companies and last year when I hired Cutting Edge Mowing and Washing they did an excellent job. The owner Ian Wright was supportive and made sure my yard always looked well maintained. Cutting Edge Mowing and Washing was flexible, at times my yard needed to have maintained a couple times a week and Mr. Wright always found a way to fit my property in and make it look top notch. I would highly recommend Cutting Edge Mowing and Washing as a Lawn Care company for the Greenville SC community.\"\n\nQuez J. — Greenville: \"Called Ian and not only did he respond but he completed the job the next day. The yard looked amazing, highly recommend.\"",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.cuttingedgegreenville.com/wp-content/uploads/2022/02/Team-Member-Michele.jpg",
+          "alt": "Michele D.",
+          "descripcion": "Foto de cliente Michele D.",
+          "tipo": "avatar",
+          "dimensiones": null
+        },
+        {
+          "url": "https://www.cuttingedgegreenville.com/wp-content/uploads/2022/02/Tina-Rumsey-Lawn.png",
+          "alt": "Tina R.",
+          "descripcion": "Foto de cliente Tina R.",
+          "tipo": "avatar",
+          "dimensiones": null
+        },
+        {
+          "url": "https://www.cuttingedgegreenville.com/wp-content/uploads/2022/02/Quez-Johnson.png",
+          "alt": "Quez J.",
+          "descripcion": "Foto de cliente Quez J.",
+          "tipo": "avatar",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "area-servicio",
+      "titulo": "Proudly Serving our neighbors",
+      "contenido": "Proudly Serving our neighbors in Greenville, Greer, Taylors, Easley, Fountain Inn, Simpsonville, Golden Strip, Mauldin, and other upstate areas.",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Keep Your Lawn Looking its Best All Year",
+    "propuesta_valor": "Personalized, custom game plan — bringing quality care to an industry that likes to focus on quantity.",
+    "ctas": [
+      "Request Quote",
+      "Contact Us today about your Lawn",
+      "Contact us today for a free quote!",
+      "Learn More"
+    ]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(864) 437-9339",
+    "whatsapp": null,
+    "email": null,
+    "direccion": "Pine Ridge Dr, Greenville, SC 29605",
+    "horarios": null
+  },
+  "redes": [
+    { "plataforma": "Facebook", "url": null },
+    { "plataforma": "Twitter", "url": null },
+    { "plataforma": "YouTube", "url": null }
+  ],
+  "formularios": [
+    {
+      "proposito": "Solicitar cotización / contacto",
+      "campos": ["nombre", "email", "mensaje"]
+    }
+  ],
+  "footer": {
+    "contenido": "Pine Ridge Dr, Greenville, SC 29605 | (864) 437-9339",
+    "links": [
+      { "label": "Website by Larry O Miller", "url": "https://seoaftercoffee.com" }
+    ],
+    "copyright": "© 2020-2024 Cutting Edge Mowing and Washing, Greenville SC"
+  },
+  "tecnologia": "WordPress 6.9.4, Elementor 3.34.0, Elementor Pro, Maspik (spam protection)"
+}

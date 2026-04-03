@@ -1,0 +1,159 @@
+{
+  "cliente": "Handyman Greenville SC",
+  "url_auditada": "https://www.handymangreenville.com/",
+  "sector": "Home Repair & Home Improvement Services",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 50. Aplicado porque handyman es un servicio local dirigido a propietarios en un área geográfica específica (Greenville, SC y alrededores).",
+  "fecha": "2026-04-02",
+  "scores": {
+    "seo": 40,
+    "ux_ui": 42,
+    "marketing": 38,
+    "contenido": 38,
+    "tecnico": 45,
+    "total": 41
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title presente con keyword principal 'Handyman Greenville SC'",
+        "Número de teléfono como CTA principal visible en hero y footer",
+        "Múltiples páginas de servicios con URLs descriptivas (services.html, home-improvement-greenville-sc.html)"
+      ],
+      "negativos": [
+        "Meta description ausente — Google generará un snippet aleatorio",
+        "Ninguna imagen tiene atributo alt text — todas las imágenes son invisibles para buscadores",
+        "Headings repetitivos y keyword-stuffed: 'Handyman Greenville' aparece como H1, H2 y en múltiples secciones sin variación semántica",
+        "No hay meta keywords (menor impacto pero indica falta de optimización general)",
+        "Estructura de headings plana — no hay jerarquía H1→H2→H3 clara, múltiples secciones al mismo nivel"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar meta description optimizada: 'Professional handyman services in Greenville SC — drywall, kitchen remodels, flooring & more. Call 864-651-9356 for a free quote.'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar alt text descriptivo a todas las imágenes del sitio (cocina, baño, puerta de perro, etc.)", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reestructurar headings: un solo H1 por página, servicios como H2, detalles como H3", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Crear páginas individuales para cada servicio principal (drywall, kitchen remodel, etc.) con keywords long-tail", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Formulario de cotización integrado en la página principal facilita la conversión",
+        "Teléfono clickeable (tel:) permite llamada directa desde móvil",
+        "Imágenes de proyectos reales dan credibilidad visual"
+      ],
+      "negativos": [
+        "5 tipografías distintas (Quattrocento, Crimson Text, Montserrat, Playfair Display, Lora) — excesivo, genera inconsistencia visual",
+        "Paleta esencialmente monocromática gris (#3f3f3f, #2a2a2a, #d5d5d5) — sin color de marca ni acento que genere identidad",
+        "Sin evidencia de diseño mobile-first; Weebly ofrece responsive básico pero no optimizado",
+        "Líneas decorativas PNG como separadores en lugar de elementos CSS limpios",
+        "Página extremadamente larga con secciones de texto denso sin descanso visual"
+      ],
+      "recomendaciones": [
+        { "accion": "Reducir a 2 tipografías máximo: una para headings y otra para body", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Definir un color de marca fuerte (naranja, azul o verde) como acento para CTAs y elementos interactivos", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Rediseñar layout con secciones más cortas, mayor espaciado y mejor jerarquía visual", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Implementar diseño mobile-first con navegación hamburger y CTAs sticky", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Tono conversacional y cercano que conecta con el público objetivo (propietarios ocupados)",
+        "Slogan memorable: 'Big and Small, we do it all!' comunica versatilidad",
+        "Formulario de cotización con campo de urgencia (ASAP, This Week, Flexible) — buen filtro de leads"
+      ],
+      "negativos": [
+        "Cero prueba social: no hay testimonios, reseñas, número de proyectos completados ni logos de clientes",
+        "Propuesta de valor genérica: 'quick and professional home repair specialists' no diferencia de ningún competidor",
+        "CTAs repetitivos sin variación: 'Call Today' aparece múltiples veces sin urgencia ni beneficio",
+        "No hay oferta concreta ni incentivo para actuar ahora (descuento, garantía, diagnóstico gratis)",
+        "Múltiples errores ortográficos y gramaticales ('hall' en vez de 'haul', 'doesnt', 'proffessionally', 'weather' en vez de 'whether') restan profesionalismo"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar sección de testimonios con al menos 3 reseñas reales de clientes con nombre y tipo de proyecto", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear propuesta de valor diferenciada: qué hace a este handyman distinto (velocidad, garantía, años de experiencia, etc.)", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Corregir todos los errores ortográficos y gramaticales del sitio", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar badge de Google Reviews, licencia o seguro como señales de confianza", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Lista completa de servicios ofrecidos (drywall, electrical, flooring, kitchen/bath remodel, etc.)",
+        "Cobertura de áreas de servicio mencionadas explícitamente (Greenville, Taylors, Simpsonville, Greer, etc.)",
+        "Contenido con personalidad — no es genérico corporativo, tiene voz propia"
+      ],
+      "negativos": [
+        "Contenido extremadamente repetitivo: la misma idea ('llámanos, hacemos de todo') se repite en 6+ secciones",
+        "Información de contacto incompleta: solo teléfono, sin email, dirección física ni horarios de atención",
+        "No hay FAQ ni sección que resuelva objeciones comunes (precios, garantías, tiempos, licencias)",
+        "Múltiples errores gramaticales y ortográficos que afectan credibilidad profesional",
+        "Sin página de galería de proyectos antes/después que demuestre calidad del trabajo"
+      ],
+      "recomendaciones": [
+        { "accion": "Consolidar contenido repetitivo: eliminar secciones redundantes y crear una estructura clara (Hero → Servicios → Por qué elegirnos → Testimonios → Cotización)", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar email de contacto, dirección o al menos área general, y horarios de disponibilidad", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear sección FAQ: precios promedio, tiempo de respuesta, garantía, licencias/seguro", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Agregar galería antes/después de proyectos completados", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Formulario de cotización funcional con campos relevantes y dropdown de servicios",
+        "Google Analytics implementado para tracking de visitantes",
+        "Sitio es crawleable (no requiere render JavaScript)"
+      ],
+      "negativos": [
+        "Weebly CMS es limitado en personalización, velocidad y SEO avanzado",
+        "Backbone.js y jQuery son frameworks obsoletos con overhead innecesario",
+        "Dos propiedades de Google Analytics distintas (UA-151920216-1, UA-159267295-1) — probable configuración duplicada",
+        "Sin HTTPS enforcement verificable, sin políticas de caché optimizadas"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar fuera de Weebly a un sitio estático moderno para mayor velocidad y control", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Consolidar las dos propiedades de Google Analytics en una sola (preferiblemente migrar a GA4)", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Eliminar jQuery y Backbone.js — un sitio de este tipo no necesita frameworks JS pesados", "prioridad": "baja", "tipo": "opcional" }
+      ],
+      "stack_actual": "Weebly CMS, jQuery, Backbone.js, Google Analytics (UA), Google Tag Manager, Typekit, Snowplow Analytics",
+      "stack_recomendado": "HTML estático + Tailwind CSS + Alpine.js — sitio simple de servicios locales que no requiere CMS ni frameworks pesados",
+      "integraciones": ["Google Analytics / GA4", "Formulario de cotización con email", "Click-to-call telefónico"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Agregar meta description optimizada con keywords y teléfono",
+    "Corregir todos los errores ortográficos y gramaticales del contenido",
+    "Agregar alt text descriptivo a todas las imágenes",
+    "Definir color de marca fuerte para CTAs y elementos de acción",
+    "Agregar al menos 3 testimonios reales de clientes"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Agregar meta description optimizada",
+      "Agregar alt text a todas las imágenes",
+      "Corregir errores ortográficos y gramaticales",
+      "Reducir tipografías a máximo 2 familias",
+      "Definir color de acento para CTAs",
+      "Agregar testimonios de clientes",
+      "Agregar email y horarios de contacto"
+    ],
+    "mes_1": [
+      "Rediseñar estructura de contenido eliminando secciones repetitivas",
+      "Crear propuesta de valor diferenciada",
+      "Implementar diseño mobile-first con navegación optimizada",
+      "Crear sección FAQ con preguntas frecuentes",
+      "Agregar galería de proyectos antes/después",
+      "Migrar a GA4 y consolidar propiedades de analytics",
+      "Reestructurar jerarquía de headings"
+    ],
+    "largo_plazo": [
+      "Migrar a sitio estático moderno (HTML + Tailwind + Alpine.js)",
+      "Crear páginas individuales por servicio con SEO long-tail",
+      "Implementar schema markup para local business",
+      "Eliminar dependencias obsoletas (jQuery, Backbone.js)"
+    ]
+  },
+  "resumen_ejecutivo": "El sitio tiene un problema central de credibilidad y diferenciación: contenido repetitivo con errores ortográficos, cero prueba social y una paleta visual sin identidad de marca hacen que el negocio parezca poco profesional pese a ofrecer servicios legítimos. La mayor oportunidad está en agregar testimonios, corregir el contenido y definir una identidad visual fuerte — cambios de bajo esfuerzo que transformarían la percepción del visitante. El próximo paso es migrar a un sitio estático moderno con estructura limpia, prueba social prominente y un embudo claro: hero con propuesta de valor → servicios → confianza → cotización.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["alpine.js", "google analytics GA4"],
+    "justificacion": "Sitio de baja complejidad para servicio local — no necesita CMS, SPA ni frameworks pesados. HTML estático con Tailwind para diseño responsive rápido y Alpine.js para interactividad mínima (menú móvil, formulario). Máxima velocidad de carga y mínimo mantenimiento."
+  }
+}

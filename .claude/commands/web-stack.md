@@ -9,8 +9,8 @@ Configura el proyecto según `stack_para_web.framework` del JSON de auditoría.
 | Valor JSON | Stack completo | Cuándo aplica |
 |---|---|---|
 | `html` | HTML + CSS + JS vanilla + Tailwind CSS v4 CDN | Brochure simples, < 5 páginas |
-| `astro` | Astro 5 + Tailwind CSS v4 | Contenido rico, buen SEO, sin backend |
-| `react` | Vite 6 + React 19 + Tailwind CSS v4 + Framer Motion | Apps dinámicas, muchas interacciones |
+| `astro` | Astro 5 + Tailwind CSS v4 (vía `@tailwindcss/vite`) | Contenido rico, buen SEO, sin backend |
+| `react` | Vite 6 + React 19 + Tailwind CSS v4 (vía `@tailwindcss/vite`) + Framer Motion | Apps dinámicas, muchas interacciones |
 
 ---
 
@@ -37,7 +37,6 @@ Configura el proyecto según `stack_para_web.framework` del JSON de auditoría.
 ```
 <negocio>/
   astro.config.mjs
-  tailwind.config.mjs
   package.json
   src/
     pages/
@@ -54,11 +53,12 @@ Configura el proyecto según `stack_para_web.framework` del JSON de auditoría.
     assets/
 ```
 
+> **NO crear** `tailwind.config.mjs` — Tailwind v4 no lo usa. Los tokens se definen en `design-system.css` con `@theme`.
+
 ### React 19 (Vite 6)
 ```
 <negocio>/
   vite.config.js
-  tailwind.config.js
   package.json
   src/
     App.jsx
@@ -72,6 +72,85 @@ Configura el proyecto según `stack_para_web.framework` del JSON de auditoría.
       design-system.css
     assets/
 ```
+
+> **NO crear** `tailwind.config.js` — Tailwind v4 no lo usa.
+
+---
+
+## Configuración de Tailwind CSS v4 (OBLIGATORIO)
+
+Tailwind v4 usa `@tailwindcss/vite` como plugin de Vite. **NO usar `@astrojs/tailwind`** (ese paquete es para Tailwind v3 y es incompatible).
+
+### package.json — dependencias Astro
+
+```json
+{
+  "dependencies": {
+    "astro": "^5.0.0",
+    "@tailwindcss/vite": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}
+```
+
+### package.json — dependencias React
+
+```json
+{
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "framer-motion": "^12.0.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "@tailwindcss/vite": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}
+```
+
+### astro.config.mjs (Astro)
+
+```js
+import { defineConfig } from 'astro/config';
+import tailwindcss from '@tailwindcss/vite';
+
+export default defineConfig({
+  vite: {
+    plugins: [tailwindcss()],
+  },
+});
+```
+
+### vite.config.js (React)
+
+```js
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
+
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+});
+```
+
+### design-system.css — inicio del archivo (SIEMPRE)
+
+```css
+@import "tailwindcss";
+```
+
+> **NUNCA usar** `@tailwind base; @tailwind components; @tailwind utilities;` (sintaxis v3).
+> **NUNCA usar** `@layer base, components, utilities;` sin `@import "tailwindcss"`.
+> **NUNCA crear** `tailwind.config.mjs` ni `postcss.config.mjs` — Tailwind v4 no los necesita.
+
+### Paquetes prohibidos (NO instalar)
+
+- `@astrojs/tailwind` — integración obsoleta para Tailwind v3
+- `postcss-nesting` — Tailwind v4 soporta nesting nativo
+- `autoprefixer` — Tailwind v4 lo incluye internamente
 
 ---
 
@@ -133,10 +212,11 @@ Configura el proyecto según `stack_para_web.framework` del JSON de auditoría.
 
 - Mobile-first: media queries de 360px hacia arriba
 - Usar CSS nesting nativo (soportado en todos los browsers modernos 2025+)
-- Usar `@layer` para organizar cascade: `@layer base, components, utilities`
+- Usar `@layer` de Tailwind v4 para organizar cascade (se activa con `@import "tailwindcss"`)
 - `prefers-reduced-motion` desactiva animaciones no esenciales
 - `font-display: swap` en todas las fuentes
 - Todas las imágenes: `width`, `height`, `loading="lazy"`, `decoding="async"`
 - Critical CSS (above the fold) inline en `<head>`
 - Usar `oklch()` para definir colores cuando se necesiten variantes programáticas
 - Container queries (`@container`) para componentes que se adaptan a su contenedor, no solo al viewport
+- En frontmatter de Astro (entre `---`): usar backticks o comillas dobles para strings con apóstrofes (ej: `"property's"`, nunca `'property's'`)

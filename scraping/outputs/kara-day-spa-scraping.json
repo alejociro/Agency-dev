@@ -1,0 +1,169 @@
+{
+  "negocio": "Kara Day Spa",
+  "url": "https://karaspa.com/",
+  "sector": "Wellness / Day Spa",
+  "requiere_render": true,
+  "nota_scraping": "Sitio WordPress + Divi Theme con WAF que bloquea requests no-browser (403). El contenido del body no fue completamente accesible via scraping estático. Datos complementados con fuentes externas (Birdeye, búsquedas web). Considerar scraping con browser headless para obtener imágenes, precios completos y contenido detallado de cada sección.",
+  "meta": {
+    "title": "Kara Day Spa - Massage | Facials | Wraps | Waxing | Nail Care",
+    "description": "Kara Day Spa services include deep-tissue massage, body treatments, facials, specialty treatments, waxing, natural nail care and gentleman's services.",
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#2ea3f2",
+    "secundario": "#226D7A",
+    "acento": "#22B8D1",
+    "fondo": "#ffffff",
+    "texto": "#666666",
+    "otros": ["#333333", "#f3f3f3", "#E4F5FA", "#bbb", "#ddd", "#e2e2e2"]
+  },
+  "logo": {
+    "url": null,
+    "descripcion": "Logo de Kara Day Spa integrado en el header del sitio",
+    "posicion": "header",
+    "colores": ["#226D7A", "#22B8D1"]
+  },
+  "tipografias": [
+    { "nombre": "Open Sans", "uso": "primaria / cuerpo de texto", "peso": "300, 400, 500, 600, 700, 800", "tamanio_aprox": "14-16px" },
+    { "nombre": "Poppins", "uso": "títulos / headings", "peso": "100-900", "tamanio_aprox": "18-36px" },
+    { "nombre": "Rubik", "uso": "complementaria / acentos", "peso": "300-900", "tamanio_aprox": "14-24px" },
+    { "nombre": "Lato", "uso": "fallback", "peso": "100, 300, 400, 700, 900", "tamanio_aprox": "14-16px" }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://karaspa.com/" },
+    { "label": "Spa Services", "url": "https://karaspa.com/spa-services/" },
+    { "label": "Massage and Bodywork", "url": "https://karaspa.com/massage-and-bodywork/" },
+    { "label": "Facials", "url": "https://karaspa.com/facials/" },
+    { "label": "Body Treatments", "url": "https://karaspa.com/body-treatments/" },
+    { "label": "Pedicure Services", "url": "https://karaspa.com/pedicure-services/" },
+    { "label": "Hair Removal", "url": "https://karaspa.com/hair-removal/" },
+    { "label": "Gentleman's Services", "url": "https://karaspa.com/gentlemens-services/" },
+    { "label": "Chiropractic Services", "url": "https://karaspa.com/chiropractic-services/" },
+    { "label": "Spa Enhancements", "url": "https://karaspa.com/spa-enhancements/" },
+    { "label": "Spa Packages", "url": "https://karaspa.com/spa-packages-2/" },
+    { "label": "Spa Staff", "url": "https://karaspa.com/spa-staff/" },
+    { "label": "How to Spa", "url": "https://karaspa.com/how-to-spa/" },
+    { "label": "Lunch Menu", "url": "https://karaspa.com/lunch-menu/" },
+    { "label": "Contact", "url": "https://karaspa.com/contact-kara-spa-3/" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Experience the Kara Difference",
+      "contenido": "Kara Day Spa is the quintessential place to relax while on business or leisure in downtown Greenville. It not only functions as a full-service salon with massage, nails and body wraps, but there are also on-site chiropractic services as well.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Massage and Bodywork",
+      "contenido": "Deep-tissue and neuro-muscular massage therapy. The Signature Integrative Massage — healing, restoring and rehabilitating massage therapy designed to help you relax and enjoy wellness benefits. Therapeutic touch combined with integrative techniques. 90-minute massage: $150. Pregnancy massage: 60 minutes, $110. Add-ons: Kinesio Taping $8/area, Assisted Full Body Stretching $10.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Facials",
+      "contenido": "The Kara Ultimate Facial — $180 — Our most luxurious and thorough facial. 90 minutes. Includes neck and chest treatment, hand, arm, neck and shoulder massage with a mask applied to your hands and arms to hydrate and enhance appearance. Combination of techniques and tools including microderm exfoliation, light therapy, and high-frequency. The Kara Escape Facial — $80 — Relaxing facial experience including cleansing, massage, applying a nourishing mask, hydrating your skin, and pampering your delicate neck area with a soothing shoulder massage.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Body Treatments",
+      "contenido": "Body wraps and specialty body treatments available at Kara Day Spa.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Pedicure Services",
+      "contenido": "The Kara Ultimate Pedicure — $90 — Treatment begins with a soothing foot soak. Warm stone massage on feet & calves, feet fully exfoliated. Nails are conditioned, shaped, buffed and polished. Hot Stone Pedicure — soothing foot soak, warm stone massage on feet and calves, thorough exfoliation, nail conditioning/shaping/buffing/polishing, finished with warm towels.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Hair Removal / Waxing",
+      "contenido": "Waxing and hair removal services including lash and brow tinting.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Gentleman's Services",
+      "contenido": "The Gentleman's Facial — relaxing treatment tailored for a man's specific skin care needs, starting with a deep cleansing, followed by an exfoliating scrub and deep pore cleansing, facial massage as well as shoulder and arm massage.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Chiropractic Services",
+      "contenido": "On-site chiropractic services. Practitioner attended Sherman College of Chiropractic in Spartanburg, SC (2010).",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Spa Enhancements",
+      "contenido": "Enhancements may be scheduled alone or added during facial, nail, and body wrap treatments. Includes eye treatments, foot and leg treatments, hand treatments. Aromatherapy Treatment $10, Stretching after Massage $10, Foot Massage $10.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "paquetes",
+      "titulo": "Spa Packages",
+      "contenido": "The Kara Ultimate Package — $443 — 6 hours of spa treatments. The Kara Wellness Package — $184.50 — includes 60-minute wellness facial and 60-minute integrative massage with skin care samples. The Kara Escape Package — $133 — The Kara Escape Facial and The Signature Integrative 30-Minute Massage.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "informacion",
+      "titulo": "How to Spa",
+      "contenido": "Guide for spa visitors on how to prepare and what to expect during their visit.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "equipo",
+      "titulo": "Spa Staff",
+      "contenido": "Team of spa professionals. Group photo referenced as kara-spa-group.png.",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Experience the Kara Difference",
+    "propuesta_valor": "Kara Day Spa is the quintessential place to relax while on business or leisure in downtown Greenville. It not only functions as a full-service salon with massage, nails and body wraps, but there are also on-site chiropractic services as well. Our goal is to provide affordable luxury in a beautiful, tranquil environment, and exceed expectations every visit.",
+    "ctas": ["Book Online", "Gift Certificates"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(864) 233-5352",
+    "whatsapp": null,
+    "email": "karaspa1@gmail.com",
+    "direccion": "105 Lavinia Ave, Greenville, SC 29601",
+    "horarios": "Lunes a Viernes: 9:00 AM - 6:00 PM. Sábado y Domingo: Cerrado. Solo con cita previa."
+  },
+  "redes": [
+    { "plataforma": "Facebook", "url": "https://www.facebook.com/kara.spa/" },
+    { "plataforma": "Instagram", "url": "https://www.instagram.com/karaspaandboutique/" }
+  ],
+  "formularios": [
+    {
+      "proposito": "Contacto / Reserva de cita",
+      "campos": ["nombre", "email", "telefono", "mensaje"]
+    }
+  ],
+  "footer": {
+    "contenido": "Kara Day Spa — 105 Lavinia Ave, Greenville, SC 29601 — (864) 233-5352",
+    "links": [
+      "Privacy Policy",
+      "Spa Services",
+      "Contact"
+    ],
+    "copyright": null
+  },
+  "tecnologia": "WordPress + Divi Theme v4.27.6, Google Fonts (Open Sans, Poppins, Rubik, Lato), Yoast SEO, jQuery, Schema.org JSON-LD"
+}

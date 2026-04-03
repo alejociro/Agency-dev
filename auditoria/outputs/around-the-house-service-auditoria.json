@@ -1,0 +1,174 @@
+{
+  "cliente": "Around The House Service",
+  "url_auditada": "https://schandy911.wixsite.com/aths",
+  "sector": "Handyman / Home Services",
+  "benchmark_aplicado": "Servicio local (salud, legal, handyman) — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Técnico: 50. Se aplica este benchmark porque es un negocio de servicios locales para el hogar en una zona geográfica específica (upstate South Carolina). El público busca confianza, rapidez de contacto y prueba social local.",
+  "fecha": "2026-04-02",
+  "scores": {
+    "seo": 35,
+    "ux_ui": 48,
+    "marketing": 42,
+    "contenido": 62,
+    "tecnico": 44,
+    "total": 46
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title presente con nombre del negocio: 'Home | Around The House Service'",
+        "Propuesta de valor visible en el hero (slogan como primer contenido)",
+        "CTA 'GET A QUOTE' y 'Schedule your service today!' son descriptivos y orientados a acción"
+      ],
+      "negativos": [
+        "Sin meta description — Google mostrará un snippet auto-generado, perdiendo control del mensaje en resultados de búsqueda",
+        "Sin meta keywords (menor impacto pero indica falta de estrategia SEO básica)",
+        "No hay H1 estructurado visible — el hero no tiene título, solo un párrafo de slogan",
+        "Estructura de headings inconsistente: varias secciones sin título (hero, about tienen titulo: null)",
+        "Solo 2 imágenes detectadas en todo el sitio, ambas sin URL accesible — muy pobre para SEO de imágenes",
+        "Sitio es SPA renderizado por JavaScript (Wix Thunderbolt) — los crawlers no pueden indexar el contenido correctamente",
+        "URL del sitio es un subdominio de Wix (schandy911.wixsite.com) — cero autoridad de dominio propia",
+        "CTA 'Submit' es genérico y no comunica valor"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar meta description optimizada: 'Licensed & insured handyman in Mauldin, SC. Painting, plumbing, TV mounting, deck building & more. Call (864) 707-1140 for a free quote.'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Estructurar H1 en el hero con keyword principal: 'Professional Handyman Service in Mauldin, SC'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Migrar a dominio propio (ej: aroundthehouseservicesc.com) para ganar autoridad SEO local", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar alt text descriptivo con keywords a todas las imágenes (ej: 'handyman painting interior wall in Mauldin SC')", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Crear página individual por cada servicio principal para capturar búsquedas long-tail (ej: 'ceiling fan installation Mauldin SC')", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Cambiar el texto del botón 'Submit' a 'Get My Free Quote'", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Flujo lógico de la página: hero → about → why us → services → promo → formulario — guía al usuario hacia la conversión",
+        "Pairing tipográfico correcto: Playfair Display para headings + Madefor-Text para cuerpo",
+        "Buen contraste texto/fondo: negro (#000) sobre blanco (#fff)"
+      ],
+      "negativos": [
+        "Paleta con 7 colores diferentes — excesiva para un sitio de servicio local, genera ruido visual",
+        "No hay evidencia de diseño mobile-first; Wix SPA puede ser lento en dispositivos móviles",
+        "Sección 'Why choose us?' es una lista plana de texto sin iconografía ni elementos visuales que refuercen los puntos",
+        "Solo 2 imágenes en todo el sitio — apariencia muy texto-pesada, falta de contenido visual que genere confianza",
+        "El formulario de contacto está al final de la página — un usuario en móvil debe hacer mucho scroll para llegar",
+        "Sin navegación sticky/fixed visible — dificulta moverse entre secciones"
+      ],
+      "recomendaciones": [
+        { "accion": "Reducir paleta a 3 colores principales: un oscuro (#080808), blanco (#fff) y un acento cálido que transmita confianza (ej: azul o naranja)", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar iconos a la sección 'Why choose us?' — un icono por cada valor (honestidad, profesionalismo, fiabilidad, calidad)", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Incluir galería de fotos de trabajos realizados directamente en la página principal (no solo en /gallery)", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar botón flotante 'Get a Quote' o teléfono clickeable fijo en móvil", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar navegación sticky con logo + CTA de contacto visible en todo momento", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "CTA principal 'GET A QUOTE' con formulario de contacto completo (5 campos relevantes)",
+        "Oferta concreta y diferenciada: paquete de mantenimiento HVAC/detectores a $125/año con 2 visitas",
+        "Mensaje de 'licensed and insured' genera confianza básica para servicios del hogar"
+      ],
+      "negativos": [
+        "CERO prueba social: no hay testimonios, reseñas, número de clientes atendidos ni fotos de antes/después",
+        "El slogan es genérico ('honest, professional, reliable, high quality') — no diferencia de otros handyman locales",
+        "No hay urgencia ni escasez en ningún CTA — nada motiva actuar ahora",
+        "No se muestra área de servicio clara en el contenido principal (solo en footer: 'upstate South Carolina')",
+        "Sin garantía explícita de satisfacción ni política de seguimiento",
+        "Las redes sociales Twitter y LinkedIn tienen URLs null — links rotos que dañan credibilidad"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar sección de testimonios con 3-5 reseñas reales de clientes (tiene 99 reviews en Google con 5.0 estrellas — goldmine sin explotar)", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Mostrar badge de '5.0 ★ — 99 Reviews on Google' visible en el hero o near CTA principal", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reescribir slogan para resolver un dolor concreto: 'Your trusted handyman in upstate SC — one call fixes it all'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar sección de área de servicio con mapa o lista de ciudades: Mauldin, Greenville, Simpsonville, etc.", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Eliminar links de redes sociales sin URL (Twitter, LinkedIn) — un link roto es peor que no tener link", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar fotos de antes/después de proyectos completados para demostrar calidad del trabajo", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Lista detallada de servicios con especificaciones claras (ej: 'Plumbing installations/replacements tasks: toilets, faucets, vanities, sinks')",
+        "Información de contacto completa: teléfono, email, dirección física, horarios de operación",
+        "Oferta de paquete de mantenimiento con precio concreto ($125/año) — transparencia que genera confianza"
+      ],
+      "negativos": [
+        "Sin sección de FAQ — no aborda objeciones comunes (¿cuánto cuesta?, ¿tienen garantía?, ¿cuánto tardan?)",
+        "La sección 'About' es muy breve (2 oraciones) — no cuenta la historia del negocio ni presenta al propietario",
+        "No hay descripciones individuales por servicio — solo una lista de bullets sin contexto de qué incluye cada uno",
+        "Sin información de licencia específica ni número de seguro — dice 'licensed and insured' pero no lo respalda"
+      ],
+      "recomendaciones": [
+        { "accion": "Crear sección FAQ con 5-7 preguntas frecuentes: costos aproximados, tiempos, garantía, área de cobertura, proceso de cotización", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Expandir sección About: historia del negocio, años de experiencia, foto del propietario/equipo, valores", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Agregar descripción de 2-3 líneas por cada servicio principal explicando qué incluye y rango de precio", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Mostrar número de licencia y datos de seguro para respaldar la afirmación de 'licensed and insured'", "prioridad": "baja", "tipo": "quick_win" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Formulario de cotización funcional con 5 campos relevantes para el negocio",
+        "Sitio accesible (está online y responde)",
+        "Presencia en múltiples directorios locales (Nextdoor, Birdeye, Google) amplifica visibilidad"
+      ],
+      "negativos": [
+        "Wix Thunderbolt SPA es extremadamente pesado para un sitio de 4 páginas de un handyman local",
+        "Sitio renderizado 100% por JavaScript — no crawleable por motores de búsqueda sin render",
+        "Subdominio de Wix (schandy911.wixsite.com) — sin dominio propio, sin SSL propio",
+        "Favicon ausente — apariencia no profesional en pestañas del navegador",
+        "URLs de imágenes no accesibles/null — posibles problemas de carga de recursos",
+        "Sin schema markup (JSON-LD) para LocalBusiness — pierde rich snippets en Google"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar de Wix a sitio estático (HTML + Tailwind + Alpine.js) — reducirá tiempo de carga de ~5s a <1s", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Registrar dominio propio y configurar hosting con SSL (ej: aroundthehouseservicesc.com)", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar schema markup LocalBusiness con nombre, dirección, teléfono, horarios, área de servicio", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar favicon profesional basado en el logo existente", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Integrar Google Analytics y Google Search Console para tracking de conversiones", "prioridad": "media", "tipo": "quick_win" }
+      ],
+      "stack_actual": "Wix Thunderbolt v1.17110.0 (SPA, JavaScript-rendered) — subdominio gratuito de Wix",
+      "stack_recomendado": "HTML estático + Tailwind CSS + Alpine.js — hosting en Netlify/Vercel con dominio propio",
+      "integraciones": ["Formulario de contacto (Wix Forms)"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Agregar testimonios y badge de '5.0 ★ — 99 Reviews' en Google — la prueba social más impactante que puede agregar hoy",
+    "Escribir meta description optimizada con keywords locales y teléfono",
+    "Reescribir slogan para diferenciarse: dolor concreto + solución + localidad",
+    "Eliminar links rotos de Twitter y LinkedIn del footer",
+    "Agregar schema markup LocalBusiness para rich snippets en Google"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Agregar meta description con keywords locales",
+      "Estructurar H1 con keyword principal en hero",
+      "Agregar sección de testimonios con reseñas reales de Google (5.0 ★, 99 reviews)",
+      "Eliminar links de redes sociales sin URL",
+      "Cambiar 'Submit' por 'Get My Free Quote'",
+      "Reescribir slogan con diferenciación local"
+    ],
+    "mes_1": [
+      "Migrar a dominio propio con SSL",
+      "Rediseñar sitio como HTML estático + Tailwind (eliminar dependencia de Wix)",
+      "Agregar iconos a sección 'Why choose us'",
+      "Crear sección FAQ con 5-7 preguntas frecuentes",
+      "Agregar galería de fotos de trabajos en página principal",
+      "Implementar schema markup LocalBusiness",
+      "Agregar botón flotante de contacto en móvil",
+      "Expandir sección About con historia y foto del propietario"
+    ],
+    "largo_plazo": [
+      "Crear páginas individuales por servicio para SEO long-tail",
+      "Agregar sección de antes/después con fotos de proyectos",
+      "Agregar sección de área de servicio con mapa interactivo",
+      "Integrar Google Analytics y Search Console",
+      "Configurar Google Business Profile optimizado con link al nuevo sitio",
+      "Mostrar datos de licencia y seguro para reforzar credibilidad"
+    ]
+  },
+  "resumen_ejecutivo": "Around The House Service tiene un producto sólido (5.0 estrellas, 99 reseñas en Google) pero su sitio web no refleja esa calidad — está atrapado en un subdominio de Wix no indexable, sin prueba social visible y con un mensaje genérico que no lo diferencia de otros handyman locales. La oportunidad principal es convertir sus 99 reseñas de 5 estrellas en el motor de conversión del sitio, combinado con una migración a sitio estático con dominio propio que dispare su visibilidad en búsquedas locales. El próximo paso es construir un sitio nuevo en HTML + Tailwind que posicione los testimonios y el paquete de mantenimiento ($125/año) como elementos centrales de la página.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["alpine.js", "schema-markup-jsonld"],
+    "justificacion": "Complejidad baja: sitio de 4 páginas para servicio local sin catálogo dinámico ni login. HTML estático + Tailwind + Alpine.js ofrece carga instantánea (<1s), SEO perfecto (crawleable sin JS), costo de hosting $0 en Netlify/Vercel, y mantenimiento mínimo. No se justifica un framework SPA ni SSR para este volumen."
+  }
+}

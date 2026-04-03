@@ -1,0 +1,173 @@
+{
+  "cliente": "Nail Salon Greenville SC",
+  "url_auditada": "https://www.nailsalongreenville.com",
+  "sector": "Directorio de salones de uñas / Belleza",
+  "benchmark_aplicado": "Retail / Moda (SEO 70, UX 80, Marketing 70, Contenido 65, Técnico 65) — se aplica este benchmark por ser un directorio del sector belleza/estética, donde la presentación visual y la experiencia de búsqueda son clave para retener usuarios",
+  "fecha": "2026-04-03",
+  "scores": {
+    "seo": 52,
+    "ux_ui": 33,
+    "marketing": 40,
+    "contenido": 42,
+    "tecnico": 48,
+    "total": 43
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "H1 presente con keyword principal geolocalizado 'Nail Salon Greenville SC'",
+        "Meta title optimizado con keyword principal y variante 'Near Me Nail Salon'",
+        "URLs limpias y semánticas en la navegación (/salons/, /blog/, /contact/)",
+        "Imágenes de logos tienen atributos alt (aunque con sufijo 'Logosu' en turco)"
+      ],
+      "negativos": [
+        "Meta description completamente ausente — se pierde control del snippet en resultados de Google",
+        "Meta keywords ausente — indica falta de optimización on-page básica",
+        "Alt texts de imágenes contienen 'Logosu' (término en turco), sin valor SEO en inglés",
+        "Propuesta de valor enterrada en un muro de texto de +150 palabras en el hero",
+        "CTAs genéricos ('Start exploring now') sin keywords transaccionales del sector",
+        "Sin schema markup LocalBusiness ni Directory para el directorio"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir meta description optimizada (~155 chars): 'Find the best nail salons in Greenville SC. Browse reviews, services & book your next manicure today.'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reducir hero a 2-3 oraciones con propuesta de valor al inicio y keyword en las primeras palabras", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Corregir alt texts de imágenes: eliminar 'Logosu' y usar descripciones en inglés con keywords relevantes", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar schema markup LocalBusiness para cada salón y Directory para el sitio", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Reescribir CTAs con keywords transaccionales: 'Find a Nail Salon Near You', 'Book Your Manicure Today'", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Navegación principal clara con 5 secciones lógicas y bien etiquetadas",
+        "Grid de logos de salones destacados ofrece exploración visual rápida del directorio",
+        "Estructura de página sigue patrón estándar: hero → contenido → directorio → blog → about → footer"
+      ],
+      "negativos": [
+        "Paleta de colores completamente indefinida — todos los valores son null, sin identidad visual",
+        "Sin tipografías definidas — uso probable de fuentes por defecto del navegador",
+        "Sin logo propio del directorio — falta total de identidad de marca",
+        "No hay indicios de diseño mobile-first o responsive",
+        "Sin favicon detectado — apariencia amateur en pestañas del navegador",
+        "Secciones de servicios (extensiones, gel polish) son muros de texto sin apoyo visual ni iconografía",
+        "Sin jerarquía visual entre secciones: todas parecen tener el mismo peso"
+      ],
+      "recomendaciones": [
+        { "accion": "Definir paleta de marca coherente: primario (elegante/belleza), secundario, acento para CTAs", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Seleccionar e integrar tipografía profesional: serif/display para headings, sans-serif legible para body", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Añadir favicon y apple-touch-icon para identidad en navegador", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar diseño mobile-first con breakpoints para tablet y desktop", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Rediseñar secciones de servicios con cards, iconos e imágenes de apoyo", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Propuesta de valor presente: 'Connect you with the top-rated nail salons in the area'",
+        "CTAs textuales con verbos de acción presentes",
+        "Contenido de blog educativo que puede atraer tráfico informacional (esmalte permanente, duración de uñas)"
+      ],
+      "negativos": [
+        "Sin prueba social: no hay testimonios, reseñas, ratings ni contadores de uso",
+        "Mensaje principal genérico — no resuelve un dolor concreto ni diferencia del directorio de Google Maps",
+        "CTA 'Start exploring now' sin destino claro ni urgencia",
+        "Sin diferenciador explícito frente a Google Maps, Yelp u otros directorios existentes",
+        "Sin promociones, ofertas especiales ni incentivos para usar el directorio"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir contadores visibles de salones listados y zonas cubiertas como prueba social numérica", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Redactar propuesta de valor diferenciada: qué ofrece este directorio que Google Maps no ofrece", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Incorporar ratings agregados de Google y/o testimonios de usuarios del directorio", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Añadir funcionalidad de búsqueda/filtrado por servicio, zona o valoración", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Contenido original que describe el propósito y misión del directorio",
+        "Blog con artículos relevantes al sector (esmalte permanente, duración de uñas artificiales)",
+        "Sección 'About Us' transparente sobre funcionamiento del directorio"
+      ],
+      "negativos": [
+        "Texto del hero excesivamente largo y repetitivo — repite la idea de 'encontrar salones' múltiples veces en +150 palabras",
+        "Información de contacto gravemente incompleta: solo 'Greenville, South Carolina', sin teléfono, email, WhatsApp ni horarios",
+        "Sin sección de FAQ ni resolución de objeciones comunes del usuario",
+        "Sección 'About Us' con despedida amateur ('Goodbye always') que resta profesionalismo",
+        "Fichas de salones limitadas a logo y nombre — sin servicios, precios, ubicación, horarios ni reseñas"
+      ],
+      "recomendaciones": [
+        { "accion": "Condensar hero text a máximo 3 oraciones impactantes que comuniquen el valor único del directorio", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir información de contacto completa: email, formulario funcional con campos definidos", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear sección FAQ: '¿Cómo elijo un salón?', '¿Los salones están verificados?', '¿Cómo listar mi salón?'", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Enriquecer fichas de cada salón con: dirección, horarios, servicios, rango de precios, link a Google Maps", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reescribir sección About Us con tono profesional eliminando despedida informal", "prioridad": "baja", "tipo": "quick_win" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Sitio estático/SSR crawleable sin dependencia de JavaScript — indexable por buscadores",
+        "Estructura de URLs limpia y semántica",
+        "Páginas legales presentes: Terms of Services, Privacy Policy, Cookie Policy"
+      ],
+      "negativos": [
+        "Posible backend PHP personalizado sin framework conocido — mantenibilidad y seguridad cuestionables",
+        "Formulario de contacto sin campos definidos — posiblemente no funcional",
+        "Sin redes sociales integradas ni links a perfiles",
+        "Sin evidencia de optimización de rendimiento (lazy loading, compresión de imágenes)",
+        "Sin favicon detectado"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a stack moderno estático (HTML + Tailwind + Alpine.js) para eliminar dependencia de PHP y mejorar rendimiento", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar formulario de contacto funcional con campos obligatorios y validación (nombre, email, mensaje)", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir lazy loading en imágenes de logos para mejorar tiempo de carga", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Integrar perfiles de redes sociales en footer", "prioridad": "baja", "tipo": "quick_win" }
+      ],
+      "stack_actual": "Sitio estático/SSR con posible backend PHP personalizado",
+      "stack_recomendado": "HTML + Tailwind CSS + Alpine.js — sitio estático optimizado",
+      "integraciones": [
+        "Google Maps embed para ubicación de salones",
+        "Schema markup LocalBusiness + Directory",
+        "Formulario de contacto funcional con validación",
+        "Google Analytics / Search Console"
+      ],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Añadir meta description optimizada con keywords geolocalizados — impacto directo en CTR de Google",
+    "Condensar hero text a 2-3 oraciones de alto impacto con propuesta de valor al inicio",
+    "Añadir favicon para aspecto profesional en navegador",
+    "Añadir información de contacto completa (email y formulario funcional) en header y footer",
+    "Corregir alt texts de imágenes: eliminar 'Logosu' y usar descripciones descriptivas en inglés"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Añadir meta description optimizada",
+      "Corregir alt texts de imágenes (eliminar 'Logosu')",
+      "Condensar hero a 2-3 oraciones con propuesta de valor al inicio",
+      "Añadir información de contacto completa (email visible)",
+      "Añadir favicon",
+      "Implementar formulario de contacto funcional con campos definidos",
+      "Redactar propuesta de valor diferenciada vs Google Maps/Yelp"
+    ],
+    "mes_1": [
+      "Definir paleta de marca e identidad visual completa",
+      "Seleccionar e integrar tipografía profesional",
+      "Implementar diseño mobile-first responsive",
+      "Crear fichas enriquecidas de cada salón (servicios, ubicación, horarios)",
+      "Implementar schema markup LocalBusiness y Directory",
+      "Añadir contadores de salones como prueba social",
+      "Crear sección FAQ"
+    ],
+    "largo_plazo": [
+      "Migrar a stack moderno (HTML + Tailwind + Alpine.js)",
+      "Implementar sistema de búsqueda y filtros por zona/servicio/rating",
+      "Integrar ratings de Google para cada salón",
+      "Crear perfiles en redes sociales e integrar en el sitio"
+    ]
+  },
+  "resumen_ejecutivo": "El sitio funciona como directorio de salones de uñas en Greenville pero carece de identidad visual, optimización SEO básica y mecanismos de diferenciación, resultando en una experiencia genérica que no justifica su uso frente a Google Maps o Yelp. La mayor oportunidad está en transformarlo en un directorio con fichas enriquecidas (ratings, servicios, precios, ubicación exacta) y una propuesta de valor clara que lo posicione como recurso de referencia local. El próximo paso inmediato es corregir los fundamentales SEO (meta description, hero conciso, alt texts) y añadir información de contacto mientras se planifica el rediseño visual completo.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["alpine.js"],
+    "justificacion": "Complejidad baja: directorio con contenido mayormente estático y necesidades de interactividad mínimas (filtros, formulario). HTML + Tailwind + Alpine.js ofrece rendimiento óptimo, SEO nativo sin hidratación, y suficiente interactividad para filtros y formularios sin la sobrecarga de un framework."
+  }
+}

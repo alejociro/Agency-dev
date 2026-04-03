@@ -1,0 +1,155 @@
+{
+  "cliente": "Greenville Landscaping Near Me",
+  "url_auditada": "https://www.greenvillelandscapingnearme.com",
+  "sector": "Landscaping Services",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Técnico: 50. Aplicado por ser un servicio local de landscaping orientado a clientes residenciales en zona geográfica definida (Greenville, SC y alrededores).",
+  "fecha": "2026-04-02",
+  "scores": {
+    "seo": 68,
+    "ux_ui": 54,
+    "marketing": 68,
+    "contenido": 66,
+    "tecnico": 50,
+    "total": 61
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title bien optimizado con keyword principal + ubicación: 'Greenville Landscaping Near Me | Expert Lawn Care in Greenville SC'",
+        "Meta description completa, incluye servicios específicos y propuesta de valor con keywords relevantes",
+        "CTAs con texto descriptivo y verbos de acción: 'Schedule a Property Visit', 'Request a Quote'",
+        "Nombre del negocio contiene keyword exacta de búsqueda local ('Greenville Landscaping Near Me')"
+      ],
+      "negativos": [
+        "H1 es el nombre del negocio repetido, no aprovecha para incluir una variación de keyword diferenciada",
+        "Múltiples imágenes de testimonios sin atributo alt (null), perdiendo oportunidades de indexación",
+        "Estructura de headings plana — no se evidencia jerarquía H1→H2→H3 clara entre secciones",
+        "Sitio renderizado como SPA (Wix Thunderbolt) — contenido dependiente de JavaScript, dificulta el crawling de buscadores"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar alt text descriptivo a todas las imágenes de testimonios y proyectos", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reestructurar headings con jerarquía semántica H1→H2→H3 en cada sección", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Diferenciar H1 del nombre comercial — incluir keyword variada como 'Professional Landscaping Services in Greenville, SC'", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Migrar a stack con SSR/SSG para mejorar crawleabilidad y tiempos de carga", "prioridad": "alta", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Flujo de contenido lógico: hero → ubicación → estadísticas → servicios → paquetes → testimonios → cobertura → formulario",
+        "Iconografía consistente para cada servicio (mowing, edging, blowing, etc.) facilita escaneo visual",
+        "Formulario de contacto completo con campos relevantes (nombre, email, teléfono, dirección, fecha, hora)"
+      ],
+      "negativos": [
+        "8 tipografías diferentes (Montserrat, Raleway, Questrial, Avenir x2, DIN Next, Helvetica Neue, Proxima Nova) — exceso severo que rompe consistencia visual",
+        "Paleta de colores excesiva: 3 colores principales más 10 colores adicionales, sin cohesión clara",
+        "Wix SPA puede generar tiempos de carga lentos y problemas de renderizado en dispositivos móviles antiguos",
+        "No se evidencia diseño mobile-first — Wix Thunderbolt genera layouts responsivos genéricos"
+      ],
+      "recomendaciones": [
+        { "accion": "Reducir tipografías a máximo 2: una para headings (Montserrat) y una para body (Raleway)", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Consolidar paleta a 3 colores principales: primario (#4FBFB7), secundario (#2b5672), acento (#1FB55D) y eliminar colores dispersos", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Diseñar layout mobile-first con navegación hamburger y CTAs prominentes en thumb zone", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Mejorar espaciado entre secciones para dar mayor respiración visual al contenido", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Prueba social sólida con estadísticas concretas: 55+ contratos anuales, 695+ clientes, 40+ proyectos repetidos",
+        "4 testimonios reales de clientes con nombre, que validan confiabilidad y calidad del servicio",
+        "CTA principal claro y específico: 'Schedule a Property Visit' — baja fricción para el usuario"
+      ],
+      "negativos": [
+        "Slogan 'Most Reputable Landscaping Company in the Upstate' es una afirmación genérica sin diferenciador concreto",
+        "No hay sección de objeciones o garantías que reduzcan la barrera de decisión del cliente",
+        "Falta urgencia o incentivo en los CTAs — no hay ofertas, descuentos estacionales ni promociones",
+        "No se muestra precio referencial ni rango de costos para ningún paquete"
+      ],
+      "recomendaciones": [
+        { "accion": "Reformular propuesta de valor con beneficio tangible: ej. 'Year-Round Lawn Care — 695+ Happy Homeowners in the Upstate'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar sección de garantía o compromiso de servicio para reducir objeciones", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Incluir oferta estacional o incentivo en CTA secundario: 'Get Your Free Spring Estimate'", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Agregar rangos de precio orientativos en la sección de paquetes para calificar leads", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Descripciones de paquetes detalladas y específicas: frecuencia de visitas, temporadas, personalización",
+        "Cobertura geográfica bien documentada: 15 comunidades listadas explícitamente",
+        "Servicios enumerados de forma clara y concreta: mowing, edging, blowing, hedge trimming, debris removal, weed treatment"
+      ],
+      "negativos": [
+        "No hay email de contacto visible — solo teléfono y portal externo (SingleOps)",
+        "Sin horarios de atención publicados",
+        "Sección FAQ existe como página separada pero no hay contenido FAQ en la página principal",
+        "Falta contenido descriptivo en la sección de testimonios — solo título sin contexto introductorio"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar email de contacto y horarios de atención en header y footer", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Incluir 3-5 preguntas frecuentes en la página principal para resolver objeciones y mejorar SEO", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Agregar descripciones expandidas de cada servicio con beneficios para el cliente", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Crear página 'About' con historia del negocio, valores y fotos del equipo en acción", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "React 18 como base — framework moderno y bien soportado",
+        "Integración con SingleOps para gestión de clientes y cotizaciones — workflow profesional",
+        "Formulario de contacto con campos completos y estructurados para captura de leads"
+      ],
+      "negativos": [
+        "Wix Thunderbolt (SPA) genera dependencia total de JavaScript para renderizado — penaliza SEO y accesibilidad",
+        "Stack propietario Wix limita personalización, performance y portabilidad del sitio",
+        "Sitio requiere render JavaScript (requiere_render: true) — contenido no accesible para crawlers básicos",
+        "Exceso de assets y dependencias de Wix (rspack, múltiples fuentes, scripts de terceros) para un sitio simple"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a stack estático con SSG (Astro + Tailwind) para eliminar dependencia de JavaScript en renderizado", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Mantener integración con SingleOps mediante iframe o API directa en el nuevo stack", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar lazy loading para imágenes y optimización de assets (WebP, compresión)", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Configurar hosting en plataforma con CDN (Netlify/Vercel) para mejorar tiempos de carga", "prioridad": "media", "tipo": "mejora_estructural" }
+      ],
+      "stack_actual": "Wix Thunderbolt v1.17094.0, rspack@1.6.6, React 18, SingleOps (portal de clientes)",
+      "stack_recomendado": "Astro + Tailwind CSS + Alpine.js, hosting en Netlify/Vercel con CDN",
+      "integraciones": ["SingleOps (portal de clientes y cotizaciones)", "Google Reviews"],
+      "complejidad": "media"
+    }
+  },
+  "quick_wins": [
+    "Agregar alt text descriptivo a todas las imágenes sin atributo alt",
+    "Reformular propuesta de valor con beneficio tangible y cifras concretas",
+    "Agregar email de contacto y horarios de atención en ubicaciones visibles",
+    "Reducir tipografías a 2 familias (Montserrat + Raleway) para consistencia visual",
+    "Incluir oferta estacional o incentivo en CTA secundario"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Agregar alt text a todas las imágenes",
+      "Reformular propuesta de valor con datos concretos",
+      "Agregar email y horarios de contacto",
+      "Incluir oferta o incentivo en CTA secundario",
+      "Implementar lazy loading de imágenes"
+    ],
+    "mes_1": [
+      "Migrar a Astro + Tailwind con SSG para SEO y performance",
+      "Reducir tipografías y consolidar paleta de colores",
+      "Incluir FAQ en página principal (3-5 preguntas)",
+      "Diseñar layout mobile-first con navegación optimizada",
+      "Agregar sección de garantía o compromiso de servicio",
+      "Mantener integración SingleOps en nuevo stack",
+      "Agregar descripciones expandidas de servicios"
+    ],
+    "largo_plazo": [
+      "Crear página About con historia y equipo",
+      "Agregar rangos de precio orientativos en paquetes",
+      "Mejorar espaciado y respiración visual general",
+      "Configurar hosting con CDN para máxima velocidad"
+    ]
+  },
+  "resumen_ejecutivo": "El sitio sufre de un stack Wix pesado y no crawleable que limita severamente su visibilidad en buscadores, combinado con inconsistencia visual por exceso de tipografías y colores. La oportunidad principal es migrar a un stack estático ligero que aproveche el buen contenido existente (estadísticas, testimonios, paquetes detallados) para convertir más visitantes en leads. El próximo paso inmediato es rediseñar el sitio con Astro + Tailwind, consolidando la identidad visual y optimizando la propuesta de valor con los datos concretos que ya poseen.",
+  "stack_para_web": {
+    "framework": "astro",
+    "estilos": "tailwind",
+    "extras": ["alpinejs", "astro-icon"],
+    "justificacion": "Complejidad media: múltiples páginas (Home, Services, Team, FAQ, Contact), integración con SingleOps, y necesidad de SSG para resolver el problema crítico de crawleabilidad del Wix actual. Astro genera HTML estático con hidratación selectiva, ideal para SEO local."
+  }
+}

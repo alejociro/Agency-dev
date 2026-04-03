@@ -1,0 +1,398 @@
+/* BRIEF CREATIVO
+   Negocio    : Golden Nails & Spa
+   Sector     : Nail Salon & Spa
+   Tono       : luxury refinado
+   Concepto   : "Tu santuario dorado" — el nombre dice Gold, el about dice sanctuary.
+                El diseño traduce esa promesa en una experiencia visual que se siente
+                como entrar a un espacio íntimo bañado en luz cálida.
+   Diferenciador visual: Hero con overlay de textura gold-grain sobre imagen a pantalla
+                completa, líneas decorativas doradas ultrafinas que separan secciones
+                como hilos de oro, y cards de servicios con borde inferior gold gradient
+                que brilla sutilmente al hover.
+   Tipografía : Cormorant Garamond (display, títulos — peso 600/700)
+                + Jost (body, navegación — peso 300/400/500)
+   Mood       : dorado · sereno · sanctuary
+   Paleta base: #1E1E1E oscuro, #C9A96E gold, #E8D5B5 gold light,
+                #FAF7F2 cream, #D4A0A0 rose, #3A3A3A text
+*/
+
+/* ═══════════════════════════════════════
+   DESIGN SYSTEM — Golden Nails & Spa
+   ═══════════════════════════════════════ */
+
+@layer base, components, utilities;
+
+@layer base {
+
+  :root {
+    /* ── Paleta ── */
+    --color-primary:       #C9A96E;
+    --color-primary-dark:   #B0904F;
+    --color-primary-glow:   rgba(201, 169, 110, 0.25);
+    --color-secondary:     #E8D5B5;
+    --color-accent:        #D4A0A0;
+    --color-dark:          #1E1E1E;
+    --color-bg:            #FAF7F2;
+    --color-surface:       #F5F0E8;
+    --color-text:          #3A3A3A;
+    --color-text-muted:    #6B6B6B;
+    --color-white:         #FFFDF9;
+    --color-rose-soft:     rgba(212, 160, 160, 0.10);
+    --color-gold-gradient: linear-gradient(90deg, #C9A96E 0%, #E8D5B5 50%, #C9A96E 100%);
+
+    /* ── Espaciado (base 8px) ── */
+    --space-1:  0.5rem;
+    --space-2:  1rem;
+    --space-3:  1.5rem;
+    --space-4:  2rem;
+    --space-6:  3rem;
+    --space-8:  4rem;
+    --space-12: 6rem;
+    --space-16: 8rem;
+
+    /* ── Tipografía fluida ── */
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body:    "Jost", system-ui, sans-serif;
+
+    --text-hero:  clamp(3rem, 8vw, 7rem);
+    --text-h1:    clamp(2rem, 5vw, 4rem);
+    --text-h2:    clamp(1.5rem, 3vw, 2.5rem);
+    --text-h3:    clamp(1.2rem, 2vw, 1.75rem);
+    --text-body:  clamp(1rem, 1.2vw, 1.125rem);
+    --text-small: clamp(0.8rem, 1vw, 0.9rem);
+    --text-nav:   clamp(0.85rem, 1vw, 0.95rem);
+
+    /* ── Line heights ── */
+    --leading-tight: 1.1;
+    --leading-snug:  1.3;
+    --leading-body:  1.6;
+
+    /* ── Border radius ── */
+    --radius-sm:   4px;
+    --radius-md:   8px;
+    --radius-lg:   16px;
+    --radius-xl:   24px;
+    --radius-full: 9999px;
+
+    /* ── Secciones ── */
+    --section-padding:   clamp(5rem, 10vw, 10rem);
+    --container-max:     1200px;
+    --container-padding: clamp(1rem, 5vw, 2rem);
+
+    /* ── Sombras con personalidad ── */
+    --shadow-card:  0 4px 24px -4px rgba(201, 169, 110, 0.12),
+                    0 1px 4px rgba(0, 0, 0, 0.04);
+    --shadow-hover: 0 16px 48px -8px rgba(201, 169, 110, 0.2),
+                    0 4px 12px rgba(0, 0, 0, 0.06);
+    --shadow-btn:   0 4px 16px rgba(201, 169, 110, 0.25);
+    --shadow-soft:  0 2px 12px rgba(30, 30, 30, 0.05);
+
+    /* ── Transiciones ── */
+    --ease-out-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+    --transition-base: 0.3s var(--ease-out-smooth);
+    --transition-slow: 0.6s var(--ease-out-smooth);
+  }
+
+  /* ── Reset & Base ── */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    font-weight: 300;
+    line-height: var(--leading-body);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: var(--leading-tight);
+    color: var(--color-dark);
+  }
+
+  h1 { font-size: var(--text-h1); }
+  h2 { font-size: var(--text-h2); }
+  h3 { font-size: var(--text-h3); }
+
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-base);
+
+    &:hover {
+      color: var(--color-primary-dark);
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ── Utilidades ── */
+  .container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+  }
+
+  .section {
+    padding-block: var(--section-padding);
+  }
+
+  /* ── Línea dorada decorativa ── */
+  .gold-line {
+    width: 60px;
+    height: 1px;
+    background: var(--color-gold-gradient);
+    border: none;
+    margin-block: var(--space-3);
+  }
+
+  .gold-line--center {
+    margin-inline: auto;
+  }
+
+  /* ── Content-visibility (lazy rendering below the fold) ── */
+  .section:not(.hero) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 600px;
+  }
+
+  /* ── will-change (performance hints) ── */
+  .hero__bg {
+    will-change: transform;
+  }
+
+  .service-card,
+  .gallery__item img {
+    will-change: transform;
+  }
+
+  /* ── Global grain overlay (premium texture) ── */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 256px 256px;
+    mix-blend-mode: multiply;
+  }
+
+  /* ── Separadores decorativos ── */
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+    border: none;
+  }
+
+  .divider--short {
+    max-width: 200px;
+    margin-inline: auto;
+  }
+
+  .section-tag {
+    font-family: var(--font-body);
+    font-size: var(--text-small);
+    font-weight: 400;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &::before {
+      content: "";
+      width: 24px;
+      height: 1px;
+      background: var(--color-primary);
+    }
+  }
+
+  /* ═══════════════════════════════════════
+     CAPA 1 — Page Load (hero stagger)
+     ═══════════════════════════════════════ */
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes shimmer {
+    from { transform: translateX(-100%); }
+    to   { transform: translateX(100%); }
+  }
+
+  @keyframes goldPulse {
+    0%, 100% { opacity: 0.6; }
+    50%      { opacity: 1; }
+  }
+
+  .hero-tag   { animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both; }
+  .hero-title { animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both; }
+  .hero-line  { animation: scaleIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both; }
+  .hero-sub   { animation: fadeIn  0.8s ease 0.6s both; }
+  .hero-cta   { animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.8s both; }
+
+  /* ═══════════════════════════════════════
+     CAPA 2 — Scroll Reveal (data-animate)
+     ═══════════════════════════════════════ */
+  [data-animate] {
+    opacity: 0;
+    transition: opacity 0.7s ease,
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  [data-animate="fade-up"]    { transform: translateY(32px); }
+  [data-animate="fade-down"]  { transform: translateY(-32px); }
+  [data-animate="fade-left"]  { transform: translateX(-32px); }
+  [data-animate="fade-right"] { transform: translateX(32px); }
+  [data-animate="scale-in"]   { transform: scale(0.93); }
+  [data-animate="fade"]       { transform: none; }
+
+  [data-animate].is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Stagger children */
+  [data-animate="stagger"] > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease,
+                transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  [data-animate="stagger"].is-visible > *:nth-child(1) { transition-delay: 0.05s; opacity: 1; transform: none; }
+  [data-animate="stagger"].is-visible > *:nth-child(2) { transition-delay: 0.12s; opacity: 1; transform: none; }
+  [data-animate="stagger"].is-visible > *:nth-child(3) { transition-delay: 0.14s; opacity: 1; transform: none; }
+  [data-animate="stagger"].is-visible > *:nth-child(4) { transition-delay: 0.21s; opacity: 1; transform: none; }
+  [data-animate="stagger"].is-visible > *:nth-child(5) { transition-delay: 0.28s; opacity: 1; transform: none; }
+  [data-animate="stagger"].is-visible > *:nth-child(6) { transition-delay: 0.35s; opacity: 1; transform: none; }
+  [data-animate="stagger"].is-visible > *:nth-child(7) { transition-delay: 0.42s; opacity: 1; transform: none; }
+  [data-animate="stagger"].is-visible > *:nth-child(8) { transition-delay: 0.49s; opacity: 1; transform: none; }
+
+  /* Delay modifiers */
+  [data-delay="1"] { transition-delay: 0.1s; }
+  [data-delay="2"] { transition-delay: 0.2s; }
+  [data-delay="3"] { transition-delay: 0.3s; }
+  [data-delay="4"] { transition-delay: 0.4s; }
+
+  /* ── Scroll-driven: reading progress bar ── */
+  .reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--color-gold-gradient);
+    transform-origin: left;
+    z-index: 101;
+    animation: scaleProgress linear;
+    animation-timeline: scroll();
+  }
+
+  @keyframes scaleProgress {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+  }
+
+  /* ── Scroll-driven: hero parallax ── */
+  .hero__bg {
+    animation: heroParallax linear;
+    animation-timeline: scroll();
+    animation-range: 0vh 100vh;
+  }
+
+  @keyframes heroParallax {
+    to { transform: translateY(80px) scale(1.05); }
+  }
+
+  /* ── Container queries ── */
+  .card-container {
+    container-type: inline-size;
+    container-name: card;
+  }
+
+  /* ── Grid-breaking utility ── */
+  .bleed-full {
+    width: 100vw;
+    margin-inline: calc(50% - 50vw);
+  }
+
+  /* ── Selection color ── */
+  ::selection {
+    background: rgba(201, 169, 110, 0.25);
+    color: var(--color-dark);
+  }
+
+  /* ── Focus visible (accessibility) ── */
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+  }
+
+  /* ── Reduced motion ── */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+
+    [data-animate],
+    [data-animate="stagger"] > * {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    .hero-tag, .hero-title, .hero-line,
+    .hero-sub, .hero-cta {
+      animation: none !important;
+      opacity: 1 !important;
+    }
+
+    .reading-progress {
+      animation: none !important;
+      transform: scaleX(1) !important;
+    }
+
+    .custom-cursor,
+    .cursor-follower {
+      display: none !important;
+    }
+  }
+}

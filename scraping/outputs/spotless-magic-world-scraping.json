@@ -1,0 +1,143 @@
+{
+  "negocio": "Spotless Magic World LLC",
+  "url": "https://www.spotlessmagicworld.com/",
+  "sector": "Servicios profesionales de limpieza",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Cleaning Services Greenville SC | Spotless Magic World",
+    "description": "Spotless Magic World is a professional and affordable Cleaning Services in Greenville SC, disinfection services and junk removal services",
+    "keywords": "Cleaning Services in Greenville, SC"
+  },
+  "favicon": "https://www.spotlessmagicworld.com/wp-content/uploads/2022/11/cropped-Spotless-Magic-World-new-logo-01.png",
+  "paleta": {
+    "primario": "#48bca2",
+    "secundario": "#25ad99",
+    "acento": "#2a3549",
+    "fondo": "#ffffff",
+    "texto": "#4f4f4f",
+    "otros": ["#0a0500", "#EBEBEB", "#F5F5F5", "#2b364a"]
+  },
+  "logo": {
+    "url": "https://www.spotlessmagicworld.com/wp-content/uploads/2022/11/cropped-Spotless-Magic-World-new-logo-01.png",
+    "descripcion": "Logo de Spotless Magic World LLC, formato cuadrado 512x512px PNG",
+    "posicion": "header, izquierda",
+    "colores": ["#48bca2", "#25ad99"]
+  },
+  "tipografias": [
+    {
+      "nombre": "Sen",
+      "uso": "Encabezados y cuerpo de texto (fuente principal del sitio)",
+      "peso": "400, 700",
+      "tamanio_aprox": "16px cuerpo, 25-40px encabezados"
+    }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://www.spotlessmagicworld.com/" },
+    { "label": "Services", "url": "https://www.spotlessmagicworld.com/services/" },
+    { "label": "About", "url": "https://www.spotlessmagicworld.com/about/" },
+    { "label": "Blog", "url": "https://www.spotlessmagicworld.com/blog/" },
+    { "label": "Contact", "url": "https://www.spotlessmagicworld.com/contact/" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Professional Cleaning Services in Greenville, SC for Homes & Offices",
+      "contenido": "Professional and affordable Cleaning Services in Greenville SC, disinfection services and junk removal services",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.spotlessmagicworld.com/wp-content/uploads/2023/06/Cleaning-Services-Greenville-SC.jpg",
+          "alt": "Cleaning Services Greenville SC",
+          "descripcion": "Imagen hero de fondo mostrando servicios de limpieza",
+          "tipo": "background",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "branding",
+      "titulo": "Spotless Magic World LLC",
+      "contenido": null,
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.spotlessmagicworld.com/wp-content/uploads/2023/08/WhatsApp-Video-2023-08-03-at-3.25.52-PM.gif",
+          "alt": "Spotless car moving Animation",
+          "descripcion": "Animacion GIF de auto con branding de Spotless Magic World",
+          "tipo": "animacion",
+          "dimensiones": "816x256"
+        }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Cleaning Services",
+      "contenido": "Professional and affordable Cleaning Services in Greenville SC for homes and offices.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://www.spotlessmagicworld.com/wp-content/uploads/2023/05/2203_w039_n003_167b_p1_167.jpg",
+          "alt": "Cleaning service image",
+          "descripcion": "Imagen ilustrativa de servicios de limpieza",
+          "tipo": "contenido",
+          "dimensiones": null
+        },
+        {
+          "url": "https://www.spotlessmagicworld.com/wp-content/uploads/2022/11/2203_w039_n003_167b_p1_167.jpg",
+          "alt": "Cleaning service image",
+          "descripcion": "Imagen ilustrativa de servicios de limpieza",
+          "tipo": "contenido",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Disinfection Services",
+      "contenido": "Professional disinfection services available in Greenville, SC area.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Junk Removal Services",
+      "contenido": "Junk removal services available in Greenville, SC area.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "testimonios",
+      "titulo": "Reviews",
+      "contenido": "Great Service. Showed up on time and extremely friendly. I appreciate how they took their time to explain to me everything. I highly recommend Spotless Magic World LLC as the best Cleaning Company!",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Professional Cleaning Services in Greenville, SC for Homes & Offices",
+    "propuesta_valor": "Professional and affordable Cleaning Services in Greenville SC, disinfection services and junk removal services",
+    "ctas": ["View cart"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "+1 864-438-0458",
+    "whatsapp": null,
+    "email": "management@spotlessmagicworld.com",
+    "direccion": "2320 E North St Ste E Unit #153, Greenville, SC 29607",
+    "horarios": "Lunes a Domingo, 00:00 - 23:59 (24/7)"
+  },
+  "redes": [
+    { "plataforma": "Facebook", "url": "https://www.facebook.com/profile.php?id=100086801332124" },
+    { "plataforma": "Twitter/X", "url": "https://x.com/spotless_magic" },
+    { "plataforma": "LinkedIn", "url": "https://www.linkedin.com/company/spotless-magic-world-llc" },
+    { "plataforma": "Instagram", "url": "https://www.instagram.com/spotless_magic_world_llc/" }
+  ],
+  "formularios": [],
+  "footer": {
+    "contenido": "Spotless Magic World LLC — Cleaning Services Greenville SC",
+    "links": [],
+    "copyright": "Spotless Magic World LLC"
+  },
+  "tecnologia": "WordPress, Elementor, WooCommerce, WP Rocket, Element Pack Lite, Essential Addons for Elementor, WebP Express, Google Analytics GA4 (G-XE42RLSBB3)"
+}

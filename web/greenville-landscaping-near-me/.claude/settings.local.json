@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npx astro:*)",
+      "Bash(grep -n \"= '[^']*'[^']*'\" src/**/*.astro)",
+      "Bash(grep -rn \"'[^']*'[^']*'\" /c/Users/Anderson/Desktop/Agency-dev/web/greenville-landscaping-near-me/src/**/*.astro)",
+      "Bash(grep -rn \"= '\" /c/Users/Anderson/Desktop/Agency-dev/web/greenville-landscaping-near-me/src/**/*.astro)",
+      "Bash(pkill -f \"astro\")",
+      "Bash(npm run:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4321/)",
+      "Bash(ls -d \"/c/Users/Anderson/Desktop/Agency-dev/web\"/*/)",
+      "Bash(xargs -I {} basename {})",
+      "Bash([ -f \"/c/Users/Anderson/Desktop/Agency-dev/web/$project/package.json\" ])"
+    ]
+  }
+}

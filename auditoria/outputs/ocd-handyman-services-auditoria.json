@@ -1,0 +1,155 @@
+{
+  "cliente": "OCD Handyman Services, LLC",
+  "url_auditada": "https://ocdupgrades.com/",
+  "sector": "Construcción / Renovación / Servicios de Handyman",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 50. Aplicado porque OCD Handyman es un servicio local de construcción y renovación en Greenville, SC, con alcance geográfico limitado y orientado a cliente final residencial/comercial.",
+  "fecha": "2026-04-02",
+  "scores": {
+    "seo": 43,
+    "ux_ui": 60,
+    "marketing": 45,
+    "contenido": 56,
+    "tecnico": 63,
+    "total": 53
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title presente e incluye el nombre del negocio y slogan relevante",
+        "Estructura de secciones con títulos descriptivos (OUR SERVICES, RECENT PROJECTS, ABOUT US, WHY CHOOSE OCD)",
+        "CTAs con texto descriptivo orientado a explorar servicios y proyectos"
+      ],
+      "negativos": [
+        "Meta description ausente — Google generará un snippet automático que puede no representar bien al negocio",
+        "Hero sin H1 visible ni keyword principal; solo muestra el logo sin texto de encabezado",
+        "Alt text de imágenes genérico y repetitivo ('Before and after project' en todas las fotos de galería)",
+        "Sin meta keywords (menor impacto pero indica falta de optimización básica)",
+        "Propuesta de valor no visible en los primeros 200px del viewport — el hero es solo un logo"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir meta description con keywords locales: 'Handyman services in Greenville SC — renovations, remodeling, painting, flooring. Free estimates. Call 864-283-6201'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear H1 visible en el hero con keyword principal: 'Greenville's Trusted Handyman & Renovation Services'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reescribir alt text de imágenes de galería con descripciones únicas y keywords (ej: 'Kitchen remodel before and after in Greenville SC')", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Incluir la propuesta de valor como subtítulo en el hero, visible sin scroll", "prioridad": "alta", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores coherente con 3 colores principales (azul #66A1C3, amarillo #F4BC16, gris neutro) que transmiten profesionalismo y confianza",
+        "Galería de antes/después presente, que es un recurso visual poderoso para el sector construcción",
+        "Navegación simple con solo 4 items (Home, Services, Our Team, Contact) — fácil de usar"
+      ],
+      "negativos": [
+        "Una sola tipografía (Raleway) para todo el sitio — falta contraste entre encabezados y cuerpo de texto",
+        "Hero es solo un logo sin imagen de fondo impactante ni mensaje de bienvenida — primera impresión débil",
+        "Sin evidencia explícita de diseño mobile-first; depende de las capacidades responsive de Elementor",
+        "Imágenes de galería en resoluciones pequeñas (225x300, 300x225) — pueden verse pixeladas en pantallas grandes"
+      ],
+      "recomendaciones": [
+        { "accion": "Rediseñar hero con imagen de fondo de proyecto destacado, título H1 y CTA principal 'Get Your Free Estimate'", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Añadir una segunda tipografía para cuerpo de texto (ej: Open Sans o Lato) para mejorar contraste tipográfico", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Usar imágenes de mayor resolución en la galería con lazy loading para no afectar performance", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Verificar y optimizar breakpoints responsive para móvil, especialmente la galería y formularios", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Slogan memorable y diferenciador: 'We are OCD about your Project!' — conecta el nombre del negocio con la promesa de calidad",
+        "Sección de diferenciadores presente (Insured, Best Materials, Professional Standards) que aborda objeciones comunes",
+        "Galería antes/después funciona como prueba visual de capacidad y calidad del trabajo"
+      ],
+      "negativos": [
+        "Sin testimonios de clientes ni reseñas — la prueba social más poderosa para servicios locales está ausente",
+        "CTAs genéricos ('VIEW ALL SERVICES', 'VIEW PROJECT') no impulsan conversión; falta un CTA de acción directa como 'Get Free Quote'",
+        "No hay números concretos (proyectos completados, años de experiencia, clientes satisfechos) que generen credibilidad",
+        "No hay urgencia ni oferta — nada motiva al visitante a actuar ahora en lugar de después",
+        "El mensaje principal no resuelve un dolor específico; se centra en el negocio ('we offer') en lugar del cliente ('you need')"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir sección de testimonios con al menos 3 reseñas reales de clientes con nombre y tipo de proyecto", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Cambiar CTA principal a 'Get Your Free Estimate' o 'Request a Free Quote' con enlace directo al formulario de contacto", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Incluir contadores numéricos: años en negocio (desde 2018 = 8 años), proyectos completados, etc.", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Reescribir el mensaje hero centrado en el cliente: 'Your Home Deserves Expert Care — Professional Renovations in Greenville, SC'", "prioridad": "alta", "tipo": "mejora_estructural" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Texto original y específico sobre los servicios ofrecidos, con detalle de tipos de trabajo (flooring, roofing, painting, etc.)",
+        "Información de contacto incluye teléfono, dirección física y horario de atención — genera confianza local",
+        "Sección About con historia del negocio (fundado 2021, operando desde 2018) y promesas concretas (warranty, communication)"
+      ],
+      "negativos": [
+        "No hay email de contacto visible — barrera para clientes que prefieren comunicación escrita",
+        "Sin sección FAQ para resolver dudas frecuentes (costos estimados, áreas de servicio, proceso de trabajo)",
+        "Footer contiene texto por defecto del template: '© Copyright 2021 Renovate Theme by QuanticaLabs' — aspecto no profesional",
+        "Contenido repetitivo: la información sobre 'Insured', 'Best Materials' y 'Professional Standards' aparece en dos secciones diferentes con texto casi idéntico",
+        "No hay redes sociales enlazadas — oportunidad perdida de conexión con la audiencia"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir email de contacto visible en header y página de contacto", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear sección FAQ con 5-8 preguntas frecuentes: áreas de servicio, proceso de cotización, tiempos estimados, garantías, licencias", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Reemplazar copyright del footer por texto propio: '© 2026 OCD Handyman Services, LLC — Greenville, SC'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Consolidar secciones de features y diferenciadores en una sola sección sin contenido repetido", "prioridad": "baja", "tipo": "mejora_estructural" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "WordPress 6.9.4 actualizado con Elementor 4.0.1 — versiones recientes del CMS y page builder",
+        "CloudFlare CDN activo — mejora tiempos de carga y seguridad",
+        "Formularios funcionales con Contact Form 7 y Cost Calculator con reCAPTCHA — dos puntos de conversión activos"
+      ],
+      "negativos": [
+        "Revolution Slider es un plugin pesado y propenso a vulnerabilidades de seguridad — añade peso innecesario",
+        "Dependencia de jQuery — añade peso al bundle cuando las funcionalidades podrían resolverse con JS moderno",
+        "Stack sobredimensionado para el tipo de sitio: WordPress + Elementor + múltiples plugins para lo que es esencialmente un sitio informativo de 4 páginas",
+        "Sin evidencia de optimización de imágenes — las fotos de galería se sirven en formatos JPEG sin WebP"
+      ],
+      "recomendaciones": [
+        { "accion": "Eliminar Revolution Slider y reemplazar por hero estático con CSS — reducirá peso de carga significativamente", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar conversión automática a WebP para todas las imágenes", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Considerar migración a sitio estático (HTML + Tailwind) dado el bajo volumen de contenido — eliminaría overhead de WordPress, plugins y hosting dinámico", "prioridad": "baja", "tipo": "mejora_estructural" }
+      ],
+      "stack_actual": "WordPress 6.9.4, Elementor 4.0.1, Theme Renovate, Contact Form 7, Cost Calculator, Revolution Slider, jQuery, PHP 8.3.30, Hosting GoDaddy, CloudFlare CDN, Google reCAPTCHA",
+      "stack_recomendado": "HTML estático + Tailwind CSS + Alpine.js — sitio de baja complejidad con 4 páginas y contenido estático que no requiere CMS",
+      "integraciones": ["Contact Form 7", "Cost Calculator", "Google reCAPTCHA", "CloudFlare CDN"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Añadir meta description con keywords locales de Greenville SC y servicios principales",
+    "Crear H1 visible en hero con keyword 'Handyman Services Greenville SC'",
+    "Cambiar CTA principal a 'Get Your Free Estimate' con enlace directo al formulario",
+    "Reemplazar copyright del footer por texto propio del negocio",
+    "Añadir email de contacto visible en header y página de contacto"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Añadir meta description optimizada para SEO local",
+      "Crear H1 con keyword principal en el hero",
+      "Cambiar CTAs a verbos de acción orientados a conversión ('Get Your Free Estimate')",
+      "Añadir email de contacto visible",
+      "Corregir copyright del footer"
+    ],
+    "mes_1": [
+      "Rediseñar hero completo con imagen de fondo, H1, subtítulo y CTA prominente",
+      "Añadir sección de testimonios con reseñas reales de clientes",
+      "Crear sección FAQ con 5-8 preguntas frecuentes",
+      "Incluir contadores numéricos (años experiencia, proyectos completados)",
+      "Optimizar imágenes: resoluciones mayores + formato WebP + lazy loading",
+      "Reescribir alt text de imágenes con descripciones únicas y keywords locales"
+    ],
+    "largo_plazo": [
+      "Migrar de WordPress a sitio estático HTML + Tailwind + Alpine.js para mejor performance y menor mantenimiento",
+      "Consolidar secciones repetitivas de features y diferenciadores",
+      "Implementar perfiles de redes sociales y enlazarlos desde el sitio",
+      "Añadir segunda tipografía para mejorar jerarquía visual"
+    ]
+  },
+  "resumen_ejecutivo": "OCD Handyman Services tiene un sitio funcional pero con graves deficiencias en SEO y marketing: sin meta description, sin H1 visible, sin testimonios y con CTAs genéricos que no impulsan conversión. La oportunidad principal está en optimizar la conversión local añadiendo prueba social, CTAs directos y SEO enfocado en 'handyman Greenville SC', lo cual puede incrementar leads significativamente con cambios de bajo esfuerzo. El próximo paso es implementar los 5 quick wins de SEO y marketing en la primera semana, seguido de un rediseño del hero y la adición de testimonios durante el primer mes.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["alpine.js", "formspree o emailjs para formularios", "google maps embed"],
+    "justificacion": "Sitio de baja complejidad con 4 páginas y contenido estático. No necesita CMS ni framework reactivo. HTML + Tailwind + Alpine.js ofrece máxima performance, cero mantenimiento de servidor y costo de hosting mínimo (deploy estático en Netlify/Vercel)."
+  }
+}
