@@ -1,0 +1,19 @@
+{
+  "name": "kara-day-spa",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.7.10",
+    "@astrojs/alpinejs": "^0.4.0",
+    "alpinejs": "^3.14.9"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  }
+}

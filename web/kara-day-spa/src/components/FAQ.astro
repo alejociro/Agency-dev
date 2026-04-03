@@ -1,0 +1,90 @@
+---
+const faqs = [
+  {
+    question: 'Do I need to book an appointment?',
+    answer: 'Yes — all visits are by appointment only. This ensures we can dedicate our full attention to every guest without rush. Call us at (864) 233-5352 to schedule.',
+  },
+  {
+    question: 'What should I expect on my first visit?',
+    answer: 'Arrive 10–15 minutes early to fill out a brief intake form. Your therapist will consult with you about your needs, preferences and any health considerations before beginning your treatment.',
+  },
+  {
+    question: 'What is your cancellation policy?',
+    answer: 'We ask for at least 24 hours notice for cancellations or rescheduling. Late cancellations may be subject to a fee, as your appointment time was reserved exclusively for you.',
+  },
+  {
+    question: 'Can I combine multiple treatments in one visit?',
+    answer: 'Absolutely. Our spa packages are designed for exactly this. You can also combine individual services — for example, massage followed by chiropractic, or a facial with spa enhancements.',
+  },
+  {
+    question: 'Do you offer services for men?',
+    answer: 'Yes! Our Gentleman\'s Services include facials tailored for men\'s skin care needs, massage therapy, and chiropractic care. Many of our guests are men.',
+  },
+  {
+    question: 'What are your hours?',
+    answer: 'We are open Monday through Friday, 9:00 AM to 6:00 PM. We are closed on Saturday and Sunday. All visits are by appointment only.',
+  },
+  {
+    question: 'Do you sell gift certificates?',
+    answer: 'Yes — gift certificates are available for any dollar amount or for specific services and packages. They make a perfect gift for birthdays, holidays, or just because.',
+  },
+];
+---
+
+<section class="section" id="faq">
+  <div class="container">
+    <div class="faq-layout">
+      <div class="section-header" data-animate="fade-right">
+        <span class="label">FAQ</span>
+        <h2>Common<br /><em>Questions</em></h2>
+        <p>
+          Everything you need to know before your visit. Can't find your
+          answer? Give us a call.
+        </p>
+      </div>
+
+      <div class="faq-list" data-animate="fade-up" data-delay="200">
+        {faqs.map((faq) => (
+          <details class="faq-item">
+            <summary>{faq.question}</summary>
+            <div class="faq-answer">
+              <p>{faq.answer}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-header em {
+    color: var(--color-accent);
+    font-style: italic;
+  }
+
+  .faq-layout {
+    display: grid;
+    gap: var(--space-8);
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    .faq-layout {
+      grid-template-columns: 1fr 2fr;
+      gap: var(--space-12);
+      align-items: start;
+    }
+
+    .faq-layout .section-header {
+      position: sticky;
+      top: calc(var(--space-16) + 2rem);
+      margin-block-end: 0;
+    }
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+  }
+</style>

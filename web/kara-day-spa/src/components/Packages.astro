@@ -1,0 +1,210 @@
+---
+import SectionHeader from './ui/SectionHeader.astro';
+
+const packages = [
+  {
+    name: 'The Kara Escape',
+    price: '$133',
+    tagline: 'The perfect introduction',
+    description: 'A blissful combination of our Escape Facial and a 30-minute Signature Integrative Massage.',
+    includes: ['Kara Escape Facial', 'Signature Integrative 30-Min Massage'],
+    accent: false,
+  },
+  {
+    name: 'The Kara Wellness',
+    price: '$184.50',
+    tagline: 'Our most popular',
+    description: 'Deep restoration with a full wellness facial and integrative massage, plus complimentary skin care samples.',
+    includes: ['60-Min Wellness Facial', '60-Min Integrative Massage', 'Skin Care Samples'],
+    accent: true,
+  },
+  {
+    name: 'The Kara Ultimate',
+    price: '$443',
+    tagline: 'The full sanctuary experience',
+    description: 'Six hours of complete spa immersion — our most comprehensive package for total renewal.',
+    includes: ['6 Hours of Treatments', 'Full Spa Experience', 'Premium Treatments', 'Complete Renewal'],
+    accent: false,
+  },
+];
+---
+
+<section class="section-alt" id="packages">
+  <div class="container">
+    <SectionHeader
+      tag="Spa Packages"
+      title="Curated <em>Experiences</em>"
+      subtitle="Three carefully crafted packages — from a quick escape to a full day of indulgence."
+      align="center"
+    />
+
+    <div class="packages-grid" data-animate="stagger">
+      {packages.map((pkg) => (
+        <article class:list={['package-card', { 'package-featured': pkg.accent }]}>
+          {pkg.accent && <div class="package-badge">Most Popular</div>}
+          <span class="package-tagline">{pkg.tagline}</span>
+          <h3>{pkg.name}</h3>
+          <div class="package-price">
+            <span class="price">{pkg.price}</span>
+          </div>
+          <hr class="divider-accent" />
+          <p>{pkg.description}</p>
+          <ul class="package-includes">
+            {pkg.includes.map((item) => (
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8.5l3 3 7-7" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+          <a href="tel:+18642335352" class:list={[pkg.accent ? 'btn-primary' : 'btn-secondary']}>
+            Book Package
+          </a>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .packages-grid {
+    display: grid;
+    gap: var(--space-6);
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  @media (min-width: 768px) {
+    .packages-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .package-featured {
+      transform: translateY(calc(var(--space-4) * -1));
+    }
+  }
+
+  .package-card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all var(--duration-normal) var(--ease-out);
+    position: relative;
+
+    &:hover {
+      border-color: var(--color-border);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .package-featured:hover {
+      transform: translateY(calc((var(--space-4) * -1) - 4px));
+    }
+  }
+
+  .package-featured {
+    background: linear-gradient(
+      180deg,
+      var(--color-primary-dark) 0%,
+      var(--color-primary) 100%
+    );
+    border-color: transparent;
+    color: var(--color-bg);
+
+    & h3 {
+      color: var(--color-bg);
+    }
+
+    & .package-tagline {
+      color: var(--color-accent-light);
+    }
+
+    & p {
+      color: oklch(90% 0.01 60);
+    }
+
+    & .price {
+      color: var(--color-accent-light);
+    }
+
+    & .divider-accent {
+      background-color: var(--color-accent-light);
+      opacity: 0.5;
+    }
+
+    & .package-includes li {
+      color: oklch(85% 0.01 60);
+    }
+  }
+
+  .package-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    font-family: var(--font-body);
+    font-size: var(--text-label);
+    font-weight: 500;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    padding: 0.375rem 1.25rem;
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+  }
+
+  .package-tagline {
+    font-size: var(--text-label);
+    font-weight: 500;
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+
+  .package-card h3 {
+    font-size: var(--text-h3);
+  }
+
+  .package-price {
+    display: flex;
+    justify-content: center;
+  }
+
+  .package-card p {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    max-width: none;
+  }
+
+  .package-includes {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+    margin-block: var(--space-1);
+  }
+
+  .package-includes li {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+  }
+
+  .package-card a {
+    margin-block-start: auto;
+  }
+</style>

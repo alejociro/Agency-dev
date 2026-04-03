@@ -1,0 +1,249 @@
+---
+---
+
+<section class="hero mesh-bg" id="hero">
+  <!-- Decorative blobs -->
+  <div class="blob-decor hero-blob-1" aria-hidden="true"></div>
+  <div class="blob-decor hero-blob-2" aria-hidden="true"></div>
+
+  <div class="container hero-content">
+    <div class="hero-text">
+      <span class="label hero-label">Downtown Greenville, SC</span>
+
+      <h1 class="hero-title">
+        Day Spa &amp; Massage in<br />
+        Downtown <em>Greenville</em>
+      </h1>
+
+      <hr class="divider hero-divider" />
+
+      <p class="hero-subtitle">
+        Full-service day spa offering massage, facials, body treatments,
+        natural nail care &amp; chiropractic — all under one roof in the
+        heart of Greenville.
+      </p>
+
+      <div class="hero-cta">
+        <a href="tel:+18642335352" class="btn-primary">Book Your Escape</a>
+        <a href="#services" class="btn-ghost">Explore Services <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="hero-proof">
+        <div class="proof-items">
+          <div class="proof-item">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M8 1l2.2 4.5 5 .7-3.6 3.5.8 5L8 12.4 3.6 14.7l.8-5L.8 6.2l5-.7L8 1z" fill="var(--color-accent)"/>
+            </svg>
+            <span>Highly Rated on Google</span>
+          </div>
+          <span class="proof-dot" aria-hidden="true"></span>
+          <div class="proof-item">
+            <span>Est. in Downtown Greenville</span>
+          </div>
+          <span class="proof-dot" aria-hidden="true"></span>
+          <div class="proof-item">
+            <span>By Appointment Only</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual hero-parallax" aria-hidden="true">
+      <div class="hero-blob blob">
+        <div class="hero-blob-inner">
+          <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-icon">
+            <circle cx="100" cy="80" r="30" stroke="var(--color-bg)" stroke-width="1.5" opacity="0.6"/>
+            <path d="M70 130 C70 105 130 105 130 130" stroke="var(--color-bg)" stroke-width="1.5" opacity="0.4"/>
+            <path d="M85 60 C85 40 115 40 115 60" stroke="var(--color-accent-light)" stroke-width="1" opacity="0.5"/>
+            <circle cx="100" cy="100" r="60" stroke="var(--color-bg)" stroke-width="0.5" opacity="0.2"/>
+            <path d="M60 100 Q100 140 140 100" stroke="var(--color-accent-light)" stroke-width="1" opacity="0.3"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator" aria-hidden="true">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-block: var(--space-20) var(--space-12);
+  }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  @media (min-width: 768px) {
+    .hero-content {
+      grid-template-columns: 3fr 2fr;
+    }
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .hero-title {
+    font-size: var(--text-hero);
+    font-weight: 400;
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-primary-dark);
+    margin-block: var(--space-2) 0;
+
+    & em {
+      color: var(--color-accent);
+      font-style: italic;
+    }
+  }
+
+  .hero-subtitle {
+    font-size: var(--text-body);
+    color: var(--color-text-muted);
+    max-width: 48ch;
+    line-height: var(--leading-body);
+    margin-block-start: var(--space-2);
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+    margin-block-start: var(--space-4);
+  }
+
+  .hero-proof {
+    margin-block-start: var(--space-6);
+  }
+
+  .proof-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+  }
+
+  .proof-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+  }
+
+  .proof-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    display: none;
+  }
+
+  @media (min-width: 640px) {
+    .proof-dot {
+      display: block;
+    }
+  }
+
+  /* Hero visual — blob */
+  .hero-visual {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .hero-visual {
+      display: flex;
+    }
+  }
+
+  .hero-blob {
+    width: clamp(260px, 28vw, 380px);
+    aspect-ratio: 1;
+    background: linear-gradient(
+      135deg,
+      var(--color-primary) 0%,
+      var(--color-primary-dark) 50%,
+      oklch(45% 0.08 200) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .hero-blob-inner {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Decorative blobs */
+  .hero-blob-1 {
+    width: 500px;
+    height: 500px;
+    top: -10%;
+    right: -10%;
+    background: var(--color-primary-glow);
+    filter: blur(120px);
+  }
+
+  .hero-blob-2 {
+    width: 300px;
+    height: 300px;
+    bottom: 10%;
+    left: -5%;
+    background: var(--color-accent-glow);
+    filter: blur(100px);
+  }
+
+  /* Scroll indicator */
+  .scroll-indicator {
+    position: absolute;
+    bottom: var(--space-6);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-1);
+  }
+
+  .scroll-line {
+    width: 1px;
+    height: 48px;
+    background: linear-gradient(to bottom, var(--color-primary), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.3; transform: scaleY(0.6); transform-origin: top; }
+    50%      { opacity: 1;   transform: scaleY(1); }
+  }
+</style>

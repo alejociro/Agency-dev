@@ -1,0 +1,148 @@
+---
+import SectionHeader from './ui/SectionHeader.astro';
+import StarRating from './ui/StarRating.astro';
+
+const testimonials = [
+  {
+    name: 'Sarah M.',
+    text: 'The Kara Ultimate Facial was worth every penny. My skin hasn\'t looked this good in years. The microderm and light therapy combination is incredible.',
+    service: 'Kara Ultimate Facial',
+    rating: 5,
+    initials: 'SM',
+    color: 'var(--color-primary)',
+  },
+  {
+    name: 'David R.',
+    text: 'As someone who\'s never been to a spa, the How to Spa guide put me at ease. The Gentleman\'s Facial was exactly what I needed — relaxing and zero awkwardness.',
+    service: "Gentleman's Facial",
+    rating: 5,
+    initials: 'DR',
+    color: 'var(--color-accent)',
+  },
+  {
+    name: 'Jennifer L.',
+    text: 'I booked the Wellness Package for my birthday and it was the best gift I\'ve ever given myself. The massage therapist found tension I didn\'t know I had. Already rebooked.',
+    service: 'Kara Wellness Package',
+    rating: 5,
+    initials: 'JL',
+    color: 'var(--color-secondary)',
+  },
+  {
+    name: 'Michael T.',
+    text: 'Having massage and chiropractic under one roof is a game changer. I do both in one visit and leave feeling like a new person. Great downtown location too.',
+    service: 'Massage + Chiropractic',
+    rating: 5,
+    initials: 'MT',
+    color: 'var(--color-primary-light)',
+  },
+];
+
+---
+
+<section class="section" id="testimonials">
+  <div class="container">
+    <SectionHeader
+      tag="Testimonials"
+      title="What Our Guests <em>Say</em>"
+    />
+
+    <div class="testimonials-track" data-animate="fade-up" data-delay="200">
+      {testimonials.map((t) => (
+        <article class="testimonial">
+          <StarRating rating={t.rating} />
+          <blockquote>
+            <p>{t.text}</p>
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style={`--avatar-color: ${t.color}`}>
+              {t.initials}
+            </div>
+            <div>
+              <strong>{t.name}</strong>
+              <span>{t.service}</span>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .testimonials-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: var(--space-4);
+    scrollbar-width: none;
+    padding-block: var(--space-2);
+    padding-inline-end: var(--container-padding);
+  }
+
+  .testimonials-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonial {
+    scroll-snap-align: start;
+    flex: 0 0 clamp(280px, 80vw, 400px);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-6);
+  }
+
+  .testimonial-stars {
+    display: flex;
+    gap: 2px;
+  }
+
+  .testimonial blockquote {
+    flex: 1;
+  }
+
+  .testimonial blockquote p {
+    font-size: var(--text-body);
+    color: var(--color-text);
+    line-height: var(--leading-body);
+    font-style: italic;
+    max-width: none;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-block-start: auto;
+    padding-block-start: var(--space-3);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--avatar-color, var(--color-primary));
+    color: var(--color-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: var(--text-small);
+    font-weight: 500;
+    flex-shrink: 0;
+  }
+
+  .testimonial-author strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: var(--text-body);
+    font-weight: 500;
+    color: var(--color-primary-dark);
+  }
+
+  .testimonial-author span {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+  }
+</style>

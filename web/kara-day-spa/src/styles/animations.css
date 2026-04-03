@@ -1,0 +1,405 @@
+/* ========================================
+   ANIMACIONES — Kara Day Spa
+   4 capas: Load · Scroll Reveal · Micro · Special
+   ======================================== */
+
+/* ========================================
+   CAPA 1 — PAGE LOAD (hero stagger)
+   ======================================== */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes revealLine {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+@keyframes blobMorph {
+  0%   { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+  25%  { border-radius: 58% 42% 56% 44% / 44% 58% 42% 56%; }
+  50%  { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; }
+  75%  { border-radius: 42% 58% 64% 36% / 62% 36% 64% 38%; }
+  100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+}
+
+/* Hero stagger sequence */
+.hero-label {
+  animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+
+.hero-title {
+  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
+}
+
+.hero-divider {
+  transform-origin: left;
+  animation: revealLine 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both;
+}
+
+.hero-subtitle {
+  animation: fadeIn 0.8s ease 0.55s both;
+}
+
+.hero-cta {
+  animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both;
+}
+
+.hero-proof {
+  animation: fadeIn 0.6s ease 1s both;
+}
+
+.hero-blob {
+  animation: blobMorph 20s ease-in-out infinite, fadeIn 1.2s ease 0.3s both;
+}
+
+/* ========================================
+   CAPA 2 — SCROLL REVEAL
+   ======================================== */
+
+/* Base: hidden until revealed */
+[data-animate] {
+  opacity: 0;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-animate="fade-up"] {
+  transform: translateY(36px);
+}
+
+[data-animate="fade-down"] {
+  transform: translateY(-36px);
+}
+
+[data-animate="fade-left"] {
+  transform: translateX(-36px);
+}
+
+[data-animate="fade-right"] {
+  transform: translateX(36px);
+}
+
+[data-animate="scale-in"] {
+  transform: scale(0.92);
+}
+
+[data-animate="fade"] {
+  transform: none;
+}
+
+/* Revealed state */
+[data-animate].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Stagger children */
+[data-animate="stagger"] > * {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-animate="stagger"].is-visible > *:nth-child(1) { transition-delay: 0.05s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(2) { transition-delay: 0.12s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(3) { transition-delay: 0.12s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(4) { transition-delay: 0.19s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(5) { transition-delay: 0.26s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(6) { transition-delay: 0.33s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(7) { transition-delay: 0.40s; opacity: 1; transform: none; }
+[data-animate="stagger"].is-visible > *:nth-child(8) { transition-delay: 0.47s; opacity: 1; transform: none; }
+
+/* Custom delay via data attribute */
+[data-delay="100"] { transition-delay: 0.1s; }
+[data-delay="200"] { transition-delay: 0.2s; }
+[data-delay="300"] { transition-delay: 0.3s; }
+[data-delay="400"] { transition-delay: 0.4s; }
+[data-delay="500"] { transition-delay: 0.5s; }
+
+/* ── Scroll-driven: reading progress bar ── */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+  transform-origin: left;
+  z-index: 200;
+  animation: scaleProgress linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scaleProgress {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* ── Scroll-driven: hero parallax ── */
+.hero-parallax {
+  animation: parallaxDrift linear;
+  animation-timeline: scroll();
+  animation-range: 0vh 80vh;
+}
+
+@keyframes parallaxDrift {
+  to { transform: translateY(80px) scale(1.02); opacity: 0.6; }
+}
+
+/* ========================================
+   CAPA 3 — MICRO-INTERACCIONES
+   ======================================== */
+
+/* Card lift with spring easing */
+.card {
+  transition:
+    transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 300ms ease,
+    border-color 300ms ease,
+    background 300ms ease;
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  &:active {
+    transform: translateY(-2px);
+    transition-duration: 100ms;
+  }
+}
+
+/* Button shimmer on hover */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      105deg,
+      transparent 40%,
+      oklch(100% 0 0 / 0.18) 50%,
+      transparent 60%
+    );
+    transform: translateX(-100%);
+    transition: transform 500ms ease;
+  }
+
+  &:hover::after {
+    transform: translateX(100%);
+  }
+}
+
+/* Ghost button underline grow */
+.btn-ghost::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--color-accent);
+  transition: width 300ms var(--ease-out);
+}
+
+.btn-ghost:hover::after {
+  width: 100%;
+}
+
+/* Nav link underline reveal */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: var(--color-accent);
+  transition: width 300ms var(--ease-out);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Price tag pulse on hover */
+.price-tag {
+  transition: transform 300ms var(--ease-spring), box-shadow 300ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px var(--color-accent-glow);
+  }
+}
+
+/* FAQ accordion icon rotation */
+.faq-item summary::after {
+  transition: transform 300ms var(--ease-out);
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+/* Blob decorative — continuous morph */
+.blob-decor {
+  animation: blobMorph 25s ease-in-out infinite;
+}
+
+/* Image placeholder shimmer */
+.img-placeholder {
+  background: linear-gradient(
+    90deg,
+    var(--color-surface) 0%,
+    var(--color-bg) 40%,
+    var(--color-surface) 80%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ========================================
+   CAPA 4 — ELEMENTOS ESPECIALES
+   ======================================== */
+
+/* ── Floating decorative elements ── */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(-16px) rotate(2deg); }
+}
+
+@keyframes floatMedium {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(-10px) rotate(-1.5deg); }
+}
+
+.float-slow {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+.float-medium {
+  animation: floatMedium 6s ease-in-out infinite;
+}
+
+/* ── Text reveal (letter by letter for headings) ── */
+.text-reveal {
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.text-reveal.is-visible {
+  clip-path: inset(0 0% 0 0);
+}
+
+/* ── Counter animation handled via JS ── */
+[data-counter] {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Horizontal scroll section for services on mobile ── */
+.scroll-snap-x {
+  display: flex;
+  gap: var(--space-4);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--container-padding);
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  & > * {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+}
+
+/* ── Decorative line that draws on scroll ── */
+.draw-line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: stroke-dashoffset 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.draw-line.is-visible {
+  stroke-dashoffset: 0;
+}
+
+/* ========================================
+   REDUCED MOTION — override ALL layers
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-animate] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  [data-animate="stagger"] > * {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero-blob {
+    animation: none;
+    border-radius: var(--radius-blob);
+  }
+
+  .blob-decor {
+    animation: none;
+  }
+
+  .reading-progress {
+    animation: none;
+    transform: scaleX(1);
+  }
+
+  .hero-parallax {
+    animation: none;
+  }
+
+  .float-slow,
+  .float-medium {
+    animation: none;
+  }
+
+  .text-reveal {
+    clip-path: none;
+  }
+
+  .img-placeholder {
+    animation: none;
+  }
+}

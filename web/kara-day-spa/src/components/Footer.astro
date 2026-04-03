@@ -1,0 +1,200 @@
+---
+const year = new Date().getFullYear();
+
+const navGroups = [
+  {
+    title: 'Services',
+    links: [
+      { label: 'Massage & Bodywork', href: '#service-massage' },
+      { label: 'Facials', href: '#service-facials' },
+      { label: 'Body Treatments', href: '#service-body' },
+      { label: 'Pedicure', href: '#service-pedicure' },
+      { label: 'Chiropractic', href: '#service-chiropractic' },
+    ],
+  },
+  {
+    title: 'Explore',
+    links: [
+      { label: 'Spa Packages', href: '#packages' },
+      { label: 'How to Spa', href: '#how-to-spa' },
+      { label: 'Our Team', href: '#team' },
+      { label: 'FAQ', href: '#faq' },
+      { label: 'Gift Certificates', href: 'tel:+18642335352' },
+    ],
+  },
+  {
+    title: 'Contact',
+    links: [
+      { label: '(864) 233-5352', href: 'tel:+18642335352' },
+      { label: 'karaspa1@gmail.com', href: 'mailto:karaspa1@gmail.com' },
+      { label: '105 Lavinia Ave', href: '#contact' },
+      { label: 'Greenville, SC 29601', href: '#contact' },
+    ],
+  },
+];
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo footer-logo">Kara<span class="nav-logo-accent">Spa</span></a>
+        <p>
+          Your urban sanctuary in downtown Greenville. Full-service day spa
+          offering massage, facials, body treatments, nail care &amp;
+          chiropractic.
+        </p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/kara.spa/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/karaspaandboutique/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      {navGroups.map((group) => (
+        <nav class="footer-nav" aria-label={group.title}>
+          <h4>{group.title}</h4>
+          <ul>
+            {group.links.map((link) => (
+              <li><a href={link.href}>{link.label}</a></li>
+            ))}
+          </ul>
+        </nav>
+      ))}
+    </div>
+
+    <hr class="divider-full" />
+
+    <div class="footer-bottom">
+      <p>&copy; {year} Kara Day Spa. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    padding-block: var(--space-12) var(--space-6);
+    background-color: var(--color-primary-dark);
+    color: oklch(85% 0.01 60);
+  }
+
+  .footer a {
+    color: oklch(80% 0.01 60);
+    transition: color var(--duration-fast) var(--ease-out);
+
+    &:hover {
+      color: var(--color-accent-light);
+    }
+  }
+
+  .nav-logo-accent {
+    color: var(--color-accent-light);
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .footer-top {
+    display: grid;
+    gap: var(--space-8);
+    grid-template-columns: 1fr;
+    margin-block-end: var(--space-8);
+  }
+
+  @media (min-width: 640px) {
+    .footer-top {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .footer-top {
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+  }
+
+  .footer-brand p {
+    margin-block-start: var(--space-3);
+    font-size: var(--text-small);
+    max-width: 32ch;
+    color: oklch(70% 0.01 60);
+  }
+
+  .footer-logo {
+    font-size: var(--text-h2);
+    color: var(--color-bg);
+
+    &:hover {
+      color: var(--color-bg);
+    }
+  }
+
+  .footer-social {
+    display: flex;
+    gap: var(--space-3);
+    margin-block-start: var(--space-4);
+  }
+
+  .footer-nav h4 {
+    font-family: var(--font-body);
+    font-size: var(--text-small);
+    font-weight: 500;
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+    color: var(--color-accent-light);
+    margin-block-end: var(--space-3);
+  }
+
+  .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .footer-nav a {
+    font-size: var(--text-small);
+  }
+
+  .divider-full {
+    opacity: 0.15;
+    margin-block: var(--space-6);
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .footer-bottom p {
+    font-size: var(--text-small);
+    color: oklch(60% 0.01 60);
+    max-width: none;
+  }
+
+  .footer-legal {
+    display: flex;
+    gap: var(--space-4);
+  }
+
+  .footer-legal a {
+    font-size: var(--text-small);
+    color: oklch(60% 0.01 60);
+  }
+</style>

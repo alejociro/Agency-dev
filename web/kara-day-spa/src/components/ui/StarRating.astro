@@ -1,0 +1,27 @@
+---
+interface Props {
+  rating: number;
+  max?: number;
+}
+
+const { rating, max = 5 } = Astro.props;
+const stars = Array.from({ length: max }, (_, i) => i < rating ? 'filled' : 'empty');
+---
+
+<div class="star-rating" aria-label={`${rating} out of ${max} stars`}>
+  {stars.map((state) => (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path
+        d="M8 1l2.2 4.5 5 .7-3.6 3.5.8 5L8 12.4 3.6 14.7l.8-5L.8 6.2l5-.7L8 1z"
+        fill={state === 'filled' ? 'var(--color-accent)' : 'var(--color-border)'}
+      />
+    </svg>
+  ))}
+</div>
+
+<style>
+  .star-rating {
+    display: flex;
+    gap: 2px;
+  }
+</style>

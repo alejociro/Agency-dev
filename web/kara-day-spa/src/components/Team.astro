@@ -1,0 +1,128 @@
+---
+import SectionHeader from './ui/SectionHeader.astro';
+
+const team = [
+  {
+    name: 'Licensed Massage Therapists',
+    role: 'Massage & Bodywork',
+    initials: 'MT',
+    description: 'Certified professionals specializing in deep-tissue, neuro-muscular, and integrative massage therapy techniques.',
+    color: 'var(--color-primary)',
+  },
+  {
+    name: 'Estheticians',
+    role: 'Facials & Skin Care',
+    initials: 'ES',
+    description: 'Expert skin care specialists trained in microderm exfoliation, light therapy, and high-frequency treatments.',
+    color: 'var(--color-accent)',
+  },
+  {
+    name: 'Chiropractor',
+    role: 'Chiropractic Services',
+    initials: 'DC',
+    description: 'Sherman College of Chiropractic graduate providing on-site spinal wellness and holistic body alignment.',
+    color: 'var(--color-secondary)',
+  },
+  {
+    name: 'Nail Technicians',
+    role: 'Pedicure & Nail Care',
+    initials: 'NT',
+    description: 'Skilled professionals delivering our signature hot stone pedicures and natural nail care treatments.',
+    color: 'var(--color-primary-light)',
+  },
+];
+---
+
+<section class="section-alt" id="team">
+  <div class="container">
+    <SectionHeader
+      tag="Our Team"
+      title="In Expert <em>Hands</em>"
+      subtitle="Every member of our team is a licensed, certified professional dedicated to your wellness and comfort."
+      align="center"
+    />
+
+    <div class="team-grid" data-animate="stagger">
+      {team.map((member) => (
+        <article class="team-card">
+          <div class="team-avatar" style={`--avatar-color: ${member.color}`}>
+            <span>{member.initials}</span>
+          </div>
+          <h3>{member.name}</h3>
+          <span class="team-role">{member.role}</span>
+          <p>{member.description}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .team-grid {
+    display: grid;
+    gap: var(--space-6);
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 640px) {
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .team-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .team-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .team-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: var(--radius-blob);
+    background-color: var(--avatar-color, var(--color-primary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-end: var(--space-1);
+    transition: border-radius var(--duration-slow) var(--ease-out);
+
+    & span {
+      font-family: var(--font-display);
+      font-size: var(--text-h2);
+      font-weight: 500;
+      color: var(--color-bg);
+    }
+  }
+
+  .team-card:hover .team-avatar {
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+  }
+
+  .team-card h3 {
+    font-size: var(--text-h4);
+  }
+
+  .team-role {
+    font-size: var(--text-label);
+    font-weight: 500;
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+
+  .team-card p {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    max-width: 30ch;
+    text-align: center;
+  }
+</style>

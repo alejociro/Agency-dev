@@ -1,0 +1,146 @@
+---
+const steps = [
+  {
+    number: '01',
+    title: 'Book Your Visit',
+    description: 'Call us at (864) 233-5352 or book online. All visits are by appointment only — we dedicate our full attention to every guest.',
+  },
+  {
+    number: '02',
+    title: 'Arrive & Unwind',
+    description: 'Arrive 10–15 minutes early to settle in. We\'ll greet you in our tranquil lobby at 105 Lavinia Ave in downtown Greenville.',
+  },
+  {
+    number: '03',
+    title: 'Your Treatment',
+    description: 'Your therapist will consult with you before beginning, customizing pressure, products and focus areas to your specific needs.',
+  },
+  {
+    number: '04',
+    title: 'Extend the Bliss',
+    description: 'Take your time after your session. Consider adding an enhancement — aromatherapy, stretching or a soothing foot massage.',
+  },
+];
+---
+
+<section class="section" id="how-to-spa">
+  <div class="container">
+    <div class="how-layout">
+      <div class="how-text" data-animate="fade-right">
+        <span class="label">First Time?</span>
+        <h2>How to <em>Spa</em></h2>
+        <p>
+          Whether it's your first visit or your fiftieth, we make every
+          experience effortless. Here's what to expect.
+        </p>
+      </div>
+
+      <div class="steps" data-animate="stagger">
+        {steps.map((step) => (
+          <div class="step">
+            <div class="step-number-wrap">
+              <span class="step-number">{step.number}</span>
+              <div class="step-line" aria-hidden="true"></div>
+            </div>
+            <div class="step-content">
+              <h3>{step.title}</h3>
+              <p>{step.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .how-layout {
+    display: grid;
+    gap: var(--space-8);
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    .how-layout {
+      grid-template-columns: 1fr 2fr;
+      gap: var(--space-12);
+      align-items: start;
+    }
+  }
+
+  .how-text {
+    position: sticky;
+    top: calc(var(--space-16) + 2rem);
+  }
+
+  .how-text em {
+    color: var(--color-accent);
+    font-style: italic;
+  }
+
+  .how-text h2 {
+    margin-block-start: var(--space-2);
+  }
+
+  .how-text p {
+    margin-block-start: var(--space-3);
+    color: var(--color-text-muted);
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .step {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: var(--space-4);
+  }
+
+  .step-number-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-number {
+    font-family: var(--font-display);
+    font-size: var(--text-h2);
+    font-weight: 600;
+    color: var(--color-accent);
+    line-height: 1;
+  }
+
+  .step-line {
+    flex: 1;
+    width: 1px;
+    min-height: 40px;
+    background: linear-gradient(
+      to bottom,
+      var(--color-accent-light),
+      var(--color-border)
+    );
+    margin-block: var(--space-2);
+  }
+
+  .step:last-child .step-line {
+    display: none;
+  }
+
+  .step-content {
+    padding-block-end: var(--space-6);
+  }
+
+  .step-content h3 {
+    font-size: var(--text-h3);
+    margin-block-end: var(--space-1);
+  }
+
+  .step-content p {
+    color: var(--color-text-muted);
+    font-size: var(--text-small);
+    line-height: var(--leading-body);
+  }
+</style>

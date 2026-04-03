@@ -1,0 +1,59 @@
+---
+interface Props {
+  href?: string;
+  label: string;
+  sublabel?: string;
+}
+
+const { href, label, sublabel } = Astro.props;
+const Tag = href ? 'a' : 'div';
+---
+
+{Tag === 'a' ? (
+  <a href={href} class="contact-item">
+    <span class="contact-icon"><slot /></span>
+    <div>
+      <strong>{label}</strong>
+      {sublabel && <span>{sublabel}</span>}
+    </div>
+  </a>
+) : (
+  <div class="contact-item">
+    <span class="contact-icon"><slot /></span>
+    <div>
+      <strong>{label}</strong>
+      {sublabel && <span>{sublabel}</span>}
+    </div>
+  </div>
+)}
+
+<style>
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: color var(--duration-fast) var(--ease-out);
+  }
+
+  a.contact-item:hover {
+    color: var(--color-primary);
+  }
+
+  .contact-icon {
+    flex-shrink: 0;
+    margin-block-start: 2px;
+    display: flex;
+  }
+
+  strong {
+    display: block;
+    font-weight: 500;
+  }
+
+  span {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+  }
+</style>

@@ -1,0 +1,233 @@
+---
+import SectionHeader from './ui/SectionHeader.astro';
+
+const services = [
+  {
+    id: 'massage',
+    title: 'Massage & Bodywork',
+    description: 'Deep-tissue and neuro-muscular therapy. Our Signature Integrative Massage combines healing, restoring and rehabilitating techniques designed to help you relax and enjoy true wellness benefits.',
+    price: 'From $110',
+    duration: '60–90 min',
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8c-3 0-6 2-6 6s3 6 6 6"/><path d="M18 20c-6 2-10 8-10 14h32c0-6-4-12-10-14"/><path d="M30 14c0-4-3-6-6-6"/><circle cx="36" cy="10" r="2" fill="currentColor" opacity="0.3"/><circle cx="12" cy="12" r="1.5" fill="currentColor" opacity="0.2"/></svg>`,
+    highlights: ['Signature Integrative Massage', 'Pregnancy Massage — $110', 'Kinesio Taping — $8/area', 'Assisted Stretching — $10'],
+    featured: true,
+  },
+  {
+    id: 'facials',
+    title: 'Facials',
+    description: 'From our luxurious 90-minute Ultimate Facial with microderm exfoliation and light therapy to the relaxing Escape Facial — every treatment is tailored to reveal your best skin.',
+    price: '$80 – $180',
+    duration: '60–90 min',
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="22" rx="10" ry="13"/><path d="M18 16c2-2 4-2 6-1s4-1 6 1"/><path d="M20 27c2 1 6 1 8 0"/><path d="M14 22c-2 0-4-1-4-3s2-3 4-3"/><path d="M34 22c2 0 4-1 4-3s-2-3-4-3"/></svg>`,
+    highlights: ['Kara Ultimate Facial — $180', 'Kara Escape Facial — $80', 'Microderm Exfoliation', 'Light Therapy & High-Frequency'],
+    featured: false,
+  },
+  {
+    id: 'body',
+    title: 'Body Treatments',
+    description: 'Specialty body wraps and treatments designed to detoxify, hydrate and rejuvenate. Each session envelops you in healing warmth while nourishing your skin from head to toe.',
+    price: 'See packages',
+    duration: 'Varies',
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 38V20c0-6 4-10 8-10s8 4 8 10v18"/><path d="M14 24h20"/><path d="M16 30h16"/><ellipse cx="24" cy="38" rx="10" ry="3"/></svg>`,
+    highlights: ['Body Wraps', 'Detoxifying Treatments', 'Full-Body Hydration', 'Specialty Techniques'],
+    featured: false,
+  },
+  {
+    id: 'pedicure',
+    title: 'Pedicure Services',
+    description: 'Beginning with a soothing foot soak, our pedicures include warm stone massage on feet and calves, thorough exfoliation, and meticulous nail care — finished with warm towels.',
+    price: 'From $90',
+    duration: '60+ min',
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 34c0-4 4-8 12-8s12 4 12 8"/><path d="M12 34c0 3 5 6 12 6s12-3 12-6"/><ellipse cx="24" cy="22" rx="6" ry="3"/><path d="M20 18v-4c0-2 2-4 4-4s4 2 4 4v4"/></svg>`,
+    highlights: ['Kara Ultimate Pedicure — $90', 'Hot Stone Pedicure', 'Warm Stone Calf Massage', 'Nail Conditioning & Polish'],
+    featured: false,
+  },
+  {
+    id: 'waxing',
+    title: 'Hair Removal',
+    description: 'Professional waxing services and lash & brow tinting for a polished, refined look. Quick, precise, and gentle techniques for lasting smoothness.',
+    price: 'Varies',
+    duration: '15–45 min',
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12l4 24"/><path d="M28 12l-4 24"/><path d="M14 20h20"/><path d="M16 28h16"/><circle cx="24" cy="8" r="3"/></svg>`,
+    highlights: ['Full Body Waxing', 'Lash Tinting', 'Brow Tinting', 'Gentle Techniques'],
+    featured: false,
+  },
+  {
+    id: 'gentlemens',
+    title: "Gentleman's Services",
+    description: "Tailored treatments for men's specific skin care needs — from deep cleansing and exfoliating scrubs to facial massage with shoulder and arm work. No frills, all results.",
+    price: 'Call for pricing',
+    duration: '60 min',
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="8" width="16" height="10" rx="2"/><path d="M20 18v4"/><path d="M28 18v4"/><path d="M14 26l10 2 10-2"/><path d="M18 30v8"/><path d="M30 30v8"/><path d="M18 38h12"/></svg>`,
+    highlights: ["Gentleman's Facial", 'Deep Pore Cleansing', 'Exfoliating Scrub', 'Shoulder & Arm Massage'],
+    featured: false,
+  },
+  {
+    id: 'chiropractic',
+    title: 'Chiropractic',
+    description: 'On-site chiropractic services complement your spa experience. Our practitioner attended Sherman College of Chiropractic — combining spinal wellness with total body relaxation.',
+    price: 'Call for pricing',
+    duration: 'Varies',
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8v32"/><circle cx="24" cy="12" r="3"/><circle cx="24" cy="20" r="2.5"/><circle cx="24" cy="27" r="2"/><circle cx="24" cy="33" r="1.5"/><path d="M18 14l-4 4"/><path d="M30 14l4 4"/><path d="M19 22l-3 2"/><path d="M29 22l3 2"/></svg>`,
+    highlights: ['Spinal Adjustments', 'Sherman College Trained', 'Pairs with Massage', 'Holistic Wellness'],
+    featured: false,
+  },
+  {
+    id: 'enhancements',
+    title: 'Spa Enhancements',
+    description: 'Add-on treatments to elevate any service. Eye treatments, aromatherapy, foot massage and more — schedule alone or enhance your facial, nail or body wrap session.',
+    price: 'From $8',
+    duration: '10–20 min',
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v6"/><path d="M24 36v6"/><path d="M6 24h6"/><path d="M36 24h6"/><path d="M11 11l4 4"/><path d="M33 33l4 4"/><path d="M37 11l-4 4"/><path d="M15 33l-4 4"/><circle cx="24" cy="24" r="8"/></svg>`,
+    highlights: ['Aromatherapy — $10', 'Post-Massage Stretching — $10', 'Foot Massage — $10', 'Eye & Hand Treatments'],
+    featured: false,
+  },
+];
+---
+
+<section class="section" id="services">
+  <div class="container">
+    <SectionHeader
+      tag="Our Services"
+      title="Everything Your Body<br /><em>Deserves</em>"
+      subtitle="From therapeutic massage to chiropractic care — a complete wellness experience curated for your restoration."
+    />
+
+    <div class="services-grid" data-animate="stagger">
+      {services.map((service) => (
+        <article
+          class:list={['service-card', 'card', { 'service-featured': service.featured }]}
+          id={`service-${service.id}`}
+        >
+          <div class="service-icon" set:html={service.icon} />
+          <div class="service-content">
+            <h3>{service.title}</h3>
+            <div class="service-meta">
+              <span class="price-tag">{service.price}</span>
+              <span class="service-duration">{service.duration}</span>
+            </div>
+            <p>{service.description}</p>
+            <ul class="service-highlights">
+              {service.highlights.map((h) => (
+                <li>{h}</li>
+              ))}
+            </ul>
+            <a href="tel:+18642335352" class="btn-ghost">
+              Book This Service <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .services-grid {
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 640px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service-featured {
+      grid-column: span 2;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: var(--space-6);
+    }
+
+    .service-featured .service-icon {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .service-icon {
+    width: 56px;
+    height: 56px;
+    color: var(--color-primary);
+    flex-shrink: 0;
+    transition: color var(--duration-normal) var(--ease-out);
+  }
+
+  .service-card:hover .service-icon {
+    color: var(--color-accent);
+  }
+
+  .service-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .service-content h3 {
+    font-size: var(--text-h3);
+  }
+
+  .service-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .service-duration {
+    font-size: var(--text-small);
+    color: var(--color-text-light);
+  }
+
+  .service-content p {
+    color: var(--color-text-muted);
+    font-size: var(--text-small);
+    line-height: var(--leading-body);
+  }
+
+  .service-highlights {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  .service-highlights li {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    padding-inline-start: 1.25em;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--color-accent-light);
+    }
+  }
+
+  .service-card .btn-ghost {
+    margin-block-start: auto;
+    padding-block-start: var(--space-2);
+    align-self: flex-start;
+  }
+</style>

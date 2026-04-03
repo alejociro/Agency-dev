@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Primary -->
+  <title>Contact & Book Appointment | Shine 4 Seasons Salon — Greenville, SC 29615</title>
+  <meta name="description" content="Book your appointment at Shine 4 Seasons Salon. 2017 Wade Hampton Blvd C, Greenville, SC 29615. Call 864-203-3947, email us, or book online. Mon–Sat 9AM–7PM.">
+  <link rel="canonical" href="https://shine4seasons.com/contact">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shine4seasons.com/contact">
+  <meta property="og:title" content="Contact & Book | Shine 4 Seasons Salon — Greenville, SC">
+  <meta property="og:description" content="Book your appointment at Shine 4 Seasons Salon. Call 864-203-3947 or book online.">
+  <meta property="og:image" content="https://shine4seasons.com/uploads/fnail0lsagxak/webp/png/attach/1715032416_logo_vc.webp">
+  <meta property="og:site_name" content="Shine 4 Seasons Salon">
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact & Book | Shine 4 Seasons Salon — Greenville, SC">
+  <meta name="twitter:description" content="Book your appointment. Call 864-203-3947 or book online. Mon–Sat 9AM–7PM.">
+  <meta name="twitter:image" content="https://shine4seasons.com/uploads/fnail0lsagxak/webp/png/attach/1715032416_logo_vc.webp">
+
+  <!-- Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="https://shine4seasons.com/uploads/fnail0lsagxak/webp/png/attach/1715032439_favicon_vc.webp">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="styles/design-system.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Contact Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Shine 4 Seasons Salon",
+    "url": "https://shine4seasons.com/contact",
+    "mainEntity": {
+      "@type": "NailSalon",
+      "name": "Shine 4 Seasons Salon",
+      "telephone": "864-203-3947",
+      "email": "shine4seasonssalon@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2017 Wade Hampton Blvd C",
+        "addressLocality": "Greenville",
+        "addressRegion": "SC",
+        "postalCode": "29615",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://shine4seasons.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://shine4seasons.com/contact" }
+    ]
+  }
+  </script>
+
+  <script type="speculationrules">
+  {
+    "prefetch": [
+      { "where": { "href_matches": "index.html" } },
+      { "where": { "href_matches": "services.html" } }
+    ]
+  }
+  </script>
+
+  <style>
+    @layer components {
+      /* Floating label fields */
+      .field {
+        position: relative;
+        margin-block-end: var(--space-3);
+      }
+
+      .field input,
+      .field textarea,
+      .field select {
+        width: 100%;
+        padding: var(--space-3) 0 var(--space-1);
+        font-family: var(--font-body);
+        font-size: var(--text-body);
+        color: var(--color-text);
+        background: transparent;
+        border: none;
+        border-block-end: 1px solid var(--color-border);
+        outline: none;
+        transition: border-color var(--duration-fast) var(--ease-out-expo);
+      }
+
+      .field input:focus,
+      .field textarea:focus,
+      .field select:focus {
+        border-color: var(--color-secondary);
+      }
+
+      .field label {
+        position: absolute;
+        inset-inline-start: 0;
+        inset-block-start: 50%;
+        transform: translateY(-50%);
+        font-size: var(--text-body);
+        color: var(--color-text-muted);
+        pointer-events: none;
+        transition: all 200ms var(--ease-out-expo);
+      }
+
+      .field textarea ~ label {
+        inset-block-start: var(--space-3);
+        transform: none;
+      }
+
+      .field input:focus ~ label,
+      .field input:not(:placeholder-shown) ~ label,
+      .field textarea:focus ~ label,
+      .field textarea:not(:placeholder-shown) ~ label,
+      .field select:focus ~ label,
+      .field select:valid ~ label {
+        inset-block-start: 0;
+        transform: none;
+        font-size: var(--text-label);
+        color: var(--color-secondary);
+        letter-spacing: var(--tracking-wide);
+      }
+
+      .field textarea {
+        resize: vertical;
+        min-block-size: 100px;
+      }
+
+      .field select {
+        cursor: pointer;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%236B6560' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/png/attach/1715032416_logo_vc.webp" alt="Shine 4 Seasons Salon logo" width="44" height="44" loading="eager" decoding="async">
+        <span>Shine 4 Seasons</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="services.html" class="nav__link">Services</a></li>
+        <li><a href="contact.html" class="nav__link active">Contact</a></li>
+      </ul>
+      <a href="https://booking.gocheckin.net/v2/15459" target="_blank" rel="noopener" class="btn btn--primary nav__cta">Book Now</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://booking.gocheckin.net/v2/15459" target="_blank" rel="noopener" class="btn btn--primary" style="margin-top: var(--space-4)">Book Now</a>
+  </div>
+
+  <!-- ═══ PAGE HERO ═══ -->
+  <section style="padding-block-start: calc(80px + var(--space-12)); padding-block-end: var(--space-12); background: var(--color-bg-warm); position: relative; overflow: hidden;">
+    <div style="position: absolute; inset: 0; background: radial-gradient(ellipse at 60% 40%, oklch(from var(--color-autumn) l c h / 0.06), transparent 60%); pointer-events: none;" aria-hidden="true"></div>
+    <div class="container" style="position: relative; text-align: center;">
+      <span class="text-label" data-animate="fade-up">Get In Touch</span>
+      <h1 style="font-family: var(--font-display); font-size: var(--text-h1); margin-block-start: var(--space-2); letter-spacing: var(--tracking-tight);" data-animate="fade-up" data-delay="100">We'd Love to<br>Hear From You</h1>
+      <p style="color: var(--color-text-light); max-inline-size: 560px; margin-inline: auto; margin-block-start: var(--space-3);" data-animate="fade-up" data-delay="200">Book your appointment, ask a question, or just say hello. We're here to help.</p>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT GRID ═══ -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-8); align-items: stretch;" class="contact-layout">
+
+        <!-- Left Column: Map + Contact Details -->
+        <div data-animate="fade-right" style="display: flex; flex-direction: column; gap: var(--space-4);">
+
+          <!-- Embedded Map -->
+          <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--color-border); aspect-ratio: 4/3; min-block-size: 280px;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.5!2d-82.35!3d34.87!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s2017+Wade+Hampton+Blvd+C+Greenville+SC+29615!5e0!3m2!1sen!2sus!4v1"
+              width="100%" height="100%"
+              style="border: 0; display: block;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Shine 4 Seasons Salon location on Google Maps">
+            </iframe>
+          </div>
+
+          <!-- Compact Contact Info -->
+          <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-4); display: flex; flex-direction: column; gap: var(--space-3);">
+            <div style="display: flex; align-items: flex-start; gap: var(--space-2);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <span style="font-size: var(--text-small); font-weight: 500; color: var(--color-text);">2017 Wade Hampton Blvd C, Greenville, SC 29615</span>
+              </div>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: var(--space-3);">
+              <a href="tel:864-203-3947" style="display: flex; align-items: center; gap: var(--space-1); font-size: var(--text-small); font-weight: 500; color: var(--color-text); text-decoration: none;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                864-203-3947
+              </a>
+              <a href="mailto:shine4seasonssalon@gmail.com" style="display: flex; align-items: center; gap: var(--space-1); font-size: var(--text-small); font-weight: 500; color: var(--color-text); text-decoration: none;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                shine4seasonssalon@gmail.com
+              </a>
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-1); font-size: var(--text-small); color: var(--color-text-light);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span>Mon – Sat: 9 AM – 7 PM</span>
+              <span style="color: var(--color-text-muted); margin-inline-start: var(--space-1);">· Sunday: Closed</span>
+            </div>
+          </div>
+
+          <!-- Book Online CTA -->
+          <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-4); text-align: center;">
+            <h3 style="font-family: var(--font-display); font-size: var(--text-h3); margin-block-end: var(--space-2);">Prefer to Book Online?</h3>
+            <p style="color: var(--color-text-light); font-size: var(--text-small); margin-block-end: var(--space-3);">Skip the form — choose your service, date, and time instantly through our booking system.</p>
+            <a href="https://booking.gocheckin.net/v2/15459" target="_blank" rel="noopener" class="btn btn--primary btn--booking">Book Online Now</a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div data-animate="fade-left" data-delay="200" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-6); display: flex; flex-direction: column;">
+          <h3 style="font-family: var(--font-display); font-size: var(--text-h2); margin-block-end: var(--space-2);">Send Us a Message</h3>
+          <p style="color: var(--color-text-light); font-size: var(--text-small); margin-block-end: var(--space-6);">Have a question or special request? Fill out the form and we'll get back to you soon.</p>
+
+          <form id="contact-form" novalidate style="flex: 1; display: flex; flex-direction: column;">
+            <div class="field">
+              <input type="text" id="name" name="name" placeholder=" " required autocomplete="name">
+              <label for="name">Full Name</label>
+            </div>
+
+            <div class="field">
+              <input type="email" id="email" name="email" placeholder=" " required autocomplete="email">
+              <label for="email">Email Address</label>
+            </div>
+
+            <div class="field">
+              <input type="tel" id="phone" name="phone" placeholder=" " autocomplete="tel">
+              <label for="phone">Phone Number</label>
+            </div>
+
+            <div class="field">
+              <select id="service" name="service" required>
+                <option value="" disabled selected></option>
+                <option value="hair">Hair Services</option>
+                <option value="manicure">Manicure</option>
+                <option value="pedicure">Pedicure</option>
+                <option value="extensions">Nail Extensions & Powder</option>
+                <option value="waxing">Waxing</option>
+                <option value="facial">Facial</option>
+                <option value="eyelash">Eyelash Extensions</option>
+                <option value="kid">Kid Service</option>
+                <option value="gift">Gift Certificate</option>
+                <option value="other">Other</option>
+              </select>
+              <label for="service">Service of Interest</label>
+            </div>
+
+            <div class="field">
+              <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+
+            <div style="flex: 1;"></div>
+            <button type="submit" class="btn btn--primary" style="width: 100%; margin-block-start: var(--space-2);">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <style>
+        @media (min-width: 768px) {
+          .contact-layout {
+            grid-template-columns: 1fr 1fr !important;
+          }
+        }
+      </style>
+    </div>
+  </section>
+
+  <!-- ═══ SOCIAL CONNECT ═══ -->
+  <section class="section" style="background: var(--color-surface);">
+    <div class="container" style="text-align: center;">
+      <div class="section-header section-header--center" data-animate="fade-up">
+        <span class="section-tag">Follow Us</span>
+        <h2 class="section-title">Stay Connected</h2>
+        <p class="section-subtitle">Follow us on social media for the latest nail art, promotions, and beauty inspiration.</p>
+      </div>
+
+      <div style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap;" data-animate="stagger">
+        <a href="https://www.facebook.com/shine4seasons/" target="_blank" rel="noopener"
+           style="display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-4) var(--space-6); background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); transition: border-color var(--duration-fast), transform 300ms var(--ease-out-back); text-decoration: none;"
+           onmouseover="this.style.borderColor='var(--color-secondary)'; this.style.transform='translateY(-4px)'"
+           onmouseout="this.style.borderColor='var(--color-border)'; this.style.transform='translateY(0)'">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="var(--color-text)"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          <span style="font-size: var(--text-small); font-weight: 500; color: var(--color-text);">Facebook</span>
+        </a>
+
+        <a href="https://instagram.com/shine4seasons" target="_blank" rel="noopener"
+           style="display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-4) var(--space-6); background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); transition: border-color var(--duration-fast), transform 300ms var(--ease-out-back); text-decoration: none;"
+           onmouseover="this.style.borderColor='var(--color-secondary)'; this.style.transform='translateY(-4px)'"
+           onmouseout="this.style.borderColor='var(--color-border)'; this.style.transform='translateY(0)'">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          <span style="font-size: var(--text-small); font-weight: 500; color: var(--color-text);">Instagram</span>
+        </a>
+
+        <a href="https://www.yelp.com/biz/shine-4-seasons-salon-greenville" target="_blank" rel="noopener"
+           style="display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-4) var(--space-6); background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); transition: border-color var(--duration-fast), transform 300ms var(--ease-out-back); text-decoration: none;"
+           onmouseover="this.style.borderColor='var(--color-secondary)'; this.style.transform='translateY(-4px)'"
+           onmouseout="this.style.borderColor='var(--color-border)'; this.style.transform='translateY(0)'">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="var(--color-text)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm4 0h-2v-6h2v6zm-2-8a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>
+          <span style="font-size: var(--text-small); font-weight: 500; color: var(--color-text);">Yelp</span>
+        </a>
+
+        <a href="https://www.google.com/search?q=Shine+4+Seasons+Salon+greenville+29615" target="_blank" rel="noopener"
+           style="display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-4) var(--space-6); background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); transition: border-color var(--duration-fast), transform 300ms var(--ease-out-back); text-decoration: none;"
+           onmouseover="this.style.borderColor='var(--color-secondary)'; this.style.transform='translateY(-4px)'"
+           onmouseout="this.style.borderColor='var(--color-border)'; this.style.transform='translateY(0)'">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="var(--color-text)"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          <span style="font-size: var(--text-small); font-weight: 500; color: var(--color-text);">Google</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Dialog -->
+  <dialog id="success-dialog" style="border: none; border-radius: var(--radius-lg); padding: var(--space-6); max-inline-size: 400px; text-align: center; background: var(--color-surface); box-shadow: var(--shadow-xl);">
+    <div style="inline-size: 56px; block-size: 56px; border-radius: var(--radius-full); background: oklch(from var(--color-spring) l c h / 0.15); display: flex; align-items: center; justify-content: center; margin-inline: auto; margin-block-end: var(--space-3);">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <h3 style="font-family: var(--font-display); font-size: var(--text-h3); margin-block-end: var(--space-2);">Message Sent!</h3>
+    <p style="color: var(--color-text-light); font-size: var(--text-small); margin-block-end: var(--space-4);">Thank you for reaching out. We'll get back to you as soon as possible.</p>
+    <button onclick="this.closest('dialog').close()" class="btn btn--primary">Got It</button>
+  </dialog>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>Shine 4 Seasons Salon</h3>
+          <p>Your luxury nail & beauty retreat in Greenville, SC. Where every season is your best look.</p>
+          <div class="season-dots" style="justify-content: flex-start; margin-block-start: var(--space-3);" aria-hidden="true">
+            <span class="dot--spring"></span><span class="dot--summer"></span><span class="dot--autumn"></span><span class="dot--winter"></span>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Navigation</h4>
+          <ul class="footer__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://booking.gocheckin.net/v2/15459" target="_blank" rel="noopener">Book Online</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__list">
+            <li><a href="services.html">Hair Services</a></li>
+            <li><a href="services.html">Manicure</a></li>
+            <li><a href="services.html">Pedicure</a></li>
+            <li><a href="services.html">Nail Extensions</a></li>
+            <li><a href="services.html">Waxing & Facial</a></li>
+            <li><a href="services.html">Eyelash</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__list">
+            <li><a href="tel:864-203-3947">864-203-3947</a></li>
+            <li><a href="mailto:shine4seasonssalon@gmail.com">Email Us</a></li>
+            <li>2017 Wade Hampton Blvd C</li>
+            <li>Greenville, SC 29615</li>
+            <li>Mon–Sat: 9 AM – 7 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Shine 4 Seasons Salon. All Rights Reserved.</span>
+        <div class="footer__socials">
+          <a href="https://www.facebook.com/shine4seasons/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://instagram.com/shine4seasons" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.yelp.com/biz/shine-4-seasons-salon-greenville" target="_blank" rel="noopener" aria-label="Yelp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm4 0h-2v-6h2v6zm-2-8a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>
+          </a>
+          <a href="https://www.google.com/search?q=Shine+4+Seasons+Salon+greenville+29615" target="_blank" rel="noopener" aria-label="Google">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Contact form handler
+    document.getElementById('contact-form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const dialog = document.getElementById('success-dialog');
+      if (dialog) {
+        dialog.showModal();
+        e.target.reset();
+      }
+    });
+  </script>
+</body>
+</html>

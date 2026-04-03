@@ -1,0 +1,49 @@
+---
+const links = [
+  { label: 'Services', href: '#services' },
+  { label: 'Packages', href: '#packages' },
+  { label: 'How to Spa', href: '#how-to-spa' },
+  { label: 'Our Team', href: '#team' },
+  { label: 'Contact', href: '#contact' },
+];
+---
+
+<nav class="nav" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo">Kara<span class="nav-logo-accent">Spa</span></a>
+
+    <ul class="nav-links">
+      {links.map((link) => (
+        <li><a href={link.href}>{link.label}</a></li>
+      ))}
+      <li><a href="tel:+18642335352" class="btn-primary btn-nav">Book Now</a></li>
+    </ul>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile nav panel -->
+<div class="nav-mobile" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
+  {links.map((link) => (
+    <a href={link.href}>{link.label}</a>
+  ))}
+  <a href="tel:+18642335352" class="btn-primary" style="margin-top: var(--space-4);">Book Now</a>
+</div>
+
+<style>
+  .nav-logo-accent {
+    color: var(--color-accent);
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .btn-nav {
+    padding: 0.625rem 1.5rem;
+    font-size: var(--text-label);
+  }
+</style>

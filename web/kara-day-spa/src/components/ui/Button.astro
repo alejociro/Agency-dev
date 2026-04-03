@@ -1,0 +1,27 @@
+---
+interface Props {
+  variant?: 'primary' | 'secondary' | 'ghost';
+  href?: string;
+  type?: 'button' | 'submit';
+  class?: string;
+  [key: string]: any;
+}
+
+const { variant = 'primary', href, type = 'button', class: className, ...rest } = Astro.props;
+const Tag = href ? 'a' : 'button';
+const classMap = {
+  primary: 'btn-primary',
+  secondary: 'btn-secondary',
+  ghost: 'btn-ghost',
+};
+---
+
+{Tag === 'a' ? (
+  <a href={href} class:list={[classMap[variant], className]} {...rest}>
+    <slot />
+  </a>
+) : (
+  <button type={type} class:list={[classMap[variant], className]} {...rest}>
+    <slot />
+  </button>
+)}

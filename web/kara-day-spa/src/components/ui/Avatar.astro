@@ -1,0 +1,38 @@
+---
+interface Props {
+  initials: string;
+  color?: string;
+  size?: 'sm' | 'md' | 'lg';
+}
+
+const { initials, color = 'var(--color-primary)', size = 'md' } = Astro.props;
+const sizeMap = { sm: '40px', md: '64px', lg: '96px' };
+const fontMap = { sm: 'var(--text-small)', md: 'var(--text-body)', lg: 'var(--text-h2)' };
+---
+
+<div
+  class="avatar blob"
+  style={`--avatar-color: ${color}; --avatar-size: ${sizeMap[size]}; --avatar-font: ${fontMap[size]};`}
+>
+  <span>{initials}</span>
+</div>
+
+<style>
+  .avatar {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    background-color: var(--avatar-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: border-radius var(--duration-slow) var(--ease-out);
+
+    & span {
+      font-family: var(--font-display);
+      font-size: var(--avatar-font);
+      font-weight: 500;
+      color: var(--color-bg);
+    }
+  }
+</style>
