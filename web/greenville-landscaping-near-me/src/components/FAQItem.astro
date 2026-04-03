@@ -1,0 +1,78 @@
+---
+interface Props {
+  question: string;
+  answer: string;
+}
+
+const { question, answer } = Astro.props;
+---
+
+<details class="faq-item">
+  <summary class="faq-question">
+    <span>{question}</span>
+    <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="6 9 12 15 18 9"/>
+    </svg>
+  </summary>
+  <div class="faq-answer">
+    <p>{answer}</p>
+  </div>
+</details>
+
+<style>
+  .faq-item {
+    background: var(--color-bg);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--color-divider);
+    transition: border-color var(--duration-fast) ease;
+
+    &[open] {
+      border-color: var(--color-primary);
+    }
+
+    &[open] .faq-chevron {
+      transform: rotate(180deg);
+    }
+  }
+
+  .faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: var(--text-body);
+    list-style: none;
+    user-select: none;
+    min-height: 44px;
+
+    &::marker { display: none; }
+    &::-webkit-details-marker { display: none; }
+  }
+
+  .faq-chevron {
+    flex-shrink: 0;
+    color: var(--color-primary);
+    transition: transform var(--duration-normal) var(--ease-out-expo);
+  }
+
+  .faq-answer {
+    padding: 0 var(--space-4) var(--space-4);
+    animation: faqSlide 0.3s var(--ease-out-expo);
+
+    & p {
+      font-size: var(--text-small);
+      color: var(--color-text-muted);
+      line-height: var(--leading-body);
+    }
+  }
+
+  @keyframes faqSlide {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+</style>

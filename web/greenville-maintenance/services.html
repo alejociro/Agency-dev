@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Primary -->
+  <title>Services — Commercial Sweeping, Sealcoating & Maintenance | Greenville Maintenance</title>
+  <meta name="description" content="Parking lot sweeping, sealcoating, facilities maintenance & general contracting for commercial properties in Greenville SC, western NC & NE Georgia. Get a free quote.">
+  <meta name="keywords" content="parking lot sweeping, sealcoating, facilities maintenance, general contracting, commercial property services, Greenville SC">
+  <link rel="canonical" href="https://greenvillemaintenance.com/services">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://greenvillemaintenance.com/services">
+  <meta property="og:title" content="Services — Commercial Sweeping, Sealcoating & Maintenance">
+  <meta property="og:description" content="Parking lot sweeping, sealcoating, facilities maintenance & general contracting for commercial properties.">
+  <meta property="og:image" content="https://greenvillemaintenance.com/wp-content/themes/gm/images/sealcoating-parking-lot.jpg">
+  <meta property="og:site_name" content="Greenville Maintenance Services">
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Services — Greenville Maintenance Services">
+  <meta name="twitter:description" content="Parking lot sweeping, sealcoating, facilities maintenance & general contracting.">
+  <meta name="twitter:image" content="https://greenvillemaintenance.com/wp-content/themes/gm/images/sealcoating-parking-lot.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="https://greenvillemaintenance.com/wp-content/themes/gm/images/greenville-maintenance.jpg">
+
+  <!-- Preconnect & Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://greenvillemaintenance.com/wp-content/themes/gm/images/sealcoating-parking-lot.jpg" as="image" fetchpriority="high">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/design-system.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="js/main.js" defer></script>
+
+  <!-- Schema JSON-LD: Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Greenville Maintenance Services, Inc.",
+      "telephone": "(864) 235-1090"
+    },
+    "serviceType": [
+      "Commercial Parking Lot Sweeping",
+      "Sealcoating & Parking Lot Maintenance",
+      "Facilities & Grounds Maintenance",
+      "General Contracting"
+    ],
+    "areaServed": [
+      { "@type": "State", "name": "South Carolina" },
+      { "@type": "State", "name": "North Carolina" },
+      { "@type": "State", "name": "Georgia" }
+    ]
+  }
+  </script>
+
+  <!-- Speculation Rules -->
+  <script type="speculationrules">
+  {
+    "prerender": [
+      { "where": { "href_matches": "contact.html" } }
+    ],
+    "prefetch": [
+      { "where": { "href_matches": "about.html" } }
+    ]
+  }
+  </script>
+</head>
+<body class="grain">
+
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header class="site-header" x-data>
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><rect width="36" height="36" rx="6" fill="#007CBA"/><path d="M8 26V10h4v6h6v-6h4v16h-4v-6h-6v6H8z" fill="#F5F2ED"/></svg>
+        <span>Greenville<br>Maintenance</span>
+      </a>
+      <nav class="header__nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="contact.html#estimate" class="btn btn--primary btn--lg header__cta">Free Estimate</a>
+      <button class="menu-toggle" aria-label="Toggle menu" :aria-expanded="$store.nav.open" @click="$store.nav.toggle()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" :class="{ 'is-open': $store.nav.open }" aria-label="Mobile navigation">
+      <a href="index.html" @click="$store.nav.close()">Home</a>
+      <a href="about.html" @click="$store.nav.close()">About</a>
+      <a href="services.html" @click="$store.nav.close()">Services</a>
+      <a href="contact.html" @click="$store.nav.close()">Contact</a>
+      <a href="contact.html#estimate" class="btn btn--primary" @click="$store.nav.close()">Free Estimate</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="hero" style="min-height: 60vh;">
+      <div class="hero__bg">
+        <img src="https://greenvillemaintenance.com/wp-content/themes/gm/images/sealcoating-parking-lot.jpg" alt="Parking lot maintenance and sealcoating" width="400" height="300" decoding="async" fetchpriority="high">
+      </div>
+      <div class="container hero__content">
+        <span class="badge hero-badge">Our Services</span>
+        <h1 class="hero__title hero-title" style="font-size: var(--text-h1);">Everything Your Property Needs.<br><span class="hero__title-accent">One Partner.</span></h1>
+        <p class="hero__subtitle hero-sub">From parking lots to rooftops, we provide comprehensive commercial maintenance so you can focus on managing your portfolio.</p>
+      </div>
+      <div class="hero__stripe"></div>
+    </section>
+
+    <!-- SERVICE 1: SWEEPING -->
+    <section class="section" id="sweeping">
+      <div class="container">
+        <div class="grid-asymmetric">
+          <div data-animate="fade-left">
+            <span class="section-tag">Core Service</span>
+            <h2 style="margin-top: var(--space-2); margin-bottom: var(--space-4);">Commercial Parking Lot Sweeping</h2>
+            <p style="color: var(--color-text-muted); margin-bottom: var(--space-4);">
+              A clean parking lot is your property's first impression. Our sweeping crews remove debris, litter, and buildup on a schedule that fits your property — nightly, weekly, or as needed.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-bottom: var(--space-4);">
+              <div style="display: flex; align-items: center; gap: var(--space-1);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-size: var(--text-small);">Scheduled nightly, weekly, or on-demand sweeping</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-1);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-size: var(--text-small);">Shopping centers, office parks, industrial sites</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-1);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-size: var(--text-small);">Stormwater compliance documentation</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-1);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-size: var(--text-small);">Post-event and emergency cleanup available</span>
+              </div>
+            </div>
+
+            <a href="contact.html#estimate" class="btn btn--primary">Get a Sweeping Quote</a>
+          </div>
+          <div class="offset-image" data-animate="fade-right" data-delay="200">
+            <img src="https://greenvillemaintenance.com/wp-content/themes/gm/images/parking-lot-sweeping.jpg" alt="Commercial parking lot sweeping in action" width="400" height="300" loading="lazy" decoding="async" style="aspect-ratio: 4/3; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider--fade" style="margin-inline: auto; max-width: 1200px;">
+
+    <!-- SERVICE 2: SEALCOATING -->
+    <section class="section" id="sealcoating">
+      <div class="container">
+        <div class="grid-asymmetric--reverse grid-asymmetric">
+          <div data-animate="fade-right">
+            <span class="section-tag">Core Service</span>
+            <h2 style="margin-top: var(--space-2); margin-bottom: var(--space-4);">Parking Lot Maintenance &amp; Sealcoating</h2>
+            <p style="color: var(--color-text-muted); margin-bottom: var(--space-4);">
+              Asphalt deterioration is inevitable — but expensive replacements aren't. Our sealcoating and repair services extend pavement life by years, saving you thousands in deferred costs.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-bottom: var(--space-4);">
+              <div style="display: flex; align-items: center; gap: var(--space-1);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-size: var(--text-small);">Professional sealcoating application</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-1);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-size: var(--text-small);">Crack sealing and pothole patching</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-1);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-size: var(--text-small);">Line striping and ADA compliance marking</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-1);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-size: var(--text-small);">Condition assessments and lifecycle planning</span>
+              </div>
+            </div>
+
+            <a href="contact.html#estimate" class="btn btn--primary">Get a Maintenance Quote</a>
+          </div>
+          <div class="offset-image" data-animate="fade-left" data-delay="200">
+            <img src="https://greenvillemaintenance.com/wp-content/themes/gm/images/sealcoating-parking-lot.jpg" alt="Sealcoating application on parking lot surface" width="400" height="300" loading="lazy" decoding="async" style="aspect-ratio: 4/3; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider--fade" style="margin-inline: auto; max-width: 1200px;">
+
+    <!-- SERVICE 3: FACILITIES -->
+    <section class="section" id="facilities">
+      <div class="container">
+        <div class="grid-asymmetric">
+          <div data-animate="fade-left">
+            <span class="section-tag">Core Service</span>
+            <h2 style="margin-top: var(--space-2); margin-bottom: var(--space-4);">Facilities &amp; Grounds Maintenance</h2>
+            <p style="color: var(--color-text-muted); margin-bottom: var(--space-4);">
+              Your building and grounds reflect on your tenants and your brand. We handle the day-to-day upkeep that keeps commercial properties looking sharp and operating safely.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-bottom: var(--space-4);">
+              <div style="display: flex; align-items: center; gap: var(--space-1);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-size: var(--text-small);">Landscaping and lawn care programs</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-1);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-size: var(--text-small);">Pressure washing — sidewalks, facades, common areas</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-1);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-size: var(--text-small);">Preventive maintenance inspections and reporting</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-1);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-size: var(--text-small);">Seasonal services: leaf removal, snow/ice prep, storm cleanup</span>
+              </div>
+            </div>
+
+            <a href="contact.html#estimate" class="btn btn--primary">Get a Facilities Quote</a>
+          </div>
+          <div class="offset-image" data-animate="fade-right" data-delay="200">
+            <img src="https://greenvillemaintenance.com/wp-content/themes/gm/images/landscaping-greenville-sc.jpg" alt="Commercial landscaping and grounds maintenance" width="400" height="300" loading="lazy" decoding="async" style="aspect-ratio: 4/3; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider--fade" style="margin-inline: auto; max-width: 1200px;">
+
+    <!-- SERVICE 4: GENERAL CONTRACTING -->
+    <section class="section" id="contracting">
+      <div class="container">
+        <div class="grid-asymmetric--reverse grid-asymmetric">
+          <div data-animate="fade-right">
+            <span class="section-tag">Core Service</span>
+            <h2 style="margin-top: var(--space-2); margin-bottom: var(--space-4);">General Contracting</h2>
+            <p style="color: var(--color-text-muted); margin-bottom: var(--space-4);">
+              Renovations, build-outs, and improvements managed by people who understand commercial properties. We coordinate the trades so you don't have to.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-bottom: var(--space-4);">
+              <div style="display: flex; align-items: center; gap: var(--space-1);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-size: var(--text-small);">Tenant build-outs and finish work</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-1);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-size: var(--text-small);">Commercial renovations and upgrades</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-1);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-size: var(--text-small);">ADA compliance modifications</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-1);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="font-size: var(--text-small);">Project management from scope to close-out</span>
+              </div>
+            </div>
+
+            <a href="contact.html#estimate" class="btn btn--primary">Discuss a Project</a>
+          </div>
+          <div class="offset-image" data-animate="fade-left" data-delay="200">
+            <img src="https://greenvillemaintenance.com/wp-content/themes/gm/images/general-contracting-greenville-sc.jpg" alt="General contracting for commercial buildings" width="400" height="300" loading="lazy" decoding="async" style="aspect-ratio: 4/3; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section bg-alt" id="faq">
+      <div class="container" style="max-width: 800px;">
+        <div class="section-header text-center" data-animate="fade-up">
+          <span class="section-tag">FAQ</span>
+          <h2 style="margin-top: var(--space-2);">Common Questions</h2>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: var(--space-2);" data-animate="stagger">
+          <details class="card" style="padding: 0; cursor: pointer;">
+            <summary style="padding: var(--space-3) var(--space-4); font-family: var(--font-display); font-weight: 600; display: flex; align-items: center; justify-content: space-between; list-style: none; gap: var(--space-2);">
+              What areas do you serve?
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; transition: transform 300ms ease;"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div style="padding: 0 var(--space-4) var(--space-4); color: var(--color-text-muted); font-size: var(--text-small); line-height: var(--leading-body);">
+              We serve Upstate South Carolina (Greenville, Spartanburg, Anderson), western North Carolina (Asheville area), and northeastern Georgia. Our Greenville headquarters allows us to efficiently cover the entire tri-state region.
+            </div>
+          </details>
+
+          <details class="card" style="padding: 0; cursor: pointer;">
+            <summary style="padding: var(--space-3) var(--space-4); font-family: var(--font-display); font-weight: 600; display: flex; align-items: center; justify-content: space-between; list-style: none; gap: var(--space-2);">
+              How often should my parking lot be swept?
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; transition: transform 300ms ease;"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div style="padding: 0 var(--space-4) var(--space-4); color: var(--color-text-muted); font-size: var(--text-small); line-height: var(--leading-body);">
+              It depends on traffic volume and property type. High-traffic retail properties typically need nightly sweeping, while office parks may only need weekly service. We'll assess your property and recommend the right schedule.
+            </div>
+          </details>
+
+          <details class="card" style="padding: 0; cursor: pointer;">
+            <summary style="padding: var(--space-3) var(--space-4); font-family: var(--font-display); font-weight: 600; display: flex; align-items: center; justify-content: space-between; list-style: none; gap: var(--space-2);">
+              Do you handle emergency or after-hours requests?
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; transition: transform 300ms ease;"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div style="padding: 0 var(--space-4) var(--space-4); color: var(--color-text-muted); font-size: var(--text-small); line-height: var(--leading-body);">
+              Yes. We understand that maintenance issues don't follow a 9-to-5 schedule. Contact us for urgent needs and we'll coordinate a response as quickly as possible.
+            </div>
+          </details>
+
+          <details class="card" style="padding: 0; cursor: pointer;">
+            <summary style="padding: var(--space-3) var(--space-4); font-family: var(--font-display); font-weight: 600; display: flex; align-items: center; justify-content: space-between; list-style: none; gap: var(--space-2);">
+              How long does sealcoating last?
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; transition: transform 300ms ease;"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div style="padding: 0 var(--space-4) var(--space-4); color: var(--color-text-muted); font-size: var(--text-small); line-height: var(--leading-body);">
+              A properly applied sealcoat typically lasts 2-3 years depending on traffic, weather, and existing pavement condition. We recommend reassessment every 2 years to maintain optimal protection.
+            </div>
+          </details>
+
+          <details class="card" style="padding: 0; cursor: pointer;">
+            <summary style="padding: var(--space-3) var(--space-4); font-family: var(--font-display); font-weight: 600; display: flex; align-items: center; justify-content: space-between; list-style: none; gap: var(--space-2);">
+              Are you licensed and insured?
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; transition: transform 300ms ease;"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div style="padding: 0 var(--space-4) var(--space-4); color: var(--color-text-muted); font-size: var(--text-small); line-height: var(--leading-body);">
+              Absolutely. We carry full commercial liability insurance and all required licenses for work in South Carolina, North Carolina, and Georgia. Certificates of insurance are available upon request.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+      <div class="container text-center" data-animate="scale-in">
+        <h2 style="margin-bottom: var(--space-3);">Need a Custom<br>Maintenance Plan?</h2>
+        <p>Every property is different. Let's build a service package that fits your needs, schedule, and budget.</p>
+        <a href="contact.html#estimate" class="btn btn--primary btn--lg">Request a Free Estimate</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="display: inline-flex;">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><rect width="36" height="36" rx="6" fill="#007CBA"/><path d="M8 26V10h4v6h6v-6h4v16h-4v-6h-6v6H8z" fill="#F5F2ED"/></svg>
+            <span>Greenville<br>Maintenance</span>
+          </a>
+          <p>Full maintenance services for commercial properties since 1993.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#sweeping">Commercial Sweeping</a></li>
+            <li><a href="#sealcoating">Parking Lot Maintenance</a></li>
+            <li><a href="#facilities">Facilities Maintenance</a></li>
+            <li><a href="#contracting">General Contracting</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#estimate">Free Estimate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Greenville Maintenance Services, Inc. All rights reserved.</span>
+        <span>(864) 235-1090 &middot; PO Box 27036, Greenville, SC 29616</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,272 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const services = [
+  {
+    id: 'mowing',
+    title: 'Lawn Mowing',
+    desc: 'Our precision mowing service goes beyond cutting grass. We adjust mower height to match your grass type and the season, alternate mowing patterns to prevent soil compaction, and leave your lawn with clean, professional striping.',
+    benefits: ['Height-adjusted cuts for grass health', 'Alternating patterns prevent ruts', 'Weekly or bi-weekly scheduling', 'Professional-grade equipment'],
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="20" width="24" height="14" rx="3"/><circle cx="12" cy="38" r="4"/><circle cx="28" cy="38" r="4"/><path d="M32 28h6l4 6v4h-6"/><line x1="20" y1="12" x2="20" y2="20"/><path d="M14 14h12" stroke-dasharray="3 2"/></svg>`
+  },
+  {
+    id: 'edging',
+    title: 'Edging & Blowing',
+    desc: 'Crisp, defined edges make the difference between a mowed lawn and a manicured property. We edge every driveway, sidewalk, patio and flower bed — then blow clean so not a single clipping is left behind.',
+    benefits: ['Every hardscape edge defined', 'Complete clipping cleanup', 'Flower bed separation', 'Included with mowing packages'],
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v30"/><path d="M18 36h12"/><circle cx="24" cy="40" r="4"/><path d="M20 10l8 4M20 18l8 4"/><path d="M10 42c4-2 6-4 6-8M38 42c-4-2-6-4-6-8"/></svg>`
+  },
+  {
+    id: 'hedges',
+    title: 'Hedge Trimming',
+    desc: 'Overgrown hedges drag down your entire property\'s look. Our crew shapes boxwoods, privet, holly and ornamental shrubs with precision — promoting dense, healthy growth and sharp sight lines.',
+    benefits: ['Expert shaping for all hedge types', 'Promotes dense, healthy growth', 'Seasonal timing for best results', 'Debris cleared on-site'],
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 30c0-10 8-20 16-20s16 10 16 20"/><line x1="24" y1="30" x2="24" y2="44"/><path d="M18 30v-6M30 30v-6"/><path d="M12 30h24" stroke="var(--color-accent)"/></svg>`
+  },
+  {
+    id: 'debris',
+    title: 'Debris Removal',
+    desc: 'Storms, wind and seasons leave behind branches, leaves and clutter. We clear everything — from light leaf pickup to heavy storm cleanup — so your property stays safe, clean and ready to enjoy.',
+    benefits: ['Post-storm rapid response', 'Leaf and branch removal', 'Hauling included in service', 'Prevents pest and mold buildup'],
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 8c-2 6 0 12 4 16l-6 14h24l-6-14c4-4 6-10 4-16"/><path d="M20 24h8" stroke="var(--color-accent)"/><circle cx="24" cy="16" r="2" fill="var(--color-primary)"/></svg>`
+  },
+  {
+    id: 'weed',
+    title: 'Weed Treatment',
+    desc: 'Weeds steal water, nutrients and sunlight from your lawn. Our targeted treatments eliminate existing weeds and prevent new growth — keeping your grass thick, green and competition-free.',
+    benefits: ['Pre-emergent and post-emergent', 'Safe for grass and pets', 'Seasonal treatment schedule', 'Visible results within weeks'],
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 44V24"/><path d="M24 24c-8-2-12-10-10-18 6 2 12 8 10 18z" fill="var(--color-primary)" opacity="0.12"/><path d="M24 24c-8-2-12-10-10-18 6 2 12 8 10 18z"/><path d="M24 30c6-1 10-7 9-14-5 1-10 6-9 14z" fill="var(--color-accent)" opacity="0.12"/><path d="M24 30c6-1 10-7 9-14-5 1-10 6-9 14z" stroke="var(--color-accent)"/></svg>`
+  }
+];
+
+const packages = [
+  {
+    name: 'Essential',
+    desc: 'Perfect for homeowners who want a clean, maintained lawn without the hassle.',
+    includes: ['Weekly mowing', 'Edging & blowing', 'Bi-weekly debris pickup'],
+    frequency: 'Weekly visits, spring – fall',
+    featured: false
+  },
+  {
+    name: 'Premium',
+    desc: 'Our most popular plan — full lawn care plus hedge and weed management.',
+    includes: ['Everything in Essential', 'Monthly hedge trimming', 'Quarterly weed treatment', 'Seasonal cleanups'],
+    frequency: 'Year-round service',
+    featured: true
+  },
+  {
+    name: 'Complete',
+    desc: 'Total property care for homeowners who want the best. We handle everything.',
+    includes: ['Everything in Premium', 'Bi-weekly hedge trimming', 'Monthly weed treatment', 'Storm debris response', 'Priority scheduling'],
+    frequency: 'Year-round, priority service',
+    featured: false
+  }
+];
+---
+
+<BaseLayout
+  title="Lawn Care Services & Packages | Greenville Landscaping Near Me"
+  description="Professional lawn mowing, edging, hedge trimming, debris removal and weed treatment in Greenville, SC. View our Essential, Premium and Complete care packages."
+  schema={{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Landscaping and Lawn Care",
+    "provider": {
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Greenville Landscaping Near Me",
+      "url": "https://www.greenvillelandscapingnearme.com"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Greenville",
+      "address": { "@type": "PostalAddress", "addressRegion": "SC", "addressCountry": "US" }
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Lawn Care Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lawn Mowing" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Edging & Blowing" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hedge Trimming" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Debris Removal" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Weed Treatment" } }
+      ]
+    }
+  }}
+>
+  <Nav currentPage="services" />
+
+  <!-- Hero -->
+  <section class="section" style="padding-top:calc(var(--space-16) + var(--space-8));padding-bottom:var(--space-8);background:var(--color-surface);">
+    <div class="container" style="text-align:center;max-width:700px;">
+      <span class="badge hero-badge">Professional Lawn Care</span>
+      <h1 class="hero-title" style="margin-top:var(--space-3);margin-bottom:var(--space-3);">
+        Services That Keep the <span class="text-gradient">Upstate Green</span>
+      </h1>
+      <p class="hero-sub" style="color:var(--color-text-muted);margin-inline:auto;">
+        Every service tailored to your property, your grass type and your schedule. No cookie-cutter plans — just expert care that shows.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Detail -->
+  <section class="section" id="services-list">
+    <div class="container">
+      {services.map((s, i) => (
+        <div id={s.id} class={`service-detail ${i % 2 !== 0 ? 'reverse' : ''}`} data-animate={i % 2 === 0 ? 'fade-right' : 'fade-left'}>
+          <div class="service-detail-content">
+            <div class="card-icon" style="width:64px;height:64px;margin-bottom:var(--space-3);" set:html={s.icon} />
+            <h2 style="margin-bottom:var(--space-2);">{s.title}</h2>
+            <p style="color:var(--color-text-muted);margin-bottom:var(--space-4);">{s.desc}</p>
+            <ul class="benefit-list">
+              {s.benefits.map((b) => (
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  {b}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div class="service-detail-visual">
+            <div style="aspect-ratio:4/3;border-radius:var(--radius-xl);background:linear-gradient(135deg, var(--color-primary-glow), var(--color-surface));display:flex;align-items:center;justify-content:center;">
+              <div style="width:100px;height:100px;opacity:0.3;" set:html={s.icon} />
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section class="section" style="background:var(--color-surface);" id="packages">
+    <div class="container">
+      <div style="text-align:center;max-width:550px;margin-inline:auto;margin-bottom:var(--space-8);">
+        <span class="section-tag" data-animate="fade-up">Packages</span>
+        <h2 data-animate="fade-up" data-delay="100">Choose Your <span class="text-gradient">Level of Care</span></h2>
+        <p data-animate="fade-up" data-delay="200" style="color:var(--color-text-muted);margin-inline:auto;">
+          Every package is customizable. Contact us for a personalized quote based on your property size and needs.
+        </p>
+      </div>
+
+      <div class="packages-grid" data-animate="stagger">
+        {packages.map((pkg) => (
+          <div class={`package-card ${pkg.featured ? 'featured' : ''}`}>
+            {pkg.featured && <span class="badge" style="margin-bottom:var(--space-2);">Most Popular</span>}
+            <h3 style="font-size:var(--text-h2);margin-bottom:var(--space-1);">{pkg.name}</h3>
+            <p style="font-size:var(--text-small);color:var(--color-text-muted);margin-bottom:var(--space-4);">{pkg.desc}</p>
+            <ul class="package-includes">
+              {pkg.includes.map((item) => (
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:var(--space-3);text-transform:uppercase;letter-spacing:0.05em;">
+              {pkg.frequency}
+            </p>
+            <a href="/contact" class={`btn ${pkg.featured ? 'btn-primary' : 'btn-secondary'}`} style="width:100%;margin-top:var(--space-4);">Get a Quote</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:linear-gradient(135deg, var(--color-primary-dark), var(--color-secondary));padding-block:var(--space-12);">
+    <div class="container" style="text-align:center;">
+      <h2 data-animate="fade-up" style="color:var(--color-text-light);margin-bottom:var(--space-3);">Not Sure Which Service You Need?</h2>
+      <p data-animate="fade-up" data-delay="100" style="color:var(--color-text-light-muted);max-width:45ch;margin-inline:auto;margin-bottom:var(--space-6);">
+        Schedule a free property visit and we'll recommend exactly what your lawn needs — no obligation.
+      </p>
+      <a href="/contact" class="btn btn-accent btn-lg" data-animate="fade-up" data-delay="200">Schedule Free Visit →</a>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .service-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    align-items: center;
+    padding-block: var(--space-8);
+    border-block-end: 1px solid var(--color-divider);
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &.reverse {
+      @media (min-width: 768px) {
+        direction: rtl;
+        & > * { direction: ltr; }
+      }
+    }
+
+    &:last-child { border: none; }
+  }
+
+  .benefit-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+
+    & li {
+      display: flex;
+      align-items: center;
+      gap: var(--space-1);
+      font-size: var(--text-small);
+      font-weight: 500;
+    }
+  }
+
+  .packages-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .package-card {
+    background: var(--color-bg);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    border: 2px solid var(--color-divider);
+    transition: all var(--duration-normal) var(--ease-out-expo);
+
+    &.featured {
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-card);
+      position: relative;
+
+      @media (min-width: 768px) {
+        transform: scale(1.05);
+      }
+    }
+
+    &:hover {
+      border-color: var(--color-primary);
+    }
+  }
+
+  .package-includes {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+
+    & li {
+      display: flex;
+      align-items: center;
+      gap: var(--space-1);
+      font-size: var(--text-small);
+    }
+  }
+</style>

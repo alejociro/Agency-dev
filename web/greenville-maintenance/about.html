@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Primary -->
+  <title>About Us — Greenville Maintenance Services | 33 Years Since 1993</title>
+  <meta name="description" content="Founded by two commercial property managers in 1993, Greenville Maintenance Services brings 75+ combined years of experience to every property we serve across SC, NC & GA.">
+  <meta name="keywords" content="Greenville Maintenance Services, Tommy Jenkins, Rex Jones, commercial property maintenance, about us, Greenville SC">
+  <link rel="canonical" href="https://greenvillemaintenance.com/about">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://greenvillemaintenance.com/about">
+  <meta property="og:title" content="About Us — Greenville Maintenance Services | Since 1993">
+  <meta property="og:description" content="Founded by two commercial property managers in 1993 with 75+ combined years of experience.">
+  <meta property="og:image" content="https://greenvillemaintenance.com/wp-content/uploads/2012/02/greenville-maintenance-services-864x288.jpg">
+  <meta property="og:site_name" content="Greenville Maintenance Services">
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Us — Greenville Maintenance Services">
+  <meta name="twitter:description" content="Founded by two commercial property managers in 1993 with 75+ combined years of experience.">
+  <meta name="twitter:image" content="https://greenvillemaintenance.com/wp-content/uploads/2012/02/greenville-maintenance-services-864x288.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="https://greenvillemaintenance.com/wp-content/themes/gm/images/greenville-maintenance.jpg">
+
+  <!-- Preconnect & Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://greenvillemaintenance.com/wp-content/uploads/2012/02/greenville-maintenance-services-864x288.jpg" as="image" fetchpriority="high">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/design-system.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="js/main.js" defer></script>
+
+  <!-- Speculation Rules -->
+  <script type="speculationrules">
+  {
+    "prefetch": [
+      { "where": { "href_matches": "services.html" } },
+      { "where": { "href_matches": "contact.html" } }
+    ]
+  }
+  </script>
+</head>
+<body class="grain">
+
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header class="site-header" x-data>
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><rect width="36" height="36" rx="6" fill="#007CBA"/><path d="M8 26V10h4v6h6v-6h4v16h-4v-6h-6v6H8z" fill="#F5F2ED"/></svg>
+        <span>Greenville<br>Maintenance</span>
+      </a>
+      <nav class="header__nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="contact.html#estimate" class="btn btn--primary btn--lg header__cta">Free Estimate</a>
+      <button class="menu-toggle" aria-label="Toggle menu" :aria-expanded="$store.nav.open" @click="$store.nav.toggle()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" :class="{ 'is-open': $store.nav.open }" aria-label="Mobile navigation">
+      <a href="index.html" @click="$store.nav.close()">Home</a>
+      <a href="about.html" @click="$store.nav.close()">About</a>
+      <a href="services.html" @click="$store.nav.close()">Services</a>
+      <a href="contact.html" @click="$store.nav.close()">Contact</a>
+      <a href="contact.html#estimate" class="btn btn--primary" @click="$store.nav.close()">Free Estimate</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="hero" style="min-height: 60vh;">
+      <div class="hero__bg">
+        <img src="https://greenvillemaintenance.com/wp-content/uploads/2012/02/greenville-maintenance-services-864x288.jpg" alt="Greenville Maintenance Services team" width="864" height="288" decoding="async" fetchpriority="high">
+      </div>
+      <div class="container hero__content">
+        <span class="badge hero-badge">About Us</span>
+        <h1 class="hero__title hero-title" style="font-size: var(--text-h1);">Built from the Ground Up.<br><span class="hero__title-accent">Since 1993.</span></h1>
+        <p class="hero__subtitle hero-sub">Two property managers who saw a better way to maintain commercial properties — and spent 33 years proving it.</p>
+      </div>
+      <div class="hero__stripe"></div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-asymmetric">
+          <div data-animate="fade-left">
+            <span class="section-tag">Our Story</span>
+            <h2 style="margin-top: var(--space-2); margin-bottom: var(--space-4);">Property Managers<br>Turned Problem Solvers</h2>
+            <p style="color: var(--color-text-muted); margin-bottom: var(--space-3);">
+              Greenville Maintenance Services, Inc. was founded in 1993 by Tommy Jenkins and Rex Jones — two commercial property managers who were tired of unreliable contractors and inconsistent service.
+            </p>
+            <p style="color: var(--color-text-muted); margin-bottom: var(--space-3);">
+              Having managed commercial properties themselves, they understood what property managers actually need: a single, trustworthy partner who shows up on schedule, catches problems early, and communicates clearly.
+            </p>
+            <p style="color: var(--color-text-muted);">
+              Over three decades later, that founding vision hasn't changed. We provide full maintenance services for commercial properties including sweeping, parking lot maintenance, building and grounds maintenance, and general contracting — all backed by over 75 combined years of property management and construction experience.
+            </p>
+          </div>
+          <div class="about__image-wrapper" data-animate="fade-right" data-delay="200">
+            <img src="https://greenvillemaintenance.com/wp-content/themes/gm/images/parking-lot-sweeping.jpg" alt="Commercial sweeping operations" width="400" height="300" loading="lazy" decoding="async" style="aspect-ratio: 4/3; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section bg-alt">
+      <div class="container">
+        <div class="section-header text-center" data-animate="fade-up">
+          <span class="section-tag">Milestones</span>
+          <h2 style="margin-top: var(--space-2);">33 Years of Steady Growth</h2>
+        </div>
+
+        <div style="max-width: 700px; margin-inline: auto; position: relative; padding-left: var(--space-6);">
+          <!-- Timeline line -->
+          <div style="position: absolute; left: 14px; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--color-accent), var(--color-primary));" aria-hidden="true"></div>
+
+          <div style="display: flex; flex-direction: column; gap: var(--space-6);">
+            <!-- 1993 -->
+            <div style="position: relative;" data-animate="fade-left">
+              <div style="position: absolute; left: calc(-1 * var(--space-6) + 6px); top: 4px; width: 18px; height: 18px; border-radius: var(--radius-full); background: var(--color-accent); border: 3px solid var(--color-bg-alt);"></div>
+              <h3 style="color: var(--color-accent); font-size: var(--text-small); letter-spacing: var(--tracking-wider); text-transform: uppercase; margin-bottom: 0.25rem;">1993</h3>
+              <p style="font-family: var(--font-display); font-weight: 600; margin-bottom: 0.25rem;">Founded in Greenville, SC</p>
+              <p style="color: var(--color-text-muted); font-size: var(--text-small);">Tommy Jenkins and Rex Jones launch Greenville Maintenance Services from their combined property management experience.</p>
+            </div>
+
+            <!-- 2000s -->
+            <div style="position: relative;" data-animate="fade-left" data-delay="100">
+              <div style="position: absolute; left: calc(-1 * var(--space-6) + 6px); top: 4px; width: 18px; height: 18px; border-radius: var(--radius-full); background: var(--color-primary); border: 3px solid var(--color-bg-alt);"></div>
+              <h3 style="color: var(--color-primary); font-size: var(--text-small); letter-spacing: var(--tracking-wider); text-transform: uppercase; margin-bottom: 0.25rem;">Early 2000s</h3>
+              <p style="font-family: var(--font-display); font-weight: 600; margin-bottom: 0.25rem;">Expanded to Full-Service</p>
+              <p style="color: var(--color-text-muted); font-size: var(--text-small);">Added facilities maintenance and general contracting to serve properties end-to-end. Grew from sweeping to complete property care.</p>
+            </div>
+
+            <!-- 2010s -->
+            <div style="position: relative;" data-animate="fade-left" data-delay="200">
+              <div style="position: absolute; left: calc(-1 * var(--space-6) + 6px); top: 4px; width: 18px; height: 18px; border-radius: var(--radius-full); background: var(--color-accent); border: 3px solid var(--color-bg-alt);"></div>
+              <h3 style="color: var(--color-accent); font-size: var(--text-small); letter-spacing: var(--tracking-wider); text-transform: uppercase; margin-bottom: 0.25rem;">2010s</h3>
+              <p style="font-family: var(--font-display); font-weight: 600; margin-bottom: 0.25rem;">Tri-State Coverage</p>
+              <p style="color: var(--color-text-muted); font-size: var(--text-small);">Extended operations into western North Carolina and northeastern Georgia to serve clients with multi-state portfolios.</p>
+            </div>
+
+            <!-- Today -->
+            <div style="position: relative;" data-animate="fade-left" data-delay="300">
+              <div style="position: absolute; left: calc(-1 * var(--space-6) + 6px); top: 4px; width: 18px; height: 18px; border-radius: var(--radius-full); background: var(--color-primary); border: 3px solid var(--color-bg-alt);"></div>
+              <h3 style="color: var(--color-primary); font-size: var(--text-small); letter-spacing: var(--tracking-wider); text-transform: uppercase; margin-bottom: 0.25rem;">Today</h3>
+              <p style="font-family: var(--font-display); font-weight: 600; margin-bottom: 0.25rem;">33 Years and Counting</p>
+              <p style="color: var(--color-text-muted); font-size: var(--text-small);">Still locally owned, still founded on the same principles. Serving commercial properties with 75+ combined years of expertise.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-header text-center" data-animate="fade-up">
+          <span class="section-tag">Leadership</span>
+          <h2 style="margin-top: var(--space-2);">Meet the Founders</h2>
+          <p style="margin-inline: auto;">Two property managers with a shared vision for better commercial maintenance.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: var(--space-6); max-width: 800px; margin-inline: auto;" data-animate="stagger">
+          <!-- Tommy Jenkins -->
+          <article class="card" style="text-align: center; padding: var(--space-6);">
+            <div style="width: 80px; height: 80px; border-radius: var(--radius-full); background: var(--color-primary); color: var(--color-text-inverse); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 800; font-size: var(--text-h2); margin: 0 auto var(--space-3);">TJ</div>
+            <h3 style="font-size: var(--text-h3);">Tommy Jenkins</h3>
+            <p style="color: var(--color-primary); font-size: var(--text-small); font-weight: 600; text-transform: uppercase; letter-spacing: var(--tracking-wide); margin-bottom: var(--space-2);">Co-Founder</p>
+            <hr class="divider" style="margin: 0 auto var(--space-3);">
+            <p style="color: var(--color-text-muted); font-size: var(--text-small);">Decades of commercial property management experience. Tommy brings hands-on expertise in operations and client relationships that keep properties running smoothly.</p>
+          </article>
+
+          <!-- Rex Jones -->
+          <article class="card" style="text-align: center; padding: var(--space-6);">
+            <div style="width: 80px; height: 80px; border-radius: var(--radius-full); background: var(--color-accent); color: var(--color-text); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 800; font-size: var(--text-h2); margin: 0 auto var(--space-3);">RJ</div>
+            <h3 style="font-size: var(--text-h3);">Rex Jones</h3>
+            <p style="color: var(--color-primary); font-size: var(--text-small); font-weight: 600; text-transform: uppercase; letter-spacing: var(--tracking-wide); margin-bottom: var(--space-2);">Co-Founder</p>
+            <hr class="divider" style="margin: 0 auto var(--space-3);">
+            <p style="color: var(--color-text-muted); font-size: var(--text-small);">Expert in construction and general contracting with deep roots in the Upstate. Rex oversees project delivery and ensures every job meets the highest standards.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section bg-dark">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: var(--space-6); text-align: center;" data-animate="stagger">
+          <div class="stat">
+            <div class="stat__number" style="color: var(--color-accent);" x-data x-counter="33">0</div>
+            <div class="stat__suffix">+</div>
+            <div class="stat__label" style="color: rgba(245,242,237,0.7);">Years in Business</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number" style="color: var(--color-accent);" x-data x-counter="75">0</div>
+            <div class="stat__suffix">+</div>
+            <div class="stat__label" style="color: rgba(245,242,237,0.7);">Years Combined Experience</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number" style="color: var(--color-accent);" x-data x-counter="4">0</div>
+            <div class="stat__label" style="color: rgba(245,242,237,0.7);">Core Services</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number" style="color: var(--color-accent);" x-data x-counter="3">0</div>
+            <div class="stat__label" style="color: rgba(245,242,237,0.7);">States Served</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-center" data-animate="fade-up">
+          <span class="section-tag">Our Values</span>
+          <h2 style="margin-top: var(--space-2);">What Guides Every Job</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: var(--space-4);" data-animate="stagger">
+          <div class="card" style="border-top: 4px solid var(--color-accent);">
+            <div class="icon-box icon-box--accent" style="margin-bottom: var(--space-3);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 style="font-size: var(--text-h3); margin-bottom: var(--space-1);">Reliability</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--text-small);">We show up on schedule, every time. Our clients don't chase us — we proactively communicate and deliver.</p>
+          </div>
+
+          <div class="card" style="border-top: 4px solid var(--color-primary);">
+            <div class="icon-box" style="margin-bottom: var(--space-3);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3 style="font-size: var(--text-h3); margin-bottom: var(--space-1);">Proactive Care</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--text-small);">We don't wait for problems. Our teams spot issues early and report them before they become costly emergencies.</p>
+          </div>
+
+          <div class="card" style="border-top: 4px solid var(--color-accent);">
+            <div class="icon-box icon-box--accent" style="margin-bottom: var(--space-3);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 style="font-size: var(--text-h3); margin-bottom: var(--space-1);">Community</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--text-small);">We invest in the region we serve. From local charities to long-term client partnerships, we believe in building up our community.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+      <div class="container text-center" data-animate="scale-in">
+        <h2 style="margin-bottom: var(--space-3);">Let's Talk About<br>Your Property</h2>
+        <p>Whether you need a single service or a complete maintenance partner, we're ready to help.</p>
+        <a href="contact.html#estimate" class="btn btn--primary btn--lg">Request a Free Estimate</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="display: inline-flex;">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><rect width="36" height="36" rx="6" fill="#007CBA"/><path d="M8 26V10h4v6h6v-6h4v16h-4v-6h-6v6H8z" fill="#F5F2ED"/></svg>
+            <span>Greenville<br>Maintenance</span>
+          </a>
+          <p>Full maintenance services for commercial properties since 1993.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#sweeping">Commercial Sweeping</a></li>
+            <li><a href="services.html#sealcoating">Parking Lot Maintenance</a></li>
+            <li><a href="services.html#facilities">Facilities Maintenance</a></li>
+            <li><a href="services.html#contracting">General Contracting</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#estimate">Free Estimate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Greenville Maintenance Services, Inc. All rights reserved.</span>
+        <span>(864) 235-1090 &middot; PO Box 27036, Greenville, SC 29616</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

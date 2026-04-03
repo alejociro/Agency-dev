@@ -1,0 +1,283 @@
+---
+import '../styles/design-system.css';
+import '../styles/animations.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  ogImage?: string;
+  schema?: object;
+}
+
+const siteUrl = 'https://www.greenvillelandscapingnearme.com';
+const siteName = 'Greenville Landscaping Near Me';
+
+const {
+  title,
+  description = 'Professional landscaping services in Greenville, SC. 695+ happy homeowners trust us for year-round lawn care, hedge trimming, and property maintenance.',
+  canonical = siteUrl + Astro.url.pathname,
+  ogImage = siteUrl + '/assets/images/og-default.jpg',
+  schema
+} = Astro.props;
+
+const defaultSchema = {
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": siteName,
+  "description": "Professional landscaping and lawn care services for homeowners in Greenville, SC and the Upstate. Mowing, edging, hedge trimming, debris removal and weed treatment.",
+  "url": siteUrl,
+  "telephone": "+18649001234",
+  "email": "info@greenvillelandscapingnearme.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Greenville",
+    "addressRegion": "SC",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "34.8526",
+    "longitude": "-82.3940"
+  },
+  "areaServed": [
+    "Greenville", "Simpsonville", "Mauldin", "Greer", "Taylors",
+    "Travelers Rest", "Fountain Inn", "Piedmont", "Five Forks",
+    "Eastside", "Berea", "Powdersville", "Lake Robinson", "Verdae", "Augusta Road"
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "opens": "07:00",
+    "closes": "18:00"
+  },
+  "priceRange": "$$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "695"
+  },
+  "sameAs": []
+};
+
+const jsonLd = schema || defaultSchema;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Primary -->
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="keywords" content="landscaping greenville sc, lawn care greenville, lawn mowing near me, hedge trimming greenville, weed treatment upstate sc, landscaping near me, yard maintenance greenville" />
+  <link rel="canonical" href={canonical} />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content={siteName} />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+
+  <!-- Geo -->
+  <meta name="geo.region" content="US-SC" />
+  <meta name="geo.placename" content="Greenville" />
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Fonts — preconnect + display=swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Outfit:wght@300..700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+
+  <!-- Schema JSON-LD -->
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <!-- Speculation Rules — prefetch/prerender probable pages -->
+  <script type="speculationrules">
+  {
+    "prerender": [
+      { "where": { "href_matches": "/contact" } }
+    ],
+    "prefetch": [
+      { "where": { "href_matches": "/services" } },
+      { "where": { "href_matches": "/about" } }
+    ]
+  }
+  </script>
+
+  <style is:inline>
+    /* Critical CSS — above the fold, prevents FOUC */
+    body {
+      font-family: 'Outfit', system-ui, sans-serif;
+      background-color: #F7F5F0;
+      color: #1E2D2B;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Fraunces', Georgia, serif;
+    }
+    /* Content-visibility — lazy render below-the-fold sections */
+    .section:not(:first-of-type) {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 600px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Reading progress bar -->
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <slot />
+
+  <script>
+    // ═══════════════════════════════════════
+    // SCROLL REVEAL — Intersection Observer
+    // ═══════════════════════════════════════
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (!prefersReduced) {
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15, rootMargin: '0px 0px -50px 0px' }
+      );
+
+      document.querySelectorAll('[data-animate]').forEach((el) => {
+        revealObserver.observe(el);
+      });
+    } else {
+      document.querySelectorAll('[data-animate]').forEach((el) => {
+        el.classList.add('is-visible');
+      });
+    }
+
+    // ═══════════════════════════════════════
+    // COUNTER ANIMATION — Stats
+    // ═══════════════════════════════════════
+    function animateCounter(el) {
+      const target = parseInt(el.dataset.target, 10);
+      if (prefersReduced) {
+        el.textContent = target.toLocaleString();
+        el.classList.add('counted');
+        return;
+      }
+
+      const duration = 1800;
+      const start = performance.now();
+
+      const update = (time) => {
+        const progress = Math.min((time - start) / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(ease * target).toLocaleString();
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          el.textContent = target.toLocaleString();
+          el.classList.add('counted');
+        }
+      };
+
+      requestAnimationFrame(update);
+    }
+
+    const counterObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    document.querySelectorAll('[data-counter]').forEach((el) => {
+      counterObserver.observe(el);
+    });
+
+    // ═══════════════════════════════════════
+    // NAV SCROLL — glassmorphism on scroll
+    // ═══════════════════════════════════════
+    const nav = document.querySelector('.nav');
+    if (nav) {
+      let ticking = false;
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            nav.classList.toggle('nav-scrolled', window.scrollY > 60);
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }, { passive: true });
+    }
+
+    // ═══════════════════════════════════════
+    // MOBILE MENU TOGGLE
+    // ═══════════════════════════════════════
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMobile = document.querySelector('.nav-mobile');
+    if (navToggle && navMobile) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navMobile.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      });
+
+      navMobile.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          navMobile.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+
+    // ═══════════════════════════════════════
+    // SMOOTH SCROLL — anchor links
+    // ═══════════════════════════════════════
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', (e) => {
+        const targetId = anchor.getAttribute('href');
+        if (targetId === '#') return;
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

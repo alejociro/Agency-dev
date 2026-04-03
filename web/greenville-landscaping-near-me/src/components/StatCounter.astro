@@ -1,0 +1,35 @@
+---
+interface Props {
+  target: number;
+  suffix?: string;
+  label: string;
+  light?: boolean;
+}
+
+const { target, suffix = '', label, light = false } = Astro.props;
+---
+
+<div class="stat-item" style="text-align:center;">
+  <span
+    class="stat-number"
+    data-counter
+    data-target={String(target)}
+    style={light ? 'color:var(--color-primary);' : ''}
+  >
+    0
+  </span>
+  {suffix && (
+    <span
+      class="stat-suffix"
+      style={`font-family:var(--font-display);font-size:var(--text-h2);font-weight:700;color:var(--color-primary);`}
+    >
+      {suffix}
+    </span>
+  )}
+  <p
+    class="stat-label"
+    style={light ? 'color:var(--color-text-light-muted);' : ''}
+  >
+    {label}
+  </p>
+</div>

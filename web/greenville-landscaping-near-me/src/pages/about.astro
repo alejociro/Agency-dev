@@ -1,0 +1,199 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const values = [
+  { title: 'Consistency', desc: 'We show up on schedule, every time. Your lawn doesn\'t take days off — neither do we.', icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>` },
+  { title: 'Precision', desc: 'Every edge defined, every line straight, every detail attended to. We treat your yard like we live there.', icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>` },
+  { title: 'Transparency', desc: 'Clear pricing, honest recommendations. We tell you what your lawn needs — not what costs the most.', icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>` },
+  { title: 'Community', desc: 'Born in the Upstate, built for the Upstate. We know these neighborhoods because we\'re part of them.', icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>` }
+];
+
+const timeline = [
+  { year: '2018', title: 'First Yard', desc: 'Started with a single residential mowing route in downtown Greenville.' },
+  { year: '2019', title: 'Growing Roots', desc: 'Expanded to Simpsonville and Mauldin with a dedicated two-person crew.' },
+  { year: '2021', title: '200+ Clients', desc: 'Added hedge trimming, weed treatment and seasonal packages to the lineup.' },
+  { year: '2023', title: '500+ Homeowners', desc: 'Reached 15 communities across the Upstate with a fleet of professional equipment.' },
+  { year: '2026', title: '695+ and Counting', desc: 'Now one of the most trusted names in Greenville landscaping with 55+ active annual contracts.' }
+];
+---
+
+<BaseLayout
+  title="About Us — Our Story & Values | Greenville Landscaping Near Me"
+  description="Since 2018, we've grown from one mowing route to serving 695+ homeowners across 15 Upstate communities. Learn about our values, journey and commitment to quality."
+>
+  <Nav currentPage="about" />
+
+  <!-- Hero -->
+  <section class="section" style="padding-top:calc(var(--space-16) + var(--space-8));padding-bottom:var(--space-8);">
+    <div class="container">
+      <div class="grid-asymmetric" style="align-items:center;">
+        <div>
+          <span class="badge hero-badge">Since 2018</span>
+          <h1 class="hero-title" style="margin-top:var(--space-3);margin-bottom:var(--space-3);">
+            Built on the Upstate,<br/><span class="text-gradient">Yard by Yard</span>
+          </h1>
+          <p class="hero-sub" style="color:var(--color-text-muted);">
+            What started as one mowing route in Greenville has grown into a team trusted by 695+ homeowners across 15 communities. Our mission hasn't changed: make every yard look its absolute best, every single visit.
+          </p>
+        </div>
+        <div class="hero-image">
+          <div style="aspect-ratio:1;border-radius:var(--radius-2xl);background:linear-gradient(135deg, var(--color-accent) 0%, var(--color-primary) 50%, var(--color-secondary) 100%);position:relative;overflow:hidden;">
+            <div style="position:absolute;inset:0;opacity:0.1;">
+              <svg width="100%" height="100%" viewBox="0 0 200 200"><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="white" stroke-width="0.5"/></pattern><rect width="200" height="200" fill="url(#grid)"/></svg>
+            </div>
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:white;text-align:center;padding:var(--space-6);">
+              <span class="stat-number" data-counter data-target="695" style="color:white;font-size:var(--text-hero);">0</span>
+              <span style="font-family:var(--font-display);font-size:var(--text-h1);font-weight:700;">+</span>
+              <p style="font-size:var(--text-h3);font-family:var(--font-display);margin-top:var(--space-2);opacity:0.9;">Happy Homeowners</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section" style="background:var(--color-surface);">
+    <div class="container">
+      <div style="text-align:center;max-width:550px;margin-inline:auto;margin-bottom:var(--space-8);">
+        <span class="section-tag" data-animate="fade-up">What Drives Us</span>
+        <h2 data-animate="fade-up" data-delay="100">Our Values</h2>
+      </div>
+
+      <div class="values-grid" data-animate="stagger">
+        {values.map((v) => (
+          <div class="card" style="text-align:center;">
+            <div style="width:48px;height:48px;margin-inline:auto;margin-bottom:var(--space-3);border-radius:var(--radius-lg);background:var(--color-primary-glow);display:flex;align-items:center;justify-content:center;" set:html={v.icon} />
+            <h3 style="font-size:var(--text-h3);margin-bottom:var(--space-1);">{v.title}</h3>
+            <p style="font-size:var(--text-small);color:var(--color-text-muted);margin-inline:auto;">{v.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="section" id="story">
+    <div class="container" style="max-width:800px;">
+      <div style="text-align:center;margin-bottom:var(--space-8);">
+        <span class="section-tag" data-animate="fade-up">Our Journey</span>
+        <h2 data-animate="fade-up" data-delay="100">Growing With <span class="text-gradient">Greenville</span></h2>
+      </div>
+
+      <div class="timeline">
+        {timeline.map((t, i) => (
+          <div class="timeline-item" data-animate="fade-up" data-delay={String((i + 1) * 100)}>
+            <div class="timeline-marker">
+              <span class="timeline-year">{t.year}</span>
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <h3 style="font-size:var(--text-h3);margin-bottom:0.25rem;">{t.title}</h3>
+              <p style="font-size:var(--text-small);color:var(--color-text-muted);">{t.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission statement -->
+  <section style="background:var(--color-text);padding-block:var(--space-12);">
+    <div class="container" style="text-align:center;max-width:700px;">
+      <blockquote data-animate="scale-in" style="font-family:var(--font-display);font-size:var(--text-h2);color:var(--color-text-light);font-weight:600;line-height:var(--leading-snug);font-style:italic;">
+        "We don't just mow lawns — we build the kind of curb appeal that makes you proud to pull into your driveway."
+      </blockquote>
+      <div data-animate="fade-up" data-delay="200" style="margin-top:var(--space-4);">
+        <div class="divider-gradient" style="max-width:80px;margin-inline:auto;margin-bottom:var(--space-3);"></div>
+        <p style="color:var(--color-primary);font-weight:600;">The Greenville Landscaping Team</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container" style="text-align:center;max-width:600px;">
+      <h2 data-animate="fade-up">Ready to Join <span class="text-gradient">695+ Happy Homeowners?</span></h2>
+      <p data-animate="fade-up" data-delay="100" style="color:var(--color-text-muted);margin-inline:auto;margin-bottom:var(--space-6);">
+        Schedule your free property visit and see the difference professional care makes.
+      </p>
+      <a href="/contact" class="btn btn-primary btn-lg" data-animate="fade-up" data-delay="200">Schedule Free Visit →</a>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .values-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+
+    @media (min-width: 640px) { grid-template-columns: repeat(2, 1fr); }
+    @media (min-width: 1024px) { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  .timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset-inline-start: 60px;
+      inset-block: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--color-primary), var(--color-accent));
+
+      @media (min-width: 640px) {
+        inset-inline-start: 80px;
+      }
+    }
+  }
+
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: var(--space-4);
+    align-items: start;
+
+    @media (min-width: 640px) {
+      grid-template-columns: 80px 1fr;
+    }
+  }
+
+  .timeline-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-1);
+    position: relative;
+  }
+
+  .timeline-year {
+    font-family: var(--font-display);
+    font-size: var(--text-small);
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+
+  .timeline-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: var(--radius-full);
+    background: var(--color-primary);
+    border: 3px solid var(--color-bg);
+    box-shadow: 0 0 0 2px var(--color-primary);
+    position: relative;
+    z-index: 2;
+  }
+
+  .timeline-content {
+    padding-block-start: 0.25rem;
+  }
+</style>

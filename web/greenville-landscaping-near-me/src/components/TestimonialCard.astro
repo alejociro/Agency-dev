@@ -1,0 +1,49 @@
+---
+interface Props {
+  name: string;
+  text: string;
+  rating?: number;
+  location?: string;
+}
+
+const { name, text, rating = 5, location = 'Greenville, SC Homeowner' } = Astro.props;
+const initial = name.charAt(0);
+---
+
+<div class="card-testimonial">
+  <div style="display:flex;gap:0.25rem;margin-bottom:var(--space-2);">
+    {Array.from({ length: rating }).map(() => (
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--color-accent)" stroke="none" aria-hidden="true">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+      </svg>
+    ))}
+    <span class="visually-hidden">{rating} out of 5 stars</span>
+  </div>
+  <p style="font-size:var(--text-body);line-height:var(--leading-body);color:var(--color-text);margin-bottom:var(--space-3);font-style:italic;">
+    &ldquo;{text}&rdquo;
+  </p>
+  <div style="display:flex;align-items:center;gap:var(--space-2);">
+    <div class="testimonial-avatar" aria-hidden="true">{initial}</div>
+    <div>
+      <p style="font-weight:600;font-size:var(--text-small);">{name}</p>
+      <p style="font-size:var(--text-xs);color:var(--color-text-muted);">{location}</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-full);
+    background: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-light);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-small);
+    flex-shrink: 0;
+  }
+</style>

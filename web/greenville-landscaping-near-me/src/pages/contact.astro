@@ -1,0 +1,289 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Get a Free Estimate — Contact Us | Greenville Landscaping Near Me"
+  description="Schedule a free property visit for professional lawn care in Greenville, SC. Call (864) 900-1234, email us, or fill out the form — we respond within 24 hours."
+>
+  <Nav currentPage="contact" />
+
+  <!-- Hero -->
+  <section class="section" style="padding-top:calc(var(--space-16) + var(--space-8));padding-bottom:var(--space-4);background:var(--color-surface);">
+    <div class="container" style="text-align:center;max-width:600px;">
+      <span class="badge hero-badge">Free Estimates</span>
+      <h1 class="hero-title" style="margin-top:var(--space-3);margin-bottom:var(--space-3);">
+        Let's Talk About <span class="text-gradient">Your Yard</span>
+      </h1>
+      <p class="hero-sub" style="color:var(--color-text-muted);margin-inline:auto;">
+        Fill out the form or reach out directly. We respond within 24 hours and schedule your free property visit at a time that works for you.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="section" style="padding-top:var(--space-6);">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div data-animate="fade-right">
+          <form class="contact-form">
+            <div class="form-grid-full">
+              <div class="field">
+                <input type="text" id="c-name" class="input" placeholder=" " required />
+                <label for="c-name">Full Name</label>
+              </div>
+              <div class="field">
+                <input type="email" id="c-email" class="input" placeholder=" " required />
+                <label for="c-email">Email Address</label>
+              </div>
+              <div class="field">
+                <input type="tel" id="c-phone" class="input" placeholder=" " />
+                <label for="c-phone">Phone Number</label>
+              </div>
+              <div class="field">
+                <input type="text" id="c-address" class="input" placeholder=" " />
+                <label for="c-address">Property Address</label>
+              </div>
+              <div class="field" style="grid-column:1/-1;">
+                <select id="c-service" class="input" required>
+                  <option value="" disabled selected>Service Interested In</option>
+                  <option value="mowing">Lawn Mowing</option>
+                  <option value="edging">Edging & Blowing</option>
+                  <option value="hedges">Hedge Trimming</option>
+                  <option value="debris">Debris Removal</option>
+                  <option value="weed">Weed Treatment</option>
+                  <option value="essential">Essential Package</option>
+                  <option value="premium">Premium Package</option>
+                  <option value="complete">Complete Package</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+              </div>
+              <div class="field" style="grid-column:1/-1;">
+                <select id="c-time" class="input">
+                  <option value="" disabled selected>Preferred Visit Time</option>
+                  <option value="morning">Morning (7am – 10am)</option>
+                  <option value="midday">Midday (10am – 1pm)</option>
+                  <option value="afternoon">Afternoon (1pm – 4pm)</option>
+                  <option value="late">Late Afternoon (4pm – 6pm)</option>
+                  <option value="flexible">Flexible</option>
+                </select>
+              </div>
+              <div class="field" style="grid-column:1/-1;">
+                <textarea id="c-message" class="input textarea" placeholder=" " rows="5"></textarea>
+                <label for="c-message">Anything else we should know about your property?</label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="margin-top:var(--space-4);width:100%;">
+              Submit Request
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Info sidebar -->
+        <div data-animate="fade-left" data-delay="200">
+          <!-- Direct contact -->
+          <div class="contact-info-card">
+            <h3 style="font-size:var(--text-h3);margin-bottom:var(--space-4);">Reach Us Directly</h3>
+
+            <a href="tel:+18649001234" class="contact-info-row">
+              <div class="contact-info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <p class="contact-info-label">Call Us</p>
+                <p class="contact-info-value">(864) 900-1234</p>
+              </div>
+            </a>
+
+            <a href="mailto:info@greenvillelandscapingnearme.com" class="contact-info-row">
+              <div class="contact-info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <p class="contact-info-label">Email</p>
+                <p class="contact-info-value" style="font-size:var(--text-small);">info@greenvillelandscapingnearme.com</p>
+              </div>
+            </a>
+
+            <div class="contact-info-row">
+              <div class="contact-info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <p class="contact-info-label">Hours</p>
+                <p class="contact-info-value">Mon–Sat: 7:00am – 6:00pm</p>
+                <p style="font-size:var(--text-xs);color:var(--color-text-muted);">Sunday: Closed</p>
+              </div>
+            </div>
+
+            <div class="contact-info-row">
+              <div class="contact-info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <p class="contact-info-label">Service Area</p>
+                <p class="contact-info-value">Greenville, SC & Upstate</p>
+                <p style="font-size:var(--text-xs);color:var(--color-text-muted);">15 communities covered</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Response time -->
+          <div style="background:linear-gradient(135deg, var(--color-primary-dark), var(--color-secondary));border-radius:var(--radius-xl);padding:var(--space-6);color:var(--color-text-light);margin-top:var(--space-4);">
+            <div style="display:flex;align-items:center;gap:var(--space-2);margin-bottom:var(--space-2);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              <h3 style="font-size:var(--text-h3);color:var(--color-text-light);">Fast Response</h3>
+            </div>
+            <p style="font-size:var(--text-small);color:var(--color-text-light-muted);line-height:var(--leading-body);">
+              We typically respond within <strong style="color:var(--color-text-light);">4 hours</strong> during business hours. Free property visits are usually scheduled within <strong style="color:var(--color-text-light);">48 hours</strong> of your request.
+            </p>
+          </div>
+
+          <!-- Guarantee -->
+          <div style="background:var(--color-text);border-radius:var(--radius-xl);padding:var(--space-6);color:var(--color-text-light);margin-top:var(--space-4);">
+            <div style="display:flex;align-items:center;gap:var(--space-2);margin-bottom:var(--space-2);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+              <h3 style="font-size:var(--text-h3);color:var(--color-text-light);">Satisfaction Guaranteed</h3>
+            </div>
+            <p style="font-size:var(--text-small);color:var(--color-text-light-muted);line-height:var(--leading-body);">
+              Not happy with a visit? We come back and fix it at no charge. Your satisfaction is non-negotiable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success dialog -->
+  <dialog id="contact-dialog" style="border:none;border-radius:var(--radius-xl);padding:var(--space-8);max-width:420px;text-align:center;background:var(--color-bg);box-shadow:var(--shadow-xl);">
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-inline:auto;margin-bottom:var(--space-3);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    <h3 style="font-family:var(--font-display);font-size:var(--text-h2);margin-bottom:var(--space-2);">Message Sent!</h3>
+    <p style="color:var(--color-text-muted);margin-bottom:var(--space-4);">We'll reach out within 24 hours to schedule your free property visit. Keep an eye on your phone and email.</p>
+    <button onclick="this.closest('dialog').close()" class="btn btn-primary">Sounds Good</button>
+  </dialog>
+
+  <Footer />
+
+  <script>
+    const form = document.querySelector('.contact-form');
+    const dialog = document.getElementById('contact-dialog');
+    if (form && dialog) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        dialog.showModal();
+        form.reset();
+      });
+    }
+  </script>
+</BaseLayout>
+
+<style>
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1.2fr 1fr;
+    }
+  }
+
+  .form-grid-full {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .field {
+    position: relative;
+
+    & label {
+      position: absolute;
+      inset-inline-start: 1.25rem;
+      inset-block-start: 50%;
+      transform: translateY(-50%);
+      font-size: var(--text-body);
+      color: var(--color-text-muted);
+      pointer-events: none;
+      transition: all var(--duration-fast) ease;
+    }
+
+    & textarea ~ label {
+      inset-block-start: 1rem;
+      transform: none;
+    }
+
+    & input:focus + label,
+    & input:not(:placeholder-shown) + label,
+    & textarea:focus + label,
+    & textarea:not(:placeholder-shown) + label {
+      inset-block-start: -0.5rem;
+      transform: none;
+      font-size: var(--text-xs);
+      color: var(--color-primary);
+      font-weight: 600;
+      background: var(--color-bg);
+      padding-inline: 0.25rem;
+    }
+  }
+
+  .contact-info-card {
+    background: var(--color-surface);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .contact-info-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-2);
+    border-radius: var(--radius-lg);
+    transition: background var(--duration-fast) ease;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      background: var(--color-surface-hover);
+    }
+  }
+
+  .contact-info-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-lg);
+    background: var(--color-primary-glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-info-label {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .contact-info-value {
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  dialog::backdrop {
+    background: oklch(0 0 0 / 0.5);
+    backdrop-filter: blur(4px);
+  }
+</style>

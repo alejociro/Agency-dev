@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Primary -->
+  <title>Contact Us & Free Estimates — Greenville Maintenance Services | (864) 235-1090</title>
+  <meta name="description" content="Contact Greenville Maintenance Services for a free commercial property maintenance estimate. Call (864) 235-1090 or submit our online form. Serving Upstate SC, western NC & NE Georgia.">
+  <meta name="keywords" content="contact Greenville Maintenance, free estimate, commercial property maintenance quote, Greenville SC contractor">
+  <link rel="canonical" href="https://greenvillemaintenance.com/contact">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://greenvillemaintenance.com/contact">
+  <meta property="og:title" content="Contact Us & Free Estimates — Greenville Maintenance Services">
+  <meta property="og:description" content="Request a free property maintenance estimate. Call (864) 235-1090 or use our online form.">
+  <meta property="og:image" content="https://greenvillemaintenance.com/wp-content/uploads/2012/02/greenville-maintenance-services-864x288.jpg">
+  <meta property="og:site_name" content="Greenville Maintenance Services">
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Us — Greenville Maintenance Services">
+  <meta name="twitter:description" content="Request a free property maintenance estimate. Call (864) 235-1090.">
+  <meta name="twitter:image" content="https://greenvillemaintenance.com/wp-content/uploads/2012/02/greenville-maintenance-services-864x288.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="https://greenvillemaintenance.com/wp-content/themes/gm/images/greenville-maintenance.jpg">
+
+  <!-- Preconnect & Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://greenvillemaintenance.com/wp-content/themes/gm/images/general-contracting-greenville-sc.jpg" as="image" fetchpriority="high">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/design-system.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="js/main.js" defer></script>
+
+  <!-- Schema JSON-LD: ContactPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Greenville Maintenance Services, Inc.",
+    "telephone": "(864) 235-1090",
+    "url": "https://greenvillemaintenance.com/contact",
+    "address": {
+      "@type": "PostalAddress",
+      "postOfficeBoxNumber": "27036",
+      "addressLocality": "Greenville",
+      "addressRegion": "SC",
+      "postalCode": "29616",
+      "addressCountry": "US"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "(864) 235-1090",
+      "contactType": "sales",
+      "availableLanguage": "English"
+    }
+  }
+  </script>
+
+  <!-- Speculation Rules -->
+  <script type="speculationrules">
+  {
+    "prefetch": [
+      { "where": { "href_matches": "services.html" } },
+      { "where": { "href_matches": "index.html" } }
+    ]
+  }
+  </script>
+</head>
+<body class="grain">
+
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header class="site-header" x-data>
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><rect width="36" height="36" rx="6" fill="#007CBA"/><path d="M8 26V10h4v6h6v-6h4v16h-4v-6h-6v6H8z" fill="#F5F2ED"/></svg>
+        <span>Greenville<br>Maintenance</span>
+      </a>
+      <nav class="header__nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="#estimate" class="btn btn--primary btn--lg header__cta">Free Estimate</a>
+      <button class="menu-toggle" aria-label="Toggle menu" :aria-expanded="$store.nav.open" @click="$store.nav.toggle()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" :class="{ 'is-open': $store.nav.open }" aria-label="Mobile navigation">
+      <a href="index.html" @click="$store.nav.close()">Home</a>
+      <a href="about.html" @click="$store.nav.close()">About</a>
+      <a href="services.html" @click="$store.nav.close()">Services</a>
+      <a href="contact.html" @click="$store.nav.close()">Contact</a>
+      <a href="#estimate" class="btn btn--primary" @click="$store.nav.close()">Free Estimate</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="hero" style="min-height: 50vh;">
+      <div class="hero__bg">
+        <img src="https://greenvillemaintenance.com/wp-content/themes/gm/images/general-contracting-greenville-sc.jpg" alt="Greenville Maintenance Services commercial property" width="400" height="300" decoding="async" fetchpriority="high">
+      </div>
+      <div class="container hero__content">
+        <span class="badge hero-badge">Contact Us</span>
+        <h1 class="hero__title hero-title" style="font-size: var(--text-h1);">Let's Talk About<br><span class="hero__title-accent">Your Property.</span></h1>
+        <p class="hero__subtitle hero-sub">Free estimates, honest assessments, and a response within one business day.</p>
+      </div>
+      <div class="hero__stripe"></div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="estimate">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- LEFT: Contact Info -->
+          <div data-animate="fade-left">
+            <h2 style="margin-bottom: var(--space-4);">Get in Touch</h2>
+            <p style="color: var(--color-text-muted); margin-bottom: var(--space-6);">
+              Whether you need a single service or a comprehensive maintenance plan, we're happy to discuss your property's needs and provide a no-obligation estimate.
+            </p>
+
+            <div class="contact-info">
+              <div class="contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <div>
+                  <strong>Phone</strong>
+                  <a href="tel:+18642351090" style="font-size: var(--text-h3); font-family: var(--font-display); font-weight: 700; color: var(--color-primary);">(864) 235-1090</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div>
+                  <strong>Mailing Address</strong>
+                  <span>PO Box 27036<br>Greenville, SC 29616</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <div>
+                  <strong>Response Time</strong>
+                  <span>Within 1 business day for all inquiries</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div>
+                  <strong>Service Area</strong>
+                  <span>Upstate SC &middot; Western NC &middot; NE Georgia</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map placeholder -->
+            <div style="margin-top: var(--space-6); background: var(--color-bg-alt); border-radius: var(--radius-md); padding: var(--space-8) var(--space-4); text-align: center; border: 1px solid var(--color-border-light);">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" style="margin: 0 auto var(--space-2);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <p style="font-family: var(--font-display); font-weight: 600; margin-bottom: 0.25rem;">Greenville, SC</p>
+              <p style="font-size: var(--text-small); color: var(--color-text-muted);">Serving the tri-state region from our Upstate headquarters</p>
+            </div>
+          </div>
+
+          <!-- RIGHT: Estimate Form -->
+          <form class="form card" data-animate="fade-right" data-delay="200" style="align-self: start;">
+            <div style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-1);">
+              <div style="width: 40px; height: 40px; border-radius: var(--radius-md); background: var(--color-primary-glow); color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <h3 style="margin: 0;">Request a Free Estimate</h3>
+            </div>
+            <p style="font-size: var(--text-small); color: var(--color-text-muted); margin-bottom: var(--space-2);">Takes less than 2 minutes. We'll get back to you within one business day.</p>
+            <hr class="divider" style="margin-bottom: var(--space-3);">
+
+            <p class="form__legend">Fields marked with * are required</p>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="c-name">Your Name *</label>
+                <input type="text" id="c-name" name="name" required autocomplete="name" placeholder="John Smith">
+              </div>
+              <div class="form__group">
+                <label for="c-company">Company <span style="font-weight: 400; color: var(--color-text-muted);">(optional)</span></label>
+                <input type="text" id="c-company" name="company" autocomplete="organization" placeholder="e.g. ABC Property Management">
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="c-email">Email Address *</label>
+                <input type="email" id="c-email" name="email" required autocomplete="email" placeholder="john@company.com">
+              </div>
+              <div class="form__group">
+                <label for="c-phone">Phone Number *</label>
+                <input type="tel" id="c-phone" name="phone" required autocomplete="tel" placeholder="(864) 555-0100">
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="c-service">Service Needed *</label>
+                <select id="c-service" name="service" required>
+                  <option value="" disabled selected>Choose a service...</option>
+                  <option value="sweeping">Commercial Parking Lot Sweeping</option>
+                  <option value="sealcoating">Parking Lot Maintenance / Sealcoating</option>
+                  <option value="facilities">Facilities &amp; Grounds Maintenance</option>
+                  <option value="contracting">General Contracting</option>
+                  <option value="multiple">Multiple Services / Full Maintenance</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label for="c-property-type">Property Type <span style="font-weight: 400; color: var(--color-text-muted);">(optional)</span></label>
+                <select id="c-property-type" name="property_type">
+                  <option value="" disabled selected>Choose type...</option>
+                  <option value="retail">Retail / Shopping Center</option>
+                  <option value="office">Office Park / Building</option>
+                  <option value="industrial">Industrial / Warehouse</option>
+                  <option value="medical">Medical / Healthcare</option>
+                  <option value="multifamily">Multi-Family Residential</option>
+                  <option value="mixed">Mixed Use</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="c-message">Tell Us About Your Property *</label>
+              <textarea id="c-message" name="message" rows="4" required placeholder="Where is the property located? What size is it? What issues are you experiencing?"></textarea>
+            </div>
+
+            <label class="form__consent">
+              <input type="checkbox" name="consent">
+              <span>I agree to be contacted about my estimate request. We respect your privacy and never share your information with third parties.</span>
+            </label>
+
+            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%; justify-content: center;">
+              Send Estimate Request
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+
+            <p style="text-align: center; font-size: var(--text-xs); color: var(--color-text-muted); margin: 0;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: -2px; margin-right: 4px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Your information is secure and will only be used to contact you about your request.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK CONTACT BAR -->
+    <section class="section cta-section" style="padding-block: var(--space-8);">
+      <div class="container" data-animate="fade-up">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--space-4); text-align: center;">
+          <p style="color: var(--color-text-inverse); font-family: var(--font-display); font-weight: 600; font-size: var(--text-h3); margin: 0;">Prefer to call?</p>
+          <a href="tel:+18642351090" class="btn btn--primary btn--lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            (864) 235-1090
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="display: inline-flex;">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><rect width="36" height="36" rx="6" fill="#007CBA"/><path d="M8 26V10h4v6h6v-6h4v16h-4v-6h-6v6H8z" fill="#F5F2ED"/></svg>
+            <span>Greenville<br>Maintenance</span>
+          </a>
+          <p>Full maintenance services for commercial properties since 1993.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#sweeping">Commercial Sweeping</a></li>
+            <li><a href="services.html#sealcoating">Parking Lot Maintenance</a></li>
+            <li><a href="services.html#facilities">Facilities Maintenance</a></li>
+            <li><a href="services.html#contracting">General Contracting</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#estimate">Free Estimate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Greenville Maintenance Services, Inc. All rights reserved.</span>
+        <span>(864) 235-1090 &middot; PO Box 27036, Greenville, SC 29616</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success dialog -->
+  <dialog id="success-dialog" style="border: none; border-radius: var(--radius-lg); padding: var(--space-6); max-width: 420px; text-align: center; box-shadow: var(--shadow-xl); background: var(--color-surface);">
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#007CBA" stroke-width="2" style="margin: 0 auto var(--space-3);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    <h3 style="font-family: var(--font-display); margin-bottom: var(--space-1);">Estimate Request Sent</h3>
+    <p style="color: var(--color-text-muted); font-size: var(--text-small); margin-bottom: var(--space-4);">Thank you! We'll review your request and get back to you within one business day.</p>
+    <button class="btn btn--primary" onclick="this.closest('dialog').close()" style="margin-inline: auto;">Got It</button>
+  </dialog>
+</body>
+</html>

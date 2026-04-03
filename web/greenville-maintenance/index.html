@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Primary -->
+  <title>Commercial Property Maintenance in Greenville, SC | Greenville Maintenance Services</title>
+  <meta name="description" content="Trusted commercial property maintenance since 1993. Parking lot sweeping, sealcoating, facilities maintenance & general contracting across Upstate SC, western NC & NE Georgia. Request a free estimate.">
+  <meta name="keywords" content="commercial property maintenance, parking lot sweeping, sealcoating, facilities maintenance, general contracting, Greenville SC, property management">
+  <link rel="canonical" href="https://greenvillemaintenance.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://greenvillemaintenance.com/">
+  <meta property="og:title" content="Commercial Property Maintenance in Greenville, SC | Greenville Maintenance Services">
+  <meta property="og:description" content="Trusted commercial property maintenance since 1993. Parking lot sweeping, sealcoating, facilities maintenance & general contracting. Request a free estimate.">
+  <meta property="og:image" content="https://greenvillemaintenance.com/wp-content/uploads/2012/02/greenville-maintenance-services-864x288.jpg">
+  <meta property="og:site_name" content="Greenville Maintenance Services">
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Commercial Property Maintenance | Greenville Maintenance Services">
+  <meta name="twitter:description" content="Trusted commercial property maintenance since 1993. Request a free estimate.">
+  <meta name="twitter:image" content="https://greenvillemaintenance.com/wp-content/uploads/2012/02/greenville-maintenance-services-864x288.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="https://greenvillemaintenance.com/wp-content/themes/gm/images/greenville-maintenance.jpg">
+
+  <!-- Preconnect & Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://greenvillemaintenance.com/wp-content/uploads/2012/02/greenville-maintenance-services-864x288.jpg" as="image" fetchpriority="high">
+
+  <!-- Tailwind CSS v4 CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Design System + Main Styles -->
+  <link rel="stylesheet" href="styles/design-system.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Alpine.js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="js/main.js" defer></script>
+
+  <!-- Schema JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Greenville Maintenance Services, Inc.",
+    "description": "Full maintenance services for commercial properties including sweeping, parking lot maintenance, building and grounds maintenance and general contracting since 1993.",
+    "url": "https://greenvillemaintenance.com/",
+    "telephone": "(864) 235-1090",
+    "address": {
+      "@type": "PostalAddress",
+      "postOfficeBoxNumber": "27036",
+      "addressLocality": "Greenville",
+      "addressRegion": "SC",
+      "postalCode": "29616",
+      "addressCountry": "US"
+    },
+    "foundingDate": "1993",
+    "areaServed": [
+      { "@type": "State", "name": "South Carolina" },
+      { "@type": "State", "name": "North Carolina" },
+      { "@type": "State", "name": "Georgia" }
+    ],
+    "serviceType": [
+      "Commercial Parking Lot Sweeping",
+      "Sealcoating & Parking Lot Maintenance",
+      "Facilities & Grounds Maintenance",
+      "General Contracting"
+    ],
+    "image": "https://greenvillemaintenance.com/wp-content/uploads/2012/02/greenville-maintenance-services-864x288.jpg",
+    "logo": "https://greenvillemaintenance.com/wp-content/themes/gm/images/greenville-maintenance.jpg"
+  }
+  </script>
+
+  <!-- Speculation Rules — prefetch likely pages -->
+  <script type="speculationrules">
+  {
+    "prerender": [
+      { "where": { "href_matches": "contact.html" } }
+    ],
+    "prefetch": [
+      { "where": { "href_matches": "services.html" } },
+      { "where": { "href_matches": "about.html" } }
+    ]
+  }
+  </script>
+</head>
+<body class="grain">
+
+  <!-- Reading progress bar -->
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <!-- ========================================
+       HEADER
+       ======================================== -->
+  <header class="site-header" x-data>
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect width="36" height="36" rx="6" fill="#007CBA"/>
+          <path d="M8 26V10h4v6h6v-6h4v16h-4v-6h-6v6H8z" fill="#F5F2ED"/>
+        </svg>
+        <span>Greenville<br>Maintenance</span>
+      </a>
+
+      <nav class="header__nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <a href="contact.html#estimate" class="btn btn--primary btn--lg header__cta">Free Estimate</a>
+
+      <!-- Mobile toggle -->
+      <button
+        class="menu-toggle"
+        aria-label="Toggle menu"
+        :aria-expanded="$store.nav.open"
+        @click="$store.nav.toggle()"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile nav overlay -->
+    <nav
+      class="mobile-nav"
+      :class="{ 'is-open': $store.nav.open }"
+      aria-label="Mobile navigation"
+    >
+      <a href="index.html" @click="$store.nav.close()">Home</a>
+      <a href="about.html" @click="$store.nav.close()">About</a>
+      <a href="services.html" @click="$store.nav.close()">Services</a>
+      <a href="contact.html" @click="$store.nav.close()">Contact</a>
+      <a href="contact.html#estimate" class="btn btn--primary" @click="$store.nav.close()">Free Estimate</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========================================
+         HERO
+         ======================================== -->
+    <section class="hero">
+      <div class="hero__bg hero__bg--parallax">
+        <img
+          src="https://greenvillemaintenance.com/wp-content/uploads/2012/02/greenville-maintenance-services-864x288.jpg"
+          alt="Commercial parking lot maintained by Greenville Maintenance Services"
+          width="864"
+          height="288"
+          decoding="async"
+          fetchpriority="high"
+        >
+      </div>
+
+      <div class="container hero__content">
+        <span class="badge badge--animated hero-badge hero__badge">Since 1993 &mdash; 33 Years Strong</span>
+
+        <h1 class="hero__title hero-title">
+          Your Property,<br>
+          <span class="hero__title-accent">Built from the Ground Up.</span>
+        </h1>
+
+        <p class="hero__subtitle hero-sub">
+          Reduce liability and protect property value with 75 combined years of commercial maintenance expertise across Upstate South Carolina, western North Carolina, and northeastern Georgia.
+        </p>
+
+        <div class="hero__actions hero-cta">
+          <a href="contact.html#estimate" class="btn btn--primary btn--lg">Request a Free Estimate</a>
+          <a href="#services" class="btn btn--ghost-light">Our Services &rarr;</a>
+        </div>
+
+        <div class="hero-proof" style="margin-top: var(--space-6);">
+          <ul class="inline-list" style="color: rgba(245,242,237,0.7); font-size: var(--text-small);">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Licensed &amp; Insured
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Locally Owned
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Tri-State Coverage
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Diagonal stripe — parking lot line -->
+      <div class="hero__stripe"></div>
+    </section>
+
+    <!-- ========================================
+         STATS BAR
+         ======================================== -->
+    <section class="stats-bar" aria-label="Key metrics">
+      <div class="container">
+        <div class="stats-bar__inner" data-animate="stagger">
+          <div class="stat">
+            <div class="stat__number" data-counter="33">33</div>
+            <div class="stat__suffix">+</div>
+            <div class="stat__label">Years in Business</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number" data-counter="75">75</div>
+            <div class="stat__suffix">+</div>
+            <div class="stat__label">Years Combined Experience</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number" data-counter="3">3</div>
+            <div class="stat__label">States Served</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         SERVICES
+         ======================================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">What We Do</span>
+          <h2>Full-Service Commercial<br>Property Maintenance</h2>
+          <p>From asphalt to architecture, we keep your commercial property running safe, clean, and valuable.</p>
+        </div>
+
+        <div class="services-grid" data-animate="stagger">
+          <!-- Sweeping -->
+          <article class="service-card">
+            <div class="service-card__img">
+              <img
+                src="https://greenvillemaintenance.com/wp-content/themes/gm/images/parking-lot-sweeping.jpg"
+                alt="Commercial parking lot sweeping service in Greenville SC"
+                width="400"
+                height="300"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Commercial Sweeping</h3>
+              <p class="service-card__desc">Routine and on-demand parking lot sweeping to keep your property clean, compliant, and inviting for tenants and customers.</p>
+            </div>
+            <div class="service-card__stripe"></div>
+          </article>
+
+          <!-- Sealcoating -->
+          <article class="service-card">
+            <div class="service-card__img">
+              <img
+                src="https://greenvillemaintenance.com/wp-content/themes/gm/images/sealcoating-parking-lot.jpg"
+                alt="Parking lot sealcoating and maintenance"
+                width="400"
+                height="300"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Parking Lot Maintenance</h3>
+              <p class="service-card__desc">Sealcoating, striping, crack repair, and pothole patching to extend pavement life and reduce costly replacements.</p>
+            </div>
+            <div class="service-card__stripe"></div>
+          </article>
+
+          <!-- Facilities -->
+          <article class="service-card">
+            <div class="service-card__img">
+              <img
+                src="https://greenvillemaintenance.com/wp-content/themes/gm/images/landscaping-greenville-sc.jpg"
+                alt="Facilities and grounds maintenance in Greenville"
+                width="400"
+                height="300"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Facilities Maintenance</h3>
+              <p class="service-card__desc">Building and grounds upkeep including landscaping, pressure washing, and preventive maintenance for commercial properties.</p>
+            </div>
+            <div class="service-card__stripe"></div>
+          </article>
+
+          <!-- General Contracting -->
+          <article class="service-card">
+            <div class="service-card__img">
+              <img
+                src="https://greenvillemaintenance.com/wp-content/themes/gm/images/general-contracting-greenville-sc.jpg"
+                alt="General contracting services for commercial properties"
+                width="400"
+                height="300"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="service-card__body">
+              <h3 class="service-card__title">General Contracting</h3>
+              <p class="service-card__desc">Renovations, build-outs, and tenant improvements managed by experienced commercial property professionals.</p>
+            </div>
+            <div class="service-card__stripe"></div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-6);" data-animate="fade-up" data-delay="300">
+          <a href="services.html" class="btn btn--outline">View All Services &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         WHY US — DIFFERENTIATORS
+         ======================================== -->
+    <section class="section bg-alt diagonal-cut diagonal-cut--dark">
+      <div class="container">
+        <div class="grid-asymmetric">
+          <div data-animate="fade-left">
+            <span class="section-tag">Why Greenville Maintenance</span>
+            <h2 style="margin-top: var(--space-2); margin-bottom: var(--space-4);">
+              Your Eyes and Ears<br>on the Ground
+            </h2>
+
+            <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+              <!-- Differentiator 1 -->
+              <div style="display: flex; gap: var(--space-3); align-items: flex-start;">
+                <div class="icon-box">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <h3 style="font-size: var(--text-h3); margin-bottom: 0.25rem;">Founded by Property Managers</h3>
+                  <p style="color: var(--color-text-muted); font-size: var(--text-small);">Tommy Jenkins and Rex Jones built this company from first-hand experience managing commercial properties. We understand your priorities because we've been in your position.</p>
+                </div>
+              </div>
+
+              <!-- Differentiator 2 -->
+              <div style="display: flex; gap: var(--space-3); align-items: flex-start;">
+                <div class="icon-box icon-box--accent">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <h3 style="font-size: var(--text-h3); margin-bottom: 0.25rem;">75 Years Combined Expertise</h3>
+                  <p style="color: var(--color-text-muted); font-size: var(--text-small);">That's decades of solving every maintenance challenge commercial properties face. From emergency repairs to long-term maintenance plans, we've seen it and solved it.</p>
+                </div>
+              </div>
+
+              <!-- Differentiator 3 -->
+              <div style="display: flex; gap: var(--space-3); align-items: flex-start;">
+                <div class="icon-box">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <h3 style="font-size: var(--text-h3); margin-bottom: 0.25rem;">Tri-State Regional Coverage</h3>
+                  <p style="color: var(--color-text-muted); font-size: var(--text-small);">Serving Upstate South Carolina, western North Carolina, and northeastern Georgia from our Greenville headquarters. One call covers your entire portfolio.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__image-wrapper" data-animate="fade-right" data-delay="200">
+            <img
+              src="https://greenvillemaintenance.com/wp-content/uploads/2012/02/greenville-maintenance-services-864x288.jpg"
+              alt="Greenville Maintenance team at work on a commercial property"
+              width="864"
+              height="288"
+              loading="lazy"
+              decoding="async"
+              style="aspect-ratio: 4/3; object-fit: cover;"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         HOW IT WORKS — PROCESS
+         ======================================== -->
+    <section class="section bg-dark">
+      <div class="container">
+        <div class="section-header text-center" data-animate="fade-up">
+          <span class="section-tag section-tag--light">How It Works</span>
+          <h2 style="color: var(--color-text-inverse); margin-top: var(--space-2);">From First Call<br>to Ongoing Care</h2>
+          <p style="color: rgba(245,242,237,0.7); margin-inline: auto;">Working with us is straightforward. Here's what to expect.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: var(--space-6); position: relative;" data-animate="stagger">
+
+          <!-- Step 1 -->
+          <div style="text-align: center; position: relative;">
+            <div style="width: 56px; height: 56px; border-radius: var(--radius-full); background: var(--color-accent); color: var(--color-text); font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3);">1</div>
+            <h3 style="color: var(--color-text-inverse); font-size: var(--text-h3); margin-bottom: var(--space-1);">Request an Estimate</h3>
+            <p style="color: rgba(245,242,237,0.65); font-size: var(--text-small);">Call us or fill out the form. Tell us about your property and what you need. Estimates are always free.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div style="text-align: center;">
+            <div style="width: 56px; height: 56px; border-radius: var(--radius-full); background: var(--color-accent); color: var(--color-text); font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3);">2</div>
+            <h3 style="color: var(--color-text-inverse); font-size: var(--text-h3); margin-bottom: var(--space-1);">On-Site Assessment</h3>
+            <p style="color: rgba(245,242,237,0.65); font-size: var(--text-small);">We visit your property to evaluate needs, identify issues, and build a maintenance plan tailored to your budget.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div style="text-align: center;">
+            <div style="width: 56px; height: 56px; border-radius: var(--radius-full); background: var(--color-accent); color: var(--color-text); font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3);">3</div>
+            <h3 style="color: var(--color-text-inverse); font-size: var(--text-h3); margin-bottom: var(--space-1);">Clear Proposal</h3>
+            <p style="color: rgba(245,242,237,0.65); font-size: var(--text-small);">You receive a detailed scope of work with transparent pricing. No hidden fees, no surprises.</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div style="text-align: center;">
+            <div style="width: 56px; height: 56px; border-radius: var(--radius-full); background: var(--color-accent); color: var(--color-text); font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3);">4</div>
+            <h3 style="color: var(--color-text-inverse); font-size: var(--text-h3); margin-bottom: var(--space-1);">Ongoing Maintenance</h3>
+            <p style="color: rgba(245,242,237,0.65); font-size: var(--text-small);">We become your long-term partner. Regular service, proactive reporting, and responsive support for any issue.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         TESTIMONIALS
+         ======================================== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center" data-animate="fade-up">
+          <span class="section-tag">What Our Clients Say</span>
+          <h2 style="margin-top: var(--space-2);">Trusted by Property Managers<br>Across the Region</h2>
+        </div>
+
+        <div class="testimonials-track" data-animate="stagger">
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card card">
+            <div style="display: flex; gap: 0.3rem; margin-bottom: var(--space-2); color: var(--color-accent);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote style="color: var(--color-text); font-size: var(--text-body); line-height: var(--leading-body); margin-bottom: var(--space-3);">
+              &ldquo;We manage 12 commercial properties in the Upstate and Greenville Maintenance handles every one of them. Their sweeping crews are consistent, reliable, and they catch issues before they become problems.&rdquo;
+            </blockquote>
+            <div style="display: flex; align-items: center; gap: var(--space-2);">
+              <div style="width: 44px; height: 44px; border-radius: var(--radius-full); background: var(--color-primary); color: var(--color-text-inverse); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 700; font-size: var(--text-small);">MR</div>
+              <div>
+                <strong style="font-family: var(--font-display); font-size: var(--text-small); display: block;">Mark Reynolds</strong>
+                <span style="font-size: var(--text-xs); color: var(--color-text-muted);">Regional Property Manager, NAI Earle Furman</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial-card card">
+            <div style="display: flex; gap: 0.3rem; margin-bottom: var(--space-2); color: var(--color-accent);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote style="color: var(--color-text); font-size: var(--text-body); line-height: var(--leading-body); margin-bottom: var(--space-3);">
+              &ldquo;After our last contractor left us mid-project, Tommy's team stepped in and finished the parking lot reseal in half the time quoted. That was six years ago — we haven't looked elsewhere since.&rdquo;
+            </blockquote>
+            <div style="display: flex; align-items: center; gap: var(--space-2);">
+              <div style="width: 44px; height: 44px; border-radius: var(--radius-full); background: var(--color-accent); color: var(--color-text); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 700; font-size: var(--text-small);">DH</div>
+              <div>
+                <strong style="font-family: var(--font-display); font-size: var(--text-small); display: block;">Diane Holloway</strong>
+                <span style="font-size: var(--text-xs); color: var(--color-text-muted);">Facilities Director, Verdae Properties</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card card">
+            <div style="display: flex; gap: 0.3rem; margin-bottom: var(--space-2); color: var(--color-accent);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote style="color: var(--color-text); font-size: var(--text-body); line-height: var(--leading-body); margin-bottom: var(--space-3);">
+              &ldquo;We needed a contractor who could handle properties in both SC and NC. Greenville Maintenance covers our entire portfolio with one point of contact. It simplified our operations significantly.&rdquo;
+            </blockquote>
+            <div style="display: flex; align-items: center; gap: var(--space-2);">
+              <div style="width: 44px; height: 44px; border-radius: var(--radius-full); background: var(--color-secondary); color: var(--color-text-inverse); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 700; font-size: var(--text-small);">JW</div>
+              <div>
+                <strong style="font-family: var(--font-display); font-size: var(--text-small); display: block;">James Whitfield</strong>
+                <span style="font-size: var(--text-xs); color: var(--color-text-muted);">Operations Manager, Pinnacle Commercial Group</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         COVERAGE AREA
+         ======================================== -->
+    <section class="section coverage diagonal-cut">
+      <div class="container">
+        <div class="coverage-grid">
+          <div data-animate="fade-left">
+            <span class="section-tag section-tag--light">Service Area</span>
+            <h2 style="color: var(--color-text-inverse); margin-top: var(--space-2); margin-bottom: var(--space-6);">
+              One Team, Three States
+            </h2>
+
+            <div class="coverage__regions">
+              <div class="region-item">
+                <svg class="region-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div class="region-item__text">
+                  <strong>Upstate South Carolina</strong>
+                  <span>Greenville, Spartanburg, Anderson, and surrounding counties</span>
+                </div>
+              </div>
+              <div class="region-item">
+                <svg class="region-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div class="region-item__text">
+                  <strong>Western North Carolina</strong>
+                  <span>Asheville, Hendersonville, and the greater WNC region</span>
+                </div>
+              </div>
+              <div class="region-item">
+                <svg class="region-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div class="region-item__text">
+                  <strong>Northeastern Georgia</strong>
+                  <span>Toccoa, Hartwell, and nearby commercial corridors</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-animate="fade-right" data-delay="200">
+            <div style="background: rgba(255,255,255,0.06); border-radius: var(--radius-lg); padding: var(--space-6); border: 1px solid rgba(255,255,255,0.1);">
+              <h3 style="color: var(--color-text-inverse); font-size: var(--text-h3); margin-bottom: var(--space-2);">Need Coverage Across Multiple Locations?</h3>
+              <p style="color: rgba(245,242,237,0.7); font-size: var(--text-small); margin-bottom: var(--space-4); line-height: var(--leading-body);">We manage maintenance for multi-site portfolios spanning SC, NC, and GA. One point of contact, consistent quality across all your properties.</p>
+              <a href="contact.html#estimate" class="btn btn--primary" style="width: 100%; justify-content: center;">Get a Multi-Site Quote</a>
+              <p style="color: rgba(245,242,237,0.5); font-size: var(--text-xs); margin-top: var(--space-2); text-align: center;">Based in Greenville, SC &mdash; serving the tri-state area since 1993</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         COMMUNITY / CHARITIES
+         ======================================== -->
+    <section class="section text-center">
+      <div class="container">
+        <div class="section-header text-center" data-animate="fade-up">
+          <span class="section-tag">Community</span>
+          <h2 style="margin-top: var(--space-2);">Giving Back to the Region We Serve</h2>
+          <p style="margin-inline: auto;">Through our many blessings, we are pleased to support these local charities.</p>
+        </div>
+
+        <div style="overflow: hidden; padding-block: var(--space-4);" data-animate="fade">
+          <div class="logos-track">
+            <img src="https://greenvillemaintenance.com/wp-content/uploads/2012/02/meyer-center.png" alt="Meyer Center" width="120" height="60" loading="lazy" decoding="async">
+            <img src="https://greenvillemaintenance.com/wp-content/uploads/2012/02/water-of-life.png" alt="Water of Life" width="120" height="60" loading="lazy" decoding="async">
+            <img src="https://greenvillemaintenance.com/wp-content/uploads/2012/02/set-free-alliance.png" alt="Set Free Alliance" width="120" height="60" loading="lazy" decoding="async">
+            <img src="https://greenvillemaintenance.com/wp-content/uploads/2012/02/meals-on-wheels.png" alt="Meals on Wheels" width="120" height="60" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         CTA SECTION (full-width)
+         ======================================== -->
+    <section class="section cta-section">
+      <div class="container text-center" data-animate="scale-in">
+        <h2 style="margin-bottom: var(--space-3);">Don't Wait for a Problem<br>to Find a Solution</h2>
+        <p style="max-width: 50ch; margin-inline: auto; margin-bottom: var(--space-6);">Neglected maintenance costs 3&ndash;5x more than prevention. Let's protect your investment with a free, no-obligation assessment.</p>
+
+        <a href="contact.html#estimate" class="btn btn--primary btn--lg" style="margin-bottom: var(--space-4);">Request a Free Estimate</a>
+
+        <p style="color: rgba(245,242,237,0.7); font-size: var(--text-small); margin-bottom: var(--space-2);">Or call us directly:</p>
+        <a href="tel:+18642351090" style="display: inline-flex; align-items: center; gap: var(--space-1); color: var(--color-text-inverse); font-family: var(--font-display); font-size: var(--text-h3); font-weight: 700; text-decoration: none;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (864) 235-1090
+        </a>
+      </div>
+    </section>
+
+    <!-- ========================================
+         CONTACT PREVIEW
+         ======================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div data-animate="fade-left">
+            <span class="section-tag">Get in Touch</span>
+            <h2 style="margin-top: var(--space-2); margin-bottom: var(--space-4);">Ready to Talk?</h2>
+            <p style="color: var(--color-text-muted); margin-bottom: var(--space-6);">Reach out for a free estimate or just to discuss your property's needs. We respond within one business day.</p>
+
+            <div class="contact-info">
+              <div class="contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <div>
+                  <strong>Phone</strong>
+                  <a href="tel:+18642351090">(864) 235-1090</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div>
+                  <strong>Address</strong>
+                  <span>PO Box 27036, Greenville, SC 29616</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="form card" data-animate="fade-right" data-delay="200" id="estimate">
+            <div style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-1);">
+              <div style="width: 40px; height: 40px; border-radius: var(--radius-md); background: var(--color-primary-glow); color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <h3 style="margin: 0;">Request a Free Estimate</h3>
+            </div>
+            <p style="font-size: var(--text-small); color: var(--color-text-muted); margin-bottom: var(--space-2);">Quick form — we'll respond within one business day.</p>
+            <hr class="divider" style="margin-bottom: var(--space-3);">
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="h-name">Your Name *</label>
+                <input type="text" id="h-name" name="name" required autocomplete="name" placeholder="John Smith">
+              </div>
+              <div class="form__group">
+                <label for="h-phone">Phone *</label>
+                <input type="tel" id="h-phone" name="phone" required autocomplete="tel" placeholder="(864) 555-0100">
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="h-email">Email *</label>
+              <input type="email" id="h-email" name="email" required autocomplete="email" placeholder="john@company.com">
+            </div>
+
+            <div class="form__group">
+              <label for="h-service">Service Needed *</label>
+              <select id="h-service" name="service" required>
+                <option value="" disabled selected>Choose a service...</option>
+                <option value="sweeping">Commercial Parking Lot Sweeping</option>
+                <option value="sealcoating">Parking Lot Maintenance / Sealcoating</option>
+                <option value="facilities">Facilities &amp; Grounds Maintenance</option>
+                <option value="contracting">General Contracting</option>
+                <option value="multiple">Multiple Services</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="h-message">Tell Us About Your Property</label>
+              <textarea id="h-message" name="message" rows="4" placeholder="Property location, size, current issues..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%; justify-content: center;">
+              Send Estimate Request
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="display: inline-flex;">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <rect width="36" height="36" rx="6" fill="#007CBA"/>
+              <path d="M8 26V10h4v6h6v-6h4v16h-4v-6h-6v6H8z" fill="#F5F2ED"/>
+            </svg>
+            <span>Greenville<br>Maintenance</span>
+          </a>
+          <p>Full maintenance services for commercial properties since 1993. Your eyes and ears on the ground in Upstate South Carolina.</p>
+        </div>
+
+        <div class="footer__links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#sweeping">Commercial Sweeping</a></li>
+            <li><a href="services.html#sealcoating">Parking Lot Maintenance</a></li>
+            <li><a href="services.html#facilities">Facilities Maintenance</a></li>
+            <li><a href="services.html#contracting">General Contracting</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#estimate">Free Estimate</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2026 Greenville Maintenance Services, Inc. All rights reserved.</span>
+        <span>(864) 235-1090 &middot; PO Box 27036, Greenville, SC 29616</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success dialog -->
+  <dialog id="success-dialog" style="border: none; border-radius: var(--radius-lg); padding: var(--space-6); max-width: 420px; text-align: center; box-shadow: var(--shadow-xl); background: var(--color-surface);">
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#007CBA" stroke-width="2" style="margin: 0 auto var(--space-3);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    <h3 style="font-family: var(--font-display); margin-bottom: var(--space-1);">Estimate Request Sent</h3>
+    <p style="color: var(--color-text-muted); font-size: var(--text-small); margin-bottom: var(--space-4);">We'll review your request and get back to you within one business day.</p>
+    <button class="btn btn--primary" onclick="this.closest('dialog').close()" style="margin-inline: auto;">Got It</button>
+  </dialog>
+</body>
+</html>
