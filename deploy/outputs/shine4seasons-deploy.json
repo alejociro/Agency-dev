@@ -1,0 +1,7 @@
+{
+  "negocio": "shine4seasons",
+  "url_produccion": "https://shine4seasons.vercel.app",
+  "fecha_deploy": "2026-04-04",
+  "stack": "html",
+  "carpeta_origen": "web/shine4seasons/"
+}

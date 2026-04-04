@@ -27,11 +27,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
       <div class="hero-proof">
         <div class="proof-items">
-          <span class="proof-item">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1l2.1 4.3 4.7.7-3.4 3.3.8 4.7L8 11.8 3.8 14l.8-4.7L1.2 6l4.7-.7L8 1z" fill="#C9A84C"/></svg>
-            4.9 Stars
-          </span>
-          <span class="proof-divider" aria-hidden="true">|</span>
           <span class="proof-item">USDOT #3650584</span>
           <span class="proof-divider" aria-hidden="true">|</span>
           <span class="proof-item">Available 24/7</span>
@@ -295,42 +290,33 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <!-- ========== TESTIMONIALS ========== -->
+  <!-- ========== TRUST ========== -->
   <div class="gold-seam"></div>
-  <section class="section testimonials-section">
-    <div class="container">
-      <span class="kicker" data-animate="fade-up">What Riders Say</span>
-      <h2 data-animate="fade-up" data-delay="100">Words carry more weight<br/>than <em class="text-gold">horsepower</em></h2>
-    </div>
-    <div class="testimonials-track" data-animate="fade-up" data-delay="200">
-      <div class="testimonial">
-        <p class="testimonial-text">
-          "Booked the Escalade for our anniversary and the experience was flawless. Driver arrived early,
-          vehicle was immaculate, and the communication throughout was exceptional. This is how transportation should work."
-        </p>
-        <span class="testimonial-author">Michael R. — Greenville, SC</span>
+  <section class="section trust-section">
+    <div class="container trust-content" data-animate="fade-up">
+      <span class="kicker">Trust &amp; Credentials</span>
+      <h2>Trusted by hundreds of riders<br/>across the <em class="text-gold">Upstate</em></h2>
+      <div class="trust-badges" data-animate="stagger">
+        <div class="trust-badge">
+          <span class="trust-badge-label">USDOT Certified</span>
+          <span class="trust-badge-value">#3650584</span>
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-label">MC Authority</span>
+          <span class="trust-badge-value">#1271873</span>
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-label">SLED Licensed</span>
+          <span class="trust-badge-value">Armed Security</span>
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-label">Coverage</span>
+          <span class="trust-badge-value">5 States</span>
+        </div>
       </div>
-      <div class="testimonial">
-        <p class="testimonial-text">
-          "We use GVL Limo for all our corporate clients visiting from out of state.
-          The professionalism and consistency is unmatched. The Sprinter limo is always a hit."
-        </p>
-        <span class="testimonial-author">Sarah T. — Director of Operations, Greenville Corp</span>
-      </div>
-      <div class="testimonial">
-        <p class="testimonial-text">
-          "Hired the party bus for my daughter's sweet 16. The karaoke, Xbox, light show — the kids
-          went absolutely wild. Best money I've spent on a party. Already booking for prom."
-        </p>
-        <span class="testimonial-author">David K. — Simpsonville, SC</span>
-      </div>
-      <div class="testimonial">
-        <p class="testimonial-text">
-          "The GVL SAFE service gave our CEO complete peace of mind during a high-profile visit.
-          Discrete, professional, and clearly trained to the highest standard. We won't travel without them now."
-        </p>
-        <span class="testimonial-author">James W. — VP Security, National Firm</span>
-      </div>
+      <p class="text-muted trust-note">
+        Fully insured, background-checked drivers, DOT-compliant fleet. The credentials that matter when your safety is on the line.
+      </p>
     </div>
   </section>
 
@@ -722,28 +708,56 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     margin-bottom: var(--space-1);
   }
 
-  /* ========== TESTIMONIALS ========== */
-  .testimonials-section {
-    overflow: hidden;
+  /* ========== TRUST ========== */
+  .trust-section {
+    text-align: center;
   }
 
-  .testimonials-track {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+  .trust-content {
+    max-width: 720px;
+    margin-inline: auto;
+  }
+
+  .trust-badges {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--space-4);
-    padding-inline: var(--container-padding);
-    scrollbar-width: none;
-    padding-bottom: var(--space-2);
+    margin-top: var(--space-6);
+    margin-bottom: var(--space-6);
   }
 
-  .testimonials-track::-webkit-scrollbar {
-    display: none;
+  .trust-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-1);
+    padding: var(--space-4) var(--space-2);
+    border: 1px solid var(--color-border);
+    transition: border-color var(--duration-fast) ease;
   }
 
-  .testimonials-track .testimonial {
-    scroll-snap-align: start;
-    flex: 0 0 clamp(300px, 70vw, 440px);
+  .trust-badge:hover {
+    border-color: var(--color-primary);
+  }
+
+  .trust-badge-label {
+    font-family: 'Jost', sans-serif;
+    font-size: var(--text-small);
+    font-weight: 600;
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+
+  .trust-badge-value {
+    font-family: 'Playfair Display', serif;
+    font-size: var(--text-h3);
+    color: var(--color-text);
+  }
+
+  .trust-note {
+    max-width: 52ch;
+    margin-inline: auto;
   }
 
   /* ========== CTA BAND ========== */
@@ -914,6 +928,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     }
 
     .step-connector { display: none; }
+
+    .trust-badges {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     .grid-asymmetric,
     .grid-asymmetric-reverse {

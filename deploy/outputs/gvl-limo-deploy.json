@@ -1,0 +1,7 @@
+{
+  "negocio": "gvl-limo",
+  "url_produccion": "https://gvl-limo.vercel.app",
+  "fecha_deploy": "2026-04-04",
+  "stack": "astro",
+  "carpeta_origen": "web/gvl-limo/"
+}

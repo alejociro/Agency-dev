@@ -1,0 +1,7 @@
+{
+  "negocio": "capello-salon",
+  "url_produccion": "https://capello-salon-nu.vercel.app",
+  "fecha_deploy": "2026-04-04",
+  "stack": "html",
+  "carpeta_origen": "web/capello-salon/"
+}

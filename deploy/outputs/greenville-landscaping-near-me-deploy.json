@@ -1,7 +1,7 @@
 {
   "negocio": "greenville-landscaping-near-me",
   "url_produccion": "https://greenville-landscaping-near-me.vercel.app",
-  "fecha_deploy": "2026-04-03",
+  "fecha_deploy": "2026-04-04",
   "stack": "astro",
-  "carpeta_origen": "web/greenville-landscaping-near-me"
+  "carpeta_origen": "web/greenville-landscaping-near-me/"
 }

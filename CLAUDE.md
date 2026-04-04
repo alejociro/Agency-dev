@@ -16,6 +16,7 @@
 | `/deploy <ruta> <nombre>` | carpeta web + nombre | `deploy/outputs/<negocio>-deploy.json` |
 | `/propuesta <ruta> [url]` | auditoria.json + url demo opcional | `propuesta/outputs/<negocio>-propuesta.html` |
 | `/batch <urls>` | lista de URLs separadas por coma | tabla negocio → url deploy |
+| `/batch-refine <carpetas>` | lista de carpetas web separadas por coma | tabla negocio → calidad + refinado |
 
 El agente `/web` se compone de sub-pasos invocables individualmente:
 `/web-brief` → `/web-stack` → `/web-design` → `/web-animations` → `/web-experience` → `/web-pages` → `/web-seo` → `/web-components` → `/web-entregables`
@@ -24,6 +25,7 @@ Post-pipeline: `/web-refine <carpeta> [| instrucciones]` — revisa y pule el di
 Post-pipeline: `/web-review <carpeta>` — senior lead revisa calidad vs scraping, genera instrucciones para refine
 
 Batch: `/batch <url1>, <url2>, ...` — ejecuta el pipeline completo (scraping → auditoria → web → review → refine → deploy) para cada URL en paralelo, cada sitio como proceso aislado
+Batch-Refine: `/batch-refine web/negocio-1/, web/negocio-2/, ...` — ejecuta review + refine + deploy para cada carpeta web en paralelo
 
 ## Convenciones
 - Archivos: `<negocio>-<tipo>.json` en kebab-case

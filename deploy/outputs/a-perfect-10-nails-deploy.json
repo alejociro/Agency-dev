@@ -1,0 +1,7 @@
+{
+  "negocio": "A Perfect 10 Nails",
+  "url_produccion": "https://a-perfect-10-nails.vercel.app",
+  "fecha_deploy": "2026-04-04",
+  "stack": "html",
+  "carpeta_origen": "web/a-perfect-10-nails/"
+}

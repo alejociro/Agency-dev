@@ -42,7 +42,7 @@
 
   <!-- Alpine.js (defer) -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 
   <!-- Schema Markup: NailSalon (JSON-LD) -->
   <script type="application/ld+json">
@@ -236,23 +236,29 @@
     <div class="container">
       <div class="proof-bar__grid">
         <div class="proof-bar__item">
-          <span class="proof-bar__number" data-counter data-target="10" data-suffix="+">0+</span>
-          <span class="proof-bar__label">Years of Experience</span>
-        </div>
-        <div class="proof-bar__divider" aria-hidden="true"></div>
-        <div class="proof-bar__item">
-          <span class="proof-bar__number" data-counter data-target="5000" data-suffix="+">0+</span>
-          <span class="proof-bar__label">Happy Clients</span>
-        </div>
-        <div class="proof-bar__divider" aria-hidden="true"></div>
-        <div class="proof-bar__item">
           <span class="proof-bar__number" data-counter data-target="30" data-suffix="+">0+</span>
           <span class="proof-bar__label">Services Offered</span>
         </div>
         <div class="proof-bar__divider" aria-hidden="true"></div>
         <div class="proof-bar__item">
-          <span class="proof-bar__number">5<span class="proof-bar__star">&#9733;</span></span>
-          <span class="proof-bar__label">Customer Rating</span>
+          <span class="proof-bar__number">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-3px"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          </span>
+          <span class="proof-bar__label">Skilled Workmanship</span>
+        </div>
+        <div class="proof-bar__divider" aria-hidden="true"></div>
+        <div class="proof-bar__item">
+          <span class="proof-bar__number">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-3px"><path d="M9 12L11 14L15 10"/><path d="M20.42 4.58a5.4 5.4 0 00-7.65 0L12 5.34l-.77-.76a5.4 5.4 0 00-7.65 0 5.4 5.4 0 000 7.65L12 20.65l8.42-8.42a5.4 5.4 0 000-7.65z"/></svg>
+          </span>
+          <span class="proof-bar__label">High-Quality Products</span>
+        </div>
+        <div class="proof-bar__divider" aria-hidden="true"></div>
+        <div class="proof-bar__item">
+          <span class="proof-bar__number">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-3px"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </span>
+          <span class="proof-bar__label">5-Star Service</span>
         </div>
       </div>
     </div>
@@ -596,55 +602,6 @@
   </section>
 
   <!-- ══════════════════════════════
-       TESTIMONIALS
-       ══════════════════════════════ -->
-  <section class="testimonials section" id="testimonials">
-    <div class="container">
-      <div class="testimonials__header" data-animate="fade-up">
-        <span class="testimonials__label">Testimonials</span>
-        <h2 class="testimonials__title">What Our<br>Clients Say</h2>
-        <hr class="gold-line gold-line--center gold-line--animated" aria-hidden="true">
-      </div>
-
-      <div class="testimonials__grid" data-animate="stagger">
-        <div class="testimonial-card">
-          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-          </div>
-          <p class="testimonial-card__text">"I've been coming here for over two years now and I will never go anywhere else. The staff truly cares about quality and my nails always look perfect. Best nail salon in Greenville, hands down."</p>
-          <span class="testimonial-card__author">— Sarah M.</span>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-          </div>
-          <p class="testimonial-card__text">"I brought my daughter for her first manicure and they were so patient and sweet with her. She loved every minute of it. We now have regular mother-daughter nail dates here!"</p>
-          <span class="testimonial-card__author">— Jennifer T.</span>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-          </div>
-          <p class="testimonial-card__text">"The Lovely Pedicure is absolutely worth every penny. The collagen treatment and hot stone massage left my feet feeling brand new. The scent options are a wonderful touch."</p>
-          <span class="testimonial-card__author">— Michelle R.</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════
        CTA INTERMEDIO
        ══════════════════════════════ -->
   <section class="cta-banner bleed-full" data-animate="fade">
@@ -770,6 +727,17 @@
 
           <div class="contact__item">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <div>
+              <h3>Email</h3>
+              <a href="mailto:lanho30021@yahoo.com">lanho30021@yahoo.com</a>
+            </div>
+          </div>
+
+          <div class="contact__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <circle cx="12" cy="12" r="10"/>
               <polyline points="12 6 12 12 16 14"/>
             </svg>
@@ -886,6 +854,7 @@
           <h4 class="footer__heading" style="margin-top:var(--space-4)">Contact</h4>
           <div class="footer__hours">
             <a href="tel:+18645685026" style="color:var(--color-primary)">(864) 568-5026</a>
+            <a href="mailto:lanho30021@yahoo.com" style="color:rgba(255,253,249,0.6)">lanho30021@yahoo.com</a>
             <span>27 Milestone Plaza</span>
             <span>Greenville, SC 29615</span>
           </div>
@@ -893,7 +862,7 @@
       </div>
 
       <div class="footer__bottom">
-        <span class="footer__copyright">&copy; 2024 Golden Nails &amp; Spa. All Rights Reserved.</span>
+        <span class="footer__copyright">&copy; 2026 Golden Nails &amp; Spa. All Rights Reserved.</span>
         <div class="footer__social">
           <a href="https://www.facebook.com/goldennailsandspagreenville" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
             <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>

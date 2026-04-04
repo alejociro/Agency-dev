@@ -43,24 +43,38 @@ const services = [
 
 const packages = [
   {
-    name: 'Essential',
-    desc: 'Perfect for homeowners who want a clean, maintained lawn without the hassle.',
-    includes: ['Weekly mowing', 'Edging & blowing', 'Bi-weekly debris pickup'],
-    frequency: 'Weekly visits, spring – fall',
+    name: 'Weekly Service',
+    desc: '52 visits a year. Our crew delivers tailored landscape services every single week.',
+    includes: ['52 visits per year', 'Tailored landscape services', 'Consistent weekly schedule', 'Year-round coverage'],
+    frequency: 'Weekly / Bi-Weekly seasonal adjustment',
     featured: false
   },
   {
-    name: 'Premium',
-    desc: 'Our most popular plan — full lawn care plus hedge and weed management.',
-    includes: ['Everything in Essential', 'Monthly hedge trimming', 'Quarterly weed treatment', 'Seasonal cleanups'],
+    name: 'Year Round',
+    desc: 'We offer both weekly and biweekly year round service tailored to your landscape needs.',
+    includes: ['Weekly service during growing season', 'Bi-weekly during non-growing season', 'Full year coverage', 'Tailored to your property'],
     frequency: 'Year-round service',
     featured: true
   },
   {
-    name: 'Complete',
-    desc: 'Total property care for homeowners who want the best. We handle everything.',
-    includes: ['Everything in Premium', 'Bi-weekly hedge trimming', 'Monthly weed treatment', 'Storm debris response', 'Priority scheduling'],
-    frequency: 'Year-round, priority service',
+    name: 'Bi-Weekly Service',
+    desc: '26 visits a year. Our crew delivers tailored landscape services every other week.',
+    includes: ['26 visits per year', 'Bi-weekly during growing season', 'Monthly during non-growing season', '19 visits per year option available'],
+    frequency: 'Bi-Weekly / Monthly seasonal adjustment',
+    featured: false
+  },
+  {
+    name: 'Seasonal',
+    desc: 'Only need us seasonally? We offer weekly and biweekly service during the growing season.',
+    includes: ['Growing season only', 'Weekly or bi-weekly options', 'Spring through fall coverage', 'Flexible scheduling'],
+    frequency: 'Growing season only',
+    featured: false
+  },
+  {
+    name: 'Custom Quote',
+    desc: 'Don\'t see what you need? Give us a call and we\'ll put together a custom quote specific to your landscape needs.',
+    includes: ['Personalized service plan', 'Property assessment included', 'Flexible frequency', 'Tailored to your budget'],
+    frequency: 'Call: (864) 794-1315',
     featured: false
   }
 ];
@@ -230,7 +244,11 @@ const packages = [
     grid-template-columns: 1fr;
     gap: var(--space-4);
 
-    @media (min-width: 768px) {
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
       grid-template-columns: repeat(3, 1fr);
     }
   }

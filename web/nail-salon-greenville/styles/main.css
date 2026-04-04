@@ -740,7 +740,7 @@
   }
 
   .cta-band__text {
-    color: var(--color-text-light);
+    color: var(--color-text-on-dark);
     margin-bottom: var(--space-4);
     margin-inline: auto;
   }
@@ -1130,7 +1130,7 @@
   }
 
   .footer__description {
-    color: var(--color-text-light);
+    color: var(--color-text-on-dark);
     font-size: var(--text-small);
     max-width: 35ch;
   }
@@ -1152,7 +1152,7 @@
     gap: var(--space-1);
 
     & a {
-      color: var(--color-text-light);
+      color: var(--color-text-on-dark);
       font-size: var(--text-small);
       transition: color var(--duration-fast) var(--ease-out);
 
@@ -1170,6 +1170,6 @@
     justify-content: space-between;
     gap: var(--space-2);
     font-size: var(--text-small);
-    color: var(--color-text-light);
+    color: var(--color-text-on-dark);
   }
 }

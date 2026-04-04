@@ -386,6 +386,7 @@
         position: relative;
         z-index: 2;
         padding: var(--space-4);
+        color: var(--color-text-on-dark);
       }
 
       .service-title {
@@ -1100,7 +1101,7 @@
 
       .footer-tagline {
         font-size: var(--text-small);
-        color: rgba(245, 241, 235, 0.5);
+        color: rgba(245, 241, 235, 0.65);
         max-width: 30ch;
         line-height: var(--leading-body);
       }
@@ -1126,7 +1127,7 @@
 
       a, span {
         font-size: var(--text-small);
-        color: rgba(245, 241, 235, 0.5);
+        color: rgba(245, 241, 235, 0.65);
         text-decoration: none;
         transition: color var(--duration-fast) var(--ease-out);
       }
@@ -1142,7 +1143,7 @@
 
     .footer-copy {
       font-size: var(--text-xs);
-      color: rgba(245, 241, 235, 0.3);
+      color: rgba(245, 241, 235, 0.55);
     }
   }
 }
