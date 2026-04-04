@@ -1,0 +1,198 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Contact & Location | Indigo Flow and Art — Greenville SC"
+  description="Get in touch with Indigo Flow and Art at 1272 Pendleton Street, Greenville SC. Book a Pilates session with Katie or schedule a gallery viewing with Julie."
+  canonical="/contact"
+  currentPage="contact"
+>
+
+  <!-- ==================== HERO ==================== -->
+  <section style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%); padding-block: var(--space-16) var(--space-8);">
+    <div class="container" style="text-align: center;">
+      <span class="hero-tag section-tag" style="color: var(--color-gold); justify-content: center;">Get in Touch</span>
+      <h1 class="hero-title" style="color: var(--color-cream);" data-split>Contact Us</h1>
+      <p class="hero-sub" style="color: var(--color-text-inverse); max-width: 50ch; margin-inline: auto; opacity: 0.9;">
+        Whether you want to book a Pilates session, schedule a gallery viewing, or just say hello — we would love to hear from you.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT GRID ==================== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-8);">
+
+        <!-- Contact Info Cards -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-4);" data-animate="stagger">
+
+          <!-- Pilates -->
+          <div class="card" style="padding: var(--space-4); text-align: center;">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="margin-inline: auto; margin-block-end: var(--space-2);">
+              <circle cx="24" cy="24" r="20" stroke="var(--color-secondary)" stroke-width="1.5"/>
+              <path d="M18 18c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="var(--color-accent)" stroke-width="1.5"/>
+              <path d="M24 24v12" stroke="var(--color-accent)" stroke-width="1.5"/>
+              <path d="M18 30h12" stroke="var(--color-accent)" stroke-width="1.5"/>
+            </svg>
+            <h3 style="font-size: var(--text-body); margin-block-end: var(--space-1);">Pilates Studio</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--text-small); margin-block-end: var(--space-2);">Book sessions with Katie</p>
+            <a href="sms:+18648845606" class="btn btn--primary" data-magnetic style="width: 100%;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              (864) 884-5606
+            </a>
+            <p style="font-size: var(--text-caption); color: var(--color-text-muted); margin-block-start: var(--space-1);">Text only, please</p>
+          </div>
+
+          <!-- Gallery -->
+          <div class="card" style="padding: var(--space-4); text-align: center;">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="margin-inline: auto; margin-block-end: var(--space-2);">
+              <rect x="6" y="10" width="36" height="28" rx="3" stroke="var(--color-secondary)" stroke-width="1.5"/>
+              <circle cx="18" cy="22" r="4" stroke="var(--color-accent)" stroke-width="1.5"/>
+              <path d="M6 34l10-8 8 6 8-10 10 12" stroke="var(--color-accent)" stroke-width="1.5"/>
+            </svg>
+            <h3 style="font-size: var(--text-body); margin-block-end: var(--space-1);">Art Gallery</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--text-small); margin-block-end: var(--space-2);">Schedule viewings with Julie</p>
+            <a href="sms:+18648845607" class="btn btn--secondary" data-magnetic style="width: 100%;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              (864) 884-5607
+            </a>
+            <p style="font-size: var(--text-caption); color: var(--color-text-muted); margin-block-start: var(--space-1);">Text only, please</p>
+          </div>
+
+          <!-- Email -->
+          <div class="card" style="padding: var(--space-4); text-align: center;">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="margin-inline: auto; margin-block-end: var(--space-2);">
+              <rect x="6" y="12" width="36" height="24" rx="3" stroke="var(--color-secondary)" stroke-width="1.5"/>
+              <path d="M6 14l18 12 18-12" stroke="var(--color-accent)" stroke-width="1.5"/>
+            </svg>
+            <h3 style="font-size: var(--text-body); margin-block-end: var(--space-1);">Email</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--text-small); margin-block-end: var(--space-2);">General inquiries</p>
+            <a href="mailto:hello.indigoflowandart@gmail.com" class="btn btn--secondary" style="width: 100%; font-size: var(--text-caption);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+              hello.indigoflowandart@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Two columns: form + info -->
+        <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-8);">
+
+          <!-- Contact Form -->
+          <div data-animate="fade-up">
+            <h2 style="margin-block-end: var(--space-4);">Send Us a Message</h2>
+            <form action="#" method="POST" style="display: grid; gap: var(--space-3);" id="contact-form">
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-3);">
+                <div class="form-group">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required />
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-3);">
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone (optional)</label>
+                  <input type="tel" id="phone" name="phone" class="form-input" placeholder="(864) 555-0000" />
+                </div>
+                <div class="form-group">
+                  <label for="interest" class="form-label">Interested In</label>
+                  <select id="interest" name="interest" class="form-input" style="cursor: pointer;">
+                    <option value="">Select an option...</option>
+                    <option value="pilates-new">Pilates — New Student Special</option>
+                    <option value="pilates-private">Pilates — Private Session</option>
+                    <option value="pilates-duet">Pilates — Duet Session</option>
+                    <option value="pilates-group">Pilates — Small Group</option>
+                    <option value="gallery-viewing">Gallery — Schedule a Viewing</option>
+                    <option value="gallery-purchase">Gallery — Purchase Inquiry</option>
+                    <option value="gallery-commission">Gallery — Commission</option>
+                    <option value="general">General Inquiry</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Tell us what you are looking for..." rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--large" data-magnetic style="justify-self: start;">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div data-animate="fade-up">
+          <h2 style="margin-block-end: var(--space-4);">Find Us</h2>
+          <div style="display: grid; gap: var(--space-4);">
+            <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-card);">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.1!2d-82.42!3d34.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1272+Pendleton+St+Greenville+SC+29611!5e0!3m2!1sen!2sus!4v1"
+                width="100%" height="350"
+                style="border: 0; display: block;"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Map to Indigo Flow and Art at 1272 Pendleton Street"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-4);">
+              <div>
+                <h4 style="font-size: var(--text-body); margin-block-end: var(--space-1);">Address</h4>
+                <p style="color: var(--color-text-muted); font-size: var(--text-small);">
+                  1272 Pendleton Street<br/>
+                  The Village of West Greenville<br/>
+                  Greenville, SC 29611
+                </p>
+              </div>
+              <div>
+                <h4 style="font-size: var(--text-body); margin-block-end: var(--space-1);">Pilates Hours</h4>
+                <p style="color: var(--color-text-muted); font-size: var(--text-small);">
+                  Monday &ndash; Thursday<br/>
+                  7:15am &ndash; 11:15am<br/>
+                  By appointment only
+                </p>
+              </div>
+              <div>
+                <h4 style="font-size: var(--text-body); margin-block-end: var(--space-1);">Gallery Hours</h4>
+                <p style="color: var(--color-text-muted); font-size: var(--text-small);">
+                  Monday &ndash; Sunday by appointment<br/>
+                  First Friday Art Crawl: 6&ndash;9pm<br/>
+                  Annual Open Studio Tour in November
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form submission dialog -->
+  <dialog id="form-dialog" style="border: none; border-radius: var(--radius-lg); padding: var(--space-6); max-width: 400px; text-align: center; background-color: var(--color-surface); box-shadow: var(--shadow-hover);">
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="margin-inline: auto; margin-block-end: var(--space-2);">
+      <circle cx="24" cy="24" r="20" stroke="var(--color-accent)" stroke-width="2"/>
+      <path d="M16 24l6 6 10-10" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <h3 style="margin-block-end: var(--space-1);">Message Sent!</h3>
+    <p style="color: var(--color-text-muted); margin-block-end: var(--space-3);">Thank you for reaching out. We will get back to you soon.</p>
+    <button class="btn btn--primary" onclick="document.getElementById('form-dialog').close();" style="width: 100%;">Close</button>
+  </dialog>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const dialog = document.getElementById('form-dialog');
+    if (form && dialog) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        dialog.showModal();
+        form.reset();
+      });
+    }
+  </script>
+
+</BaseLayout>

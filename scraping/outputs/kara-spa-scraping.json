@@ -1,0 +1,132 @@
+{
+  "negocio": "Kara Spa",
+  "url": "https://karaspa.com/",
+  "sector": "Day Spa",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Kara Day Spa - Massage | Facials | Wraps | Waxing | Nail Care",
+    "description": "Kara Day Spa services include deep-tissue massage, body treatments, facials, specialty treatments, waxing, natural nail care and gentleman's services.",
+    "keywords": null
+  },
+  "favicon": "https://d2d1d6d52d.nxcli.io/wp-content/uploads/2016/11/favicon-1.png",
+  "paleta": {
+    "primario": "#82c0c7",
+    "secundario": "#2d3940",
+    "acento": "#b59522",
+    "fondo": "#f3f3f3",
+    "texto": "#333",
+    "otros": ["#666", "#4e4e4e", "#974df3"]
+  },
+  "logo": {
+    "url": "https://karaspa.com/wp-content/uploads/2016/11/Kara-spa-greenville-sc-1.png",
+    "descripcion": "Kara Spa Greenville SC logo",
+    "posicion": "top left",
+    "colores": ["#82c0c7", "#2d3940"]
+  },
+  "tipografias": [
+    { "nombre": "Open Sans", "uso": "body", "peso": "400", "tamanio_aprox": "16px" },
+    { "nombre": "Lato", "uso": "headings", "peso": "700", "tamanio_aprox": "28px" },
+    { "nombre": "Poppins", "uso": "accent", "peso": "600", "tamanio_aprox": "18px" }
+  ],
+  "navegacion": [
+    { "label": "Spa Info", "url": "https://karaspa.com/category/spa-info/" },
+    { "label": "Spa Staff", "url": "https://karaspa.com/spa-staff/" },
+    { "label": "How to Spa", "url": "https://karaspa.com/how-to-spa/" },
+    { "label": "Book Appointment", "url": "https://karaspa.com/how-to-spa/" },
+    { "label": "Spa Services", "url": "https://karaspa.com/spa-services/" },
+    { "label": "Body Treatments", "url": "https://karaspa.com/body-treatments/" },
+    { "label": "Facials", "url": "https://karaspa.com/facials/" },
+    { "label": "Gentlemen's Services", "url": "https://karaspa.com/gentlemens-services/" },
+    { "label": "Hair Removal", "url": "https://karaspa.com/hair-removal/" },
+    { "label": "Pedicure Services", "url": "https://karaspa.com/pedicure-services/" },
+    { "label": "Massage", "url": "https://karaspa.com/massage/" },
+    { "label": "Chiropractic + Massage", "url": "https://karaspa.com/chiropractic-massage/" },
+    { "label": "Contact", "url": "https://karaspa.com/contact/" },
+    { "label": "Gift Certificates & Products", "url": "https://karaspa.com/gift-certificates/" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Kara is Greenville's first destination day spa",
+      "contenido": "Kara Spa invites you to step away from your busy life... Enjoy peace, serenity and relaxation. Welcome to the Kara Spa Group. We have assembled an elite group of companies to meet your all of your Spa and some of your health needs. Having worked together for over 18 years we take pride in the group of entrepreneurs whose individual businesses together provide the ultimate spa experience. We invite you to step away from you busy life... Enjoy peace, serenity and relaxation. Guests are encouraged to relax on comfy chaise loungers and enjoy the stress-free environment at their leisure. Browse our boutique where you can get just the perfect gift for someone special or for yourself! Unique gifts, jewelry, candles, and decor are among the treasures you will find. Our goal is to provide you with affordable luxury in a beautiful, tranquil environment, and exceed your expectations every visit.",
+      "cta": "Book Appointment",
+      "imagenes": [
+        { "url": "https://karaspa.com/wp-content/uploads/2019/01/kara-spa-greenville.png", "alt": "Kara Spa Greenville", "descripcion": "Kara Spa interior/exterior photo", "tipo": "hero", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "gift-certificates",
+      "titulo": "Give the Gift of Relaxation",
+      "contenido": "Gift Certificates. Spa Products and Gifts.",
+      "cta": "Shop Now",
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Spa Specials",
+      "contenido": "Fall for Reflexology - Experience pure bliss with this one hour foot treatment. Begin with a foot soak, followed by a gentle exfoliation. Fall into deep relaxation while feet are being massaged with an ultra hydrating cream and your choice of essential oil(s). Let the 'heeling' begin. Regular Price ($80) Special $60. Micro Peel - Maximize and expedite results using a combination of microderm and chemical peels. Leaving skin smoother, softer, brighter complexion, minimize pore size, and reduce discoloration. The delicate areas of the neck and Decollete are treated as well. Shoulder massage included to enhance your relaxation. Series of 3 Regular Price ($430) Special $300. AromaTouch - Each essential oil in the AromaTouch Technique was selected for its individual aromatic properties, and for their powerful aromatic properties when combined. Creating a feeling of overall wellness. Regular Price ($65) Special $45.",
+      "cta": "Book Online",
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Facials",
+      "contenido": "The Kara Ultimate Facial - $180. We use the highest quality of carefully researched anti-aging products and skincare, along with advanced non-surgical skin treatments. The Kara Relaxation Facial - $150. This results-driven treatment facial will achieve visible results. During your consultation, your esthetician will determine which mask will achieve optimum results. The Kara Wellness Facial - $120. Indulge in our full maintenance facial, where we'll pamper your skin with a cleansing, steaming, exfoliating, extracting, masking, and protective treatment. Chemical Peels - Starts @ $125. Smoothes skin surface, diminishes visible lines, improves skin texture, clears clogged pores and brightens skin. Light Therapy - $100. This treatment is designed to improve skin texture, color, and firmness. It can also help reduce the appearance of fine lines and wrinkles. The Kara Escape Facial - $80. Allow 30 minutes. Unwind and rejuvenate with this relaxing facial experience. Youth Facial - $85. Allow one hour. 13-18 years old.",
+      "cta": "Book Appointment",
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Body Treatments",
+      "contenido": "Relieve stress, detoxify and energize your body, mind and spirit. Our body treatments are intended for very specific purposes. Lavish scrubs, wraps, and rituals cleanse, polish, and awaken the senses. Ionic Foot Detox - $65. A foot bath that utilizes negative ions to draw out positively charged toxins through your pores. Body Glow - $80. Gentle, deep cleansing treatment sloughs off dead skin cells, superficial toxins, and impurities leaving your skin soft & smooth more youthful. Infrared Sauna Wrap - $80. Helps improve circulation, detoxify your body, burn calories, and promote relaxation. Perfect for post-workout recovery and relaxation. Lumafirm Body Firm and Glow - $150. The Lumafirm Body Firm & Glow Body Treatment features 26 amazing ingredients in one single treatment, deeply repairing, smoothing, de-aging, firming and toning.",
+      "cta": "Book Appointment",
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Massage",
+      "contenido": "Massage Add Ons: Kinesio Taping ($8 per area) to areas of acute or subacute injury aids in lymphatic flow, reduces swelling, reduces pain, and stabilizes weak or recovering muscles. Assisted Full Body Stretching ($10) Added to the massage.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Pedicure Services",
+      "contenido": "Pedicures are a true spa experience. For ultimate relaxation all pedicures are done in our private rooms while you recline with a lavender pillow and a beverage. The Kara Ultimate Pedicure - $90. Allow one hour and fifteen minutes. Your treatment begins with a soothing foot soak. Warm stone massage on your feet and calves. Kara Relaxation Pedicure - $80. Allow one hour and fifteen minutes. Luxurious massage, aromatherapy salt exfoliation, nail and cuticle grooming, callous reduction, conditioning paraffin moisturizing treatment and polish. The Kara Wellness Pedicure - $65. Allow one hour. Indulgent massage, on feet and legs, nail and cuticle grooming, callous reduction, exfoliation. The Kara Escape Pedicure - $55. Allow thirty minutes. Clean up and polish change.",
+      "cta": "Book Appointment",
+      "imagenes": []
+    },
+    {
+      "tipo": "alquiler",
+      "titulo": "Rent a Suite at Kara Spa",
+      "contenido": "If you are looking for spacious, affordable suites for your business, we have everything you need: Large suites available (one has sink in-room and full bathroom), Access to reception and client relaxation area, Access to kitchen with microwave and refrigerator, Access to in-house washer and dryer. For pricing and availability text us at 864-233-5352.",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Kara is Greenville's first destination day spa",
+    "propuesta_valor": "Affordable luxury in a beautiful, tranquil environment. Over 18 years providing the ultimate spa experience.",
+    "ctas": ["Book Appointment", "Book Online", "Shop Now"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(864)-233-5352",
+    "whatsapp": null,
+    "email": "karaspa1@gmail.com",
+    "direccion": null,
+    "horarios": null
+  },
+  "redes": [
+    { "plataforma": "Facebook", "url": "https://www.facebook.com/kara.spa/" },
+    { "plataforma": "Instagram", "url": "https://www.instagram.com/karaspaandboutique/" }
+  ],
+  "formularios": [],
+  "footer": {
+    "contenido": "Kara is Greenvilles first destination day spa. Copyright © 2026 Kara Spa, Inc.",
+    "links": ["Contact Us", "Sitemap", "Privacy Policy"],
+    "copyright": "Copyright © 2026 Kara Spa, Inc."
+  },
+  "tecnologia": "WordPress (Divi theme)"
+}

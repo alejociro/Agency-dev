@@ -1,0 +1,143 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+}
+
+const { title, description, canonical, ogImage } = Astro.props;
+const siteName = "The WRKT Greenville";
+const defaultOgImage = ogImage || "https://images.squarespace-cdn.com/content/v1/67ee985553c8e90522ea9bc8/72a2409e-2c38-42ed-ba2c-1c73b747562e/TheWrkt_62.jpg?format=1500w";
+const siteUrl = canonical || "https://the-wrkt-greenville.vercel.app";
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Primary -->
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="keywords" content="Reformer Pilates Greenville SC, Pilates classes near me, unlimited Pilates membership, The WRKT Greenville, E North St Pilates, boutique fitness Greenville" />
+  <link rel="canonical" href={siteUrl} />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={siteUrl} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={defaultOgImage} />
+  <meta property="og:site_name" content={siteName} />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={defaultOgImage} />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/67ee985553c8e90522ea9bc8/c986f499-abce-4ce7-ab25-57639f5f9736/favicon.ico?format=100w" />
+
+  <!-- Fonts: Fraunces (display) + Outfit (body) — display=swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Schema Markup: FitnessCenter + LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["FitnessCenter", "LocalBusiness"],
+    "name": "The WRKT Greenville",
+    "description": "Reformer Pilates studio offering unlimited classes with flexible memberships in Greenville, SC.",
+    "url": "https://the-wrkt-greenville.vercel.app",
+    "telephone": null,
+    "email": "greenville@thewrkt.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1631 E North St",
+      "addressLocality": "Greenville",
+      "addressRegion": "SC",
+      "postalCode": "29607",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.86,
+      "longitude": -82.37
+    },
+    "priceRange": "$35-$185",
+    "currenciesAccepted": "USD",
+    "paymentAccepted": "Credit Card",
+    "image": ["https://images.squarespace-cdn.com/content/v1/67ee985553c8e90522ea9bc8/72a2409e-2c38-42ed-ba2c-1c73b747562e/TheWrkt_62.jpg?format=1500w"],
+    "sameAs": [],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Memberships & Packages",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "The Membership",
+          "description": "Unlimited Reformer Pilates classes, auto-renewing monthly",
+          "price": "185.00",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Drop In",
+          "description": "One credit to any Reformer Pilates class",
+          "price": "35.00",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "5-Pack",
+          "description": "5 class credits that never expire",
+          "price": "135.00",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "10-Pack",
+          "description": "10 class credits that never expire",
+          "price": "275.00",
+          "priceCurrency": "USD"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Critical CSS (above the fold) -->
+  <style>
+    body { opacity: 0; animation: bodyFadeIn 0.3s ease forwards; }
+    @keyframes bodyFadeIn { to { opacity: 1; } }
+
+    /* Content-visibility for below-the-fold sections */
+    .section:not(.hero) {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 600px;
+    }
+  </style>
+
+  <slot name="head" />
+</head>
+<body class="grain">
+  <a href="#hero" class="skip-link">Skip to content</a>
+  <slot />
+
+  <!-- Section progress dots -->
+  <nav class="section-dots" aria-label="Section navigation"></nav>
+
+  <!-- Reading progress bar -->
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <script src="/src/scripts/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,841 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Roper Mountain Auto Care | ASE-Certified Auto Repair in Greenville SC">
+  <Header />
+
+  <!-- HERO -->
+  <section class="hero" id="hero" data-label="Home">
+    <div class="hero-bg-wrap">
+      <img
+        src="https://lirp.cdn-website.com/84f2f64c/dms3rep/multi/opt/Hero_Image_Roper_Mountain-1920w.png"
+        alt="Roper Mountain Auto Care shop exterior in Greenville SC"
+        width="1920"
+        height="1080"
+        loading="eager"
+        decoding="async"
+        class="hero-bg-img hero-parallax"
+      />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="hero-tag section-tag">ASE-Certified Auto Repair in Greenville, SC</span>
+        <h1 class="hero-title">Precision Care for<br/>Every Mile Ahead</h1>
+        <p class="hero-sub">Locally owned, military friendly. From routine oil changes to advanced diagnostics — your vehicle deserves technicians who get it right the first time. Free courtesy inspection with every visit.</p>
+        <div class="hero-cta">
+          <a href="tel:+18642887633" class="btn btn-primary" data-magnetic>Call (864) 288-7633</a>
+          <a href="/services" class="btn btn-outline">Our Services
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="hero-badges">
+          <span class="badge badge-ase badge-float">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            ASE Certified
+          </span>
+          <span class="badge badge-military badge-float" style="animation-delay: 0.3s;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Military Friendly
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- TRUST BAR — verified claims from scraping only -->
+  <section class="trust-bar" id="trust" data-label="Trust">
+    <div class="container">
+      <p class="trust-slogan" data-animate="fade-up">Trusted Automotive Service — Locally Owned, Military Friendly</p>
+      <div class="trust-badges" data-animate="stagger">
+        <div class="trust-badge">
+          <div class="icon-blueprint">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h3>ASE Certified</h3>
+          <p>Gold-standard technician certification</p>
+        </div>
+        <div class="trust-badge">
+          <div class="icon-blueprint">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <h3>Free Courtesy Inspection</h3>
+          <p>Complimentary with every service visit</p>
+        </div>
+        <div class="trust-badge">
+          <div class="icon-blueprint">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h3>All Makes & Models</h3>
+          <p>Domestic, European, and Asian imports</p>
+        </div>
+        <div class="trust-badge">
+          <div class="icon-blueprint">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Military Friendly</h3>
+          <p>Proud to serve those who serve</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section section" id="services" data-label="Services">
+    <div class="container">
+      <span class="section-tag" data-animate="fade-up">What We Do</span>
+      <h2 data-animate="fade-up">Our Outstanding Services</h2>
+      <p class="section-intro" data-animate="fade-up">Comprehensive auto care from routine maintenance to complex repairs. Our ASE-certified technicians use state-of-the-art diagnostic equipment to get it right the first time.</p>
+
+      <div class="grid-services" data-animate="stagger">
+        <div class="card service-card-home">
+          <div class="service-icon-wrap">
+            <svg class="service-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <circle cx="24" cy="24" r="8"/>
+              <path d="M24 12v-4M24 40v-4M36 24h4M8 24h4M32.5 15.5l2.8-2.8M12.7 35.3l2.8-2.8M32.5 32.5l2.8 2.8M12.7 12.7l2.8 2.8"/>
+            </svg>
+          </div>
+          <h3>Oil Change</h3>
+          <p>Conventional and synthetic oil changes with multi-point inspection. Keep your engine running clean and efficient.</p>
+        </div>
+
+        <div class="card service-card-home">
+          <div class="service-icon-wrap">
+            <svg class="service-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <circle cx="24" cy="24" r="14"/>
+              <circle cx="24" cy="24" r="6"/>
+              <path d="M24 10v4M24 34v4M10 24h4M34 24h4"/>
+            </svg>
+          </div>
+          <h3>Brake Repair</h3>
+          <p>Pads, rotors, calipers, and complete brake system service. Your safety is our top priority on every job.</p>
+        </div>
+
+        <div class="card service-card-home">
+          <div class="service-icon-wrap">
+            <svg class="service-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <rect x="8" y="16" width="32" height="20" rx="3"/>
+              <path d="M16 16V12a8 8 0 0116 0v4"/>
+              <circle cx="24" cy="28" r="3"/>
+              <path d="M24 31v3"/>
+            </svg>
+          </div>
+          <h3>Engine Diagnostics</h3>
+          <p>Advanced computer diagnostics to pinpoint issues accurately. We identify the problem before recommending repairs.</p>
+        </div>
+
+        <div class="card service-card-home">
+          <div class="service-icon-wrap">
+            <svg class="service-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M8 24c0-8.8 7.2-16 16-16s16 7.2 16 16"/>
+              <path d="M14 32l-4 8h28l-4-8"/>
+              <circle cx="24" cy="24" r="4"/>
+            </svg>
+          </div>
+          <h3>Transmission Service</h3>
+          <p>Fluid changes, diagnostics, and repairs for automatic and manual transmissions. Smooth shifting guaranteed.</p>
+        </div>
+
+        <div class="card service-card-home">
+          <div class="service-icon-wrap">
+            <svg class="service-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M12 20c0-6.6 5.4-12 12-12s12 5.4 12 12"/>
+              <path d="M8 28h32"/>
+              <path d="M12 28v8h24v-8"/>
+              <path d="M20 24v-2M28 24v-2M24 24v-4"/>
+            </svg>
+          </div>
+          <h3>Air Conditioning</h3>
+          <p>A/C diagnostics, recharge, and full system repair. Stay comfortable through every Greenville summer.</p>
+        </div>
+
+        <div class="card service-card-home service-card-cta">
+          <div class="service-icon-wrap">
+            <svg class="service-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M24 4l4 8h8l-6 6 2 8-8-4-8 4 2-8-6-6h8z"/>
+              <path d="M12 36h24M16 40h16M20 44h8"/>
+            </svg>
+          </div>
+          <h3>All Services</h3>
+          <p>Fleet maintenance, pre-purchase inspections, and more. We work on all domestic, European, and Asian vehicles.</p>
+          <a href="/services" class="btn btn-outline">View All Services
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section class="amenities-section" id="amenities" data-label="Amenities">
+    <div class="container">
+      <span class="section-tag" data-animate="fade-up">Your Comfort Matters</span>
+      <h2 data-animate="fade-up">Shop Amenities</h2>
+
+      <div class="amenities-grid">
+        <div class="amenity-item">
+          <div class="icon-blueprint">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12.55a11 11 0 0114.08 0M1.42 9a16 16 0 0121.16 0M8.53 16.11a6 6 0 016.95 0M12 20h.01"/></svg>
+          </div>
+          <h4>Free Wi-Fi</h4>
+          <p>Stay connected while you wait</p>
+        </div>
+        <div class="amenity-item">
+          <div class="icon-blueprint">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+          </div>
+          <h4>Financing Available</h4>
+          <p>Flexible payment options</p>
+        </div>
+        <div class="amenity-item">
+          <div class="icon-blueprint">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 9V6a2 2 0 00-2-2H6a2 2 0 00-2 2v3"/><path d="M2 11v5a2 2 0 002 2h16a2 2 0 002-2v-5a2 2 0 00-4 0v2H6v-2a2 2 0 00-4 0z"/></svg>
+          </div>
+          <h4>Waiting Room</h4>
+          <p>Comfortable seating area</p>
+        </div>
+        <div class="amenity-item">
+          <div class="icon-blueprint">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4>After Hours Drop-Off</h4>
+          <p>Leave your car on your schedule</p>
+        </div>
+        <div class="amenity-item">
+          <div class="icon-blueprint">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
+          </div>
+          <h4>TV Available</h4>
+          <p>Entertainment while you wait</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS TIMELINE -->
+  <section class="process-section section" id="process" data-label="Process">
+    <div class="container">
+      <span class="section-tag" data-animate="fade-up">How It Works</span>
+      <h2 data-animate="fade-up">Your Visit, Step by Step</h2>
+      <p class="section-intro" data-animate="fade-up">We make auto repair straightforward and stress-free. Here is what to expect when you bring your vehicle to us.</p>
+
+      <div class="process-timeline">
+        <div class="timeline-track">
+          <svg class="timeline-line-svg" aria-hidden="true">
+            <line class="timeline-line-bg" x1="50%" y1="0" x2="50%" y2="100%"/>
+            <line class="timeline-line-progress" x1="50%" y1="0" x2="50%" y2="100%"/>
+          </svg>
+
+          <div class="timeline-step">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Schedule</h3>
+            <p class="step-desc">Call us or walk in. We accommodate your schedule with same-day appointments when available.</p>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Diagnose</h3>
+            <p class="step-desc">Our ASE-certified techs run a thorough diagnostic using state-of-the-art equipment. No guesswork.</p>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-number">3</div>
+            <h3 class="step-title">Approve</h3>
+            <p class="step-desc">We explain findings in plain language and provide an upfront estimate. No surprises, no pressure.</p>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-number">4</div>
+            <h3 class="step-title">Repair</h3>
+            <p class="step-desc">Expert repairs done right the first time, using quality parts. We keep you updated on progress.</p>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-number">5</div>
+            <h3 class="step-title">Inspect & Go</h3>
+            <p class="step-desc">Free courtesy inspection with every service. Drive away with confidence knowing your vehicle is safe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner" id="cta">
+    <div class="cta-banner-inner">
+      <div class="container">
+        <h2 class="cta-banner-title" data-animate="fade-up">Check Engine Light On?</h2>
+        <p class="cta-banner-text" data-animate="fade-up">Do not ignore the warning signs. Our advanced diagnostics find the issue fast so you get back on the road safely.</p>
+        <div data-animate="fade-up">
+          <a href="tel:+18642887633" class="btn btn-cta-banner" data-magnetic>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Call Now: (864) 288-7633
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS CTA — links to real review platforms, no fabricated quotes -->
+  <section class="reviews-section section" id="reviews" data-label="Reviews">
+    <div class="container">
+      <span class="section-tag" data-animate="fade-up">Customer Reviews</span>
+      <h2 data-animate="fade-up">See What Our Customers Say</h2>
+      <p class="section-intro" data-animate="fade-up">We let our work speak for itself. Check out our reviews on these trusted platforms.</p>
+
+      <div class="reviews-grid" data-animate="stagger">
+        <a href="https://google.com/maps/place//data=!4m2!3m1!1s0x885828e1b8d3f1ad:0xfcb9057bd0f9ea8c" target="_blank" rel="noopener noreferrer" class="review-platform-card card">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--color-primary)" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          <h3>Google Reviews</h3>
+          <p>Read reviews from local Greenville customers on Google</p>
+          <span class="review-link-arrow">
+            Read Reviews
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+
+        <a href="https://yelp.com/biz/roper-mountain-auto-care-greenville" target="_blank" rel="noopener noreferrer" class="review-platform-card card">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="#d32323" aria-hidden="true"><path d="M12.271 10.226l-3.367-6.06C8.295 3.09 7.265 3.02 6.807 3.58c-.305.373-.447.883-.447 1.39v7.02c0 .98.802 1.64 1.725 1.41l3.482-.88c.762-.193 1.146-.933.704-1.546l0 0zm.67 3.006l-3.47-.907c-.768-.2-1.5.34-1.5 1.117v.15c0 .486.22.95.61 1.26l2.97 2.37c.59.47 1.46.13 1.58-.62l.22-1.37c.15-.93-.39-1.77-1.41-2zm4.108-1.482l-2.99-1.88c-.71-.45-1.62.04-1.62.86v.11c0 .51.26.99.69 1.27l3.3 2.18c.66.43 1.51-.04 1.51-.84v-.42c0-.5-.33-.97-.89-1.28z"/></svg>
+          <h3>Yelp Reviews</h3>
+          <p>See what the Yelp community says about our service</p>
+          <span class="review-link-arrow">
+            Read Reviews
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+
+        <a href="https://facebook.com/RoperMountainAutoCare/" target="_blank" rel="noopener noreferrer" class="review-platform-card card">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="#1877f2" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          <h3>Facebook Reviews</h3>
+          <p>Connect with us and read recommendations on Facebook</p>
+          <span class="review-link-arrow">
+            Visit Page
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WELCOME / ABOUT PREVIEW -->
+  <section class="welcome-section section" id="about-preview" data-label="About">
+    <div class="container">
+      <div class="grid-asymmetric">
+        <div class="welcome-content" data-animate="fade-right">
+          <span class="section-tag">About Our Shop</span>
+          <h2>Welcome to Roper Mountain Auto Care</h2>
+          <p>We are proud to be a leading auto repair shop in Greenville, SC, committed to providing top-quality vehicle service with honesty and integrity. Whether you need routine auto maintenance or complex car repairs, our ASE-certified technicians have the expertise and state-of-the-art equipment to keep your vehicle running safely and reliably.</p>
+          <p>We work on all makes and models — from domestic favorites to European and Asian imports. Our shop is equipped with the latest diagnostic technology, allowing us to quickly identify issues and deliver effective repairs the first time.</p>
+          <a href="/about" class="btn btn-secondary">Learn More About Us
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="welcome-image" data-animate="fade-left">
+          <img
+            src="https://lirp.cdn-website.com/84f2f64c/dms3rep/multi/opt/Welcome_Image_Roper_Mountain-1920w.png"
+            alt="Roper Mountain Auto Care team working on a vehicle in their Greenville shop"
+            width="600"
+            height="450"
+            loading="lazy"
+            decoding="async"
+            class="welcome-img"
+          />
+          <div class="welcome-image-accent" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT PREVIEW -->
+  <section class="contact-preview section" id="contact-preview" data-label="Contact">
+    <div class="container">
+      <div class="grid-asymmetric-reverse">
+        <div class="map-wrap" data-animate="scale-in">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.5!2d-82.35!3d34.82!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885828e1b8d3f1ad%3A0xfcb9057bd0f9ea8c!2sRoper%20Mountain%20Auto%20Care!5e0!3m2!1sen!2sus!4v1"
+            width="600"
+            height="400"
+            style="border:0; width:100%; height:100%; min-height:300px; border-radius: var(--radius-lg);"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Roper Mountain Auto Care location on Google Maps"
+          ></iframe>
+        </div>
+        <div class="contact-info-preview" data-animate="fade-left">
+          <span class="section-tag">Visit Us</span>
+          <h2>Get In Touch</h2>
+          <div class="contact-details">
+            <a href="tel:+18642887633" class="contact-item phone-pulse">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <span>(864) 288-7633</span>
+            </a>
+            <div class="contact-item">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>1520 Roper Mountain Rd, Greenville, SC 29615</span>
+            </div>
+            <div class="contact-item">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Mon–Fri: 8:00 AM – 5:30 PM</span>
+            </div>
+          </div>
+          <a href="/contact" class="btn btn-primary" data-magnetic>Book an Appointment</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* ==================== HERO ==================== */
+  .hero {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-block-start: 80px;
+  }
+
+  .hero-bg-wrap {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .hero-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(42, 36, 36, 0.85) 0%,
+      rgba(42, 36, 36, 0.6) 40%,
+      rgba(104, 204, 209, 0.3) 100%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding-block: var(--space-8);
+  }
+
+  .hero-text {
+    max-width: 680px;
+  }
+
+  .hero .hero-tag {
+    color: var(--color-primary-light);
+
+    &::before {
+      background: var(--color-primary);
+    }
+  }
+
+  .hero .hero-title {
+    color: #faf8f6;
+    font-size: var(--text-hero);
+    font-weight: 800;
+    margin-block-end: var(--space-3);
+    line-height: 1.05;
+  }
+
+  .hero .hero-sub {
+    color: #d8d0cc;
+    font-size: var(--text-body);
+    max-width: 55ch;
+    margin-block-end: var(--space-4);
+    line-height: var(--leading-body);
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-block-end: var(--space-4);
+  }
+
+  .hero .btn-outline {
+    color: #faf8f6;
+    border-color: rgba(250, 248, 246, 0.3);
+
+    &:hover {
+      background: rgba(250, 248, 246, 0.1);
+      border-color: rgba(250, 248, 246, 0.5);
+      color: #fff;
+    }
+  }
+
+  .hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .hero .badge {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #faf8f6;
+  }
+
+  .hero-scroll-indicator {
+    position: absolute;
+    bottom: var(--space-4);
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(250, 248, 246, 0.5);
+    animation: scrollBounce 2s ease-in-out infinite;
+    z-index: 2;
+  }
+
+  @keyframes scrollBounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50%      { transform: translateX(-50%) translateY(8px); }
+  }
+
+  /* ==================== TRUST BAR ==================== */
+  .trust-bar {
+    background: var(--color-surface);
+    padding-block: var(--space-6);
+    margin-block-start: -2rem;
+    position: relative;
+    z-index: 3;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .trust-slogan {
+    font-family: var(--font-display);
+    font-size: var(--text-h4);
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-secondary);
+    margin-block-end: var(--space-4);
+    letter-spacing: var(--tracking-wide);
+    max-width: none;
+  }
+
+  .trust-badges {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .trust-badge {
+    text-align: center;
+    padding: var(--space-2);
+
+    & .icon-blueprint {
+      margin-inline: auto;
+      margin-block-end: var(--space-2);
+    }
+
+    & h3 {
+      font-size: var(--text-small);
+      font-weight: 700;
+      margin-block-end: 0.25rem;
+    }
+
+    & p {
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+      margin: 0;
+      max-width: none;
+    }
+  }
+
+  /* ==================== SERVICES ==================== */
+  .section-intro {
+    color: var(--color-text-muted);
+    max-width: 60ch;
+    margin-block-end: var(--space-6);
+  }
+
+  .service-card-home {
+    padding: var(--space-4);
+    text-align: center;
+
+    & h3 {
+      font-size: var(--text-h4);
+      margin-block: var(--space-2) var(--space-1);
+    }
+
+    & p {
+      font-size: var(--text-small);
+      color: var(--color-text-muted);
+      max-width: none;
+      margin-block-end: var(--space-2);
+    }
+  }
+
+  .service-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    margin-inline: auto;
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    background: rgba(104, 204, 209, 0.05);
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: -5px;
+      border: 1px dashed var(--color-primary-light);
+      border-radius: calc(var(--radius-lg) + 5px);
+      opacity: 0;
+      transition: opacity var(--duration-normal) var(--ease-smooth);
+    }
+  }
+
+  .service-card-home:hover .service-icon-wrap::after {
+    opacity: 1;
+  }
+
+  .service-card-cta {
+    background: var(--color-bg-alt);
+    border-style: dashed;
+    border-color: var(--color-accent);
+
+    & .btn {
+      margin-block-start: var(--space-2);
+    }
+  }
+
+  /* ==================== AMENITIES ==================== */
+  .amenities-section {
+    background: var(--color-bg-alt);
+    padding-block: var(--section-padding);
+    position: relative;
+  }
+
+  .amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+    margin-block-start: var(--space-6);
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  .amenity-item {
+    text-align: center;
+    padding: var(--space-3);
+
+    & .icon-blueprint {
+      margin-inline: auto;
+      margin-block-end: var(--space-2);
+    }
+
+    & h4 {
+      font-size: var(--text-small);
+      font-weight: 700;
+      margin-block-end: 0.25rem;
+    }
+
+    & p {
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+      max-width: none;
+      margin: 0;
+    }
+  }
+
+  /* ==================== CTA BANNER ==================== */
+  .cta-banner {
+    background: var(--color-primary);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-banner-inner {
+    padding-block: var(--space-8);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-banner-title {
+    color: var(--color-secondary);
+    font-size: var(--text-h1);
+    margin-block-end: var(--space-2);
+  }
+
+  .cta-banner-text {
+    color: var(--color-secondary);
+    opacity: 0.8;
+    max-width: 50ch;
+    margin-inline: auto;
+    margin-block-end: var(--space-4);
+  }
+
+  .btn-cta-banner {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-body);
+    padding: var(--space-2) var(--space-5);
+    background: var(--color-secondary);
+    color: #faf8f6;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: all var(--duration-normal) var(--ease-smooth);
+
+    &:hover {
+      background: var(--color-secondary-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(70, 57, 57, 0.3);
+      color: #fff;
+    }
+  }
+
+  /* ==================== REVIEWS CTA ==================== */
+  .reviews-grid {
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: 1fr;
+    margin-block-start: var(--space-4);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .review-platform-card {
+    text-align: center;
+    padding: var(--space-5);
+    text-decoration: none;
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+
+    & h3 {
+      font-size: var(--text-h4);
+      margin: 0;
+    }
+
+    & p {
+      font-size: var(--text-small);
+      color: var(--color-text-muted);
+      max-width: 30ch;
+      margin: 0;
+    }
+  }
+
+  .review-link-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    font-family: var(--font-display);
+    font-size: var(--text-small);
+    font-weight: 600;
+    color: var(--color-primary-dark);
+    margin-block-start: var(--space-1);
+    transition: gap var(--duration-fast) var(--ease-smooth);
+  }
+
+  .review-platform-card:hover .review-link-arrow {
+    gap: 0.7em;
+    color: var(--color-secondary);
+  }
+
+  /* ==================== WELCOME ==================== */
+  .welcome-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-1);
+
+    & h2 { margin-block-end: var(--space-2); }
+
+    & .btn { margin-block-start: var(--space-3); align-self: flex-start; }
+  }
+
+  .welcome-image {
+    position: relative;
+  }
+
+  .welcome-img {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .welcome-image-accent {
+    position: absolute;
+    inset: var(--space-3);
+    border: 2px dashed var(--color-primary);
+    border-radius: var(--radius-lg);
+    z-index: -1;
+    transform: translate(12px, 12px);
+    opacity: 0.3;
+  }
+
+  /* ==================== CONTACT PREVIEW ==================== */
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-block: var(--space-3) var(--space-4);
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-body);
+    color: var(--color-text);
+    text-decoration: none;
+
+    & svg {
+      color: var(--color-primary);
+      flex-shrink: 0;
+    }
+  }
+
+  a.contact-item:hover {
+    color: var(--color-primary-dark);
+  }
+
+  .contact-info-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & .btn { align-self: flex-start; }
+  }
+</style>

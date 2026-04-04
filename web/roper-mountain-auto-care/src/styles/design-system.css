@@ -1,0 +1,552 @@
+/* BRIEF CREATIVO
+   Negocio    : Roper Mountain Auto Care
+   Sector     : Auto Repair
+   Tono       : corporativo moderno + artesanal calido
+   Concepto   : "Precision con alma de vecino" — taller ASE-certified con calidez familiar
+   Diferenciador visual: Hero split con panel turquesa translucido; amenidades estilo blueprint tecnico animadas al scroll
+   Tipografia : Plus Jakarta Sans (display) + Libre Baskerville (body)
+   Mood       : turquesa · calido · preciso
+   Paleta base: #68ccd1, #463939, #f7f7f7, #333
+*/
+
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import "./animations.css";
+
+/* ========================================
+   DESIGN TOKENS
+   ======================================== */
+:root {
+  /* Paleta principal */
+  --color-primary:       #68ccd1;
+  --color-primary-dark:  #4fb3b8;
+  --color-primary-light: #8edde1;
+  --color-primary-glow:  rgba(104, 204, 209, 0.25);
+  --color-secondary:     #463939;
+  --color-secondary-light: #5e4e4e;
+  --color-accent:        #d4956a;
+  --color-accent-dark:   #b87a52;
+  --color-bg:            #f8f6f4;
+  --color-bg-alt:        #f0ece8;
+  --color-surface:       #ffffff;
+  --color-surface-warm:  #faf8f6;
+  --color-text:          #2a2424;
+  --color-text-muted:    #6b5f5f;
+  --color-text-light:    #998e8e;
+  --color-border:        #e2dcd6;
+  --color-border-light:  #eeebe7;
+
+  /* Overlay */
+  --overlay-turquesa:    rgba(104, 204, 209, 0.88);
+  --overlay-dark:        rgba(42, 36, 36, 0.7);
+
+  /* Espaciado (base 8px) */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 2.5rem;
+  --space-6: 3rem;
+  --space-8: 4rem;
+  --space-10: 5rem;
+  --space-12: 6rem;
+  --space-16: 8rem;
+
+  /* Tipografia fluida */
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body:    'Libre Baskerville', Georgia, serif;
+
+  --text-hero:  clamp(3rem, 8vw, 6rem);
+  --text-h1:    clamp(2rem, 5vw, 3.5rem);
+  --text-h2:    clamp(1.5rem, 3vw, 2.5rem);
+  --text-h3:    clamp(1.25rem, 2vw, 1.75rem);
+  --text-h4:    clamp(1.1rem, 1.5vw, 1.35rem);
+  --text-body:  clamp(1rem, 1.2vw, 1.125rem);
+  --text-small: clamp(0.8rem, 1vw, 0.9rem);
+  --text-xs:    clamp(0.7rem, 0.8vw, 0.8rem);
+
+  /* Line heights */
+  --leading-tight: 1.1;
+  --leading-snug:  1.3;
+  --leading-normal: 1.5;
+  --leading-body:  1.7;
+
+  /* Letter spacing */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.05em;
+  --tracking-wider: 0.1em;
+
+  /* Border radius */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-2xl:  32px;
+  --radius-full: 9999px;
+
+  /* Shadows — layered for depth */
+  --shadow-sm:    0 1px 3px rgba(70, 57, 57, 0.06);
+  --shadow-md:    0 4px 12px rgba(70, 57, 57, 0.08);
+  --shadow-lg:    0 8px 30px rgba(70, 57, 57, 0.1);
+  --shadow-xl:    0 16px 50px rgba(70, 57, 57, 0.12);
+  --shadow-glow:  0 0 30px var(--color-primary-glow);
+  --shadow-card:  0 4px 24px -4px var(--color-primary-glow),
+                  0 1px 4px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 16px 48px -8px var(--color-primary-glow),
+                  0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-btn:   0 4px 16px var(--color-primary-glow);
+  --shadow-inset: inset 0 2px 6px rgba(70, 57, 57, 0.06);
+
+  /* Transitions */
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out:    cubic-bezier(0, 0, 0.2, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 350ms;
+  --duration-slow: 600ms;
+
+  /* Secciones */
+  --section-padding:   clamp(5rem, 10vw, 10rem);
+  --container-max:     1200px;
+  --container-padding: clamp(1rem, 5vw, 2rem);
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-secondary);
+  margin: 0;
+}
+
+h1 { font-size: var(--text-h1); }
+h2 { font-size: var(--text-h2); }
+h3 { font-size: var(--text-h3); }
+h4 { font-size: var(--text-h4); }
+
+p {
+  margin: 0 0 var(--space-2);
+  max-width: 65ch;
+}
+
+a {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-smooth);
+
+  &:hover {
+    color: var(--color-secondary);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.section {
+  padding-block: var(--section-padding);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-small);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-smooth);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  border-color: var(--color-primary);
+
+  &:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    color: #fff;
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-2px);
+  }
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+  border-color: var(--color-secondary);
+
+  &:hover {
+    background-color: var(--color-secondary-light);
+    border-color: var(--color-secondary-light);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-primary-dark);
+  border-color: var(--color-primary);
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    transform: translateY(-2px);
+  }
+}
+
+/* ========================================
+   GRAIN OVERLAY — subtle paper texture
+   ======================================== */
+.grain::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+/* ========================================
+   GRADIENT MESH BACKGROUNDS
+   ======================================== */
+.mesh-bg {
+  background:
+    radial-gradient(ellipse at 20% 50%, var(--color-primary-glow) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(212, 149, 106, 0.12) 0%, transparent 50%),
+    var(--color-bg);
+}
+
+.mesh-bg-dark {
+  background:
+    radial-gradient(ellipse at 30% 70%, rgba(104, 204, 209, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 30%, rgba(212, 149, 106, 0.1) 0%, transparent 50%),
+    var(--color-secondary);
+}
+
+/* ========================================
+   SEPARATORS & DECORATIVE DETAILS
+   ======================================== */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  border: none;
+  margin-block: var(--space-6);
+}
+
+.divider-accent {
+  height: 3px;
+  width: 60px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  border: none;
+  border-radius: var(--radius-full);
+}
+
+.section-tag {
+  font-family: var(--font-display);
+  font-size: var(--text-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-primary-dark);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-block-end: var(--space-3);
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background: var(--color-accent);
+    border-radius: var(--radius-full);
+  }
+}
+
+/* ========================================
+   GRID-BREAKING ELEMENTS
+   ======================================== */
+.bleed-right {
+  margin-inline-end: calc(-1 * var(--container-padding));
+  padding-inline-end: 0;
+}
+
+.bleed-left {
+  margin-inline-start: calc(-1 * var(--container-padding));
+  padding-inline-start: 0;
+}
+
+.bleed-full {
+  margin-inline: calc(-1 * var(--container-padding));
+  width: calc(100% + 2 * var(--container-padding));
+}
+
+@media (min-width: 768px) {
+  .bleed-right {
+    margin-inline-end: calc(-50vw + var(--container-max) / 2);
+  }
+
+  .bleed-left {
+    margin-inline-start: calc(-50vw + var(--container-max) / 2);
+  }
+
+  .bleed-full {
+    margin-inline: calc(-50vw + var(--container-max) / 2);
+    width: 100vw;
+  }
+}
+
+.offset-up {
+  margin-block-start: calc(-1 * var(--space-12));
+  position: relative;
+  z-index: 2;
+}
+
+.skew-section {
+  position: relative;
+  padding-block: calc(var(--section-padding) + 2rem);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    transform: skewY(-2deg);
+    transform-origin: top left;
+    z-index: -1;
+  }
+}
+
+/* ========================================
+   ASYMMETRIC GRID LAYOUTS
+   ======================================== */
+.grid-asymmetric {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.grid-asymmetric-reverse {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.grid-services {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: 1fr;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ========================================
+   CARD COMPONENT
+   ======================================== */
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-card);
+  transition: all var(--duration-normal) var(--ease-smooth);
+  container-type: inline-size;
+  border: 1px solid var(--color-border-light);
+
+  &:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+  }
+
+  &:has(img) {
+    padding: 0;
+    overflow: hidden;
+
+    & img {
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+
+    & .card-content {
+      padding: var(--space-4);
+    }
+  }
+}
+
+/* Container queries for cards */
+@container (min-width: 400px) {
+  .card-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+  }
+}
+
+/* ========================================
+   BADGE COMPONENTS
+   ======================================== */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  padding: 0.4em 1em;
+  border-radius: var(--radius-full);
+  border: 1.5px solid currentColor;
+}
+
+.badge-ase {
+  color: var(--color-primary-dark);
+  background: rgba(104, 204, 209, 0.1);
+  border-color: var(--color-primary);
+}
+
+.badge-military {
+  color: var(--color-secondary);
+  background: rgba(70, 57, 57, 0.08);
+  border-color: var(--color-secondary);
+}
+
+/* ========================================
+   BLUEPRINT/TECHNICAL ICON STYLE
+   ======================================== */
+.icon-blueprint {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  color: var(--color-primary-dark);
+  background: rgba(104, 204, 209, 0.06);
+  position: relative;
+  transition: all var(--duration-normal) var(--ease-smooth);
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border: 1px dashed var(--color-primary-light);
+    border-radius: calc(var(--radius-md) + 4px);
+    opacity: 0;
+    transition: opacity var(--duration-normal) var(--ease-smooth);
+  }
+
+  &:hover {
+    background: var(--color-primary);
+    color: var(--color-surface);
+    transform: scale(1.05);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+/* ========================================
+   REDUCED MOTION
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ========================================
+   TAILWIND v4 THEME EXTENSION
+   ======================================== */
+@theme {
+  --color-primary: #68ccd1;
+  --color-primary-dark: #4fb3b8;
+  --color-secondary: #463939;
+  --color-accent: #d4956a;
+  --font-family-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-family-body: 'Libre Baskerville', Georgia, serif;
+}

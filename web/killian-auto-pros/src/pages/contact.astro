@@ -1,0 +1,513 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const phone = '864-648-8408';
+
+const locations = [
+  { num: '01', name: 'Mauldin', address: '451 N Main St, Mauldin, SC 29662', mapQuery: '451+N+Main+St+Mauldin+SC+29662' },
+  { num: '02', name: 'Greenville', address: '3111 Augusta St, Greenville, SC 29605', mapQuery: '3111+Augusta+St+Greenville+SC+29605' },
+  { num: '03', name: 'Fountain Inn', address: '550 N Woods Dr, Fountain Inn, SC 29644', mapQuery: '550+N+Woods+Dr+Fountain+Inn+SC+29644' },
+  { num: '04', name: 'Spartanburg', address: '120B Southport Rd, Spartanburg, SC 29306', mapQuery: '120B+Southport+Rd+Spartanburg+SC+29306' },
+];
+
+const services = [
+  'AC & Heat Repair',
+  'Brake Repair',
+  'Diagnostics',
+  'Engines',
+  'Jeep Service',
+  'Oil Changes & Maintenance',
+  'Steering & Suspension',
+  'Tires & Alignments',
+  'Transmissions',
+  'Other',
+];
+---
+
+<BaseLayout
+  title="Contact Us & Book Appointment"
+  description="Book an appointment at any of our 4 SC locations. Call 864-648-8408 or use our online form. Mauldin, Greenville, Fountain Inn, Spartanburg."
+>
+  <Header />
+
+  <!-- ============================================
+       HERO — Contact
+       ============================================ -->
+  <section class="contact-hero metal-bg">
+    <div class="container contact-hero__content">
+      <span class="hero-tag section-tag section-tag--light">Get In Touch</span>
+      <h1 class="hero-title" data-split>Let Us Fix It Right</h1>
+      <div class="hero-line red-line red-line--wide" aria-hidden="true"></div>
+      <p class="hero-sub">
+        Book an appointment online, call us, or drop by any of our four South Carolina locations.
+        Free estimates on every repair.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       QUICK CONTACT
+       ============================================ -->
+  <section class="quick-contact" data-animate="fade-up">
+    <div class="container quick-contact__inner">
+      <a href={`tel:${phone.replace(/-/g, '')}`} class="quick-contact__item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+        <div>
+          <span class="text-label">Call Us</span>
+          <strong>{phone}</strong>
+        </div>
+      </a>
+
+      <div class="quick-contact__item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="12 6 12 12 16 14"/>
+        </svg>
+        <div>
+          <span class="text-label">Hours</span>
+          <strong>Call For Current Hours</strong>
+        </div>
+      </div>
+
+      <div class="quick-contact__item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        <div>
+          <span class="text-label">Locations</span>
+          <strong>4 Shops Across SC</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       APPOINTMENT STEPPER
+       ============================================ -->
+  <section class="section-padding" id="appointment">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Online Booking</span>
+        <h2>Book Your Appointment</h2>
+        <p>Select your service, pick a location, and fill in your details. We will confirm within one business day.</p>
+      </div>
+
+      <div class="stepper" data-stepper data-animate="fade-up">
+        <!-- Progress bar -->
+        <div class="stepper__progress-track">
+          <div class="stepper__progress-fill" data-step-progress></div>
+        </div>
+
+        <!-- Step indicators -->
+        <div class="stepper__indicators">
+          <div class="stepper__indicator" data-step-indicator>
+            <div class="stepper__indicator-dot">1</div>
+            <span class="stepper__indicator-label">Service</span>
+          </div>
+          <div class="stepper__indicator" data-step-indicator>
+            <div class="stepper__indicator-dot">2</div>
+            <span class="stepper__indicator-label">Location</span>
+          </div>
+          <div class="stepper__indicator" data-step-indicator>
+            <div class="stepper__indicator-dot">3</div>
+            <span class="stepper__indicator-label">Vehicle</span>
+          </div>
+          <div class="stepper__indicator" data-step-indicator>
+            <div class="stepper__indicator-dot">4</div>
+            <span class="stepper__indicator-label">Confirm</span>
+          </div>
+        </div>
+
+        <!-- STEP 1: Service -->
+        <div class="stepper__panel" data-step>
+          <h3>What service do you need?</h3>
+          <p style="color: var(--color-text-muted); margin-block-end: var(--space-4);">Select one or describe your issue below.</p>
+          <div class="option-grid">
+            {services.map((s) => (
+              <button class="option-card" type="button" data-value={s}>{s}</button>
+            ))}
+          </div>
+          <div class="form-field" style="margin-block-start: var(--space-3);">
+            <label for="service-notes">Additional details (optional)</label>
+            <textarea id="service-notes" placeholder="Describe any symptoms, noises, or concerns..."></textarea>
+          </div>
+          <div class="stepper__nav">
+            <span></span>
+            <button class="btn btn--primary" data-step-next type="button">
+              Next: Location <span class="arrow" aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 2: Location -->
+        <div class="stepper__panel" data-step>
+          <h3>Which location works best?</h3>
+          <p style="color: var(--color-text-muted); margin-block-end: var(--space-4);">All locations offer the full range of services.</p>
+          <div class="option-grid option-grid--locations">
+            {locations.map((loc) => (
+              <button class="option-card" type="button" data-value={loc.name}>
+                <strong style="font-family: var(--font-display); text-transform: uppercase; font-size: 1.2rem;">{loc.name}</strong>
+                <span style="font-size: var(--text-small); color: var(--color-text-muted); display: block; margin-block-start: 0.25rem;">{loc.address}</span>
+              </button>
+            ))}
+          </div>
+          <div class="stepper__nav">
+            <button class="btn btn--outline" data-step-prev type="button">
+              <span class="arrow" aria-hidden="true" style="transform: rotate(180deg);">&rarr;</span> Back
+            </button>
+            <button class="btn btn--primary" data-step-next type="button">
+              Next: Vehicle <span class="arrow" aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 3: Vehicle Info -->
+        <div class="stepper__panel" data-step>
+          <h3>Your Vehicle & Contact</h3>
+          <p style="color: var(--color-text-muted); margin-block-end: var(--space-4);">Tell us about your vehicle so we can prepare for your visit.</p>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="vehicle-year">Year</label>
+              <input type="text" id="vehicle-year" placeholder="e.g. 2019" />
+            </div>
+            <div class="form-field">
+              <label for="vehicle-make">Make</label>
+              <input type="text" id="vehicle-make" placeholder="e.g. Toyota" />
+            </div>
+            <div class="form-field">
+              <label for="vehicle-model">Model</label>
+              <input type="text" id="vehicle-model" placeholder="e.g. Camry" />
+            </div>
+            <div class="form-field">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" placeholder="John Doe" required />
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" placeholder="(864) 555-0123" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="john@example.com" />
+            </div>
+          </div>
+          <div class="stepper__nav">
+            <button class="btn btn--outline" data-step-prev type="button">
+              <span class="arrow" aria-hidden="true" style="transform: rotate(180deg);">&rarr;</span> Back
+            </button>
+            <button class="btn btn--primary" data-step-next type="button">
+              Review & Submit <span class="arrow" aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 4: Confirm -->
+        <div class="stepper__panel" data-step>
+          <h3>Review Your Appointment</h3>
+          <p style="color: var(--color-text-muted); margin-block-end: var(--space-4);">Please verify your details. We will confirm within one business day.</p>
+          <div class="confirm-box">
+            <p class="text-label">This is a request — not a confirmed booking. Our team will call you to finalize the date, time, and any details.</p>
+          </div>
+          <div class="stepper__nav">
+            <button class="btn btn--outline" data-step-prev type="button">
+              <span class="arrow" aria-hidden="true" style="transform: rotate(180deg);">&rarr;</span> Back
+            </button>
+            <button class="btn btn--brutal btn--lg" type="button" data-magnetic onclick="alert('Appointment request submitted! We will call you within one business day to confirm.')">
+              Submit Request <span class="arrow" aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       LOCATIONS MAP
+       ============================================ -->
+  <section class="section-padding metal-bg--light" id="locations">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Our Shops</span>
+        <h2>Find Your Nearest Location</h2>
+      </div>
+
+      <div class="grid-locations" data-animate="stagger">
+        {locations.map((loc) => (
+          <div class="location-card">
+            <div class="location-card__number-bg" aria-hidden="true">{loc.num}</div>
+            <div>
+              <span class="location-card__pulse" aria-hidden="true"></span>
+              <span class="text-label">Location {loc.num}</span>
+            </div>
+            <h3 class="location-card__name">{loc.name}</h3>
+            <p class="location-card__address">{loc.address}</p>
+            <a
+              href={`https://maps.google.com/?q=${loc.mapQuery}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--primary"
+              style="margin-block-start: var(--space-2); font-size: 0.9rem; padding: 0.5rem 1.25rem;"
+            >
+              Open in Maps
+            </a>
+          </div>
+        ))}
+      </div>
+
+      <!-- Multi-location map embed -->
+      <div class="map-embed" data-animate="fade-up" style="margin-block-start: var(--space-8);">
+        <iframe
+          src="https://maps.google.com/maps?q=Killian+Auto+Pros+Mauldin+SC&output=embed"
+          width="100%"
+          height="400"
+          style="border:0; border-radius: var(--radius-lg);"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Killian Auto Pros locations map"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       GENERAL CONTACT FORM
+       ============================================ -->
+  <section class="section-padding" id="message">
+    <div class="container">
+      <div class="contact-grid">
+        <div data-animate="fade-left">
+          <span class="section-tag">General Inquiry</span>
+          <h2>Send Us A Message</h2>
+          <p style="color: var(--color-text-muted); margin-block: var(--space-2) var(--space-4);">
+            Not ready to book? Ask us anything. We typically respond within a few hours during business hours.
+          </p>
+          <div class="contact-info">
+            <div class="contact-info__item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+              <span>{phone}</span>
+            </div>
+            <div class="contact-info__item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>4 locations across SC</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" data-animate="fade-right" onsubmit="event.preventDefault(); alert('Message sent! We will get back to you soon.');">
+          <div class="form-field">
+            <label for="contact-name">Full Name</label>
+            <input type="text" id="contact-name" placeholder="Your name" required />
+          </div>
+          <div class="form-field">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-field">
+            <label for="contact-phone">Phone (optional)</label>
+            <input type="tel" id="contact-phone" placeholder="(864) 555-0123" />
+          </div>
+          <div class="form-field">
+            <label for="contact-service">Service of Interest</label>
+            <select id="contact-service">
+              <option value="">Select a service...</option>
+              {services.map((s) => (
+                <option value={s}>{s}</option>
+              ))}
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" placeholder="How can we help?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg" data-magnetic>
+            Send Message <span class="arrow" aria-hidden="true">&rarr;</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+
+  <!-- Option card selection logic -->
+  <script>
+    document.querySelectorAll('.option-grid').forEach((grid) => {
+      grid.addEventListener('click', (e) => {
+        const card = e.target.closest('.option-card');
+        if (!card) return;
+        grid.querySelectorAll('.option-card').forEach(c => c.classList.remove('selected'));
+        card.classList.add('selected');
+      });
+    });
+  </script>
+</BaseLayout>
+
+<style>
+  /* ---- Contact Hero ---- */
+  .contact-hero {
+    padding-block: 10rem 5rem;
+  }
+
+  .contact-hero__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .contact-hero .hero-title {
+    font-size: var(--text-h1);
+    color: var(--color-text-inverse);
+    max-width: 14ch;
+    margin-block: var(--space-3) var(--space-2);
+  }
+
+  .contact-hero .hero-sub {
+    color: var(--color-metal);
+    max-width: 50ch;
+  }
+
+  /* ---- Quick Contact Bar ---- */
+  .quick-contact {
+    background: var(--color-secondary);
+    padding-block: var(--space-4);
+  }
+
+  .quick-contact__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .quick-contact__item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--color-text-inverse);
+    text-decoration: none;
+    padding: var(--space-2);
+    border: 1px solid oklch(1 0 0 / 0.08);
+    transition: border-color var(--duration-fast) ease;
+
+    &:hover {
+      border-color: var(--color-primary);
+    }
+
+    & svg {
+      flex-shrink: 0;
+      color: var(--color-primary);
+    }
+
+    & .text-label {
+      color: var(--color-metal);
+      margin-block-end: 0.125rem;
+    }
+
+    & strong {
+      font-family: var(--font-display), 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: var(--tracking-wide);
+      text-transform: uppercase;
+    }
+  }
+
+  /* ---- Stepper ---- */
+  .stepper {
+    max-width: 800px;
+    margin-inline: auto;
+  }
+
+  .option-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+
+    @media (min-width: 480px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .option-grid--locations {
+    @media (min-width: 480px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .confirm-box {
+    background: var(--color-surface);
+    border-inline-start: 4px solid var(--color-primary);
+    padding: var(--space-3) var(--space-4);
+    margin-block-end: var(--space-4);
+  }
+
+  /* ---- Contact Grid ---- */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-block-start: var(--space-4);
+  }
+
+  .contact-info__item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-body);
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .contact-form .btn {
+    align-self: start;
+  }
+
+  /* ---- Map ---- */
+  .map-embed iframe {
+    width: 100%;
+    min-height: 350px;
+  }
+</style>

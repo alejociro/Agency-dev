@@ -1,0 +1,150 @@
+{
+  "cliente": "Roper Mountain Auto Care",
+  "url_auditada": "https://www.ropermountainautocare.com/",
+  "sector": "Auto Repair",
+  "benchmark_aplicado": "Servicio local (Auto Repair) — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Tecnico: 50. Aplicado por ser un taller de reparacion automotriz local en Greenville, SC.",
+  "fecha": "2026-04-03",
+  "scores": {
+    "seo": 52,
+    "ux_ui": 50,
+    "marketing": 48,
+    "contenido": 52,
+    "tecnico": 42,
+    "total": 49
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta description bien redactada con keyword principal, ubicacion y CTA: 'leading auto repair shop in Greenville, SC'",
+        "Logo personalizado implementado correctamente con URL accesible",
+        "Estructura de URLs limpia y descriptiva: /about-us, /services, /appointments, /reviews"
+      ],
+      "negativos": [
+        "Meta title es solo 'Roper Mountain Auto Care' — sin keywords de servicio ni ubicacion",
+        "12 items de navegacion puede generar sobrecarga en mobile",
+        "Imagenes hero con alt text generico ('Roper Mountain Auto Care hero') sin keywords de servicio",
+        "Sitio en DudaOne (CDN-hosted builder) — limitaciones de personalizacion y SEO avanzado"
+      ],
+      "recomendaciones": [
+        { "accion": "Optimizar meta title: 'Roper Mountain Auto Care | Auto Repair in Greenville SC'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Enriquecer alt text de imagenes con keywords de servicio y ubicacion", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar schema markup AutoRepair con direccion, horarios y servicios", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Crear paginas individuales por servicio con contenido optimizado para SEO local", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores profesional y diferenciada (#68ccd1 turquesa, #463939 marron) — distingue del rojo/negro tipico de auto repair",
+        "Dos tipografias bien elegidas: Source Sans Pro para body y Montserrat para headings",
+        "Imagenes hero y welcome de calidad que muestran el taller y equipo"
+      ],
+      "negativos": [
+        "12 items de navegacion sin agrupacion — sobrecarga especialmente en mobile",
+        "Lista de servicios sin imagenes representativas — solo texto plano",
+        "Amenidades listadas como texto simple — sin iconografia ni diseno visual",
+        "Paginas de 'Leave a Review' y 'Directions' podrian integrarse en otras secciones"
+      ],
+      "recomendaciones": [
+        { "accion": "Consolidar navegacion: agrupar bajo 'Services', 'About', 'Contact' con submenus", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar iconografia a amenidades: WiFi, financing, waiting room, drop-off, TV", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Agregar imagenes a cada servicio listado para impacto visual", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Integrar 'Leave a Review' como CTA en seccion de reviews, no como pagina separada", "prioridad": "baja", "tipo": "quick_win" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Propuesta de valor solida: ASE-certified, locally owned, military friendly — triple diferenciador",
+        "Courtesy inspection gratuita con cada servicio — valor agregado tangible",
+        "Pagina dedicada de reviews y opcion de dejar resena — ciclo de social proof"
+      ],
+      "negativos": [
+        "No hay testimonios visibles en la pagina principal — reviews en pagina separada",
+        "No hay ofertas ni cupones visibles — pagina de 'Specials' existe pero sin contenido en scraping",
+        "Slogan 'Trusted Automotive Service' es generico — no diferencia de competidores",
+        "No hay garantia de servicio mencionada explicitamente"
+      ],
+      "recomendaciones": [
+        { "accion": "Integrar 3-5 resenas destacadas en la pagina principal para prueba social inmediata", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Activar pagina de Specials con ofertas estacionales y cupones", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reformular slogan con diferenciador concreto: 'ASE-Certified Auto Repair — Free Inspection with Every Visit'", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Agregar garantia de servicio explicita (ej. '12-month/12,000-mile warranty')", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Texto de bienvenida extenso y bien redactado que establece experiencia y capacidades",
+        "Mencion explicita de todos los tipos de vehiculos: domestic, European, Asian imports",
+        "Lista de amenidades clara: Free WiFi, Financing, Waiting Room, After Hours Drop-Off, TV"
+      ],
+      "negativos": [
+        "Lista de servicios superficial: solo nombres sin descripcion (Oil Change, Brake Repair, etc.)",
+        "No hay horarios de atencion publicados en el scraping",
+        "No hay email de contacto — solo telefono disponible",
+        "Blog existe como URL pero sin contenido evidente"
+      ],
+      "recomendaciones": [
+        { "accion": "Expandir cada servicio con descripcion, proceso, duracion estimada y precios orientativos", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Publicar horarios de atencion de forma prominente en header y footer", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar email de contacto y formulario de consulta general", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Activar blog con contenido mensual de mantenimiento automotriz para SEO", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "DudaOne ofrece hosting con CDN incluido para buena velocidad de carga",
+        "Logo y favicon personalizados correctamente implementados",
+        "Formularios de appointment booking y leave a review presentes"
+      ],
+      "negativos": [
+        "DudaOne es un website builder con limitaciones de personalizacion y SEO avanzado",
+        "No hay email de contacto publicado en el sitio",
+        "Redes sociales limitadas a Facebook, Yelp y Google — sin Instagram",
+        "Sin integracion de chat en vivo para consultas rapidas"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a stack con mayor control sobre SEO y performance", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar email de contacto y formulario de consulta general", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Crear perfil de Instagram para contenido visual del taller", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Implementar chat en vivo o WhatsApp Business", "prioridad": "baja", "tipo": "opcional" }
+      ],
+      "stack_actual": "DudaOne (CDN-hosted website builder)",
+      "stack_recomendado": "Astro + Tailwind CSS",
+      "integraciones": ["Google Maps embed", "Appointment booking form", "Google Reviews widget", "Yelp reviews integration"],
+      "complejidad": "media"
+    }
+  },
+  "quick_wins": [
+    "Optimizar meta title con keywords y ubicacion",
+    "Integrar resenas destacadas en pagina principal",
+    "Activar pagina de Specials con ofertas estacionales",
+    "Publicar horarios de atencion prominentemente",
+    "Agregar iconografia a amenidades"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Optimizar meta title y alt text de imagenes",
+      "Publicar horarios de atencion",
+      "Integrar resenas en pagina principal"
+    ],
+    "mes_1": [
+      "Consolidar navegacion con submenus",
+      "Expandir contenido de servicios con descripciones detalladas",
+      "Activar ofertas estacionales en Specials",
+      "Agregar email y formulario de contacto",
+      "Implementar schema markup AutoRepair"
+    ],
+    "largo_plazo": [
+      "Migrar a stack moderno (Astro) para mayor control SEO",
+      "Activar blog con contenido educativo mensual",
+      "Crear perfil de Instagram y estrategia de contenido visual",
+      "Implementar garantia de servicio explicita"
+    ]
+  },
+  "resumen_ejecutivo": "Roper Mountain Auto Care tiene una base solida con buenas imagenes, logo profesional, paleta diferenciada y texto de bienvenida que establece credibilidad con certificacion ASE y servicio military friendly, pero el meta title sin keywords, servicios sin descripcion y la falta de horarios y ofertas visibles limitan su conversion. La plataforma DudaOne ofrece estabilidad pero restringe personalizacion avanzada y SEO tecnico. Una migracion a stack moderno con contenido expandido, resenas integradas y ofertas activas elevaria tanto el posicionamiento local como la tasa de conversion.",
+  "stack_para_web": {
+    "framework": "astro",
+    "estilos": "tailwind",
+    "extras": ["google maps embed", "appointment booking form", "google reviews widget", "specials/coupons section"],
+    "justificacion": "Taller local con multiples paginas de servicios, blog, reviews, specials y appointments — complejidad media que se beneficia de SSG con Astro para SEO local y performance."
+  }
+}

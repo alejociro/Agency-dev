@@ -1,0 +1,150 @@
+{
+  "cliente": "Refora",
+  "url_auditada": "https://reforagvl.com/",
+  "sector": "Pilates, Yoga & Coffee Studio",
+  "benchmark_aplicado": "Profesional independiente / Fitness — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Tecnico: 45. Aplicado por ser un estudio de Pilates/yoga con cafe local en Greenville, SC.",
+  "fecha": "2026-04-03",
+  "scores": {
+    "seo": 32,
+    "ux_ui": 48,
+    "marketing": 50,
+    "contenido": 40,
+    "tecnico": 40,
+    "total": 42
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title incluye nombre y servicios clave: 'Refora - Pilates, Yoga, & Coffee'",
+        "Favicon personalizado presente con branding propio",
+        "Estructura de URLs limpia y descriptiva: /studio/, /schedule/, /membership/, /cafe/"
+      ],
+      "negativos": [
+        "Meta description es null — sin control sobre snippet en SERP",
+        "Zero imagenes en todo el scraping — sitio completamente sin contenido visual indexable",
+        "URL del logo es null — no hay imagen de marca indexable",
+        "No se detectan keywords de ubicacion en meta — 'Greenville' ausente del title"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar meta description: 'Pilates, Yoga & Coffee Studio in Greenville, SC. Reform your body, recharge through community.'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Incluir 'Greenville SC' en meta title para posicionamiento local", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar imagenes optimizadas con alt text a todas las secciones", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar schema markup LocalBusiness y FitnessCenter con servicio de cafe", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores sofisticada y neutral (#32373c, #8b7d6b, #c4a97d) transmite wellness premium",
+        "Navegacion completa con 10 items que cubren todos los aspectos del negocio",
+        "Concepto de marca bien articulado: 'Reform. Recharge. Repeat.' como filosofia visual"
+      ],
+      "negativos": [
+        "Zero imagenes detectadas en todo el sitio — experiencia visual completamente plana",
+        "Solo una tipografia generica (System/inherit) — sin identidad tipografica",
+        "10 items de navegacion puede ser excesivo para mobile — necesita agrupacion",
+        "No hay elementos visuales del cafe ni del estudio que transmitan la experiencia"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar fotografia profesional del estudio, clases en accion y ambiente del cafe", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agrupar navegacion: combinar Studio/Schedule/Membership bajo 'Pilates & Yoga' y simplificar", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Definir tipografias de marca que reflejen la estetica wellness/premium del concepto", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Crear seccion visual del cafe con fotos de bebidas y ambiente", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Propuesta de valor diferenciada: Pilates + Yoga + Cafe en un solo espacio — concepto unico",
+        "Slogan memorable y aspiracional: 'Growth Happens Through Rhythm, Not Rush'",
+        "CTAs variados y orientados a accion: 'JOIN THE MOVEMENT', 'Download The App'"
+      ],
+      "negativos": [
+        "No hay precios visibles en la pagina principal — el visitante no sabe cuanto cuesta",
+        "No hay testimonios ni resenas de miembros",
+        "No hay oferta introductoria visible para nuevos miembros",
+        "Telefono de contacto es null — solo email disponible, barrera para contacto rapido"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar precios de membresia o al menos rango de tarifas en pagina principal", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar testimonios de miembros actuales con fotos y resultados", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear oferta introductoria destacada: 'First Week Free' o 'Intro Package'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar numero de telefono o chat en vivo para contacto inmediato", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Definicion creativa del nombre 'Re-for-a' con pronunciacion y significado — branding fuerte",
+        "Descripciones evocadoras del estudio y cafe que transmiten la experiencia",
+        "Filosofia de marca bien articulada: 'Reform. Recharge. Repeat.'"
+      ],
+      "negativos": [
+        "Contenido predominantemente aspiracional — falta informacion practica (precios, horarios detallados, tipos de clase)",
+        "Horarios genericos (5AM-5PM weekdays) sin detalle de clases especificas",
+        "No hay descripcion de tipos de clases ofrecidas (Reformer, Mat, Yoga estilos)",
+        "Seccion de cafe sin menu, precios ni detalle de ofertas"
+      ],
+      "recomendaciones": [
+        { "accion": "Crear pagina de clases con tipos, niveles, duracion y descripcion detallada", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Publicar menu del cafe con precios y ofertas especiales", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Agregar horarios detallados de clases por dia y tipo", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Crear seccion 'What to Expect' para nuevos miembros", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "WordPress es un CMS robusto y facil de mantener",
+        "Favicon personalizado implementado correctamente",
+        "Estructura de paginas bien organizada con URLs semanticas"
+      ],
+      "negativos": [
+        "WordPress sin tema especifico identificado — posible tema generico o custom sin optimizar",
+        "Sin formularios de contacto detectados",
+        "Sin integracion de sistema de booking — depende de app externa ('Download The App')",
+        "Logo URL null — imagen de marca no implementada correctamente"
+      ],
+      "recomendaciones": [
+        { "accion": "Implementar logo visual en el header del sitio", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Integrar widget de booking/schedule directamente en el sitio", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar formulario de contacto con validacion", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Optimizar WordPress con cache plugin y lazy loading de imagenes", "prioridad": "media", "tipo": "mejora_estructural" }
+      ],
+      "stack_actual": "WordPress",
+      "stack_recomendado": "Astro + Tailwind CSS",
+      "integraciones": ["Booking/schedule widget", "Google Maps embed", "Instagram feed", "Cafe menu display"],
+      "complejidad": "media"
+    }
+  },
+  "quick_wins": [
+    "Agregar meta description con keywords y ubicacion",
+    "Incluir 'Greenville SC' en meta title",
+    "Agregar precios de membresia visibles",
+    "Implementar logo visual en header",
+    "Agregar testimonios de miembros"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Corregir meta title y agregar meta description",
+      "Implementar logo visual en header",
+      "Agregar precios de membresia en pagina principal"
+    ],
+    "mes_1": [
+      "Agregar fotografia profesional del estudio y cafe",
+      "Crear pagina detallada de clases con tipos y horarios",
+      "Integrar widget de booking en el sitio",
+      "Agregar testimonios de miembros",
+      "Publicar menu del cafe"
+    ],
+    "largo_plazo": [
+      "Migrar a stack moderno (Astro) para mejor SEO y performance",
+      "Crear experiencia visual inmersiva del concepto Pilates+Cafe",
+      "Implementar schema markup LocalBusiness",
+      "Desarrollar contenido educativo y blog"
+    ]
+  },
+  "resumen_ejecutivo": "Refora tiene un concepto de marca fuerte y diferenciado combinando Pilates, yoga y cafe, con excelente copy aspiracional, pero su sitio carece de meta description, imagenes y contenido practico como precios y horarios detallados de clases. La dependencia de una app externa para booking y la ausencia de telefono de contacto crean barreras de conversion para visitantes nuevos. Una reconstruccion con contenido visual rico, precios transparentes e integracion de booking directa transformaria la capacidad del sitio para convertir la propuesta de marca en clientes reales.",
+  "stack_para_web": {
+    "framework": "astro",
+    "estilos": "tailwind",
+    "extras": ["booking widget embed", "google maps", "instagram feed", "cafe menu section"],
+    "justificacion": "Negocio con multiples paginas (studio, schedule, membership, cafe, team, events, shop), concepto dual Pilates+Cafe y necesidad de integracion de booking — complejidad media ideal para Astro con SSG."
+  }
+}

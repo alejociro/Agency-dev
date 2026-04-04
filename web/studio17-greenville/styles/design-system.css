@@ -17,7 +17,7 @@
    DESIGN SYSTEM — Studio 17 Greenville
    ============================================ */
 
-@layer base, components, utilities;
+@import "tailwindcss";
 
 @layer base {
 

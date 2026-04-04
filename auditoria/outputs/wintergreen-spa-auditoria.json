@@ -1,0 +1,157 @@
+{
+  "cliente": "Wintergreen SPA",
+  "url_auditada": "https://www.wintergreenspa.com/",
+  "sector": "Spa & Wellness",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO:55, UX:60, Marketing:60, Contenido:65, Técnico:50. Spa & Wellness encaja en servicio local de salud/bienestar.",
+  "fecha": "2026-04-03",
+  "scores": {
+    "seo": 28,
+    "ux_ui": 32,
+    "marketing": 38,
+    "contenido": 52,
+    "tecnico": 22,
+    "total": 34
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Title incluye keyword 'Massage' y ubicación 'Greenville'",
+        "Navegación principal con labels descriptivos de servicios",
+        "URL del sitio incluye nombre del negocio"
+      ],
+      "negativos": [
+        "Sin meta description — Google mostrará un snippet arbitrario",
+        "Sin keywords meta tag",
+        "Hero H1 es solo el nombre del negocio sin keyword de servicio",
+        "Imágenes de productos tienen alt genérico 'Gift certificate' sin diferenciación",
+        "Estructura de headings no jerárquica ��� todo el contenido en bloques planos",
+        "Sin schema JSON-LD para LocalBusiness o HealthAndBeautyBusiness"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar meta description con keywords: 'spa Greenville SC massage facial salt room'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reformular H1 hero a 'Massage & Facial Spa in Greenville SC — Wintergreen SPA'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar schema JSON-LD LocalBusiness con dirección, horarios, servicios", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Diferenciar alt text en imágenes de gift certificates por tipo de servicio", "prioridad": "baja", "tipo": "quick_win" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores coherente basada en tonos verdes/teal que transmiten relajación",
+        "Logo y banner presentes con identidad visual clara",
+        "Navegación con 6 items accesibles"
+      ],
+      "negativos": [
+        "Tipografía genérica (Arial/Helvetica) sin personalidad de marca premium",
+        "Sin evidencia de diseño responsive optimizado — depende completamente del render Wix",
+        "Hero section con banner estrecho (1718x252) que no comunica visualmente la experiencia spa",
+        "Secciones de servicios son muros de texto sin cards, iconos ni separación visual",
+        "Tienda de gift certificates muestra imágenes muy pequeñas (49x33) sin calidad visual"
+      ],
+      "recomendaciones": [
+        { "accion": "Rediseñar hero con imagen inmersiva de spa a pantalla completa y headline superpuesto", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Separar servicios en cards individuales con icono, precio y CTA", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Usar tipografía premium (serif display) acorde a sector wellness", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Mejorar galería de gift certificates con imágenes de mayor resolución", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Precios claros y transparentes para todos los servicios",
+        "CTA principal 'SCHEDULE APPOINTMENTS' es directo y con verbo de acción",
+        "Propuesta de valor presente: 'total comfort, relaxation, and rejuvenation'",
+        "Gift certificates con múltiples opciones de precio facilitan la compra"
+      ],
+      "negativos": [
+        "Sin testimonios ni reseñas de clientes — falta prueba social",
+        "Sin before/after ni galería de resultados de tratamientos",
+        "La propuesta de valor es genérica — podría ser de cualquier spa",
+        "Sin diferenciador claro frente a competencia (solo mención de licencia LMBT)"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar sección de testimonios con reseñas de Google/Yelp", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Destacar diferenciadores: Salt Room, licencias, experiencia de Tetiana", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar galería visual de tratamientos e instalaciones", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Crear paquetes destacados con precios vs individuales para aumentar ticket promedio", "prioridad": "baja", "tipo": "mejora_estructural" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Descripciones detalladas de cada servicio de masaje y facial con precios",
+        "Información de contacto completa: teléfono, email, dirección, horarios",
+        "Contenido de amenidades (sauna infrarroja, salt room) con explicaciones educativas detalladas",
+        "Sección de gift certificates con amplia variedad de opciones"
+      ],
+      "negativos": [
+        "Sin página 'About' con historia del negocio ni bio de la terapeuta",
+        "Sin FAQ sobre qué esperar en la primera visita, preparación, contraindicaciones",
+        "Nota de pago 'cash or checks only' puede generar fricción — no hay explicación ni alternativas",
+        "Contenido del footer muy escueto — sin enlaces útiles ni información adicional"
+      ],
+      "recomendaciones": [
+        { "accion": "Crear sección 'About / Conozca a Tetiana' con experiencia, certificaciones, filosofía", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar FAQ: primera visita, qué traer, duración, política de cancelación, pago", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Expandir footer con mapa, horarios, links rápidos a servicios", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Wix ofrece hosting CDN y SSL incluido",
+        "Tienda integrada para gift certificates con carrito funcional",
+        "Video embebido para salt room"
+      ],
+      "negativos": [
+        "Wix Thunderbolt renderer genera SPA completa — contenido no crawleable por bots básicos",
+        "Sin meta description indexable",
+        "HTML de 888KB — extremadamente pesado para contenido mostrado",
+        "Sin social media integrada — 0 links a redes sociales",
+        "Formulario de contacto básico con solo un botón 'Submit' — sin campos visibles",
+        "Copyright 2021 — apariencia de sitio abandonado"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar fuera de Wix a stack moderno con SSG para SEO crawleable", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reducir peso de página — target < 200KB de HTML", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Agregar links a redes sociales (Instagram/Facebook) si existen", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Actualizar copyright a 2026", "prioridad": "alta", "tipo": "quick_win" }
+      ],
+      "stack_actual": "Wix (Thunderbolt renderer) — SPA, JS-heavy, not SSR-friendly",
+      "stack_recomendado": "HTML + Tailwind + Alpine.js (sitio estático rápido y crawleable)",
+      "integraciones": ["Wix eCommerce (gift certificates)", "Wix Bookings (appointments)"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Agregar meta description optimizada con keywords locales",
+    "Reformular H1 hero con keyword principal de servicio + ubicación",
+    "Actualizar copyright a 2026 y agregar links de redes sociales",
+    "Destacar diferenciadores únicos (Salt Room, licencias profesionales) en hero",
+    "Agregar testimonios de clientes desde Google Reviews"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Agregar meta description y reformular H1 hero",
+      "Agregar links de redes sociales",
+      "Destacar diferenciadores en propuesta de valor",
+      "Actualizar copyright"
+    ],
+    "mes_1": [
+      "Rediseñar hero con imagen inmersiva full-screen",
+      "Separar servicios en cards con iconos y CTAs",
+      "Crear sección About/Bio de la terapeuta",
+      "Agregar testimonios de clientes",
+      "Agregar FAQ para primera visita"
+    ],
+    "largo_plazo": [
+      "Migrar a stack estático (HTML+Tailwind) para mejorar SEO y performance",
+      "Agregar schema JSON-LD para LocalBusiness",
+      "Crear galería visual de tratamientos e instalaciones",
+      "Integrar sistema de reservas más robusto"
+    ]
+  },
+  "resumen_ejecutivo": "El sitio de Wintergreen SPA tiene contenido de servicios detallado pero está atrapado en un stack Wix que impide la indexación SEO y pesa 888KB de HTML puro, con un score total de 34/100 muy por debajo del benchmark de 58 para servicio local de salud. La mayor oportunidad es migrar a un sitio estático con hero inmersivo, cards de servicios bien diseñadas y prueba social, lo que multiplicaría la visibilidad orgánica y las conversiones. El próximo paso inmediato es definir meta description, reformular el hero con keyword principal y agregar testimonios de clientes.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": [],
+    "justificacion": "Complejidad baja — spa local con catálogo de servicios fijo y formulario de contacto. HTML + Tailwind + Alpine.js ofrece máxima velocidad, SEO crawleable y simplicidad de mantenimiento. No necesita framework JS."
+  }
+}

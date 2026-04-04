@@ -56,7 +56,32 @@
       "WebFetch(domain:www.spafinder.com)",
       "WebFetch(domain:www.studio17greenville.com)",
       "WebFetch(domain:www.indigoflowandart.com)",
-      "Bash(npx astro:*)"
+      "Bash(npx astro:*)",
+      "Bash(vercel --prod --yes)",
+      "Bash(npm install:*)",
+      "Bash(git branch:*)",
+      "WebFetch(domain:www.wintergreenspa.com)",
+      "Bash(curl -sL \"https://www.wintergreenspa.com/\")",
+      "Read(//tmp/**)",
+      "Read(//private/tmp/**)",
+      "Bash(curl -sL \"https://www.wintergreenspa.com/copy-of-facial-services\")",
+      "Bash(python3 -c ':*)",
+      "Bash(curl -sL \"https://www.wintergreenspa.com/serviceslist\")",
+      "Bash(curl -sL \"https://www.wintergreenspa.com/facilities\")",
+      "Bash(curl -sL \"https://karaspa.com/spa-services/\")",
+      "Bash(curl -sL \"https://www.studio17greenville.com/\" -o /tmp/studio17.html)",
+      "Bash(curl -sL \"https://www.indigoflowandart.com/\" -o /tmp/indigo.html)",
+      "Bash(curl -sL \"https://reforagvl.com/\" -o /tmp/refora.html)",
+      "Bash(curl -sL \"https://www.thewrkt.co/greenville\" -o /tmp/thewrkt.html)",
+      "Bash(curl -sL \"https://killianautopros.com/\" -o /tmp/killian.html)",
+      "Bash(python3:*)",
+      "Bash(curl -sL \"https://killianautopros.com/about/\")",
+      "Bash(npm run:*)",
+      "Bash(vercel:*)",
+      "WebFetch(domain:the-wrkt-greenville.vercel.app)",
+      "WebFetch(domain:www.thewrkt.co)",
+      "Bash(grep -l \"color-indigo-deep\\\\|Playfair\" /Users/et59866/agencia/Agency-dev/web/indigo-flow-and-art/dist/_astro/*.css)",
+      "Bash(npx vercel:*)"
     ]
   }
 }

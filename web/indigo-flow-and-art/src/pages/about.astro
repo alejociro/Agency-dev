@@ -1,0 +1,169 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About Us | Indigo Flow and Art — Greenville SC"
+  description="Meet Katie Hughes Ryan and Julie Hughes, co-owners of Indigo Flow and Art in the Village of West Greenville. A space where Classical Pilates and Fine Art unite."
+  canonical="/about"
+  currentPage="about"
+>
+
+  <!-- ==================== HERO ==================== -->
+  <section style="position: relative; min-height: 60vh; display: flex; align-items: center; overflow: hidden; background-color: var(--color-primary-dark);">
+    <img
+      src="https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/1590883589936-SE3E8XFLOZB780E1QNQL/IMG_3775.jpg"
+      alt="Indigo Flow and Art building in the Village of West Greenville"
+      width="1920" height="1080"
+      loading="eager" decoding="async"
+      style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.35;"
+    />
+    <div style="position: absolute; inset: 0; background: linear-gradient(to top, var(--color-primary-dark) 10%, rgba(30,38,56,0.4) 100%);"></div>
+    <div class="container" style="position: relative; z-index: 2; padding-block: var(--space-16) var(--space-8);">
+      <span class="hero-tag section-tag" style="color: var(--color-gold);">Our Story</span>
+      <h1 class="hero-title" style="color: var(--color-cream); max-width: 16ch;" data-split>About Us</h1>
+      <p class="hero-sub" style="color: var(--color-text-inverse); max-width: 50ch; opacity: 0.9;">
+        Two sisters, two passions, one space — where the art of movement meets the movement of art.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== OUR SPACE ==================== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="grid-asymmetric" style="align-items: center;">
+        <div data-animate="fade-right">
+          <span class="section-tag">The Space</span>
+          <h2 style="margin-block-end: var(--space-3);">A Place Where Art Lives and Moves</h2>
+          <p style="color: var(--color-text-muted); margin-block-end: var(--space-3);">
+            Nestled in the Village of West Greenville at 1272 Pendleton Street, Indigo Flow and Art occupies a unique space in Greenville's vibrant arts district. What began as a vision to unite two creative disciplines has become a destination where body and art coexist.
+          </p>
+          <p style="color: var(--color-text-muted); margin-block-end: var(--space-3);">
+            When you arrive, registration takes place in the vibrant gallery of local artist and co-owner Julie Hughes. Following check-in, walk through our old French doors into the beautiful, light-filled Pilates room where a fully equipped Gratz Pilates studio awaits.
+          </p>
+          <blockquote style="font-family: var(--font-display); font-size: var(--text-h3); font-style: italic; color: var(--color-primary); line-height: var(--leading-snug); padding-inline-start: var(--space-3); border-inline-start: 2px solid var(--color-accent);">
+            "When we invest in women and girls, we invest in the people who invest in everyone else."
+            <cite style="display: block; font-family: var(--font-body); font-size: var(--text-small); font-style: normal; color: var(--color-text-muted); margin-block-start: var(--space-1);">&mdash; Melinda Gates</cite>
+          </blockquote>
+        </div>
+        <div class="img-frame" data-animate="fade-left">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/1590886166368-Z8YY187B24FJT4ORK6RS/IMG_9403+2.JPG"
+            alt="Interior detail of Indigo studio and gallery space"
+            width="800" height="600"
+            loading="lazy" decoding="async"
+            style="border-radius: var(--radius-lg); aspect-ratio: 4/3; object-fit: cover;"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CO-OWNERS ==================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div style="text-align: center; margin-block-end: var(--space-8);">
+        <span class="section-tag" data-animate="fade-up">Co-Owners</span>
+        <h2 data-animate="fade-up">The People Behind Indigo</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-6);" data-animate="stagger">
+
+        <!-- Katie -->
+        <div class="card" style="overflow: hidden;">
+          <div style="position: relative; aspect-ratio: 3/4; overflow: hidden;">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/30e0bd66-493f-469f-921c-669be787a11e/WAC_7375.jpg"
+              alt="Katie Hughes Ryan, co-owner and Classical Pilates instructor at Indigo"
+              width="600" height="800"
+              loading="lazy" decoding="async"
+              style="width: 100%; height: 100%; object-fit: cover;"
+            />
+          </div>
+          <div class="card__body">
+            <span style="font-size: var(--text-small); color: var(--color-accent); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;">Indigo Pilates</span>
+            <h3 style="margin-block: var(--space-1);">Katie Hughes Ryan</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--text-small); margin-block-end: var(--space-3);">
+              Fully Certified Classical Pilates Instructor (Power Pilates, Charlotte &amp; NYC). 500-hour Registered Yoga Instructor. 300-hour AYAMA Applied Yoga Anatomy &amp; Muscle Activation Instructor. Background includes ballet, contemporary dance, competitive figure-skating, yoga, and Pilates.
+            </p>
+            <p style="color: var(--color-text-muted); font-size: var(--text-small);">
+              Katie emphasizes a form-focused, athletic yet attainable approach to the classical method, preserving the integrity of Joseph Pilates' original Contrology system.
+            </p>
+          </div>
+        </div>
+
+        <!-- Julie -->
+        <div class="card" style="overflow: hidden;">
+          <div style="position: relative; aspect-ratio: 3/4; overflow: hidden;">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/2d5e49a2-3b49-46f2-9bce-3a26f978ccdb/mom+art+original.JPG"
+              alt="Julie Hughes, co-owner and fine artist at Indigo Art Gallery"
+              width="600" height="800"
+              loading="lazy" decoding="async"
+              style="width: 100%; height: 100%; object-fit: cover;"
+            />
+          </div>
+          <div class="card__body">
+            <span style="font-size: var(--text-small); color: var(--color-accent); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;">Indigo Art</span>
+            <h3 style="margin-block: var(--space-1);">Julie Hughes</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--text-small); margin-block-end: var(--space-3);">
+              Artist focusing on capturing everyday moments through a surreal lens. Her recent works emphasize motion — particularly bicycle racing and the human figure — seeking to convey speed, movement, and energy in tangible visual form.
+            </p>
+            <p style="color: var(--color-text-muted); font-size: var(--text-small);">
+              Julie strives to communicate the essence, power, and movement of a scene or a person, combining the everyday with the ephemeral in each piece.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== STATS ==================== -->
+  <section class="section section--dark">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--space-6); text-align: center;" data-animate="stagger">
+        <div>
+          <span style="font-family: var(--font-display); font-size: var(--text-h1); font-weight: 700; color: var(--color-gold); display: block;" data-counter="1272">#</span>
+          <span style="font-size: var(--text-small); color: var(--color-text-muted);">Pendleton Street</span>
+        </div>
+        <div>
+          <span style="font-family: var(--font-display); font-size: var(--text-h1); font-weight: 700; color: var(--color-gold); display: block;">2</span>
+          <span style="font-size: var(--text-small); color: var(--color-text-muted);">Passions, One Roof</span>
+        </div>
+        <div>
+          <span style="font-family: var(--font-display); font-size: var(--text-h1); font-weight: 700; color: var(--color-gold); display: block;" data-counter="800" data-suffix="+">0</span>
+          <span style="font-size: var(--text-small); color: var(--color-text-muted);">Training Hours Combined</span>
+        </div>
+        <div>
+          <span style="font-family: var(--font-display); font-size: var(--text-h1); font-weight: 700; color: var(--color-gold); display: block;">Gratz</span>
+          <span style="font-size: var(--text-small); color: var(--color-text-muted);">Authentic Equipment</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LOCATION ==================== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div style="text-align: center; margin-block-end: var(--space-6);">
+        <span class="section-tag" data-animate="fade-up">Find Us</span>
+        <h2 data-animate="fade-up">The Village of West Greenville</h2>
+        <p style="color: var(--color-text-muted); max-width: 50ch; margin-inline: auto; margin-block-start: var(--space-2);" data-animate="fade-up">
+          Located in Greenville's vibrant arts district, surrounded by studios, galleries, and creative spaces.
+        </p>
+      </div>
+      <div data-animate="scale-in" style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-card);">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.1!2d-82.42!3d34.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1272+Pendleton+St+Greenville+SC+29611!5e0!3m2!1sen!2sus!4v1"
+          width="100%" height="400"
+          style="border: 0; display: block;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Map to Indigo Flow and Art at 1272 Pendleton Street"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

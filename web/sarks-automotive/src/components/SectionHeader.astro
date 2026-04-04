@@ -1,0 +1,41 @@
+---
+interface Props {
+  tag?: string;
+  title: string;
+  subtitle?: string;
+  align?: 'center' | 'left';
+  dark?: boolean;
+}
+
+const { tag, title, subtitle, align = 'center', dark = false } = Astro.props;
+---
+
+<div class={`section-header ${align === 'center' ? 'text-center' : ''}`} data-animate="fade-up">
+  {tag && <span class="section-tag" style={dark ? 'color: var(--color-secondary);' : ''}>{tag}</span>}
+  <h2 set:html={title} />
+  {subtitle && <p class="section-intro">{subtitle}</p>}
+</div>
+
+<style>
+  .section-header {
+    margin-block-end: var(--space-8);
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .section-intro {
+    max-width: 50ch;
+    color: var(--color-text-muted);
+    margin-block-start: var(--space-2);
+  }
+
+  .text-center .section-intro {
+    margin-inline: auto;
+  }
+
+  h2 {
+    margin-block-start: var(--space-2);
+  }
+</style>

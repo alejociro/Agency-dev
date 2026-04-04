@@ -1,0 +1,424 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const services = [
+  {
+    id: 'oil-change',
+    title: 'Oil Change',
+    description: 'Regular oil changes are the foundation of engine health. We offer both conventional and full-synthetic oil changes, paired with a multi-point inspection to catch potential issues early.',
+    features: ['Conventional and synthetic options', 'Multi-point vehicle inspection', 'Filter replacement included', 'Fluid level check and top-off'],
+    icon: `<svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"><circle cx="24" cy="24" r="8"/><path d="M24 12v-4M24 40v-4M36 24h4M8 24h4M32.5 15.5l2.8-2.8M12.7 35.3l2.8-2.8M32.5 32.5l2.8 2.8M12.7 12.7l2.8 2.8"/></svg>`,
+  },
+  {
+    id: 'brake-repair',
+    title: 'Brake Repair',
+    description: 'Your safety depends on reliable brakes. Our technicians inspect, diagnose, and repair your entire brake system — from pads and rotors to calipers, lines, and brake fluid.',
+    features: ['Brake pad and rotor replacement', 'Caliper repair and replacement', 'Brake fluid flush', 'ABS system diagnostics'],
+    icon: `<svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="6"/><path d="M24 10v4M24 34v4M10 24h4M34 24h4"/></svg>`,
+  },
+  {
+    id: 'engine-diagnostics',
+    title: 'Engine Diagnostics',
+    description: 'Check engine light on? Our state-of-the-art diagnostic equipment reads trouble codes and identifies the root cause, so we fix the actual problem — not just the symptom.',
+    features: ['Computer-assisted diagnostics', 'Check engine light diagnosis', 'Performance troubleshooting', 'Detailed inspection report'],
+    icon: `<svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"><rect x="8" y="16" width="32" height="20" rx="3"/><path d="M16 16V12a8 8 0 0116 0v4"/><circle cx="24" cy="28" r="3"/><path d="M24 31v3"/></svg>`,
+  },
+  {
+    id: 'transmission',
+    title: 'Transmission Service',
+    description: 'Whether automatic or manual, your transmission needs regular care. We provide fluid changes, diagnostics, and repairs to keep your shifts smooth and your drivetrain healthy.',
+    features: ['Transmission fluid exchange', 'Automatic and manual service', 'Shift quality diagnostics', 'Torque converter service'],
+    icon: `<svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"><path d="M8 24c0-8.8 7.2-16 16-16s16 7.2 16 16"/><path d="M14 32l-4 8h28l-4-8"/><circle cx="24" cy="24" r="4"/></svg>`,
+  },
+  {
+    id: 'ac-service',
+    title: 'Air Conditioning',
+    description: 'Greenville summers demand a working A/C. We diagnose leaks, recharge refrigerant, and repair compressors, condensers, and evaporators to keep you cool year-round.',
+    features: ['A/C system diagnostics', 'Refrigerant recharge', 'Compressor repair/replacement', 'Leak detection and repair'],
+    icon: `<svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"><path d="M12 20c0-6.6 5.4-12 12-12s12 5.4 12 12"/><path d="M8 28h32"/><path d="M12 28v8h24v-8"/><path d="M20 24v-2M28 24v-2M24 24v-4"/></svg>`,
+  },
+  {
+    id: 'fleet',
+    title: 'Fleet Maintenance',
+    description: 'Keep your business moving. We also offer customized maintenance programs for commercial fleets — scheduled service, priority booking, and detailed vehicle records. Contact us to discuss your fleet needs.',
+    features: ['Customized maintenance schedules', 'Priority fleet booking', 'Detailed service records', 'Call to discuss your fleet'],
+    icon: `<svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"><rect x="4" y="18" width="40" height="16" rx="3"/><circle cx="14" cy="38" r="4"/><circle cx="34" cy="38" r="4"/><path d="M4 26h40M12 18v-6h16l8 6"/></svg>`,
+  },
+];
+
+const faqs = [
+  { q: "How often should I get an oil change?", a: "For most modern vehicles, every 5,000 to 7,500 miles with synthetic oil, or every 3,000 miles with conventional. We will recommend the best interval based on your vehicle and driving habits." },
+  { q: "Do you work on European and Asian imports?", a: "Absolutely. Our ASE-certified technicians have experience with all makes and models, including BMW, Mercedes, Audi, Honda, Toyota, Nissan, and more." },
+  { q: "What is included in the free courtesy inspection?", a: "We check fluid levels, tire condition and pressure, brake wear, belt and hose condition, battery health, and lights. We provide a written report of our findings." },
+  { q: "Do you offer financing for major repairs?", a: "Yes, we offer financing options to help manage the cost of larger repairs. Ask our team about available payment plans when you visit." },
+  { q: "Can I wait while my vehicle is being serviced?", a: "Of course. Our comfortable waiting room has free Wi-Fi, TV, and refreshments. For longer repairs, we also offer after-hours drop-off." },
+];
+---
+
+<BaseLayout
+  title="Auto Repair Services | Roper Mountain Auto Care | Greenville SC"
+  description="Oil changes, brake repair, engine diagnostics, transmission service, A/C repair, and fleet maintenance in Greenville SC. ASE-certified technicians."
+>
+  <Header />
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="hero-tag section-tag">Comprehensive Auto Care</span>
+      <h1 class="hero-title page-title">Services Built on<br/>Trust and Expertise</h1>
+      <p class="hero-sub">From routine maintenance to complex repairs — every service includes a free courtesy inspection and the assurance of ASE-certified workmanship.</p>
+    </div>
+  </section>
+
+  <!-- SERVICE TABS (interactive experience) -->
+  <section class="services-detail section" id="all-services">
+    <div class="container">
+      <div class="service-tabs">
+        <div class="tab-list" role="tablist" aria-label="Service categories">
+          {services.map((s, i) => (
+            <button
+              class={`tab-btn ${i === 0 ? 'tab-active' : ''}`}
+              data-tab={s.id}
+              role="tab"
+              aria-selected={i === 0 ? 'true' : 'false'}
+              aria-controls={`panel-${s.id}`}
+              tabindex={i === 0 ? 0 : -1}
+            >
+              {s.title}
+            </button>
+          ))}
+          <div class="tab-indicator" aria-hidden="true"></div>
+        </div>
+
+        {services.map((s, i) => (
+          <div
+            class={`tab-panel ${i === 0 ? 'panel-active' : ''}`}
+            data-panel={s.id}
+            id={`panel-${s.id}`}
+            role="tabpanel"
+            hidden={i !== 0 ? true : undefined}
+          >
+            <div class="service-detail-grid">
+              <div class="service-detail-icon" set:html={s.icon} />
+              <div class="service-detail-content">
+                <h2 id={s.id}>{s.title}</h2>
+                <p class="service-description">{s.description}</p>
+                <ul class="service-features" role="list">
+                  {s.features.map((f) => (
+                    <li>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+                <a href="/contact" class="btn btn-primary">Schedule This Service</a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- VEHICLES WE SERVICE -->
+  <section class="vehicles-section section" id="vehicles">
+    <div class="container">
+      <span class="section-tag" data-animate="fade-up">All Makes & Models</span>
+      <h2 data-animate="fade-up">Vehicles We Service</h2>
+      <p class="section-intro" data-animate="fade-up">Whether you drive domestic, European, or Asian — our technicians have the training and equipment to handle it all.</p>
+
+      <div class="vehicles-grid" data-animate="stagger">
+        <div class="vehicle-category card">
+          <h3>Domestic</h3>
+          <p>Ford, Chevrolet, GMC, Dodge, Ram, Jeep, Chrysler, Buick, Cadillac</p>
+        </div>
+        <div class="vehicle-category card">
+          <h3>European</h3>
+          <p>BMW, Mercedes-Benz, Audi, Volkswagen, Volvo, Land Rover, Mini</p>
+        </div>
+        <div class="vehicle-category card">
+          <h3>Asian</h3>
+          <p>Honda, Toyota, Nissan, Hyundai, Kia, Subaru, Mazda, Lexus, Acura</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section section" id="faq">
+    <div class="container">
+      <span class="section-tag" data-animate="fade-up">Common Questions</span>
+      <h2 data-animate="fade-up">Frequently Asked Questions</h2>
+
+      <div class="faq-list" data-animate="fade-up">
+        {faqs.map((faq) => (
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>{faq.q}</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>{faq.a}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="cta-banner-inner">
+      <div class="container">
+        <h2 class="cta-banner-title">Ready to Schedule?</h2>
+        <p class="cta-banner-text">Give us a call or stop by. Same-day appointments available when possible.</p>
+        <a href="tel:+18642887633" class="btn btn-cta-banner" data-magnetic>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call (864) 288-7633
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* PAGE HERO */
+  .page-hero {
+    padding-block: calc(80px + var(--space-10)) var(--space-8);
+    background: var(--color-secondary);
+    color: #faf8f6;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 60%;
+      height: 200%;
+      background: radial-gradient(ellipse, rgba(104, 204, 209, 0.1), transparent 70%);
+      pointer-events: none;
+    }
+  }
+
+  .page-hero .hero-tag {
+    color: var(--color-primary-light);
+    &::before { background: var(--color-primary); }
+  }
+
+  .page-hero .hero-title {
+    color: #faf8f6;
+    font-size: var(--text-h1);
+    margin-block-end: var(--space-2);
+  }
+
+  .page-hero .hero-sub {
+    color: #c4b8b2;
+    max-width: 55ch;
+  }
+
+  /* SERVICE DETAIL */
+  .service-detail-grid {
+    display: grid;
+    gap: var(--space-4);
+    align-items: start;
+
+    @media (min-width: 768px) {
+      grid-template-columns: auto 1fr;
+    }
+  }
+
+  .service-detail-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    background: rgba(104, 204, 209, 0.04);
+  }
+
+  .service-detail-content {
+    & h2 {
+      margin-block-end: var(--space-2);
+    }
+  }
+
+  .service-description {
+    color: var(--color-text-muted);
+    margin-block-end: var(--space-3);
+    max-width: 60ch;
+  }
+
+  .service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-4);
+    display: grid;
+    gap: var(--space-2);
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    & li {
+      display: flex;
+      align-items: center;
+      gap: var(--space-1);
+      font-size: var(--text-small);
+      color: var(--color-text);
+    }
+  }
+
+  /* VEHICLES */
+  .vehicles-grid {
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: 1fr;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .vehicle-category {
+    text-align: center;
+    padding: var(--space-4);
+
+    & h3 {
+      color: var(--color-primary-dark);
+      margin-block-end: var(--space-1);
+    }
+
+    & p {
+      font-size: var(--text-small);
+      color: var(--color-text-muted);
+      max-width: none;
+      margin: 0;
+    }
+  }
+
+  /* FAQ */
+  .faq-list {
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-block-start: var(--space-4);
+  }
+
+  .faq-item {
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border-light);
+    overflow: hidden;
+    transition: box-shadow var(--duration-fast) var(--ease-smooth);
+
+    &[open] {
+      box-shadow: var(--shadow-md);
+    }
+
+    &[open] .faq-chevron {
+      transform: rotate(180deg);
+    }
+  }
+
+  .faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+    padding: var(--space-3);
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--text-body);
+    color: var(--color-secondary);
+    cursor: pointer;
+    list-style: none;
+    min-height: 44px;
+
+    &::-webkit-details-marker { display: none; }
+    &::marker { display: none; }
+  }
+
+  .faq-chevron {
+    flex-shrink: 0;
+    transition: transform 0.3s var(--ease-smooth);
+    color: var(--color-primary);
+  }
+
+  .faq-answer {
+    padding: 0 var(--space-3) var(--space-3);
+    animation: faqReveal 0.3s ease;
+
+    & p {
+      color: var(--color-text-muted);
+      font-size: var(--text-small);
+      margin: 0;
+      max-width: none;
+    }
+  }
+
+  @keyframes faqReveal {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .section-intro {
+    color: var(--color-text-muted);
+    max-width: 60ch;
+    margin-block-end: var(--space-6);
+  }
+
+  /* Reuse CTA banner styles from index */
+  .cta-banner {
+    background: var(--color-primary);
+  }
+
+  .cta-banner-inner {
+    padding-block: var(--space-8);
+    text-align: center;
+  }
+
+  .cta-banner-title {
+    color: var(--color-secondary);
+    font-size: var(--text-h1);
+    margin-block-end: var(--space-2);
+  }
+
+  .cta-banner-text {
+    color: var(--color-secondary);
+    opacity: 0.8;
+    max-width: 50ch;
+    margin-inline: auto;
+    margin-block-end: var(--space-4);
+  }
+
+  .btn-cta-banner {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-body);
+    padding: var(--space-2) var(--space-5);
+    background: var(--color-secondary);
+    color: #faf8f6;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: all var(--duration-normal) var(--ease-smooth);
+
+    &:hover {
+      background: var(--color-secondary-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(70, 57, 57, 0.3);
+      color: #fff;
+    }
+  }
+</style>

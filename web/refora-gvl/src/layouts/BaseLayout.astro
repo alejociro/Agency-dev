@@ -1,0 +1,151 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  canonicalURL?: string;
+  ogImage?: string;
+  keywords?: string;
+}
+
+const {
+  title,
+  description = "Pilates, Yoga & Coffee Studio in Greenville, SC. Reform your body, recharge through movement, community, and thoughtfully crafted café offerings.",
+  canonicalURL,
+  ogImage = "/assets/images/og-refora.jpg",
+  keywords = "pilates greenville sc, yoga greenville, reformer pilates, coffee studio greenville, refora, pilates cafe, fitness greenville sc",
+} = Astro.props;
+
+import '../styles/design-system.css';
+import '../styles/animations.css';
+
+const siteTitle = `${title} | Refora — Pilates, Yoga & Coffee · Greenville SC`;
+const siteUrl = "https://refora-gvl.vercel.app";
+const fullCanonical = canonicalURL || `${siteUrl}${Astro.url.pathname}`;
+const fullOgImage = ogImage.startsWith("http") ? ogImage : `${siteUrl}${ogImage}`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Primary -->
+    <title>{siteTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <link rel="canonical" href={fullCanonical} />
+    <meta name="theme-color" content="#32373c" />
+    <meta name="author" content="Refora" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={fullCanonical} />
+    <meta property="og:title" content={siteTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={fullOgImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Refora" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter/X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={siteTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={fullOgImage} />
+
+    <!-- Fonts: Playfair Display + Outfit — Preconnect + Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Design System + Animations (imported via Astro for Vite processing) -->
+
+    <!-- Schema JSON-LD: LocalBusiness + FitnessCenter + CafeOrCoffeeShop -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
+          "@id": `${siteUrl}/#business`,
+          "name": "Refora",
+          "description": "Pilates, Yoga & Coffee Studio in Greenville, SC. Reform your body, recharge through movement, community, and thoughtfully crafted café offerings.",
+          "url": siteUrl,
+          "email": "reform@reforagvl.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Greenville",
+            "addressRegion": "SC",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.8526,
+            "longitude": -82.394
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "05:00",
+              "closes": "17:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Saturday", "Sunday"],
+              "opens": "10:00",
+              "closes": "14:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.instagram.com/reforagvl/",
+            "https://www.facebook.com/profile.php?id=61575630089186"
+          ],
+          "image": fullOgImage,
+          "priceRange": "$$"
+        },
+        {
+          "@type": "WebSite",
+          "@id": `${siteUrl}/#website`,
+          "url": siteUrl,
+          "name": "Refora",
+          "description": "Pilates, Yoga & Coffee Studio in Greenville, SC"
+        }
+      ]
+    })} />
+
+    <!-- Speculation Rules: Prefetch likely navigation targets -->
+    <script type="speculationrules">
+      {
+        "prerender": [
+          { "where": { "href_matches": "/membership/" } },
+          { "where": { "href_matches": "/schedule/" } }
+        ],
+        "prefetch": [
+          { "where": { "href_matches": "/studio/" } },
+          { "where": { "href_matches": "/cafe/" } },
+          { "where": { "href_matches": "/contact/" } }
+        ]
+      }
+    </script>
+
+    <!-- Critical inline styles for above-the-fold render -->
+    <style>
+      body { font-family: 'Outfit', system-ui, sans-serif; background: #f5f0eb; color: #2a2a2a; }
+      .header { position: fixed; top: 0; left: 0; right: 0; z-index: 90; }
+      h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; }
+    </style>
+  </head>
+  <body class="grain-global">
+    <slot />
+  </body>
+</html>

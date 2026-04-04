@@ -1,0 +1,116 @@
+{
+  "negocio": "Killian Auto Pros",
+  "url": "https://killianautopros.com/",
+  "sector": "Auto Repair",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Auto Repair Mauldin Greenville Fountain Inn & Spartanburg SC",
+    "description": "Full-Service Auto Repair in Mauldin, Greenville, Fountain Inn & Spartanburg, SC Specializing in Brakes, Engines, Oil Changes, Tires, Transmissions, Alignments, Maintenance, & More.",
+    "keywords": null
+  },
+  "favicon": "https://killianautopros.com/wp-content/uploads/2023/02/killian-auto-pros-favicon.png",
+  "paleta": {
+    "primario": "#fe0000",
+    "secundario": "#231f20",
+    "acento": "#fe0000",
+    "fondo": "#ffffff",
+    "texto": "#231f20",
+    "otros": ["#ececec", "#000000"]
+  },
+  "logo": {
+    "url": "https://killianautopros.com/wp-content/uploads/2023/02/killian-auto-pros-logo.png",
+    "descripcion": "Killian Auto Pros logo",
+    "posicion": "top left",
+    "colores": ["#fe0000", "#231f20"]
+  },
+  "tipografias": [
+    { "nombre": "Inter", "uso": "body", "peso": "400,500,700", "tamanio_aprox": "16px" },
+    { "nombre": "Bebas Neue", "uso": "headings", "peso": "400", "tamanio_aprox": "36px" }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://killianautopros.com/" },
+    { "label": "About", "url": "https://killianautopros.com/about/" },
+    { "label": "Reviews", "url": "https://killianautopros.com/reviews/" },
+    { "label": "Services", "url": "https://killianautopros.com/services/" },
+    { "label": "AC & Heat Repair", "url": "https://killianautopros.com/ac-heat-repair/" },
+    { "label": "Brake Repair", "url": "https://killianautopros.com/brake-repair/" },
+    { "label": "Diagnostics", "url": "https://killianautopros.com/diagnostics/" },
+    { "label": "Engines", "url": "https://killianautopros.com/engines/" },
+    { "label": "Jeep", "url": "https://killianautopros.com/jeep/" },
+    { "label": "Oil Changes & Maintenance", "url": "https://killianautopros.com/oil-changes-maintenance/" },
+    { "label": "Steering & Suspension", "url": "https://killianautopros.com/steering-suspension/" },
+    { "label": "Tires & Alignments", "url": "https://killianautopros.com/tires-alignments/" },
+    { "label": "Transmissions", "url": "https://killianautopros.com/transmissions/" },
+    { "label": "Financing", "url": "https://killianautopros.com/financing/" },
+    { "label": "Join Our Team", "url": "https://killianautopros.com/join-our-team/" },
+    { "label": "Blog", "url": "https://killianautopros.com/blog/" },
+    { "label": "Contact", "url": "https://killianautopros.com/contact/" },
+    { "label": "Appointments", "url": "https://killianautopros.com/appointments/" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Precision Workmanship Timely Service",
+      "contenido": "AC & Heat Repair. Brake Repair. Diagnostics. Engines. Oil Changes & Maintenance. Steering & Suspension. Tires & Alignments. Transmissions.",
+      "cta": "Appointments",
+      "imagenes": [
+        { "url": "https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg", "alt": "Killian Auto Pros slider", "descripcion": "Main hero slider image", "tipo": "hero", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "bienvenida",
+      "titulo": "Welcome To Killian Auto Pros!",
+      "contenido": "At Killian Auto Pros, we are your hometown source for auto repair in Mauldin, Greenville, Fountain Inn & Spartanburg, SC. Proudly family-owned and operated, we aim to make the entire auto repair experience a smooth one, by offering not just a full slate of services and repairs, but the best customer service and attention to detail in the industry.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Services",
+      "contenido": "AC And Heat Repair. Brake Repair. Diagnostics. Engines. Oil Changes. Steering And Suspension. Tires And Alignments. Transmissions.",
+      "cta": null,
+      "imagenes": [
+        { "url": "https://killianautopros.com/wp-content/uploads/2023/02/car-ac-repair-03.webp", "alt": "AC repair", "descripcion": "AC repair service image", "tipo": "servicio", "dimensiones": null },
+        { "url": "https://killianautopros.com/wp-content/uploads/2022/11/brake-repair-03.webp", "alt": "Brake repair", "descripcion": "Brake repair service image", "tipo": "servicio", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "amenidades",
+      "titulo": "Convenient Customer Amenities",
+      "contenido": "Free Rides To Work/Home - If you need to leave your vehicle with us, we'll get you where you need to go! Free Loaner Cars - If your car has to stay for repairs, we have a fleet of loaners to choose from! Towing Available - Don't drive an undrivable vehicle; we can get it towed to our shop! Free Second Opinion - If another shop gave you an estimate on repairs, we'd love to take a look! Financing Options - We proudly offer a number of financing options to all of our customers! Free Vehicle Pick Up And Delivery - Enjoy free vehicle pick-up & delivery, saving time while we expertly service your car. 24/7 Secure Key Dropbox - You can drop your vehicle securely at any time of day or night with our secure key dropbox.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "diferenciador",
+      "titulo": "What Sets Us Apart",
+      "contenido": "At Killian Auto Pros, we do auto repair in Mauldin, Greenville, Fountain Inn & Spartanburg, SC, differently. Our team takes the time to greet every customer who comes through the door, and we make sure to keep you in the loop through the entire auto repair process. There are never any surprises when you bring your car to the expert team at Killian Auto Pros! Whether your car is simply due for its next oil change, or you need intricate engine or transmission repairs, our team of ASE-Certified technicians is waiting to help get you and your vehicle safely back on the road. We take pride in every service and repair we perform, and our loyal customers are a testament to our commitment to quality.",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Precision Workmanship Timely Service",
+    "propuesta_valor": "Family-owned auto repair with ASE-Certified technicians, free loaner cars, rides to work, and 24/7 key dropbox across 4 SC locations",
+    "ctas": ["Appointments", "Contact"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "864-648-8408",
+    "whatsapp": null,
+    "email": null,
+    "direccion": "Mauldin: 451 N Main St, Mauldin, SC 29662. Greenville: 3111 Augusta St, Greenville, SC 29605. Fountain Inn: 550 N Woods Dr, Fountain Inn, SC 29644. Spartanburg: 120B Southport Rd, Spartanburg, SC 29306.",
+    "horarios": null
+  },
+  "redes": [],
+  "formularios": [
+    { "proposito": "Appointment booking", "campos": [] }
+  ],
+  "footer": {
+    "contenido": "Killian Auto Pros - Multiple locations in SC",
+    "links": [],
+    "copyright": null
+  },
+  "tecnologia": "WordPress"
+}

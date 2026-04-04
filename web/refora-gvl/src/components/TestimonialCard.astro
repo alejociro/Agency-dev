@@ -1,0 +1,78 @@
+---
+interface Props {
+  quote: string;
+  name: string;
+  detail: string;
+  initials: string;
+  avatarColor?: string;
+  rating?: number;
+}
+
+const {
+  quote,
+  name,
+  detail,
+  initials,
+  avatarColor = 'var(--color-primary)',
+  rating = 5,
+} = Astro.props;
+---
+
+<article class="testimonial-card card">
+  <div class="testimonial__stars" aria-label={`${rating} out of 5 stars`}>
+    {Array.from({ length: rating }).map(() => (
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="var(--color-secondary)">
+        <path d="M8 0l2.5 5 5.5.8-4 3.9.9 5.3L8 12.5 3.1 15l.9-5.3-4-3.9L5.5 5z" />
+      </svg>
+    ))}
+  </div>
+  <blockquote>
+    <p>{quote}</p>
+  </blockquote>
+  <div class="testimonial__author">
+    <div class="testimonial__avatar" style={`background: ${avatarColor};`}>{initials}</div>
+    <div>
+      <strong>{name}</strong>
+      <span class="text-muted" style="font-size: var(--text-xs); display: block;">{detail}</span>
+    </div>
+  </div>
+</article>
+
+<style>
+  .testimonial-card {
+    scroll-snap-align: start;
+    flex: 0 0 clamp(280px, 80vw, 400px);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .testimonial__stars {
+    display: flex;
+    gap: 2px;
+  }
+
+  blockquote p {
+    font-style: italic;
+    line-height: var(--leading-loose);
+  }
+
+  .testimonial__author {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-block-start: auto;
+  }
+
+  .testimonial__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: var(--color-text-light);
+    font-size: var(--text-small);
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+</style>

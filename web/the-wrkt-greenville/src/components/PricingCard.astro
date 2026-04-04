@@ -1,0 +1,54 @@
+---
+interface Props {
+  name: string;
+  price: number;
+  period?: string;
+  description: string;
+  features: string[];
+  featured?: boolean;
+  badge?: string;
+  ctaText?: string;
+  ctaHref?: string;
+}
+
+const {
+  name,
+  price,
+  period = '/mo',
+  description,
+  features,
+  featured = false,
+  badge,
+  ctaText = 'Get Started',
+  ctaHref = 'https://www.thewrkt.co/greenville'
+} = Astro.props;
+---
+<div class={`pricing-card ${featured ? 'featured' : ''}`}>
+  {badge && <div class="pricing-badge">{badge}</div>}
+  <h3 class="pricing-name">{name}</h3>
+  <div class="pricing-price">
+    <span class="pricing-currency">$</span>
+    <span class="pricing-amount">{price}</span>
+    <span class="pricing-period">{period}</span>
+  </div>
+  <p class="pricing-description">{description}</p>
+  <ul class="pricing-features">
+    {features.map(feature => (
+      <li>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8l4 4 6-8" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        {feature}
+      </li>
+    ))}
+  </ul>
+  <a
+    href={ctaHref}
+    class={`btn ${featured ? 'btn-primary' : 'btn-outline'} btn-block`}
+    data-magnetic={featured || undefined}
+    target="_blank"
+    rel="noopener"
+  >
+    {ctaText}
+  </a>
+</div>

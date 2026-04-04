@@ -1,0 +1,160 @@
+{
+  "cliente": "Studio 17",
+  "url_auditada": "https://www.studio17greenville.com/",
+  "sector": "Pilates Studio / Fitness",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Técnico: 50. Studio 17 es un estudio de Pilates local en Greenville, SC, encajando como servicio local de salud/bienestar.",
+  "fecha": "2026-04-03",
+  "scores": {
+    "seo": 30,
+    "ux_ui": 40,
+    "marketing": 38,
+    "contenido": 55,
+    "tecnico": 42,
+    "total": 41
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title presente y con keyword relevante: 'Start Your Pilates Journey Today'",
+        "CTAs con texto descriptivo y verbos de acción: 'Explore Classes', 'Browse Classes', 'Book an Appointment'",
+        "Estructura de contenido lógica con títulos claros por sección"
+      ],
+      "negativos": [
+        "Sin meta description — Google generará un snippet automático probablemente poco optimizado",
+        "Sin meta keywords (menor impacto pero indica falta de estrategia SEO)",
+        "Ninguna imagen tiene alt text — pérdida total de SEO de imágenes y accesibilidad",
+        "Hero section sin CTA — el visitante no tiene acción inmediata visible",
+        "No hay keywords locales en el H1 (falta 'Greenville', 'Pilates studio near me')",
+        "Favicon ausente"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar meta description optimizada con keywords locales: 'Classical Pilates studio in Greenville, SC. Private lessons, group reformer classes, and mat classes. Start with our Getting Started package.'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar alt text descriptivo a todas las imágenes con keywords relevantes", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Incluir keywords de localización en H1 o subtítulo: 'Classical Pilates in Greenville, SC'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar CTA visible en la hero section para captar intención inmediata", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear páginas individuales por servicio para captar búsquedas long-tail (reformer pilates greenville, mat pilates greenville)", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Navegación simple y clara con 4 items principales",
+        "Logo presente en header con buena identificación de marca",
+        "Estructura de página lógica: hero → educación → bienvenida → CTA → clases → contacto"
+      ],
+      "negativos": [
+        "Paleta extremadamente limitada (solo negro, blanco, gris) — carece de personalidad visual y calidez que un estudio de bienestar necesita",
+        "Tipografías no detectables — posible dependencia de defaults de Squarespace sin personalización",
+        "Secciones de clases y precios son bloques de texto densos sin separación visual ni cards",
+        "No hay indicios de diseño mobile-first o responsive optimizado más allá de lo que Squarespace provee por defecto",
+        "Muy pocas imágenes para un negocio visual como un estudio de Pilates (solo 3 en todo el sitio)"
+      ],
+      "recomendaciones": [
+        { "accion": "Definir paleta de colores cálida y profesional que refleje bienestar (tonos tierra, sage green, o warm neutrals)", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Presentar clases en cards individuales con imagen, descripción y botón de signup", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar más fotografías del estudio, equipamiento y sesiones en acción", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Implementar tipografías que comuniquen elegancia y movimiento (serif para títulos, sans-serif para cuerpo)", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Propuesta de valor clara: Classical Pilates con enfoque personalizado",
+        "CTAs variados y con verbos de acción en múltiples secciones",
+        "Paquete 'Getting Started' bien definido como punto de entrada para nuevos clientes ($200, 3 sesiones privadas)"
+      ],
+      "negativos": [
+        "Cero prueba social — sin testimonios, reseñas, número de clientes, o resultados",
+        "Hero section no resuelve un dolor concreto del cliente — es descriptivo pero no empático",
+        "No hay urgencia o escasez (capacidad limitada, horarios que se llenan, etc.)",
+        "Sin diferenciador claro vs otros estudios de Pilates en Greenville",
+        "Email con formato posiblemente erróneo: 'info@studio17@gmail.com' (doble @)"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar sección de testimonios con 3-5 reseñas reales de clientes", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reescribir hero para abordar dolor del cliente: 'Posture problems? Back pain? Discover how Classical Pilates can transform your body.'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Corregir email de contacto — 'info@studio17@gmail.com' tiene doble @ y es inválido", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar diferenciadores: única certificación Classical en Greenville, equipamiento Contrology completo, experiencia desde 2007", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Incluir sección de resultados o transformaciones para generar confianza", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Descripciones de clases detalladas y específicas — no genéricas",
+        "Biografía de la instructora completa con certificaciones verificables",
+        "Información práctica útil: qué traer, cómo empezar, precios claros",
+        "Sección 'What is Classical Pilates' educa al visitante y posiciona experticia"
+      ],
+      "negativos": [
+        "Sin sección de FAQ para resolver objeciones comunes (dolor, edad, condiciones, frecuencia recomendada)",
+        "Horarios específicos no visibles en el sitio — redirige a Acuity Scheduling externo",
+        "Sin información sobre políticas de cancelación, paquetes de clases, o membresías",
+        "Contenido de 'About' mezcla información personal y profesional sin jerarquía clara"
+      ],
+      "recomendaciones": [
+        { "accion": "Crear sección FAQ con preguntas comunes: '¿Es Pilates para mí?', '¿Qué si tengo lesiones?', '¿Con qué frecuencia debo practicar?'", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Mostrar horario semanal embebido directamente en la página de clases", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Agregar información sobre paquetes y políticas de cancelación", "prioridad": "baja", "tipo": "mejora_estructural" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Squarespace 7.1 es estable y mantenido",
+        "Formularios funcionales presentes (contacto y registro de nuevos clientes)",
+        "Integración con Acuity Scheduling para reservas online"
+      ],
+      "negativos": [
+        "Squarespace limita personalización avanzada de diseño y SEO técnico",
+        "Sin schema markup para Local Business (Google My Business structured data)",
+        "Solo una red social (Instagram) — sin Google Business Profile link visible",
+        "Sin sitemap.xml personalizado o robots.txt optimizado más allá de defaults",
+        "Dependencia de CDN de Squarespace para todas las imágenes sin optimización explícita"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a sitio estático con Astro + Tailwind para control total de SEO, rendimiento y diseño", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar schema markup LocalBusiness y PilatesStudio para rich snippets en Google", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar Google Business Profile link y asegurar NAP consistency", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Optimizar imágenes con formatos modernos (WebP/AVIF) y lazy loading", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "stack_actual": "Squarespace 7.1",
+    "stack_recomendado": "Astro + Tailwind CSS",
+    "integraciones": ["Acuity Scheduling", "Instagram", "reCAPTCHA Enterprise", "Facebook API"],
+    "complejidad": "media"
+  },
+  "quick_wins": [
+    "Agregar meta description con keywords locales (Pilates Greenville SC)",
+    "Corregir email de contacto (doble @ inválido)",
+    "Agregar alt text a todas las imágenes",
+    "Incluir CTA en hero section",
+    "Agregar keywords de localización en heading principal"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Corregir email de contacto",
+      "Agregar meta description optimizada",
+      "Agregar alt text a todas las imágenes",
+      "Incluir CTA visible en hero section",
+      "Reescribir H1 con keywords locales"
+    ],
+    "mes_1": [
+      "Diseñar y desarrollar nuevo sitio con Astro + Tailwind",
+      "Crear paleta de colores profesional para bienestar",
+      "Presentar clases en cards individuales con mejor UX",
+      "Agregar sección de testimonios",
+      "Implementar schema markup LocalBusiness",
+      "Crear sección FAQ"
+    ],
+    "largo_plazo": [
+      "Crear páginas individuales por servicio para SEO long-tail",
+      "Embeder horario semanal directamente en el sitio",
+      "Agregar galería de fotos del estudio y sesiones",
+      "Documentar políticas de cancelación y paquetes"
+    ]
+  },
+  "resumen_ejecutivo": "Studio 17 tiene contenido sólido y servicios bien definidos, pero su presencia web en Squarespace carece de optimización SEO local, prueba social, y una identidad visual que transmita la calidez y profesionalismo de un estudio de Pilates premium. La mayor oportunidad está en un rediseño completo con SEO local agresivo, testimonios, y una experiencia visual que convierta visitantes en clientes del paquete Getting Started. El próximo paso es migrar a un sitio estático optimizado con Astro + Tailwind, implementando las quick wins de SEO y marketing en la primera semana.",
+  "stack_para_web": {
+    "framework": "astro",
+    "estilos": "tailwind",
+    "extras": ["schema-markup", "acuity-scheduling-embed", "image-optimization"],
+    "justificacion": "Complejidad media: múltiples páginas (home, classes, about, contact), necesidad de SEO local avanzado, integración con Acuity Scheduling, y optimización de imágenes. Astro ofrece HTML estático ultra-rápido con islands de interactividad donde se necesite, ideal para un sitio de servicio local que necesita excelente Core Web Vitals."
+  }
+}

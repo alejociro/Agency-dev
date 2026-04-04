@@ -1,0 +1,36 @@
+---
+interface Props {
+  variant?: 'primary' | 'outline' | 'outline-light' | 'ghost';
+  href?: string;
+  size?: 'default' | 'lg' | 'sm';
+  block?: boolean;
+  magnetic?: boolean;
+  target?: string;
+  rel?: string;
+  type?: string;
+}
+
+const { variant = 'primary', href, size = 'default', block = false, magnetic = false, target, rel, type } = Astro.props;
+
+const classes = [
+  'btn',
+  variant === 'primary' && 'btn-primary',
+  variant === 'outline' && 'btn-outline',
+  variant === 'outline-light' && 'btn-outline-light',
+  variant === 'ghost' && 'btn-ghost',
+  size === 'lg' && 'btn-lg',
+  size === 'sm' && 'btn-sm',
+  block && 'btn-block',
+].filter(Boolean).join(' ');
+
+const Tag = href ? 'a' : 'button';
+---
+{href ? (
+  <a href={href} class={classes} data-magnetic={magnetic || undefined} target={target} rel={rel}>
+    <slot />
+  </a>
+) : (
+  <button class={classes} data-magnetic={magnetic || undefined} type={type || 'button'}>
+    <slot />
+  </button>
+)}

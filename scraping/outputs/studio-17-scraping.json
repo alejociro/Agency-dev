@@ -1,0 +1,96 @@
+{
+  "negocio": "Studio 17",
+  "url": "https://www.studio17greenville.com/",
+  "sector": "Classical Pilates Studio",
+  "requiere_render": true,
+  "nota_scraping": "Sitio renderizado por JS (Squarespace). Algunos datos pueden estar incompletos. Considerar scraping con browser headless.",
+  "meta": {
+    "title": "Studio 17 | Start Your Pilates Journey Today",
+    "description": "Discover Classical Pilates at Studio 17 in Greenville, SC. Improve posture, balance, and strength with expert-led classes in a welcoming environment.",
+    "keywords": null
+  },
+  "favicon": "https://assets.squarespace.com/universal/default-favicon.ico",
+  "paleta": {
+    "primario": "#2d3a2e",
+    "secundario": "#8b7d6b",
+    "acento": "#c4a97d",
+    "fondo": "#f5f2ed",
+    "texto": "#2d3a2e",
+    "otros": []
+  },
+  "logo": {
+    "url": null,
+    "descripcion": "Studio 17 text logo",
+    "posicion": "top center",
+    "colores": []
+  },
+  "tipografias": [
+    { "nombre": "System/Squarespace default", "uso": "body", "peso": "400", "tamanio_aprox": "16px" }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://www.studio17greenville.com/" },
+    { "label": "Classes", "url": "https://www.studio17greenville.com/classes" },
+    { "label": "About", "url": "https://www.studio17greenville.com/about" },
+    { "label": "Contact", "url": "https://www.studio17greenville.com/contact" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "A System That Lengthens, Strengthens, and Balances",
+      "contenido": null,
+      "cta": "Explore Classes",
+      "imagenes": []
+    },
+    {
+      "tipo": "sobre",
+      "titulo": "What is Classical Pilates",
+      "contenido": "Classical Pilates is a system developed by Joseph Pilates. It focuses on precise, controlled movements, breath, and a strong mind-body connection. It can improve posture, balance and flexibility. Studio 17 is a fully equipped Classical Studio - all of the equipment used at Studio 17 is Contrology, by Balanced Body including the Cadillac, Reformer, Barrels, Chairs, and supporting small apparatus, designed to help the body become stronger on the Mat.",
+      "cta": "Explore Classes",
+      "imagenes": []
+    },
+    {
+      "tipo": "bienvenida",
+      "titulo": "Welcome to Studio 17",
+      "contenido": "I love Pilates, it has truly changed my body. My hope is that it becomes your lifelong practice - no matter where or how you practice. I want everyone who walks through the doors of Studio 17 to feel welcome, supported, and at home in their bodies. Teaching aids are provided and BeLinda oversees the studio to make certain everyone is safe and to answer any questions if needed.",
+      "cta": "Discover Your Practice",
+      "imagenes": []
+    },
+    {
+      "tipo": "clases",
+      "titulo": "Browse Classes",
+      "contenido": null,
+      "cta": "Browse Classes",
+      "imagenes": []
+    },
+    {
+      "tipo": "contacto",
+      "titulo": "Studio 17 Info",
+      "contenido": "1320 Hampton Street Ext, Suite 601, Greenville, SC 29601. Monday-Saturday | View Schedule. Contact: 1-864-326-0626. info@studio17@gmail.com",
+      "cta": "Book an Appointment",
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "A System That Lengthens, Strengthens, and Balances",
+    "propuesta_valor": "Fully equipped Classical Pilates Studio with Contrology equipment by Balanced Body in Greenville, SC",
+    "ctas": ["Explore Classes", "Discover Your Practice", "Browse Classes", "Book an Appointment"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "1-864-326-0626",
+    "whatsapp": null,
+    "email": "studio17@gmail.com",
+    "direccion": "1320 Hampton Street Ext, Suite 601, Greenville, SC 29601",
+    "horarios": "Monday-Saturday"
+  },
+  "redes": [],
+  "formularios": [
+    { "proposito": "Contact", "campos": [] }
+  ],
+  "footer": {
+    "contenido": "Studio 17 Info. Quick Links: Home, Classes, About, Contact.",
+    "links": ["Home", "Classes", "About", "Contact", "Book an Appointment"],
+    "copyright": null
+  },
+  "tecnologia": "Squarespace"
+}

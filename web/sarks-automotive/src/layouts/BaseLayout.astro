@@ -1,0 +1,474 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  canonicalUrl?: string;
+  bodyClass?: string;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description = "Expert auto repair in Mauldin & Greenville SC. ASE, IMACA & RepairPal certified. 12-month/12,000-mile warranty on all repairs. Schedule your appointment today.",
+  canonicalUrl,
+  bodyClass = "",
+  ogImage = "https://le-cdn.hibuwebsites.com/7610d4966731467fa1cef0b6adfbe67a/dms3rep/multi/opt/RSshutterstock_124885084-1920w.jpg"
+} = Astro.props;
+
+const siteName = "Sarks Automotive";
+const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
+const currentPath = Astro.url.pathname;
+const siteUrl = "https://sarks-automotive.vercel.app";
+const pageUrl = `${siteUrl}${currentPath}`;
+
+// Schema JSON-LD — AutoRepair with dual locations
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Sarks Automotive",
+  "description": "ASE, IMACA and RepairPal certified auto repair shop serving Mauldin and Greenville SC since 2013. 50+ years combined experience. 12-month/12,000-mile warranty.",
+  "url": siteUrl,
+  "telephone": "+18642104866",
+  "email": "sarksautomotive@live.com",
+  "foundingDate": "2013",
+  "priceRange": "$$",
+  "image": ogImage,
+  "logo": "https://le-cdn.hibuwebsites.com/7610d4966731467fa1cef0b6adfbe67a/dms3rep/multi/opt/Sarks+Auto-1920w.png",
+  "areaServed": [
+    { "@type": "City", "name": "Mauldin", "containedInPlace": { "@type": "State", "name": "South Carolina" } },
+    { "@type": "City", "name": "Greenville", "containedInPlace": { "@type": "State", "name": "South Carolina" } }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Auto Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brake Service & Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Auto Diagnostic Services" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oil Changes" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tire Services" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AC Service & Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Transmission & Engine Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Battery Replacement" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Muffler & Exhaust Services" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Auto Detailing" } }
+    ]
+  },
+  "location": [
+    {
+      "@type": "Place",
+      "name": "Sarks Automotive - Mauldin",
+      "address": { "@type": "PostalAddress", "addressLocality": "Mauldin", "addressRegion": "SC", "addressCountry": "US" }
+    },
+    {
+      "@type": "Place",
+      "name": "Sarks Automotive - Greenville",
+      "address": { "@type": "PostalAddress", "addressLocality": "Greenville", "addressRegion": "SC", "addressCountry": "US" }
+    }
+  ],
+  "sameAs": []
+};
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{fullTitle}</title>
+
+  <!-- SEO Primary -->
+  <meta name="description" content={description} />
+  <meta name="keywords" content="auto repair Mauldin SC, auto repair Greenville SC, ASE certified mechanic, brake repair, oil change, car diagnostics, transmission repair, tire service, RepairPal certified, IMACA, Sarks Automotive" />
+  <link rel="canonical" href={pageUrl} />
+
+  <!-- Preconnect to font sources -->
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+  <link rel="dns-prefetch" href="https://api.fontshare.com" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="https://cdn.hibuwebsites.com/7610d4966731467fa1cef0b6adfbe67a/site_favicon_16_1769536810521.ico" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={pageUrl} />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:site_name" content={siteName} />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+
+  <!-- Schema JSON-LD -->
+  <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+
+  <!-- Speculation Rules — prefetch likely navigation targets -->
+  <script type="speculationrules">
+  {
+    "prerender": [
+      { "where": { "href_matches": "/services/*" } },
+      { "where": { "href_matches": "/contact/*" } }
+    ],
+    "prefetch": [
+      { "where": { "href_matches": "/about/*" } },
+      { "where": { "href_matches": "/blog/*" } }
+    ]
+  }
+  </script>
+
+  <!-- Critical inline styles -->
+  <style is:inline>
+    body { opacity: 0; transition: opacity 0.3s ease; }
+    body.loaded { opacity: 1; }
+  </style>
+
+  <slot name="head" />
+</head>
+<body class={bodyClass}>
+  <!-- Reading progress bar -->
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header data-nav class="site-nav nav-load" role="banner">
+    <div class="container nav-inner">
+      <a href="/" class="site-logo" aria-label="Sarks Automotive Home">
+        <svg viewBox="0 0 180 40" class="logo-svg" width="180" height="40" aria-hidden="true">
+          <text x="0" y="30" font-family="'Clash Display', sans-serif" font-weight="700" font-size="24" fill="var(--color-secondary)">SARKS</text>
+          <text x="88" y="30" font-family="'Satoshi', sans-serif" font-weight="400" font-size="14" fill="var(--color-text-light)" letter-spacing="2">AUTO</text>
+        </svg>
+      </a>
+
+      <nav class="nav-links" data-menu role="navigation" aria-label="Main navigation">
+        <a href="/" class={`nav-link ${currentPath === '/' ? 'active' : ''}`}>Home</a>
+        <a href="/services/" class={`nav-link ${currentPath.startsWith('/services') ? 'active' : ''}`}>Services</a>
+        <a href="/about/" class={`nav-link ${currentPath.startsWith('/about') ? 'active' : ''}`}>About</a>
+        <a href="/blog/" class={`nav-link ${currentPath.startsWith('/blog') ? 'active' : ''}`}>Blog</a>
+        <a href="/contact/" class={`nav-link ${currentPath.startsWith('/contact') ? 'active' : ''}`}>Contact</a>
+        <a href="/contact/" class="btn btn-primary nav-cta" data-magnetic>Get Estimate</a>
+      </nav>
+
+      <button class="menu-toggle" data-menu-toggle aria-label="Toggle menu" aria-expanded="false">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer section-dark">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo" aria-label="Sarks Automotive Home">
+            <svg viewBox="0 0 180 40" width="180" height="40" aria-hidden="true">
+              <text x="0" y="30" font-family="'Clash Display', sans-serif" font-weight="700" font-size="24" fill="var(--color-secondary)">SARKS</text>
+              <text x="88" y="30" font-family="'Satoshi', sans-serif" font-weight="400" font-size="14" fill="var(--color-text-light)" letter-spacing="2">AUTO</text>
+            </svg>
+          </a>
+          <p class="footer-tagline">Triple-certified auto repair in Mauldin & Greenville, SC. Building lasting relationships since 2013.</p>
+          <div class="footer-certs">
+            <span class="cert-badge">ASE Certified</span>
+            <span class="cert-badge">IMACA</span>
+            <span class="cert-badge">RepairPal</span>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-heading">Navigate</h4>
+          <a href="/">Home</a>
+          <a href="/services/">Services</a>
+          <a href="/about/">About Us</a>
+          <a href="/blog/">Blog</a>
+          <a href="/contact/">Contact</a>
+        </div>
+
+        <div class="footer-services">
+          <h4 class="footer-heading">Top Services</h4>
+          <a href="/services/#brakes">Brake Repair</a>
+          <a href="/services/#diagnostics">Diagnostics</a>
+          <a href="/services/#oil-changes">Oil Changes</a>
+          <a href="/services/#tires">Tire Services</a>
+          <a href="/services/#ac">AC Repair</a>
+        </div>
+
+        <div class="footer-contact-info">
+          <h4 class="footer-heading">Get In Touch</h4>
+          <a href="tel:+18642104866" class="footer-phone">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            (864) 210-4866
+          </a>
+          <a href="mailto:sarksautomotive@live.com" class="footer-email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            sarksautomotive@live.com
+          </a>
+          <p class="footer-locations">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Mauldin & Greenville, SC
+          </p>
+        </div>
+      </div>
+
+      <!-- SMS Specials opt-in -->
+      <div class="footer-sms">
+        <div class="footer-sms-inner">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <p>Get exclusive specials by text! Text <strong>START</strong> to <a href="sms:+18647131307&body=START">(864) 713-1307</a></p>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sarks Automotive. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Section dots navigation -->
+  <nav class="section-dots" aria-label="Section navigation"></nav>
+
+  <script src="../scripts/animations.js"></script>
+  <script src="../scripts/experiences.js"></script>
+</body>
+</html>
+
+<style is:global>
+  @import '../styles/design-system.css';
+  @import '../styles/animations.css';
+
+  /* ============================================
+     NAVIGATION
+     ============================================ */
+
+  .site-nav {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline: 0;
+    z-index: 100;
+    padding-block: var(--space-2);
+    transition: background 0.4s ease, box-shadow 0.4s ease, padding 0.3s ease;
+  }
+
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+  }
+
+  .logo-svg {
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+  }
+
+  .nav-link {
+    font-family: var(--font-display);
+    font-size: var(--text-small);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--color-text-light);
+    padding-block: 0.25rem;
+  }
+
+  .nav-cta {
+    padding: 0.625rem 1.25rem;
+    font-size: var(--text-xs);
+  }
+
+  .nav-scrolled {
+    padding-block: 0.5rem;
+  }
+
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.5rem;
+    z-index: 110;
+  }
+
+  .menu-bar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--color-text-light);
+    transition: all 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+    .menu-toggle { display: flex; }
+
+    .nav-links {
+      position: fixed;
+      inset: 0;
+      flex-direction: column;
+      justify-content: center;
+      gap: var(--space-4);
+      background: var(--color-bg-dark);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      z-index: 105;
+    }
+
+    .nav-links.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .nav-link {
+      font-size: var(--text-h3);
+    }
+
+    .menu-toggle[aria-expanded="true"] .menu-bar:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menu-toggle[aria-expanded="true"] .menu-bar:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-toggle[aria-expanded="true"] .menu-bar:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+
+  /* ============================================
+     FOOTER
+     ============================================ */
+
+  .site-footer {
+    padding-block: var(--space-8);
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    }
+  }
+
+  .footer-tagline {
+    color: var(--color-text-muted);
+    font-size: var(--text-small);
+    margin-block: var(--space-2);
+    max-width: 30ch;
+  }
+
+  .footer-certs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-block-start: var(--space-2);
+  }
+
+  .footer-heading {
+    font-family: var(--font-display);
+    font-size: var(--text-small);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    margin-block-end: var(--space-2);
+  }
+
+  .footer-nav a,
+  .footer-services a {
+    display: block;
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    padding-block: 0.3rem;
+    transition: color 0.2s ease;
+
+    &:hover { color: var(--color-text-light); }
+  }
+
+  .footer-contact-info a,
+  .footer-contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    padding-block: 0.4rem;
+    transition: color 0.2s ease;
+  }
+
+  .footer-contact-info a:hover { color: var(--color-secondary); }
+
+  .footer-sms {
+    padding-block: var(--space-3);
+  }
+
+  .footer-sms-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: var(--space-2) var(--space-3);
+    background: oklch(0.78 0.15 85 / 0.06);
+    border: 1px solid oklch(0.78 0.15 85 / 0.12);
+    border-radius: var(--radius-md);
+  }
+
+  .footer-sms-inner p {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+  }
+
+  .footer-sms-inner strong {
+    color: var(--color-secondary);
+  }
+
+  .footer-sms-inner a {
+    color: var(--color-secondary);
+    font-weight: 600;
+    &:hover { text-decoration: underline; }
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-2);
+    padding-block-start: var(--space-4);
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+  }
+
+  .footer-legal {
+    display: flex;
+    gap: var(--space-3);
+  }
+
+  .footer-legal a {
+    color: var(--color-text-muted);
+    &:hover { color: var(--color-text-light); }
+  }
+
+  .divider { margin-block: var(--space-4); }
+</style>

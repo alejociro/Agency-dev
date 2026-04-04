@@ -630,9 +630,7 @@
   }
 
   .faq-answer {
-    max-height: 0;
     overflow: hidden;
-    transition: max-height var(--duration-slow) var(--ease-out);
   }
 
   .faq-answer__inner {
@@ -1119,13 +1117,9 @@
   }
 
   /* ── Contact grid ─────────────────────────────────── */
-  .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-8);
-
+  .contact-grid .container {
     @media (min-width: 768px) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1.5fr;
     }
   }
 
@@ -1281,4 +1275,17 @@
     font-weight: 600;
     font-size: var(--text-small);
   }
+}
+
+/* ── Unlayered overrides (beats Tailwind CDN resets) ─── */
+button.btn-primary,
+a.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+button.btn-primary:hover,
+a.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-inverse);
 }

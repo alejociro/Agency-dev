@@ -1,0 +1,496 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const services = [
+  { num: '01', title: 'AC & Heat Repair', desc: 'Complete climate control diagnostics and repair. Stay comfortable in any season with expert AC and heating system service.', icon: 'snowflake' },
+  { num: '02', title: 'Brake Repair', desc: 'Pads, rotors, calipers, and full brake system inspection. Your safety is our top priority on every job.', icon: 'disc' },
+  { num: '03', title: 'Diagnostics', desc: 'State-of-the-art computer diagnostics to pinpoint issues fast. No guessing — just precision troubleshooting.', icon: 'cpu' },
+  { num: '04', title: 'Engines', desc: 'From minor tune-ups to full engine rebuilds. Our ASE-Certified technicians handle it all with precision.', icon: 'engine' },
+  { num: '05', title: 'Oil Changes', desc: 'Quick, thorough oil changes with premium fluids. Keep your engine running clean and strong.', icon: 'droplet' },
+  { num: '06', title: 'Steering & Suspension', desc: 'Shocks, struts, tie rods, and power steering repair. Drive smooth and handle with confidence.', icon: 'steering' },
+  { num: '07', title: 'Tires & Alignments', desc: 'New tires, rotations, balancing, and precision alignments. Maximize tire life and road grip.', icon: 'circle' },
+  { num: '08', title: 'Transmissions', desc: 'Manual and automatic transmission repair and rebuilds. We keep your drivetrain shifting smooth.', icon: 'gear' },
+  { num: '09', title: 'Jeep Specialists', desc: 'Dedicated Jeep service and repair. From trail-ready upgrades to routine maintenance, we know Jeeps inside and out.', icon: 'jeep' },
+];
+
+const amenities = [
+  { title: 'Free Rides To Work/Home', desc: 'Need to leave your vehicle with us? We will get you where you need to go.' },
+  { title: 'Free Loaner Cars', desc: 'If your car has to stay for repairs, we have a fleet of loaners to choose from.' },
+  { title: 'Towing Available', desc: "Don't drive an undrivable vehicle. We can get it towed to our shop safely." },
+  { title: 'Free Second Opinion', desc: 'If another shop gave you an estimate, we would love to take a look.' },
+  { title: 'Financing Options', desc: 'We proudly offer a number of financing options to all of our customers.' },
+  { title: 'Free Vehicle Pick Up & Delivery', desc: 'Enjoy free vehicle pick-up and delivery, saving time while we service your car.' },
+  { title: '24/7 Secure Key Dropbox', desc: 'Drop your vehicle securely at any time of day or night with our secure key dropbox.' },
+];
+
+const locations = [
+  { num: '01', name: 'Mauldin', address: '451 N Main St, Mauldin, SC 29662' },
+  { num: '02', name: 'Greenville', address: '3111 Augusta St, Greenville, SC 29605' },
+  { num: '03', name: 'Fountain Inn', address: '550 N Woods Dr, Fountain Inn, SC 29644' },
+  { num: '04', name: 'Spartanburg', address: '120B Southport Rd, Spartanburg, SC 29306' },
+];
+
+/* No fabricated testimonials — reviews section uses Google Reviews placeholder */
+---
+
+<BaseLayout
+  title="Auto Repair in Greenville & Mauldin SC"
+  description="Family-owned auto repair with ASE-Certified technicians serving Mauldin, Greenville, Fountain Inn & Spartanburg SC. Free loaner cars, rides, 24/7 key dropbox."
+>
+  <Header />
+
+  <!-- Section dots navigation -->
+  <div class="section-dots" aria-label="Section navigation"></div>
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <section id="hero" class="hero metal-bg" data-label="Home">
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content container">
+      <span class="hero-tag section-tag section-tag--light">ASE-Certified · Family-Owned · 4 SC Locations</span>
+
+      <h1 class="hero-title" data-split>Precision Workmanship Timely Service</h1>
+
+      <div class="hero-line red-line red-line--wide" aria-hidden="true"></div>
+
+      <p class="hero-sub">
+        Full-service auto repair in Mauldin, Greenville, Fountain Inn &amp; Spartanburg.
+        Free loaner cars. Free rides. 24/7 key dropbox. Zero surprises.
+      </p>
+
+      <div class="hero-cta">
+        <a href="/contact#appointment" class="btn btn--primary btn--lg" data-magnetic>
+          Book Appointment <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a href="#services" class="btn btn--outline-light">
+          Our Services <span class="arrow" aria-hidden="true">&darr;</span>
+        </a>
+      </div>
+
+      <div class="hero-proof">
+        <div class="hero-proof__stats">
+          <div class="hero-proof__stat">
+            <span class="counter" data-counter data-target="4" data-suffix=" Locations">0</span>
+          </div>
+          <div class="hero-proof__divider" aria-hidden="true"></div>
+          <div class="hero-proof__stat">
+            <span>ASE-Certified</span>
+          </div>
+          <div class="hero-proof__divider" aria-hidden="true"></div>
+          <div class="hero-proof__stat">
+            <span>Family-Owned</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="text-mono">Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVICES
+       ============================================ -->
+  <section id="services" class="section-padding" data-label="Services">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">What We Do</span>
+        <h2>Full-Service Auto Repair</h2>
+        <p>From oil changes to complete engine rebuilds, our ASE-Certified technicians handle every repair with precision and care.</p>
+      </div>
+
+      <div class="grid-services" data-animate="stagger" data-service-grid>
+        {services.map((s) => (
+          <a href="/services" class="service-card" data-service-category="all">
+            <span class="service-card__number" aria-hidden="true">{s.num}</span>
+            <h3 class="service-card__title">{s.title}</h3>
+            <div class="red-line red-line-hover" aria-hidden="true"></div>
+            <p class="service-card__desc">{s.desc}</p>
+          </a>
+        ))}
+      </div>
+
+      <div class="section-cta" data-animate="fade-up">
+        <a href="/services" class="btn btn--dark" data-magnetic>
+          View All Services <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       AMENITIES — Blueprint Checklist
+       ============================================ -->
+  <section id="amenities" class="section-padding amenities-section" data-label="Amenities">
+    <div class="container">
+      <div class="grid-asymmetric">
+        <div>
+          <div class="section-header section-header--left" data-animate="fade-up">
+            <span class="section-tag">Customer Amenities</span>
+            <h2>We Go The Extra Mile</h2>
+            <p>Auto repair should be hassle-free. That is why we offer amenities no other shop in South Carolina matches.</p>
+          </div>
+
+          <div class="grid-amenities" data-animate="stagger">
+            {amenities.map((a) => (
+              <div class="amenity-item">
+                <div class="amenity-item__check" aria-hidden="true">&#10003;</div>
+                <div>
+                  <h3 class="amenity-item__title">{a.title}</h3>
+                  <p class="amenity-item__desc">{a.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="amenities-accent" data-animate="fade-right">
+          <div class="amenities-accent__number number-label float-number" aria-hidden="true">7+</div>
+          <p class="amenities-accent__text text-display">Free amenities<br/>with every<br/>service visit</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CTA BANNER — Full Width
+       ============================================ -->
+  <section class="cta-banner diagonal-cut" data-animate="scale-in">
+    <div class="cta-banner__inner container">
+      <h2 class="cta-banner__title">Another Shop Gave You An Estimate?</h2>
+      <p class="cta-banner__sub">Get a free second opinion from our ASE-Certified technicians. No pressure, no commitment.</p>
+      <a href="/contact#appointment" class="btn btn--outline-light btn--lg" data-magnetic>
+        Get Free Second Opinion <span class="arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       LOCATIONS
+       ============================================ -->
+  <section id="locations" class="section-padding" data-label="Locations">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Find Us</span>
+        <h2>4 Locations Across South Carolina</h2>
+        <p>Wherever you are in the Upstate, there is a Killian Auto Pros near you.</p>
+      </div>
+
+      <div class="grid-locations" data-animate="stagger">
+        {locations.map((loc) => (
+          <div class="location-card">
+            <div class="location-card__number-bg" aria-hidden="true">{loc.num}</div>
+            <div>
+              <span class="location-card__pulse" aria-hidden="true"></span>
+              <span class="text-label">Location {loc.num}</span>
+            </div>
+            <h3 class="location-card__name">{loc.name}</h3>
+            <p class="location-card__address">{loc.address}</p>
+            <a href="/contact" class="btn btn--primary" style="margin-block-start: var(--space-2); font-size: 0.9rem; padding: 0.5rem 1.25rem;">
+              Get Directions
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       REVIEWS — Google Reviews Placeholder
+       ============================================ -->
+  <section id="reviews" class="section-padding metal-bg--light" data-label="Reviews">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Customer Reviews</span>
+        <h2>See What Our Customers Say</h2>
+        <p>Check out our reviews on Google to hear directly from customers who trust Killian Auto Pros with their vehicles.</p>
+      </div>
+
+      <div class="reviews-placeholder" data-animate="fade-up">
+        <div class="reviews-placeholder__inner">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+          <h3 class="reviews-placeholder__title">Read Our Google Reviews</h3>
+          <p class="reviews-placeholder__desc">We are proud of the service we provide. Visit our Google Business page to see real reviews from real customers.</p>
+          <a href="https://www.google.com/search?q=Killian+Auto+Pros+reviews" target="_blank" rel="noopener noreferrer" class="btn btn--dark" data-magnetic>
+            View Google Reviews <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FINAL CTA
+       ============================================ -->
+  <section class="cta-final metal-bg" data-animate="fade-up">
+    <div class="container cta-final__inner">
+      <h2 class="cta-final__title" data-split>Ready To Get Your Car Fixed Right?</h2>
+      <p class="cta-final__sub">
+        Book an appointment online or call us. Free estimates, free loaner cars, and zero surprises.
+      </p>
+      <div class="cta-final__actions">
+        <a href="/contact#appointment" class="btn btn--primary btn--lg" data-magnetic>
+          Book Appointment <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a href="tel:8646488408" class="btn btn--outline-light btn--lg">
+          Call 864-648-8408
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* ---- HERO ---- */
+  .hero {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    padding-block-start: 6rem;
+    padding-block-end: 4rem;
+    overflow: hidden;
+  }
+
+  .hero__overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 30% 70%, oklch(0.55 0.25 27 / 0.12) 0%, transparent 60%),
+      linear-gradient(180deg, oklch(0.1 0.01 50 / 0.3) 0%, transparent 40%);
+    z-index: 1;
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-title {
+    font-size: var(--text-hero);
+    color: var(--color-text-inverse);
+    max-width: 14ch;
+    margin-block: var(--space-3) var(--space-2);
+  }
+
+  .hero-sub {
+    color: var(--color-metal);
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    max-width: 48ch;
+    margin-block-end: var(--space-4);
+    line-height: var(--leading-body);
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-block-end: var(--space-6);
+  }
+
+  .hero-proof__stats {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
+
+  .hero-proof__stat {
+    color: var(--color-text-inverse);
+    font-family: var(--font-display), 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+  }
+
+  .hero-proof__divider {
+    width: 1px;
+    height: 24px;
+    background: var(--color-metal-dark);
+  }
+
+  .hero__scroll {
+    position: absolute;
+    inset-block-end: var(--space-4);
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-metal-dark);
+    z-index: 2;
+  }
+
+  .hero__scroll-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(180deg, var(--color-primary), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.4; transform: scaleY(0.6); }
+    50%      { opacity: 1; transform: scaleY(1); }
+  }
+
+  /* ---- SECTION HEADERS ---- */
+  .section-header {
+    margin-block-end: var(--space-8);
+    text-align: center;
+
+    & .section-tag {
+      margin-block-end: var(--space-2);
+    }
+
+    & h2 {
+      margin-block-end: var(--space-2);
+    }
+
+    & p {
+      color: var(--color-text-muted);
+      margin-inline: auto;
+      max-width: 55ch;
+    }
+  }
+
+  .section-header--left {
+    text-align: start;
+
+    & p {
+      margin-inline: 0;
+    }
+  }
+
+  .section-cta {
+    text-align: center;
+    margin-block-start: var(--space-6);
+  }
+
+  /* ---- AMENITIES ACCENT ---- */
+  .amenities-section {
+    background: var(--color-bg);
+  }
+
+  .amenities-accent {
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-8);
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  .amenities-accent__number {
+    font-size: clamp(6rem, 14vw, 12rem);
+  }
+
+  .amenities-accent__text {
+    font-size: var(--text-h2);
+    color: var(--color-secondary);
+    margin-block-start: var(--space-2);
+  }
+
+  /* ---- CTA BANNER ---- */
+  .cta-banner {
+    background: var(--color-primary);
+    padding-block: var(--space-12);
+    text-align: center;
+  }
+
+  .cta-banner__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .cta-banner__title {
+    color: var(--color-text-inverse);
+    font-size: var(--text-h1);
+    max-width: 18ch;
+  }
+
+  .cta-banner__sub {
+    color: oklch(1 0 0 / 0.8);
+    max-width: 45ch;
+    text-align: center;
+  }
+
+  /* ---- REVIEWS PLACEHOLDER ---- */
+  .reviews-placeholder {
+    max-width: 600px;
+    margin-inline: auto;
+  }
+
+  .reviews-placeholder__inner {
+    text-align: center;
+    padding: var(--space-8) var(--space-4);
+    background: var(--color-bg);
+    border: 2px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .reviews-placeholder__title {
+    font-size: var(--text-h3);
+  }
+
+  .reviews-placeholder__desc {
+    color: var(--color-text-muted);
+    max-width: 40ch;
+    text-align: center;
+    margin-block-end: var(--space-2);
+  }
+
+  /* ---- FINAL CTA ---- */
+  .cta-final {
+    padding-block: var(--space-12);
+    text-align: center;
+    color: var(--color-text-inverse);
+  }
+
+  .cta-final__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .cta-final__title {
+    color: var(--color-text-inverse);
+    font-size: var(--text-h1);
+    max-width: 16ch;
+  }
+
+  .cta-final__sub {
+    color: var(--color-metal);
+    max-width: 45ch;
+    text-align: center;
+  }
+
+  .cta-final__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-block-start: var(--space-2);
+  }
+</style>

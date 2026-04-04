@@ -1,0 +1,22 @@
+---
+interface Props {
+  animated?: boolean;
+}
+
+const { animated = true } = Astro.props;
+const animClass = animated ? 'cert-animate' : '';
+---
+
+<div class="cert-badges-row">
+  <span class={`cert-badge ${animClass}`}>ASE Certified</span>
+  <span class={`cert-badge ${animClass}`}>IMACA Member</span>
+  <span class={`cert-badge ${animClass}`}>RepairPal Certified</span>
+</div>
+
+<style>
+  .cert-badges-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+</style>

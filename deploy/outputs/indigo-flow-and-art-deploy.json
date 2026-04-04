@@ -1,0 +1,7 @@
+{
+  "negocio": "Indigo Flow and Art",
+  "url_produccion": "https://indigo-flow-and-art.vercel.app",
+  "fecha_deploy": "2026-04-03",
+  "stack": "astro",
+  "carpeta_origen": "web/indigo-flow-and-art/"
+}

@@ -1,0 +1,285 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  activePage?: string;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description = "Classical Pilates studio in Greenville, SC. Private lessons, group reformer classes, and mat classes with certified instructor BeLinda Bellows. Start with our Getting Started package.",
+  canonical = "https://www.studio17greenville.com",
+  activePage = "home",
+  ogImage = "https://images.squarespace-cdn.com/content/v1/68e1557acc9b4e509628a381/d5a0260a-7c5a-476e-86e3-bc431d761b3b/BLB-1002495.jpeg"
+} = Astro.props;
+
+const navLinks = [
+  { label: "Home", href: "/", id: "home" },
+  { label: "Classes", href: "/classes", id: "classes" },
+  { label: "About", href: "/about", id: "about" },
+  { label: "Contact", href: "/contact", id: "contact" },
+];
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Primary -->
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="keywords" content="classical pilates greenville sc, pilates studio greenville, reformer pilates, mat pilates, private pilates lessons, belinda bellows, pilates classes near me, studio 17" />
+  <link rel="canonical" href={canonical} />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:site_name" content="Studio 17" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://images.squarespace-cdn.com/content/v1/68e1557acc9b4e509628a381/bec9ff0f-1934-4944-94b3-39452aae69ea/Studio17-Logo.png" />
+
+  <!-- Geo tags for local SEO -->
+  <meta name="geo.region" content="US-SC" />
+  <meta name="geo.placename" content="Greenville" />
+
+  <!-- Preload hero image -->
+  <link rel="preload" href="https://images.squarespace-cdn.com/content/v1/68e1557acc9b4e509628a381/d5a0260a-7c5a-476e-86e3-bc431d761b3b/BLB-1002495.jpeg" as="image" fetchpriority="high" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Studio 17",
+    "description": "Classical Pilates studio in Greenville, SC offering private lessons, group reformer classes, mat classes, and personalized instruction with certified instructor BeLinda Bellows.",
+    "url": "https://www.studio17greenville.com",
+    "telephone": "+1-864-326-0626",
+    "email": "info@studio17greenville.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1320 Hampton Street Ext, Suite 601",
+      "addressLocality": "Greenville",
+      "addressRegion": "SC",
+      "postalCode": "29601",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "34.85",
+      "longitude": "-82.40"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    "sameAs": [
+      "http://instagram.com/studio17greenvillesc"
+    ],
+    "image": "https://images.squarespace-cdn.com/content/v1/68e1557acc9b4e509628a381/d5a0260a-7c5a-476e-86e3-bc431d761b3b/BLB-1002495.jpeg",
+    "priceRange": "$$",
+    "founder": {
+      "@type": "Person",
+      "name": "BeLinda Bellows",
+      "jobTitle": "Owner & Classical Pilates Instructor"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Pilates Classes",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Getting Started Package",
+            "description": "Three private sessions designed to establish proper form and technique for new students."
+          },
+          "price": "200.00",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Private Session",
+            "description": "One-on-one personalized Classical Pilates instruction."
+          },
+          "price": "85.00",
+          "priceCurrency": "USD"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Speculation Rules for faster navigation -->
+  <script type="speculationrules">
+  {
+    "prerender": [
+      { "where": { "href_matches": "/classes" } },
+      { "where": { "href_matches": "/contact" } }
+    ],
+    "prefetch": [
+      { "where": { "href_matches": "/about" } }
+    ]
+  }
+  </script>
+
+  <!-- Styles -->
+  <style>
+    @import '../styles/design-system.css';
+    @import '../styles/animations.css';
+
+    /* Content-visibility for below-the-fold sections */
+    .section:not(:first-of-type) {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 500px;
+    }
+  </style>
+</head>
+<body class="grain-overlay">
+  <!-- Reading progress bar -->
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="/" class="site-logo" aria-label="Studio 17 - Home">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/68e1557acc9b4e509628a381/bec9ff0f-1934-4944-94b3-39452aae69ea/Studio17-Logo.png"
+          alt="Studio 17 Classical Pilates Logo"
+          width="140"
+          height="48"
+          loading="eager"
+          decoding="async"
+          style="height: 40px; width: auto;"
+        />
+      </a>
+
+      <ul class="nav-links">
+        {navLinks.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              class={`nav-link ${activePage === link.id ? 'active' : ''}`}
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+        <li>
+          <a href="/contact" class="btn btn-primary" data-magnetic style="padding: 0.65rem 1.5rem; font-size: 0.8rem;">
+            Book Now
+          </a>
+        </li>
+      </ul>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    {navLinks.map((link) => (
+      <a href={link.href} class="mobile-link">{link.label}</a>
+    ))}
+    <a href="/contact" class="btn btn-primary" style="margin-top: 1rem;">Book Now</a>
+  </div>
+
+  <slot />
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/68e1557acc9b4e509628a381/bec9ff0f-1934-4944-94b3-39452aae69ea/Studio17-Logo.png"
+            alt="Studio 17 Logo"
+            width="160"
+            height="55"
+            loading="lazy"
+            decoding="async"
+            style="height: 44px; width: auto; filter: brightness(10);"
+          />
+          <p style="margin-top: var(--space-3); color: rgba(245, 240, 232, 0.7); max-width: 35ch;">
+            Classical Pilates designed around you. Precise, controlled movements with a strong mind-body connection.
+          </p>
+          <div style="display: flex; gap: var(--space-3); margin-top: var(--space-4);">
+            <a href="http://instagram.com/studio17greenvillesc" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="font-size: var(--text-small); font-family: var(--font-body); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: var(--space-3); color: var(--color-secondary);">Quick Links</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-2);">
+            {navLinks.map((link) => (
+              <li><a href={link.href} style="font-size: var(--text-small);">{link.label}</a></li>
+            ))}
+            <li><a href="/contact" style="font-size: var(--text-small);">Book an Appointment</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: var(--text-small); font-family: var(--font-body); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: var(--space-3); color: var(--color-secondary);">Studio Info</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-2); font-size: var(--text-small); color: rgba(245, 240, 232, 0.7);">
+            <li style="display: flex; gap: var(--space-1); align-items: flex-start;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="flex-shrink: 0; margin-top: 3px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              1320 Hampton Street Ext, Suite 601, Greenville, SC 29601
+            </li>
+            <li style="display: flex; gap: var(--space-1); align-items: center;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="flex-shrink: 0;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <a href="tel:8643260626">(864) 326-0626</a>
+            </li>
+            <li style="display: flex; gap: var(--space-1); align-items: center;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="flex-shrink: 0;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:info@studio17greenville.com">info@studio17greenville.com</a>
+            </li>
+            <li style="display: flex; gap: var(--space-1); align-items: center;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="flex-shrink: 0;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Monday &ndash; Saturday
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Studio 17. All rights reserved.</span>
+        <span>Classical Pilates in Greenville, SC</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/animations.js"></script>
+</body>
+</html>

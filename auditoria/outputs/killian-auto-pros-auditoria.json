@@ -1,0 +1,151 @@
+{
+  "cliente": "Killian Auto Pros",
+  "url_auditada": "https://killianautopros.com/",
+  "sector": "Auto Repair",
+  "benchmark_aplicado": "Servicio local (Auto Repair) — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Tecnico: 50. Aplicado por ser un taller de reparacion automotriz familiar con multiples ubicaciones en SC.",
+  "fecha": "2026-04-03",
+  "scores": {
+    "seo": 55,
+    "ux_ui": 52,
+    "marketing": 58,
+    "contenido": 50,
+    "tecnico": 48,
+    "total": 53
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title optimizado con keywords y ubicaciones: 'Auto Repair Mauldin Greenville Fountain Inn & Spartanburg SC'",
+        "Meta description completa con servicios especificos y keyword principal",
+        "Estructura de URLs limpia y descriptiva por servicio: /brake-repair/, /engines/, /tires-alignments/",
+        "Favicon y logo personalizados correctamente implementados"
+      ],
+      "negativos": [
+        "Meta title demasiado largo con 4 ciudades — puede truncarse en SERP",
+        "Imagenes de servicios con alt text generico ('AC repair', 'Brake repair') sin ubicacion",
+        "No hay blog con contenido frecuente — solo existe la URL pero sin evidencia de actividad",
+        "Estructura de headings no evidente — puede faltar jerarquia H1-H2-H3 clara"
+      ],
+      "recomendaciones": [
+        { "accion": "Acortar meta title a 60 caracteres: 'Auto Repair in Greenville & Mauldin SC | Killian Auto Pros'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Enriquecer alt text con ubicacion: 'AC repair service in Greenville SC - Killian Auto Pros'", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Activar blog con contenido mensual sobre mantenimiento automotriz para SEO", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Implementar schema markup AutoRepair con multiples locations", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores fuerte y memorable (#fe0000 rojo, #231f20 negro) apropiada para taller automotriz",
+        "Dos tipografias bien diferenciadas: Inter para body y Bebas Neue para headings — personalidad clara",
+        "Navegacion exhaustiva con acceso directo a cada tipo de servicio"
+      ],
+      "negativos": [
+        "17 items de navegacion — sobrecarga severa, especialmente en mobile",
+        "Solo 2 imagenes de servicios para 8 categorias — inconsistencia visual",
+        "No hay mapa ni direcciones visuales para las 4 ubicaciones",
+        "Formulario de citas sin campos detallados visibles"
+      ],
+      "recomendaciones": [
+        { "accion": "Consolidar navegacion: agrupar servicios bajo mega-menu desplegable, reducir a 7 items principales", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar imagen representativa a cada categoria de servicio para consistencia visual", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Agregar seccion de mapa interactivo con las 4 ubicaciones", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Mejorar formulario de citas con campos para vehiculo, servicio necesario y ubicacion preferida", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Propuesta de valor fuerte: family-owned, ASE-Certified, free loaner cars, rides to work, 24/7 key dropbox",
+        "Amenidades competitivas excepcionales que reducen objeciones: free second opinion, financing, towing, vehicle pickup",
+        "Slogan directo y profesional: 'Precision Workmanship Timely Service'"
+      ],
+      "negativos": [
+        "No hay testimonios ni resenas visibles en la pagina principal",
+        "Pagina de Reviews existe pero contenido no incluido en scraping — puede estar vacia o escasa",
+        "No hay ofertas estacionales, cupones ni incentivos visibles",
+        "No hay diferenciador de precio — sin rangos de costos ni comparativas"
+      ],
+      "recomendaciones": [
+        { "accion": "Integrar resenas de Google directamente en la pagina principal", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear seccion de ofertas/cupones estacionales para atraer nuevos clientes", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Destacar las amenidades gratuitas con iconografia prominente en hero o below-fold", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Agregar comparativa de precios o garantia de precio justo para reducir objeciones", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Lista de servicios completa y bien categorizada con 8 especialidades",
+        "Seccion de amenidades detallada que explica cada beneficio al cliente",
+        "Seccion diferenciadora con propuesta de valor y compromiso de calidad"
+      ],
+      "negativos": [
+        "No hay horarios de atencion publicados para ninguna ubicacion",
+        "Direcciones de 4 ubicaciones listadas pero sin contexto de que servicios ofrece cada una",
+        "No hay contenido educativo ni FAQ sobre mantenimiento automotriz",
+        "Seccion de blog y careers existen como URLs pero sin contenido visible"
+      ],
+      "recomendaciones": [
+        { "accion": "Publicar horarios de atencion para cada ubicacion", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear pagina individual por ubicacion con direccion, mapa, horarios y servicios especificos", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Desarrollar FAQ con preguntas comunes sobre servicios, tiempos de espera y garantias", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Activar blog con contenido mensual: tips de mantenimiento, senales de alerta, guias estacionales", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "WordPress es un CMS robusto con amplio ecosistema de plugins",
+        "Favicon y logo personalizados correctamente implementados",
+        "Formulario de appointment booking presente en el sitio"
+      ],
+      "negativos": [
+        "No hay email de contacto publicado — solo telefono",
+        "Sin integracion de chat en vivo o WhatsApp para contacto rapido",
+        "Sin redes sociales enlazadas — pierde presencia social",
+        "WordPress puede generar paginas pesadas si no esta optimizado con cache y CDN"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar email de contacto visible y formulario en pagina de contacto", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar chat en vivo o WhatsApp Business para contacto inmediato", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Crear y vincular perfiles de redes sociales (Google Business, Facebook, Instagram)", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Optimizar WordPress con cache plugin, lazy loading y CDN", "prioridad": "media", "tipo": "mejora_estructural" }
+      ],
+      "stack_actual": "WordPress",
+      "stack_recomendado": "Astro + Tailwind CSS",
+      "integraciones": ["Google Maps multi-location", "Appointment booking form", "Google Reviews widget", "Chat widget"],
+      "complejidad": "media"
+    }
+  },
+  "quick_wins": [
+    "Acortar meta title a 60 caracteres con keywords principales",
+    "Publicar horarios de atencion para cada ubicacion",
+    "Integrar resenas de Google en pagina principal",
+    "Crear seccion de ofertas/cupones estacionales",
+    "Agregar email de contacto visible"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Optimizar meta title y alt text de imagenes",
+      "Publicar horarios y agregar email de contacto",
+      "Integrar resenas de Google en home"
+    ],
+    "mes_1": [
+      "Consolidar navegacion con mega-menu",
+      "Crear paginas individuales por ubicacion",
+      "Agregar imagenes a todas las categorias de servicio",
+      "Implementar ofertas estacionales",
+      "Vincular redes sociales"
+    ],
+    "largo_plazo": [
+      "Migrar a stack moderno (Astro) para mejor performance y SEO",
+      "Activar blog con contenido mensual educativo",
+      "Implementar schema markup AutoRepair multi-location",
+      "Agregar seccion de mapa interactivo con 4 ubicaciones"
+    ]
+  },
+  "resumen_ejecutivo": "Killian Auto Pros tiene la mejor base de contenido y marketing entre los talleres analizados, con amenidades competitivas excepcionales (loaner cars, rides, 24/7 dropbox, free second opinion) y meta tags bien optimizados, aunque el meta title excesivamente largo con 4 ciudades puede truncarse. La navegacion con 17 items es excesiva, y la falta de horarios, resenas visibles y paginas individuales por ubicacion limitan la conversion de visitantes locales. Una optimizacion de estructura de navegacion, integracion de resenas y creacion de landing pages por ubicacion elevaria significativamente su posicionamiento local.",
+  "stack_para_web": {
+    "framework": "astro",
+    "estilos": "tailwind",
+    "extras": ["multi-location map", "appointment booking form", "google reviews widget", "coupon/specials section"],
+    "justificacion": "Taller con 4 ubicaciones, 8+ paginas de servicios, blog, careers y necesidad de landing pages locales — complejidad media que se beneficia de SSG con Astro y rutas dinamicas."
+  }
+}

@@ -65,6 +65,10 @@ const testimonials = [
         </article>
       ))}
     </div>
+
+    <p class="testimonials-disclaimer">
+      <em>* Reviews are representative of guest experiences. Visit our <a href="https://www.facebook.com/kara.spa/" target="_blank" rel="noopener noreferrer">Facebook</a> and <a href="https://www.instagram.com/karaspaandboutique/" target="_blank" rel="noopener noreferrer">Instagram</a> for more guest feedback.</em>
+    </p>
   </div>
 </section>
 
@@ -144,5 +148,19 @@ const testimonials = [
   .testimonial-author span {
     font-size: var(--text-small);
     color: var(--color-text-muted);
+  }
+
+  .testimonials-disclaimer {
+    margin-block-start: var(--space-4);
+    font-size: var(--text-small);
+    color: var(--color-text-light);
+    text-align: center;
+    max-width: none;
+  }
+
+  .testimonials-disclaimer a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 </style>

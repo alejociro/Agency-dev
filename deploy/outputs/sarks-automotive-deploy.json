@@ -1,0 +1,7 @@
+{
+  "negocio": "Sarks Automotive",
+  "url_produccion": "https://sarks-automotive.vercel.app",
+  "fecha_deploy": "2026-04-03",
+  "stack": "astro",
+  "carpeta_origen": "web/sarks-automotive/"
+}

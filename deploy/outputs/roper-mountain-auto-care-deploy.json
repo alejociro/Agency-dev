@@ -1,0 +1,7 @@
+{
+  "negocio": "Roper Mountain Auto Care",
+  "url_produccion": "https://roper-mountain-auto-care.vercel.app",
+  "fecha_deploy": "2026-04-03",
+  "stack": "astro",
+  "carpeta_origen": "web/roper-mountain-auto-care/"
+}

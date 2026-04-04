@@ -1,0 +1,46 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  icon?: string;
+  tags?: string[];
+  href?: string;
+}
+
+const { title, description, tags = [], href } = Astro.props;
+---
+
+<article class="service-card card card--gold-accent">
+  <slot name="icon" />
+  <h3 class="line-reveal">{title}</h3>
+  <p>{description}</p>
+  {tags.length > 0 && (
+    <div class="service-card__tags">
+      {tags.map((tag) => <span>{tag}</span>)}
+    </div>
+  )}
+  {href && <a href={href} class="btn btn--secondary">Learn More →</a>}
+</article>
+
+<style>
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .service-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    margin-block-start: auto;
+
+    & span {
+      font-size: var(--text-xs);
+      padding: 3px 10px;
+      background: var(--color-surface-alt);
+      border-radius: var(--radius-full);
+      color: var(--color-text-muted);
+    }
+  }
+</style>

@@ -1,0 +1,328 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Contact Studio 17 | Book Your Pilates Consultation in Greenville, SC"
+  description="Schedule a consultation at Studio 17 in Greenville, SC. Located at 1320 Hampton Street Ext, Suite 601. Call 864-326-0626 or fill out our contact form."
+  activePage="contact"
+>
+  <main>
+    <!-- ======== PAGE HERO ======== -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="hero-tag section-tag">Get in Touch</span>
+        <h1 class="hero-title" style="font-size: var(--text-h1);">Connect With Us</h1>
+        <p class="hero-sub" style="font-size: var(--text-body); max-width: 55ch; color: var(--color-text-muted); margin-top: var(--space-3);">
+          Ready to start your Classical Pilates journey? Schedule a consultation so we can learn about your goals, needs, and any physical considerations.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======== CONTACT SECTION ======== -->
+    <section class="section" id="contact-form">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Form -->
+          <div data-animate="fade-right">
+            <h2 style="margin-bottom: var(--space-2);">Send a Message</h2>
+            <p style="color: var(--color-text-muted); margin-bottom: var(--space-6); font-size: var(--text-small);">
+              Fill out the form below and BeLinda will respond shortly via email or text message.
+            </p>
+
+            <form class="contact-form" id="contactForm" action="#" method="POST">
+              <div class="form-row">
+                <div class="field">
+                  <input type="text" id="firstName" name="firstName" placeholder=" " required autocomplete="given-name" />
+                  <label for="firstName">First Name</label>
+                </div>
+                <div class="field">
+                  <input type="text" id="lastName" name="lastName" placeholder=" " required autocomplete="family-name" />
+                  <label for="lastName">Last Name</label>
+                </div>
+              </div>
+
+              <div class="field">
+                <input type="email" id="email" name="email" placeholder=" " required autocomplete="email" />
+                <label for="email">Email</label>
+              </div>
+
+              <div class="field">
+                <input type="tel" id="phone" name="phone" placeholder=" " required autocomplete="tel" />
+                <label for="phone">Phone</label>
+              </div>
+
+              <div class="field">
+                <select id="subject" name="subject" required>
+                  <option value="" disabled selected></option>
+                  <option value="consultation">New Client Consultation</option>
+                  <option value="getting-started">Getting Started Package</option>
+                  <option value="private">Private Lesson Inquiry</option>
+                  <option value="group">Group Class Question</option>
+                  <option value="other">Other</option>
+                </select>
+                <label for="subject">I am interested in</label>
+              </div>
+
+              <div class="field">
+                <textarea id="message" name="message" placeholder=" " rows="5" required></textarea>
+                <label for="message">Message</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary" data-magnetic style="width: 100%; justify-content: center; padding: var(--space-3);">
+                Send Message
+              </button>
+            </form>
+
+            <dialog id="confirmDialog" class="confirm-dialog">
+              <div class="dialog-content">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <h3 style="margin-top: var(--space-3);">Message Sent</h3>
+                <p style="margin-top: var(--space-2); color: var(--color-text-muted);">Thank you! BeLinda will respond shortly via email or text message.</p>
+                <button class="btn btn-primary" onclick="document.getElementById('confirmDialog').close()" style="margin-top: var(--space-4);">Close</button>
+              </div>
+            </dialog>
+          </div>
+
+          <!-- Info sidebar -->
+          <div data-animate="fade-left" data-delay="200">
+            <div class="contact-info-card">
+              <h3 style="margin-bottom: var(--space-4);">Studio Information</h3>
+
+              <div class="contact-info-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div>
+                  <strong>Location</strong>
+                  <p>1320 Hampton Street Ext<br/>Suite 601<br/>Greenville, SC 29601</p>
+                  <p style="margin-top: var(--space-1); font-size: var(--text-xs); color: var(--color-primary);">Hampton Station &mdash; to the left of Hallowed Earth Pottery. Look for our sign at the door entrance.</p>
+                </div>
+              </div>
+
+              <hr class="divider-gold" style="margin-block: var(--space-3);" />
+
+              <div class="contact-info-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                <div>
+                  <strong>Phone</strong>
+                  <a href="tel:8643260626" style="color: var(--color-text);">(864) 326-0626</a>
+                </div>
+              </div>
+
+              <hr class="divider-gold" style="margin-block: var(--space-3);" />
+
+              <div class="contact-info-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:info@studio17greenville.com" style="color: var(--color-text);">info@studio17greenville.com</a>
+                </div>
+              </div>
+
+              <hr class="divider-gold" style="margin-block: var(--space-3);" />
+
+              <div class="contact-info-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div>
+                  <strong>Hours</strong>
+                  <p>Monday &ndash; Saturday</p>
+                  <a href="https://app.acuityscheduling.com/schedule.php?owner=38253952" target="_blank" rel="noopener noreferrer" class="btn btn-ghost link-arrow" style="margin-top: var(--space-2); font-size: var(--text-xs);">View Full Schedule <span class="arrow">&rarr;</span></a>
+                </div>
+              </div>
+
+              <hr class="divider-gold" style="margin-block: var(--space-3);" />
+
+              <div class="contact-info-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="var(--color-primary)" stroke="none"/></svg>
+                <div>
+                  <strong>Follow Us</strong>
+                  <a href="http://instagram.com/studio17greenvillesc" target="_blank" rel="noopener noreferrer" style="color: var(--color-text);">@studio17greenvillesc</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map embed -->
+            <div class="map-container" data-animate="fade-up" data-delay="300" style="margin-top: var(--space-4);">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.5!2d-82.4!3d34.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1320+Hampton+Street+Ext+Suite+601+Greenville+SC+29601!5e0!3m2!1sen!2sus!4v1"
+                width="100%"
+                height="250"
+                style="border: 0; border-radius: var(--radius-lg);"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Studio 17 location map - 1320 Hampton Street Ext, Greenville, SC"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Form submission with dialog confirmation
+    const form = document.getElementById('contactForm');
+    const dialog = document.getElementById('confirmDialog');
+
+    if (form && dialog) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // In production, this would send data to a backend
+        dialog.showModal();
+        form.reset();
+      });
+
+      // Close on backdrop click
+      dialog.addEventListener('click', (e) => {
+        if (e.target === dialog) dialog.close();
+      });
+    }
+  </script>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding-block-start: calc(var(--space-16) + var(--space-8));
+    padding-block-end: var(--space-8);
+  }
+
+  /* Contact grid */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  /* Floating labels form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+  }
+
+  .field {
+    position: relative;
+
+    & input,
+    & textarea,
+    & select {
+      font-family: var(--font-body);
+      font-size: var(--text-body);
+      width: 100%;
+      padding: var(--space-3) var(--space-2) var(--space-1);
+      border: none;
+      border-bottom: 1.5px solid var(--color-border-strong);
+      background: transparent;
+      color: var(--color-text);
+      transition: border-color var(--duration-fast) var(--ease-out);
+      outline: none;
+      border-radius: 0;
+
+      &:focus {
+        border-color: var(--color-primary);
+      }
+    }
+
+    & label {
+      position: absolute;
+      inset-inline-start: var(--space-2);
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: var(--text-body);
+      color: var(--color-text-muted);
+      pointer-events: none;
+      transition: all 200ms ease;
+    }
+
+    & textarea ~ label {
+      top: var(--space-3);
+      transform: none;
+    }
+
+    & input:focus + label,
+    & input:not(:placeholder-shown) + label,
+    & textarea:focus + label,
+    & textarea:not(:placeholder-shown) + label,
+    & select:focus + label,
+    & select:valid + label {
+      top: 4px;
+      transform: none;
+      font-size: var(--text-xs);
+      color: var(--color-primary);
+    }
+
+    & select {
+      appearance: none;
+      cursor: pointer;
+      padding-inline-end: var(--space-6);
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%232D2D2D' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right var(--space-2) center;
+    }
+  }
+
+  /* Contact info card */
+  .contact-info-card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    border: 1px solid var(--color-border);
+  }
+
+  .contact-info-item {
+    display: flex;
+    gap: var(--space-3);
+    align-items: flex-start;
+
+    & svg {
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    & strong {
+      display: block;
+      font-size: var(--text-small);
+      font-weight: 500;
+      margin-bottom: var(--space-1);
+    }
+
+    & p {
+      font-size: var(--text-small);
+      color: var(--color-text-muted);
+      line-height: var(--leading-body);
+    }
+  }
+
+  /* Map */
+  .map-container {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+  }
+
+  /* Dialog */
+  .confirm-dialog {
+    border: none;
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    max-width: 400px;
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    background: var(--color-surface);
+
+    &::backdrop {
+      background: rgba(45, 45, 45, 0.5);
+      backdrop-filter: blur(4px);
+    }
+  }
+</style>

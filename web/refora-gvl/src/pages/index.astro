@@ -1,0 +1,810 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Home" description="Pilates, Yoga & Coffee Studio in Greenville, SC. Reform your body, recharge through movement, community, and thoughtfully crafted café offerings.">
+  <Header />
+  <div class="reading-progress"></div>
+
+  <!-- ═══════════════════════════════════════
+       HERO — Diagonal Split: Studio + Café
+       ═══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__split">
+      <div class="hero__panel hero__panel--studio diagonal-clip-left grain">
+        <div class="hero__panel-overlay"></div>
+      </div>
+      <div class="hero__panel hero__panel--cafe diagonal-clip-right">
+        <div class="hero__panel-overlay hero__panel-overlay--warm"></div>
+      </div>
+    </div>
+
+    <div class="hero__content container">
+      <span class="hero-tag text-label">Pilates · Yoga · Coffee — Greenville, SC</span>
+
+      <h1 class="hero-title text-display" data-split>
+        Re<span class="brand-dot brand-dot--animated"></span>for<span class="brand-dot brand-dot--animated"></span>a
+      </h1>
+
+      <div class="hero-divider divider"></div>
+
+      <p class="hero-sub">
+        Growth happens through rhythm, not rush.<br class="hide-mobile" />
+        Reform your body. Recharge your soul. Repeat.
+      </p>
+
+      <div class="hero-cta">
+        <a href="/membership/" class="btn btn--gold" data-magnetic>Join the Movement</a>
+        <a href="/schedule/" class="btn btn--secondary">View Schedule →</a>
+      </div>
+
+      <div class="hero-proof">
+        <span data-open-status></span>
+      </div>
+    </div>
+
+    <div class="hero__scroll-indicator" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       DEFINITION — Brand Etymology
+       ═══════════════════════════════════════ -->
+  <section class="section definition-section" id="definition" data-animate="fade-up">
+    <div class="container container--narrow text-center">
+      <h2 class="definition__word">
+        Re·for·a
+        <span class="definition__phonetic">/riˈfôrə/</span>
+      </h2>
+      <p class="definition__type"><em>noun.</em></p>
+      <p class="definition__meaning">
+        The practice of reforming the body and mind through intentional movement and mindful fuel.
+      </p>
+      <div class="divider--dots" aria-hidden="true">
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT — The Refora Experience
+       ═══════════════════════════════════════ -->
+  <section class="section about-section mesh-warm" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__text" data-animate="fade-right">
+          <span class="section-tag">Our Story</span>
+          <h2>More Than a Studio.<br />A Local Experience.</h2>
+          <p>
+            Refora is a Pilates and movement studio with a café in Greenville, South Carolina.
+            Designed around rhythm, connection, and sustainable wellness, Refora is a space to
+            grow physically, mentally, and collectively.
+          </p>
+          <p>
+            We believe progress is not about extremes — it is about showing up consistently,
+            being supported, and enjoying the process along the way. A place to meet friends
+            after class, linger over coffee, reconnect with yourself, and feel part of
+            something meaningful.
+          </p>
+          <a href="/studio/" class="btn btn--secondary" data-magnetic>Explore the Studio →</a>
+        </div>
+        <div class="about__visual" data-animate="fade-left" data-delay="200">
+          <div class="about__image img-editorial img-warm-overlay">
+            <img
+              src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=600&h=750&fit=crop"
+              alt="Warm, light-filled Pilates studio with reformer machines"
+              width="600"
+              height="750"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="about__accent breathing-circle" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       PHILOSOPHY — Reform. Recharge. Repeat.
+       ═══════════════════════════════════════ -->
+  <section class="section philosophy-section mesh-dark grain" id="philosophy">
+    <div class="container">
+      <div class="philosophy__content text-center" data-animate="stagger">
+        <span class="section-tag">Our Philosophy</span>
+        <h2 class="philosophy__title" data-split>Reform. Recharge. Repeat.</h2>
+        <div class="philosophy__pillars">
+          <div class="philosophy__pillar">
+            <div class="philosophy__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><circle cx="24" cy="24" r="18"/><path d="M24 14v10l6 6"/></svg>
+            </div>
+            <h3>Reform</h3>
+            <p>Build strength, mobility, and awareness through intentional Pilates and yoga practices.</p>
+          </div>
+          <div class="philosophy__pillar">
+            <div class="philosophy__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="M8 24c0-8.8 7.2-16 16-16s16 7.2 16 16"/><path d="M16 28c0 4.4 3.6 8 8 8s8-3.6 8-8"/><circle cx="24" cy="24" r="3"/></svg>
+            </div>
+            <h3>Recharge</h3>
+            <p>Fuel body and soul through community, movement, and thoughtfully crafted café offerings.</p>
+          </div>
+          <div class="philosophy__pillar">
+            <div class="philosophy__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="M12 36c6-12 18-12 24 0"/><path d="M12 28c6-12 18-12 24 0" opacity="0.5"/><path d="M12 20c6-12 18-12 24 0" opacity="0.25"/></svg>
+            </div>
+            <h3>Repeat</h3>
+            <p>Real growth happens through rhythm, not rush. Consistency is the quiet engine of change.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       DUAL EXPERIENCE — Studio + Café Cards
+       ═══════════════════════════════════════ -->
+  <section class="section dual-section" id="spaces">
+    <div class="container">
+      <div class="dual__header text-center" data-animate="fade-up">
+        <span class="section-tag">Two Spaces, One Ritual</span>
+        <h2>Where Movement Meets Mindful Fuel</h2>
+      </div>
+
+      <div class="dual__grid">
+        <!-- Studio Card -->
+        <article class="dual__card card card--gold-accent" data-animate="fade-up">
+          <div class="dual__card-image img-hover-zoom">
+            <img
+              src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=700&h=480&fit=crop"
+              alt="Pilates reformer class in progress at Refora studio"
+              width="700"
+              height="480"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="dual__card-content">
+            <h3 class="line-reveal">The Studio</h3>
+            <p>
+              Two light-filled workout studios designed for intentional movement and balanced technique.
+              Calming and approachable spaces where you focus on strength, balance, and mindful repetition.
+            </p>
+            <ul class="dual__features">
+              <li>Reformer Pilates</li>
+              <li>Mat Pilates</li>
+              <li>Yoga Flow</li>
+              <li>Private Sessions</li>
+            </ul>
+            <a href="/studio/" class="btn btn--secondary">Explore Studio →</a>
+          </div>
+        </article>
+
+        <!-- Café Card -->
+        <article class="dual__card card card--gold-accent" data-animate="fade-up" data-delay="200">
+          <div class="dual__card-image img-hover-zoom">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&h=480&fit=crop"
+              alt="Specialty coffee being poured at Reform Café"
+              width="700"
+              height="480"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="dual__card-content">
+            <div class="dual__steam" aria-hidden="true">
+              <span class="steam-line"></span>
+              <span class="steam-line"></span>
+              <span class="steam-line"></span>
+            </div>
+            <h3 class="line-reveal">Reform Café</h3>
+            <p>
+              A warm and inviting coffee shop where thoughtfully curated offerings meet connection
+              and community. Recharge and reset before or after class, or as part of your daily ritual.
+            </p>
+            <ul class="dual__features">
+              <li>Specialty Coffee</li>
+              <li>Smoothies & Juices</li>
+              <li>Light Bites</li>
+              <li>Community Space</li>
+            </ul>
+            <a href="/cafe/" class="btn btn--secondary">Visit the Café →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CLASSES PREVIEW — Schedule Tabs
+       ═══════════════════════════════════════ -->
+  <section class="section classes-section mesh-warm" id="classes">
+    <div class="container">
+      <div class="classes__header" data-animate="fade-up">
+        <span class="section-tag">Our Classes</span>
+        <h2>Find Your Practice</h2>
+        <p class="text-muted">Intentional movement for every body. Every level. Every goal.</p>
+      </div>
+
+      <div class="classes__tabs" data-tabs data-animate="fade-up" data-delay="200">
+        <div class="tabs-nav" role="tablist">
+          <button data-tab="reformer" class="is-active" tabindex="0">Reformer</button>
+          <button data-tab="mat" tabindex="-1">Mat Pilates</button>
+          <button data-tab="yoga" tabindex="-1">Yoga</button>
+          <button data-tab="private" tabindex="-1">Private</button>
+          <div class="tab-indicator"></div>
+        </div>
+
+        <div data-tab-panel="reformer" class="is-active">
+          <div class="class-detail">
+            <h3>Reformer Pilates</h3>
+            <p>Full-body conditioning on the Pilates reformer machine. Build long, lean strength through controlled, spring-loaded resistance. Suitable for all levels with modifications offered throughout.</p>
+            <div class="class-detail__meta">
+              <span>~50 min</span>
+              <span>All Levels</span>
+              <span>Max 12 per class</span>
+            </div>
+            <a href="/schedule/" class="btn btn--primary" data-magnetic>Book a Class</a>
+          </div>
+        </div>
+
+        <div data-tab-panel="mat">
+          <div class="class-detail">
+            <h3>Mat Pilates</h3>
+            <p>Core-focused bodyweight training on the mat. Strengthen your center, improve posture, and develop body awareness using classical Pilates principles adapted for modern practice.</p>
+            <div class="class-detail__meta">
+              <span>~45 min</span>
+              <span>All Levels</span>
+              <span>Props provided</span>
+            </div>
+            <a href="/schedule/" class="btn btn--primary" data-magnetic>Book a Class</a>
+          </div>
+        </div>
+
+        <div data-tab-panel="yoga">
+          <div class="class-detail">
+            <h3>Yoga Flow</h3>
+            <p>Dynamic vinyasa sequences that link breath with movement. Build flexibility, find calm, and develop a sustainable practice that complements your Pilates training.</p>
+            <div class="class-detail__meta">
+              <span>~60 min</span>
+              <span>All Levels</span>
+              <span>Mats provided</span>
+            </div>
+            <a href="/schedule/" class="btn btn--primary" data-magnetic>Book a Class</a>
+          </div>
+        </div>
+
+        <div data-tab-panel="private">
+          <div class="class-detail">
+            <h3>Private Sessions</h3>
+            <p>One-on-one instruction tailored to your individual goals. Whether recovering from injury, preparing for an event, or deepening your practice, private sessions offer focused attention and customized programming.</p>
+            <div class="class-detail__meta">
+              <span>~55 min</span>
+              <span>Personalized</span>
+              <span>By appointment</span>
+            </div>
+            <a href="/contact/" class="btn btn--primary" data-magnetic>Inquire Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       STATS — Impact Numbers
+       ═══════════════════════════════════════ -->
+  <section class="section stats-section" data-animate="stagger">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stats__item">
+          <span class="counter" data-counter data-target="2" data-suffix="">0</span>
+          <p>Light-filled Studios</p>
+        </div>
+        <div class="stats__item">
+          <span class="counter" data-counter data-target="30" data-suffix="+">0</span>
+          <p>Weekly Classes</p>
+        </div>
+        <div class="stats__item">
+          <span class="counter" data-counter data-target="4" data-suffix="">0</span>
+          <p>Class Formats</p>
+        </div>
+        <div class="stats__item">
+          <span class="counter" data-counter data-target="6" data-suffix=" days">0</span>
+          <p>Open Per Week</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       COMMUNITY — Philosophy Quote + CTA
+       ═══════════════════════════════════════ -->
+  <section class="section community-section mesh-warm" id="community">
+    <div class="container container--narrow text-center" data-animate="fade-up">
+      <span class="section-tag">Our Community</span>
+      <blockquote class="pull-quote" style="border: none; padding: 0; text-align: center; margin-inline: auto;">
+        "More than a studio, Refora is a local experience. A place to meet friends after class, linger over coffee, reconnect with yourself, and feel part of something meaningful."
+      </blockquote>
+      <div class="divider--dots" aria-hidden="true" style="justify-content: center; margin-block: var(--space-4);">
+        <span></span>
+      </div>
+      <p class="text-muted" style="margin-inline: auto;">We believe progress is not about extremes. It is about showing up consistently, being supported, and enjoying the process along the way.</p>
+      <a href="/membership/" class="btn btn--gold" data-magnetic style="margin-block-start: var(--space-4);">Join the Community</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CTA — Full Width
+       ═══════════════════════════════════════ -->
+  <section class="cta-full bleed-full" data-animate="scale-in">
+    <div class="cta-full__inner">
+      <div class="container text-center">
+        <h2>Your First Class Is Waiting</h2>
+        <p>Experience the Refora difference. Join a community that shows up, supports each other, and savors every moment — on and off the reformer.</p>
+        <a href="/membership/" class="btn btn--gold" data-magnetic>Start Your Journey</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT PREVIEW
+       ═══════════════════════════════════════ -->
+  <section class="section contact-preview" id="contact-preview" data-animate="fade-up">
+    <div class="container">
+      <div class="contact-preview__grid">
+        <div class="contact-preview__info">
+          <span class="section-tag">Visit Us</span>
+          <h2>Come Say Hello</h2>
+          <p class="text-muted">Whether you are ready to book your first class or just want to check out the café, we would love to see you.</p>
+
+          <div class="contact-preview__details">
+            <div class="contact-detail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Greenville, SC</span>
+            </div>
+            <div class="contact-detail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+              <a href="mailto:reform@reforagvl.com">reform@reforagvl.com</a>
+            </div>
+            <div class="contact-detail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span>Mon–Fri 5AM–5PM · Sat–Sun 10AM–2PM</span>
+            </div>
+          </div>
+
+          <a href="/contact/" class="btn btn--primary" data-magnetic>Get in Touch</a>
+        </div>
+
+        <div class="contact-preview__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104687.08225682442!2d-82.45!3d34.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88578f526aa0d3d3%3A0x907f05eb0b4cd3c!2sGreenville%2C%20SC!5e0!3m2!1sen!2sus!4v1"
+            width="600"
+            height="400"
+            style="border:0; border-radius: var(--radius-lg); width: 100%; height: 100%; min-height: 300px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Refora location in Greenville, SC"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+
+  <!-- Scripts -->
+  <script src="../scripts/animations.js"></script>
+  <script src="../scripts/experiences.js"></script>
+</BaseLayout>
+
+<style>
+  /* ═══════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════ */
+  .hero {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .hero__split {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .hero__panel {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero__panel--studio {
+    background-image: url('https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1200&h=900&fit=crop');
+  }
+
+  .hero__panel--cafe {
+    background-image: url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&h=900&fit=crop');
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  .hero__panel-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(50, 55, 60, 0.75);
+  }
+
+  .hero__panel-overlay--warm {
+    background: linear-gradient(135deg, rgba(50, 55, 60, 0.7), rgba(196, 169, 125, 0.4));
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    color: var(--color-text-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    padding-block-start: var(--space-16);
+  }
+
+  .hero__content h1 {
+    color: var(--color-text-light);
+  }
+
+  .hero__content .text-label {
+    color: var(--color-secondary);
+  }
+
+  .hero__content .divider {
+    margin-inline: auto;
+  }
+
+  .hero__content .hero-sub {
+    font-size: var(--text-h4);
+    color: var(--color-text-light-muted);
+    max-width: 50ch;
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: center;
+  }
+
+  .hero__content .btn--secondary {
+    color: var(--color-text-light);
+    border-color: rgba(245, 240, 235, 0.3);
+
+    &:hover {
+      background: var(--color-text-light);
+      color: var(--color-charcoal);
+    }
+  }
+
+  .hero__scroll-indicator {
+    position: absolute;
+    bottom: var(--space-4);
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-text-light-muted);
+    animation: slideUp 1.5s ease infinite alternate;
+    z-index: 5;
+  }
+
+  /* ═══════════════════════════════════════
+     DEFINITION
+     ═══════════════════════════════════════ */
+  .definition-section {
+    padding-block: var(--space-10);
+  }
+
+  .definition__word {
+    font-size: var(--text-h1);
+    font-style: italic;
+    margin-block-end: var(--space-1);
+  }
+
+  .definition__phonetic {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    font-style: normal;
+    font-weight: 300;
+    color: var(--color-text-muted);
+    margin-inline-start: var(--space-2);
+  }
+
+  .definition__type {
+    font-family: var(--font-body);
+    color: var(--color-primary);
+    margin-block-end: var(--space-2);
+  }
+
+  .definition__meaning {
+    font-family: var(--font-display);
+    font-size: var(--text-h3);
+    line-height: var(--leading-snug);
+    max-width: 45ch;
+    margin-inline: auto;
+  }
+
+  /* ═══════════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════════ */
+  .about__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+    align-items: center;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .about__text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .about__visual {
+    position: relative;
+  }
+
+  .about__accent {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    z-index: -1;
+  }
+
+  /* ═══════════════════════════════════════
+     PHILOSOPHY
+     ═══════════════════════════════════════ */
+  .philosophy__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+  }
+
+  .philosophy__title {
+    font-size: var(--text-h1);
+  }
+
+  .philosophy__pillars {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    margin-block-start: var(--space-4);
+    width: 100%;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .philosophy__pillar {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .philosophy__pillar h3 {
+    color: var(--color-text-light);
+    font-size: var(--text-h3);
+  }
+
+  .philosophy__pillar p {
+    color: var(--color-text-light-muted);
+    max-width: 35ch;
+  }
+
+  .philosophy__icon {
+    margin-block-end: var(--space-1);
+  }
+
+  /* ═══════════════════════════════════════
+     DUAL EXPERIENCE
+     ═══════════════════════════════════════ */
+  .dual__header {
+    margin-block-end: var(--space-8);
+  }
+
+  .dual__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .dual__card {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .dual__card-image img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .dual__card-content {
+    padding: var(--space-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .dual__steam {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    height: 30px;
+  }
+
+  .dual__features {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+
+    & li {
+      font-size: var(--text-small);
+      padding: 4px 12px;
+      background: var(--color-surface-alt);
+      border-radius: var(--radius-full);
+      color: var(--color-text-muted);
+    }
+  }
+
+  /* ═══════════════════════════════════════
+     CLASSES
+     ═══════════════════════════════════════ */
+  .classes__header {
+    margin-block-end: var(--space-6);
+  }
+
+  .class-detail {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    max-width: 600px;
+  }
+
+  .class-detail__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+
+    & span {
+      font-size: var(--text-small);
+      padding: 4px 12px;
+      background: var(--color-surface);
+      border-radius: var(--radius-full);
+      color: var(--color-text-muted);
+    }
+  }
+
+  /* ═══════════════════════════════════════
+     STATS
+     ═══════════════════════════════════════ */
+  .stats__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+    text-align: center;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .stats__item p {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    margin-inline: auto;
+  }
+
+  /* ═══════════════════════════════════════
+     COMMUNITY
+     ═══════════════════════════════════════ */
+
+  /* ═══════════════════════════════════════
+     CTA FULL
+     ═══════════════════════════════════════ */
+  .cta-full__inner {
+    background: var(--color-charcoal);
+    padding-block: var(--space-12);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-full__inner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 50%, rgba(196, 169, 125, 0.1), transparent 70%);
+  }
+
+  .cta-full__inner h2 {
+    color: var(--color-text-light);
+    font-size: var(--text-h1);
+    margin-block-end: var(--space-2);
+  }
+
+  .cta-full__inner p {
+    color: var(--color-text-light-muted);
+    max-width: 55ch;
+    margin-inline: auto;
+    margin-block-end: var(--space-4);
+  }
+
+  /* ═══════════════════════════════════════
+     CONTACT PREVIEW
+     ═══════════════════════════════════════ */
+  .contact-preview__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+  }
+
+  .contact-preview__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .contact-preview__details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-block: var(--space-2);
+  }
+
+  .contact-detail {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+
+    & a {
+      color: var(--color-text-muted);
+
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+</style>

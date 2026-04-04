@@ -1,0 +1,150 @@
+{
+  "cliente": "The WRKT Greenville",
+  "url_auditada": "https://www.thewrkt.co/greenville",
+  "sector": "Reformer Pilates Studio",
+  "benchmark_aplicado": "Profesional independiente / Fitness — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Tecnico: 45. Aplicado por ser un estudio de Reformer Pilates local con multiples ubicaciones, operando en Greenville, SC.",
+  "fecha": "2026-04-03",
+  "scores": {
+    "seo": 45,
+    "ux_ui": 38,
+    "marketing": 52,
+    "contenido": 35,
+    "tecnico": 30,
+    "total": 40
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title incluye ubicacion y servicio: 'GREENVILLE | Book Reformer Pilates — thewrkt.com'",
+        "Meta description bien redactada con keywords relevantes: 'Reformer Pilates classes', 'memberships', 'E North St'",
+        "Favicon personalizado implementado correctamente"
+      ],
+      "negativos": [
+        "Sitio requiere renderizado JS (Squarespace) — crawling severamente limitado, max score tecnico 60",
+        "Zero imagenes detectadas en todo el sitio — sin contenido visual indexable",
+        "URL del logo es null — no hay imagen de marca indexable por buscadores",
+        "Solo 5 items de navegacion global sin paginas de contenido profundo"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a stack con SSG/SSR para eliminar dependencia de JS rendering", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar imagenes del estudio, clases y equipo con alt text optimizado", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Crear paginas adicionales: tipos de clase, instructores, blog de fitness", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Implementar schema markup LocalBusiness y FitnessCenter", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores calida y premium (#1a1a1a, #e8d5b7, #c4956a) apropiada para estudio boutique",
+        "Navegacion limpia con 5 items bien organizados",
+        "Estructura de contenido clara: hero → ubicacion → membresias → paquetes → FAQ"
+      ],
+      "negativos": [
+        "Zero imagenes — experiencia completamente textual sin atractivo visual",
+        "Solo una tipografia generica de Squarespace — sin identidad tipografica",
+        "FAQ en formato de texto plano — sin acordeon ni interactividad",
+        "No hay footer con informacion de contacto, horarios ni redes sociales"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar fotografia profesional de clases Reformer, ambiente del estudio e instructores", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar FAQ como acordeon interactivo para mejorar escaneo", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Agregar footer completo con direccion, horarios, email y redes sociales", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Definir tipografias de marca que reflejen la identidad atletica-premium", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Precios transparentes y detallados con multiples opciones de membresia y paquetes",
+        "Membresias diferenciadas por segmento: Small Biz, Student, Teacher, Health Professional, Young Professional",
+        "Politica clara de cancelaciones y waitlist — transparencia que genera confianza"
+      ],
+      "negativos": [
+        "No hay testimonios ni resenas de miembros",
+        "No hay oferta introductoria destacada — 'First Class' mencionado pero no con precio especial",
+        "Slogan 'The wrkt you've been waiting for' es generico y no comunica beneficio concreto",
+        "No hay redes sociales enlazadas — pierde alcance y prueba social"
+      ],
+      "recomendaciones": [
+        { "accion": "Crear oferta introductoria clara: 'First Class $15' o 'Intro Week $35' como CTA principal", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar testimonios de miembros con resultados y experiencias especificas", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Vincular Instagram y otras redes sociales para ampliar alcance", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Reformular slogan con beneficio tangible: 'Unlimited Reformer Pilates from $150/mo'", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Informacion de membresias completa con precios, condiciones y auto-renewal explicado",
+        "FAQ util con informacion practica: que traer, que vestir, politica de cancelacion",
+        "Direccion fisica clara: 1631 E North St, Greenville, SC 29607"
+      ],
+      "negativos": [
+        "Contenido extremadamente escaso — la pagina de Greenville es basicamente lista de precios + FAQ",
+        "No hay descripcion de que es una clase de Reformer Pilates ni que esperar",
+        "No hay informacion sobre instructores, certificaciones ni experiencia del equipo",
+        "No hay horarios de clases publicados — depende completamente de la app"
+      ],
+      "recomendaciones": [
+        { "accion": "Crear seccion 'What is Reformer Pilates' con descripcion, beneficios y experiencia esperada", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar perfiles de instructores con fotos, certificaciones y especialidades", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Publicar horario semanal de clases directamente en el sitio", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Crear contenido sobre beneficios del Reformer Pilates para SEO y educacion", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Squarespace ofrece hosting confiable con SSL incluido",
+        "Favicon personalizado implementado",
+        "App dedicada (TheWrktMethod) para booking — ecosistema tecnologico existente"
+      ],
+      "negativos": [
+        "Squarespace requiere JS rendering — score tecnico limitado (requiere_render=true)",
+        "Sin formularios de contacto detectados en el sitio",
+        "Footer minimo sin informacion util — solo links de navegacion",
+        "Sin integracion de schedule/booking en el sitio web — toda la funcionalidad en app externa"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a stack con SSG para eliminar dependencia de JS rendering", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Integrar widget de schedule/booking de la app directamente en el sitio web", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar formulario de contacto para consultas que no requieran la app", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Enriquecer footer con direccion, horarios, email y links de app stores", "prioridad": "media", "tipo": "quick_win" }
+      ],
+      "stack_actual": "Squarespace",
+      "stack_recomendado": "Astro + Tailwind CSS",
+      "integraciones": ["TheWrktMethod app booking widget", "Google Maps embed", "Instagram feed", "Class schedule embed"],
+      "complejidad": "media"
+    }
+  },
+  "quick_wins": [
+    "Crear oferta introductoria destacada como CTA principal",
+    "Agregar testimonios de miembros actuales",
+    "Vincular redes sociales (Instagram)",
+    "Publicar horario semanal de clases en el sitio",
+    "Implementar FAQ como acordeon interactivo"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Agregar oferta introductoria y testimonios",
+      "Vincular redes sociales",
+      "Publicar horario de clases"
+    ],
+    "mes_1": [
+      "Agregar fotografia profesional del estudio y clases",
+      "Crear seccion 'What is Reformer Pilates'",
+      "Agregar perfiles de instructores",
+      "Integrar widget de booking en el sitio",
+      "Completar footer con informacion de contacto"
+    ],
+    "largo_plazo": [
+      "Migrar a stack moderno (Astro) con SSG para mejor SEO",
+      "Crear contenido educativo y blog para posicionamiento",
+      "Implementar schema markup LocalBusiness y FitnessCenter",
+      "Desarrollar landing pages por ubicacion para multi-studio SEO"
+    ]
+  },
+  "resumen_ejecutivo": "The WRKT Greenville tiene precios transparentes y membresias bien segmentadas, pero el sitio en Squarespace es extremadamente escaso en contenido, sin imagenes, sin descripcion de clases ni perfiles de instructores, y depende completamente de una app externa para booking. El JS rendering de Squarespace limita severamente la crawleabilidad para buscadores, y la ausencia de testimonios, redes sociales y oferta introductoria reduce la capacidad de conversion. Una reconstruccion con contenido rico, fotografia profesional e integracion directa de booking elevaria significativamente tanto el SEO como la conversion de visitantes en miembros.",
+  "stack_para_web": {
+    "framework": "astro",
+    "estilos": "tailwind",
+    "extras": ["booking widget embed", "google maps", "instagram feed", "class schedule embed"],
+    "justificacion": "Multi-studio brand con paginas por ubicacion, membresias, schedule integration y necesidad de SEO local por ciudad — complejidad media ideal para Astro con SSG y rutas dinamicas."
+  }
+}

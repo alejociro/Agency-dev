@@ -1,0 +1,300 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Classical Pilates Sessions | Indigo Flow and Art — Greenville SC"
+  description="Experience Joseph Pilates' original Contrology Method at Indigo. Private, duet, and small group sessions with certified instructor Katie Hughes Ryan. New Student Special: 3 sessions for $210."
+  canonical="/classical-pilates"
+  currentPage="classical-pilates"
+>
+
+  <!-- ==================== HERO ==================== -->
+  <section style="position: relative; min-height: 70vh; display: flex; align-items: center; overflow: hidden; background-color: var(--color-primary-dark);">
+    <img
+      src="https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/1590762960461-O5STIR14MJTSYXOD60VK/IndigoFlowArt-23.jpg"
+      alt="Classical Pilates studio at Indigo with reformer and equipment"
+      width="1920" height="1080"
+      loading="eager" decoding="async"
+      style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.4;"
+    />
+    <div style="position: absolute; inset: 0; background: linear-gradient(to top, var(--color-primary-dark) 0%, rgba(30,38,56,0.4) 100%);"></div>
+    <div class="container" style="position: relative; z-index: 2; padding-block: var(--space-16) var(--space-8);">
+      <span class="hero-tag section-tag" style="color: var(--color-gold);">The Contrology Method</span>
+      <h1 class="hero-title" style="color: var(--color-cream); max-width: 16ch;" data-split>Classical Pilates</h1>
+      <p class="hero-sub" style="color: var(--color-text-inverse); max-width: 55ch; margin-block-end: var(--space-4); opacity: 0.9;">
+        Indigo Pilates is a Classical Pilates studio instructing students in Joseph Pilates' original Contrology Method on fully equipped Gratz apparatus.
+      </p>
+      <a href="#pricing" class="btn btn--primary btn--large hero-cta" data-magnetic>View Pricing &amp; Book</a>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT THE METHOD ==================== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="grid-asymmetric" style="align-items: center;">
+        <div data-animate="fade-right">
+          <span class="section-tag">The Method</span>
+          <h2 style="margin-block-end: var(--space-3);">More Than Exercise</h2>
+          <p style="color: var(--color-text-muted); margin-block-end: var(--space-3);">
+            All students at Indigo begin with private sessions to understand the fundamentals of "connection" before progressing through the system. This personalized approach ensures a strong foundation in the classical repertoire.
+          </p>
+          <p style="color: var(--color-text-muted);">
+            Our fully equipped Gratz Pilates studio features the complete apparatus system — Reformer, Cadillac, Wunda Chair, High Chair, Ladder Barrel, and Mat — giving you access to the full depth of Joseph Pilates' original work.
+          </p>
+        </div>
+        <div class="img-frame" data-animate="fade-left">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/2799c042-f6c1-4932-a2b9-d86c0dd7ff6d/website+3.JPG"
+            alt="Gratz Pilates equipment at Indigo studio"
+            width="800" height="600"
+            loading="lazy" decoding="async"
+            style="border-radius: var(--radius-lg); aspect-ratio: 4/3; object-fit: cover;"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SESSION TYPES ==================== -->
+  <section class="section section--alt" id="sessions">
+    <div class="container">
+      <div style="text-align: center; margin-block-end: var(--space-8);">
+        <span class="section-tag" data-animate="fade-up">Session Types</span>
+        <h2 data-animate="fade-up">Find Your Format</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-4);" data-animate="stagger">
+        <div class="card" style="padding: var(--space-4);">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style="margin-block-end: var(--space-2);">
+            <circle cx="20" cy="20" r="18" stroke="var(--color-secondary)" stroke-width="1.5"/>
+            <circle cx="20" cy="14" r="5" stroke="var(--color-accent)" stroke-width="1.5"/>
+            <path d="M10 32c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="var(--color-accent)" stroke-width="1.5"/>
+          </svg>
+          <h3 style="margin-block-end: var(--space-1);">Private Sessions</h3>
+          <p style="color: var(--color-text-muted); font-size: var(--text-small); margin-block-end: var(--space-2);">
+            One-on-one instruction tailored to your body and goals. The foundation of classical training — full attention, personalized progression, and detailed corrections.
+          </p>
+          <span class="price">$95</span>
+          <span class="price__unit">/session</span>
+        </div>
+
+        <div class="card" style="padding: var(--space-4);">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style="margin-block-end: var(--space-2);">
+            <circle cx="14" cy="14" r="5" stroke="var(--color-accent)" stroke-width="1.5"/>
+            <circle cx="26" cy="14" r="5" stroke="var(--color-accent)" stroke-width="1.5"/>
+            <path d="M4 32c0-5.5 4.5-10 10-10" stroke="var(--color-secondary)" stroke-width="1.5"/>
+            <path d="M36 32c0-5.5-4.5-10-10-10" stroke="var(--color-secondary)" stroke-width="1.5"/>
+          </svg>
+          <h3 style="margin-block-end: var(--space-1);">Duet Sessions</h3>
+          <p style="color: var(--color-text-muted); font-size: var(--text-small); margin-block-end: var(--space-2);">
+            Share the studio with a partner. Semi-private instruction with a focus on individual needs while enjoying the energy and accountability of practicing together.
+          </p>
+          <span class="price">$60</span>
+          <span class="price__unit">/student ($120 total)</span>
+        </div>
+
+        <div class="card" style="padding: var(--space-4);">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" style="margin-block-end: var(--space-2);">
+            <circle cx="12" cy="12" r="4" stroke="var(--color-accent)" stroke-width="1.5"/>
+            <circle cx="28" cy="12" r="4" stroke="var(--color-accent)" stroke-width="1.5"/>
+            <circle cx="20" cy="22" r="4" stroke="var(--color-accent)" stroke-width="1.5"/>
+            <path d="M6 32c0-4.4 3.6-8 8-8" stroke="var(--color-secondary)" stroke-width="1.5"/>
+            <path d="M34 32c0-4.4-3.6-8-8-8" stroke="var(--color-secondary)" stroke-width="1.5"/>
+            <path d="M14 38c0-4.4 3.6-8 8-8" stroke="var(--color-secondary)" stroke-width="1.5"/>
+          </svg>
+          <h3 style="margin-block-end: var(--space-1);">Small Group</h3>
+          <p style="color: var(--color-text-muted); font-size: var(--text-small); margin-block-end: var(--space-2);">
+            An intimate group setting (max 3 students) for those who enjoy community. Structured class with individual attention and the motivation of peers.
+          </p>
+          <span class="price">$50</span>
+          <span class="price__unit">/student ($150 total)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRICING ==================== -->
+  <section class="section section--dark" id="pricing">
+    <div class="container">
+      <div style="text-align: center; margin-block-end: var(--space-8);">
+        <span class="section-tag" data-animate="fade-up">Pricing</span>
+        <h2 data-animate="fade-up">Transparent Rates</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-4); max-width: 900px; margin-inline: auto;" data-animate="stagger">
+
+        <!-- New Student Special -->
+        <div class="card pricing-highlight" style="background-color: rgba(245,240,232,0.06); border: 1.5px solid var(--color-gold); padding: var(--space-6); text-align: center;">
+          <p style="font-size: var(--text-small); color: var(--color-gold); letter-spacing: 0.1em; text-transform: uppercase; margin-block-end: var(--space-1);">New Student Special</p>
+          <span class="price price--highlight" style="display: block; font-size: clamp(2.5rem, 5vw, 3.5rem); color: var(--color-gold);">$210</span>
+          <p style="color: var(--color-text-inverse); margin-block: var(--space-2); font-size: var(--text-small);">3 Introductory Private Sessions</p>
+          <hr class="divider--gold" style="max-width: 4rem; margin-inline: auto; margin-block: var(--space-3);"/>
+          <p style="color: var(--color-text-muted); font-size: var(--text-small);">New students only. The best way to start your classical Pilates journey.</p>
+          <a href="sms:+18648845606?body=Hi%20Katie%2C%20I%27m%20interested%20in%20the%20New%20Student%20Special" class="btn btn--primary" data-magnetic style="margin-block-start: var(--space-3); width: 100%;">Get Started</a>
+        </div>
+
+        <!-- Drop-In Rates -->
+        <div style="padding: var(--space-6); background-color: rgba(245,240,232,0.04); border-radius: var(--radius-lg); border: 1px solid rgba(245,240,232,0.08);">
+          <p style="font-size: var(--text-small); color: var(--color-gold); letter-spacing: 0.1em; text-transform: uppercase; margin-block-end: var(--space-3);">Drop-In Sessions</p>
+          <div style="display: grid; gap: var(--space-3);">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; padding-block-end: var(--space-2); border-block-end: 1px solid rgba(245,240,232,0.08);">
+              <span style="color: var(--color-cream);">1 Private</span>
+              <span class="price" style="font-size: var(--text-h3); color: var(--color-cream);">$95</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline; padding-block-end: var(--space-2); border-block-end: 1px solid rgba(245,240,232,0.08);">
+              <span style="color: var(--color-cream);">1 Duet</span>
+              <span class="price" style="font-size: var(--text-h3); color: var(--color-cream);">$120</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <span style="color: var(--color-cream);">Small Group</span>
+              <span class="price" style="font-size: var(--text-h3); color: var(--color-cream);">$150</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10-Session Packages -->
+        <div style="padding: var(--space-6); background-color: rgba(245,240,232,0.04); border-radius: var(--radius-lg); border: 1px solid rgba(245,240,232,0.08);">
+          <p style="font-size: var(--text-small); color: var(--color-gold); letter-spacing: 0.1em; text-transform: uppercase; margin-block-end: var(--space-3);">10-Session Packages</p>
+          <div style="display: grid; gap: var(--space-3);">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; padding-block-end: var(--space-2); border-block-end: 1px solid rgba(245,240,232,0.08);">
+              <span style="color: var(--color-cream);">10 Privates</span>
+              <span class="price" style="font-size: var(--text-h3); color: var(--color-cream);">$750</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline; padding-block-end: var(--space-2); border-block-end: 1px solid rgba(245,240,232,0.08);">
+              <span style="color: var(--color-cream);">10 Duets</span>
+              <span class="price" style="font-size: var(--text-h3); color: var(--color-cream);">$550</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <span style="color: var(--color-cream);">10 Group</span>
+              <span class="price" style="font-size: var(--text-h3); color: var(--color-cream);">$400</span>
+            </div>
+          </div>
+          <p style="color: var(--color-text-muted); font-size: var(--text-caption); margin-block-start: var(--space-3);">Per student. Duet &amp; Group rates per participant.</p>
+        </div>
+      </div>
+
+      <p style="text-align: center; color: var(--color-text-muted); font-size: var(--text-small); margin-block-start: var(--space-4); max-width: 55ch; margin-inline: auto;" data-animate="fade-up">
+        Rates shown are cash price (cash, check, or Zelle). A 3% direct-payment discount is applied to these rates. All sales final.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== SCHEDULE ==================== -->
+  <section class="section section--cream" id="schedule">
+    <div class="container">
+      <div class="grid-asymmetric--reverse" style="align-items: center;">
+        <div class="img-frame" data-animate="fade-right">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/7fa913ce-6f70-427f-9603-217c69971277/DSCF0419_websize.jpg"
+            alt="Katie Hughes Ryan, certified Classical Pilates instructor at Indigo"
+            width="800" height="1000"
+            loading="lazy" decoding="async"
+            style="border-radius: var(--radius-lg); aspect-ratio: 4/5; object-fit: cover;"
+          />
+        </div>
+        <div data-animate="fade-left">
+          <span class="section-tag">Schedule</span>
+          <h2 style="margin-block-end: var(--space-3);">Available Time Slots</h2>
+          <p style="color: var(--color-text-muted); margin-block-end: var(--space-4);">
+            The studio calendar is booked out one month at a time. Slots open as recurring students cancel.
+          </p>
+
+          <div style="background-color: var(--color-surface); padding: var(--space-4); border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+            <h4 style="font-size: var(--text-body); margin-block-end: var(--space-2);">Monday &ndash; Thursday</h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: var(--space-1);">
+              <span style="background-color: var(--color-bg-alt); padding: 0.5rem; border-radius: var(--radius-sm); text-align: center; font-size: var(--text-small); font-weight: 500;">7:15am</span>
+              <span style="background-color: var(--color-bg-alt); padding: 0.5rem; border-radius: var(--radius-sm); text-align: center; font-size: var(--text-small); font-weight: 500;">8:15am</span>
+              <span style="background-color: var(--color-bg-alt); padding: 0.5rem; border-radius: var(--radius-sm); text-align: center; font-size: var(--text-small); font-weight: 500;">9:15am</span>
+              <span style="background-color: var(--color-bg-alt); padding: 0.5rem; border-radius: var(--radius-sm); text-align: center; font-size: var(--text-small); font-weight: 500;">10:15am</span>
+              <span style="background-color: var(--color-bg-alt); padding: 0.5rem; border-radius: var(--radius-sm); text-align: center; font-size: var(--text-small); font-weight: 500;">11:15am</span>
+            </div>
+          </div>
+
+          <a href="sms:+18648845606?body=Hi%20Katie%2C%20what%20openings%20do%20you%20have%20this%20month%3F" class="btn btn--primary" data-magnetic style="margin-block-start: var(--space-4);">Text Katie for Openings</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INSTRUCTOR ==================== -->
+  <section class="section section--alt">
+    <div class="container" style="text-align: center;">
+      <span class="section-tag" data-animate="fade-up">Your Instructor</span>
+      <h2 data-animate="fade-up" style="margin-block-end: var(--space-6);">Katie Hughes Ryan</h2>
+      <div style="max-width: var(--container-narrow); margin-inline: auto;" data-animate="fade-up">
+        <p style="font-family: var(--font-display); font-size: var(--text-h3); font-style: italic; color: var(--color-primary); line-height: var(--leading-snug); margin-block-end: var(--space-4);">
+          "Fully Certified Classical Pilates Instructor with a form-focused, athletic yet attainable approach."
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center;">
+          <span style="background-color: var(--color-bg); padding: 0.5rem 1rem; border-radius: var(--radius-full); font-size: var(--text-small); font-weight: 500;">Power Pilates Certified</span>
+          <span style="background-color: var(--color-bg); padding: 0.5rem 1rem; border-radius: var(--radius-full); font-size: var(--text-small); font-weight: 500;">500hr Yoga Instructor</span>
+          <span style="background-color: var(--color-bg); padding: 0.5rem 1rem; border-radius: var(--radius-full); font-size: var(--text-small); font-weight: 500;">300hr AYAMA Certified</span>
+          <span style="background-color: var(--color-bg); padding: 0.5rem 1rem; border-radius: var(--radius-full); font-size: var(--text-small); font-weight: 500;">Ballet &amp; Dance Background</span>
+          <span style="background-color: var(--color-bg); padding: 0.5rem 1rem; border-radius: var(--radius-full); font-size: var(--text-small); font-weight: 500;">Figure Skating</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section class="section section--cream" id="faq">
+    <div class="container">
+      <div style="max-width: var(--container-narrow); margin-inline: auto;">
+        <div style="text-align: center; margin-block-end: var(--space-6);">
+          <span class="section-tag" data-animate="fade-up">FAQ</span>
+          <h2 data-animate="fade-up">Common Questions</h2>
+        </div>
+
+        <div style="display: grid; gap: var(--space-2);" data-animate="fade-up">
+          <details style="background-color: var(--color-surface); border-radius: var(--radius-md); overflow: hidden;">
+            <summary style="padding: var(--space-3) var(--space-4); cursor: pointer; font-weight: 500; display: flex; justify-content: space-between; align-items: center; list-style: none;">
+              What should I wear to my first session?
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="var(--color-text-muted)" stroke-width="1.5" style="flex-shrink: 0; transition: transform 0.3s ease;"><path d="M5 8l5 5 5-5"/></svg>
+            </summary>
+            <div style="padding: 0 var(--space-4) var(--space-3); color: var(--color-text-muted);">
+              Wear comfortable, form-fitting clothing that allows you to move freely. Grip socks are recommended. Avoid loose or baggy clothing as your instructor needs to see your alignment.
+            </div>
+          </details>
+
+          <details style="background-color: var(--color-surface); border-radius: var(--radius-md); overflow: hidden;">
+            <summary style="padding: var(--space-3) var(--space-4); cursor: pointer; font-weight: 500; display: flex; justify-content: space-between; align-items: center; list-style: none;">
+              Why do I start with private sessions?
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="var(--color-text-muted)" stroke-width="1.5" style="flex-shrink: 0; transition: transform 0.3s ease;"><path d="M5 8l5 5 5-5"/></svg>
+            </summary>
+            <div style="padding: 0 var(--space-4) var(--space-3); color: var(--color-text-muted);">
+              Private sessions establish the fundamentals of "connection" — the mind-body awareness essential to the classical method. This foundation ensures safe, effective practice as you progress to duets or groups.
+            </div>
+          </details>
+
+          <details style="background-color: var(--color-surface); border-radius: var(--radius-md); overflow: hidden;">
+            <summary style="padding: var(--space-3) var(--space-4); cursor: pointer; font-weight: 500; display: flex; justify-content: space-between; align-items: center; list-style: none;">
+              How do I book a session?
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="var(--color-text-muted)" stroke-width="1.5" style="flex-shrink: 0; transition: transform 0.3s ease;"><path d="M5 8l5 5 5-5"/></svg>
+            </summary>
+            <div style="padding: 0 var(--space-4) var(--space-3); color: var(--color-text-muted);">
+              Text Katie at <a href="sms:+18648845606">(864) 884-5606</a> to check this month's available openings. The calendar books one month at a time, and slots become available as recurring students cancel.
+            </div>
+          </details>
+
+          <details style="background-color: var(--color-surface); border-radius: var(--radius-md); overflow: hidden;">
+            <summary style="padding: var(--space-3) var(--space-4); cursor: pointer; font-weight: 500; display: flex; justify-content: space-between; align-items: center; list-style: none;">
+              What payment methods do you accept?
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="var(--color-text-muted)" stroke-width="1.5" style="flex-shrink: 0; transition: transform 0.3s ease;"><path d="M5 8l5 5 5-5"/></svg>
+            </summary>
+            <div style="padding: 0 var(--space-4) var(--space-3); color: var(--color-text-muted);">
+              We accept cash, check, Zelle, and debit/credit cards. Enjoy a 3% direct-payment discount when paying with cash, check, or Zelle. All sales are final.
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    details[open] svg { transform: rotate(180deg); }
+    details summary::-webkit-details-marker { display: none; }
+    details summary::marker { display: none; }
+  </style>
+
+</BaseLayout>

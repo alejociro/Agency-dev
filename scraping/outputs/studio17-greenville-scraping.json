@@ -1,9 +1,9 @@
 {
   "negocio": "Studio 17",
   "url": "https://www.studio17greenville.com/",
-  "sector": "Pilates Studio / Fitness",
-  "requiere_render": true,
-  "nota_scraping": "Sitio renderizado por JS (Squarespace SPA). Algunos datos pueden estar incompletos. Considerar scraping con browser headless.",
+  "sector": "Pilates Studio / Fitness & Wellness",
+  "requiere_render": false,
+  "nota_scraping": null,
   "meta": {
     "title": "Studio 17 | Start Your Pilates Journey Today",
     "description": null,
@@ -11,59 +11,73 @@
   },
   "favicon": null,
   "paleta": {
-    "primario": "#ffffff",
-    "secundario": "#000000",
-    "acento": null,
+    "primario": "#2c2c2c",
+    "secundario": "#f5f0eb",
+    "acento": "#8b7d6b",
     "fondo": "#ffffff",
     "texto": "#333333",
-    "otros": []
+    "otros": ["#000000", "#f7f4f0"]
   },
   "logo": {
     "url": "https://images.squarespace-cdn.com/content/v1/68e1557acc9b4e509628a381/bec9ff0f-1934-4944-94b3-39452aae69ea/Studio17-Logo.png",
-    "descripcion": "Logo de texto 'Studio 17'",
-    "posicion": "header",
-    "colores": []
+    "descripcion": "Logo de texto 'Studio 17' con tipografia serif elegante",
+    "posicion": "header center",
+    "colores": ["#2c2c2c"]
   },
   "tipografias": [
     {
-      "nombre": "System fonts (Squarespace default)",
-      "uso": "general",
-      "peso": "regular",
-      "tamanio_aprox": "responsive (4vw-6vw)"
+      "nombre": "Serif (Squarespace system)",
+      "uso": "headings",
+      "peso": "400",
+      "tamanio_aprox": "36-48px"
+    },
+    {
+      "nombre": "Sans-serif (Squarespace system)",
+      "uso": "body",
+      "peso": "400",
+      "tamanio_aprox": "16px"
     }
   ],
   "navegacion": [
-    { "label": "Home", "url": "https://www.studio17greenville.com/" },
-    { "label": "Classes", "url": "https://www.studio17greenville.com/classes" },
-    { "label": "About", "url": "https://www.studio17greenville.com/about" },
-    { "label": "Contact", "url": "https://www.studio17greenville.com/contact" }
+    { "label": "Home", "url": "/" },
+    { "label": "Classes", "url": "/classes" },
+    { "label": "About", "url": "/about" },
+    { "label": "Contact", "url": "/contact" },
+    { "label": "Cart", "url": "/cart" }
   ],
   "secciones": [
     {
       "tipo": "hero",
       "titulo": "A System That Lengthens, Strengthens, and Balances",
+      "contenido": "Start Your Pilates Journey Today",
+      "cta": "Explore Classes → /classes",
+      "imagenes": []
+    },
+    {
+      "tipo": "about-service",
+      "titulo": "What is Classical Pilates",
       "contenido": "Classical Pilates is a system developed by Joseph Pilates. It focuses on precise, controlled movements, breath, and a strong mind-body connection. It can improve posture, balance and flexibility. Studio 17 is a fully equipped Classical Studio - all of the equipment used at Studio 17 is Contrology, by Balanced Body including the Cadillac, Reformer, Barrels, Chairs, and supporting small apparatus, designed to help the body become stronger on the Mat.",
-      "cta": "Explore Classes",
+      "cta": "Explore Classes → /classes",
       "imagenes": [
         {
           "url": "https://images.squarespace-cdn.com/content/v1/68e1557acc9b4e509628a381/d5a0260a-7c5a-476e-86e3-bc431d761b3b/BLB-1002495.jpeg",
-          "alt": null,
-          "descripcion": "Imagen hero del estudio de Pilates",
+          "alt": "Classical Pilates equipment at Studio 17",
+          "descripcion": "Imagen del estudio de Pilates mostrando equipos como reformer y aparatos",
           "tipo": "jpeg",
           "dimensiones": null
         }
       ]
     },
     {
-      "tipo": "split-image-text",
+      "tipo": "welcome",
       "titulo": "Welcome to Studio 17",
       "contenido": "I love Pilates, it has truly changed my body. My hope is that it becomes your lifelong practice - no matter where or how you practice. I want everyone who walks through the doors of Studio 17 to feel welcome, supported, and at home in their bodies. Teaching aids are provided and BeLinda oversees the studio to make certain everyone is safe and to answer any questions if needed.",
-      "cta": "About Me",
+      "cta": "About Me → /about",
       "imagenes": [
         {
           "url": "https://images.squarespace-cdn.com/content/v1/68e1557acc9b4e509628a381/19ed5838-cadd-4b3c-803c-ef6e2f5acb77/Image+2-7-26+at+12.52%E2%80%AFPM.png",
-          "alt": null,
-          "descripcion": "Imagen de bienvenida del estudio",
+          "alt": "BeLinda - Studio 17 owner and instructor",
+          "descripcion": "Foto de la dueña e instructora BeLinda",
           "tipo": "png",
           "dimensiones": null
         }
@@ -73,14 +87,21 @@
       "tipo": "cta-section",
       "titulo": "Discover Your Practice",
       "contenido": null,
-      "cta": "Browse Classes",
+      "cta": "Browse Classes → /classes",
       "imagenes": []
     }
   ],
   "textos_clave": {
-    "slogan": "A System That Lengthens, Strengthens, and Balances",
-    "propuesta_valor": "Classical Pilates is a system developed by Joseph Pilates. It focuses on precise, controlled movements, breath, and a strong mind-body connection. It can improve posture, balance and flexibility.",
-    "ctas": ["Explore Classes", "About Me", "Browse Classes", "Book an Appointment", "Contact Us"]
+    "slogan": "Start Your Pilates Journey Today",
+    "propuesta_valor": "A System That Lengthens, Strengthens, and Balances",
+    "ctas": [
+      "Explore Classes",
+      "About Me",
+      "Browse Classes",
+      "Contact Us",
+      "View Schedule",
+      "Book an Appointment"
+    ]
   },
   "videos": [],
   "contacto": {
@@ -88,15 +109,18 @@
     "whatsapp": null,
     "email": "info@studio17@gmail.com",
     "direccion": "1320 Hampton Street Ext, Suite 601, Greenville, SC 29601",
-    "horarios": "Monday-Saturday (ver schedule en /classes)"
+    "horarios": "Monday-Saturday"
   },
   "redes": [
-    { "plataforma": "Instagram", "url": "http://instagram.com/studio17greenvillesc" }
+    {
+      "plataforma": "Instagram",
+      "url": "http://instagram.com/studio17greenvillesc"
+    }
   ],
   "formularios": [
     {
-      "proposito": "Contacto general",
-      "campos": []
+      "proposito": "Contact form",
+      "campos": ["name", "email", "message"]
     }
   ],
   "footer": {
@@ -108,7 +132,7 @@
       { "label": "Contact", "url": "/contact" },
       { "label": "Book an Appointment", "url": "/contact" }
     ],
-    "copyright": null
+    "copyright": "Studio 17"
   },
-  "tecnologia": "Squarespace 7.1 (Template ID: 5c5a519771c10ba3470d8101) — SPA/JS-heavy, reCAPTCHA Enterprise, Google Analytics, Facebook SDK"
+  "tecnologia": "Squarespace 7.1"
 }

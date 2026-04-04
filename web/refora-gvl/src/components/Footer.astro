@@ -1,0 +1,179 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer mesh-dark grain" id="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <!-- Brand Column -->
+      <div class="footer__brand">
+        <a href="/" class="footer__logo brand-split" aria-label="Refora — Home">
+          Re<span class="brand-dot"></span>for<span class="brand-dot"></span>a
+        </a>
+        <p class="footer__tagline text-muted">
+          Pilates, Yoga & Coffee<br />Greenville, SC
+        </p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/reforagvl/" target="_blank" rel="noopener noreferrer" aria-label="Follow Refora on Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61575630089186" target="_blank" rel="noopener noreferrer" aria-label="Follow Refora on Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigate Column -->
+      <div class="footer__col">
+        <h4 class="footer__heading">Navigate</h4>
+        <ul class="footer__links">
+          <li><a href="/studio/">Studio</a></li>
+          <li><a href="/schedule/">Schedule</a></li>
+          <li><a href="/membership/">Membership</a></li>
+          <li><a href="/cafe/">Café</a></li>
+        </ul>
+      </div>
+
+      <!-- Connect Column -->
+      <div class="footer__col">
+        <h4 class="footer__heading">Connect</h4>
+        <ul class="footer__links">
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="mailto:reform@reforagvl.com">reform@reforagvl.com</a></li>
+          <li>Greenville, SC</li>
+        </ul>
+      </div>
+
+      <!-- Hours Column -->
+      <div class="footer__col">
+        <h4 class="footer__heading">Hours</h4>
+        <ul class="footer__links">
+          <li>Mon–Fri: 5AM – 5PM</li>
+          <li>Sat–Sun: 10AM – 2PM</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="divider--gradient" style="margin-block: var(--space-6);" />
+
+    <div class="footer__bottom">
+      <p class="footer__copy">
+        &copy; {currentYear} Refora. All rights reserved.
+      </p>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cancellation Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    padding-block: var(--space-12) var(--space-6);
+    position: relative;
+  }
+
+  .footer__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+  }
+
+  .footer__logo {
+    font-family: var(--font-display);
+    font-size: var(--text-h3);
+    font-weight: 600;
+    color: var(--color-text-light);
+    display: inline-block;
+    margin-block-end: var(--space-2);
+  }
+
+  .footer__tagline {
+    font-size: var(--text-small);
+    margin-block-end: var(--space-3);
+  }
+
+  .footer__social {
+    display: flex;
+    gap: var(--space-2);
+
+    & a {
+      color: var(--color-text-light-muted);
+      transition: color var(--duration-fast) ease;
+
+      &:hover {
+        color: var(--color-secondary);
+      }
+    }
+  }
+
+  .footer__heading {
+    font-family: var(--font-body);
+    font-size: var(--text-small);
+    font-weight: 600;
+    letter-spacing: var(--tracking-wider);
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    margin-block-end: var(--space-2);
+  }
+
+  .footer__links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+
+    & a, & li {
+      font-size: var(--text-small);
+      color: var(--color-text-light-muted);
+      transition: color var(--duration-fast) ease;
+    }
+
+    & a:hover {
+      color: var(--color-text-light);
+    }
+  }
+
+  .footer__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+
+  .footer__copy {
+    font-size: var(--text-xs);
+    color: var(--color-text-light-muted);
+  }
+
+  .footer__legal {
+    display: flex;
+    gap: var(--space-3);
+
+    & a {
+      font-size: var(--text-xs);
+      color: var(--color-text-light-muted);
+
+      &:hover {
+        color: var(--color-text-light);
+      }
+    }
+  }
+</style>

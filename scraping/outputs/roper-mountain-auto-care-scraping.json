@@ -1,0 +1,108 @@
+{
+  "negocio": "Roper Mountain Auto Care",
+  "url": "https://www.ropermountainautocare.com/",
+  "sector": "Auto Repair",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Roper Mountain Auto Care",
+    "description": "At Roper Mountain Auto Care, we're proud to be a leading auto repair shop in Greenville, SC, committed to providing top-quality vehicle service. Call us today!",
+    "keywords": null
+  },
+  "favicon": "https://irp.cdn-website.com/84f2f64c/site_favicon_16_1761659898305.ico",
+  "paleta": {
+    "primario": "#68ccd1",
+    "secundario": "#463939",
+    "acento": "#68ccd1",
+    "fondo": "#f7f7f7",
+    "texto": "#333",
+    "otros": ["#666", "#F2F2F2", "#787878"]
+  },
+  "logo": {
+    "url": "https://lirp.cdn-website.com/84f2f64c/dms3rep/multi/opt/mainlogoRMPC-1920w.png",
+    "descripcion": "Roper Mountain Auto Care main logo",
+    "posicion": "top left",
+    "colores": ["#68ccd1", "#463939"]
+  },
+  "tipografias": [
+    { "nombre": "Source Sans Pro", "uso": "body", "peso": "400", "tamanio_aprox": "16px" },
+    { "nombre": "Montserrat", "uso": "headings", "peso": "700", "tamanio_aprox": "28px" }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://www.ropermountainautocare.com/" },
+    { "label": "About Us", "url": "https://www.ropermountainautocare.com/about-us" },
+    { "label": "Careers", "url": "https://www.ropermountainautocare.com/careers" },
+    { "label": "Specials", "url": "https://www.ropermountainautocare.com/specials" },
+    { "label": "Directions", "url": "https://www.ropermountainautocare.com/directions" },
+    { "label": "Appointments", "url": "https://www.ropermountainautocare.com/appointments" },
+    { "label": "Services", "url": "https://www.ropermountainautocare.com/services" },
+    { "label": "Vehicles", "url": "https://www.ropermountainautocare.com/vehicles" },
+    { "label": "Reviews", "url": "https://www.ropermountainautocare.com/reviews" },
+    { "label": "Leave a Review", "url": "https://www.ropermountainautocare.com/leave-a-review" },
+    { "label": "Blog", "url": "https://www.ropermountainautocare.com/blog" },
+    { "label": "Contact Us", "url": "https://www.ropermountainautocare.com/contact-us" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Trusted Automotive Service",
+      "contenido": "Locally Owned, Military Friendly",
+      "cta": "CALL US NOW",
+      "imagenes": [
+        { "url": "https://lirp.cdn-website.com/84f2f64c/dms3rep/multi/opt/Hero_Image_Roper_Mountain-1920w.png", "alt": "Roper Mountain Auto Care hero", "descripcion": "Main hero image", "tipo": "hero", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "bienvenida",
+      "titulo": "Welcome to Roper Mountain Auto Care – Your Trusted Greenville Auto Repair Experts",
+      "contenido": "At Roper Mountain Auto Care, we're proud to be a leading auto repair shop in Greenville, SC, committed to providing top-quality vehicle service with honesty and integrity. Whether you need routine auto maintenance or complex car repairs, our ASE-certified technicians have the expertise and state-of-the-art equipment to keep your vehicle running safely and reliably. From oil changes and brake service to advanced diagnostics and fleet maintenance, we offer comprehensive solutions tailored to your needs. As a trusted provider of auto repair in Greenville, SC, we work on all makes and models, from domestic favorites to European and Asian imports. Our shop is equipped with the latest diagnostic technology and tools, allowing us to quickly identify issues and deliver effective auto repairs the first time. We understand how important your vehicle is to your daily life. That's why we strive to make every visit to our Greenville auto repair shop convenient and comfortable. With every automotive service, we perform a complimentary courtesy inspection. Regular maintenance is the key to extending the life of your vehicle and protecting your investment.",
+      "cta": "LEARN MORE ABOUT US",
+      "imagenes": [
+        { "url": "https://lirp.cdn-website.com/84f2f64c/dms3rep/multi/opt/Welcome_Image_Roper_Mountain-1920w.png", "alt": "Welcome to Roper Mountain", "descripcion": "Welcome section image", "tipo": "foto", "dimensiones": null },
+        { "url": "https://lirp.cdn-website.com/84f2f64c/dms3rep/multi/opt/Welcome_Image_2_Roper_Mountain-1920w.png", "alt": "Auto repair shop", "descripcion": "Welcome section secondary image", "tipo": "foto", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "amenidades",
+      "titulo": "Amenities",
+      "contenido": "Free Wi-Fi. Financing Available. Waiting Room. After Hours Drop-Off. TV Available.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Our Outstanding Services",
+      "contenido": "Oil Change. Brake Repair. Transmission Service. Air Conditioning. Engine Diagnostics.",
+      "cta": "VIEW ALL SERVICES",
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Trusted Automotive Service — Locally Owned, Military Friendly",
+    "propuesta_valor": "ASE-certified auto repair in Greenville, SC with complimentary courtesy inspections, working on all makes and models including European and Asian imports",
+    "ctas": ["CALL US NOW", "LEARN MORE ABOUT US", "VIEW ALL SERVICES"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(864) 288-7633",
+    "whatsapp": null,
+    "email": null,
+    "direccion": "1520 Roper Mountain Road, Greenville, SC 29615",
+    "horarios": null
+  },
+  "redes": [
+    { "plataforma": "Facebook", "url": "https://facebook.com/RoperMountainAutoCare/" },
+    { "plataforma": "Yelp", "url": "https://yelp.com/biz/roper-mountain-auto-care-greenville" },
+    { "plataforma": "Google", "url": "https://google.com/maps/place//data=!4m2!3m1!1s0x885828e1b8d3f1ad:0xfcb9057bd0f9ea8c" }
+  ],
+  "formularios": [
+    { "proposito": "Appointment booking", "campos": [] },
+    { "proposito": "Leave a review", "campos": [] }
+  ],
+  "footer": {
+    "contenido": "Roper Mountain Auto Care. 1520 Roper Mountain Road, Greenville, SC 29615.",
+    "links": ["Home", "About Us", "Services", "Reviews", "Contact Us"],
+    "copyright": null
+  },
+  "tecnologia": "DudaOne (CDN-hosted website builder)"
+}

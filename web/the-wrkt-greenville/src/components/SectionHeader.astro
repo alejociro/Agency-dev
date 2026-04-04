@@ -1,0 +1,16 @@
+---
+interface Props {
+  tag?: string;
+  title: string;
+  subtitle?: string;
+  align?: 'center' | 'left' | 'right';
+  dark?: boolean;
+}
+
+const { tag, title, subtitle, align = 'center', dark = false } = Astro.props;
+---
+<div class={`section-header ${align === 'center' ? 'text-center' : ''}`} data-animate="fade-up" style={align !== 'center' ? `text-align: ${align}` : ''}>
+  {tag && <span class="section-tag">{tag}</span>}
+  <h2 set:html={title} />
+  {subtitle && <p class="section-description">{subtitle}</p>}
+</div>

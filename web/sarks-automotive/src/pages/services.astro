@@ -1,0 +1,338 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const services = [
+  {
+    id: "brakes",
+    name: "Brake Service & Repair",
+    desc: "Your brakes are your most critical safety system. Our ASE-certified technicians perform comprehensive brake inspections, pad and shoe replacement, rotor resurfacing and replacement, brake fluid flush, and ABS diagnostics.",
+    features: ["Brake pad and shoe replacement", "Rotor resurfacing and replacement", "Brake fluid flush and bleed", "ABS system diagnostics", "Emergency brake adjustment"],
+    icon: "disc"
+  },
+  {
+    id: "diagnostics",
+    name: "Auto Diagnostic Services",
+    desc: "Check engine light on? Strange noises? Our advanced diagnostic equipment reads your vehicle's computer systems to pinpoint issues accurately. No guesswork means no unnecessary repairs and lower bills for you.",
+    features: ["OBD-II computer diagnostics", "Check engine light analysis", "Electrical system testing", "Performance diagnostics", "Pre-purchase inspections"],
+    icon: "scan"
+  },
+  {
+    id: "oil-changes",
+    name: "Oil Changes",
+    desc: "Regular oil changes are the single most important maintenance you can do for your engine. We offer conventional, synthetic blend, and full synthetic options with a complimentary multi-point inspection on every visit.",
+    features: ["Conventional oil change", "Synthetic blend oil change", "Full synthetic oil change", "Oil filter replacement", "Multi-point inspection included"],
+    icon: "droplet"
+  },
+  {
+    id: "tires",
+    name: "Tire Services",
+    desc: "From rotation to replacement, we keep you rolling safely. Proper tire maintenance improves fuel economy, extends tire life, and keeps your vehicle handling at its best.",
+    features: ["Tire rotation and balancing", "Wheel alignment", "Flat tire repair", "New tire installation", "TPMS service and repair"],
+    icon: "circle"
+  },
+  {
+    id: "ac",
+    name: "AC Service & Repair",
+    desc: "South Carolina summers demand a reliable AC system. We diagnose and repair all air conditioning issues from simple recharges to compressor replacement, keeping you cool year-round.",
+    features: ["AC system diagnostics", "Refrigerant recharge", "Compressor repair and replacement", "Evaporator and condenser service", "Heater core repair"],
+    icon: "snowflake"
+  },
+  {
+    id: "alternator-starter",
+    name: "Alternator & Starter Repair",
+    desc: "If your car struggles to start or your battery keeps dying, the alternator or starter may be the culprit. We test and replace these critical components to get you back on the road reliably.",
+    features: ["Alternator testing and replacement", "Starter motor repair", "Charging system diagnostics", "Belt inspection and replacement", "Voltage regulator service"],
+    icon: "zap"
+  },
+  {
+    id: "battery",
+    name: "Battery Replacement",
+    desc: "A dead battery always happens at the worst time. We test your battery and charging system, and install quality replacement batteries that you can depend on.",
+    features: ["Battery load testing", "Battery replacement", "Terminal cleaning and repair", "Charging system check", "Battery cable replacement"],
+    icon: "zap"
+  },
+  {
+    id: "radiator",
+    name: "Car Radiator Services",
+    desc: "Overheating can cause catastrophic engine damage. Our cooling system services prevent breakdowns and extend engine life with thorough inspection and quality repairs.",
+    features: ["Radiator repair and replacement", "Coolant flush and fill", "Thermostat replacement", "Water pump service", "Hose inspection and replacement"],
+    icon: "circle"
+  },
+  {
+    id: "check-engine",
+    name: "Check Engine Light",
+    desc: "That warning light could mean anything from a loose gas cap to a serious engine issue. We decode the exact cause and recommend only the repairs you actually need.",
+    features: ["Diagnostic code reading", "Sensor testing and replacement", "Emissions system repair", "Catalytic converter diagnosis", "Detailed repair explanation"],
+    icon: "scan"
+  },
+  {
+    id: "exhaust",
+    name: "Muffler & Exhaust Services",
+    desc: "A failing exhaust system affects performance, fuel economy, and can let dangerous fumes into your cabin. We inspect and repair the entire exhaust pathway.",
+    features: ["Muffler repair and replacement", "Exhaust leak repair", "Catalytic converter service", "Exhaust pipe replacement", "Emissions testing support"],
+    icon: "wind"
+  },
+  {
+    id: "steering-suspension",
+    name: "Steering & Suspension",
+    desc: "If your ride feels rough, your car pulls to one side, or you hear clunking over bumps, your steering or suspension needs attention. We restore smooth, safe handling.",
+    features: ["Shock and strut replacement", "Ball joint and tie rod service", "Power steering repair", "Wheel alignment", "Suspension bushing replacement"],
+    icon: "cog"
+  },
+  {
+    id: "transmission",
+    name: "Transmission & Engine Repair",
+    desc: "From transmission fluid services to complete engine repair, we handle the complex jobs that require real expertise. Our triple certification means your vehicle is in the most qualified hands.",
+    features: ["Transmission fluid service", "Transmission diagnostics", "Engine repair and rebuilding", "Timing belt replacement", "Head gasket repair"],
+    icon: "cog"
+  },
+  {
+    id: "detailing",
+    name: "Auto Detailing",
+    desc: "Complete interior and exterior detailing that makes your vehicle look and feel like new. A detailed car is a protected car with better resale value.",
+    features: ["Exterior wash and wax", "Interior deep cleaning", "Paint correction", "Upholstery shampooing", "Engine bay cleaning"],
+    icon: "droplet"
+  }
+];
+
+const faqs = [
+  { q: "Do you work on all makes and models?", a: "Yes, our ASE-certified technicians are trained to work on most makes and models, both domestic and foreign." },
+  { q: "What does your 12-month/12,000-mile warranty cover?", a: "Our warranty covers all parts and labor on the repairs we perform. If something we fixed fails within 12 months or 12,000 miles, we will make it right at no additional charge." },
+  { q: "Do I need an appointment?", a: "While appointments are recommended to minimize your wait time, we welcome walk-ins at both our Mauldin and Greenville locations. Same-day estimates are always available." },
+  { q: "How long does a typical repair take?", a: "Most standard services like oil changes, brake pads, and diagnostics are completed same-day. More complex repairs typically take 1-2 days. We will give you an accurate time estimate before starting any work." },
+  { q: "Do you offer towing services?", a: "Yes, we offer roadside towing to either of our locations. Call us at (864) 210-4866 for immediate assistance." },
+  { q: "What certifications do your technicians hold?", a: "Our team holds ASE (Automotive Service Excellence), IMACA (Independent Motor and Auto Care Alliance), and RepairPal certifications, representing the highest standards in the auto repair industry." }
+];
+---
+
+<BaseLayout title="Auto Repair Services in Mauldin & Greenville SC" description="Complete auto repair services: brakes, diagnostics, oil changes, tires, AC, transmission and more. ASE certified. 12-month/12,000-mile warranty.">
+
+  <!-- ════════════ PAGE HERO ════════════ -->
+  <section class="page-hero section-dark grain mesh-bg">
+    <div class="container">
+      <span class="hero-tag badge">14 Specialized Services</span>
+      <h1 class="hero-title page-title">Every System. <span class="text-gradient-gold">Every Fix.</span></h1>
+      <p class="hero-sub">From routine maintenance to complex repairs, our triple-certified team delivers expert care backed by a warranty you can trust.</p>
+    </div>
+  </section>
+
+  <!-- ════════════ SERVICES GRID ════════════ -->
+  <section class="section-light section-padding">
+    <div class="container">
+      <div class="services-list">
+        {services.map((service, i) => (
+          <article id={service.id} class={`service-detail ${i % 2 === 0 ? '' : 'service-detail--reverse'}`} data-animate={i % 2 === 0 ? "fade-right" : "fade-left"}>
+            <div class="service-detail-content">
+              <span class="section-tag">{service.name}</span>
+              <h2>{service.name}</h2>
+              <p>{service.desc}</p>
+              <ul class="service-features">
+                {service.features.map((f) => (
+                  <li>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <a href="/contact/" class="btn btn-primary">Get Estimate for {service.name.split(' ')[0]}</a>
+            </div>
+            <div class="service-detail-visual">
+              <div class="service-number" aria-hidden="true">{String(i + 1).padStart(2, '0')}</div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ FAQ ════════════ -->
+  <section class="section-deep section-padding">
+    <div class="container faq-container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag" style="color: var(--color-secondary);">FAQ</span>
+        <h2>Common <span class="text-gradient-gold">Questions</span></h2>
+      </div>
+
+      <div class="faq-list" data-animate="stagger">
+        {faqs.map((faq) => (
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>{faq.q}</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>{faq.a}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ CTA ════════════ -->
+  <section class="cta-full">
+    <div class="container">
+      <h2>Ready to Get Your Vehicle <span class="shimmer-gold">Fixed Right?</span></h2>
+      <p>Same-day estimates. Transparent pricing. Certified expertise.</p>
+      <a href="/contact/" class="btn btn-primary" data-magnetic>Schedule Your Appointment</a>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding-block: 10rem 5rem;
+    text-align: center;
+  }
+
+  .page-hero .hero-title {
+    font-size: var(--text-h1);
+    margin-block: var(--space-3);
+  }
+
+  .page-hero .hero-sub {
+    max-width: 50ch;
+    margin-inline: auto;
+  }
+
+  /* Services list */
+  .services-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+
+  .service-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+    padding-block-end: var(--space-8);
+    border-block-end: 1px solid oklch(0.35 0.05 300 / 0.1);
+
+    @media (min-width: 768px) {
+      grid-template-columns: 3fr 1fr;
+      align-items: start;
+    }
+
+    &:last-child { border: none; }
+  }
+
+  .service-detail--reverse {
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 3fr;
+
+      .service-detail-visual { order: -1; }
+    }
+  }
+
+  .service-detail-content h2 {
+    margin-block: var(--space-2);
+  }
+
+  .service-detail-content p {
+    color: oklch(0.35 0.02 300);
+    margin-block-end: var(--space-3);
+  }
+
+  .service-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-block-end: var(--space-4);
+  }
+
+  .service-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: var(--text-small);
+    color: var(--color-text-dark);
+  }
+
+  .service-number {
+    font-family: var(--font-display);
+    font-size: clamp(5rem, 10vw, 10rem);
+    font-weight: 700;
+    color: oklch(0.45 0.12 300 / 0.06);
+    line-height: 1;
+    text-align: center;
+  }
+
+  /* FAQ */
+  .faq-container {
+    max-width: 800px;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .faq-item {
+    border-block-end: 1px solid oklch(1 0 0 / 0.08);
+  }
+
+  .faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+    padding-block: var(--space-3);
+    font-family: var(--font-display);
+    font-size: var(--text-body);
+    font-weight: 600;
+    color: var(--color-text-light);
+    cursor: pointer;
+    list-style: none;
+    min-height: 44px;
+
+    &::marker { display: none; }
+    &::-webkit-details-marker { display: none; }
+  }
+
+  .faq-chevron {
+    flex-shrink: 0;
+    transition: transform 0.3s var(--ease-out-expo);
+    color: var(--color-secondary);
+  }
+
+  details[open] .faq-chevron {
+    transform: rotate(180deg);
+  }
+
+  .faq-answer {
+    padding-block-end: var(--space-3);
+    animation: slideDown 0.3s ease;
+  }
+
+  .faq-answer p {
+    color: var(--color-text-muted);
+    font-size: var(--text-small);
+    line-height: var(--leading-body);
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* CTA */
+  .cta-full {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    padding-block: var(--space-8);
+    text-align: center;
+    color: var(--color-text-light);
+  }
+
+  .cta-full h2 { margin-block-end: var(--space-2); }
+
+  .cta-full p {
+    max-width: 50ch;
+    margin-inline: auto;
+    color: oklch(1 0 0 / 0.7);
+    margin-block-end: var(--space-4);
+  }
+</style>

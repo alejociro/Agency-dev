@@ -1,0 +1,150 @@
+{
+  "cliente": "Studio 17",
+  "url_auditada": "https://www.studio17greenville.com/",
+  "sector": "Classical Pilates Studio",
+  "benchmark_aplicado": "Profesional independiente / Fitness — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Técnico: 45. Aplicado por ser un estudio de Pilates local con instructora individual en Greenville, SC.",
+  "fecha": "2026-04-03",
+  "scores": {
+    "seo": 40,
+    "ux_ui": 35,
+    "marketing": 30,
+    "contenido": 32,
+    "tecnico": 30,
+    "total": 33
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title incluye nombre del negocio y CTA: 'Studio 17 | Start Your Pilates Journey Today'",
+        "Meta description bien redactada con keyword 'Classical Pilates', ubicación y beneficios específicos",
+        "URL limpia con keyword geográfica: studio17greenville.com"
+      ],
+      "negativos": [
+        "Sitio requiere renderizado JS (Squarespace) — dificulta crawling de buscadores significativamente",
+        "Favicon es el default de Squarespace, no personalizado — señal de sitio no profesional para buscadores",
+        "URL del logo es null — no hay imagen de logo indexable",
+        "Solo 4 páginas en total — footprint de contenido extremadamente pequeño para posicionar"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a stack con SSG/SSR para eliminar dependencia de JS rendering y mejorar crawleabilidad", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar logo personalizado y favicon de marca", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear páginas adicionales de contenido: precios, FAQ, instructor bio, testimonios", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar schema markup LocalBusiness y FitnessCenter", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores elegante y orgánica (#2d3a2e verde oscuro, #c4a97d dorado, #f5f2ed crema) apropiada para estudio boutique",
+        "Navegación simple con 4 items claros: Home, Classes, About, Contact",
+        "Flujo lógico: hero → qué es Pilates → bienvenida → clases → contacto"
+      ],
+      "negativos": [
+        "Zero imágenes en todo el sitio — experiencia visual completamente plana y sin atractivo",
+        "Solo una tipografía genérica de Squarespace — sin identidad tipográfica definida",
+        "No hay elementos visuales diferenciadores: sin iconos, sin fotografías del estudio, sin video",
+        "Email de contacto tiene error tipográfico: 'info@studio17@gmail.com' (doble @)"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar fotografía profesional del estudio, equipo Contrology y sesiones en acción", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Corregir email de contacto: eliminar doble @ (probablemente studio17greenville@gmail.com)", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Definir tipografías de marca: una serif elegante para headings y una sans-serif para body", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Agregar iconografía para equipamiento Pilates (Reformer, Cadillac, Barrels, Chairs)", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Propuesta de valor diferenciada: estudio fully equipped con equipo Contrology by Balanced Body",
+        "Tono personal y acogedor de la instructora BeLinda, genera conexión emocional",
+        "Múltiples CTAs variados: 'Explore Classes', 'Discover Your Practice', 'Book an Appointment'"
+      ],
+      "negativos": [
+        "No hay testimonios ni reseñas de estudiantes — cero prueba social",
+        "No hay precios visibles en el sitio — barrera alta para visitantes que evalúan opciones",
+        "No hay redes sociales enlazadas — pierde alcance y credibilidad",
+        "No hay oferta introductoria ni incentivo para nuevos estudiantes"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar testimonios de al menos 3 estudiantes con resultados específicos", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Publicar precios o al menos rango de tarifas para sesiones privadas y grupales", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear oferta introductoria para nuevos estudiantes (ej. 'First Class Free' o paquete trial)", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Vincular perfiles de Instagram/Facebook para ampliar alcance y credibilidad", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Explicación clara de qué es Classical Pilates con referencia a Joseph Pilates",
+        "Mención específica del equipamiento: Cadillac, Reformer, Barrels, Chairs",
+        "Información de contacto directa con dirección, teléfono y horarios"
+      ],
+      "negativos": [
+        "Contenido extremadamente escaso — la mayoría de secciones tienen contenido null o mínimo",
+        "No hay descripción de tipos de clases, niveles o duración",
+        "No hay bio del instructor con credenciales, certificaciones o experiencia",
+        "Horarios vagos: solo dice 'Monday-Saturday | View Schedule' sin detalle"
+      ],
+      "recomendaciones": [
+        { "accion": "Crear página de clases detallada con tipos, niveles, duración y descripción de cada clase", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Desarrollar bio completa de BeLinda con certificaciones, años de experiencia y filosofía", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar horarios detallados por día y tipo de clase", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Crear sección FAQ para nuevos estudiantes sobre qué esperar, qué traer, dress code", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Squarespace ofrece hosting confiable con SSL incluido",
+        "Formulario de contacto presente en la página",
+        "Sitio accesible sin errores críticos de carga"
+      ],
+      "negativos": [
+        "Squarespace requiere JS rendering — score técnico limitado a máximo 60 por requiere_render=true",
+        "Favicon default de Squarespace — no personalizado",
+        "Sin integración de sistema de booking — 'Book an Appointment' no conecta a plataforma",
+        "Sin analytics o tracking visible para medir conversiones"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a stack con SSG para eliminar dependencia de JS rendering", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Integrar sistema de booking online (MindBody, Vagaro) para reservas directas", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Personalizar favicon con logo de Studio 17", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Configurar Google Analytics y Google Business Profile para tracking local", "prioridad": "media", "tipo": "quick_win" }
+      ],
+      "stack_actual": "Squarespace",
+      "stack_recomendado": "Astro + Tailwind CSS",
+      "integraciones": ["Booking online (MindBody/Vagaro)", "Google Maps embed", "Instagram feed", "Google Reviews widget"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Corregir email de contacto (doble @)",
+    "Agregar testimonios de estudiantes actuales",
+    "Publicar precios o rangos de tarifas",
+    "Personalizar favicon con branding de Studio 17",
+    "Crear oferta introductoria para nuevos estudiantes"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Corregir email de contacto",
+      "Agregar precios y oferta introductoria",
+      "Personalizar favicon y agregar logo"
+    ],
+    "mes_1": [
+      "Agregar fotografía profesional del estudio y sesiones",
+      "Crear página detallada de clases con horarios y niveles",
+      "Desarrollar bio del instructor con credenciales",
+      "Agregar testimonios de estudiantes",
+      "Integrar redes sociales"
+    ],
+    "largo_plazo": [
+      "Migrar a stack moderno (Astro) con SSG para mejor SEO y performance",
+      "Integrar sistema de booking online",
+      "Crear sección FAQ y contenido educativo sobre Pilates",
+      "Implementar schema markup LocalBusiness"
+    ]
+  },
+  "resumen_ejecutivo": "Studio 17 presenta un sitio extremadamente minimalista en Squarespace con contenido escaso, cero imágenes y dependencia de JS rendering que limita severamente su visibilidad en buscadores. La ausencia de precios, testimonios, fotografías y un sistema de booking online genera una barrera alta para convertir visitantes en estudiantes. Una reconstrucción completa con contenido rico, fotografía profesional e integración de reservas transformaría significativamente la capacidad del sitio para captar nuevos clientes.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["booking widget embed", "google maps"],
+    "justificacion": "Estudio pequeño con 4 páginas simples, sin e-commerce ni contenido dinámico — HTML estático con Tailwind es suficiente para un sitio rápido, accesible y bien posicionado."
+  }
+}

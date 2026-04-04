@@ -1,0 +1,175 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Café" description="Reform Café — specialty coffee, smoothies, and light bites at Refora Greenville. Recharge after class in our warm, inviting space.">
+  <Header />
+
+  <section class="page-hero mesh-warm">
+    <div class="container">
+      <span class="hero-tag text-label">Reform Café</span>
+      <h1 class="hero-title">Recharge Your Ritual</h1>
+      <p class="hero-sub">Thoughtfully curated offerings where connection and community meet. Before class, after class, or just because.</p>
+      <div class="cafe-steam" aria-hidden="true">
+        <span class="steam-line"></span>
+        <span class="steam-line"></span>
+        <span class="steam-line"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Café Gallery -->
+  <section class="section">
+    <div class="container">
+      <div data-gallery data-animate="fade-up">
+        <div class="gallery-slide is-active">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&h=675&fit=crop" alt="Specialty coffee being prepared at Reform Café" width="1200" height="675" loading="eager" decoding="async" />
+        </div>
+        <div class="gallery-slide">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&h=675&fit=crop" alt="Warm café interior with natural light" width="1200" height="675" loading="lazy" decoding="async" />
+        </div>
+        <div class="gallery-slide">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=675&fit=crop" alt="Healthy smoothie bowls and light bites" width="1200" height="675" loading="lazy" decoding="async" />
+        </div>
+        <button class="gallery-arrow" data-gallery-prev aria-label="Previous image">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="gallery-arrow" data-gallery-next aria-label="Next image">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <div class="gallery-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="section" data-animate="fade-up">
+    <div class="container">
+      <span class="section-tag">The Menu</span>
+      <h2>Fuel for Every Moment</h2>
+
+      <div class="menu-grid">
+        <!-- Coffee -->
+        <div class="menu-category card">
+          <div class="menu-category__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="M4 12h20v12a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V12z"/><path d="M24 14h2a3 3 0 0 1 0 6h-2"/><path d="M10 4v4"/><path d="M14 2v6"/><path d="M18 4v4"/></svg>
+          </div>
+          <h3>Coffee</h3>
+          <p class="text-muted" style="font-size: var(--text-small);">Espresso, Americano, Cortado, Latte, Cappuccino, Cold Brew, Matcha Latte, and seasonal specials.</p>
+        </div>
+
+        <!-- Smoothies -->
+        <div class="menu-category card">
+          <div class="menu-category__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="M10 6h12l-2 22H12L10 6z"/><path d="M8 6h16"/><path d="M16 6V2"/><circle cx="14" cy="16" r="2"/><circle cx="19" cy="14" r="1.5"/></svg>
+          </div>
+          <h3>Smoothies & Juices</h3>
+          <p class="text-muted" style="font-size: var(--text-small);">Fresh-pressed juices and smoothies crafted to complement your practice and fuel your day.</p>
+        </div>
+
+        <!-- Light Bites -->
+        <div class="menu-category card">
+          <div class="menu-category__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><ellipse cx="16" cy="20" rx="12" ry="4"/><path d="M4 20c0-8 5.4-14 12-14s12 6 12 14"/></svg>
+          </div>
+          <h3>Light Bites</h3>
+          <p class="text-muted" style="font-size: var(--text-small);">Wholesome snacks and light meals — energy bites, toast, bowls, and baked goods made to recharge.</p>
+        </div>
+      </div>
+
+      <p class="text-muted text-center" style="margin-block-start: var(--space-4); font-size: var(--text-small);">
+        Visit us for our full menu and current pricing. Plant-based milk alternatives available.
+      </p>
+    </div>
+  </section>
+
+  <!-- Café Philosophy -->
+  <section class="section mesh-dark grain" data-animate="fade-up">
+    <div class="container container--narrow text-center">
+      <blockquote class="pull-quote" style="border: none; padding: 0; text-align: center; margin-inline: auto; color: var(--color-text-light);">
+        "Designed to complement movement, the Café is a place to recharge and reset — before or after class, or as part of your daily ritual."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Café Hours -->
+  <section class="section" data-animate="fade-up">
+    <div class="container container--narrow text-center">
+      <span class="section-tag">Visit the Café</span>
+      <h2>Café Hours</h2>
+      <div style="display: flex; flex-direction: column; gap: var(--space-1); margin-block: var(--space-4);">
+        <p>Monday – Friday: 5AM – 5PM</p>
+        <p>Saturday – Sunday: 10AM – 2PM</p>
+      </div>
+      <span data-open-status style="margin-block-start: var(--space-2);"></span>
+    </div>
+  </section>
+
+  <Footer />
+  <script src="../scripts/animations.js"></script>
+  <script src="../scripts/experiences.js"></script>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding-block: calc(var(--space-16) + var(--space-8)) var(--space-8);
+    text-align: center;
+  }
+
+  .page-hero .hero-sub {
+    font-size: var(--text-h4);
+    color: var(--color-text-muted);
+    max-width: 55ch;
+    margin-inline: auto;
+    margin-block-start: var(--space-2);
+  }
+
+  .cafe-steam {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    height: 40px;
+    margin-block-start: var(--space-3);
+  }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+    margin-block-start: var(--space-6);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .menu-category {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .menu-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+    & li {
+      display: flex;
+      justify-content: space-between;
+      padding: var(--space-1) 0;
+      border-bottom: 1px solid var(--color-border);
+      font-size: var(--text-small);
+
+      &:last-child { border-bottom: none; }
+
+      & span:last-child {
+        font-weight: 500;
+        color: var(--color-charcoal);
+      }
+    }
+  }
+</style>

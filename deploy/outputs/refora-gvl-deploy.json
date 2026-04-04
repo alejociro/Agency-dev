@@ -1,0 +1,7 @@
+{
+  "negocio": "refora-gvl",
+  "url_produccion": "https://refora-gvl.vercel.app",
+  "fecha_deploy": "2026-04-03",
+  "stack": "astro",
+  "carpeta_origen": "web/refora-gvl/"
+}

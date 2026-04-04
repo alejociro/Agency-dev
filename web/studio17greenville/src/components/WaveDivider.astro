@@ -1,0 +1,17 @@
+---
+interface Props {
+  fill?: string;
+  variant?: 1 | 2;
+}
+
+const { fill = 'var(--color-bg)', variant = 1 } = Astro.props;
+
+const paths = {
+  1: 'M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z',
+  2: 'M0,40 C360,100 1080,10 1440,60 L1440,120 L0,120 Z',
+};
+---
+
+<svg class="section-divider" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+  <path class="divider-path wave-path" d={paths[variant]} fill={fill} />
+</svg>

@@ -1,0 +1,305 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  currentPage?: string;
+  ogImage?: string;
+}
+
+import '../styles/design-system.css';
+import '../styles/animations.css';
+
+const { title, description, canonical, currentPage = "", ogImage } = Astro.props;
+const siteUrl = "https://indigo-flow-and-art.vercel.app";
+const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
+const ogImageUrl = ogImage || "https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/050af7b3-0fc6-4a5a-99ee-7ef3db93bb3b/IndigoFlowArt-31.jpg";
+
+const navLinks = [
+  { href: "/", label: "Home", id: "home" },
+  { href: "/classical-pilates", label: "Classical Pilates", id: "classical-pilates" },
+  { href: "/fine-art", label: "Fine Art", id: "fine-art" },
+  { href: "/about", label: "About Us", id: "about" },
+  { href: "/contact", label: "Contact", id: "contact" },
+];
+
+// Schema: dual business — FitnessCenter + ArtGallery
+const schemaLocalBusiness = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FitnessCenter",
+      "@id": `${siteUrl}/#pilates`,
+      "name": "Indigo Flow and Art — Classical Pilates",
+      "description": "Classical Pilates studio instructing students in Joseph Pilates' original Contrology Method on authentic Gratz equipment in Greenville, SC.",
+      "url": siteUrl,
+      "telephone": "+18648845606",
+      "email": "hello.indigoflowandart@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1272 Pendleton Street",
+        "addressLocality": "Greenville",
+        "addressRegion": "SC",
+        "postalCode": "29611",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.85,
+        "longitude": -82.42
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "07:15",
+          "closes": "12:15"
+        }
+      ],
+      "priceRange": "$$",
+      "sameAs": [
+        "https://www.instagram.com/indigoflowart",
+        "https://www.facebook.com/indigoflowart"
+      ],
+      "image": ogImageUrl,
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Pilates Sessions",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "New Student Special — 3 Introductory Private Sessions",
+            "price": "210.00",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Private Session",
+            "price": "95.00",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Duet Session",
+            "price": "120.00",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Small Group Session",
+            "price": "150.00",
+            "priceCurrency": "USD"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "ArtGallery",
+      "@id": `${siteUrl}/#gallery`,
+      "name": "Indigo Flow and Art — Fine Art Gallery",
+      "description": "Fine art gallery featuring original works by Julie Hughes. Captures motion, speed, and the ephemeral beauty of everyday moments.",
+      "url": `${siteUrl}/fine-art`,
+      "telephone": "+18648845607",
+      "email": "hello.indigoflowandart@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1272 Pendleton Street",
+        "addressLocality": "Greenville",
+        "addressRegion": "SC",
+        "postalCode": "29611",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "description": "By appointment only. First Friday Art Crawl 6-9pm."
+      },
+      "sameAs": [
+        "https://www.instagram.com/indigoflowart",
+        "https://www.facebook.com/indigoflowart"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5e94ce23cb52f15bc6719b3b/1590769141691-7TO0ASKD4227B2TP5988/_MG_9679.jpg"
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      "name": "Indigo Flow and Art",
+      "url": siteUrl,
+      "description": "Classical Pilates studio and Fine Art gallery in the Village of West Greenville, SC."
+    }
+  ]
+};
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Primary -->
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="keywords" content="classical pilates greenville sc, fine art gallery greenville, pilates studio west greenville, contrology method, gratz pilates, julie hughes artist, katie hughes ryan pilates, pilates near me greenville, art gallery pendleton street" />
+  <link rel="canonical" href={fullCanonical} />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={fullCanonical} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImageUrl} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Indigo Flow and Art" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImageUrl} />
+
+  <!-- Schema JSON-LD (dual business: FitnessCenter + ArtGallery) -->
+  <script type="application/ld+json" set:html={JSON.stringify(schemaLocalBusiness)} />
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" as="style" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.squarespace-cdn.com" />
+
+  <!-- Design System + Animations (imported via frontmatter) -->
+
+  <!-- Speculation Rules: prefetch likely navigation targets -->
+  <script type="speculationrules">
+  {
+    "prerender": [
+      { "where": { "href_matches": "/classical-pilates" } },
+      { "where": { "href_matches": "/contact" } }
+    ],
+    "prefetch": [
+      { "where": { "href_matches": "/fine-art" } },
+      { "where": { "href_matches": "/about" } }
+    ]
+  }
+  </script>
+
+  <!-- Performance: content-visibility for below-fold sections -->
+  <style>
+    .section:not(:first-of-type) {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 500px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Reading Progress -->
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav nav-enter" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo" aria-label="Indigo Flow and Art — Home">
+        Indigo<span>.</span>
+      </a>
+
+      <ul class="nav__links">
+        {navLinks.map(link => (
+          <li>
+            <a
+              href={link.href}
+              class={`nav__link ${currentPage === link.id ? "active" : ""}`}
+              aria-current={currentPage === link.id ? "page" : undefined}
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile" role="navigation" aria-label="Mobile navigation">
+    {navLinks.map(link => (
+      <a href={link.href}>{link.label}</a>
+    ))}
+  </div>
+
+  <!-- Page Content -->
+  <main>
+    <slot />
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo">Indigo Flow <span style="color: var(--color-gold);">&</span> Art</div>
+          <p style="color: var(--color-text-muted); max-width: 35ch; margin-block-end: var(--space-3);">
+            Where the art of movement meets the movement of art. Classical Pilates &amp; Fine Art Gallery in the Village of West Greenville.
+          </p>
+          <div style="display: flex; gap: var(--space-2);">
+            <a href="https://www.instagram.com/indigoflowart" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://www.facebook.com/indigoflowart" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="color: var(--color-cream); font-size: var(--text-body); margin-block-end: var(--space-2);">Explore</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-1);">
+            <li><a href="/classical-pilates">Classical Pilates</a></li>
+            <li><a href="/fine-art">Fine Art Gallery</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="color: var(--color-cream); font-size: var(--text-body); margin-block-end: var(--space-2);">Visit Us</h4>
+          <address style="font-style: normal; color: var(--color-text-muted); font-size: var(--text-small); line-height: 1.6;">
+            1272 Pendleton Street<br/>
+            The Village of West Greenville<br/>
+            Greenville, SC 29611
+          </address>
+          <p style="color: var(--color-text-muted); font-size: var(--text-small); margin-block-start: var(--space-2);">
+            <strong style="color: var(--color-gold);">Pilates:</strong> Katie — <a href="sms:+18648845606">(864) 884-5606</a><br/>
+            <strong style="color: var(--color-gold);">Gallery:</strong> Julie — <a href="sms:+18648845607">(864) 884-5607</a><br/>
+            <span style="font-size: var(--text-caption); opacity: 0.7;">Text only, please</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2026 Indigo Flow and Art. All rights reserved.</span>
+        <a href="mailto:hello.indigoflowandart@gmail.com" style="color: var(--color-gold);">hello.indigoflowandart@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__close" aria-label="Close image viewer">&times;</button>
+    <img src="" alt="" width="1200" height="800" loading="lazy" decoding="async" />
+  </div>
+
+  <!-- Scripts -->
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

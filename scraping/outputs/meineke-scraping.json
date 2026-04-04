@@ -1,0 +1,101 @@
+{
+  "negocio": "Meineke Car Care Centers",
+  "url": "https://www.meineke.com/",
+  "sector": "Auto Repair & Maintenance Chain",
+  "requiere_render": true,
+  "nota_scraping": "Sitio renderizado por JS (Next.js). Algunos datos pueden estar incompletos. Considerar scraping con browser headless.",
+  "meta": {
+    "title": "Auto Repair, Car Mechanics & Maintenance Services | Meineke",
+    "description": "Meineke Car Care Centers offer complete auto repair and maintenance services. Trust our expert technicians to keep your car running smoothly!",
+    "keywords": null
+  },
+  "favicon": "https://www.meineke.com/favicon.ico",
+  "paleta": {
+    "primario": "#FEDE0F",
+    "secundario": "#000000",
+    "acento": "#FEDE0F",
+    "fondo": "#ffffff",
+    "texto": "#000000",
+    "otros": []
+  },
+  "logo": {
+    "url": null,
+    "descripcion": "Meineke Car Care Centers logo",
+    "posicion": "top left",
+    "colores": ["#FEDE0F", "#000000"]
+  },
+  "tipografias": [
+    { "nombre": "System/Next.js default", "uso": "body", "peso": "400", "tamanio_aprox": "16px" }
+  ],
+  "navegacion": [
+    { "label": "Locations", "url": "https://www.meineke.com/locations/" },
+    { "label": "Services", "url": "https://www.meineke.com/services/" },
+    { "label": "Coupons", "url": "https://www.meineke.com/coupons/" },
+    { "label": "Rewards", "url": "https://www.meineke.com/rewards/" },
+    { "label": "Careers", "url": "https://www.meineke.com/careers/" },
+    { "label": "Blog", "url": "https://www.meineke.com/blog/" },
+    { "label": "Financing", "url": "https://www.meineke.com/financing/" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Meineke - Trusted Auto Repair & Car Maintenance Services",
+      "contenido": "Special financing available. See if you prequalify.",
+      "cta": "Book Now",
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Auto Repair Services",
+      "contenido": "Oil Change - Regularly changing your oil and filter will help the engine work its best. Exhaust & Mufflers - Mufflers do more than keep your car quiet. Since 1972, we've been the muffler experts. Brakes - Brake maintenance is crucial to keeping your vehicle operating safely. Tires & Wheels - Regularly inspect and service your tires to prevent a blowout, a flat, or a costly accident. A/C - Keep your car cool and increase your gas mileage with regular AC checks. Steering & Suspension - Your car's steering and suspension work together to keep your ride smooth and handling precise.",
+      "cta": "See all services",
+      "imagenes": []
+    },
+    {
+      "tipo": "feature",
+      "titulo": "Meineke e-Inspection",
+      "contenido": "Know the problem and the fix. Real-time service updates. Approve additional service. View inspection photos. Find informative repair videos. All from your phone!",
+      "cta": "Learn more",
+      "imagenes": []
+    },
+    {
+      "tipo": "rewards",
+      "titulo": "Meineke rewards",
+      "contenido": "Get service. Earn points. Save money. Sign up for our FREE Rewards Program to take advantage of our auto care perks! Keep track of valuable rewards points. Redeem points for free maintenance services. Receive free towing. View your vehicle's service history. Save and access your favorite Meineke shop.",
+      "cta": "Sign up for rewards",
+      "imagenes": []
+    },
+    {
+      "tipo": "empleo",
+      "titulo": "We're hiring",
+      "contenido": "Find auto repair jobs near you.",
+      "cta": "Apply today",
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Trusted Auto Repair & Car Maintenance Services",
+    "propuesta_valor": "Complete auto repair and maintenance services since 1972. Expert muffler specialists with rewards program and e-inspection technology.",
+    "ctas": ["Book Now", "See all services", "Sign up for rewards", "Learn more", "Apply today"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": null,
+    "whatsapp": null,
+    "email": null,
+    "direccion": null,
+    "horarios": null
+  },
+  "redes": [
+    { "plataforma": "Facebook", "url": "https://www.facebook.com/meinekecarcareusa" },
+    { "plataforma": "Instagram", "url": "https://www.instagram.com/meinekecarcare/" },
+    { "plataforma": "YouTube", "url": "https://www.youtube.com/user/MeinekeCorp" }
+  ],
+  "formularios": [],
+  "footer": {
+    "contenido": "© 2026 Meineke Car Care Centers, LLC. All Rights Reserved. A Family of Driven Brands.",
+    "links": ["Privacy Center", "Mobile Terms", "Web Accessibility", "Site Map", "Find a Meineke", "Coupons", "Rewards", "Financing", "Gift Cards", "Fleet Services"],
+    "copyright": "© 2026 Meineke Car Care Centers, LLC. All Rights Reserved."
+  },
+  "tecnologia": "Next.js"
+}

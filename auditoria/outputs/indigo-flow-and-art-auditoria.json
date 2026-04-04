@@ -1,150 +1,151 @@
 {
   "cliente": "Indigo Flow and Art",
   "url_auditada": "https://www.indigoflowandart.com/",
-  "sector": "Wellness / Arte (Estudio de Pilates Clásico + Galería de Arte)",
-  "benchmark_aplicado": "Profesional independiente (SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 45). Se aplica este benchmark porque Indigo Flow and Art es un estudio local operado por sus propietarias con servicios por cita, sin e-commerce ni operaciones a gran escala. Es un negocio de nicho artístico-wellness con público local en Greenville, SC.",
+  "sector": "Wellness / Arte (Estudio de Pilates Clasico + Galeria de Arte)",
+  "benchmark_aplicado": "Profesional independiente / Fitness — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Tecnico: 45. Aplicado por ser un estudio boutique de Pilates y galeria de arte local en Greenville, SC.",
   "fecha": "2026-04-03",
   "scores": {
-    "seo": 36,
-    "ux_ui": 66,
-    "marketing": 48,
-    "contenido": 77,
-    "tecnico": 58,
-    "total": 57
+    "seo": 25,
+    "ux_ui": 42,
+    "marketing": 35,
+    "contenido": 52,
+    "tecnico": 38,
+    "total": 38
   },
   "hallazgos": {
     "seo": {
       "positivos": [
-        "Propuesta de valor clara en el hero: 'The Art of Movement' con descripción que combina Pilates y Arte",
-        "Estructura de navegación lógica con 4 páginas bien definidas (Home, Classical Pilates, Fine Art, About Us)",
-        "CTAs con información de contacto directa y específica (números de teléfono diferenciados para Pilates y Galería)"
+        "Dominio descriptivo (indigoflowandart.com) que comunica el concepto dual del negocio",
+        "Contenido de paginas internas rico en keywords naturales: 'Classical Pilates', 'Contrology Method', 'Fine Art'",
+        "Redes sociales (Instagram, Facebook) enlazadas correctamente en el footer"
       ],
       "negativos": [
-        "Meta title es solo 'Indigo' — sin keywords relevantes como 'Classical Pilates', 'Art Gallery' o 'Greenville SC'",
-        "Meta description ausente por completo, perdiendo oportunidad de snippet en buscadores",
-        "Ninguna imagen tiene alt text (todas null) — 0% de optimización en imágenes",
-        "H1 'The Art of Movement' es creativo pero carece de keywords de búsqueda local",
-        "Sin keywords meta definidas"
+        "Meta title es solo 'Indigo' — no incluye keywords, ubicacion ni descripcion del negocio",
+        "Meta description es null — perdida total de control sobre snippet en SERP",
+        "Imagenes sin alt text (todas null) — cero indexacion en Google Images",
+        "Favicon es null — senal de sitio no profesional para buscadores y usuarios"
       ],
       "recomendaciones": [
-        { "accion": "Escribir meta title optimizado: 'Indigo Flow and Art | Classical Pilates & Art Gallery in Greenville, SC'", "prioridad": "alta", "tipo": "quick_win" },
-        { "accion": "Redactar meta description de 150-160 caracteres incluyendo 'Classical Pilates', 'Fine Art', 'Greenville' y CTA", "prioridad": "alta", "tipo": "quick_win" },
-        { "accion": "Agregar alt text descriptivo a todas las imágenes del sitio (mínimo 10 imágenes detectadas)", "prioridad": "alta", "tipo": "quick_win" },
-        { "accion": "Incorporar keywords de búsqueda local en headings: 'Classical Pilates in Greenville' o 'Art Gallery West Greenville'", "prioridad": "media", "tipo": "mejora_estructural" }
+        { "accion": "Reescribir meta title: 'Indigo Flow and Art | Classical Pilates & Fine Art Gallery in Greenville SC'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar meta description descriptiva con keywords y propuesta de valor", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar alt text descriptivo a todas las imagenes del sitio", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar schema markup LocalBusiness, FitnessCenter y ArtGallery", "prioridad": "media", "tipo": "mejora_estructural" }
       ]
     },
     "ux_ui": {
       "positivos": [
-        "Paleta de colores sobria y consistente (navy #2e3a59 + blanco + azul acento) — transmite calma y profesionalismo acorde al sector wellness/arte",
-        "Diseño visual limpio con buena respiración, propio de la plantilla Squarespace v7.1",
-        "Navegación simple de 4 ítems que no sobrecarga al usuario"
+        "Paleta de colores elegante y sobria (#2e3a59 azul oscuro, #4a6fa5 azul medio) transmite sofisticacion",
+        "Navegacion minimalista con 4 items claros: Home, Classical Pilates, Fine Art, About Us",
+        "Fotografias de calidad del estudio y galeria que transmiten la atmosfera del espacio"
       ],
       "negativos": [
-        "Sin indicadores explícitos de diseño mobile-first o adaptaciones responsive personalizadas",
-        "Tipografía genérica sin nombre identificado — puede no diferenciarse lo suficiente para un estudio artístico",
-        "Falta de jerarquía visual entre las dos líneas de negocio (Pilates vs Arte) en la home"
+        "Tipografias no identificadas (nombre null) — sin identidad tipografica definida",
+        "No hay CTA visual prominente en el hero — solo texto sin boton de accion",
+        "Flujo de conversion depende enteramente de texto con numeros de telefono para llamar/textear",
+        "Direcciones PDF para llegar al estudio — friccion innecesaria vs Google Maps embed"
       ],
       "recomendaciones": [
-        { "accion": "Crear dos bloques visuales diferenciados en la home para Pilates y Arte con CTAs independientes", "prioridad": "alta", "tipo": "mejora_estructural" },
-        { "accion": "Seleccionar tipografía con personalidad artística (serif para títulos, sans-serif para cuerpo) para reforzar la identidad del estudio", "prioridad": "media", "tipo": "mejora_estructural" },
-        { "accion": "Verificar y optimizar la experiencia en móvil: tamaño de botones táctiles, legibilidad de precios y horarios", "prioridad": "media", "tipo": "mejora_estructural" }
+        { "accion": "Agregar boton CTA prominente en hero: 'Book a Session' o 'Schedule Your First Class'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reemplazar PDF de direcciones con Google Maps embed interactivo", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Definir tipografias de marca coherentes con la estetica artistica del espacio", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Agregar formulario de contacto para reducir friccion vs solo telefono", "prioridad": "media", "tipo": "mejora_estructural" }
       ]
     },
     "marketing": {
       "positivos": [
-        "Propuesta de valor diferenciada: combinar Pilates Clásico con Galería de Arte es un posicionamiento único en el mercado local",
-        "Credenciales de la instructora bien detalladas (Power Pilates NYC, 500hr Yoga, 300hr AYAMA) — genera autoridad",
-        "Tono sereno y artístico coherente con el público objetivo de wellness y arte"
+        "Propuesta de valor unica: combinacion de Pilates clasico + galeria de arte en un solo espacio",
+        "Precios transparentes y detallados con multiples opciones (privadas, duetos, grupos, paquetes)",
+        "Bio de instructora con credenciales solidas: certificacion Power Pilates, 500hr yoga, 300hr AYAMA"
       ],
       "negativos": [
-        "No hay CTA web clicable — todo el proceso de reserva depende de enviar un texto/SMS a un número telefónico",
-        "Cero prueba social: no hay testimonios de alumnos, reseñas, número de clientes atendidos ni logos de certificaciones visuales",
-        "El mensaje hero no resuelve un dolor específico del cliente: 'invites your creativity and vitality to bloom' es aspiracional pero vago",
-        "No hay urgencia ni escasez comunicada a pesar de que el calendario se llena mensualmente"
+        "No hay testimonios ni resenas de estudiantes o visitantes de la galeria",
+        "Sistema de reservas es solo via texto (SMS) — barrera alta para muchos clientes potenciales",
+        "No hay oferta introductoria destacada visualmente — el 'New Student Special' esta enterrado en texto",
+        "Recargo del 3% por tarjeta de credito puede generar friccion y percepcion negativa"
       ],
       "recomendaciones": [
-        { "accion": "Agregar sección de testimonios con 3-5 reseñas de alumnos actuales de Pilates y visitantes de la galería", "prioridad": "alta", "tipo": "mejora_estructural" },
-        { "accion": "Implementar botón CTA principal clicable en el hero que dirija a reserva o contacto (no solo número de teléfono)", "prioridad": "alta", "tipo": "quick_win" },
-        { "accion": "Comunicar escasez real: 'Cupos limitados — el calendario se abre mensualmente' para generar urgencia de reserva", "prioridad": "media", "tipo": "quick_win" },
-        { "accion": "Mostrar badges visuales de certificaciones (Power Pilates, RYT-500, AYAMA) en lugar de solo texto", "prioridad": "baja", "tipo": "opcional" }
+        { "accion": "Destacar el 'New Student Special' ($210 por 3 privates) como CTA principal con diseno visual atractivo", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar testimonios de estudiantes y visitantes de la galeria", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar sistema de booking online complementario al texto para reducir friccion", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reencuadrar el recargo de tarjeta como 'descuento por pago directo' para percepcion positiva", "prioridad": "media", "tipo": "quick_win" }
       ]
     },
     "contenido": {
       "positivos": [
-        "Textos originales y con voz propia — especialmente la sección de arte de Julie Hughes que transmite autenticidad",
-        "Información de contacto completa: teléfono, email, dirección física, horarios y redes sociales",
-        "Precios transparentes y detallados con múltiples opciones (individuales, duetos, grupos, paquetes)",
-        "Proceso de onboarding claro para nuevos estudiantes en 3 pasos"
+        "Contenido detallado de Pilates: metodologia, proceso de inicio en 3 pasos, precios, horarios",
+        "Seccion de arte con filosofia artistica de Julie Hughes bien articulada",
+        "Bios de co-owners con credenciales y trayectoria profesional completas"
       ],
       "negativos": [
-        "No hay sección de FAQ ni manejo de objeciones comunes (¿necesito experiencia previa? ¿qué llevar? ¿política de cancelación?)",
-        "La página About es escasa — solo dirección y una cita, sin historia del negocio ni conexión emocional",
-        "Sin contenido que explique qué es el Pilates Clásico vs otras modalidades para visitantes nuevos"
+        "Pagina principal tiene contenido minimo — la riqueza esta en subpaginas que pocos visitantes veran",
+        "No hay descripcion de tipos de sesiones (que esperar en una privada vs dueto vs grupo)",
+        "Horarios limitados solo a Monday-Thursday con slots especificos — no se explica por que",
+        "Contenido de galeria no muestra portfolio de obras ni precios de arte"
       ],
       "recomendaciones": [
-        { "accion": "Crear sección FAQ con 5-8 preguntas frecuentes: experiencia necesaria, qué llevar, cancelaciones, diferencia Pilates Clásico vs moderno", "prioridad": "alta", "tipo": "mejora_estructural" },
-        { "accion": "Expandir la página About con la historia de cómo Katie y Julie crearon Indigo, su visión compartida y conexión con West Greenville", "prioridad": "media", "tipo": "mejora_estructural" },
-        { "accion": "Agregar párrafo introductorio explicando Pilates Clásico (Contrology) para visitantes que no conocen la disciplina", "prioridad": "baja", "tipo": "opcional" }
+        { "accion": "Enriquecer pagina principal con resumen de servicios, precios destacados y testimonios", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Describir que esperar en cada tipo de sesion (privada, dueto, grupo) para educar al visitante", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Crear galeria visual de obras de arte con opcion de consulta de precios", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Agregar seccion FAQ: que traer, como prepararse, politica de cancelacion", "prioridad": "baja", "tipo": "opcional" }
       ]
     },
     "tecnico": {
       "positivos": [
-        "Squarespace v7.1 es una plataforma estable, segura y mantenida — adecuada para el volumen del negocio",
-        "SSL y hosting incluidos en Squarespace sin configuración adicional",
-        "Presencia de reCAPTCHA Enterprise para protección contra spam"
+        "Squarespace v7.1 ofrece hosting confiable con SSL y CDN incluido",
+        "Imagenes alojadas en CDN de Squarespace con buena disponibilidad",
+        "CSS Grid utilizado para layouts — tecnologia moderna"
       ],
       "negativos": [
-        "Cero formularios en el sitio — no hay forma de contacto web, toda comunicación es por teléfono/email manual",
-        "Moment.js presente como dependencia (librería deprecada desde 2020, aunque viene incluida en Squarespace)",
-        "Sin sistema de reservas online a pesar de que el negocio opera exclusivamente por cita"
+        "Favicon null — sitio sin icono personalizado en pestanas del navegador",
+        "Sin formularios de contacto — toda la comunicacion depende de telefono/email manual",
+        "Sin sistema de booking integrado — reservas solo via texto SMS",
+        "reCAPTCHA Enterprise cargado sin formularios visibles — peso innecesario"
       ],
       "recomendaciones": [
-        { "accion": "Implementar formulario de contacto/reserva web para capturar leads que no quieran llamar o enviar SMS", "prioridad": "alta", "tipo": "mejora_estructural" },
-        { "accion": "Integrar sistema de booking online (Acuity Scheduling, integrado nativamente con Squarespace) para automatizar reservas de Pilates", "prioridad": "alta", "tipo": "mejora_estructural" },
-        { "accion": "Agregar Google Analytics o Squarespace Analytics avanzado para medir tráfico y conversiones", "prioridad": "media", "tipo": "quick_win" }
+        { "accion": "Crear e implementar favicon personalizado con identidad visual de Indigo", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Integrar sistema de booking online (MindBody, Acuity) para reservas de Pilates", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar formulario de contacto para consultas generales y visitas a galeria", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Eliminar carga de reCAPTCHA Enterprise si no hay formularios que proteger", "prioridad": "baja", "tipo": "quick_win" }
       ],
       "stack_actual": "Squarespace v7.1, reCAPTCHA Enterprise, Moment.js, CSS Grid",
-      "stack_recomendado": "HTML + Tailwind CSS + Alpine.js (sitio estático optimizado para velocidad y SEO, con formulario de contacto integrado)",
-      "integraciones": [
-        "Instagram (@indigoflowart)",
-        "Facebook (indigoflowart)"
-      ],
-      "complejidad": "baja"
+      "stack_recomendado": "Astro + Tailwind CSS",
+      "integraciones": ["Booking online (MindBody/Acuity)", "Google Maps embed", "Instagram feed", "Art gallery lightbox"],
+      "complejidad": "media"
     }
   },
   "quick_wins": [
-    "Escribir meta title y description optimizados con keywords locales (Pilates, Art Gallery, Greenville SC)",
-    "Agregar alt text a todas las imágenes del sitio (10+ imágenes sin alt detectadas)",
-    "Implementar botón CTA clicable en el hero que dirija a contacto o reserva",
-    "Comunicar disponibilidad limitada: 'Cupos se abren mensualmente' junto a los CTAs",
-    "Activar analytics para medir tráfico y comportamiento de visitantes"
+    "Reescribir meta title y agregar meta description",
+    "Agregar alt text a todas las imagenes",
+    "Destacar New Student Special como CTA visual prominente",
+    "Reemplazar PDF de direcciones con Google Maps embed",
+    "Crear e implementar favicon personalizado"
   ],
   "plan_de_accion": {
     "semana_1": [
-      "Optimizar meta title y description con keywords relevantes",
-      "Agregar alt text descriptivo a todas las imágenes",
-      "Crear botón CTA clicable en hero y secciones clave",
-      "Implementar formulario de contacto básico",
-      "Recopilar 3-5 testimonios de alumnos actuales"
+      "Corregir meta title y description",
+      "Agregar alt text a todas las imagenes",
+      "Crear favicon personalizado",
+      "Agregar boton CTA en hero"
     ],
     "mes_1": [
-      "Diseñar home con dos bloques visuales diferenciados (Pilates / Arte)",
-      "Crear sección FAQ con preguntas frecuentes",
-      "Integrar sistema de reservas online (Acuity Scheduling o similar)",
-      "Expandir página About con historia del negocio",
-      "Seleccionar e implementar tipografía con personalidad artística"
+      "Integrar sistema de booking online",
+      "Agregar testimonios de estudiantes",
+      "Enriquecer pagina principal con resumen de servicios",
+      "Implementar Google Maps embed",
+      "Agregar formulario de contacto"
     ],
     "largo_plazo": [
-      "Mostrar badges visuales de certificaciones profesionales",
-      "Agregar contenido educativo sobre Pilates Clásico para atraer tráfico orgánico",
-      "Optimizar experiencia móvil con pruebas de usabilidad"
+      "Migrar a stack moderno (Astro) para mejor SEO y performance",
+      "Crear galeria de arte interactiva con lightbox",
+      "Implementar schema markup para ambos negocios",
+      "Desarrollar contenido educativo sobre Pilates clasico"
     ]
   },
-  "resumen_ejecutivo": "Indigo Flow and Art tiene un posicionamiento único combinando Pilates Clásico y Arte en Greenville, pero su sitio web desperdicia ese diferencial con SEO prácticamente inexistente (meta title genérico, cero alt text, sin keywords locales) y ausencia total de conversión digital (sin formularios, sin booking online, CTAs solo telefónicos). La mayor oportunidad está en capturar búsquedas locales de 'Pilates Greenville' y 'Art Gallery West Greenville' con SEO básico, mientras se implementa un sistema de reservas online que elimine la fricción del proceso actual basado en SMS. El próximo paso inmediato es optimizar los metadatos del sitio y crear un formulario de contacto web para no perder visitantes que no están dispuestos a enviar un mensaje de texto.",
+  "resumen_ejecutivo": "Indigo Flow and Art tiene una propuesta de valor unica combinando Pilates clasico y arte, con contenido detallado en subpaginas, pero su SEO es criticamente deficiente con meta title generico, meta description null y zero alt text en imagenes. El sistema de reservas exclusivamente via texto SMS y la ausencia de formularios de contacto crean una barrera de conversion significativa para clientes potenciales. Una reconstruccion con meta tags optimizados, booking online integrado y una pagina principal enriquecida podria transformar la visibilidad y conversion del sitio.",
   "stack_para_web": {
-    "framework": "html",
+    "framework": "astro",
     "estilos": "tailwind",
-    "extras": ["alpine.js", "formulario de contacto", "galería de arte lightbox"],
-    "justificacion": "Complejidad baja: sitio informativo de 4 páginas para negocio local. HTML + Tailwind + Alpine.js ofrece máxima velocidad de carga, SEO nativo sin JavaScript framework, y suficiente interactividad para galería de arte y formulario de contacto. No requiere CMS ni framework reactivo."
+    "extras": ["booking widget embed", "google maps", "art gallery lightbox", "instagram feed"],
+    "justificacion": "Negocio dual (Pilates + Galeria) con multiples paginas, precios, horarios y necesidad de galeria visual interactiva — complejidad media que se beneficia de SSG con Astro para SEO y performance."
   }
 }

@@ -1,0 +1,7 @@
+{
+  "negocio": "handyman-greenville",
+  "url_produccion": "https://handyman-greenville.vercel.app",
+  "fecha_deploy": "2026-04-03",
+  "stack": "html",
+  "carpeta_origen": "web/handyman-greenville"
+}

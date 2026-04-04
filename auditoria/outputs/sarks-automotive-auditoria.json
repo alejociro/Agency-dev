@@ -1,0 +1,152 @@
+{
+  "cliente": "Sarks Automotive",
+  "url_auditada": "https://www.sarksautosc.com/",
+  "sector": "Auto Repair",
+  "benchmark_aplicado": "Servicio local (Auto Repair) — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Tecnico: 50. Aplicado por ser un taller de reparacion automotriz local con dos ubicaciones en Mauldin y Greenville, SC.",
+  "fecha": "2026-04-03",
+  "scores": {
+    "seo": 50,
+    "ux_ui": 45,
+    "marketing": 55,
+    "contenido": 48,
+    "tecnico": 38,
+    "total": 47
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta description bien redactada con propuesta de valor y keyword de ubicacion",
+        "Logo personalizado implementado correctamente con URL accesible",
+        "Estructura de URLs limpia y descriptiva por servicio: /brakes, /diagnostics, /oil-changes, /tires"
+      ],
+      "negativos": [
+        "Meta title es solo 'Sarks Automotive' — sin keywords de servicio ni ubicacion",
+        "21 items de navegacion — sobrecarga severa, la mas extensa de todos los sitios analizados",
+        "Imagenes hero con alt text generico ('Auto repair') sin especificidad",
+        "Plataforma Hibu/Jenga tiene limitaciones severas de SEO tecnico"
+      ],
+      "recomendaciones": [
+        { "accion": "Optimizar meta title: 'Sarks Automotive | Auto Repair in Mauldin & Greenville SC'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Enriquecer alt text: 'Expert auto repair service in Greenville SC - Sarks Automotive'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar schema markup AutoRepair con ambas ubicaciones", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Migrar de Hibu a plataforma con mayor control SEO", "prioridad": "alta", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores unica y memorable (#5D3F6A purpura, #E2B13C dorado) — se distingue de competidores",
+        "Dos tipografias profesionales: Source Sans Pro y Montserrat — consistencia tipografica",
+        "Imagen del equipo en seccion About humaniza la marca"
+      ],
+      "negativos": [
+        "21 items de navegacion sin agrupacion — la navegacion mas extensa y caótica de todos los sitios",
+        "Color acento #df7cfb (rosa/purpura claro) puede no transmitir confianza en sector automotriz",
+        "Solo 2 imagenes en todo el sitio — contenido visual extremadamente escaso",
+        "Seccion de SMS opt-in en home puede parecer intrusiva para nuevos visitantes"
+      ],
+      "recomendaciones": [
+        { "accion": "Consolidar navegacion drasticamente: 6-7 items principales con mega-menu para servicios", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar imagenes del taller, equipo trabajando y vehiculos a cada seccion de servicio", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Mover SMS opt-in al footer o popup, fuera del flujo principal de conversion", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Evaluar si color acento #df7cfb es apropiado para el sector o reemplazar por tono mas solido", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Triple certificacion diferenciadora: ASE, IMACA y RepairPal — credibilidad maxima",
+        "Garantia explicita: 12-month/12,000-mile parts and labor warranties",
+        "50+ anos de experiencia combinada y servicio desde 2013 — establece trayectoria",
+        "Blog activo con articulos recientes (2025-2026) — contenido fresco"
+      ],
+      "negativos": [
+        "No hay testimonios visibles en la pagina principal — reviews en pagina separada",
+        "Especiales existen como pagina pero sin contenido visible en scraping",
+        "Formulario de contacto pide 'Request Call Back' — puede percibirse como baja urgencia",
+        "No hay precio referencial para ningun servicio"
+      ],
+      "recomendaciones": [
+        { "accion": "Integrar 3-5 resenas destacadas de Google/RepairPal en la pagina principal", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Destacar garantia 12-month/12,000-mile con badge visual prominente en hero", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Activar pagina de Specials con ofertas concretas y cupones", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Cambiar CTA de 'Request Call Back' a 'Get Your Free Estimate' para mayor urgencia", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Blog activo con 4 articulos recientes sobre mantenimiento automotriz",
+        "Seccion About con historia del negocio, anos de experiencia y certificaciones",
+        "Servicios extensos: 14 categorias con paginas individuales"
+      ],
+      "negativos": [
+        "Pagina principal tiene contenido minimo — solo hero + about + blog preview + SMS",
+        "14 paginas de servicios pero sin descripciones visibles en el scraping — pueden estar vacias",
+        "No hay FAQ a pesar de tener la pagina /faqs en navegacion",
+        "No hay horarios de atencion publicados"
+      ],
+      "recomendaciones": [
+        { "accion": "Enriquecer pagina principal con servicios destacados, resenas y oferta introductoria", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Verificar y completar contenido de las 14 paginas de servicios con descripciones, precios y proceso", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Completar pagina FAQ con preguntas frecuentes sobre servicios y garantias", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Publicar horarios de atencion para ambas ubicaciones", "prioridad": "alta", "tipo": "quick_win" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Favicon e iconos de marca implementados correctamente",
+        "Formulario de contacto con campos relevantes: Name, Phone, Email, Services",
+        "Imagenes alojadas en CDN de Hibu con buena disponibilidad"
+      ],
+      "negativos": [
+        "Plataforma Jenga/Hibu es un website builder con limitaciones severas de SEO y personalizacion",
+        "Sin redes sociales enlazadas en el sitio",
+        "Sin integracion de Google Maps para las ubicaciones",
+        "Dependencia de SMS para specials y contacto — no tiene formulario de citas online"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a stack con mayor control sobre SEO tecnico y personalizacion", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Crear y vincular perfiles de redes sociales (Google Business, Facebook, Instagram)", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Integrar Google Maps con ambas ubicaciones en pagina de contacto", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Implementar formulario de appointment booking online", "prioridad": "alta", "tipo": "mejora_estructural" }
+      ],
+      "stack_actual": "Jenga (Hibu website builder)",
+      "stack_recomendado": "Astro + Tailwind CSS",
+      "integraciones": ["Google Maps dual-location", "Appointment booking form", "Google Reviews widget", "RepairPal badge", "Blog CMS"],
+      "complejidad": "media"
+    }
+  },
+  "quick_wins": [
+    "Optimizar meta title con keywords y ubicacion",
+    "Destacar garantia 12-month/12,000-mile con badge visual en hero",
+    "Integrar resenas en pagina principal",
+    "Publicar horarios de atencion para ambas ubicaciones",
+    "Mover SMS opt-in fuera del flujo principal"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Optimizar meta title y alt text",
+      "Publicar horarios de atencion",
+      "Destacar garantia visualmente en hero"
+    ],
+    "mes_1": [
+      "Consolidar navegacion de 21 a 7 items con mega-menu",
+      "Integrar resenas en pagina principal",
+      "Completar contenido de paginas de servicios",
+      "Activar Specials con ofertas concretas",
+      "Vincular redes sociales"
+    ],
+    "largo_plazo": [
+      "Migrar de Hibu a stack moderno (Astro) para control total de SEO",
+      "Implementar formulario de appointment booking online",
+      "Integrar Google Maps dual-location",
+      "Expandir blog con contenido SEO mensual",
+      "Implementar schema markup AutoRepair"
+    ]
+  },
+  "resumen_ejecutivo": "Sarks Automotive tiene los diferenciadores de marketing mas fuertes del grupo de talleres analizados: triple certificacion (ASE, IMACA, RepairPal), garantia explicita de 12 meses/12,000 millas y blog activo con contenido reciente, pero la plataforma Hibu limita severamente el SEO tecnico y la personalizacion. La navegacion con 21 items es inmanejable, el meta title carece de keywords, y los diferenciadores clave (certificaciones, garantia) no estan destacados visualmente. Una migracion a stack moderno con navegacion simplificada, garantia prominente y resenas integradas converteria sus fortalezas de marketing en resultados tangibles de posicionamiento y conversion.",
+  "stack_para_web": {
+    "framework": "astro",
+    "estilos": "tailwind",
+    "extras": ["dual-location google maps", "appointment booking form", "google reviews widget", "repairpal badge", "blog section"],
+    "justificacion": "Taller con 2 ubicaciones, 14+ paginas de servicios, blog activo, FAQ y necesidad de migracion de Hibu — complejidad media que se beneficia de SSG con Astro para SEO local y performance."
+  }
+}

@@ -287,7 +287,7 @@
   .stats-bar {
     position: relative;
     z-index: 4;
-    margin-top: calc(var(--space-8) * -1);
+    margin-top: var(--space-4);
     padding-bottom: var(--space-8);
   }
 
@@ -532,17 +532,26 @@
   .testimonials-track {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
     gap: var(--space-4);
     scrollbar-width: none;
     padding-bottom: var(--space-2);
+    overscroll-behavior-x: contain;
 
     &::-webkit-scrollbar { display: none; }
+
+    /* Fade edges to hint scroll boundaries */
+    mask-image: linear-gradient(to right, transparent, black 2%, black 98%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 2%, black 98%, transparent);
   }
 
   .testimonial-card {
     scroll-snap-align: start;
     flex: 0 0 clamp(280px, 80vw, 420px);
+
+    &:last-child {
+      margin-right: var(--space-4);
+    }
   }
 
   /* ----------------------------------------
@@ -866,30 +875,62 @@
 .form__group input,
 .form__group textarea,
 .form__group select {
-  border: 2px solid #B0AAA0 !important;
-  border-radius: 8px !important;
-  background-color: #F5F2ED !important;
+  border: 1.5px solid #D6D1C9 !important;
+  border-radius: 10px !important;
+  background-color: #FAFAF8 !important;
   color: #2B2B2B !important;
+  padding: 0.85rem 1rem !important;
+  font-size: 0.95rem !important;
+  transition: all 200ms ease !important;
+}
+
+.form__group input::placeholder,
+.form__group textarea::placeholder {
+  color: #A09A90 !important;
+  font-weight: 400 !important;
 }
 
 .form__group input:hover,
 .form__group textarea:hover,
 .form__group select:hover {
-  border-color: #8DAFC0 !important;
+  border-color: #007CBA !important;
+  background-color: #FFFFFF !important;
 }
 
 .form__group input:focus,
 .form__group textarea:focus,
 .form__group select:focus {
   border-color: #007CBA !important;
-  background-color: #FEFEFE !important;
-  box-shadow: 0 0 0 3px rgba(0, 124, 186, 0.22) !important;
+  background-color: #FFFFFF !important;
+  box-shadow: 0 0 0 4px rgba(0, 124, 186, 0.12), 0 1px 3px rgba(0, 0, 0, 0.06) !important;
 }
 
 .form__group label {
   text-transform: none !important;
   letter-spacing: 0.02em !important;
   color: #2B2B2B !important;
+  font-size: 0.85rem !important;
+  margin-bottom: 2px !important;
+}
+
+.form__group select {
+  padding-right: 2.5rem !important;
+}
+
+.form .btn--primary {
+  background-color: #007CBA !important;
+  color: #FFFFFF !important;
+  border-color: #007CBA !important;
+  padding: 1rem 2rem !important;
+  max-width: 320px !important;
+  margin-inline: auto !important;
+  border-radius: 10px !important;
+  font-size: 0.95rem !important;
+}
+
+.form .btn--primary:hover {
+  background-color: #006399 !important;
+  border-color: #006399 !important;
 }
 
 .form.card {

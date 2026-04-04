@@ -1,0 +1,231 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Studio" description="Two light-filled Pilates & Yoga studios in Greenville, SC. Reformer, mat, and yoga classes designed for intentional movement and balanced technique.">
+  <Header />
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="hero-tag text-label">The Studio</span>
+      <h1 class="hero-title">Designed for<br />Intentional Movement</h1>
+      <p class="hero-sub">Two light-filled studios. One purpose: calming, approachable spaces where you focus on strength, balance, and mindful repetition.</p>
+    </div>
+  </section>
+
+  <!-- Studio Gallery -->
+  <section class="section">
+    <div class="container">
+      <div data-gallery class="studio-gallery" data-animate="fade-up">
+        <div class="gallery-slide is-active">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1200&h=675&fit=crop" alt="Reformer Pilates studio with natural light" width="1200" height="675" loading="eager" decoding="async" />
+        </div>
+        <div class="gallery-slide">
+          <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1200&h=675&fit=crop" alt="Mat Pilates studio with warm wood floors" width="1200" height="675" loading="lazy" decoding="async" />
+        </div>
+        <div class="gallery-slide">
+          <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1200&h=675&fit=crop" alt="Yoga class in session with natural lighting" width="1200" height="675" loading="lazy" decoding="async" />
+        </div>
+        <button class="gallery-arrow" data-gallery-prev aria-label="Previous image">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="gallery-arrow" data-gallery-next aria-label="Next image">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <div class="gallery-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Offer -->
+  <section class="section mesh-warm" data-animate="stagger">
+    <div class="container">
+      <span class="section-tag">What We Offer</span>
+      <h2>Four Ways to Move</h2>
+
+      <div class="offerings-grid">
+        <article class="offering card card--gold-accent">
+          <div class="offering__icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><rect x="4" y="16" width="32" height="8" rx="2"/><circle cx="10" cy="20" r="3"/><circle cx="30" cy="20" r="3"/><path d="M4 20h32"/></svg>
+          </div>
+          <h3>Reformer Pilates</h3>
+          <p>Full-body conditioning on spring-loaded reformer machines. Build long, lean strength through controlled resistance. All levels welcome with modifications offered throughout.</p>
+          <div class="offering__meta">
+            <span>~50 min</span><span>All Levels</span><span>Max 12</span>
+          </div>
+        </article>
+
+        <article class="offering card card--gold-accent">
+          <div class="offering__icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><rect x="6" y="28" width="28" height="2" rx="1"/><circle cx="20" cy="18" r="6"/><path d="M14 18h12"/><path d="M20 12v12"/></svg>
+          </div>
+          <h3>Mat Pilates</h3>
+          <p>Core-focused bodyweight training. Strengthen your center, improve posture, and develop body awareness using classical Pilates principles adapted for modern practice.</p>
+          <div class="offering__meta">
+            <span>~45 min</span><span>All Levels</span><span>Props provided</span>
+          </div>
+        </article>
+
+        <article class="offering card card--gold-accent">
+          <div class="offering__icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="M20 6c-4 6-4 12 0 18"/><path d="M20 6c4 6 4 12 0 18"/><path d="M12 28h16"/><circle cx="20" cy="28" r="2"/></svg>
+          </div>
+          <h3>Yoga Flow</h3>
+          <p>Dynamic vinyasa sequences linking breath with movement. Build flexibility, find calm, and develop a sustainable practice that complements your Pilates training.</p>
+          <div class="offering__meta">
+            <span>~60 min</span><span>All Levels</span><span>Mats provided</span>
+          </div>
+        </article>
+
+        <article class="offering card card--gold-accent">
+          <div class="offering__icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><circle cx="20" cy="14" r="6"/><path d="M10 34c0-5.5 4.5-10 10-10s10 4.5 10 10"/></svg>
+          </div>
+          <h3>Private Sessions</h3>
+          <p>One-on-one instruction tailored to your individual goals. Whether recovering from injury or deepening your practice, get focused attention and customized programming.</p>
+          <div class="offering__meta">
+            <span>~55 min</span><span>Personalized</span><span>By appointment</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Expect -->
+  <section class="section" data-animate="fade-up">
+    <div class="container container--narrow">
+      <span class="section-tag">New Here?</span>
+      <h2>What to Expect</h2>
+      <div class="expect-steps">
+        <div class="expect-step">
+          <span class="expect-step__number">01</span>
+          <div>
+            <h4>Book Your Class</h4>
+            <p>Browse our schedule and reserve your spot. First-timers are always welcome — no experience necessary.</p>
+          </div>
+        </div>
+        <div class="expect-step">
+          <span class="expect-step__number">02</span>
+          <div>
+            <h4>Arrive 10 Minutes Early</h4>
+            <p>Give yourself time to settle in, meet your instructor, and get oriented with the equipment and space.</p>
+          </div>
+        </div>
+        <div class="expect-step">
+          <span class="expect-step__number">03</span>
+          <div>
+            <h4>Move at Your Pace</h4>
+            <p>Every class offers modifications. Your instructor will guide you through each movement — no judgment, no pressure.</p>
+          </div>
+        </div>
+        <div class="expect-step">
+          <span class="expect-step__number">04</span>
+          <div>
+            <h4>Recharge at the Café</h4>
+            <p>Grab a coffee, smoothie, or snack after class. Connect with fellow members and make it a ritual.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section mesh-dark grain text-center" data-animate="scale-in">
+    <div class="container">
+      <h2>Ready to Reform?</h2>
+      <p style="color: var(--color-text-light-muted); max-width: 50ch; margin-inline: auto; margin-block-end: var(--space-4);">
+        Your first class is the hardest one to book — and the one you will be most glad you did.
+      </p>
+      <a href="/schedule/" class="btn btn--gold" data-magnetic>Book Your First Class</a>
+    </div>
+  </section>
+
+  <Footer />
+  <script src="../scripts/animations.js"></script>
+  <script src="../scripts/experiences.js"></script>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding-block: calc(var(--space-16) + var(--space-8)) var(--space-8);
+    text-align: center;
+  }
+
+  .page-hero .hero-sub {
+    font-size: var(--text-h4);
+    color: var(--color-text-muted);
+    max-width: 55ch;
+    margin-inline: auto;
+    margin-block-start: var(--space-2);
+  }
+
+  .studio-gallery {
+    aspect-ratio: 16 / 9;
+  }
+
+  .offerings-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+    margin-block-start: var(--space-6);
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .offering {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .offering__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    margin-block-start: auto;
+
+    & span {
+      font-size: var(--text-xs);
+      padding: 3px 10px;
+      background: var(--color-surface-alt);
+      border-radius: var(--radius-full);
+      color: var(--color-text-muted);
+    }
+  }
+
+  .expect-steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    margin-block-start: var(--space-6);
+  }
+
+  .expect-step {
+    display: flex;
+    gap: var(--space-4);
+    align-items: flex-start;
+  }
+
+  .expect-step__number {
+    font-family: var(--font-display);
+    font-size: var(--text-h2);
+    font-weight: 600;
+    color: var(--color-secondary);
+    opacity: 0.5;
+    flex-shrink: 0;
+    min-width: 50px;
+  }
+
+  .expect-step h4 {
+    margin-block-end: var(--space-1);
+  }
+
+  .expect-step p {
+    color: var(--color-text-muted);
+  }
+</style>

@@ -1,0 +1,110 @@
+{
+  "negocio": "Refora",
+  "url": "https://reforagvl.com/",
+  "sector": "Pilates, Yoga & Coffee Studio",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Refora – Pilates, Yoga, & Coffee",
+    "description": null,
+    "keywords": null
+  },
+  "favicon": "https://reforagvl.com/wp-content/uploads/2026/01/REFORA-FAVICON-150x150.png",
+  "paleta": {
+    "primario": "#32373c",
+    "secundario": "#8b7d6b",
+    "acento": "#c4a97d",
+    "fondo": "#ffffff",
+    "texto": "#32373c",
+    "otros": []
+  },
+  "logo": {
+    "url": null,
+    "descripcion": "REFORA text logo",
+    "posicion": "top center",
+    "colores": ["#32373c"]
+  },
+  "tipografias": [
+    { "nombre": "System/inherit", "uso": "body", "peso": "400", "tamanio_aprox": "16px" }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://reforagvl.com/" },
+    { "label": "Studio", "url": "https://reforagvl.com/studio/" },
+    { "label": "Schedule", "url": "https://reforagvl.com/schedule/" },
+    { "label": "Membership", "url": "https://reforagvl.com/membership/" },
+    { "label": "FAQ", "url": "https://reforagvl.com/faq/" },
+    { "label": "Cafe", "url": "https://reforagvl.com/cafe/" },
+    { "label": "Team", "url": "https://reforagvl.com/team/" },
+    { "label": "Careers", "url": "https://reforagvl.com/careers/" },
+    { "label": "Events", "url": "https://reforagvl.com/events/" },
+    { "label": "Shop", "url": "https://reforagvl.com/shop/" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "REFORA",
+      "contenido": "Growth Happens Through Rhythm, Not Rush. At Refora, you reform your body through Pilates, and recharge through movement, community, and thoughtfully crafted cafe offerings that fuel both body and soul.",
+      "cta": "JOIN THE MOVEMENT",
+      "imagenes": []
+    },
+    {
+      "tipo": "sobre",
+      "titulo": "About Refora",
+      "contenido": "Refora is a Pilates and movement studio with a cafe in Greenville, South Carolina. Designed around rhythm, connection, and sustainable wellness, Refora is a space to grow physically, mentally, and collectively. We believe progress isn't about extremes; it's about showing up consistently, being supported, and enjoying the process along the way. More than a studio, Refora is a local experience. A place to meet friends after class, linger over coffee, reconnect with yourself, and feel part of something meaningful.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "definicion",
+      "titulo": "Re·for·a /riˈfôrə/",
+      "contenido": "noun. The practice of reforming the body and mind through intentional movement and mindful fuel.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "estudio",
+      "titulo": "STUDIO",
+      "contenido": "Two light filled workout studios designed for intentional movement & balanced technique. Our crafted studio spaces were designed to be calming & approachable, so you can focus on strength, balance & mindful repetition.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "cafe",
+      "titulo": "REFORM CAFE",
+      "contenido": "A warm & inviting coffee shop where thoughtfully curated offerings meet connection and community. Designed to complement movement, the Cafe is a place to recharge & reset before or after class, or as part of your daily ritual.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "filosofia",
+      "titulo": "Reform. Recharge. Repeat.",
+      "contenido": "At Refora, you reform your body and mind through intentional Pilates and yoga practices designed to build strength, mobility, and awareness. You recharge through movement, community, and thoughtfully crafted cafe offerings that fuel both body and soul. And then—you repeat. Because real growth happens through rhythm, not rush.",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Growth Happens Through Rhythm, Not Rush",
+    "propuesta_valor": "Pilates and movement studio with a cafe in Greenville, SC — reform your body, recharge through community and coffee",
+    "ctas": ["JOIN THE MOVEMENT", "Download The App", "JOIN REFORA ON THE GO"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": null,
+    "whatsapp": null,
+    "email": "reform@reforagvl.com",
+    "direccion": "Greenville, SC",
+    "horarios": "Monday-Friday 5AM-5PM, Saturday-Sunday 10AM-2PM"
+  },
+  "redes": [
+    { "plataforma": "Facebook", "url": "https://www.facebook.com/profile.php?id=61575630089186" },
+    { "plataforma": "Instagram", "url": "https://www.instagram.com/reforagvl/" }
+  ],
+  "formularios": [],
+  "footer": {
+    "contenido": "Privacy Policy. Terms of Service. Cancellation & Refund Policy. Pilates, Yoga, & Coffee. Pilates & Cafe in Greenville, SC.",
+    "links": ["Privacy Policy", "Terms of Service", "Cancellation & Refund Policy"],
+    "copyright": null
+  },
+  "tecnologia": "WordPress"
+}

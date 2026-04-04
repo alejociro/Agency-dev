@@ -3,31 +3,31 @@ import SectionHeader from './ui/SectionHeader.astro';
 
 const team = [
   {
-    name: 'Licensed Massage Therapists',
-    role: 'Massage & Bodywork',
-    initials: 'MT',
-    description: 'Certified professionals specializing in deep-tissue, neuro-muscular, and integrative massage therapy techniques.',
+    name: 'Alicia Moreau',
+    role: 'Co-Founder',
+    initials: 'AM',
+    description: 'Co-founded Kara Spa Group in 2005 alongside her daughter Korri. Alicia brings decades of dedication to creating a welcoming, world-class spa experience in downtown Greenville.',
     color: 'var(--color-primary)',
   },
   {
-    name: 'Estheticians',
-    role: 'Facials & Skin Care',
-    initials: 'ES',
-    description: 'Expert skin care specialists trained in microderm exfoliation, light therapy, and high-frequency treatments.',
+    name: 'Korri Moreau Henson',
+    role: 'Co-Founder',
+    initials: 'KH',
+    description: 'Mother-daughter team with Alicia since 2005. Korri helps lead the vision for Kara Spa, ensuring every guest experiences affordable luxury in a beautiful, tranquil environment.',
     color: 'var(--color-accent)',
   },
   {
-    name: 'Chiropractor',
-    role: 'Chiropractic Services',
-    initials: 'DC',
-    description: 'Sherman College of Chiropractic graduate providing on-site spinal wellness and holistic body alignment.',
+    name: 'Tara Hazouri',
+    role: 'Chiropractor & Massage Therapist',
+    initials: 'TH',
+    description: 'Practicing since 2001, Tara graduated from Sherman College of Chiropractic in Spartanburg, SC. She combines chiropractic care with massage for a holistic approach to body wellness.',
     color: 'var(--color-secondary)',
   },
   {
-    name: 'Nail Technicians',
-    role: 'Pedicure & Nail Care',
-    initials: 'NT',
-    description: 'Skilled professionals delivering our signature hot stone pedicures and natural nail care treatments.',
+    name: 'Meredith Buras',
+    role: 'Massage Therapist',
+    initials: 'MB',
+    description: 'With a background from UNC-Wilmington and training at The Ballantyne Spa in Charlotte, Meredith specializes in deep tissue, aromatherapy, prenatal, and reflexology massage.',
     color: 'var(--color-primary-light)',
   },
 ];
@@ -38,7 +38,7 @@ const team = [
     <SectionHeader
       tag="Our Team"
       title="In Expert <em>Hands</em>"
-      subtitle="Every member of our team is a licensed, certified professional dedicated to your wellness and comfort."
+      subtitle="Founded in 2005 by the mother-daughter team of Alicia and Korri, our licensed professionals bring over 40 years of combined experience to every treatment."
       align="center"
     />
 
@@ -53,6 +53,23 @@ const team = [
           <p>{member.description}</p>
         </article>
       ))}
+    </div>
+
+    <div class="team-badge" data-animate="fade-up" data-delay="300">
+      <div class="badge-item">
+        <span class="badge-number" data-counter="20" data-suffix="+">20+</span>
+        <span class="badge-label">Years in Greenville</span>
+      </div>
+      <div class="badge-divider" aria-hidden="true"></div>
+      <div class="badge-item">
+        <span class="badge-number" data-counter="40" data-suffix="+">40+</span>
+        <span class="badge-label">Years Combined Experience</span>
+      </div>
+      <div class="badge-divider" aria-hidden="true"></div>
+      <div class="badge-item">
+        <span class="badge-number">Family</span>
+        <span class="badge-label">Owned & Operated</span>
+      </div>
     </div>
   </div>
 </section>
@@ -124,5 +141,52 @@ const team = [
     color: var(--color-text-muted);
     max-width: 30ch;
     text-align: center;
+  }
+
+  /* Trust badges */
+  .team-badge {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-6);
+    margin-block-start: var(--space-10);
+    padding: var(--space-6);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-xl);
+  }
+
+  .badge-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .badge-number {
+    font-family: var(--font-display);
+    font-size: var(--text-h2);
+    font-weight: 600;
+    color: var(--color-primary-dark);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .badge-label {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    letter-spacing: var(--tracking-wide);
+  }
+
+  .badge-divider {
+    width: 1px;
+    height: 40px;
+    background: var(--color-border);
+    display: none;
+  }
+
+  @media (min-width: 640px) {
+    .badge-divider {
+      display: block;
+    }
   }
 </style>

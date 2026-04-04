@@ -1,0 +1,7 @@
+{
+  "negocio": "Studio 17",
+  "url_produccion": "https://studio17-greenville.vercel.app",
+  "fecha_deploy": "2026-04-03",
+  "stack": "html",
+  "carpeta_origen": "web/studio17-greenville/"
+}

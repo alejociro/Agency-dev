@@ -1,0 +1,24 @@
+---
+interface Props {
+  variant?: 'primary' | 'secondary' | 'gold' | 'ghost';
+  href?: string;
+  magnetic?: boolean;
+  class?: string;
+  [key: string]: any;
+}
+
+const { variant = 'primary', href, magnetic = false, class: className, ...rest } = Astro.props;
+
+const Tag = href ? 'a' : 'button';
+const variantClass = `btn--${variant}`;
+const classes = ['btn', variantClass, className].filter(Boolean).join(' ');
+---
+
+<Tag
+  href={href}
+  class={classes}
+  data-magnetic={magnetic ? '' : undefined}
+  {...rest}
+>
+  <slot />
+</Tag>

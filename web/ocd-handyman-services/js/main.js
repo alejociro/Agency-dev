@@ -107,79 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ---- Testimonials Carousel (auto-scroll + manual) ----
-  const testimonialsTrack = document.getElementById('testimonials-track');
-  const testimonialsPrev = document.getElementById('testimonials-prev');
-  const testimonialsNext = document.getElementById('testimonials-next');
-  const testimonialsDots = document.querySelectorAll('.testimonials-dot');
-
-  if (testimonialsTrack) {
-    const slides = testimonialsTrack.children;
-    let currentIndex = 0;
-    let autoScrollInterval = null;
-    let userInteracted = false;
-
-    function scrollToTestimonial(index) {
-      if (index < 0) index = slides.length - 1;
-      if (index >= slides.length) index = 0;
-      currentIndex = index;
-
-      const slide = slides[currentIndex];
-      testimonialsTrack.scrollTo({
-        left: slide.offsetLeft - testimonialsTrack.offsetLeft,
-        behavior: 'smooth'
-      });
-
-      testimonialsDots.forEach((dot, i) => {
-        dot.classList.toggle('active', i === currentIndex);
-        dot.style.background = i === currentIndex ? 'var(--color-secondary)' : 'var(--color-border)';
-      });
-    }
-
-    function startAutoScroll() {
-      autoScrollInterval = setInterval(() => {
-        if (!userInteracted) {
-          scrollToTestimonial(currentIndex + 1);
-        }
-      }, 5000);
-    }
-
-    function pauseAutoScroll() {
-      userInteracted = true;
-      clearInterval(autoScrollInterval);
-      setTimeout(() => {
-        userInteracted = false;
-        startAutoScroll();
-      }, 10000);
-    }
-
-    if (testimonialsNext) {
-      testimonialsNext.addEventListener('click', () => {
-        pauseAutoScroll();
-        scrollToTestimonial(currentIndex + 1);
-      });
-    }
-
-    if (testimonialsPrev) {
-      testimonialsPrev.addEventListener('click', () => {
-        pauseAutoScroll();
-        scrollToTestimonial(currentIndex - 1);
-      });
-    }
-
-    testimonialsDots.forEach(dot => {
-      dot.addEventListener('click', () => {
-        pauseAutoScroll();
-        scrollToTestimonial(parseInt(dot.dataset.index, 10));
-      });
-    });
-
-    testimonialsTrack.addEventListener('pointerdown', () => pauseAutoScroll(), { passive: true });
-
-    if (!prefersReduced) startAutoScroll();
-  }
-
-  // ---- Gallery Carousel (manual scroll + counter) ----
+  // ---- Gallery Carousel (auto-scroll + pause on hover + manual) ----
   const galleryTrack = document.getElementById('gallery-track');
   const galleryPrev = document.getElementById('gallery-prev');
   const galleryNext = document.getElementById('gallery-next');
@@ -209,11 +137,38 @@ document.addEventListener('DOMContentLoaded', () => {
       updateGalleryCounter();
     }
 
+    // Auto-scroll gallery
+    let galleryAutoInterval = null;
+
+    function startGalleryAuto() {
+      galleryAutoInterval = setInterval(() => {
+        scrollGalleryTo(galleryIndex + 1);
+      }, 3500);
+    }
+
+    function stopGalleryAuto() {
+      clearInterval(galleryAutoInterval);
+      galleryAutoInterval = null;
+    }
+
+    // Pause on hover/touch, resume on leave
+    galleryTrack.addEventListener('mouseenter', stopGalleryAuto);
+    galleryTrack.addEventListener('mouseleave', () => { if (!prefersReduced) startGalleryAuto(); });
+    galleryTrack.addEventListener('pointerdown', stopGalleryAuto, { passive: true });
+
     if (galleryNext) {
-      galleryNext.addEventListener('click', () => scrollGalleryTo(galleryIndex + 1));
+      galleryNext.addEventListener('click', () => {
+        stopGalleryAuto();
+        scrollGalleryTo(galleryIndex + 1);
+        if (!prefersReduced) startGalleryAuto();
+      });
     }
     if (galleryPrev) {
-      galleryPrev.addEventListener('click', () => scrollGalleryTo(galleryIndex - 1));
+      galleryPrev.addEventListener('click', () => {
+        stopGalleryAuto();
+        scrollGalleryTo(galleryIndex - 1);
+        if (!prefersReduced) startGalleryAuto();
+      });
     }
 
     // Update counter on manual scroll
@@ -234,6 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
 
     updateGalleryCounter();
+    if (!prefersReduced) startGalleryAuto();
   }
 
 });

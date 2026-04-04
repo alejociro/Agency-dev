@@ -1,0 +1,33 @@
+---
+interface Props {
+  variant?: 'primary' | 'secondary' | 'ghost';
+  href?: string;
+  magnetic?: boolean;
+  external?: boolean;
+  class?: string;
+}
+
+const { variant = 'primary', href, magnetic = false, external = false, class: className = '' } = Astro.props;
+
+const Tag = href ? 'a' : 'button';
+const variantClass = `btn-${variant}`;
+const externalAttrs = external ? { target: '_blank', rel: 'noopener noreferrer' } : {};
+---
+
+{href ? (
+  <a
+    href={href}
+    class={`btn ${variantClass} ${className}`}
+    data-magnetic={magnetic ? '' : undefined}
+    {...externalAttrs}
+  >
+    <slot />
+  </a>
+) : (
+  <button
+    class={`btn ${variantClass} ${className}`}
+    data-magnetic={magnetic ? '' : undefined}
+  >
+    <slot />
+  </button>
+)}

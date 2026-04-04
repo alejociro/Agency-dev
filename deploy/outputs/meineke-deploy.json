@@ -1,0 +1,7 @@
+{
+  "negocio": "meineke",
+  "url_produccion": "https://meineke.vercel.app",
+  "fecha_deploy": "2026-04-03",
+  "stack": "react",
+  "carpeta_origen": "web/meineke/"
+}

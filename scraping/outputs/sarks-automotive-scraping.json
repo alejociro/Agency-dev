@@ -1,0 +1,112 @@
+{
+  "negocio": "Sarks Automotive",
+  "url": "https://www.sarksautosc.com/",
+  "sector": "Auto Repair",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Sarks Automotive",
+    "description": "Sarks Automotive is a top-tier car repair shop in Greenville, SC. We're committed to more than just quality repairs; we're here to build lasting relationships.",
+    "keywords": null
+  },
+  "favicon": "https://cdn.hibuwebsites.com/7610d4966731467fa1cef0b6adfbe67a/site_favicon_16_1769536810521.ico",
+  "paleta": {
+    "primario": "#5D3F6A",
+    "secundario": "#E2B13C",
+    "acento": "#df7cfb",
+    "fondo": "#faf9f9",
+    "texto": "#000000",
+    "otros": ["#747474", "#ececec"]
+  },
+  "logo": {
+    "url": "https://le-cdn.hibuwebsites.com/7610d4966731467fa1cef0b6adfbe67a/dms3rep/multi/opt/Sarks+Auto-1920w.png",
+    "descripcion": "Sarks Automotive logo",
+    "posicion": "top left",
+    "colores": ["#5D3F6A", "#E2B13C"]
+  },
+  "tipografias": [
+    { "nombre": "Source Sans Pro", "uso": "body", "peso": "400", "tamanio_aprox": "16px" },
+    { "nombre": "Montserrat", "uso": "headings", "peso": "700", "tamanio_aprox": "28px" }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://www.sarksautosc.com/" },
+    { "label": "Auto Maintenance and Repair Services", "url": "https://www.sarksautosc.com/services" },
+    { "label": "Air Conditioning Service and Repair", "url": "https://www.sarksautosc.com/ac-service" },
+    { "label": "Alternator and Starter Repair", "url": "https://www.sarksautosc.com/alternator-starter" },
+    { "label": "Auto Diagnostic Services", "url": "https://www.sarksautosc.com/diagnostics" },
+    { "label": "Battery Replacement", "url": "https://www.sarksautosc.com/battery" },
+    { "label": "Brake Service and Repair", "url": "https://www.sarksautosc.com/brakes" },
+    { "label": "Car Radiator Services", "url": "https://www.sarksautosc.com/radiator" },
+    { "label": "Check Engine Light Services", "url": "https://www.sarksautosc.com/check-engine" },
+    { "label": "Muffler and Exhaust Services", "url": "https://www.sarksautosc.com/muffler-exhaust" },
+    { "label": "Oil Changes", "url": "https://www.sarksautosc.com/oil-changes" },
+    { "label": "Steering and Suspension Services", "url": "https://www.sarksautosc.com/steering-suspension" },
+    { "label": "Transmission and Engine Repair", "url": "https://www.sarksautosc.com/transmission-engine" },
+    { "label": "Tire Services", "url": "https://www.sarksautosc.com/tires" },
+    { "label": "Auto Detailing", "url": "https://www.sarksautosc.com/detailing" },
+    { "label": "Special Offers", "url": "https://www.sarksautosc.com/specials" },
+    { "label": "About", "url": "https://www.sarksautosc.com/about" },
+    { "label": "Reviews", "url": "https://www.sarksautosc.com/reviews" },
+    { "label": "Blog", "url": "https://www.sarksautosc.com/blog" },
+    { "label": "FAQs", "url": "https://www.sarksautosc.com/faqs" },
+    { "label": "Shops - Mauldin", "url": "https://www.sarksautosc.com/mauldin" },
+    { "label": "Shops - Greenville", "url": "https://www.sarksautosc.com/greenville" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Expert Auto Care Services",
+      "contenido": "Mauldin and Greenville, SC. Roadside Towing. Same-Day Estimates and Services. 12-Month/12,000-Mile Parts and Labor Warranties.",
+      "cta": "Contact Us",
+      "imagenes": [
+        { "url": "https://le-cdn.hibuwebsites.com/7610d4966731467fa1cef0b6adfbe67a/dms3rep/multi/opt/RSshutterstock_124885084-1920w.jpg", "alt": "Auto repair", "descripcion": "Hero auto repair image", "tipo": "hero", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "sobre",
+      "titulo": "Your Trusted Auto Repair Experts",
+      "contenido": "At Sarks Automotive, we've proudly served the Mauldin and Greenville communities since 2013. Backed by over 50 years of combined experience, our ASE-, IMACA-, and RepairPal-certified technicians are committed to more than just quality repairs. We're here to build lasting relationships. We're happy to work on most makes and models.",
+      "cta": null,
+      "imagenes": [
+        { "url": "https://le-cdn.hibuwebsites.com/7610d4966731467fa1cef0b6adfbe67a/dms3rep/multi/opt/sarks-automotive-content-home-1920w.jpg", "alt": "Sarks Automotive team", "descripcion": "About section photo", "tipo": "foto", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "blog",
+      "titulo": "Recent Blog Posts",
+      "contenido": "5 Essential Auto Repair Tips For Busy Families (March 30, 2026). 10 Ways Regular Vehicle Maintenance Can Save You from Costly Repairs (February 4, 2026). Warning Signs Your Car Needs Immediate Attention (December 6, 2025). 7 Smart Ways to Pick a Trustworthy Auto Repair Shop Near You (October 2, 2025).",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "sms",
+      "titulo": "Text Specials",
+      "contenido": "Text START to (864) 713-1307 to begin receiving specials by text. Msgs may be autodialed. Consent to texts not required to purchase our svcs. Msg. and data rates may apply.",
+      "cta": "Text Now!",
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Expert Auto Care Services",
+    "propuesta_valor": "ASE-, IMACA-, and RepairPal-certified auto repair in Mauldin and Greenville since 2013. 50+ years combined experience. 12-month/12,000-mile warranties.",
+    "ctas": ["Contact Us", "Request Call Back", "Text Now!"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(864) 210-4866",
+    "whatsapp": null,
+    "email": "sarksautomotive@live.com",
+    "direccion": "Locations in Mauldin and Greenville, SC",
+    "horarios": null
+  },
+  "redes": [],
+  "formularios": [
+    { "proposito": "Request Call Back / Contact", "campos": ["Name", "Phone", "Email", "Services"] }
+  ],
+  "footer": {
+    "contenido": "Sarks Automotive. Mauldin and Greenville, SC.",
+    "links": [],
+    "copyright": null
+  },
+  "tecnologia": "Jenga (Hibu website builder)"
+}

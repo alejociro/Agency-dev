@@ -1,0 +1,186 @@
+{
+  "negocio": "Studio 17",
+  "url": "https://www.studio17greenville.com/",
+  "sector": "Pilates Studio / Fitness",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Studio 17 | Start Your Pilates Journey Today",
+    "description": null,
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#000000",
+    "secundario": "#ffffff",
+    "acento": "#333333",
+    "fondo": "#ffffff",
+    "texto": "#000000",
+    "otros": []
+  },
+  "logo": {
+    "url": "https://images.squarespace-cdn.com/content/v1/68e1557acc9b4e509628a381/bec9ff0f-1934-4944-94b3-39452aae69ea/Studio17-Logo.png",
+    "descripcion": "Studio 17 logo",
+    "posicion": "header",
+    "colores": []
+  },
+  "tipografias": [
+    {
+      "nombre": null,
+      "uso": "general",
+      "peso": null,
+      "tamanio_aprox": null
+    }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "/" },
+    { "label": "Classes", "url": "/classes" },
+    { "label": "About", "url": "/about" },
+    { "label": "Contact", "url": "/contact" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "A System That Lengthens, Strengthens, and Balances",
+      "contenido": null,
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/68e1557acc9b4e509628a381/d5a0260a-7c5a-476e-86e3-bc431d761b3b/BLB-1002495.jpeg",
+          "alt": null,
+          "descripcion": "Hero image - Pilates studio equipment or practice",
+          "tipo": "hero",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "about",
+      "titulo": "What is Classical Pilates",
+      "contenido": "Classical Pilates is a system developed by Joseph Pilates. It focuses on precise, controlled movements, breath, and a strong mind-body connection. It can improve posture, balance and flexibility. Studio 17 is a fully equipped Classical Studio - all of the equipment used at Studio 17 is Contrology, by Balanced Body including the Cadillac, Reformer, Barrels, Chairs, and supporting small apparatus, designed to help the body become stronger on the Mat.",
+      "cta": "Explore Classes",
+      "imagenes": []
+    },
+    {
+      "tipo": "about",
+      "titulo": "Welcome to Studio 17",
+      "contenido": "I love Pilates, it has truly changed my body. My hope is that it becomes your lifelong practice - no matter where or how you practice. I want everyone who walks through the doors of Studio 17 to feel welcome, supported, and at home in their bodies. Teaching aids are provided and BeLinda oversees the studio to make certain everyone is safe and to answer any questions if needed.",
+      "cta": "About Me",
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/68e1557acc9b4e509628a381/19ed5838-cadd-4b3c-803c-ef6e2f5acb77/Image+2-7-26+at+12.52%E2%80%AFPM.png",
+          "alt": null,
+          "descripcion": "Studio 17 instructor or studio interior",
+          "tipo": "content",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "cta",
+      "titulo": "Discover Your Practice",
+      "contenido": null,
+      "cta": "Browse Classes",
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Classes",
+      "contenido": "All sessions are 50 minutes unless otherwise noted.\n\nGroup Reformer Class: This class is designed for students familiar with the Classical Pilates Reformer order. The class moves at a steady pace, emphasizing precision, control, and flow within the traditional Classical system.\n\nMat Class Beginner: This class follows the traditional mat order, focusing on precision, flow, and full-body engagement. Students build strength and confidence in a supportive setting. Ideal for beginners, those returning after injury, or anyone resuming their practice after an extended break.\n\nMat Class Advanced: Similar to the Beginner Mat class, this class is intended for students with prior experience who are committed to their practice. This class follows the Advanced Mat order and moves at a lively, steady pace.\n\nOld School Workout: Old School Workout is a group class taught in the Classical Pilates tradition. Students of all levels practice independently on the equipment they've been trained on, while the instructor provides observation, personalized cues, corrections, and alignment assistance as needed.\n\nPersonal Practice: Offered while BeLinda is teaching a Private Session. This is an independent, unassisted practice where students have full access to all equipment they have been trained on. Teaching aids are provided to support safe and effective practice.",
+      "cta": "Full Class Schedule Here",
+      "imagenes": []
+    },
+    {
+      "tipo": "precios",
+      "titulo": "Private Lessons",
+      "contenido": "Single — $85\n30min — $45\nDuo — $100\nTrio — $135\n\nContact us to schedule. Packages also available.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "onboarding",
+      "titulo": "New Clients",
+      "contenido": "New to Studio 17? You'll start with our 'Getting Started' package - three private sessions designed to establish proper form and technique. This foundation ensures your safety and sets you up for success in all future classes.\n\nPrice: $200\nEligibility: New Students only",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "informacion",
+      "titulo": "What to Bring to Class",
+      "contenido": "No street shoes in the studio - practice barefoot or in grip socks. Avoid clothing with zippers (they can damage equipment). Grip socks or toe socks recommended for traction. Long hair must be tied up and secured.\n\nWe provide all equipment. Just bring yourself and wear comfortable, fitted clothing.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "bio",
+      "titulo": "About - BeLinda Bellows, Owner",
+      "contenido": "At Studio 17, my goal is to create a space where Classical Pilates is designed around you.\n\nBeLinda began her Pilates practice in 2007 with a mat class and developed a sustained commitment to Classical Pilates methodology. Her teaching approach honors Joseph Pilates' original work while meeting individual client needs. BeLinda describes herself as a forever Pilates student, emphasizing that continuous education preserves Classical method integrity and supports comprehensive teaching of strength, mobility, balance, and confidence development.\n\nEducational Background: Bachelor of Science in Interior Design. Raised in Wyoming. Attended University of Utah. Married with two adult daughters, two sons-in-law, and two grandsons.\n\nCertifications & Training:\n- Karen Frischmann Classical Pilates: Mastery Series (2022-present), Classical Pilates Progression (2022)\n- Peak Pilates: Comprehensive Certification (2017)\n- NETA: Certification (2017)\n- Balanced Body: Reformer Level 1 (2015), Mat Pilates Certification (2014), Intro to Anatomy (2013)",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/68e1557acc9b4e509628a381/a3ba8022-0d23-4214-ae20-fa350c5ee1e4/DSC04106-A.jpg",
+          "alt": null,
+          "descripcion": "BeLinda Bellows - Owner of Studio 17",
+          "tipo": "portrait",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "contacto",
+      "titulo": "Connect With Us",
+      "contenido": "Ready to start your Classical Pilates journey? Schedule a consultation so we can learn about your goals, needs, and any physical considerations. This helps us create the best approach for your unique practice.\n\nLocation: Hampton Station. We're located to the left of Hallowed Earth Pottery. Look for our sign at the door entrance.",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "A System That Lengthens, Strengthens, and Balances",
+    "propuesta_valor": "Classical Pilates designed around you — precise, controlled movements with a strong mind-body connection in a fully equipped Classical Studio",
+    "ctas": [
+      "Explore Classes",
+      "About Me",
+      "Browse Classes",
+      "Full Class Schedule Here",
+      "Contact Us",
+      "Book an Appointment",
+      "Signup"
+    ]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "864-326-0626",
+    "whatsapp": null,
+    "email": "info@studio17@gmail.com",
+    "direccion": "1320 Hampton Street Ext, Suite 601, Greenville, SC 29601",
+    "horarios": "Monday-Saturday"
+  },
+  "redes": [
+    {
+      "plataforma": "Instagram",
+      "url": "http://instagram.com/studio17greenvillesc"
+    }
+  ],
+  "formularios": [
+    {
+      "proposito": "Contacto general y consultas",
+      "campos": ["Name (First & Last)", "Email", "Phone", "Subject", "Message"]
+    },
+    {
+      "proposito": "Registro de nuevos clientes",
+      "campos": ["Name (First & Last)", "Email", "Phone", "Occupation", "Preferred Days (Monday-Saturday)", "Previous Pilates Experience", "Injuries or Conditions"]
+    }
+  ],
+  "footer": {
+    "contenido": "Studio 17\n1320 Hampton Street Ext, Suite 601, Greenville, SC 29601\nMonday-Saturday | View Schedule\n1-864-326-0626\ninfo@studio17@gmail.com",
+    "links": [
+      { "label": "Home", "url": "/" },
+      { "label": "Classes", "url": "/classes" },
+      { "label": "About", "url": "/about" },
+      { "label": "Contact", "url": "/contact" },
+      { "label": "Book an Appointment", "url": "/contact" }
+    ],
+    "copyright": null
+  },
+  "tecnologia": "Squarespace 7.1"
+}

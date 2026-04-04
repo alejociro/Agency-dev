@@ -720,38 +720,17 @@
     color: var(--color-text-muted);
   }
 
-  /* ---- Testimonials Carousel ---- */
+  /* ---- Testimonials Grid ---- */
 
-  .testimonials-carousel {
-    position: relative;
-  }
-
-  .testimonials-track {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: var(--space-4);
-    scrollbar-width: none;
-    padding-bottom: var(--space-2);
-    scroll-behavior: smooth;
 
-    &::-webkit-scrollbar {
-      display: none;
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+      align-items: stretch;
     }
-  }
-
-  .testimonials-btn:hover {
-    background: var(--color-primary) !important;
-    border-color: var(--color-primary) !important;
-
-    & svg {
-      stroke: var(--color-text-light);
-    }
-  }
-
-  .testimonials-dot.active {
-    background: var(--color-secondary) !important;
-    transform: scale(1.2);
   }
 
   /* ---- Gallery Carousel ---- */

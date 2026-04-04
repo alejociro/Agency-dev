@@ -1,0 +1,95 @@
+{
+  "negocio": "The WRKT Greenville",
+  "url": "https://www.thewrkt.co/greenville",
+  "sector": "Reformer Pilates Studio",
+  "requiere_render": true,
+  "nota_scraping": "Sitio renderizado por JS (Squarespace). Algunos datos pueden estar incompletos. Considerar scraping con browser headless.",
+  "meta": {
+    "title": "GREENVILLE | Book Reformer Pilates — thewrkt.com",
+    "description": "Join The WRKT Greenville for unlimited Reformer Pilates classes. Explore our flexible memberships and packages, conveniently located on E North St.",
+    "keywords": null
+  },
+  "favicon": "https://images.squarespace-cdn.com/content/v1/67ee985553c8e90522ea9bc8/c986f499-abce-4ce7-ab25-57639f5f9736/favicon.ico?format=100w",
+  "paleta": {
+    "primario": "#1a1a1a",
+    "secundario": "#e8d5b7",
+    "acento": "#c4956a",
+    "fondo": "#faf8f5",
+    "texto": "#1a1a1a",
+    "otros": []
+  },
+  "logo": {
+    "url": null,
+    "descripcion": "thewrkt.com text logo",
+    "posicion": "top left",
+    "colores": ["#1a1a1a"]
+  },
+  "tipografias": [
+    { "nombre": "System/Squarespace default", "uso": "body", "peso": "400", "tamanio_aprox": "16px" }
+  ],
+  "navegacion": [
+    { "label": "The Training", "url": "https://www.thewrkt.co/the-training" },
+    { "label": "Our Story", "url": "https://www.thewrkt.co/our-story" },
+    { "label": "Our Studios", "url": "https://www.thewrkt.co/our-studios" },
+    { "label": "Careers", "url": "https://www.thewrkt.co/careers" },
+    { "label": "Book now", "url": "https://www.thewrkt.co/greenville" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "The wrkt you've been waiting for.",
+      "contenido": "The wrkt Greenville.",
+      "cta": "Book Now First Class",
+      "imagenes": []
+    },
+    {
+      "tipo": "ubicacion",
+      "titulo": "The wrkt Greenville",
+      "contenido": "1631 E North St, Greenville, SC 29607",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "membresias",
+      "titulo": "Memberships",
+      "contenido": "The Membership - $185. Unlimited Reformer Pilates classes for one month, auto renewing. The Small Biz Membership - $150. Unlimited Reformer Pilates classes for one month, auto renewing. The Student Membership - $150. Unlimited Reformer Pilates classes for one month, auto renewing. The Teacher Membership - $150. Unlimited Reformer Pilates classes for one month, auto renewing. The Health Professional Membership - $170. Unlimited Reformer Pilates classes for one month, auto renewing. The Young Professional Membership - $170. Unlimited Reformer Pilates classes for one month, auto renewing.",
+      "cta": "Buy Now",
+      "imagenes": []
+    },
+    {
+      "tipo": "paquetes",
+      "titulo": "Packages",
+      "contenido": "Drop in - $35. One credit to any of our Reformer Pilates classes. The 5-Pack - $135. 5 Pack of classes that never expire & can be used for any class. The 10-Pack - $275. 10 Pack of classes that never expire & can be used for any class.",
+      "cta": "Buy Now",
+      "imagenes": []
+    },
+    {
+      "tipo": "faq",
+      "titulo": "FAQs",
+      "contenido": "This is my first class! When to get to the studio: If this is your first class, please arrive 10-15 minutes before class so your instructor can show you around and get you settled! What to wear: Appropriate workout clothes you feel comfortable in and not afraid to sweat in! We require grippy socks for each class, please bring your own or shop our cute collection in studio! What to bring: Water & grippy socks if you have them! If not no worries we sell both in studio! Membership Details: Our memberships are a month to month commitment so you're never locked into a contract! They do auto-renew into our normal memberships after the special is over so if you don't want to continue you have to email us at greenville@thewrkt.com at least three business days before! Waitlists: If you're on the waitlist, don't be discouraged - it moves quick! Booking: Classes are posted on a weekly basis, we encourage signing up for classes in advance. Be sure to download TheWrktMethod app so you can sign up for all your favorite class times! Late cancels / No shows: A late-cancel fee of $12.50.",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "The wrkt you've been waiting for.",
+    "propuesta_valor": "Unlimited Reformer Pilates classes with flexible memberships and packages in Greenville, SC",
+    "ctas": ["Book Now", "Buy Now", "First Class"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": null,
+    "whatsapp": null,
+    "email": "greenville@thewrkt.com",
+    "direccion": "1631 E North St, Greenville, SC 29607",
+    "horarios": null
+  },
+  "redes": [],
+  "formularios": [],
+  "footer": {
+    "contenido": "thewrkt.com",
+    "links": ["The Training", "Our Story", "Our Studios", "Careers"],
+    "copyright": null
+  },
+  "tecnologia": "Squarespace"
+}

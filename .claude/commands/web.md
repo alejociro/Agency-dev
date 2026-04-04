@@ -21,6 +21,7 @@ Cada paso tiene su propio skill — invócalos secuencialmente:
 | 1 | `/web-stack` | Proyecto configurado con estructura de carpetas |
 | 2 | `/web-design` | Design system completo (CSS variables, tipografía, color) |
 | 3 | `/web-animations` | Sistema de animaciones en 4 capas |
+| 3.5 | `/web-experience` | Experiencias interactivas según sector del negocio |
 | 4 | `/web-pages` | Todas las páginas con contenido real |
 | 5 | `/web-seo` | Meta tags, schema JSON-LD, optimizaciones |
 | 6 | `/web-components` | Componentes reutilizables (solo React/Astro) |

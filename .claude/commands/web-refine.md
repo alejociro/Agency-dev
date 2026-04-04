@@ -72,6 +72,36 @@ Revisa el proyecto completo buscando problemas en estas categorías:
 - [ ] Animaciones usan `transform`/`opacity` — no animan `width`, `height`, `top`, `left`
 - [ ] `will-change` solo donde hay animación real, no preventivamente
 
+### Experiencias interactivas (oportunidades de mejora)
+- [ ] ¿El sitio tiene al menos UNA experiencia interactiva diferenciadora más allá de animaciones básicas de scroll?
+- [ ] ¿Las experiencias existentes son apropiadas para el sector del negocio?
+- [ ] ¿Falta alguna experiencia sectorial de alto impacto que se pueda agregar sin reestructurar?
+
+**Si detectas que el sitio carece de experiencias interactivas**, aplica 1-2 del catálogo de `/web-experience` que mejor encajen según:
+
+1. **Sector del negocio** — identifícalo desde el contenido, servicios, o JSON de auditoría si está disponible
+2. **Stack existente** — usa solo técnicas compatibles (CSS + JS vanilla para HTML/Astro, Framer Motion para React)
+3. **Lo que ya existe** — no dupliques; si ya hay un carrusel, no agregues otro. Complementa.
+
+**Experiencias de alto impacto rápidas de implementar (prioriza estas):**
+
+| Si el sitio tiene... | Agrega... |
+|---|---|
+| CTA principal estático | Magnetic button (`data-magnetic`) |
+| Títulos que solo hacen fade-in | Text split reveal (`data-split`) en el heading más importante |
+| Estadísticas/números sin animación | Contador animado con contexto (typewriter del subtexto) |
+| Galería de proyectos/portfolio simple | Before/After slider si hay imágenes comparables |
+| Secciones que solo se apilan | Section dots navigation (indicador lateral de progreso) |
+| Transiciones entre secciones planas | Morphing SVG divider entre las 2 secciones más importantes |
+| Formulario de contacto genérico | Floating labels + stepper visual si tiene más de 4 campos |
+
+**Reglas al inyectar experiencias en refine:**
+- Máximo 2 experiencias nuevas por sesión de refine — no sobrecargues
+- Deben funcionar sin JS como fallback (contenido visible)
+- `prefers-reduced-motion` respetado
+- No agregar dependencias externas
+- Integrar en el código existente, no crear archivos nuevos
+
 ---
 
 ## CÓMO CORREGIR

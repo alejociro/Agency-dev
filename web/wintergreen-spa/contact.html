@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Book Appointment — Wintergreen SPA Greenville SC</title>
+  <meta name="description" content="Book your massage, facial, or spa appointment at Wintergreen SPA. 1310 East Washington Street, Greenville SC. Call (864) 351-8209.">
+
+  <link rel="icon" type="image/jpeg" href="https://static.wixstatic.com/media/430b75_60ee22bfbf204dffb34a6cb1b63137d0%7Emv2.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/430b75_60ee22bfbf204dffb34a6cb1b63137d0%7Emv2.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+  <link rel="stylesheet" href="styles/design-system.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="/" class="nav__logo" aria-label="Wintergreen SPA Home">
+        <span class="nav__logo-text">Wintergreen</span>
+        <span class="nav__logo-accent">SPA</span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__menu" role="navigation">
+        <a href="index.html#services" class="nav__link">Services</a>
+        <a href="index.html#amenities" class="nav__link">Amenities</a>
+        <a href="index.html#about" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link nav__link--active">Contact</a>
+        <a href="contact.html" class="nav__cta">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══ CONTACT HERO ═══ -->
+  <section class="page-hero grain">
+    <div class="container">
+      <h1 class="page-hero__title">Book Your <em>Escape</em></h1>
+      <p class="page-hero__subtitle">We are by appointment only. Call, email, or fill out the form below.</p>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT CONTENT ═══ -->
+  <section class="section contact-section">
+    <div class="container">
+      <div class="contact__grid">
+
+        <div class="contact__info">
+          <div class="contact__block">
+            <h3>Call Us</h3>
+            <a href="tel:+18643518209" class="contact__phone">(864) 351-8209</a>
+          </div>
+
+          <div class="contact__block">
+            <h3>Email</h3>
+            <a href="mailto:tetianamassageterapist@yahoo.com">tetianamassageterapist@yahoo.com</a>
+          </div>
+
+          <div class="contact__block">
+            <h3>Visit</h3>
+            <address>
+              1310 East Washington Street<br>
+              Greenville, SC
+            </address>
+          </div>
+
+          <div class="contact__block">
+            <h3>Hours</h3>
+            <table class="contact__hours">
+              <tr><td>Mon — Fri</td><td>9:00 AM — 6:00 PM</td></tr>
+              <tr><td>Saturday</td><td>8:00 AM — 4:00 PM</td></tr>
+              <tr><td>Sunday</td><td>11:00 AM — 4:00 PM</td></tr>
+            </table>
+            <p class="contact__note">By appointment only. Cash or checks for in-spa payments.</p>
+          </div>
+
+          <div class="contact__block">
+            <h3>Your Therapist</h3>
+            <p>Tetiana Markel<br>LMBT lic#7688 &middot; ES lic#73624</p>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contact-form">
+          <h3>Request an Appointment</h3>
+
+          <div class="form__group">
+            <label for="name" class="form__label">Full Name</label>
+            <input type="text" id="name" name="name" class="form__input" required placeholder="Your name">
+          </div>
+
+          <div class="form__group">
+            <label for="phone" class="form__label">Phone</label>
+            <input type="tel" id="phone" name="phone" class="form__input" required placeholder="(864) 000-0000">
+          </div>
+
+          <div class="form__group">
+            <label for="email" class="form__label">Email</label>
+            <input type="email" id="email" name="email" class="form__input" placeholder="your@email.com">
+          </div>
+
+          <div class="form__group">
+            <label for="service" class="form__label">Service Interested In</label>
+            <select id="service" name="service" class="form__input">
+              <option value="">Select a service...</option>
+              <optgroup label="Massage">
+                <option>Deep Tissue Massage</option>
+                <option>Swedish Massage</option>
+                <option>Hot Stones Massage</option>
+                <option>Mother-To-Be Massage</option>
+                <option>Sport Massage</option>
+                <option>Scalp Massage</option>
+              </optgroup>
+              <optgroup label="Facials">
+                <option>HydraFacial</option>
+                <option>Nourishing Facial</option>
+                <option>Firming Tri-Peptide Facial</option>
+                <option>Express Facial</option>
+                <option>Glycolic Peel</option>
+              </optgroup>
+              <optgroup label="Amenities">
+                <option>Salt Room Session</option>
+                <option>Infrared Sauna</option>
+                <option>Hot Tub</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <label for="message" class="form__label">Message</label>
+            <textarea id="message" name="message" class="form__input form__textarea" rows="4" placeholder="Preferred date/time or special requests..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--accent btn--full">Send Request</button>
+          <p class="form__disclaimer">We will respond within 24 hours to confirm your appointment.</p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MAP ═══ -->
+  <section class="map-section">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.5!2d-82.38!3d34.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1310+East+Washington+Street+Greenville+SC!5e0!3m2!1sen!2sus!4v1"
+      width="100%"
+      height="400"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Wintergreen SPA location map"
+    ></iframe>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo">Wintergreen <em>SPA</em></span>
+          <p class="footer__tagline">Escape into a world of total comfort, relaxation, and rejuvenation.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Services</h4>
+          <a href="index.html#services">Massage</a>
+          <a href="index.html#services">Facials</a>
+          <a href="index.html#amenities">Salt Room</a>
+          <a href="index.html#amenities">Infrared Sauna</a>
+          <a href="index.html#gifts">Gift Certificates</a>
+        </div>
+        <div class="footer__contact">
+          <h4>Visit Us</h4>
+          <address>
+            1310 East Washington Street<br>
+            Greenville, SC
+          </address>
+          <a href="tel:+18643518209">(864) 351-8209</a>
+          <a href="mailto:tetianamassageterapist@yahoo.com">tetianamassageterapist@yahoo.com</a>
+        </div>
+        <div class="footer__hours">
+          <h4>Hours</h4>
+          <p>Mon — Fri: 9am - 6pm</p>
+          <p>Sat: 8am - 4pm</p>
+          <p>Sun: 11am - 4pm</p>
+          <p class="footer__note">By appointment only</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Wintergreen SPA. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

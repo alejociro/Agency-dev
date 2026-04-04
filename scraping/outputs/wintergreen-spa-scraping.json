@@ -1,0 +1,121 @@
+{
+  "negocio": "Wintergreen SPA",
+  "url": "https://www.wintergreenspa.com/",
+  "sector": "Spa & Wellness",
+  "requiere_render": true,
+  "nota_scraping": "Sitio renderizado por JS (Wix). Algunos datos pueden estar incompletos. Considerar scraping con browser headless.",
+  "meta": {
+    "title": "Massage | Wintergreen SPA | Greenville",
+    "description": null,
+    "keywords": null
+  },
+  "favicon": "https://static.wixstatic.com/media/430b75_60ee22bfbf204dffb34a6cb1b63137d0%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/430b75_60ee22bfbf204dffb34a6cb1b63137d0%7Emv2.jpg",
+  "paleta": {
+    "primario": "#298D74",
+    "secundario": "#2A7C6F",
+    "acento": "#7DD3C6",
+    "fondo": "#FFFDFA",
+    "texto": "#080808",
+    "otros": ["#5f6360", "#212121"]
+  },
+  "logo": {
+    "url": "https://static.wixstatic.com/media/430b75_96273a31b06b473c96d1589f456c4211~mv2.jpg",
+    "descripcion": "Wintergreen SPA banner logo",
+    "posicion": "top center",
+    "colores": ["#298D74", "#FFFDFA"]
+  },
+  "tipografias": [
+    { "nombre": "Arial", "uso": "body", "peso": "400", "tamanio_aprox": "16px" },
+    { "nombre": "Helvetica", "uso": "headings", "peso": "700", "tamanio_aprox": "24px" }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://www.wintergreenspa.com" },
+    { "label": "Buy eGift Certificates online", "url": "https://www.wintergreenspa.com/shop" },
+    { "label": "Amenities", "url": "https://www.wintergreenspa.com/facilities" },
+    { "label": "Facial Services", "url": "https://www.wintergreenspa.com/serviceslist" },
+    { "label": "Massage Services", "url": "https://www.wintergreenspa.com/copy-of-facial-services" },
+    { "label": "SCHEDULE APPOINTMENTS", "url": "https://www.wintergreenspa.com/contact" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "WINTERGREEN SPA",
+      "contenido": "SALT ROOM BREATHING SESSIONS",
+      "cta": "SCHEDULE APPOINTMENTS",
+      "imagenes": [
+        { "url": "https://static.wixstatic.com/media/430b75_96273a31b06b473c96d1589f456c4211~mv2.jpg", "alt": "Wintergreen SPA banner", "descripcion": "Main banner image", "tipo": "banner", "dimensiones": "1718x252" }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Massage Services",
+      "contenido": "DEEP TISSUE MASSAGE - Designed to release tight, fatigued muscles and joints, this specialized service involves deep-tissue techniques to ease and open taut muscle tissue and disperse toxins. 30 min $65, 50 min $109, 90 min $149. MOTHER-TO-BE MASSAGE - This massage is personalized to meet the unique needs of pregnancy by promoting circulation, relaxation and improve muscle and joint functions. 30 min $65, 50 min $109, 90 min $149. SPORT MASSAGE - Sport massage and stretching greatly improves muscle tone and flexibility while increasing circulation and stimulating the nervous system. This style can help old injuries and work out soreness from that last trip to the gym. 30 min $65, 50 min $109, 90 min $149. SWEDISH MASSAGE - This classic massage will soothe and relax the body and mind. Concentrating on relieving tension, toning muscles and reducing stress. 30 min $65, 50 min $109, 90 min $149. HOT STONES MASSAGE - This classic massage will soothe and relax the body and mind. Concentrating on relieving tension, toning muscles and reducing stress. 30 min $70, 50 min $119, 90 min $159. Head in heaven scalp massage with aroma oil - A relaxing and soothing treatment blending massage and pressure point therapy to loosen and revive muscles of the scalp and neck to stimulate circulation and relaxation. 15 min $30. Back polish with sugar scrub exfoliating your skin to remove dead skin cells, unclogging pores to prepare for a body treatment, promoting cell regeneration to encourage healthy skin, moisturizing and hydrating dry skin. 15 minutes $30. Massage enhancements: Add organic aromatherapy to your massage - $15.00. Add organic coconut not refined virgin oil to your massage - $5.00. Add chocolate back and shoulders mask to your massage - $15.00.",
+      "cta": "Pay Now",
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Facial Services",
+      "contenido": "Hydro Facial - HydraFacial is a three-step process to deep-clean, exfoliate and hydrate the skin. Help with Clogged pores, Enlarged pores, Oily skin, Dehydration acne. HydraFacial uses a form of dermabrasion called hydradermabrasion to slough off dead skin cells and debris by propelling a liquid onto the surface. In addition, the HydraFacial uses a proprietary tip that creates a vortex effect for more effective exfoliation. The final stage of a HydraFacial is the infusion of vitamins and peptides. 60 min, $200. Express Facial - An ex-foliating cleansing followed by a resurfacing mask that leaves the skin feeling fresh and smooth. 15 min, $50. Glycolic Peel 33% (dead skin cells exfoliation). Always combine with hydration and nutrition facial. This ultra-resurfacing glycolic treatment exfoliates dead surface skin cells, leaving skin firmer, and healthier. $50. Brow tinting - Variety of colors. Natural looks. Color keeps up to 2-3 months. $30. Firming Tri-Peptide Serum Facial - A skin nourishing peptide serum with concentrated active ingredients. Helps reduce trans epidermal water loss and fight the signs of aging. 30 min, $75, 60 min, $139. Nourishing Facial - This intense treatment hydrates, smoothes skin tone, and increases elasticity. Erases the signs of fatigue to reveal a refreshed complexion and skin tone is balanced with a dramatic improvement in texture and clarity. An outstanding treatment with immediate results! 30 min, $75, 60 min, $139. Head in heaven scalp massage (dry hand) add to any facial - 15 min, $35, 30 min, $60. Eye lash tinting - For luxury deep black eye lashes. Color keeps up to 2-3 months. $30.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "amenidades",
+      "titulo": "EXPLORE OUR AMENITIES",
+      "contenido": "HOT TUB. Infrared sauna - Infrared sauna session with aromatherapy for one person 60 minutes $35. Infrared heat provides all the healthy benefits of natural sunlight without any of the dangerous effects of solar radiation. When far infrared waves are applied to water molecules (comprising 70% of our body) these molecules begin to vibrate. This vibration reduces the ion bonds and the eventual breakdown of the water molecules causes encapsulated gases and other toxic materials to be released. The far infrared rays consist of similar wavelengths as that which is emitted naturally by the human body. Salt room - A room with salt brick panels, also has salt vapor generators, which salt particles and enjoy the healing effects of salt on their skin. Benefits include: Abatement of bronchial inflammation, Removal of airborne pollen particles from airways, Strengthening of immune system, Cleansing and sanitation of the airways, Prevention and treatment of common cold and flu, Allergies, Asthma, Sinusitis, Sinus headaches.",
+      "cta": null,
+      "imagenes": [
+        { "url": "https://static.wixstatic.com/media/430b75_9b29be149dba4ff98482a790c17cc96bf000.jpg", "alt": "Spa amenity", "descripcion": "Spa room photo", "tipo": "foto", "dimensiones": "387x640" },
+        { "url": "https://static.wixstatic.com/media/430b75_16d44d4ea89e455d9a8060db49c16bbdf000.jpg", "alt": "Spa amenity", "descripcion": "Spa room photo", "tipo": "foto", "dimensiones": "414x640" }
+      ]
+    },
+    {
+      "tipo": "tienda",
+      "titulo": "eGift Certificates",
+      "contenido": "eGift Certificate amount $50 toward any service - $50.00. eGift Certificate amount $100 toward any service - $100.00. eGift Certificate amount $175 toward any service - $175.00. eGift Certificate Prenatal Massage 90 minutes - $149.00. eGift Certificate Prenatal Massage 50 minutes - $109.00. eGift Certificate amount $20 toward any service - $20.00. eGift Certificate Mother's Day Greenville Massage & Facial Spa Package - $240.00. eGift Certificate Deep Tissue Massage 50 minutes - $109.00. eGift Certificate Swedish Massage 50 minutes - $109.00. eGift Certificate Deep Tissue Massage 90 minutes - $149.00. eGift Certificate Swedish Massage 90 minutes - $149.00. eGift Certificate Salt Room breathing session Package 2025 - $25.00. eGift Certificate Ocean of Calm Facial Package - $140.00. eGift Certificate Hydro facial special - $150.00. eGift Certificate Mother's Day Pure Indulgence Package - $220.00. eGift Certificate Mother's Day Chocolate Bliss Massage Package - $140.00.",
+      "cta": "Add to Cart",
+      "imagenes": [
+        { "url": "https://static.wixstatic.com/media/430b75_fe677da006b340af83863eb1a1ae647e~mv2.png", "alt": "Gift certificate", "descripcion": "eGift certificate product image", "tipo": "producto", "dimensiones": null },
+        { "url": "https://static.wixstatic.com/media/430b75_93f54279bc79469eaec3498fef13d756~mv2.png", "alt": "Gift certificate", "descripcion": "eGift certificate product image", "tipo": "producto", "dimensiones": null },
+        { "url": "https://static.wixstatic.com/media/430b75_d26cfc40c23f4434bb355f5065fbd1e0~mv2.png", "alt": "Gift certificate", "descripcion": "eGift certificate product image", "tipo": "producto", "dimensiones": null },
+        { "url": "https://static.wixstatic.com/media/430b75_ed62a662c8e344dbbf2979ac8b789486~mv2.png", "alt": "Gift certificate", "descripcion": "eGift certificate product image", "tipo": "producto", "dimensiones": null },
+        { "url": "https://static.wixstatic.com/media/430b75_b21bcd39291e4f1fab85d352a06fba65~mv2.png", "alt": "Gift certificate", "descripcion": "eGift certificate product image", "tipo": "producto", "dimensiones": null },
+        { "url": "https://static.wixstatic.com/media/430b75_e9f0159bad6e4fabbc7201c01f5ada7a~mv2.png", "alt": "Gift certificate", "descripcion": "eGift certificate product image", "tipo": "producto", "dimensiones": null },
+        { "url": "https://static.wixstatic.com/media/430b75_502ce5f34d664703acbefe1cb6295b36~mv2.png", "alt": "Gift certificate", "descripcion": "eGift certificate product image", "tipo": "producto", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "bienvenida",
+      "titulo": "Welcome to the Wintergreen SPA Greenville SC",
+      "contenido": "Escape into a world of total comfort, relaxation, and rejuvenation. Tetiana Markel LMBT lic#7688 ES lic#73624",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Escape into a world of total comfort, relaxation, and rejuvenation",
+    "propuesta_valor": "Full-service spa offering massage, facial, infrared sauna, salt room and hot tub amenities in Greenville SC",
+    "ctas": ["SCHEDULE APPOINTMENTS", "BOOK NOW", "Add to Cart", "Pay Now"]
+  },
+  "videos": [
+    { "url": null, "plataforma": "wix-video", "descripcion": "Salt Room Breathing Sessions video" }
+  ],
+  "contacto": {
+    "telefono": "(864)351-8209",
+    "whatsapp": null,
+    "email": "tetianamassageterapist@yahoo.com",
+    "direccion": "1310 East Washington Street, Greenville SC",
+    "horarios": "Mon - Fri: 9am - 6pm, Sat: 8am - 4pm, Sun: 11am - 4pm. By appointment only. For payments and tips we accept cash or checks only."
+  },
+  "redes": [],
+  "formularios": [
+    { "proposito": "Contact / Appointment Request", "campos": ["Submit"] }
+  ],
+  "footer": {
+    "contenido": "©2021 by Wintergreen SPA. Proudly created with Wix.com",
+    "links": [],
+    "copyright": "©2021 by Wintergreen SPA"
+  },
+  "tecnologia": "Wix (Thunderbolt renderer)"
+}

@@ -1,0 +1,150 @@
+{
+  "cliente": "Kara Spa",
+  "url_auditada": "https://karaspa.com/",
+  "sector": "Day Spa",
+  "benchmark_aplicado": "Servicio local (salud) — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Técnico: 50. Aplicado por ser un spa local orientado a clientes residenciales en Greenville, SC.",
+  "fecha": "2026-04-03",
+  "scores": {
+    "seo": 48,
+    "ux_ui": 38,
+    "marketing": 45,
+    "contenido": 55,
+    "tecnico": 35,
+    "total": 44
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title incluye keyword principal y servicios clave: 'Kara Day Spa - Massage | Facials | Wraps | Waxing | Nail Care'",
+        "Meta description bien redactada con servicios específicos listados, facilita snippet en SERP",
+        "URL principal limpia y memorable (karaspa.com), fácil de recordar y compartir"
+      ],
+      "negativos": [
+        "No se detectan keywords en meta, lo que limita el targeting de búsquedas específicas",
+        "La mayoría de imágenes de servicio están vacías (sin URLs), perdiendo indexación visual en Google Images",
+        "Estructura de URLs de navegación inconsistente — 'Book Appointment' apunta a '/how-to-spa/' en lugar de una URL dedicada de reservas",
+        "Favicon alojado en dominio diferente (d2d1d52d.nxcli.io) sugiere configuración staging/desarrollo expuesta"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar meta keywords relevantes y optimizar title con ubicación: 'Kara Day Spa Greenville SC'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Corregir URL de 'Book Appointment' para apuntar a página dedicada de reservas, no a '/how-to-spa/'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar imágenes optimizadas con alt text descriptivo a todas las secciones de servicios", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar schema markup LocalBusiness y DaySpa para mejorar rich snippets", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores cohesiva y relajante (#82c0c7 turquesa, #b59522 dorado) apropiada para un spa",
+        "Tres tipografías bien diferenciadas (Open Sans body, Lato headings, Poppins accent) con roles claros",
+        "Navegación detallada con acceso directo a cada categoría de servicio"
+      ],
+      "negativos": [
+        "Navegación excesivamente larga con 14 items visibles — sobrecarga cognitiva para el usuario",
+        "La mayoría de secciones de servicios no tienen imágenes, generando páginas de solo texto monótonas",
+        "Color disperso #974df3 (púrpura) rompe la paleta relajante del spa sin justificación visual",
+        "No se evidencia diseño responsive optimizado — WordPress Divi genera layouts genéricos"
+      ],
+      "recomendaciones": [
+        { "accion": "Consolidar navegación en máximo 6 items con mega-menu desplegable para servicios", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar fotografía profesional del spa a cada sección de servicios para crear experiencia visual inmersiva", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Eliminar color #974df3 de la paleta y mantener consistencia con turquesa/dorado/neutro", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Implementar diseño mobile-first con CTAs de reserva prominentes en thumb zone", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Propuesta de valor clara: 'Affordable luxury in a beautiful, tranquil environment' con 18+ años de experiencia",
+        "Ofertas especiales con precios tachados y descuentos concretos ($80→$60, $430→$300, $65→$45)",
+        "Múltiples CTAs de reserva consistentes: 'Book Appointment', 'Book Online'"
+      ],
+      "negativos": [
+        "No hay testimonios ni reseñas de clientes visibles en el sitio",
+        "Sección de alquiler de suites diluye el mensaje central del spa y confunde al visitante",
+        "No hay programa de fidelización, referidos ni incentivo para clientes recurrentes",
+        "Redes sociales presentes pero sin integración de reviews o contenido social en el sitio"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar sección de testimonios con reseñas de Google/Facebook para generar confianza", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Separar la oferta de alquiler de suites a una subpágina dedicada, fuera del flujo principal", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Implementar programa de referidos o gift certificate destacado como CTA secundario", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Integrar feed de Instagram en la página principal para mostrar ambiente del spa", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Descripciones de servicios detalladas con precios explícitos para cada tratamiento",
+        "Variedad amplia de servicios bien categorizados: faciales, masajes, body treatments, pedicures, caballeros",
+        "Texto del hero transmite la experiencia del spa de forma evocadora y emocional"
+      ],
+      "negativos": [
+        "Texto del hero excesivamente largo — más de 100 palabras en un solo bloque sin estructura",
+        "No hay dirección física visible en el sitio, fundamental para un negocio local",
+        "No se muestran horarios de atención, lo que genera fricción para visitantes potenciales",
+        "Contenido duplicado entre hero y secciones posteriores — mismo mensaje repetido"
+      ],
+      "recomendaciones": [
+        { "accion": "Reducir texto del hero a máximo 2 frases impactantes y mover el resto a sección 'About'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar dirección física y horarios de atención en header o footer visible", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear página 'About Us' dedicada con historia del spa, equipo y certificaciones", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Agregar sección FAQ con preguntas frecuentes sobre preparación para tratamientos", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "WordPress con Divi es un CMS robusto y fácil de mantener para el equipo del spa",
+        "Favicon personalizado presente, aunque alojado en dominio incorrecto",
+        "Formularios de contacto no detectados pero CTAs de reserva funcionales"
+      ],
+      "negativos": [
+        "Favicon apunta a dominio staging (d2d1d52d.nxcli.io), indica configuración de desarrollo no limpia",
+        "WordPress + Divi tiende a generar código pesado con exceso de CSS/JS inline",
+        "No se detectan formularios de contacto estructurados, solo enlaces telefónicos y email",
+        "Sin sistema de booking online integrado — 'Book Appointment' no conecta a plataforma de reservas"
+      ],
+      "recomendaciones": [
+        { "accion": "Corregir favicon para apuntar al dominio principal karaspa.com", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Integrar sistema de booking online (Vagaro, Square Appointments) para reducir fricción en reservas", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar formulario de contacto estructurado con validación", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Optimizar carga de Divi eliminando módulos no utilizados y habilitando caché", "prioridad": "media", "tipo": "mejora_estructural" }
+      ],
+      "stack_actual": "WordPress (Divi theme)",
+      "stack_recomendado": "Astro + Tailwind CSS",
+      "integraciones": ["Booking online (Vagaro/Square Appointments)", "Google Maps embed", "Instagram feed", "Google Reviews widget"],
+      "complejidad": "media"
+    }
+  },
+  "quick_wins": [
+    "Corregir URL de 'Book Appointment' para apuntar a página de reservas real",
+    "Agregar dirección física y horarios en header/footer",
+    "Reducir texto del hero a 2 frases y mover contenido extenso a About",
+    "Corregir favicon para apuntar al dominio principal",
+    "Agregar testimonios de Google/Facebook visibles en la página"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Corregir URL de Book Appointment y favicon",
+      "Agregar dirección y horarios visibles",
+      "Reducir hero text y eliminar color #974df3"
+    ],
+    "mes_1": [
+      "Integrar sistema de booking online",
+      "Agregar fotografía profesional a secciones de servicios",
+      "Consolidar navegación con mega-menu",
+      "Agregar testimonios y reseñas",
+      "Implementar schema markup LocalBusiness"
+    ],
+    "largo_plazo": [
+      "Migrar a stack moderno (Astro) para mejor performance y SEO",
+      "Implementar programa de fidelización/referidos",
+      "Crear sección About Us con historia y equipo",
+      "Integrar feed de Instagram y Google Reviews"
+    ]
+  },
+  "resumen_ejecutivo": "Kara Spa tiene contenido de servicios detallado con precios claros y una paleta visual apropiada para su sector, pero presenta deficiencias técnicas críticas como un favicon en dominio staging y un enlace de reservas roto que apunta a la página equivocada. La ausencia de dirección física, horarios, testimonios y un sistema de booking online genera fricción significativa para convertir visitantes en clientes. Una migración a stack moderno con integración de reservas online y optimización del flujo de conversión podría elevar significativamente el rendimiento del sitio.",
+  "stack_para_web": {
+    "framework": "astro",
+    "estilos": "tailwind",
+    "extras": ["booking widget embed", "google maps", "instagram feed"],
+    "justificacion": "Spa con múltiples páginas de servicios, precios detallados, necesidad de booking online y galería visual — complejidad media que se beneficia de SSG con Astro para SEO y performance."
+  }
+}

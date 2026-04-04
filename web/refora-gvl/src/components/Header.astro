@@ -1,0 +1,206 @@
+---
+const currentPath = Astro.url.pathname;
+
+const navItems = [
+  { label: 'Studio', href: '/studio/' },
+  { label: 'Schedule', href: '/schedule/' },
+  { label: 'Membership', href: '/membership/' },
+  { label: 'Café', href: '/cafe/' },
+  { label: 'Contact', href: '/contact/' },
+];
+---
+
+<header class="header" data-header>
+  <div class="header__inner container">
+    <!-- Logo -->
+    <a href="/" class="header__logo site-logo" aria-label="Refora — Home">
+      <span class="brand-split">
+        Re<span class="brand-dot brand-dot--animated"></span>for<span class="brand-dot brand-dot--animated"></span>a
+      </span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="header__nav hide-mobile" aria-label="Main navigation">
+      <ul class="header__nav-list">
+        {navItems.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class={`nav-link ${currentPath === item.href ? 'is-active' : ''}`}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <!-- CTA + Status -->
+    <div class="header__actions hide-mobile">
+      <span data-open-status></span>
+      <a href="/membership/" class="btn btn--primary btn--sm" data-magnetic>Join</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button
+      class="header__hamburger hide-desktop"
+      data-menu-toggle
+      aria-label="Toggle menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+    <nav aria-label="Mobile navigation">
+      <ul class="mobile-menu__list">
+        {navItems.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class={`mobile-menu__link ${currentPath === item.href ? 'is-active' : ''}`}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <div class="mobile-menu__footer">
+        <span data-open-status></span>
+        <a href="/membership/" class="btn btn--gold">Join the Movement</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;
+    padding-block: var(--space-2);
+    transition: background var(--duration-base) ease,
+                transform var(--duration-base) var(--ease-out-expo),
+                box-shadow var(--duration-base) ease;
+  }
+
+  .header--scrolled {
+    background: rgba(245, 240, 235, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: var(--shadow-sm);
+    padding-block: var(--space-1);
+  }
+
+  .header--hidden {
+    transform: translateY(-100%);
+  }
+
+  .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-charcoal);
+    z-index: 91;
+  }
+
+  .header__nav-list {
+    display: flex;
+    gap: var(--space-4);
+    list-style: none;
+  }
+
+  .header__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .btn--sm {
+    padding: 0.6rem 1.4rem;
+    font-size: var(--text-xs);
+  }
+
+  .header__hamburger {
+    z-index: 91;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Mobile Menu */
+  .mobile-menu {
+    position: fixed;
+    inset: 0;
+    background: var(--color-bg);
+    z-index: 89;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--duration-base) ease,
+                visibility var(--duration-base) ease;
+  }
+
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile-menu__list {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .mobile-menu__link {
+    font-family: var(--font-display);
+    font-size: var(--text-h2);
+    font-weight: 500;
+    color: var(--color-charcoal);
+    transition: color var(--duration-fast) ease;
+
+    &.is-active {
+      color: var(--color-secondary);
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  .mobile-menu__footer {
+    margin-block-start: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  /* Lock body scroll when menu is active */
+  :global(body.menu-active) {
+    overflow: hidden;
+  }
+</style>

@@ -1,0 +1,26 @@
+---
+interface Props {
+  tag?: string;
+  title: string;
+  subtitle?: string;
+  align?: 'center' | 'left';
+}
+
+const { tag, title, subtitle, align = 'center' } = Astro.props;
+---
+
+<div class={`section-header ${align === 'center' ? 'text-center' : ''}`} data-animate="fade-up">
+  {tag && <span class="section-tag" style={align === 'center' ? 'justify-content: center;' : ''}>{tag}</span>}
+  <h2 style="margin-top: var(--space-2);">{title}</h2>
+  {subtitle && <p style="margin-top: var(--space-3); color: var(--color-text-muted); margin-inline: auto;">{subtitle}</p>}
+</div>
+
+<style>
+  .section-header {
+    margin-block-end: var(--space-8);
+  }
+
+  .text-center {
+    text-align: center;
+  }
+</style>

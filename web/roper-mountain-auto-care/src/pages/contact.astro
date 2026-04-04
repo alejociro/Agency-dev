@@ -1,0 +1,388 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Contact Us | Roper Mountain Auto Care | Greenville SC"
+  description="Schedule an appointment at Roper Mountain Auto Care. Call (864) 288-7633 or visit us at 1520 Roper Mountain Rd, Greenville SC 29615. Mon-Fri 8am-5:30pm."
+>
+  <Header />
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="hero-tag section-tag">Get In Touch</span>
+      <h1 class="hero-title page-title">Schedule Your<br/>Visit Today</h1>
+      <p class="hero-sub">Call us, walk in, or fill out the form below. We accommodate same-day appointments when available.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section section" id="contact-form">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact info -->
+        <div class="contact-info" data-animate="fade-right">
+          <h2>Contact Information</h2>
+
+          <div class="info-cards">
+            <a href="tel:+18642887633" class="info-card">
+              <div class="info-icon icon-blueprint">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <h3>Phone</h3>
+                <p>(864) 288-7633</p>
+              </div>
+            </a>
+
+            <a href="https://maps.google.com/?q=1520+Roper+Mountain+Road+Greenville+SC+29615" target="_blank" rel="noopener noreferrer" class="info-card">
+              <div class="info-icon icon-blueprint">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h3>Address</h3>
+                <p>1520 Roper Mountain Rd<br/>Greenville, SC 29615</p>
+              </div>
+            </a>
+
+            <div class="info-card">
+              <div class="info-icon icon-blueprint">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h3>Hours</h3>
+                <p>Monday – Friday: 8:00 AM – 5:30 PM<br/>Saturday – Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-container" data-animate="scale-in">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.5!2d-82.35!3d34.82!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885828e1b8d3f1ad%3A0xfcb9057bd0f9ea8c!2sRoper%20Mountain%20Auto%20Care!5e0!3m2!1sen!2sus!4v1"
+              width="600"
+              height="300"
+              style="border:0; width:100%; height:100%; min-height:250px; border-radius: var(--radius-lg);"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Roper Mountain Auto Care location"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap" data-animate="fade-left">
+          <h2>Request an Appointment</h2>
+          <p class="form-intro">Fill out the form below and we will get back to you as soon as possible. For urgent matters, please call us directly.</p>
+
+          <form class="contact-form" id="appointment-form" action="#" method="POST">
+            <div class="field">
+              <input type="text" id="name" name="name" placeholder=" " required class="form-input" autocomplete="name" />
+              <label for="name">Full Name</label>
+            </div>
+
+            <div class="field">
+              <input type="email" id="email" name="email" placeholder=" " required class="form-input" autocomplete="email" />
+              <label for="email">Email Address</label>
+            </div>
+
+            <div class="field">
+              <input type="tel" id="phone" name="phone" placeholder=" " required class="form-input" autocomplete="tel" />
+              <label for="phone">Phone Number</label>
+            </div>
+
+            <div class="field">
+              <select id="service" name="service" required class="form-input form-select">
+                <option value="" disabled selected>Select a Service</option>
+                <option value="oil-change">Oil Change</option>
+                <option value="brake-repair">Brake Repair</option>
+                <option value="engine-diagnostics">Engine Diagnostics</option>
+                <option value="transmission">Transmission Service</option>
+                <option value="ac-service">Air Conditioning</option>
+                <option value="fleet">Fleet Maintenance</option>
+                <option value="inspection">Inspection</option>
+                <option value="other">Other</option>
+              </select>
+              <label for="service" class="select-label">Service Needed</label>
+            </div>
+
+            <div class="field field-full">
+              <textarea id="message" name="message" placeholder=" " rows="4" class="form-input"></textarea>
+              <label for="message">Additional Details (optional)</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit" data-magnetic>
+              Request Appointment
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success dialog -->
+  <dialog id="success-dialog" class="success-dialog">
+    <div class="dialog-content">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      <h3>Appointment Requested!</h3>
+      <p>Thank you for reaching out. We will contact you within one business day to confirm your appointment.</p>
+      <button class="btn btn-primary" onclick="document.getElementById('success-dialog').close();">Got it</button>
+    </div>
+  </dialog>
+
+  <Footer />
+</BaseLayout>
+
+<script>
+  const form = document.getElementById('appointment-form');
+  const dialog = document.getElementById('success-dialog');
+
+  if (form && dialog) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      dialog.showModal();
+      form.reset();
+    });
+
+    dialog.addEventListener('click', (e) => {
+      if (e.target === dialog) dialog.close();
+    });
+  }
+</script>
+
+<style>
+  .page-hero {
+    padding-block: calc(80px + var(--space-10)) var(--space-8);
+    background: var(--color-secondary);
+    color: #faf8f6;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -15%;
+      width: 50%;
+      height: 160%;
+      background: radial-gradient(ellipse, rgba(104, 204, 209, 0.08), transparent 70%);
+      pointer-events: none;
+    }
+  }
+
+  .page-hero .hero-tag {
+    color: var(--color-primary-light);
+    &::before { background: var(--color-primary); }
+  }
+
+  .page-hero .hero-title {
+    color: #faf8f6;
+    font-size: var(--text-h1);
+    margin-block-end: var(--space-2);
+  }
+
+  .page-hero .hero-sub {
+    color: #c4b8b2;
+    max-width: 55ch;
+  }
+
+  .contact-grid {
+    display: grid;
+    gap: var(--space-8);
+    grid-template-columns: 1fr;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .contact-info {
+    & h2 {
+      margin-block-end: var(--space-4);
+    }
+  }
+
+  .info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-block-end: var(--space-4);
+  }
+
+  .info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-3);
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border-light);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: all var(--duration-fast) var(--ease-smooth);
+
+    &:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--color-primary);
+    }
+
+    & h3 {
+      font-size: var(--text-small);
+      font-weight: 700;
+      margin-block-end: 0.25rem;
+    }
+
+    & p {
+      font-size: var(--text-small);
+      color: var(--color-text-muted);
+      margin: 0;
+      max-width: none;
+      line-height: var(--leading-normal);
+    }
+  }
+
+  .map-container {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    height: 250px;
+  }
+
+  /* FORM */
+  .contact-form-wrap {
+    & h2 { margin-block-end: var(--space-2); }
+  }
+
+  .form-intro {
+    color: var(--color-text-muted);
+    font-size: var(--text-small);
+    margin-block-end: var(--space-4);
+  }
+
+  .contact-form {
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: 1fr;
+
+    @media (min-width: 480px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .field {
+    position: relative;
+
+    &.field-full {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .form-input {
+    width: 100%;
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    padding: var(--space-2) var(--space-2) var(--space-1);
+    border: none;
+    border-block-end: 2px solid var(--color-border);
+    background: transparent;
+    color: var(--color-text);
+    border-radius: 0;
+    transition: border-color var(--duration-fast) var(--ease-smooth);
+    appearance: none;
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-primary);
+    }
+  }
+
+  .form-select {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b5f5f' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right var(--space-2) center;
+    padding-inline-end: var(--space-5);
+  }
+
+  textarea.form-input {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .field label {
+    position: absolute;
+    left: var(--space-2);
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: var(--font-display);
+    font-size: var(--text-small);
+    font-weight: 500;
+    color: var(--color-text-muted);
+    pointer-events: none;
+    transition: all 200ms ease;
+  }
+
+  textarea ~ label {
+    top: var(--space-2);
+    transform: none;
+  }
+
+  .select-label {
+    top: -10px !important;
+    transform: none !important;
+    font-size: var(--text-xs) !important;
+    color: var(--color-primary) !important;
+  }
+
+  .form-input:focus + label,
+  .form-input:not(:placeholder-shown) + label {
+    top: -10px;
+    transform: none;
+    font-size: var(--text-xs);
+    color: var(--color-primary);
+  }
+
+  .btn-submit {
+    grid-column: 1 / -1;
+    justify-self: start;
+    min-width: 200px;
+  }
+
+  /* SUCCESS DIALOG */
+  .success-dialog {
+    border: none;
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    max-width: 400px;
+    width: 90vw;
+    text-align: center;
+    box-shadow: var(--shadow-xl);
+
+    &::backdrop {
+      background: rgba(42, 36, 36, 0.5);
+      backdrop-filter: blur(4px);
+    }
+  }
+
+  .dialog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+
+    & h3 {
+      font-size: var(--text-h3);
+      color: var(--color-secondary);
+    }
+
+    & p {
+      color: var(--color-text-muted);
+      font-size: var(--text-small);
+      margin-block-end: var(--space-2);
+    }
+  }
+</style>

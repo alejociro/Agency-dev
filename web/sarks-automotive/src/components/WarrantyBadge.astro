@@ -1,0 +1,34 @@
+---
+interface Props {
+  pulse?: boolean;
+  size?: 'sm' | 'md' | 'lg';
+}
+
+const { pulse = true, size = 'md' } = Astro.props;
+---
+
+<div class="warranty-badges-row">
+  <div class={`warranty-shield ${pulse ? 'warranty-pulse' : ''} warranty-${size}`}>
+    <span class="warranty-number">12</span>
+    <span class="warranty-label">Month</span>
+  </div>
+  <div class={`warranty-shield ${pulse ? 'warranty-pulse' : ''} warranty-${size}`} style="animation-delay: 0.3s;">
+    <span class="warranty-number">12K</span>
+    <span class="warranty-label">Mile</span>
+  </div>
+</div>
+
+<style>
+  .warranty-badges-row {
+    display: flex;
+    gap: var(--space-4);
+  }
+
+  .warranty-sm .warranty-number {
+    font-size: var(--text-h3);
+  }
+
+  .warranty-lg .warranty-number {
+    font-size: var(--text-h1);
+  }
+</style>

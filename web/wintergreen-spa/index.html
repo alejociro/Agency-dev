@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massage & Facial Spa in Greenville SC — Wintergreen SPA</title>
+  <meta name="description" content="Wintergreen SPA offers massage, facial, infrared sauna, salt room and hot tub services in Greenville, SC. Licensed therapist Tetiana Markel. Book your appointment today.">
+  <meta name="keywords" content="spa Greenville SC, massage Greenville, facial Greenville, salt room, infrared sauna, hot tub, deep tissue massage, Swedish massage, HydraFacial">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Wintergreen SPA — Massage & Facial in Greenville SC">
+  <meta property="og:description" content="Escape into total comfort, relaxation and rejuvenation. Massage, facials, salt room, infrared sauna and hot tub in Greenville SC.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.wintergreenspa.com/">
+  <meta property="og:image" content="https://static.wixstatic.com/media/430b75_9b29be149dba4ff98482a790c17cc96bf000.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="https://static.wixstatic.com/media/430b75_60ee22bfbf204dffb34a6cb1b63137d0%7Emv2.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/430b75_60ee22bfbf204dffb34a6cb1b63137d0%7Emv2.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind v4 CDN -->
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+
+  <!-- Design System -->
+  <link rel="stylesheet" href="styles/design-system.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Schema JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Wintergreen SPA",
+    "url": "https://www.wintergreenspa.com/",
+    "telephone": "(864) 351-8209",
+    "email": "tetianamassageterapist@yahoo.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1310 East Washington Street",
+      "addressLocality": "Greenville",
+      "addressRegion": "SC",
+      "addressCountry": "US"
+    },
+    "openingHours": ["Mo-Fr 09:00-18:00", "Sa 08:00-16:00", "Su 11:00-16:00"],
+    "priceRange": "$30-$240",
+    "description": "Full-service spa offering massage, facial, infrared sauna, salt room and hot tub amenities in Greenville SC.",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Spa Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Deep Tissue Massage", "description": "Release tight, fatigued muscles and joints" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Swedish Massage", "description": "Classic massage to soothe and relax" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "HydraFacial", "description": "Three-step process to deep-clean, exfoliate and hydrate" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Salt Room Session", "description": "Halotherapy breathing session" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Infrared Sauna", "description": "60-minute infrared sauna with aromatherapy" } }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="/" class="nav__logo" aria-label="Wintergreen SPA Home">
+        <span class="nav__logo-text">Wintergreen</span>
+        <span class="nav__logo-accent">SPA</span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__menu" role="navigation">
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#amenities" class="nav__link">Amenities</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+        <a href="contact.html" class="nav__cta">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero grain" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <p class="hero__kicker">Greenville, SC</p>
+      <h1 class="hero__title">Breathe<br><em>Deeply</em></h1>
+      <p class="hero__subtitle">Massage, facials, salt room &amp; infrared sauna — your escape into total comfort and rejuvenation.</p>
+      <div class="hero__actions">
+        <a href="contact.html" class="btn btn--accent">Schedule Appointment</a>
+        <a href="#services" class="btn btn--outline">Explore Services</a>
+      </div>
+      <div class="hero__badges">
+        <span class="hero__badge">Licensed LMBT #7688</span>
+        <span class="hero__badge">Salt Room Therapy</span>
+        <span class="hero__badge">By Appointment Only</span>
+      </div>
+    </div>
+    <div class="hero__diagonal"></div>
+  </section>
+
+  <!-- ═══ SERVICES: MASSAGE ═══ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__kicker">Our Treatments</span>
+        <h2 class="section__title">Massage Services</h2>
+        <p class="section__desc">Every session is tailored to your body — from deep relief to pure relaxation.</p>
+      </div>
+
+      <div class="services__grid">
+        <article class="service-card">
+          <div class="service-card__icon">&#10070;</div>
+          <h3 class="service-card__title">Deep Tissue Massage</h3>
+          <p class="service-card__desc">Designed to release tight, fatigued muscles and joints. Deep-tissue techniques ease and open taut muscle tissue and disperse toxins.</p>
+          <div class="service-card__pricing">
+            <span>30 min — $65</span>
+            <span>50 min — $109</span>
+            <span>90 min — $149</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">&#10047;</div>
+          <h3 class="service-card__title">Swedish Massage</h3>
+          <p class="service-card__desc">This classic massage will soothe and relax the body and mind. Concentrating on relieving tension, toning muscles and reducing stress.</p>
+          <div class="service-card__pricing">
+            <span>30 min — $65</span>
+            <span>50 min — $109</span>
+            <span>90 min — $149</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">&#9883;</div>
+          <h3 class="service-card__title">Hot Stones Massage</h3>
+          <p class="service-card__desc">Warm stones soothe and relax the body and mind. Concentrating on relieving tension, toning muscles and reducing stress with therapeutic heat.</p>
+          <div class="service-card__pricing">
+            <span>30 min — $70</span>
+            <span>50 min — $119</span>
+            <span>90 min — $159</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">&#9829;</div>
+          <h3 class="service-card__title">Mother-To-Be Massage</h3>
+          <p class="service-card__desc">Personalized to meet the unique needs of pregnancy by promoting circulation, relaxation and improving muscle and joint functions.</p>
+          <div class="service-card__pricing">
+            <span>30 min — $65</span>
+            <span>50 min — $109</span>
+            <span>90 min — $149</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">&#9889;</div>
+          <h3 class="service-card__title">Sport Massage</h3>
+          <p class="service-card__desc">Greatly improves muscle tone and flexibility while increasing circulation and stimulating the nervous system. Helps old injuries and workout soreness.</p>
+          <div class="service-card__pricing">
+            <span>30 min — $65</span>
+            <span>50 min — $109</span>
+            <span>90 min — $149</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">&#10024;</div>
+          <h3 class="service-card__title">Scalp Massage &amp; Add-ons</h3>
+          <p class="service-card__desc">Head in Heaven scalp massage with aroma oil (15 min $30). Back polish sugar scrub (15 min $30). Add aromatherapy ($15), coconut oil ($5), or chocolate mask ($15).</p>
+          <div class="service-card__pricing">
+            <span>From $5</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DIAGONAL BREAK ═══ -->
+  <div class="diagonal-break">
+    <div class="diagonal-break__line"></div>
+  </div>
+
+  <!-- ═══ SERVICES: FACIALS ═══ -->
+  <section class="section services services--alt">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__kicker">Skin Care</span>
+        <h2 class="section__title">Facial Services</h2>
+        <p class="section__desc">Reveal your natural radiance with treatments tailored to your skin type.</p>
+      </div>
+
+      <div class="services__grid">
+        <article class="service-card service-card--featured">
+          <div class="service-card__badge">Most Popular</div>
+          <h3 class="service-card__title">HydraFacial</h3>
+          <p class="service-card__desc">A three-step process to deep-clean, exfoliate and hydrate the skin. Helps with clogged pores, enlarged pores, oily skin, and dehydration acne. Uses hydradermabrasion with a proprietary vortex tip for effective exfoliation, finishing with vitamins and peptides infusion.</p>
+          <div class="service-card__pricing">
+            <span>60 min — $200</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <h3 class="service-card__title">Nourishing Facial</h3>
+          <p class="service-card__desc">This intense treatment hydrates, smoothes skin tone, and increases elasticity. Erases the signs of fatigue to reveal a refreshed complexion with dramatic improvement in texture and clarity. Outstanding treatment with immediate results!</p>
+          <div class="service-card__pricing">
+            <span>30 min — $75</span>
+            <span>60 min — $139</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <h3 class="service-card__title">Firming Tri-Peptide Serum Facial</h3>
+          <p class="service-card__desc">A skin nourishing peptide serum with concentrated active ingredients. Helps reduce trans epidermal water loss and fight the signs of aging.</p>
+          <div class="service-card__pricing">
+            <span>30 min — $75</span>
+            <span>60 min — $139</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <h3 class="service-card__title">Express Facial</h3>
+          <p class="service-card__desc">An exfoliating cleansing followed by a resurfacing mask that leaves the skin feeling fresh and smooth. Perfect for a quick refresh.</p>
+          <div class="service-card__pricing">
+            <span>15 min — $50</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <h3 class="service-card__title">Glycolic Peel 33%</h3>
+          <p class="service-card__desc">Dead skin cells exfoliation. This ultra-resurfacing treatment exfoliates dead surface skin cells, leaving skin firmer and healthier. Always combined with hydration and nutrition facial.</p>
+          <div class="service-card__pricing">
+            <span>$50</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <h3 class="service-card__title">Brow &amp; Lash Tinting</h3>
+          <p class="service-card__desc">Variety of colors for natural looks. Color keeps up to 2-3 months. Brow tinting or eye lash tinting for luxury deep black lashes.</p>
+          <div class="service-card__pricing">
+            <span>$30 each</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ AMENITIES ═══ -->
+  <section class="section amenities" id="amenities">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__kicker">Explore</span>
+        <h2 class="section__title">Our Amenities</h2>
+        <p class="section__desc">Go beyond the treatment table with our unique wellness experiences.</p>
+      </div>
+
+      <div class="amenities__grid">
+        <article class="amenity-card amenity-card--large grain">
+          <div class="amenity-card__image-wrap">
+            <img src="https://static.wixstatic.com/media/430b75_9b29be149dba4ff98482a790c17cc96bf000.jpg/v1/fill/w_600,h_800,al_c,q_90,enc_avif,quality_auto/430b75_9b29be149dba4ff98482a790c17cc96bf000.jpg" alt="Salt Room at Wintergreen SPA with salt brick panels" width="600" height="800" loading="lazy" decoding="async">
+          </div>
+          <div class="amenity-card__content">
+            <h3>Salt Room</h3>
+            <p>A room with salt brick panels and salt vapor generators. Enjoy the healing effects of halotherapy on your skin and respiratory system. Benefits include abatement of bronchial inflammation, removal of airborne pollen, strengthening immune system, cleansing airways, and prevention of common cold, flu, allergies, asthma, and sinusitis.</p>
+            <span class="amenity-card__price">$25 / session</span>
+          </div>
+        </article>
+
+        <article class="amenity-card grain">
+          <div class="amenity-card__image-wrap">
+            <img src="https://static.wixstatic.com/media/430b75_16d44d4ea89e455d9a8060db49c16bbdf000.jpg/v1/fill/w_600,h_800,al_c,q_90,enc_avif,quality_auto/430b75_16d44d4ea89e455d9a8060db49c16bbdf000.jpg" alt="Infrared Sauna at Wintergreen SPA" width="600" height="800" loading="lazy" decoding="async">
+          </div>
+          <div class="amenity-card__content">
+            <h3>Infrared Sauna</h3>
+            <p>Far infrared rays penetrate 1.5 to 2 inches into the body, raising your core temperature from deep inside. No need to undress — rays penetrate through fabric. You can use your phone, tablet, or read. Helps improve blood circulation and recovery from fatigue.</p>
+            <span class="amenity-card__price">60 min — $35</span>
+          </div>
+        </article>
+
+        <article class="amenity-card">
+          <div class="amenity-card__content amenity-card__content--centered">
+            <div class="amenity-card__icon-large">&#9832;</div>
+            <h3>Hot Tub</h3>
+            <p>Relax and unwind in our therapeutic hot tub. The perfect complement to any spa treatment for total body relaxation.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__content">
+          <span class="section__kicker">Your Therapist</span>
+          <h2 class="section__title">Tetiana Markel</h2>
+          <p class="about__credentials">LMBT lic#7688 &middot; ES lic#73624</p>
+          <p>Welcome to the Wintergreen SPA in Greenville, SC. Escape into a world of total comfort, relaxation, and rejuvenation. With professional licensing and years of experience, every treatment is performed with expert care and attention to your individual needs.</p>
+          <a href="contact.html" class="btn btn--primary">Schedule Your Visit</a>
+        </div>
+        <div class="about__visual grain">
+          <div class="about__quote">
+            <blockquote>"Escape into a world of total comfort, relaxation, and rejuvenation."</blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GIFT CERTIFICATES ═══ -->
+  <section class="section gifts" id="gifts">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__kicker">Give Wellness</span>
+        <h2 class="section__title">Gift Certificates</h2>
+        <p class="section__desc">The perfect gift for someone special — choose any amount or service package.</p>
+      </div>
+
+      <div class="gifts__grid">
+        <div class="gift-card">
+          <span class="gift-card__amount">$20</span>
+          <p>Toward any service</p>
+        </div>
+        <div class="gift-card">
+          <span class="gift-card__amount">$50</span>
+          <p>Toward any service</p>
+        </div>
+        <div class="gift-card">
+          <span class="gift-card__amount">$100</span>
+          <p>Toward any service</p>
+        </div>
+        <div class="gift-card">
+          <span class="gift-card__amount">$175</span>
+          <p>Toward any service</p>
+        </div>
+        <div class="gift-card gift-card--featured">
+          <span class="gift-card__label">Best Value</span>
+          <span class="gift-card__amount">$240</span>
+          <p>Massage &amp; Facial Package</p>
+        </div>
+        <div class="gift-card gift-card--featured">
+          <span class="gift-card__label">Popular</span>
+          <span class="gift-card__amount">$150</span>
+          <p>HydraFacial Special</p>
+        </div>
+      </div>
+
+      <div class="gifts__cta">
+        <a href="https://www.wintergreenspa.com/shop" class="btn btn--accent" target="_blank" rel="noopener">Buy Gift Certificates Online</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FAQ ═══ -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__kicker">Questions?</span>
+        <h2 class="section__title">Before Your Visit</h2>
+      </div>
+
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary class="faq__question">What should I expect on my first visit?</summary>
+          <div class="faq__answer">
+            <p>Arrive 10 minutes early to complete a brief intake form. Your therapist will discuss your goals, areas of concern, and any health considerations before beginning your treatment. The studio offers a calm, private environment designed for your comfort.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">Do I need an appointment?</summary>
+          <div class="faq__answer">
+            <p>Yes, all services are by appointment only. You can book by calling (864) 351-8209 or using the contact form on our website. We recommend booking at least 24 hours in advance.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">What forms of payment do you accept?</summary>
+          <div class="faq__answer">
+            <p>For in-spa payments and tips, we accept cash or checks only. Gift certificates can be purchased online with a credit card through our website shop.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">What are the benefits of the Salt Room?</summary>
+          <div class="faq__answer">
+            <p>Halotherapy (salt therapy) helps with bronchial inflammation, removes airborne pollen from airways, strengthens the immune system, and helps prevent and treat common cold, flu, allergies, asthma, sinusitis, and sinus headaches. Sessions are $25 each.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">What are your hours?</summary>
+          <div class="faq__answer">
+            <p>Monday through Friday: 9am - 6pm. Saturday: 8am - 4pm. Sunday: 11am - 4pm. All visits are by appointment only.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA BANNER ═══ -->
+  <section class="cta-banner grain">
+    <div class="container">
+      <h2 class="cta-banner__title">Ready to unwind?</h2>
+      <p class="cta-banner__text">Your escape is one call away.</p>
+      <div class="cta-banner__actions">
+        <a href="tel:+18643518209" class="btn btn--accent btn--large">(864) 351-8209</a>
+        <a href="contact.html" class="btn btn--outline btn--large">Book Online</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo">Wintergreen <em>SPA</em></span>
+          <p class="footer__tagline">Escape into a world of total comfort, relaxation, and rejuvenation.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Services</h4>
+          <a href="#services">Massage</a>
+          <a href="#services">Facials</a>
+          <a href="#amenities">Salt Room</a>
+          <a href="#amenities">Infrared Sauna</a>
+          <a href="#gifts">Gift Certificates</a>
+        </div>
+        <div class="footer__contact">
+          <h4>Visit Us</h4>
+          <address>
+            1310 East Washington Street<br>
+            Greenville, SC
+          </address>
+          <a href="tel:+18643518209">(864) 351-8209</a>
+          <a href="mailto:tetianamassageterapist@yahoo.com">tetianamassageterapist@yahoo.com</a>
+        </div>
+        <div class="footer__hours">
+          <h4>Hours</h4>
+          <p>Mon — Fri: 9am - 6pm</p>
+          <p>Sat: 8am - 4pm</p>
+          <p>Sun: 11am - 4pm</p>
+          <p class="footer__note">By appointment only</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Wintergreen SPA. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

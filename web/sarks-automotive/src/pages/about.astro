@@ -1,0 +1,225 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const milestones = [
+  { year: "2013", title: "Founded in Mauldin", desc: "Sarks Automotive opens its doors with a mission to bring certified, transparent auto repair to the Upstate." },
+  { year: "2015", title: "ASE Certification", desc: "Our technicians earn ASE certification, meeting the gold standard of automotive service excellence." },
+  { year: "2017", title: "IMACA Membership", desc: "Joining the Independent Motor and Auto Care Alliance connects us with the best practices in independent auto care." },
+  { year: "2019", title: "RepairPal Certified", desc: "Earning RepairPal certification means verified fair pricing, quality work, and a nationwide warranty network." },
+  { year: "2022", title: "Second Location", desc: "We expand to Greenville, SC, bringing the same certified quality to more families in the Upstate." },
+  { year: "2026", title: "50+ Years Combined", desc: "Our growing team now brings over half a century of combined automotive expertise to every vehicle we service." }
+];
+
+const values = [
+  { title: "Transparency First", desc: "We explain every diagnosis and repair before starting work. No surprises on your bill, ever.", icon: "eye" },
+  { title: "Certified Excellence", desc: "Triple certification is not just marketing. It represents hundreds of hours of training and testing our team has invested in.", icon: "award" },
+  { title: "Lasting Relationships", desc: "We are not here for one-time transactions. We earn your trust so you bring your family's vehicles back for years.", icon: "heart" },
+  { title: "Community Commitment", desc: "Mauldin and Greenville are our home. We invest in keeping our neighbors safely on the road.", icon: "home" }
+];
+---
+
+<BaseLayout title="About Sarks Automotive" description="Learn about Sarks Automotive: ASE, IMACA and RepairPal certified mechanics with 50+ years of combined experience serving Mauldin and Greenville SC since 2013.">
+
+  <!-- ════════════ PAGE HERO ════════════ -->
+  <section class="page-hero section-dark grain mesh-bg">
+    <div class="container">
+      <span class="hero-tag badge">Since 2013</span>
+      <h1 class="hero-title page-title">Built on <span class="text-gradient-gold">Trust</span></h1>
+      <p class="hero-sub">More than just quality repairs. We are here to build lasting relationships with every family we serve in the Upstate.</p>
+    </div>
+  </section>
+
+  <!-- ════════════ STORY ════════════ -->
+  <section class="section-light section-padding">
+    <div class="container">
+      <div class="grid-asymmetric" data-animate="fade-up">
+        <div>
+          <span class="section-tag">Our Story</span>
+          <h2>From One Shop to <span class="text-gradient-purple">Two Locations</span></h2>
+          <p style="margin-block: var(--space-3);">Sarks Automotive was founded in 2013 with a simple belief: auto repair should be honest, expert, and backed by a real guarantee. In an industry where trust can be hard to find, we set out to be different.</p>
+          <p>Our team of ASE, IMACA, and RepairPal certified technicians brings over 50 years of combined experience to every vehicle we touch. We work on most makes and models, and every repair comes with our 12-month / 12,000-mile warranty on parts and labor.</p>
+          <p style="margin-block-start: var(--space-2);">What started in Mauldin has grown to serve Greenville as well, but our commitment remains the same: treat every customer like family, explain every repair before starting work, and stand behind everything we do.</p>
+        </div>
+        <div class="img-zoom" data-animate="fade-left">
+          <img src="https://le-cdn.hibuwebsites.com/7610d4966731467fa1cef0b6adfbe67a/dms3rep/multi/opt/sarks-automotive-content-home-1920w.jpg" alt="Sarks Automotive team of certified technicians in Greenville SC" width="600" height="400" loading="lazy" decoding="async" style="border-radius: var(--radius-lg);" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ STATS ════════════ -->
+  <section class="section-deep section-padding">
+    <div class="container">
+      <div class="about-stats" data-animate="stagger">
+        <div class="stat-block" data-stat>
+          <span class="stat-number" data-counter="50" data-suffix="+">0</span>
+          <span class="stat-label">Years Combined Experience</span>
+          <span class="stat-context" data-text="Decades of expertise in every repair">Decades of expertise in every repair</span>
+        </div>
+        <div class="stat-block" data-stat>
+          <span class="stat-number" data-counter="3">0</span>
+          <span class="stat-label">Industry Certifications</span>
+          <span class="stat-context" data-text="ASE, IMACA, and RepairPal certified">ASE, IMACA, and RepairPal certified</span>
+        </div>
+        <div class="stat-block" data-stat>
+          <span class="stat-number" data-counter="2">0</span>
+          <span class="stat-label">SC Locations</span>
+          <span class="stat-context" data-text="Mauldin and Greenville, close to you">Mauldin and Greenville, close to you</span>
+        </div>
+        <div class="stat-block" data-stat>
+          <span class="stat-number" data-counter="12" data-suffix="mo">0</span>
+          <span class="stat-label">Parts & Labor Warranty</span>
+          <span class="stat-context" data-text="Backed by 12,000 miles of coverage">Backed by 12,000 miles of coverage</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ TIMELINE ════════════ -->
+  <section class="section-light section-padding">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Our Journey</span>
+        <h2>Milestones That <span class="text-gradient-purple">Matter</span></h2>
+      </div>
+
+      <div class="timeline-container" data-timeline data-animate="fade-up">
+        <svg class="timeline-line-bg" aria-hidden="true" width="2" height="100%" preserveAspectRatio="none">
+          <line x1="1" y1="0" x2="1" y2="100%" stroke="oklch(0.35 0.05 300 / 0.15)" stroke-width="2"/>
+        </svg>
+        <svg class="timeline-line-progress" aria-hidden="true" width="2" height="100%" preserveAspectRatio="none">
+          <line x1="1" y1="0" x2="1" y2="100%" stroke="var(--color-secondary)" stroke-width="2"/>
+        </svg>
+
+        {milestones.map((m) => (
+          <div class="timeline-step">
+            <div class="timeline-dot"></div>
+            <span class="timeline-step-number">{m.year}</span>
+            <h3>{m.title}</h3>
+            <p>{m.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ VALUES ════════════ -->
+  <section class="section-dark section-padding grain">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag" style="color: var(--color-secondary);">Our Values</span>
+        <h2>What <span class="text-gradient-gold">Drives Us</span></h2>
+      </div>
+
+      <div class="grid-two-col" data-animate="stagger">
+        {values.map((v) => (
+          <div class="value-card card-dark">
+            <div class="value-icon">
+              {v.icon === "eye" && <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>}
+              {v.icon === "award" && <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>}
+              {v.icon === "heart" && <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>}
+              {v.icon === "home" && <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>}
+            </div>
+            <h3>{v.title}</h3>
+            <p>{v.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ CERTIFICATIONS ════════════ -->
+  <section class="section-deep section-padding">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag" style="color: var(--color-secondary);">Credentials</span>
+        <h2>Triple <span class="text-gradient-gold">Certified</span></h2>
+        <p class="section-intro">Our certifications are not just badges. Each represents rigorous testing, ongoing education, and a commitment to the highest industry standards.</p>
+      </div>
+
+      <div class="grid-features" data-animate="stagger">
+        <div class="cert-card card-dark">
+          <span class="cert-badge cert-animate">ASE</span>
+          <h3>Automotive Service Excellence</h3>
+          <p>The gold standard in automotive technician certification. ASE-certified mechanics have proven their knowledge through rigorous national testing.</p>
+        </div>
+        <div class="cert-card card-dark">
+          <span class="cert-badge cert-animate">IMACA</span>
+          <h3>Independent Motor & Auto Care Alliance</h3>
+          <p>IMACA membership connects us to a network of independent shops committed to best practices, fair pricing, and customer advocacy.</p>
+        </div>
+        <div class="cert-card card-dark">
+          <span class="cert-badge cert-animate">RepairPal</span>
+          <h3>RepairPal Certified</h3>
+          <p>RepairPal certification means verified fair pricing, quality repairs, and access to a nationwide warranty network for your peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ CTA ════════════ -->
+  <section class="cta-full">
+    <div class="container">
+      <h2>Experience the <span class="shimmer-gold">Sarks Difference</span></h2>
+      <p>Visit either of our locations and see why families across the Upstate trust us with their vehicles.</p>
+      <a href="/contact/" class="btn btn-primary" data-magnetic>Schedule Your Visit</a>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding-block: 10rem 5rem;
+    text-align: center;
+  }
+
+  .page-hero .hero-title { font-size: var(--text-h1); margin-block: var(--space-3); }
+  .page-hero .hero-sub { max-width: 50ch; margin-inline: auto; }
+
+  .about-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+
+    @media (min-width: 768px) { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  .value-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .value-icon {
+    width: 3rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    background: oklch(0.78 0.15 85 / 0.08);
+    border-radius: var(--radius-md);
+  }
+
+  .value-card h3 { font-size: var(--text-h3); }
+  .value-card p { color: var(--color-text-muted); font-size: var(--text-small); }
+
+  .cert-card {
+    text-align: center;
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .cert-card .cert-badge { margin-block-end: var(--space-2); font-size: var(--text-small); }
+  .cert-card h3 { font-size: var(--text-h3); margin-block-end: var(--space-2); }
+  .cert-card p { color: var(--color-text-muted); font-size: var(--text-small); }
+
+  .section-header { text-align: center; margin-block-end: var(--space-8); }
+  .section-intro { max-width: 50ch; margin-inline: auto; color: var(--color-text-muted); margin-block-start: var(--space-2); }
+  .section-header h2 { margin-block-start: var(--space-2); }
+
+  .cta-full {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    padding-block: var(--space-8); text-align: center; color: var(--color-text-light);
+  }
+  .cta-full h2 { margin-block-end: var(--space-2); }
+  .cta-full p { max-width: 50ch; margin-inline: auto; color: oklch(1 0 0 / 0.7); margin-block-end: var(--space-4); }
+</style>

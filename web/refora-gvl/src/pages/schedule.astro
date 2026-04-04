@@ -1,0 +1,107 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Schedule" description="View our weekly Pilates, Reformer, and Yoga class schedule at Refora Greenville. Book your spot today.">
+  <Header />
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="hero-tag text-label">Class Schedule</span>
+      <h1 class="hero-title">Find Your Rhythm</h1>
+      <p class="hero-sub">Browse our weekly classes and book the sessions that fit your life. All levels welcome.</p>
+    </div>
+  </section>
+
+  <!-- Live Schedule CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="schedule-app-cta" data-animate="fade-up">
+        <div class="card" style="text-align: center; padding: var(--space-8);">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-secondary)" stroke-width="1.5" style="margin-inline: auto; margin-block-end: var(--space-3);">
+            <rect x="8" y="6" width="32" height="36" rx="4"/><path d="M16 2v8"/><path d="M32 2v8"/><path d="M8 18h32"/><rect x="14" y="24" width="6" height="6" rx="1"/><rect x="28" y="24" width="6" height="6" rx="1"/><rect x="14" y="32" width="6" height="6" rx="1"/>
+          </svg>
+          <h3>Live Class Schedule</h3>
+          <p class="text-muted" style="max-width: 45ch; margin-inline: auto;">Download the Refora app for our live class schedule, real-time availability, and instant booking.</p>
+          <div style="display: flex; gap: var(--space-2); justify-content: center; flex-wrap: wrap; margin-block-start: var(--space-4);">
+            <a href="#" class="btn btn--gold" data-magnetic>Download the App</a>
+            <a href="/contact/" class="btn btn--secondary">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Class Types Overview -->
+      <div class="schedule-classes" data-animate="stagger" style="margin-block-start: var(--space-8);">
+        <span class="section-tag">What We Offer</span>
+        <h3 style="margin-block-end: var(--space-4);">Class Types</h3>
+        <div class="schedule-types-grid">
+          <div class="card card--gold-accent">
+            <h4>Reformer Pilates</h4>
+            <p class="text-muted">Full-body conditioning on spring-loaded reformer machines. All levels welcome.</p>
+          </div>
+          <div class="card card--gold-accent">
+            <h4>Mat Pilates</h4>
+            <p class="text-muted">Core-focused bodyweight training using classical Pilates principles.</p>
+          </div>
+          <div class="card card--gold-accent">
+            <h4>Yoga Flow</h4>
+            <p class="text-muted">Dynamic vinyasa sequences linking breath with movement.</p>
+          </div>
+          <div class="card card--gold-accent">
+            <h4>Private Sessions</h4>
+            <p class="text-muted">One-on-one instruction tailored to your individual goals.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-hours text-center" data-animate="fade-up" style="margin-block-start: var(--space-6);">
+        <p class="text-muted" style="font-size: var(--text-small);">
+          Studio Hours: Monday–Friday 5AM–5PM · Saturday–Sunday 10AM–2PM
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section mesh-dark grain text-center" data-animate="scale-in">
+    <div class="container">
+      <h2>Ready to Book?</h2>
+      <p style="color: var(--color-text-light-muted); max-width: 50ch; margin-inline: auto; margin-block-end: var(--space-4);">Download the Refora app or contact us to reserve your spot.</p>
+      <div style="display: flex; gap: var(--space-2); justify-content: center; flex-wrap: wrap;">
+        <a href="/membership/" class="btn btn--gold" data-magnetic>Join the Movement</a>
+        <a href="/contact/" class="btn btn--secondary" style="color: var(--color-text-light); border-color: rgba(245,240,235,0.3);">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+  <script src="../scripts/animations.js"></script>
+  <script src="../scripts/experiences.js"></script>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding-block: calc(var(--space-16) + var(--space-8)) var(--space-8);
+    text-align: center;
+  }
+
+  .page-hero .hero-sub {
+    font-size: var(--text-h4);
+    color: var(--color-text-muted);
+    max-width: 55ch;
+    margin-inline: auto;
+    margin-block-start: var(--space-2);
+  }
+
+  .schedule-types-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
