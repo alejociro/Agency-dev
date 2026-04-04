@@ -1,0 +1,158 @@
+{
+  "cliente": "Servi Taxes LLC",
+  "url_auditada": "https://contabilidad.servi-taxes.com/",
+  "sector": "Contabilidad y servicios de impuestos",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO 55, UX 60, Marketing 60, Contenido 65, Técnico 50. Servi Taxes es un servicio contable local en Greenville, SC orientado a hispanos. Benchmark de servicio local profesional aplica.",
+  "fecha": "2026-04-04",
+  "scores": {
+    "seo": 30,
+    "ux_ui": 38,
+    "marketing": 42,
+    "contenido": 35,
+    "tecnico": 28,
+    "total": 34.6
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title y description presentes con keyword 'contabilidad'",
+        "CTAs con verbo de acción claro: 'Agende una cita'",
+        "Imágenes tienen alt text descriptivo en cada sección"
+      ],
+      "negativos": [
+        "No hay H1 visible en el hero — el título está vacío, solo texto suelto",
+        "No hay estructura de headings jerárquica (H1→H2→H3) detectada",
+        "Sitio renderizado por JS (Nuxt/Vue) — no crawleable por bots sin JS rendering",
+        "Keywords genéricas sin localización fuerte (falta 'Greenville SC' en meta title)",
+        "Sin favicon detectado"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar H1 con keyword principal: 'Contabilidad y Taxes en Greenville SC — Servi Taxes'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Incluir 'Greenville SC' en meta title y description para SEO local", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar estructura de headings jerárquica H1→H2→H3 en todas las secciones", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Migrar a sitio estático/SSR para permitir crawling sin JS", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar favicon con el logo de la marca", "prioridad": "baja", "tipo": "quick_win" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta definida con verde primario y azul secundario coherentes con la marca",
+        "Tipografía Lato legible para contenido en español",
+        "Uso de iconos SVG para representar los tres pilares de servicio"
+      ],
+      "negativos": [
+        "Exceso de colores secundarios (10+ colores en 'otros') sin jerarquía clara",
+        "No hay navegación principal — solo un CTA y un anchor, usuario no puede explorar",
+        "Hero sin título visible genera confusión sobre qué ofrece el negocio al llegar",
+        "Secciones se repiten visualmente (misma imagen de fondo en servicios, diferenciadores y calidad)",
+        "Múltiples tipografías alternativas (Open Sans, Montserrat, Roboto) sin propósito claro"
+      ],
+      "recomendaciones": [
+        { "accion": "Reducir paleta a 3 colores principales + neutros, eliminar colores sin uso funcional", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar navegación principal con links a: Servicios, Cómo Trabajamos, Testimonios, Contacto", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Diseñar hero con headline grande y visible sobre la propuesta de valor", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Unificar tipografía a máximo 2 familias: una para títulos y otra para cuerpo", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Propuesta de valor clara: tranquilidad con cuentas organizadas y más tiempo para el negocio",
+        "CTA principal con verbo de acción específico: 'Agende una cita'",
+        "Tres pilares de servicio bien definidos: contabilidad, asesoría, declaración de taxes"
+      ],
+      "negativos": [
+        "Sección de testimonios tiene header pero no incluye testimonios reales",
+        "Sin prueba social concreta: no hay números, clientes atendidos, ni testimonios",
+        "Sin diferenciador claro frente a competidores — mensajes genéricos como 'servicio de calidad'",
+        "Sin urgencia ni oferta — nada motiva a agendar ahora vs después",
+        "Redes sociales apuntan a URLs genéricas (facebook.com) no a perfiles del negocio"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar 3-5 testimonios reales de clientes con nombre y tipo de negocio", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Incluir números de prueba social: años de experiencia, clientes atendidos, etc.", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar diferenciador concreto: bilingüe, especialización en sector, precios transparentes", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Configurar URLs reales de redes sociales del negocio", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Contenido en español dirigido correctamente al público hispano",
+        "Información de contacto presente: teléfono, email y dirección física",
+        "Servicios explicados con beneficios específicos (menos ansiedad, menos impuestos)"
+      ],
+      "negativos": [
+        "Errores ortográficos múltiples: 'desciones', 'Tranquiliad', 'Conosca', 'excatamente', 'pliares'",
+        "Sin sección de FAQ ni resolución de objeciones comunes",
+        "Sin horarios de atención publicados",
+        "Textos repetitivos — la misma idea de 'organizar cuentas' se repite en 4 secciones",
+        "Contenido de testimonios anunciado pero vacío"
+      ],
+      "recomendaciones": [
+        { "accion": "Corregir todos los errores ortográficos en textos del sitio", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar sección de FAQ con preguntas frecuentes sobre contabilidad y taxes", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Publicar horarios de atención", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Diversificar el contenido de cada sección para evitar repetición del mismo mensaje", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Stack moderno: Nuxt.js (Vue) con CDN para imágenes",
+        "Integración de pagos con Stripe presente",
+        "reCAPTCHA Enterprise para protección de formularios"
+      ],
+      "negativos": [
+        "Sitio 100% renderizado por JS — penalización SEO severa para un servicio local",
+        "Hospedado en HighLevel/LeadConnector — plataforma de marketing, no optimizada para web pública",
+        "Sin formulario de contacto visible en la página principal",
+        "Dependencia total de plataforma tercera — sin control de stack ni optimización",
+        "Sin evidencia de responsive/mobile-first en la estructura"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a sitio estático con HTML + Tailwind para máxima velocidad y SEO", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar formulario de contacto directo en la página principal", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar diseño mobile-first con breakpoints claros", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Integrar WhatsApp como canal de contacto directo", "prioridad": "media", "tipo": "quick_win" }
+      ],
+      "stack_actual": "Nuxt.js (Vue.js), HighLevel (leadconnectorhq.com), Stripe, reCAPTCHA Enterprise",
+      "stack_recomendado": "HTML estático + Tailwind CSS + Alpine.js — sitio simple de servicio local que no necesita framework pesado",
+      "integraciones": ["Calendario de citas (agendar-cita)", "Stripe (pagos)", "reCAPTCHA Enterprise"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Corregir errores ortográficos en todos los textos del sitio",
+    "Agregar H1 con keyword principal incluyendo 'Greenville SC'",
+    "Incluir números de prueba social: años de experiencia, clientes atendidos",
+    "Reducir paleta de colores a 3 principales + neutros",
+    "Configurar URLs reales de redes sociales"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Corregir ortografía en todos los textos",
+      "Agregar H1 con keyword 'Contabilidad en Greenville SC'",
+      "Agregar navegación principal",
+      "Diseñar hero con headline visible",
+      "Reducir paleta de colores"
+    ],
+    "mes_1": [
+      "Migrar a sitio estático HTML + Tailwind para SEO y velocidad",
+      "Agregar testimonios reales de clientes",
+      "Crear sección FAQ",
+      "Agregar formulario de contacto directo",
+      "Implementar diseño mobile-first completo"
+    ],
+    "largo_plazo": [
+      "Integrar WhatsApp Business como canal",
+      "Configurar Google Business Profile optimizado",
+      "Crear contenido diferenciado por cada servicio (páginas individuales)",
+      "Implementar blog con contenido educativo sobre taxes e impuestos"
+    ]
+  },
+  "resumen_ejecutivo": "El sitio actual de Servi Taxes tiene un score de 34.6/100, significativamente por debajo del benchmark de 58 para servicios locales profesionales; los problemas más críticos son la falta de crawleabilidad por estar 100% renderizado en JS, ausencia de navegación principal, y contenido con errores ortográficos que daña la credibilidad profesional. La mayor oportunidad está en migrar a un sitio estático optimizado para SEO local, agregando prueba social real y una estructura de contenido que posicione a Servi Taxes como el contador de confianza para hispanos en Greenville. El próximo paso inmediato es construir un sitio nuevo con HTML + Tailwind, corrigiendo contenido, agregando navegación, testimonios y formulario de contacto.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["Alpine.js para interactividad ligera", "Formulario de contacto", "Integración WhatsApp"],
+    "justificacion": "Complejidad baja — sitio de servicio local con una sola página y pocas secciones. HTML estático + Tailwind ofrece máxima velocidad de carga, SEO perfecto sin JS rendering, y facilidad de mantenimiento. No necesita framework SPA."
+  }
+}

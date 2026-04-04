@@ -1,0 +1,279 @@
+/* BRIEF CREATIVO
+   Negocio    : Servi Taxes LLC
+   Sector     : Contabilidad y servicios de impuestos
+   Tono       : corporativo moderno (con calidez hispana)
+   Concepto   : "Tu tranquilidad financiera empieza aquí" — confianza profesional con cercanía cultural
+   Diferenciador visual: Hero con contador animado de números que se organizan,
+                         tarjetas de pilares con sombra verde sutil al hover,
+                         gradiente diagonal verde→azul como hilo conductor
+   Tipografía : Plus Jakarta Sans (display) + DM Sans (body)
+   Mood       : confiable · ordenado · cercano
+   Paleta base: Verde #37ca37 + Azul #188bf6 + Fondo #F9F9F9 + Texto #171210
+*/
+
+/* ===================================
+   DESIGN SYSTEM — SERVI TAXES LLC
+   =================================== */
+
+:root {
+  /* Paleta */
+  --color-primary:       #2db82d;
+  --color-primary-dark:  #1f8a1f;
+  --color-primary-light: #4fd94f;
+  --color-primary-glow:  rgba(45, 184, 45, 0.25);
+  --color-secondary:     #188bf6;
+  --color-secondary-dark:#1270cc;
+  --color-secondary-glow:rgba(24, 139, 246, 0.2);
+  --color-accent:        #e93d3d;
+  --color-bg:            #f7f8fa;
+
+  --color-surface:       #ffffff;
+  --color-surface-alt:   #f0f2f5;
+  --color-text:          #1a1c1e;
+  --color-text-muted:    #5a6270;
+  --color-text-light:    #8a92a0;
+  --color-border:        #e2e5ea;
+  --color-border-light:  #eef0f4;
+
+  /* Gradientes */
+  --gradient-primary:    linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  --gradient-hero:       linear-gradient(160deg, #1a2e1a 0%, #0f2233 60%, #121a2e 100%);
+  --gradient-surface:    linear-gradient(180deg, var(--color-bg) 0%, var(--color-surface-alt) 100%);
+
+  /* Espaciado (base 8px) */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-6: 3rem;
+  --space-8: 4rem;
+  --space-12: 6rem;
+  --space-16: 8rem;
+
+  /* Tipografía fluida */
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+  --text-hero:  clamp(2.8rem, 7vw, 5.5rem);
+  --text-h1:    clamp(2rem, 5vw, 3.5rem);
+  --text-h2:    clamp(1.5rem, 3vw, 2.5rem);
+  --text-h3:    clamp(1.2rem, 2vw, 1.75rem);
+  --text-body:  clamp(1rem, 1.2vw, 1.125rem);
+  --text-small: clamp(0.8rem, 1vw, 0.9rem);
+  --text-xs:    clamp(0.7rem, 0.8vw, 0.8rem);
+
+  /* Line heights */
+  --leading-tight: 1.1;
+  --leading-snug:  1.3;
+  --leading-body:  1.65;
+
+  /* Border radius */
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm:     0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md:     0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-lg:     0 12px 32px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.04);
+  --shadow-glow:   0 8px 30px var(--color-primary-glow);
+  --shadow-blue:   0 8px 30px var(--color-secondary-glow);
+
+  /* Secciones */
+  --section-padding:   clamp(4rem, 10vw, 8rem);
+  --container-max:     1200px;
+  --container-padding: clamp(1.25rem, 5vw, 2rem);
+
+  /* Transiciones */
+  --ease-out:   cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast: 200ms;
+  --duration-base: 400ms;
+  --duration-slow: 700ms;
+}
+
+/* ===================================
+   RESET & BASE
+   =================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  color: var(--color-text);
+}
+
+h1 { font-size: var(--text-h1); }
+h2 { font-size: var(--text-h2); }
+h3 { font-size: var(--text-h3); }
+
+p {
+  color: var(--color-text-muted);
+  max-width: 65ch;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-out);
+
+  &:hover {
+    color: var(--color-primary-dark);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===================================
+   UTILITY CLASSES
+   =================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.section {
+  padding-block: var(--section-padding);
+}
+
+.section--alt {
+  background: var(--color-surface-alt);
+}
+
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===================================
+   BUTTONS
+   =================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-small);
+  letter-spacing: 0.02em;
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--duration-base) var(--ease-out);
+  text-decoration: none;
+  line-height: 1;
+}
+
+.btn--primary {
+  background: var(--gradient-primary);
+  color: #fff;
+  box-shadow: var(--shadow-glow);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px var(--color-primary-glow);
+    color: #fff;
+  }
+}
+
+.btn--secondary {
+  background: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-border);
+
+  &:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+  }
+}
+
+.btn--white {
+  background: #fff;
+  color: var(--color-text);
+  box-shadow: var(--shadow-sm);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    color: var(--color-text);
+  }
+}
+
+.btn--lg {
+  padding: 1.125rem 2.5rem;
+  font-size: var(--text-body);
+}
+
+/* ===================================
+   CARDS
+   =================================== */
+
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border-light);
+  transition: all var(--duration-base) var(--ease-out);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+.card--glow:hover {
+  box-shadow: var(--shadow-glow);
+  border-color: rgba(45, 184, 45, 0.2);
+}
+
+/* ===================================
+   REDUCED MOTION
+   =================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
