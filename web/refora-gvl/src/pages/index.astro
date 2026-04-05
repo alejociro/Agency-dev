@@ -112,6 +112,16 @@ import Footer from '../components/Footer.astro';
        PHILOSOPHY — Reform. Recharge. Repeat.
        ═══════════════════════════════════════ -->
   <section class="section philosophy-section mesh-dark grain" id="philosophy">
+    <div class="philosophy__bg-image" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=1400&h=800&fit=crop&q=60"
+        alt=""
+        width="1400"
+        height="800"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
     <div class="container">
       <div class="philosophy__content text-center" data-animate="stagger">
         <span class="section-tag">Our Philosophy</span>
@@ -239,54 +249,102 @@ import Footer from '../components/Footer.astro';
         </div>
 
         <div data-tab-panel="reformer" class="is-active">
-          <div class="class-detail">
-            <h3>Reformer Pilates</h3>
-            <p>Full-body conditioning on the Pilates reformer machine. Build long, lean strength through controlled, spring-loaded resistance. Suitable for all levels with modifications offered throughout.</p>
-            <div class="class-detail__meta">
-              <span>~50 min</span>
-              <span>All Levels</span>
-              <span>Max 12 per class</span>
+          <div class="class-detail class-detail--with-image">
+            <div class="class-detail__image img-editorial img-warm-overlay">
+              <img
+                src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=560&h=380&fit=crop"
+                alt="Reformer Pilates class in a light-filled studio"
+                width="560"
+                height="380"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
-            <a href="/schedule/" class="btn btn--primary" data-magnetic>Book a Class</a>
+            <div class="class-detail__info">
+              <h3>Reformer Pilates</h3>
+              <p>Full-body conditioning on the Pilates reformer machine. Build long, lean strength through controlled, spring-loaded resistance. Suitable for all levels with modifications offered throughout.</p>
+              <div class="class-detail__meta">
+                <span>~50 min</span>
+                <span>All Levels</span>
+                <span>Max 12 per class</span>
+              </div>
+              <a href="/schedule/" class="btn btn--primary" data-magnetic>Book a Class</a>
+            </div>
           </div>
         </div>
 
         <div data-tab-panel="mat">
-          <div class="class-detail">
-            <h3>Mat Pilates</h3>
-            <p>Core-focused bodyweight training on the mat. Strengthen your center, improve posture, and develop body awareness using classical Pilates principles adapted for modern practice.</p>
-            <div class="class-detail__meta">
-              <span>~45 min</span>
-              <span>All Levels</span>
-              <span>Props provided</span>
+          <div class="class-detail class-detail--with-image">
+            <div class="class-detail__image img-editorial img-warm-overlay">
+              <img
+                src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=560&h=380&fit=crop"
+                alt="Mat Pilates session on warm wood floors"
+                width="560"
+                height="380"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
-            <a href="/schedule/" class="btn btn--primary" data-magnetic>Book a Class</a>
+            <div class="class-detail__info">
+              <h3>Mat Pilates</h3>
+              <p>Core-focused bodyweight training on the mat. Strengthen your center, improve posture, and develop body awareness using classical Pilates principles adapted for modern practice.</p>
+              <div class="class-detail__meta">
+                <span>~45 min</span>
+                <span>All Levels</span>
+                <span>Props provided</span>
+              </div>
+              <a href="/schedule/" class="btn btn--primary" data-magnetic>Book a Class</a>
+            </div>
           </div>
         </div>
 
         <div data-tab-panel="yoga">
-          <div class="class-detail">
-            <h3>Yoga Flow</h3>
-            <p>Dynamic vinyasa sequences that link breath with movement. Build flexibility, find calm, and develop a sustainable practice that complements your Pilates training.</p>
-            <div class="class-detail__meta">
-              <span>~60 min</span>
-              <span>All Levels</span>
-              <span>Mats provided</span>
+          <div class="class-detail class-detail--with-image">
+            <div class="class-detail__image img-editorial img-warm-overlay">
+              <img
+                src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=560&h=380&fit=crop"
+                alt="Yoga flow class with natural lighting"
+                width="560"
+                height="380"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
-            <a href="/schedule/" class="btn btn--primary" data-magnetic>Book a Class</a>
+            <div class="class-detail__info">
+              <h3>Yoga Flow</h3>
+              <p>Dynamic vinyasa sequences that link breath with movement. Build flexibility, find calm, and develop a sustainable practice that complements your Pilates training.</p>
+              <div class="class-detail__meta">
+                <span>~60 min</span>
+                <span>All Levels</span>
+                <span>Mats provided</span>
+              </div>
+              <a href="/schedule/" class="btn btn--primary" data-magnetic>Book a Class</a>
+            </div>
           </div>
         </div>
 
         <div data-tab-panel="private">
-          <div class="class-detail">
-            <h3>Private Sessions</h3>
-            <p>One-on-one instruction tailored to your individual goals. Whether recovering from injury, preparing for an event, or deepening your practice, private sessions offer focused attention and customized programming.</p>
-            <div class="class-detail__meta">
-              <span>~55 min</span>
-              <span>Personalized</span>
-              <span>By appointment</span>
+          <div class="class-detail class-detail--with-image">
+            <div class="class-detail__image img-editorial img-warm-overlay">
+              <img
+                src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=560&h=380&fit=crop"
+                alt="Private one-on-one Pilates instruction"
+                width="560"
+                height="380"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
-            <a href="/contact/" class="btn btn--primary" data-magnetic>Inquire Now</a>
+            <div class="class-detail__info">
+              <h3>Private Sessions</h3>
+              <p>One-on-one instruction tailored to your individual goals. Whether recovering from injury, preparing for an event, or deepening your practice, private sessions offer focused attention and customized programming.</p>
+              <div class="class-detail__meta">
+                <span>~55 min</span>
+                <span>Personalized</span>
+                <span>By appointment</span>
+              </div>
+              <a href="/contact/" class="btn btn--primary" data-magnetic>Inquire Now</a>
+            </div>
           </div>
         </div>
       </div>
@@ -322,17 +380,56 @@ import Footer from '../components/Footer.astro';
   <!-- ═══════════════════════════════════════
        COMMUNITY — Philosophy Quote + CTA
        ═══════════════════════════════════════ -->
-  <section class="section community-section mesh-warm" id="community">
-    <div class="container container--narrow text-center" data-animate="fade-up">
-      <span class="section-tag">Our Community</span>
-      <blockquote class="pull-quote" style="border: none; padding: 0; text-align: center; margin-inline: auto;">
-        "More than a studio, Refora is a local experience. A place to meet friends after class, linger over coffee, reconnect with yourself, and feel part of something meaningful."
-      </blockquote>
-      <div class="divider--dots" aria-hidden="true" style="justify-content: center; margin-block: var(--space-4);">
-        <span></span>
+  <section class="section community-section" id="community">
+    <div class="community__bg" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1524863479829-916d8e77db11?w=1400&h=800&fit=crop"
+        alt=""
+        width="1400"
+        height="800"
+        loading="lazy"
+        decoding="async"
+      />
+      <div class="community__overlay"></div>
+    </div>
+    <div class="container" data-animate="fade-up">
+      <div class="community__grid">
+        <div class="community__images hide-mobile" data-animate="fade-right">
+          <div class="community__img-stack">
+            <div class="img-editorial img-warm-overlay">
+              <img
+                src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=400&h=500&fit=crop"
+                alt="Friends connecting at the studio after a Pilates class"
+                width="400"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="img-editorial img-warm-overlay community__img-offset">
+              <img
+                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=320&h=400&fit=crop"
+                alt="Healthy coffee and smoothie at Reform Cafe"
+                width="320"
+                height="400"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="community__content text-center" data-animate="fade-left" data-delay="200">
+          <span class="section-tag" style="justify-content: center;">Our Community</span>
+          <blockquote class="pull-quote community__quote">
+            "More than a studio, Refora is a local experience. A place to meet friends after class, linger over coffee, reconnect with yourself, and feel part of something meaningful."
+          </blockquote>
+          <div class="divider--dots" aria-hidden="true" style="justify-content: center; margin-block: var(--space-4);">
+            <span></span>
+          </div>
+          <p class="text-muted" style="margin-inline: auto;">We believe progress is not about extremes. It is about showing up consistently, being supported, and enjoying the process along the way.</p>
+          <a href="/membership/" class="btn btn--gold" data-magnetic style="margin-block-start: var(--space-4);">Join the Community</a>
+        </div>
       </div>
-      <p class="text-muted" style="margin-inline: auto;">We believe progress is not about extremes. It is about showing up consistently, being supported, and enjoying the process along the way.</p>
-      <a href="/membership/" class="btn btn--gold" data-magnetic style="margin-block-start: var(--space-4);">Join the Community</a>
     </div>
   </section>
 
@@ -581,11 +678,34 @@ import Footer from '../components/Footer.astro';
   /* ═══════════════════════════════════════
      PHILOSOPHY
      ═══════════════════════════════════════ */
+  .philosophy-section {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .philosophy__bg-image {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .philosophy__bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.08;
+    filter: grayscale(0.6);
+    mix-blend-mode: luminosity;
+  }
+
   .philosophy__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var(--space-4);
+    position: relative;
+    z-index: 1;
   }
 
   .philosophy__title {
@@ -697,6 +817,36 @@ import Footer from '../components/Footer.astro';
     max-width: 600px;
   }
 
+  .class-detail--with-image {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+  }
+
+  .class-detail__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 3 / 2;
+  }
+
+  .class-detail__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .class-detail__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
   .class-detail__meta {
     display: flex;
     flex-wrap: wrap;
@@ -734,6 +884,75 @@ import Footer from '../components/Footer.astro';
   /* ═══════════════════════════════════════
      COMMUNITY
      ═══════════════════════════════════════ */
+  .community-section {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .community__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .community__bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.07;
+    filter: grayscale(0.5);
+  }
+
+  .community__overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 15% 80%, rgba(196, 169, 125, 0.15) 0%, transparent 50%),
+      radial-gradient(ellipse at 85% 20%, rgba(139, 125, 107, 0.1) 0%, transparent 50%),
+      var(--color-bg);
+    opacity: 0.92;
+  }
+
+  .community__grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    align-items: center;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1.2fr;
+      gap: var(--space-8);
+    }
+  }
+
+  .community__img-stack {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: var(--space-3);
+    align-items: end;
+  }
+
+  .community__img-offset {
+    margin-block-end: var(--space-6);
+  }
+
+  .community__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    align-items: center;
+  }
+
+  .community__quote {
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin-inline: auto;
+    font-size: var(--text-h3);
+  }
 
   /* ═══════════════════════════════════════
      CTA FULL

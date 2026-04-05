@@ -453,6 +453,18 @@
   border-block-end: 1px solid var(--color-border);
 }
 
+.section-dark .faq-item {
+  border-block-end-color: rgba(250, 248, 245, 0.12);
+}
+
+.section-dark .faq-content-inner {
+  color: var(--color-text-light-muted);
+}
+
+.section-dark .faq-icon {
+  color: var(--color-secondary);
+}
+
 .faq-trigger {
   width: 100%;
   display: flex;
@@ -465,7 +477,7 @@
   font-family: 'Outfit', sans-serif;
   font-size: var(--text-body);
   font-weight: 500;
-  color: var(--color-text);
+  color: inherit;
   text-align: start;
   transition: color var(--duration-fast) ease;
 

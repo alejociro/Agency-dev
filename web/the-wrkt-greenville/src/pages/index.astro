@@ -36,7 +36,16 @@ import '../styles/animations.css';
 <!-- ===== HERO ===== -->
 <section id="hero" class="hero" data-label="Home">
   <div class="hero-bg-wrap">
-    <div class="hero-gradient"></div>
+    <img
+      src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1920&q=80&auto=format&fit=crop"
+      alt="Reformer Pilates studio with natural light and equipment"
+      class="hero-bg-img"
+      width="1920"
+      height="1080"
+      fetchpriority="high"
+      decoding="async"
+    />
+    <div class="hero-overlay"></div>
     <!-- Breathing pulse rings — Pilates breathing rhythm -->
     <div class="hero-breath" aria-hidden="true">
       <div class="breath-ring breath-ring-core"></div>
@@ -45,13 +54,13 @@ import '../styles/animations.css';
     </div>
   </div>
 
-  <div class="container hero-content">
+  <div class="container hero-content hero-content--dark">
     <span class="hero-tag text-label">Reformer Pilates Studio — Greenville, SC</span>
     <h1 class="hero-title text-hero" data-split>The wrkt you've been waiting for.</h1>
     <p class="hero-sub">Unlimited Reformer Pilates classes with flexible memberships.<br>Sculpt, strengthen, and move with precision.</p>
     <div class="hero-cta">
       <a href="#memberships" class="btn btn-primary btn-lg" data-magnetic>Book Your First Class</a>
-      <a href="#about" class="btn btn-outline">Explore The Training <span aria-hidden="true">&darr;</span></a>
+      <a href="#about" class="btn btn-outline-light">Explore The Training <span aria-hidden="true">&darr;</span></a>
     </div>
     <div class="hero-proof">
       <div class="proof-item">
@@ -368,21 +377,30 @@ import '../styles/animations.css';
             <img
               src="https://images.squarespace-cdn.com/content/v1/67ee985553c8e90522ea9bc8/72a2409e-2c38-42ed-ba2c-1c73b747562e/TheWrkt_62.jpg?format=1500w"
               alt="The WRKT Greenville studio interior"
+              width="800"
+              height="500"
               loading="lazy"
+              decoding="async"
             />
           </div>
           <div class="tour-slide" aria-hidden="true">
             <img
               src="https://images.squarespace-cdn.com/content/v1/67ee985553c8e90522ea9bc8/1bb04f92-910a-478d-8ded-b6fb50c3ecf2/2.png?format=1500w"
               alt="Reformer Pilates equipment at The WRKT"
+              width="800"
+              height="500"
               loading="lazy"
+              decoding="async"
             />
           </div>
           <div class="tour-slide" aria-hidden="true">
             <img
-              src="https://images.squarespace-cdn.com/content/v1/67ee985553c8e90522ea9bc8/72a2409e-2c38-42ed-ba2c-1c73b747562e/TheWrkt_62.jpg?format=1000w"
-              alt="The WRKT community and classes"
+              src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=1200&q=80&auto=format&fit=crop"
+              alt="Reformer Pilates class in progress with instructor"
+              width="800"
+              height="500"
               loading="lazy"
+              decoding="async"
             />
           </div>
           <div class="tour-controls">
@@ -450,6 +468,17 @@ import '../styles/animations.css';
           <h3>Multiple Locations</h3>
           <p>The WRKT is growing. Join our Greenville studio and be part of something bigger.</p>
         </div>
+      </div>
+      <div class="community-image" data-animate="curtain-up">
+        <img
+          src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e?w=1200&q=80&auto=format&fit=crop"
+          alt="Group of people enjoying a Reformer Pilates session together"
+          width="1200"
+          height="500"
+          loading="lazy"
+          decoding="async"
+          class="community-img"
+        />
       </div>
       <div class="community-cta">
         <a href="#memberships" class="btn btn-primary btn-lg" data-magnetic>Become a Member</a>
@@ -722,11 +751,16 @@ import '../styles/animations.css';
   font-size: 1.4rem;
   font-weight: 300;
   letter-spacing: 0.08em;
-  color: var(--color-text);
+  color: var(--color-text-light);
+  transition: color var(--duration-base) ease;
 
   & strong {
     font-weight: 700;
   }
+}
+
+.navbar.is-scrolled .logo-text {
+  color: var(--color-text);
 }
 
 .nav-menu {
@@ -740,7 +774,16 @@ import '../styles/animations.css';
   font-size: var(--text-small);
   font-weight: 500;
   letter-spacing: 0.03em;
+  color: var(--color-text-light);
+  transition: color var(--duration-base) ease;
+}
+
+.navbar.is-scrolled .nav-link {
   color: var(--color-text);
+}
+
+.navbar.is-scrolled .btn-nav {
+  color: var(--color-bg);
 }
 
 .btn-nav {
@@ -763,8 +806,12 @@ import '../styles/animations.css';
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--color-text);
+  background: var(--color-text-light);
   transition: all var(--duration-base) var(--ease-out-expo);
+}
+
+.navbar.is-scrolled .nav-toggle-bar {
+  background: var(--color-text);
 }
 
 .nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) {
@@ -800,6 +847,7 @@ import '../styles/animations.css';
 
   .nav-menu .nav-link {
     font-size: var(--text-h3);
+    color: var(--color-text);
   }
 
   .nav-toggle {
@@ -823,13 +871,22 @@ import '../styles/animations.css';
   z-index: 0;
 }
 
-.hero-gradient {
+.hero-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.hero-overlay {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 70% 30%, rgba(196, 149, 106, 0.12) 0%, transparent 50%),
-    radial-gradient(ellipse at 20% 80%, rgba(232, 213, 183, 0.15) 0%, transparent 50%),
-    var(--color-bg);
+    linear-gradient(180deg, rgba(26, 26, 26, 0.55) 0%, rgba(26, 26, 26, 0.7) 60%, rgba(26, 26, 26, 0.85) 100%),
+    radial-gradient(ellipse at 70% 30%, rgba(196, 149, 106, 0.15) 0%, transparent 50%);
+  z-index: 1;
 }
 
 .hero-breath {
@@ -840,17 +897,36 @@ import '../styles/animations.css';
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 
 .hero-breath .breath-ring {
   position: absolute;
+  border-color: rgba(232, 213, 183, 0.4);
+}
+
+.hero-breath .breath-ring-core {
+  background: rgba(196, 149, 106, 0.15);
+  border: none;
 }
 
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   padding-block-start: var(--space-16);
   max-width: 720px;
+}
+
+.hero-content--dark {
+  color: var(--color-text-light);
+}
+
+.hero-content--dark .hero-tag {
+  color: var(--color-secondary);
+}
+
+.hero-content--dark .text-hero {
+  color: var(--color-text-light);
 }
 
 .hero .text-hero {
@@ -859,7 +935,7 @@ import '../styles/animations.css';
 
 .hero-sub {
   font-size: clamp(1.05rem, 1.5vw, 1.25rem);
-  color: var(--color-text-muted);
+  color: var(--color-text-light-muted);
   margin-block-end: var(--space-6);
   max-width: 52ch;
 }
@@ -897,13 +973,13 @@ import '../styles/animations.css';
 
 .proof-label {
   font-size: var(--text-small);
-  color: var(--color-text-muted);
+  color: var(--color-text-light-muted);
 }
 
 .proof-divider {
   width: 1px;
   height: 32px;
-  background: var(--color-border);
+  background: rgba(250, 248, 245, 0.2);
 }
 
 .scroll-indicator {
@@ -911,12 +987,13 @@ import '../styles/animations.css';
   inset-block-end: var(--space-6);
   inset-inline-start: 50%;
   transform: translateX(-50%);
+  z-index: 2;
 }
 
 .scroll-line {
   width: 1px;
   height: 48px;
-  background: linear-gradient(to bottom, var(--color-accent), transparent);
+  background: linear-gradient(to bottom, var(--color-secondary), transparent);
   animation: scrollPulse 2s ease-in-out infinite;
 }
 
@@ -1372,6 +1449,21 @@ import '../styles/animations.css';
   & svg {
     margin-block-end: var(--space-1);
   }
+}
+
+.community-image {
+  margin-block: var(--space-6);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  max-height: 400px;
+}
+
+.community-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  display: block;
 }
 
 .community-cta {

@@ -1,7 +1,7 @@
 {
-  "negocio": "killian-auto-pros",
+  "negocio": "Killian Auto Pros",
   "url_produccion": "https://killian-auto-pros.vercel.app",
-  "fecha_deploy": "2026-04-03",
+  "fecha_deploy": "2026-04-05",
   "stack": "astro",
-  "carpeta_origen": "web/killian-auto-pros/"
+  "carpeta_origen": "web/killian-auto-pros"
 }
