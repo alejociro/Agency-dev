@@ -23,7 +23,7 @@ import Footer from '../components/Footer.astro';
           <div class="contact-info__block">
             <h3>Visit Us</h3>
             <p>Greenville, SC</p>
-            <span data-open-status style="margin-block-start: var(--space-1);"></span>
+            <span data-open-status class="contact-status-badge"></span>
           </div>
 
           <div class="contact-info__block">
@@ -96,13 +96,13 @@ import Footer from '../components/Footer.astro';
   </section>
 
   <!-- Map -->
-  <section class="section" style="padding-block-start: 0;" data-animate="fade-up">
+  <section class="section contact-map-section" data-animate="fade-up">
     <div class="container">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104687.08225682442!2d-82.45!3d34.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88578f526aa0d3d3%3A0x907f05eb0b4cd3c!2sGreenville%2C%20SC!5e0!3m2!1sen!2sus!4v1"
         width="1200"
         height="400"
-        style="border:0; border-radius: var(--radius-lg); width: 100%; min-height: 350px;"
+        class="contact-map-iframe"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
@@ -275,5 +275,20 @@ import Footer from '../components/Footer.astro';
   .form-dialog__content p {
     color: var(--color-text-muted);
     margin-inline: auto;
+  }
+
+  .contact-status-badge {
+    margin-block-start: var(--space-1);
+  }
+
+  .contact-map-section {
+    padding-block-start: 0;
+  }
+
+  .contact-map-iframe {
+    border: 0;
+    border-radius: var(--radius-lg);
+    width: 100%;
+    min-height: 350px;
   }
 </style>

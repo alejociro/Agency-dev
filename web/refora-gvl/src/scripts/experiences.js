@@ -217,6 +217,9 @@
     if (prefersReducedMotion) return;
 
     document.querySelectorAll('[data-split]').forEach((el) => {
+      /* Skip elements with child elements (e.g. brand-dot spans) to avoid destroying inner HTML */
+      if (el.querySelector('span, a, em, strong, svg')) return;
+
       const words = el.textContent.trim().split(/\s+/);
       el.innerHTML = words
         .map(

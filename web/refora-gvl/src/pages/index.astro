@@ -15,16 +15,18 @@ import Footer from '../components/Footer.astro';
     <div class="hero__split">
       <div class="hero__panel hero__panel--studio diagonal-clip-left grain">
         <div class="hero__panel-overlay"></div>
+        <span class="hero__panel-label hide-mobile" aria-hidden="true">Studio</span>
       </div>
       <div class="hero__panel hero__panel--cafe diagonal-clip-right">
         <div class="hero__panel-overlay hero__panel-overlay--warm"></div>
+        <span class="hero__panel-label hide-mobile" aria-hidden="true">Café</span>
       </div>
     </div>
 
     <div class="hero__content container">
       <span class="hero-tag text-label">Pilates · Yoga · Coffee — Greenville, SC</span>
 
-      <h1 class="hero-title text-display" data-split>
+      <h1 class="hero-title text-display">
         Re<span class="brand-dot brand-dot--animated"></span>for<span class="brand-dot brand-dot--animated"></span>a
       </h1>
 
@@ -109,57 +111,12 @@ import Footer from '../components/Footer.astro';
   </section>
 
   <!-- ═══════════════════════════════════════
-       PHILOSOPHY — Reform. Recharge. Repeat.
-       ═══════════════════════════════════════ -->
-  <section class="section philosophy-section mesh-dark grain" id="philosophy">
-    <div class="philosophy__bg-image" aria-hidden="true">
-      <img
-        src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=1400&h=800&fit=crop&q=60"
-        alt=""
-        width="1400"
-        height="800"
-        loading="lazy"
-        decoding="async"
-      />
-    </div>
-    <div class="container">
-      <div class="philosophy__content text-center" data-animate="stagger">
-        <span class="section-tag">Our Philosophy</span>
-        <h2 class="philosophy__title" data-split>Reform. Recharge. Repeat.</h2>
-        <div class="philosophy__pillars">
-          <div class="philosophy__pillar">
-            <div class="philosophy__icon">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><circle cx="24" cy="24" r="18"/><path d="M24 14v10l6 6"/></svg>
-            </div>
-            <h3>Reform</h3>
-            <p>Build strength, mobility, and awareness through intentional Pilates and yoga practices.</p>
-          </div>
-          <div class="philosophy__pillar">
-            <div class="philosophy__icon">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="M8 24c0-8.8 7.2-16 16-16s16 7.2 16 16"/><path d="M16 28c0 4.4 3.6 8 8 8s8-3.6 8-8"/><circle cx="24" cy="24" r="3"/></svg>
-            </div>
-            <h3>Recharge</h3>
-            <p>Fuel body and soul through community, movement, and thoughtfully crafted café offerings.</p>
-          </div>
-          <div class="philosophy__pillar">
-            <div class="philosophy__icon">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="M12 36c6-12 18-12 24 0"/><path d="M12 28c6-12 18-12 24 0" opacity="0.5"/><path d="M12 20c6-12 18-12 24 0" opacity="0.25"/></svg>
-            </div>
-            <h3>Repeat</h3>
-            <p>Real growth happens through rhythm, not rush. Consistency is the quiet engine of change.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
        DUAL EXPERIENCE — Studio + Café Cards
        ═══════════════════════════════════════ -->
   <section class="section dual-section" id="spaces">
     <div class="container">
       <div class="dual__header text-center" data-animate="fade-up">
-        <span class="section-tag">Two Spaces, One Ritual</span>
+        <span class="section-tag section-tag--centered">Two Spaces, One Ritual</span>
         <h2>Where Movement Meets Mindful Fuel</h2>
       </div>
 
@@ -224,6 +181,58 @@ import Footer from '../components/Footer.astro';
             <a href="/cafe/" class="btn btn--secondary">Visit the Café →</a>
           </div>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       PHILOSOPHY + COMMUNITY — Combined Dark Section
+       ═══════════════════════════════════════ -->
+  <section class="section philosophy-section mesh-dark grain" id="philosophy">
+    <div class="philosophy__bg-image" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=1400&h=800&fit=crop&q=60"
+        alt=""
+        width="1400"
+        height="800"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <div class="container">
+      <div class="philosophy__content text-center" data-animate="stagger">
+        <span class="section-tag">Our Philosophy</span>
+        <h2 class="philosophy__title" data-split>Reform. Recharge. Repeat.</h2>
+        <div class="philosophy__pillars">
+          <div class="philosophy__pillar">
+            <div class="philosophy__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><circle cx="24" cy="24" r="18"/><path d="M24 14v10l6 6"/></svg>
+            </div>
+            <h3>Reform</h3>
+            <p>Build strength, mobility, and awareness through intentional Pilates and yoga practices.</p>
+          </div>
+          <div class="philosophy__pillar">
+            <div class="philosophy__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="M8 24c0-8.8 7.2-16 16-16s16 7.2 16 16"/><path d="M16 28c0 4.4 3.6 8 8 8s8-3.6 8-8"/><circle cx="24" cy="24" r="3"/></svg>
+            </div>
+            <h3>Recharge</h3>
+            <p>Fuel body and soul through community, movement, and thoughtfully crafted café offerings.</p>
+          </div>
+          <div class="philosophy__pillar">
+            <div class="philosophy__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="M12 36c6-12 18-12 24 0"/><path d="M12 28c6-12 18-12 24 0" opacity="0.5"/><path d="M12 20c6-12 18-12 24 0" opacity="0.25"/></svg>
+            </div>
+            <h3>Repeat</h3>
+            <p>Real growth happens through rhythm, not rush. Consistency is the quiet engine of change.</p>
+          </div>
+        </div>
+
+        <!-- Community quote integrated into philosophy -->
+        <div class="divider--gradient philosophy__divider" aria-hidden="true"></div>
+        <blockquote class="pull-quote philosophy__quote">
+          "More than a studio, Refora is a local experience. A place to meet friends after class, linger over coffee, reconnect with yourself, and feel part of something meaningful."
+        </blockquote>
+        <a href="/membership/" class="btn btn--gold" data-magnetic>Join the Community</a>
       </div>
     </div>
   </section>
@@ -352,96 +361,34 @@ import Footer from '../components/Footer.astro';
   </section>
 
   <!-- ═══════════════════════════════════════
-       STATS — Impact Numbers
-       ═══════════════════════════════════════ -->
-  <section class="section stats-section" data-animate="stagger">
-    <div class="container">
-      <div class="stats__grid">
-        <div class="stats__item">
-          <span class="counter" data-counter data-target="2" data-suffix="">0</span>
-          <p>Light-filled Studios</p>
-        </div>
-        <div class="stats__item">
-          <span class="counter" data-counter data-target="30" data-suffix="+">0</span>
-          <p>Weekly Classes</p>
-        </div>
-        <div class="stats__item">
-          <span class="counter" data-counter data-target="4" data-suffix="">0</span>
-          <p>Class Formats</p>
-        </div>
-        <div class="stats__item">
-          <span class="counter" data-counter data-target="6" data-suffix=" days">0</span>
-          <p>Open Per Week</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
-       COMMUNITY — Philosophy Quote + CTA
-       ═══════════════════════════════════════ -->
-  <section class="section community-section" id="community">
-    <div class="community__bg" aria-hidden="true">
-      <img
-        src="https://images.unsplash.com/photo-1524863479829-916d8e77db11?w=1400&h=800&fit=crop"
-        alt=""
-        width="1400"
-        height="800"
-        loading="lazy"
-        decoding="async"
-      />
-      <div class="community__overlay"></div>
-    </div>
-    <div class="container" data-animate="fade-up">
-      <div class="community__grid">
-        <div class="community__images hide-mobile" data-animate="fade-right">
-          <div class="community__img-stack">
-            <div class="img-editorial img-warm-overlay">
-              <img
-                src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=400&h=500&fit=crop"
-                alt="Friends connecting at the studio after a Pilates class"
-                width="400"
-                height="500"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <div class="img-editorial img-warm-overlay community__img-offset">
-              <img
-                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=320&h=400&fit=crop"
-                alt="Healthy coffee and smoothie at Reform Cafe"
-                width="320"
-                height="400"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="community__content text-center" data-animate="fade-left" data-delay="200">
-          <span class="section-tag" style="justify-content: center;">Our Community</span>
-          <blockquote class="pull-quote community__quote">
-            "More than a studio, Refora is a local experience. A place to meet friends after class, linger over coffee, reconnect with yourself, and feel part of something meaningful."
-          </blockquote>
-          <div class="divider--dots" aria-hidden="true" style="justify-content: center; margin-block: var(--space-4);">
-            <span></span>
-          </div>
-          <p class="text-muted" style="margin-inline: auto;">We believe progress is not about extremes. It is about showing up consistently, being supported, and enjoying the process along the way.</p>
-          <a href="/membership/" class="btn btn--gold" data-magnetic style="margin-block-start: var(--space-4);">Join the Community</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
-       CTA — Full Width
+       STATS + CTA — Dark Impact Band
        ═══════════════════════════════════════ -->
   <section class="cta-full bleed-full" data-animate="scale-in">
     <div class="cta-full__inner">
-      <div class="container text-center">
-        <h2>Your First Class Is Waiting</h2>
-        <p>Experience the Refora difference. Join a community that shows up, supports each other, and savors every moment — on and off the reformer.</p>
-        <a href="/membership/" class="btn btn--gold" data-magnetic>Start Your Journey</a>
+      <div class="container">
+        <div class="stats__grid" data-animate="stagger">
+          <div class="stats__item">
+            <span class="counter counter--light" data-counter data-target="2" data-suffix="">0</span>
+            <p>Light-filled Studios</p>
+          </div>
+          <div class="stats__item">
+            <span class="counter counter--light" data-counter data-target="30" data-suffix="+">0</span>
+            <p>Weekly Classes</p>
+          </div>
+          <div class="stats__item">
+            <span class="counter counter--light" data-counter data-target="4" data-suffix="">0</span>
+            <p>Class Formats</p>
+          </div>
+          <div class="stats__item">
+            <span class="counter counter--light" data-counter data-target="6" data-suffix=" days">0</span>
+            <p>Open Per Week</p>
+          </div>
+        </div>
+        <div class="cta-full__text text-center">
+          <h2>Your First Class Is Waiting</h2>
+          <p>Experience the Refora difference. Join a community that shows up, supports each other, and savors every moment — on and off the reformer.</p>
+          <a href="/membership/" class="btn btn--gold" data-magnetic>Start Your Journey</a>
+        </div>
       </div>
     </div>
   </section>
@@ -480,7 +427,7 @@ import Footer from '../components/Footer.astro';
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104687.08225682442!2d-82.45!3d34.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88578f526aa0d3d3%3A0x907f05eb0b4cd3c!2sGreenville%2C%20SC!5e0!3m2!1sen!2sus!4v1"
             width="600"
             height="400"
-            style="border:0; border-radius: var(--radius-lg); width: 100%; height: 100%; min-height: 300px;"
+            class="contact-preview__iframe"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -544,11 +491,11 @@ import Footer from '../components/Footer.astro';
   .hero__panel-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(50, 55, 60, 0.75);
+    background: rgba(50, 55, 60, 0.55);
   }
 
   .hero__panel-overlay--warm {
-    background: linear-gradient(135deg, rgba(50, 55, 60, 0.7), rgba(196, 169, 125, 0.4));
+    background: linear-gradient(135deg, rgba(50, 55, 60, 0.5), rgba(196, 169, 125, 0.25));
   }
 
   .hero__content {
@@ -596,6 +543,21 @@ import Footer from '../components/Footer.astro';
       background: var(--color-text-light);
       color: var(--color-charcoal);
     }
+  }
+
+  .hero__panel-label {
+    position: absolute;
+    bottom: var(--space-6);
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+    color: rgba(245, 240, 235, 0.5);
+    z-index: 2;
+    pointer-events: none;
   }
 
   .hero__scroll-indicator {
@@ -666,6 +628,7 @@ import Footer from '../components/Footer.astro';
 
   .about__visual {
     position: relative;
+    overflow: hidden;
   }
 
   .about__accent {
@@ -862,13 +825,35 @@ import Footer from '../components/Footer.astro';
   }
 
   /* ═══════════════════════════════════════
-     STATS
+     PHILOSOPHY EXTRAS (merged community)
+     ═══════════════════════════════════════ */
+  .philosophy__divider {
+    width: 120px;
+    margin-block: var(--space-6);
+  }
+
+  .philosophy__quote {
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin-inline: auto;
+    font-size: var(--text-h3);
+    color: var(--color-text-light);
+    font-style: italic;
+    max-width: 50ch;
+  }
+
+  /* ═══════════════════════════════════════
+     STATS + CTA FULL (combined dark band)
      ═══════════════════════════════════════ */
   .stats__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-4);
     text-align: center;
+    margin-block-end: var(--space-8);
+    padding-block-end: var(--space-8);
+    border-block-end: 1px solid rgba(245, 240, 235, 0.1);
 
     @media (min-width: 768px) {
       grid-template-columns: repeat(4, 1fr);
@@ -877,86 +862,14 @@ import Footer from '../components/Footer.astro';
 
   .stats__item p {
     font-size: var(--text-small);
-    color: var(--color-text-muted);
+    color: var(--color-text-light-muted);
     margin-inline: auto;
   }
 
-  /* ═══════════════════════════════════════
-     COMMUNITY
-     ═══════════════════════════════════════ */
-  .community-section {
-    position: relative;
-    overflow: hidden;
+  .counter--light {
+    color: var(--color-text-light);
   }
 
-  .community__bg {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-  }
-
-  .community__bg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.07;
-    filter: grayscale(0.5);
-  }
-
-  .community__overlay {
-    position: absolute;
-    inset: 0;
-    background:
-      radial-gradient(ellipse at 15% 80%, rgba(196, 169, 125, 0.15) 0%, transparent 50%),
-      radial-gradient(ellipse at 85% 20%, rgba(139, 125, 107, 0.1) 0%, transparent 50%),
-      var(--color-bg);
-    opacity: 0.92;
-  }
-
-  .community__grid {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-6);
-    align-items: center;
-
-    @media (min-width: 768px) {
-      grid-template-columns: 1fr 1.2fr;
-      gap: var(--space-8);
-    }
-  }
-
-  .community__img-stack {
-    display: grid;
-    grid-template-columns: 1fr 0.8fr;
-    gap: var(--space-3);
-    align-items: end;
-  }
-
-  .community__img-offset {
-    margin-block-end: var(--space-6);
-  }
-
-  .community__content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
-    align-items: center;
-  }
-
-  .community__quote {
-    border: none;
-    padding: 0;
-    text-align: center;
-    margin-inline: auto;
-    font-size: var(--text-h3);
-  }
-
-  /* ═══════════════════════════════════════
-     CTA FULL
-     ═══════════════════════════════════════ */
   .cta-full__inner {
     background: var(--color-charcoal);
     padding-block: var(--space-12);
@@ -971,13 +884,18 @@ import Footer from '../components/Footer.astro';
     background: radial-gradient(ellipse at 50% 50%, rgba(196, 169, 125, 0.1), transparent 70%);
   }
 
-  .cta-full__inner h2 {
+  .cta-full__text {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-full__text h2 {
     color: var(--color-text-light);
     font-size: var(--text-h1);
     margin-block-end: var(--space-2);
   }
 
-  .cta-full__inner p {
+  .cta-full__text p {
     color: var(--color-text-light-muted);
     max-width: 55ch;
     margin-inline: auto;
@@ -1025,5 +943,13 @@ import Footer from '../components/Footer.astro';
         color: var(--color-primary);
       }
     }
+  }
+
+  .contact-preview__iframe {
+    border: 0;
+    border-radius: var(--radius-lg);
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
   }
 </style>

@@ -4,15 +4,15 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const services = [
-  { num: '01', title: 'AC & Heat Repair', desc: 'Complete climate control diagnostics and repair. Stay comfortable in any season with expert AC and heating system service.', icon: 'snowflake', img: 'https://images.unsplash.com/photo-1580983218765-907b1e98d84a?w=600&h=400&fit=crop&q=75&auto=format' },
-  { num: '02', title: 'Brake Repair', desc: 'Pads, rotors, calipers, and full brake system inspection. Your safety is our top priority on every job.', icon: 'disc', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop&q=75&auto=format' },
-  { num: '03', title: 'Diagnostics', desc: 'State-of-the-art computer diagnostics to pinpoint issues fast. No guessing — just precision troubleshooting.', icon: 'cpu', img: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&h=400&fit=crop&q=75&auto=format' },
-  { num: '04', title: 'Engines', desc: 'From minor tune-ups to full engine rebuilds. Our ASE-Certified technicians handle it all with precision.', icon: 'engine', img: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&h=400&fit=crop&q=75&auto=format' },
-  { num: '05', title: 'Oil Changes', desc: 'Quick, thorough oil changes with premium fluids. Keep your engine running clean and strong.', icon: 'droplet', img: 'https://images.unsplash.com/photo-1635784063388-1ff609e39537?w=600&h=400&fit=crop&q=75&auto=format' },
-  { num: '06', title: 'Steering & Suspension', desc: 'Shocks, struts, tie rods, and power steering repair. Drive smooth and handle with confidence.', icon: 'steering', img: 'https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=600&h=400&fit=crop&q=75&auto=format' },
-  { num: '07', title: 'Tires & Alignments', desc: 'New tires, rotations, balancing, and precision alignments. Maximize tire life and road grip.', icon: 'circle', img: 'https://images.unsplash.com/photo-1578844251758-2f71da64c96f?w=600&h=400&fit=crop&q=75&auto=format' },
-  { num: '08', title: 'Transmissions', desc: 'Manual and automatic transmission repair and rebuilds. We keep your drivetrain shifting smooth.', icon: 'gear', img: 'https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=600&h=400&fit=crop&q=75&auto=format' },
-  { num: '09', title: 'Jeep Specialists', desc: 'Dedicated Jeep service and repair. From trail-ready upgrades to routine maintenance, we know Jeeps inside and out.', icon: 'jeep', img: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&h=400&fit=crop&q=75&auto=format' },
+  { num: '01', title: 'AC & Heat Repair', desc: 'Complete climate control diagnostics and repair. Stay comfortable in any season with expert AC and heating system service.', icon: 'snowflake', img: 'https://killianautopros.com/wp-content/uploads/2023/02/car-ac-repair-03.webp' },
+  { num: '02', title: 'Brake Repair', desc: 'Pads, rotors, calipers, and full brake system inspection. Your safety is our top priority on every job.', icon: 'disc', img: 'https://killianautopros.com/wp-content/uploads/2022/11/brake-repair-03.webp' },
+  { num: '03', title: 'Diagnostics', desc: 'State-of-the-art computer diagnostics to pinpoint issues fast. No guessing — just precision troubleshooting.', icon: 'cpu', img: 'https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg' },
+  { num: '04', title: 'Engines', desc: 'From minor tune-ups to full engine rebuilds. Our ASE-Certified technicians handle it all with precision.', icon: 'engine', img: 'https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg' },
+  { num: '05', title: 'Oil Changes', desc: 'Quick, thorough oil changes with premium fluids. Keep your engine running clean and strong.', icon: 'droplet', img: 'https://killianautopros.com/wp-content/uploads/2023/02/car-ac-repair-03.webp' },
+  { num: '06', title: 'Steering & Suspension', desc: 'Shocks, struts, tie rods, and power steering repair. Drive smooth and handle with confidence.', icon: 'steering', img: 'https://killianautopros.com/wp-content/uploads/2022/11/brake-repair-03.webp' },
+  { num: '07', title: 'Tires & Alignments', desc: 'New tires, rotations, balancing, and precision alignments. Maximize tire life and road grip.', icon: 'circle', img: 'https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg' },
+  { num: '08', title: 'Transmissions', desc: 'Manual and automatic transmission repair and rebuilds. We keep your drivetrain shifting smooth.', icon: 'gear', img: 'https://killianautopros.com/wp-content/uploads/2022/11/brake-repair-03.webp' },
+  { num: '09', title: 'Jeep Specialists', desc: 'Dedicated Jeep service and repair. From trail-ready upgrades to routine maintenance, we know Jeeps inside and out.', icon: 'jeep', img: 'https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg' },
 ];
 
 const amenities = [
@@ -165,8 +165,8 @@ const locations = [
         <div class="amenities-accent" data-animate="fade-right">
           <div class="amenities-accent__img-wrap">
             <img
-              src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=600&h=800&fit=crop&q=75&auto=format"
-              alt="Professional auto repair technician at work"
+              src="https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg"
+              alt="Killian Auto Pros professional auto repair shop"
               width="600"
               height="800"
               loading="lazy"
@@ -290,7 +290,7 @@ const locations = [
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1920&q=80&auto=format');
+    background-image: url('https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.18;
@@ -381,7 +381,7 @@ const locations = [
 
   /* ---- SECTION HEADERS ---- */
   .section-header {
-    margin-block-end: var(--space-8);
+    margin-block-end: var(--space-6);
     text-align: center;
 
     & .section-tag {
@@ -490,7 +490,7 @@ const locations = [
   /* ---- CTA BANNER ---- */
   .cta-banner {
     background: var(--color-primary);
-    padding-block: var(--space-12);
+    padding-block: var(--space-6);
     text-align: center;
   }
 
@@ -543,7 +543,7 @@ const locations = [
 
   /* ---- FINAL CTA ---- */
   .cta-final {
-    padding-block: var(--space-12);
+    padding-block: var(--space-6);
     text-align: center;
     color: var(--color-text-inverse);
   }

@@ -3,5 +3,5 @@
   "url_produccion": "https://the-wrkt-greenville.vercel.app",
   "fecha_deploy": "2026-04-05",
   "stack": "astro",
-  "carpeta_origen": "web/the-wrkt-greenville"
+  "carpeta_origen": "web/the-wrkt-greenville/"
 }

@@ -62,9 +62,9 @@
   --space-3:  1.5rem;
   --space-4:  2rem;
   --space-6:  3rem;
-  --space-8:  4rem;
-  --space-12: 6rem;
-  --space-16: 8rem;
+  --space-8:  3rem;
+  --space-12: 4rem;
+  --space-16: 6rem;
 
   /* ---- Tipografía fluida ---- */
   --text-hero:  clamp(3.5rem, 12vw, 10rem);
@@ -94,7 +94,7 @@
   --radius-full: 9999px;
 
   /* ---- Layout ---- */
-  --section-padding:   clamp(5rem, 10vw, 10rem);
+  --section-padding:   clamp(3rem, 6vw, 5rem);
   --container-max:     1200px;
   --container-padding: clamp(1rem, 5vw, 2rem);
 
@@ -330,18 +330,18 @@ textarea:focus-visible {
 
 /* ---- Diagonal section break ---- */
 .diagonal-cut {
-  clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
+  clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 98%);
 
   @media (min-width: 768px) {
-    clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
   }
 }
 
 .diagonal-cut--top {
-  clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
 
   @media (min-width: 768px) {
-    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
   }
 }
 

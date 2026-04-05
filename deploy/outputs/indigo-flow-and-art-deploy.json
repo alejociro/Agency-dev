@@ -3,5 +3,5 @@
   "url_produccion": "https://indigo-flow-and-art.vercel.app",
   "fecha_deploy": "2026-04-05",
   "stack": "astro",
-  "carpeta_origen": "web/indigo-flow-and-art"
+  "carpeta_origen": "web/indigo-flow-and-art/"
 }

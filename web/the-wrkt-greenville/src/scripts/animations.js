@@ -325,6 +325,34 @@
     });
   }
 
+  // ===== CONTACT FORM SUBMISSION =====
+  function initContactForm() {
+    const form = document.querySelector('.contact-form');
+    const dialog = document.getElementById('confirm-dialog');
+    if (!form || !dialog) return;
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Basic validation
+      const name = form.querySelector('#name');
+      const email = form.querySelector('#email');
+      const interest = form.querySelector('#interest');
+
+      if (!name.value.trim() || !email.value.trim() || !interest.value) {
+        // Let native validation handle it
+        form.reportValidity();
+        return;
+      }
+
+      // Show confirmation dialog
+      dialog.showModal();
+
+      // Reset form
+      form.reset();
+    });
+  }
+
   // ===== INIT =====
   document.addEventListener('DOMContentLoaded', () => {
     initScrollReveal();
@@ -337,5 +365,6 @@
     initSplitReveal();
     initSectionDots();
     initStudioTour();
+    initContactForm();
   });
 })();

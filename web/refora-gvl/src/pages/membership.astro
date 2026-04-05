@@ -85,7 +85,7 @@ import Footer from '../components/Footer.astro';
       <span class="section-tag">New Members</span>
       <h2>New to Refora?</h2>
       <p>Ask about our introductory offers for first-time members. Experience our classes, community, and café — and find the membership that fits your rhythm.</p>
-      <a href="/contact/" class="btn btn--primary" data-magnetic style="margin-block-start: var(--space-4);">Inquire About Intro Offers</a>
+      <a href="/contact/" class="btn btn--primary membership-intro-btn" data-magnetic>Inquire About Intro Offers</a>
     </div>
   </section>
 
@@ -320,5 +320,9 @@ import Footer from '../components/Footer.astro';
   @keyframes faqSlide {
     from { opacity: 0; transform: translateY(-8px); }
     to { opacity: 1; transform: translateY(0); }
+  }
+
+  .membership-intro-btn {
+    margin-block-start: var(--space-4);
   }
 </style>

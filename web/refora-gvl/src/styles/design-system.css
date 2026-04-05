@@ -427,6 +427,10 @@ button {
   }
 }
 
+.section-tag--centered {
+  justify-content: center;
+}
+
 /* Big quote — editorial pull-quote */
 .pull-quote {
   font-family: var(--font-display);

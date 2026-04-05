@@ -136,7 +136,7 @@ import Footer from '../components/Footer.astro';
   <section class="section mesh-dark grain text-center" data-animate="scale-in">
     <div class="container">
       <h2>Ready to Reform?</h2>
-      <p style="color: var(--color-text-light-muted); max-width: 50ch; margin-inline: auto; margin-block-end: var(--space-4);">
+      <p class="studio-cta__desc">
         Your first class is the hardest one to book — and the one you will be most glad you did.
       </p>
       <a href="/schedule/" class="btn btn--gold" data-magnetic>Book Your First Class</a>
@@ -227,5 +227,12 @@ import Footer from '../components/Footer.astro';
 
   .expect-step p {
     color: var(--color-text-muted);
+  }
+
+  .studio-cta__desc {
+    color: var(--color-text-light-muted);
+    max-width: 50ch;
+    margin-inline: auto;
+    margin-block-end: var(--space-4);
   }
 </style>
