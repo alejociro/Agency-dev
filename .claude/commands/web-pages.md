@@ -1,72 +1,86 @@
-# WEB — PASO 4: PÁGINAS Y SECCIONES
+# WEB — STEP 4: PAGES & SECTIONS
 
-Genera todas las páginas con la misma calidad de diseño.
-Usa datos del JSON de auditoría para personalizar contenido.
+Generate all pages with the same design quality.
+Use data from the audit JSON to personalize content.
+
+**Language rule:** All website copy, headings, CTAs, form labels, and placeholder text must be written in Spanish.
+
+## CREATIVE VARIATION RULE
+
+**The section structure below is the minimum expected content, NOT a fixed wireframe.**
+
+- **Section order:** Can vary. Not all sites need the same sequence. A restaurant can put the gallery before services. A spa can start with an immersive visual experience before the traditional hero.
+- **Example HTML:** It is meant to illustrate semantics, not to be copied. Write your own markup adapted to the actual business content.
+- **Section layout:** The hero is not always centered text. It can be split (image + text), full-bleed image with overlay, video background, asymmetric grid. Vary according to the brief's tone.
+- **Number of sections:** Add or remove based on what the JSON contains. If there are no testimonials, don't create an empty section. If there are many services, it may deserve a separate page.
+- **Class naming:** Don't literally copy `.hero-tag`, `.hero-title` if they don't fit. The CSS classes are yours — name them according to the actual structure you create.
+
+**What MUST remain constant:** Semantic HTML, accessibility (touch targets, focus visible, alt text), visible CTA above the fold, real data from the JSON, functional responsive design.
 
 ---
 
-## Página principal (index)
+## Main page (index)
 
-### HERO — Primera impresión = Todo
-- 100vh desktop, 90svh mobile (usar `svh` para viewport real en móviles)
-- Jerarquía: etiqueta pequeña → título enorme → subtítulo → CTA primario → prueba social
-- Fondo según tono del brief (gradient mesh / imagen con overlay / geométrico / video muted)
-- CTA primario imposible de ignorar — alto contraste, tamaño generoso, shimmer en hover
-- CTA secundario opcional: ghost button o link con flecha
-- Indicador de scroll animado
-- Clases: `hero-tag`, `hero-title`, `hero-sub`, `hero-cta` (ver /web-animations)
+### HERO — First impression = Everything
+- 100vh desktop, 90svh mobile (use `svh` for real viewport on mobile devices)
+- Hierarchy: small tag → huge title → subtitle → primary CTA → social proof
+- Background based on brief's tone (gradient mesh / image with overlay / geometric / muted video)
+- Primary CTA impossible to miss — high contrast, generous size, shimmer on hover
+- Optional secondary CTA: ghost button or link with arrow
+- Animated scroll indicator
+- Classes: `hero-tag`, `hero-title`, `hero-sub`, `hero-cta` (see /web-animations)
 
 ```html
 <section class="hero">
   <div class="container">
-    <span class="hero-tag"><!-- etiqueta del sector --></span>
-    <h1 class="hero-title"><!-- título poderoso --></h1>
-    <p class="hero-sub"><!-- propuesta de valor --></p>
+    <span class="hero-tag"><!-- sector tag --></span>
+    <h1 class="hero-title"><!-- powerful title --></h1>
+    <p class="hero-sub"><!-- value proposition --></p>
     <div class="hero-cta">
       <a href="#contacto" class="btn-primary"><!-- CTA --></a>
       <a href="#servicios" class="btn-ghost">Ver servicios →</a>
     </div>
     <div class="hero-proof"><!-- social proof --></div>
   </div>
-  <div class="hero-bg"><!-- fondo visual --></div>
+  <div class="hero-bg"><!-- visual background --></div>
 </section>
 ```
 
 ---
 
 ### SOCIAL PROOF BAR
-- **Opción A:** Logos en scroll loop infinito (`logos-track`)
-- **Opción B:** Métricas: "X+ clientes · X% satisfacción · X años"
+- **Option A:** Logos in infinite scroll loop (`logos-track`)
+- **Option B:** Metrics: "X+ clients · X% satisfaction · X years"
 
 ---
 
-### SERVICIOS / PROPUESTA DE VALOR
-- Cards con SVG icons inline únicos — ni emojis ni Font Awesome
-- Cada SVG simple, distintivo, relacionado al servicio
-- Hover revela descripción o cambia estado visual
-- Layout asimétrico: featured card destacada o grid con tamaños diferentes
-- Usar CSS Subgrid para alinear contenido entre cards
+### SERVICES / VALUE PROPOSITION
+- Cards with unique inline SVG icons — no emojis or Font Awesome
+- Each SVG simple, distinctive, related to the service
+- Hover reveals description or changes visual state
+- Asymmetric layout: featured card highlighted or grid with different sizes
+- Use CSS Subgrid to align content across cards
 
 ---
 
-### ¿POR QUÉ NOSOTROS? / DIFERENCIADORES
-- Basado en `recomendaciones` del JSON (redactadas como fortalezas)
-- 3 diferenciadores mínimo con dato o evidencia concreta
-- Evitar bullets genéricos — usar timeline, tabs, o comparativa antes/después
+### WHY US? / DIFFERENTIATORS
+- Based on `recomendaciones` from the JSON (rewritten as strengths)
+- Minimum 3 differentiators with concrete data or evidence
+- Avoid generic bullets — use timeline, tabs, or before/after comparison
 
 ---
 
-### PROCESO / CÓMO FUNCIONA
-- 3–5 pasos numerados con línea conectora animada
-- Reduce fricción de compra explicando cómo es trabajar con el negocio
+### PROCESS / HOW IT WORKS
+- 3–5 numbered steps with animated connecting line
+- Reduces purchase friction by explaining what it's like to work with the business
 
 ---
 
-### TESTIMONIOS
-- Carousel con CSS scroll snap (sin librerías)
-- Cards: avatar (placeholder con iniciales + color), nombre, cargo, empresa
-- Rating SVG inline
-- Si el JSON tiene testimonios: úsalos. Si no: genera 3 creíbles del sector
+### TESTIMONIALS
+- Carousel with CSS scroll snap (no libraries)
+- Cards: avatar (placeholder with initials + color), name, role, company
+- Inline SVG rating
+- If the JSON has testimonials: use them. If not: generate 3 believable ones for the sector
 
 ```css
 .testimonials-track {
@@ -79,21 +93,21 @@ Usa datos del JSON de auditoría para personalizar contenido.
 
 ---
 
-### CTA INTERMEDIO (full-width)
-- Fondo `--color-primary` o gradiente que contraste
-- Mensaje de urgencia basado en problemas reales del JSON
-- Botón contrastante (bg oscuro → botón claro y viceversa)
-- 100% del ancho sin container
+### MID-PAGE CTA (full-width)
+- Background `--color-primary` or contrasting gradient
+- Urgency message based on real problems from the JSON
+- Contrasting button (dark bg → light button and vice versa)
+- 100% width without container
 
 ---
 
-### CONTACTO
-- Formulario: nombre, email, teléfono, servicio (select con opciones del JSON), mensaje
-- Labels flotantes o inputs borde-bottom (no cajas genéricas)
-- Datos de contacto con SVG icons inline
-- Mapa embed si hay dirección en JSON
-- WhatsApp si hay número en JSON
-- Usar `<dialog>` nativo para confirmación de envío
+### CONTACT
+- Form: name, email, phone, service (select with options from JSON), message
+- Floating labels or bottom-border inputs (no generic boxes)
+- Contact info with inline SVG icons
+- Map embed if address exists in JSON
+- WhatsApp if phone number exists in JSON
+- Use native `<dialog>` for submission confirmation
 
 ```html
 <div class="field">
@@ -118,27 +132,27 @@ Usa datos del JSON de auditoría para personalizar contenido.
 
 ### FOOTER
 - Logo + tagline
-- Navegación en 2–3 columnas
-- SVG icons para redes sociales del JSON
-- Input newsletter minimalista (visual)
-- Copyright con año actual + links legales
+- Navigation in 2–3 columns
+- SVG icons for social media from the JSON
+- Minimalist newsletter input (visual)
+- Copyright with current year + legal links
 
 ---
 
-## Páginas secundarias
+## Secondary pages
 
-Cada una con diseño propio coherente con la identidad del sitio.
+Each one with its own design, coherent with the site's identity.
 
 ### About
-- Timeline visual de historia del negocio
-- Grid del equipo con hover (o grid de valores si no hay equipo)
-- Misión/visión en tipografía display grande
-- Números animados (`animateCounter`)
+- Visual timeline of the business history
+- Team grid with hover (or values grid if no team)
+- Mission/vision in large display typography
+- Animated numbers (`animateCounter`)
 
 ### Services
-- Hero de sección con título fuerte (no genérico "Servicios")
-- Cada servicio: descripción, bullets de beneficios, CTA individual
-- FAQ accordion con `<details>` nativo + animación CSS
+- Section hero with strong title (not generic "Services")
+- Each service: description, benefit bullets, individual CTA
+- FAQ accordion with native `<details>` + CSS animation
 
 ```css
 details {
@@ -151,22 +165,22 @@ details {
 ```
 
 ### Portfolio
-- Grid masonry con CSS columns o filtrable por categoría (JS nativo)
-- Hover: overlay con título + CTA
-- Placeholders creíbles del sector si no hay datos
+- Masonry grid with CSS columns or filterable by category (vanilla JS)
+- Hover: overlay with title + CTA
+- Believable sector placeholders if no data available
 
 ### Contact
-- Layout dos columnas: info + formulario completo
-- Mapa embed si hay dirección
-- Horarios y tiempos de respuesta
-- WhatsApp con SVG icon animado
+- Two-column layout: info + full form
+- Map embed if address available
+- Hours and response times
+- WhatsApp with animated SVG icon
 
 ---
 
-## HTML semántico moderno
+## Modern semantic HTML
 
-- Usar `<search>` para contenedores de búsqueda
-- Usar `<dialog>` para modales (no divs con z-index)
-- `popover` attribute para tooltips y dropdowns
-- `<details>` para accordions
-- Touch targets mínimo 44×44px en mobile
+- Use `<search>` for search containers
+- Use `<dialog>` for modals (not divs with z-index)
+- `popover` attribute for tooltips and dropdowns
+- `<details>` for accordions
+- Minimum 44×44px touch targets on mobile

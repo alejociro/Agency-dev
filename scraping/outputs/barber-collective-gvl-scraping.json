@@ -1,0 +1,146 @@
+{
+  "negocio": "The Barber Collective",
+  "url": "https://www.barbercollectivegvl.com/",
+  "sector": "Barbería / Cuidado personal",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "The Barber Collective",
+    "description": null,
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#000000",
+    "secundario": "#ffffff",
+    "acento": "#000000",
+    "fondo": "#ffffff",
+    "texto": "#000000",
+    "otros": []
+  },
+  "logo": {
+    "url": "https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/5a3df793-3560-40f3-87fc-e8275e742ce6/Barber-black.png",
+    "descripcion": "Logo de The Barber Collective en negro",
+    "posicion": "header centro",
+    "colores": ["#000000"]
+  },
+  "tipografias": [
+    {
+      "nombre": null,
+      "uso": "Squarespace template default fonts",
+      "peso": null,
+      "tamanio_aprox": null
+    }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "/" },
+    { "label": "Services", "url": "/services" },
+    { "label": "Instagram", "url": "http://instagram.com/thebarbercollective_gvl" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": null,
+      "contenido": null,
+      "cta": "Book Appointment",
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/5a3df793-3560-40f3-87fc-e8275e742ce6/Barber-black.png",
+          "alt": "The Barber Collective logo",
+          "descripcion": "Logo principal del negocio",
+          "tipo": "logo",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "galeria",
+      "titulo": null,
+      "contenido": "Carrusel de imágenes mostrando el trabajo de la barbería",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/0c67402f-36f2-4b2e-bf7f-38a2e2163244/TLR_5949.jpg",
+          "alt": null,
+          "descripcion": "Foto de trabajo de barbería",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/d1189eea-7542-4955-bae3-1724d5e5180f/TLR_5878.jpg",
+          "alt": null,
+          "descripcion": "Foto de trabajo de barbería",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/6271f996-2437-42f4-8bbb-d61826d95205/TLR_5921.jpg",
+          "alt": null,
+          "descripcion": "Foto de trabajo de barbería",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/ef7e263b-c035-44e4-9195-3a438d478a5e/TLR_5919.jpg",
+          "alt": null,
+          "descripcion": "Foto de trabajo de barbería",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/8c682620-e1e7-4f9a-916e-6f0f4f944ff2/TLR_5602.jpg",
+          "alt": null,
+          "descripcion": "Foto de trabajo de barbería",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/7f3cc663-9205-4eb4-901c-725ffd3e1afc/TLR_5444.jpg",
+          "alt": null,
+          "descripcion": "Foto de trabajo de barbería",
+          "tipo": "galeria",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Services",
+      "contenido": "Haircut — $35 (30-45 min): Includes haircut, hot towel, razor neck shave, style\nKids Haircut (12 and under) — $25 (30-45 min): Haircut, style\nHaircut and Beard Trim — $45 (30-45 min): Haircut, hot towel, neck shave, beard trim, style\nBuzzcut — $30 (30-45 min): A haircut that only uses guards, hot towel, neck shave\nStraight Razor Services — $35 (30-45 min): Straight razor shave on head or face, hot towel service razor finished beard trim\nTransformation Haircut — $45 (1 hour): Haircut where 3+ months of growth will be removed, hot towel, neck shave, style\nTransformation Haircut + Beard Trim — $55 (1 hour): Includes growth removal haircut, hot towel, neck shave, style, and beard trim\nFull Service — $65 (1 hour): One of three options: standard haircut with face shave; head shave with facial shave or beard trim; or haircut with beard trim\nThe Collective Package — $100 (1.5 hours): Haircut, hot towel, neck shave, shampoo, style or head shave plus 3 additional services (face shave, beard trim, grey blending, or waxing)\nBeard Trim — $25 (30-45 min): Beard shaping and trimming\nUndercut with Design — $35 (30-45 min): Requires advance booking with specific barber\nShampoo — $10 (15 min)\nCamo Color Grey Blending — $30 (15 min)\nWaxing — $10 per area (15 min)",
+      "cta": "Book Appointment",
+      "imagenes": []
+    },
+    {
+      "tipo": "informacion",
+      "titulo": "Location & Hours",
+      "contenido": "1502 East North Street, Greenville, SC 29607, United States\n\nTuesday: 10am–6pm\nWednesday: 10am–4pm\nThursday: 10am–6pm\nFriday: 10am–5pm\nSaturday: 10am–1pm\nSunday–Monday: Closed\n\nPhone: (864) 236-5155\nEmail: thebarbercollectivegvl@gmail.com",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": null,
+    "propuesta_valor": null,
+    "ctas": [
+      { "texto": "Book Appointment", "url": "https://www.vagaro.com/lfc7yl" }
+    ]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(864) 236-5155",
+    "whatsapp": null,
+    "email": "thebarbercollectivegvl@gmail.com",
+    "direccion": "1502 East North Street, Greenville, SC 29607, United States",
+    "horarios": "Tuesday: 10am–6pm | Wednesday: 10am–4pm | Thursday: 10am–6pm | Friday: 10am–5pm | Saturday: 10am–1pm | Sunday–Monday: Closed"
+  },
+  "redes": [
+    { "plataforma": "Instagram", "url": "http://instagram.com/thebarbercollective_gvl" }
+  ],
+  "formularios": [],
+  "footer": {
+    "contenido": null,
+    "links": [],
+    "copyright": null
+  },
+  "tecnologia": "Squarespace 7.1"
+}

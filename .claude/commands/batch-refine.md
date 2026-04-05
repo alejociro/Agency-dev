@@ -1,99 +1,105 @@
-# AGENTE BATCH-REFINE — REVISIÓN Y REFINAMIENTO PARALELO MULTI-SITIO
+# BATCH-REFINE AGENT — PARALLEL MULTI-SITE REVIEW & REFINEMENT
 
-Recibes una lista de carpetas web ya construidas y ejecutas review + refine para cada una,
-en paralelo, como procesos completamente independientes.
+You receive a list of already-built web folders and run review + refine for each one,
+in parallel, as completely independent processes.
 
-**Input:** `$ARGUMENTS` — lista de rutas a carpetas web separadas por comas o saltos de línea
+**Input:** `$ARGUMENTS` — list of paths to web folders separated by commas or line breaks.
+Each path can include specific instructions with `| instructions` after the path.
 
-Ejemplo:
+Examples:
 ```
-/batch-refine web/negocio-1/, web/negocio-2/, web/negocio-3/
+/batch-refine web/business-1/, web/business-2/, web/business-3/
+/batch-refine web/business-1/ | fix header, web/business-2/, web/business-3/ | fix form
 ```
 
 ---
 
-## FLUJO POR CADA SITIO
+## FLOW FOR EACH SITE
 
-Cada carpeta pasa por este mini-pipeline, en orden:
+Each folder goes through this mini-pipeline, in order:
 
 ```
-/web-review web/<negocio>/
+/web-review web/<business>/
     ↓
-(si review ≠ A) /web-refine web/<negocio>/ | <instrucciones del review>
+(if review ≠ A) /web-refine web/<business>/ | <instructions from review>
     ↓
-/deploy web/<negocio>/ <negocio>
+/deploy web/<business>/ <business>
 ```
 
 ---
 
-## EJECUCIÓN PARALELA
+## PARALLEL EXECUTION
 
-**CRÍTICO: Cada sitio DEBE ejecutarse como un agente independiente usando la herramienta Agent.**
+**CRITICAL: Each site MUST be executed as an independent agent using the Agent tool.**
 
-Para cada ruta en la lista:
+For each path in the list:
 
-1. **Parsea las rutas** — separa por comas, espacios, o saltos de línea. Limpia espacios.
-2. **Lanza un Agent por cada ruta** — usa la herramienta Agent con estos parámetros:
-   - `description`: "Review+Refine: <nombre-negocio>"
-   - `prompt`: El prompt completo del pipeline (ver template abajo)
-   - Lanza TODOS los agents en una sola llamada (parallel tool calls)
+1. **Parse paths and instructions** — split by commas or line breaks. For each entry, if it contains `|`, split into `path | instructions`. Trim spaces.
+2. **Launch one Agent per path** — use the Agent tool with these parameters:
+   - `description`: "Review+Refine: <business-name>"
+   - `prompt`: The full pipeline prompt (see template below)
+   - Launch ALL agents in a single call (parallel tool calls)
 
-### Template de prompt para cada Agent:
+### Prompt template for each Agent:
 
 ```
-Ejecuta review + refine para este sitio web. Trabaja en el directorio /Users/et59866/agencia/Agency-dev/
+Run review + refine for this website. Work in the directory /Users/et59866/agencia/Agency-dev/
 
-IMPORTANTE: Cada paso debe ejecutarse secuencialmente. No avances al siguiente hasta que el anterior termine.
+IMPORTANT: Each step must be executed sequentially. Do not advance to the next step until the previous one is complete.
 
-## Paso 1: Review
-Ejecuta el skill /web-review con la ruta: <RUTA>
-Lee el output del review. Captura la calidad (A/B/C) y las instrucciones generadas.
+Manual user instructions (may be empty): <MANUAL_INSTRUCTIONS>
 
-## Paso 2: Refine (condicional)
-Si el review NO dio calidad "A", ejecuta el skill /web-refine con las instrucciones que generó el review.
-Formato: /web-refine <RUTA> | <instrucciones del review>
-Si dio "A", salta este paso.
+## Step 1: Review
+Run the /web-review skill with the path: <PATH>
+Read the review output. Capture the quality grade (A/B/C) and the generated instructions.
 
-## Paso 3: Deploy
-Ejecuta el skill /deploy con: web/<negocio>/ <negocio>
-Esto desplegará el sitio o lo redesplegará si ya existía un deployment previo.
-Captura la URL de producción.
+## Step 2: Refine (conditional)
+If the review did NOT give quality "A" OR if there are manual user instructions, run the /web-refine skill.
+- If there are both manual AND review instructions: combine both. Format: /web-refine <PATH> | <review instructions> + <manual instructions>
+- If there are only manual instructions (review gave "A"): /web-refine <PATH> | <manual instructions>
+- If there are only review instructions: /web-refine <PATH> | <review instructions>
+- If it gave "A" and there are NO manual instructions: skip this step.
 
-## Output final
-Al terminar, responde EXACTAMENTE con este formato:
-REVIEW+REFINE COMPLETADO: <nombre-negocio> → Calidad: <A|B|C> → Refinado: <Sí|No> → <url-deploy>
+## Step 3: Deploy
+Run the /deploy skill with: web/<business>/ <business>
+This will deploy the site or redeploy it if a previous deployment already existed.
+Capture the production URL.
+
+## Final output
+When finished, respond EXACTLY with this format:
+REVIEW+REFINE COMPLETED: <business-name> → Quality: <A|B|C> → Refined: <Yes|No> → <deploy-url>
 ```
 
 ---
 
-## MONITOREO Y RESULTADO FINAL
+## MONITORING AND FINAL RESULT
 
-Después de lanzar todos los agents:
+After launching all agents:
 
-1. **Espera** a que todos los agents completen
-2. **Recopila** los resultados de cada uno
-3. **Genera la tabla resumen** con este formato:
+1. **Wait** for all agents to complete
+2. **Collect** the results from each one
+3. **Generate the summary table** with this format:
 
 ```
-BATCH-REFINE COMPLETADO: X/Y sitios revisados y desplegados
+BATCH-REFINE COMPLETED: X/Y sites reviewed and deployed
 
-| Negocio | Calidad | Refinado | URL Deploy |
+| Business | Quality | Refined | Deploy URL |
 |---|---|---|---|
-| negocio-1 | B → refinado | Sí | https://negocio-1.vercel.app |
-| negocio-2 | A | No | https://negocio-2.vercel.app |
+| business-1 | B → refined | Yes | https://business-1.vercel.app |
+| business-2 | A | No | https://business-2.vercel.app |
 | ... | ... | ... | ... |
 
-Fallidos (si hay):
-- negocio-X: [razón del fallo]
+Failed (if any):
+- business-X: [failure reason]
 ```
 
 ---
 
-## REGLAS
+## RULES
 
-- **Aislamiento total** — cada Agent trabaja su sitio sin saber de los otros
-- **No mezclar contextos** — nunca pases datos de un sitio a otro
-- **Tolerancia a fallos** — si un sitio falla, los demás continúan. Reporta el fallo al final.
-- **Máximo 10 rutas** por batch — si hay más, rechaza con: "BATCH-REFINE: máximo 10 rutas por ejecución"
-- **Sin confirmaciones intermedias** — el pipeline corre de principio a fin sin pedir input
-- Cero conversación extra — solo la tabla final
+- **Total isolation** — each Agent works on its site without knowing about the others
+- **Do not mix contexts** — never pass data from one site to another
+- **Fault tolerance** — if one site fails, the others continue. Report the failure at the end.
+- **Maximum 10 paths** per batch — if there are more, reject with: "BATCH-REFINE: maximum 10 paths per execution"
+- **No intermediate confirmations** — the pipeline runs from start to finish without requesting input
+- Zero extra conversation — only the final table

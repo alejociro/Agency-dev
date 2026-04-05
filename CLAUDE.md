@@ -1,35 +1,35 @@
-# Agencia — Pipeline de Auditoría y Desarrollo Web
+# Agencia — Audit & Web Development Pipeline
 
 ## Pipeline
 ```
 /prospeccion → /scraping → /auditoria → /web → /web-review → [/web-refine] → /deploy → /propuesta
 ```
 
-## Comandos
-| Comando | Input | Output |
+## Commands
+| Command | Input | Output |
 |---|---|---|
-| `/prospeccion <zona> [categoría]` | zona geográfica + categoría opcional | `prospeccion/outputs/<zona>-prospeccion.json` |
-| `/scraping <url>` | URL del sitio | `scraping/outputs/<negocio>-scraping.json` |
-| `/auditoria <ruta>` | ruta al scraping.json | `auditoria/outputs/<negocio>-auditoria.json` |
-| `/web <ruta>` | ruta al auditoria.json | `web/<negocio>/` |
-| `/web-review <carpeta>` | carpeta web | reporte de calidad + instrucciones para refine |
-| `/deploy <ruta> <nombre>` | carpeta web + nombre | `deploy/outputs/<negocio>-deploy.json` |
-| `/propuesta <ruta> [url]` | auditoria.json + url demo opcional | `propuesta/outputs/<negocio>-propuesta.html` |
-| `/batch <urls>` | lista de URLs separadas por coma | tabla negocio → url deploy |
-| `/batch-refine <carpetas>` | lista de carpetas web separadas por coma | tabla negocio → calidad + refinado |
+| `/prospeccion <zone> [category]` | geographic zone + optional category | `prospeccion/outputs/<zone>-prospeccion.json` |
+| `/scraping <url>` | site URL | `scraping/outputs/<business>-scraping.json` |
+| `/auditoria <path>` | path to scraping.json | `auditoria/outputs/<business>-auditoria.json` |
+| `/web <path>` | path to auditoria.json | `web/<business>/` |
+| `/web-review <folder>` | web folder | quality report + instructions for refine |
+| `/deploy <path> <name>` | web folder + name | `deploy/outputs/<business>-deploy.json` |
+| `/propuesta <path> [url]` | auditoria.json + optional demo url | `propuesta/outputs/<business>-propuesta.html` |
+| `/batch <urls>` | comma-separated URL list | business → deploy url table |
+| `/batch-refine <folders>` | web folder list (with optional `\| instructions` per project) | business → quality + refinement table |
 
-El agente `/web` se compone de sub-pasos invocables individualmente:
+The `/web` agent is composed of individually invocable sub-steps:
 `/web-brief` → `/web-stack` → `/web-design` → `/web-animations` → `/web-experience` → `/web-pages` → `/web-seo` → `/web-components` → `/web-entregables`
 
-Post-pipeline: `/web-refine <carpeta> [| instrucciones]` — revisa y pule el diseño, acepta indicaciones específicas
-Post-pipeline: `/web-review <carpeta>` — senior lead revisa calidad vs scraping, genera instrucciones para refine
+Post-pipeline: `/web-refine <folder> [| instructions]` — reviews and polishes the design, accepts specific instructions
+Post-pipeline: `/web-review <folder>` — senior lead reviews quality vs scraping, generates instructions for refine
 
-Batch: `/batch <url1>, <url2>, ...` — ejecuta el pipeline completo (scraping → auditoria → web → review → refine → deploy) para cada URL en paralelo, cada sitio como proceso aislado
-Batch-Refine: `/batch-refine web/negocio-1/, web/negocio-2/, ...` — ejecuta review + refine + deploy para cada carpeta web en paralelo
+Batch: `/batch <url1>, <url2>, ...` — runs the full pipeline (scraping → auditoria → web → review → refine → deploy) for each URL in parallel, each site as an isolated process
+Batch-Refine: `/batch-refine web/business-1/ | fix header, web/business-2/, web/business-3/ | fix form` — runs review + refine + deploy for each web folder in parallel, accepts per-project specific instructions with `|`
 
-## Convenciones
-- Archivos: `<negocio>-<tipo>.json` en kebab-case
-- Schema de scraping: `scraping/schema.json`
-- Template de propuesta: `propuesta/template.html`
-- Cero conversación en outputs — solo guardar archivo y confirmar ruta
-- Nunca inventar datos ausentes en el JSON fuente — usar `null`
+## Conventions
+- Files: `<business>-<type>.json` in kebab-case
+- Scraping schema: `scraping/schema.json`
+- Proposal template: `propuesta/template.html`
+- Zero conversation in outputs — only save the file and confirm the path
+- Never invent data missing from the source JSON — use `null`

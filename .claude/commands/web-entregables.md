@@ -1,90 +1,90 @@
-# WEB — PASO 7: ENTREGABLES Y CHECKLIST DE CALIDAD
+# WEB — STEP 7: DELIVERABLES & QUALITY CHECKLIST
 
-Verifica que todo cumple los estándares antes de confirmar entrega.
-
----
-
-## Orden de entrega
-
-1. **Brief creativo** — comentario documentado en archivo principal
-2. **Estructura de carpetas** — árbol completo del proyecto
-3. **design-system.css** — variables CSS y estilos base
-4. **Componentes base** — Button, Card, SectionHeader (si aplica)
-5. **Hero + Navbar + Social Proof Bar** — con animaciones de page load
-6. **Secciones de contenido** — Servicios → Diferenciadores → Proceso → Testimonios
-7. **CTA intermedio + Contacto + Footer**
-8. **Páginas secundarias** — About, Services, Portfolio, Contact
-9. **SEO** — meta tags + schema JSON-LD en todas las páginas
-10. **README del proyecto**
+Verify that everything meets the standards before confirming delivery.
 
 ---
 
-## README del proyecto entregable
+## Delivery order
+
+1. **Creative brief** — documented comment in main file
+2. **Folder structure** — complete project tree
+3. **design-system.css** — CSS variables and base styles
+4. **Base components** — Button, Card, SectionHeader (if applicable)
+5. **Hero + Navbar + Social Proof Bar** — with page load animations
+6. **Content sections** — Services → Differentiators → Process → Testimonials
+7. **Intermediate CTA + Contact + Footer**
+8. **Secondary pages** — About, Services, Portfolio, Contact
+9. **SEO** — meta tags + JSON-LD schema on all pages
+10. **Project README**
+
+---
+
+## Deliverable project README
 
 ```markdown
-# [Nombre Negocio] — Sitio Web
+# [Business Name] — Website
 
 ## Stack
-[framework, dependencias, versiones]
+[framework, dependencies, versions]
 
-## Instalación
-[comandos exactos para correr en local]
+## Installation
+[exact commands to run locally]
 
-## Estructura
-[árbol de carpetas]
+## Structure
+[folder tree]
 
 ## Deploy
-[instrucciones para Vercel/Netlify]
+[instructions for Vercel/Netlify]
 ```
 
 ---
 
-## Checklist de calidad (verificar TODO)
+## Quality checklist (verify ALL)
 
-### Diseño
-- [ ] El diseño es ÚNICO — no parece template de ThemeForest
-- [ ] Tipografías con personalidad que complementan el sector
-- [ ] Color primario del JSON domina sin aplastar
-- [ ] Al menos UN elemento que rompe la grilla o sorprende
-- [ ] Fondo NO es blanco puro (#fff) ni negro puro (#000)
-- [ ] Sombras usan color del brand
+### Design
+- [ ] The design is UNIQUE — it doesn't look like a ThemeForest template
+- [ ] Fonts with personality that complement the industry
+- [ ] Primary color from JSON dominates without overwhelming
+- [ ] At least ONE element that breaks the grid or surprises
+- [ ] Background is NOT pure white (#fff) nor pure black (#000)
+- [ ] Shadows use brand color
 
-### UX y Conversión
-- [ ] CTA principal es lo primero que atrae en el Hero
-- [ ] Prueba social visible (logos, testimonios, métricas)
-- [ ] CTA intermedio antes del contacto
-- [ ] Formulario accesible y usable en mobile
+### UX and Conversion
+- [ ] Main CTA is the first thing that draws attention in the Hero
+- [ ] Social proof visible (logos, testimonials, metrics)
+- [ ] Intermediate CTA before the contact section
+- [ ] Form accessible and usable on mobile
 
-### Animaciones
-- [ ] Animaciones fluidas y naturales
-- [ ] `prefers-reduced-motion` respetado
-- [ ] Ninguna animación bloquea acceso al contenido
+### Animations
+- [ ] Smooth and natural animations
+- [ ] `prefers-reduced-motion` respected
+- [ ] No animation blocks access to content
 
 ### Responsive
-- [ ] Mobile (360px) se ve TAN bien como desktop
-- [ ] Hero usa `svh` en mobile (no se recorta contenido)
-- [ ] Touch targets mínimo 44×44px en mobile
-- [ ] Menú mobile funcional (hamburger o similar)
+- [ ] Mobile (360px) looks AS good as desktop
+- [ ] Hero uses `svh` on mobile (content doesn't get clipped)
+- [ ] Touch targets minimum 44×44px on mobile
+- [ ] Mobile menu functional (hamburger or similar)
 
-### Accesibilidad
-- [ ] Todas las imágenes con `alt` descriptivo
-- [ ] Contraste WCAG AA (mínimo 4.5:1) en todos los fondos
-- [ ] Focus visible en elementos interactivos (`:focus-visible`)
-- [ ] HTML semántico (no divs donde van buttons/links/nav)
+### Accessibility
+- [ ] All images with descriptive `alt`
+- [ ] WCAG AA contrast (minimum 4.5:1) on all backgrounds
+- [ ] Visible focus on interactive elements (`:focus-visible`)
+- [ ] Semantic HTML (no divs where buttons/links/nav should go)
 
-### SEO y Performance
-- [ ] `<title>` y `<meta description>` únicos por página
-- [ ] H1 único por página
-- [ ] Schema JSON-LD presente
-- [ ] `loading="lazy"` en imágenes (excepto hero)
-- [ ] `fetchpriority="high"` en imagen LCP
-- [ ] `font-display: swap` en fuentes
-- [ ] Speculation rules para prefetch
-- [ ] `content-visibility: auto` en secciones below the fold
+### SEO and Performance
+- [ ] Unique `<title>` and `<meta description>` per page
+- [ ] Unique H1 per page
+- [ ] JSON-LD schema present
+- [ ] `loading="lazy"` on images (except hero)
+- [ ] `fetchpriority="high"` on LCP image
+- [ ] `font-display: swap` on fonts
+- [ ] Speculation rules for prefetch
+- [ ] `content-visibility: auto` on below the fold sections
 
-### Código
-- [ ] Sin console.log en producción
-- [ ] Sin código comentado innecesario
-- [ ] Variables CSS usadas consistentemente
-- [ ] JavaScript no bloquea render inicial
-- [ ] CSS organizado con `@layer`
+### Code
+- [ ] No console.log in production
+- [ ] No unnecessary commented-out code
+- [ ] CSS variables used consistently
+- [ ] JavaScript doesn't block initial render
+- [ ] CSS organized with `@layer`

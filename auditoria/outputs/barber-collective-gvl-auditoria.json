@@ -1,0 +1,155 @@
+{
+  "cliente": "The Barber Collective",
+  "url_auditada": "https://www.barbercollectivegvl.com/",
+  "sector": "Barbería / Cuidado personal",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO:55, UX:60, Marketing:60, Contenido:65, Técnico:50. Aplicado porque una barbería es un servicio local con clientela geográfica definida, donde la presencia digital sirve para reservas y ubicación.",
+  "fecha": "2026-04-04",
+  "scores": {
+    "seo": 22,
+    "ux_ui": 35,
+    "marketing": 30,
+    "contenido": 45,
+    "tecnico": 40,
+    "total": 34
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title presente con el nombre del negocio",
+        "CTA principal usa verbo de acción claro: Book Appointment",
+        "URL limpia y descriptiva con nombre del negocio"
+      ],
+      "negativos": [
+        "No hay meta description — pierde oportunidad de CTR en buscadores",
+        "No hay keywords definidas",
+        "Hero sin H1 ni texto — no hay keyword principal visible para crawlers",
+        "Imágenes de galería sin alt text — pérdida de SEO de imágenes",
+        "No hay estructura de headings coherente (H1→H2→H3)",
+        "No hay propuesta de valor textual en los primeros 200px de la página"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar meta description optimizada: 'Premium barbershop in Greenville, SC. Haircuts, beard trims, straight razor shaves. Book your appointment today.'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar H1 visible en hero con keyword local: 'Barbershop in Greenville, SC'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Completar alt text en todas las imágenes de galería con descripciones relevantes", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar schema markup LocalBusiness con dirección, horarios y servicios", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta minimalista blanco/negro transmite profesionalismo",
+        "Galería de fotos muestra calidad del trabajo visualmente",
+        "Navegación simple con pocos items — no sobrecarga al usuario"
+      ],
+      "negativos": [
+        "No hay color de acento — todo es negro sobre blanco, sin jerarquía visual entre elementos",
+        "No se detectan tipografías personalizadas — se usan defaults de Squarespace",
+        "Hero vacío de contenido textual — el usuario no sabe qué ofrece el negocio al aterrizar",
+        "Sin footer visible — falta cierre profesional de la página",
+        "No hay indicadores claros de secciones diferenciadas visualmente"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar color de acento (dorado, marrón o verde oscuro) para CTAs y elementos destacados", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Diseñar hero con imagen de fondo, headline y CTA prominente", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar footer completo con contacto, horarios, mapa y redes sociales", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Seleccionar tipografía premium que refuerce la identidad de barbería (serif para títulos, sans para cuerpo)", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "CTA de reserva vinculado a Vagaro — flujo directo de conversión",
+        "Listado de servicios con precios claros genera transparencia y confianza",
+        "Presencia en Instagram para prueba social visual"
+      ],
+      "negativos": [
+        "No hay slogan ni propuesta de valor — el visitante no sabe qué diferencia a esta barbería",
+        "Cero prueba social: no hay testimonios, reseñas, número de clientes o años de experiencia",
+        "No hay sección 'Sobre nosotros' que humanice al equipo",
+        "Solo 1 red social (Instagram) — falta Google Business, Facebook",
+        "No hay estrategia de retención: no hay newsletter, programa de lealtad ni ofertas"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar sección de testimonios con 3-5 reseñas reales de clientes", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Crear propuesta de valor clara: qué hace único a The Barber Collective", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar sección 'Meet the Barbers' con fotos y especialidades de cada barbero", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Incluir enlace a Google Reviews para construir credibilidad", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Información de contacto completa: teléfono, email, dirección, horarios",
+        "Servicios detallados con precios, duración y descripción de cada uno",
+        "14 servicios listados ofrecen catálogo completo para el visitante"
+      ],
+      "negativos": [
+        "Hero completamente vacío de texto — la sección más importante no comunica nada",
+        "No hay textos descriptivos sobre la experiencia del negocio",
+        "No hay FAQ que resuelva objeciones comunes (estacionamiento, walk-ins, formas de pago)",
+        "No hay sección About/Historia del negocio",
+        "Galería sin contexto textual — las fotos no están acompañadas de descripciones"
+      ],
+      "recomendaciones": [
+        { "accion": "Escribir copy de hero: headline + subtítulo que comunique la experiencia de la barbería", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar sección About con historia, filosofía y equipo", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Crear sección FAQ con 5-8 preguntas frecuentes", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Agregar descripciones a las imágenes de galería para dar contexto", "prioridad": "baja", "tipo": "opcional" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Squarespace ofrece hosting confiable y SSL incluido",
+        "Integración con Vagaro para reservas online funcional",
+        "Sitio renderizado server-side — crawleable por buscadores"
+      ],
+      "negativos": [
+        "Squarespace 7.1 carga scripts pesados innecesarios para un sitio simple",
+        "No hay formularios de contacto — solo email y teléfono",
+        "Sin Google Maps embebido para ubicación",
+        "No se detecta Google Analytics ni tracking de conversiones",
+        "Sin favicon configurado"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a sitio estático HTML+Tailwind para mejor performance y control total", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar Google Maps embebido en sección de ubicación", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Configurar favicon con el logo del negocio", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Implementar Google Analytics 4 y tracking de clicks en Book Appointment", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    }
+  },
+  "quick_wins": [
+    "Agregar meta description optimizada con keywords locales",
+    "Escribir headline de hero con propuesta de valor clara",
+    "Completar alt text en todas las imágenes de galería",
+    "Agregar color de acento para CTAs y elementos destacados",
+    "Configurar favicon con el logo del negocio"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Agregar meta description y H1 optimizados",
+      "Diseñar hero con imagen de fondo, headline y CTA",
+      "Agregar color de acento a la paleta",
+      "Completar alt text en imágenes",
+      "Crear propuesta de valor clara"
+    ],
+    "mes_1": [
+      "Agregar sección de testimonios de clientes",
+      "Crear sección About/Meet the Barbers",
+      "Agregar footer completo con mapa, contacto y redes",
+      "Implementar FAQ con preguntas frecuentes",
+      "Agregar Google Maps embebido",
+      "Seleccionar tipografías premium"
+    ],
+    "largo_plazo": [
+      "Migrar a sitio estático para mejor performance",
+      "Implementar Google Analytics 4 con tracking de conversiones",
+      "Expandir presencia en redes sociales (Google Business, Facebook)",
+      "Agregar programa de lealtad o newsletter"
+    ]
+  },
+  "resumen_ejecutivo": "The Barber Collective tiene un sitio funcional pero extremadamente básico que no comunica ninguna propuesta de valor ni diferenciación frente a competidores locales en Greenville. La mayor oportunidad está en construir una experiencia web que refleje la calidad del servicio evidenciada en las fotos de galería, agregando testimonios, copy persuasivo y un hero impactante. El próximo paso inmediato es rediseñar el sitio completo con hero visual, secciones de contenido rico y una paleta con personalidad que transmita la identidad de la marca.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["alpine.js", "google-maps-embed", "vagaro-booking-link"],
+    "justificacion": "Sitio de baja complejidad — single page con servicios, galería, contacto y reservas. HTML estático + Tailwind + Alpine.js ofrece máxima performance, SEO nativo y cero dependencias pesadas. Ideal para servicio local que necesita cargar rápido en móvil."
+  }
+}

@@ -1,6 +1,6 @@
-# WEB — PASO 6: COMPONENTES REUTILIZABLES
+# WEB — STEP 6: REUSABLE COMPONENTS
 
-Solo aplica si el stack es `react` o `astro`. Para HTML vanilla, estos se crean directamente en cada página.
+Only applies if the stack is `react` or `astro`. For vanilla HTML, these are created directly in each page.
 
 ---
 
@@ -105,7 +105,7 @@ export function ScrollProgress() {
 
 ---
 
-## Para Astro — mismos componentes como .astro
+## For Astro — same components as .astro files
 
-Los componentes aplican como archivos `.astro` con `<script>` inline para lógica JS.
-Usar `client:visible` para componentes interactivos que necesitan JS (hidratación parcial).
+Components apply as `.astro` files with inline `<script>` for JS logic.
+Use `client:visible` for interactive components that need JS (partial hydration).

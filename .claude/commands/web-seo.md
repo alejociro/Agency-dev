@@ -1,29 +1,29 @@
-# WEB — PASO 5: SEO Y PERFORMANCE
+# WEB — STEP 5: SEO & PERFORMANCE
 
-Aplica optimizaciones de SEO, meta tags, schema markup y performance a todas las páginas.
+Apply SEO optimizations, meta tags, schema markup, and performance to all pages.
 
 ---
 
-## Meta tags en cada página
+## Meta tags on each page
 
 ```html
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO primario -->
-  <title>[Keyword principal] | [Nombre del Negocio] — [Ciudad si aplica]</title>
-  <meta name="description" content="[150-160 chars con keyword + propuesta de valor + CTA]">
-  <meta name="keywords" content="[del JSON meta.keywords]">
-  <link rel="canonical" href="[URL de la página]">
+  <!-- Primary SEO -->
+  <title>[Main Keyword] | [Business Name] — [City if applicable]</title>
+  <meta name="description" content="[150-160 chars with keyword + value proposition + CTA]">
+  <meta name="keywords" content="[from JSON meta.keywords]">
+  <link rel="canonical" href="[Page URL]">
 
   <!-- Open Graph -->
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="[URL]">
-  <meta property="og:title"       content="[title o variante]">
+  <meta property="og:title"       content="[title or variant]">
   <meta property="og:description" content="[meta description]">
-  <meta property="og:image"       content="[URL absoluta og-image 1200x630]">
-  <meta property="og:site_name"   content="[Negocio]">
+  <meta property="og:image"       content="[absolute URL og-image 1200x630]">
+  <meta property="og:site_name"   content="[Business]">
 
   <!-- Twitter/X -->
   <meta name="twitter:card"        content="summary_large_image">
@@ -32,7 +32,7 @@ Aplica optimizaciones de SEO, meta tags, schema markup y performance a todas las
   <meta name="twitter:image"       content="[og-image]">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="[favicon del JSON o placeholder]">
+  <link rel="icon" type="image/x-icon" href="[favicon from JSON or placeholder]">
 </head>
 ```
 
@@ -40,31 +40,31 @@ Aplica optimizaciones de SEO, meta tags, schema markup y performance a todas las
 
 ## Schema Markup (JSON-LD)
 
-Adaptar `@type` según sector:
+Adapt `@type` according to sector:
 
 | Sector | @type |
 |---|---|
 | Restaurant | `Restaurant` |
 | E-commerce | `Store` |
-| Salud | `MedicalBusiness` |
-| Educación | `EducationalOrganization` |
-| Genérico | `LocalBusiness` |
+| Health | `MedicalBusiness` |
+| Education | `EducationalOrganization` |
+| Generic | `LocalBusiness` |
 
 ```html
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "[según sector]",
-  "name": "[negocio]",
+  "@type": "[according to sector]",
+  "name": "[business]",
   "description": "[meta.description]",
   "url": "[url]",
-  "telephone": "[contacto.telefono]",
-  "email": "[contacto.email]",
+  "telephone": "[contact.phone]",
+  "email": "[contact.email]",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "[contacto.direccion o null]"
+    "streetAddress": "[contact.address or null]"
   },
-  "sameAs": ["[redes del JSON]"]
+  "sameAs": ["[social networks from JSON]"]
 }
 </script>
 ```
@@ -73,37 +73,37 @@ Adaptar `@type` según sector:
 
 ## Performance
 
-### Imágenes
+### Images
 ```html
-<!-- Todas las imágenes -->
-<img src="[url]" alt="[descripción real]" width="[real]" height="[real]" loading="lazy" decoding="async">
+<!-- All images -->
+<img src="[url]" alt="[real description]" width="[real]" height="[real]" loading="lazy" decoding="async">
 
-<!-- Solo hero (above the fold) — sin lazy, con fetchpriority -->
+<!-- Hero only (above the fold) — no lazy, with fetchpriority -->
 <img src="hero.jpg" alt="..." width="1200" height="600" decoding="async" fetchpriority="high">
 ```
 
-### Fuentes
+### Fonts
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Font+Name&display=swap');
-/* font-display: swap SIEMPRE incluido en la URL */
+/* font-display: swap ALWAYS included in the URL */
 ```
 
-### CSS Crítico
-El CSS de hero, nav y tipografía base va inline en `<style>` en el `<head>`.
-El resto en archivo externo con `<link rel="stylesheet">`.
+### Critical CSS
+The CSS for hero, nav, and base typography goes inline in `<style>` in the `<head>`.
+The rest in an external file with `<link rel="stylesheet">`.
 
-### Preloading de recursos críticos
+### Preloading critical resources
 ```html
-<!-- Preload de fuente display (la más importante visualmente) -->
+<!-- Preload display font (the most visually important one) -->
 <link rel="preload" href="[font-url]" as="font" type="font/woff2" crossorigin>
 
-<!-- Preload de imagen hero -->
+<!-- Preload hero image -->
 <link rel="preload" href="hero.jpg" as="image" fetchpriority="high">
 ```
 
-### Speculation Rules API (prefetch inteligente)
+### Speculation Rules API (smart prefetch)
 ```html
-<!-- Prefetch de páginas probables — navegación anticipada -->
+<!-- Prefetch probable pages — anticipatory navigation -->
 <script type="speculationrules">
 {
   "prerender": [
@@ -117,7 +117,7 @@ El resto en archivo externo con `<link rel="stylesheet">`.
 </script>
 ```
 
-### Content-visibility (lazy rendering de secciones below the fold)
+### Content-visibility (lazy rendering of sections below the fold)
 ```css
 .section:not(.hero) {
   content-visibility: auto;
@@ -125,24 +125,24 @@ El resto en archivo externo con `<link rel="stylesheet">`.
 }
 ```
 
-### will-change (con moderación)
+### will-change (use sparingly)
 ```css
 .hero-bg { will-change: transform; }
 .card    { will-change: transform; }
-/* Quitar después de animación si es posible */
+/* Remove after animation if possible */
 ```
 
 ---
 
-## Checklist SEO antes de entregar
+## SEO checklist before delivery
 
-- [ ] Cada página tiene `<title>` único y `<meta description>` único
-- [ ] H1 único por página con keyword principal
-- [ ] H2 y H3 en estructura lógica (sin saltarse niveles)
-- [ ] Todas las imágenes con `alt` descriptivo
-- [ ] Schema JSON-LD sin errores de sintaxis
-- [ ] `<link rel="canonical">` en todas las páginas
-- [ ] Open Graph completo para compartir en redes
-- [ ] `fetchpriority="high"` en la imagen LCP (hero)
-- [ ] Speculation rules para navegación anticipada
-- [ ] `content-visibility: auto` en secciones below the fold
+- [ ] Each page has a unique `<title>` and unique `<meta description>`
+- [ ] Unique H1 per page with main keyword
+- [ ] H2 and H3 in logical structure (no skipping levels)
+- [ ] All images with descriptive `alt`
+- [ ] Schema JSON-LD without syntax errors
+- [ ] `<link rel="canonical">` on all pages
+- [ ] Complete Open Graph for social sharing
+- [ ] `fetchpriority="high"` on the LCP image (hero)
+- [ ] Speculation rules for anticipatory navigation
+- [ ] `content-visibility: auto` on sections below the fold
