@@ -1,0 +1,7 @@
+{
+  "negocio": "Around The House Home Services",
+  "url_produccion": "https://around-the-house-handyman.vercel.app",
+  "fecha_deploy": "2026-04-04",
+  "stack": "html",
+  "carpeta_origen": "web/around-the-house-handyman/"
+}

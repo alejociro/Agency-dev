@@ -1,0 +1,160 @@
+{
+  "negocio": "Choice One Dental Care",
+  "url": "https://www.choiceonedentalcare.com/",
+  "sector": "Family Dentistry",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Family Dentistry Georgia and South Carolina | Home | Choice One Dental Care",
+    "description": "Choice One Dental Care provides family dentistry in Georgia and South Carolina. We also offer preventative, restorative, cosmetic, and other dental services. Contact us today.",
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#0079b7",
+    "secundario": "#06547a",
+    "acento": "#006a91",
+    "fondo": "#f4f4f4",
+    "texto": "#323132",
+    "otros": ["#252525", "#E4E4E4", "#9da3a8", "#ffffff"]
+  },
+  "logo": {
+    "url": "https://www.choiceonedentalcare.com/wp-content/uploads/2020/07/logo.png",
+    "descripcion": "Choice One Dental Care logo",
+    "posicion": "header top-left",
+    "colores": ["#0079b7", "#323132"]
+  },
+  "tipografias": [
+    { "nombre": "Nunito Sans", "uso": "headings (H1, H2, H3, H5)", "peso": "700, 800", "tamanio_aprox": "24px-42px" },
+    { "nombre": "Overpass", "uso": "body text, navigation", "peso": "400, 700", "tamanio_aprox": "13px-20px" }
+  ],
+  "navegacion": [
+    { "label": "Services", "url": "/services/" },
+    { "label": "Family Dentistry", "url": "/services/family-dentistry/" },
+    { "label": "Restorative Dentistry", "url": "/services/restorative-dentistry/" },
+    { "label": "Preventative Dentistry", "url": "/services/preventative-dentistry/" },
+    { "label": "Cosmetic Dentistry", "url": "/services/cosmetic-dentistry/" },
+    { "label": "Orthodontics", "url": "/services/orthodontics/" },
+    { "label": "Pediatric Dentistry", "url": "/services/pediatric-dentistry/" },
+    { "label": "Sedation Dentistry", "url": "/services/sedation-dentistry/" },
+    { "label": "New Patients", "url": "/new-patients/" },
+    { "label": "Patient Forms", "url": "/new-patients/patient-forms/" },
+    { "label": "Patient Financing", "url": "/new-patients/patient-financing/" },
+    { "label": "Locations", "url": "/location/" },
+    { "label": "Cartersville", "url": "/location/cartersville/" },
+    { "label": "Greensboro", "url": "/location/greensboro/" },
+    { "label": "Greenville", "url": "/location/greenville/" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Providing Exceptional Dental Care for the Family",
+      "contenido": "Providing Exceptional Dental Care for the Family",
+      "cta": "Find a Location",
+      "imagenes": [
+        {
+          "url": "https://www.choiceonedentalcare.com/wp-content/uploads/2020/07/logo.png",
+          "alt": "Choice One Dental Care logo",
+          "descripcion": "Business logo in hero/header area",
+          "tipo": "logo",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "We Offer a Range of Dental Services in Our Office",
+      "contenido": "Choice One Dental Care provides a host of dental services to the entire family, making us Georgia and South Carolina's premier family dentistry provider. We pride ourselves on delivering our services compassionately and with the utmost concern for our patients' comfort. We go to great lengths to make patients who fear the dentist comfortable and offer affordable options to patients who require preventative, restorative, cosmetic, and other dental services. Most importantly, we provide our dental care within a state-of-the-art environment, ensuring every patient receives top-flight treatment and a fantastic bedside manner.",
+      "cta": "View All Dental Services",
+      "imagenes": [
+        {
+          "url": null,
+          "alt": "ChoiceOne-1034373588",
+          "descripcion": "Family Dentistry service card image",
+          "tipo": "service-card",
+          "dimensiones": null
+        },
+        {
+          "url": null,
+          "alt": "ChoiceOneDentalCare-1165314750",
+          "descripcion": "Cosmetic Dentistry service card image",
+          "tipo": "service-card",
+          "dimensiones": null
+        },
+        {
+          "url": null,
+          "alt": "ChoiceOne-1080415396",
+          "descripcion": "Preventative Dentistry service card image",
+          "tipo": "service-card",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "about",
+      "titulo": "Our Individualized Treatment Plans",
+      "contenido": "Compassionate Dentistry for the Whole Family. No two patients are alike, so Choice One Dental Care creates a personalized treatment plan for everyone who enters our doors. We consider all factors when devising your treatment, including your needs, desires, and budget. Crafting a plan that works for you rather than our bottom line is vital. That way, you can feel secure knowing you will always enjoy top-notch dental care from our professionals. Whether you require orthodontics or cosmetic care, you can rely on individualized attention from us.",
+      "cta": "Learn More",
+      "imagenes": [
+        {
+          "url": null,
+          "alt": "little girl making a funny face",
+          "descripcion": "Photo of a little girl making a funny face, representing family-friendly dental care",
+          "tipo": "photo",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "contacto",
+      "titulo": "Contact Us Today for Affordable Dentistry",
+      "contenido": "Contact Us Today for Affordable Dentistry. Fill out the form to get in touch with our dental team.",
+      "cta": "Submit",
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios-detalle",
+      "titulo": "We Provide Everything from Orthodontics to Crowns",
+      "contenido": "Creating beautiful and healthy smiles is our specialty! Doing so requires many skills, and we're proud to offer all of them under one roof. If your teenager requires orthodontics, you can get them here. And at Choice One Dental Care, you can receive the restorative or cosmetic treatment you need to feel confident again. Our practice is multifaceted and staffed with committed professionals who understand what it takes to deliver outstanding dentistry. We also want to make things easier for our patients by offering no-hassle online scheduling, convenient locations, and affordable care.",
+      "cta": "Schedule a Visit",
+      "imagenes": []
+    },
+    {
+      "tipo": "ubicaciones",
+      "titulo": "Choice One Dental Care",
+      "contenido": "Locations: Cartersville, Georgia. Greensboro, Georgia. Greenville, South Carolina.",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Providing Exceptional Dental Care for the Family",
+    "propuesta_valor": "Georgia and South Carolina's premier family dentistry provider. We pride ourselves on delivering our services compassionately and with the utmost concern for our patients' comfort.",
+    "ctas": ["Find a Location", "View All Dental Services", "Learn More", "Schedule a Visit", "Contact Us Today"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(855) 247-1033",
+    "whatsapp": null,
+    "email": null,
+    "direccion": "5665 New Northside Drive, Ste. 250, Atlanta, GA 30328",
+    "horarios": "Monday-Friday: 8:00 AM - 5:00 PM"
+  },
+  "redes": [
+    { "plataforma": "Facebook", "url": "https://www.choiceonedentalcare.com/facebook/" },
+    { "plataforma": "Google", "url": "https://www.choiceonedentalcare.com/google/" },
+    { "plataforma": "Yelp", "url": "https://www.choiceonedentalcare.com/yelp/" }
+  ],
+  "formularios": [
+    {
+      "proposito": "Contact form for scheduling appointments and general inquiries",
+      "campos": ["First Name", "Last Name", "Phone", "Email", "Message"]
+    }
+  ],
+  "footer": {
+    "contenido": "Choice One Dental Care. 5665 New Northside Drive, Ste. 250, Atlanta, GA 30328. Monday-Friday: 8:00 AM - 5:00 PM. Phone: (855) 247-1033. Powered by LocalIQ.",
+    "links": ["Home", "Services", "New Patients", "Locations", "Privacy Policy", "Sitemap", "Accessibility Statement"],
+    "copyright": "© 2026 Choice One Dental Care. All Rights Reserved."
+  },
+  "tecnologia": "WordPress, Gravity Forms, jQuery, Google Analytics, Google Tag Manager, UserWay Accessibility"
+}

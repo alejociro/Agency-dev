@@ -1,0 +1,276 @@
+{
+  "negocio": "Precision Dental",
+  "url": "https://precisiondentalsc.com/",
+  "sector": "Dental Healthcare",
+  "requiere_render": true,
+  "nota_scraping": "Sitio renderizado por JS (WordPress + Divi Builder). Datos extraídos vía WP REST API para obtener contenido completo.",
+  "meta": {
+    "title": "Home - Precision Dental",
+    "description": "We're A Team Of Passionate Dental Experts Dedicated To Ensuring Your Smile Is Healthy & Sparkling",
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#2ea3f2",
+    "secundario": "#333333",
+    "acento": "#2ea3f2",
+    "fondo": "#f3f3f3",
+    "texto": "#666666",
+    "otros": ["#ffffff", "#000000", "#e2e2e2", "#eeeeee"]
+  },
+  "logo": {
+    "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/PrecisionDentalLogo.png",
+    "descripcion": "Logo de Precision Dental, texto con nombre del negocio",
+    "posicion": "header",
+    "colores": ["#2ea3f2", "#333333"]
+  },
+  "tipografias": [
+    { "nombre": "Open Sans", "uso": "cuerpo y encabezados", "peso": "400, 500, 700", "tamanio_aprox": "14px body, 30px h1, 26px h2, 22px h3" }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "https://precisiondentalsc.com/" },
+    { "label": "About", "url": "https://precisiondentalsc.com/about/" },
+    { "label": "Services", "url": "https://precisiondentalsc.com/services/" },
+    { "label": "Contact Us", "url": "https://precisiondentalsc.com/contact-us/" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "High-Quality Dental Care For All",
+      "contenido": "We're A Team Of Passionate Dental Experts Dedicated To Ensuring Your Smile Is Healthy & Sparkling",
+      "cta": "Book an Appointment",
+      "imagenes": [
+        {
+          "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/PrecisionDental_5_2022__160-gradient-01-1.jpg",
+          "alt": "Precision Dental hero background",
+          "descripcion": "Imagen de fondo del hero - consultorio dental profesional",
+          "tipo": "background",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "mision",
+      "titulo": null,
+      "contenido": "Quality dental care is a fundamental human right. We believe everyone deserves to receive dental care in a safe environment that reflects the diversity of the world we live in today. Our mission is to bring affordable, accessible care to hardworking, everyday people of all sizes, colors, and backgrounds. Stop by our office or contact us to see how we can brighten your smile.\n\nNosotros hablamos español",
+      "cta": "Book an Appointment",
+      "imagenes": [
+        {
+          "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/PrecisionDental_5_2022__260.jpg",
+          "alt": "Precision Dental office",
+          "descripcion": "Foto del equipo o consultorio dental",
+          "tipo": "content",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "testimonial",
+      "titulo": null,
+      "contenido": "\"I have always been nervous about going to the dentist, but after going to Precision Dental, that has changed. Everyone was so kind and very easy to talk to and explained everything they were doing. A great group and I plan to keep up with my dental visits now that I've been there.\" – Nancy N., From Google Reviewer. Rated 4.8/5 on Google.",
+      "cta": "View More Testimonials",
+      "imagenes": [
+        {
+          "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/Screen-Shot-2022-08-08-at-3.09.39-PM.jpg",
+          "alt": "Rated 4.8/5 on Google",
+          "descripcion": "Badge de calificación Google 4.8/5",
+          "tipo": "badge",
+          "dimensiones": null
+        },
+        {
+          "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/Screen-Shot-2022-08-08-at-3.10.00-PM.jpg",
+          "alt": "Google reviews",
+          "descripcion": "Screenshot de reseñas de Google",
+          "tipo": "badge",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Our Services",
+      "contenido": "Cosmetic Dentistry\nFamily Dentistry\nReconstructive Dentistry",
+      "cta": "Learn More",
+      "imagenes": [
+        {
+          "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/PrecisionDental_5_2022__72.jpg",
+          "alt": "Dental services",
+          "descripcion": "Imagen de servicios dentales",
+          "tipo": "content",
+          "dimensiones": null
+        },
+        {
+          "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/PrecisionDental_5_2022__252.jpg",
+          "alt": "Dental care",
+          "descripcion": "Imagen de cuidado dental",
+          "tipo": "content",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "about",
+      "titulo": "You No Longer Have To Go To The Dentist… Now, You Get To Go.",
+      "contenido": "When you walk through our doors, you'll feel something different than other dentist offices you may have been to. Apart from being warmly welcomed into a comfortable, clean and professional environment, you'll sense a sort of buzz in the air, the kinda vibe that only exudes from a place that is thriving. And why is that? Because at Precision Dental, we're a group of people deeply passionate about teeth. Well, clean and healthy teeth, to be more exact. The point is, we truly find Joy in our work, which is what motivates us to come in each and every day and give 100%, using the most sophisticated techniques and up-to-date technology, to ensure that you receive the dental care you deserve.",
+      "cta": "Book an Appointment",
+      "imagenes": [
+        {
+          "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/PrecisionDental_5_2022__50-web.jpg",
+          "alt": "Precision Dental office interior",
+          "descripcion": "Interior del consultorio dental mostrando ambiente profesional",
+          "tipo": "content",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "tips",
+      "titulo": "5 Quick Tips To Brighten Your Smile",
+      "contenido": "We want to empower you to make wise decisions for your oral health through individual consultations and patient education. A well-informed patient will be able to take an active role in their treatment and together we can accomplish a great smile!\n\n1. Brush Twice A Day For At Least Two Minutes\n2. Floss At Least Once Per Day\n3. Go To The Dentist At Least Twice A Year\n4. Eat Right. Diet Goes Along Way In Dental Care\n5. Drink Water. Staying Hydrated Is Essential",
+      "cta": null,
+      "imagenes": [
+        { "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/1.png", "alt": "Tip 1 - Brush", "descripcion": "Icono tip 1 cepillado", "tipo": "icon", "dimensiones": null },
+        { "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/2.png", "alt": "Tip 2 - Floss", "descripcion": "Icono tip 2 hilo dental", "tipo": "icon", "dimensiones": null },
+        { "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/3.png", "alt": "Tip 3 - Dentist visits", "descripcion": "Icono tip 3 visitas al dentista", "tipo": "icon", "dimensiones": null },
+        { "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/4.png", "alt": "Tip 4 - Diet", "descripcion": "Icono tip 4 alimentación", "tipo": "icon", "dimensiones": null },
+        { "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/5.png", "alt": "Tip 5 - Water", "descripcion": "Icono tip 5 hidratación", "tipo": "icon", "dimensiones": null }
+      ]
+    },
+    {
+      "tipo": "vision",
+      "titulo": "Our Vision",
+      "contenido": "We dream of a day when every Dentist will have a diverse team, accept a diverse clientele, and be willing to see those patients that are often rejected. We dream of becoming a nationally recognized Black-owned dental practice known for welcoming underrepresented communities and removing barriers to multilingual care.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/PrecisionDental_5_2022__263-web.jpg",
+          "alt": "Precision Dental vision",
+          "descripcion": "Imagen de fondo sección visión",
+          "tipo": "background",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "mision-about",
+      "titulo": "Our Mission",
+      "contenido": "Our mission is to create spaces to encourage diversity and welcome an ever-changing society. We position ourselves as approachable practitioners committed to reducing dental anxiety.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/LogoGrayS.png",
+          "alt": "Precision Dental logo watermark",
+          "descripcion": "Logo gris como marca de agua decorativa",
+          "tipo": "decorative",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "valores",
+      "titulo": "Core Values",
+      "contenido": "Diversity — Respect and embrace diversity in employment\nIntegrity — Always be honest with others and yourself\nTeamwork — Learn from your team to be stronger together\nEmpowerment — Take initiative, give your best, and treat challenges as opportunities\nCommitment — Obtain continuing education, implement new technology",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "equipo",
+      "titulo": "About Dr. Tywana M Groce, DMD",
+      "contenido": "Dr. Groce pursued dentistry after learning only 3% of dentists are people of color. She completed her education at Hampton University and her DDS at Temple University School of Dentistry. She spent 3 years in public health before establishing private practice in the Upstate South Carolina area, where she has practiced for nearly 15 years.",
+      "cta": "Book an Appointment",
+      "imagenes": [
+        {
+          "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/Groce2-web-scaled.jpg",
+          "alt": "Groce2-web",
+          "descripcion": "Foto profesional de Dr. Tywana M Groce, DMD - fundadora y dentista principal",
+          "tipo": "portrait",
+          "dimensiones": null
+        },
+        {
+          "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/PrecisionDental_5_2022__136-web.jpg",
+          "alt": "Precision Dental team",
+          "descripcion": "Foto del equipo dental en el consultorio",
+          "tipo": "background",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "servicios-detalle",
+      "titulo": "Precision Dental Services",
+      "contenido": "Our practice features a full range of affordable dental services to care for your smile.\n\nMain Services:\n- Teeth Whitening\n- Dentures & Partials\n- Custom Porcelain Veneers\n- Crowns\n- Dental Bonding\n- Dental Implants\n\nAdditional Services:\n- Inlays and Onlays\n- Fixed bridges\n- Tooth-Colored Fillings\n- Invisible Braces\n- Routine Dental Cleanings & Exams\n- Digital X Rays\n- Fluoride Treatments\n- Sealants\n- Night guards\n- Root Canals\n- Non-Surgical Periodontal Therapy\n- Tooth Removal\n- Sedation",
+      "cta": "Book an Appointment",
+      "imagenes": [
+        {
+          "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/PrecisionDental_5_2022__230.jpg",
+          "alt": "Dental services",
+          "descripcion": "Imagen de equipamiento dental profesional",
+          "tipo": "content",
+          "dimensiones": null
+        },
+        {
+          "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/PrecisionDental_5_2022__207.jpg",
+          "alt": "Dental technology",
+          "descripcion": "Imagen de tecnología dental",
+          "tipo": "content",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "tecnologia",
+      "titulo": "We Use The Latest Technologies",
+      "contenido": "The practice emphasizes ongoing evolution with dental advancements. They highlight CEREC technology — Chairside Economical Restoration of Esthetic Ceramic — which uses digital modeling and CAD/CAM dentistry to create affordable ceramic restorations for tooth damage from decay or injury.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "contacto",
+      "titulo": "Let Us Know How We Can Help You",
+      "contenido": "Phone: (864) 232-8393\nFax: (864) 242-6944\nEmail: smile@precisiondentalsc.com\nAddress: 10 Pelham Road, Greenville, SC 29607\nHours: Monday-Thursday: 8:30am – 5pm (Closed for lunch: 12:30pm-2pm)",
+      "cta": "Send Message",
+      "imagenes": [
+        {
+          "url": "https://precisiondentalsc.com/wp-content/uploads/2022/08/Maps.jpg",
+          "alt": "Map location",
+          "descripcion": "Mapa de ubicación del consultorio dental",
+          "tipo": "map",
+          "dimensiones": null
+        }
+      ]
+    }
+  ],
+  "textos_clave": {
+    "slogan": "High-Quality Dental Care For All",
+    "propuesta_valor": "We're A Team Of Passionate Dental Experts Dedicated To Ensuring Your Smile Is Healthy & Sparkling",
+    "ctas": [
+      "Book an Appointment",
+      "Learn More",
+      "View More Testimonials",
+      "Send Message"
+    ]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(864) 232-8393",
+    "whatsapp": null,
+    "email": "smile@precisiondentalsc.com",
+    "direccion": "10 Pelham Road, Greenville, SC 29607",
+    "horarios": "Monday-Thursday: 8:30am – 5pm (Closed for lunch: 12:30pm-2pm)"
+  },
+  "redes": [],
+  "formularios": [
+    {
+      "proposito": "Contact form - appointment request",
+      "campos": ["First Name", "Last Name", "Interested In (dropdown: Teeth Whitening, Dentures & Partials, Custom Porcelain, Veneers, Crowns, Dental Bonding, Dental Implants)", "Phone", "Email", "Additional Message"]
+    }
+  ],
+  "footer": {
+    "contenido": "Precision Dental - Greenville, SC",
+    "links": [
+      { "label": "Privacy Policy", "url": "https://precisiondentalsc.com/privacy-policy/" }
+    ],
+    "copyright": "Precision Dental"
+  },
+  "tecnologia": "WordPress + Divi Theme (v4.27.4) by Elegant Themes, Divi Page Builder, LiteSpeed Cache"
+}

@@ -1,0 +1,172 @@
+{
+  "negocio": "Around The House Home Services",
+  "url": "https://aroundthehousehandyman.com/",
+  "sector": "Handyman Services / Home Repair & Remodeling",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Around The House Home Services - Handyman Services, Home Handyman, Handyman Home Repair",
+    "description": null,
+    "keywords": "Handyman services, home repair, home handyman, Largo, Clearwater, Seminole"
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#F59402",
+    "secundario": "#161616",
+    "acento": "#A86602",
+    "fondo": "#FFFFFF",
+    "texto": "#1B1B1B",
+    "otros": ["#5E5E5E", "#F7F7F7", "#E2E2E2"]
+  },
+  "logo": {
+    "url": "https://img1.wsimg.com/isteam/ip/b870e806-2d7b-4d15-9e22-a704518db926/fulllogo_transparent.png",
+    "descripcion": "Around The House Home Services logo, transparent background",
+    "posicion": "header top-left",
+    "colores": ["#F59402", "#1B1B1B"]
+  },
+  "tipografias": [
+    { "nombre": "Quicksand", "uso": "headings, navigation", "peso": "400, 700", "tamanio_aprox": "32px-48px headings, 18px nav" },
+    { "nombre": "Muli", "uso": "body text, paragraphs", "peso": "400", "tamanio_aprox": "16px-18px" }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "/" },
+    { "label": "About ATH Home Services", "url": "/about-ath-home-services" },
+    { "label": "What We Do", "url": "/what-we-do" },
+    { "label": "What We Don't Do", "url": "/what-we-dont-do" },
+    { "label": "Contact", "url": "/contact" },
+    { "label": "Friends of ours", "url": "/friends-of-ours" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Home Handyman Repair Services In the Largo, Clearwater, Seminole area",
+      "contenido": "Professional home handyman repair services serving Central Pinellas County.",
+      "cta": "Schedule Now",
+      "imagenes": [
+        {
+          "url": "https://img1.wsimg.com/isteam/ip/b870e806-2d7b-4d15-9e22-a704518db926/handyman%2Bundersink%2Bafter.jpg",
+          "alt": "Handyman under sink repair",
+          "descripcion": "Hero background image showing handyman working under a sink",
+          "tipo": "hero-background",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "about-services",
+      "titulo": "ATH Home Handyman Services Gets The Small Jobs Done",
+      "contenido": "Around The House Home Handyman Services is a family-owned and operated business with over 30 years of experience in the residential repair, remodeling, and construction industry. We specialize in tackling your home's to-do list with professional, high-quality handyman service at a reasonable price. Serving Central Pinellas County including Clearwater, St. Petersburg, Largo, Seminole, Pinellas Park, Palm Harbor, Belleair, Indian Rocks, Indian Shores, Belleair Beach, Belleair Bluffs, Bardmoor, Reddington Beach, and Reddington Shores.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://img1.wsimg.com/isteam/getty/1438142783",
+          "alt": "Home Handyman Repair Installation",
+          "descripcion": "Image of handyman performing repair installation work",
+          "tipo": "section-image",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "features",
+      "titulo": "Trusted Home Maintenance & Repair Experts",
+      "contenido": "At Around The House we focus on getting the small jobs done in a reliable and professional manner. The owner, Ryan, performs all on-site work personally. Uses quality materials and tools. Offers flexible scheduling accommodating evenings and weekends. Provides upfront estimates with competitive pricing without quality compromise. If a client would be better served elsewhere, Ryan will let you know and offer referrals when appropriate.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "services",
+      "titulo": "What We Do - Professional Home Maintenance and Repair Services",
+      "contenido": "Carpentry: I offer a wide range of carpentry services, including framing, trim work, custom cabinetry, and custom furniture.\n\nFurniture Repair: Have a piece of nice furniture that sustained some damage. I've been building custom furniture for years so odds are I can fix it up for you.\n\nFurniture Assembly: Did you bring home a car full of boxes from Ikea or another big box store? I can get those items assembled and installed for you quickly.\n\nVacation/Airbnb Home Maintenance: Have a vacation home or Airbnb in the area...I'll get it back in tip top shape for your next guests.\n\nPainting: I provide interior painting services, including prep work, priming, and painting with high-quality paints.\n\nDrywall: Have a small drywall repair? I can fix that for you.\n\nElectrical: I can help with minor electrical needs, from installing light fixtures and ceiling fans to troubleshooting minor electrical problems.\n\nPlumbing: Is your toilet running? I can help with repair and maintenance of faucets, toilets, showers, and other plumbing fixtures.\n\nGeneral Repairs: We can handle all types of general repairs, from fixing leaky faucets to repairing damaged walls and floors.\n\nThere's too much to list. Making a comprehensive list of every service...Feel free to contact me today to discuss your project and schedule your next repair!",
+      "cta": "Contact me today",
+      "imagenes": []
+    },
+    {
+      "tipo": "gallery",
+      "titulo": "Handyman Services in Action",
+      "contenido": "Gallery showcasing 29 images of completed handyman work projects.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://img1.wsimg.com/isteam/ip/b870e806-2d7b-4d15-9e22-a704518db926/20250206_125350.jpg",
+          "alt": "Handyman project completed",
+          "descripcion": "Photo of completed handyman work",
+          "tipo": "gallery",
+          "dimensiones": null
+        },
+        {
+          "url": "https://img1.wsimg.com/isteam/ip/b870e806-2d7b-4d15-9e22-a704518db926/20250509_114243.jpg",
+          "alt": "Handyman project completed",
+          "descripcion": "Photo of completed handyman work",
+          "tipo": "gallery",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "testimonials",
+      "titulo": "Raving Reviews",
+      "contenido": "Customer reviews and testimonials section.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "contact-form",
+      "titulo": "Contact Us",
+      "contenido": "Get a Free Quote or Feel Free to Call or Text 727-386-8528",
+      "cta": "Send",
+      "imagenes": []
+    },
+    {
+      "tipo": "cta-section",
+      "titulo": "Get the small jobs done!",
+      "contenido": "We stay in constant communication with our customers until the job is done. To get a free quote, or if you have questions or special requests, just drop us a line. Home handyman services in Central Pinellas County including Clearwater, St. Petersburg, Largo, Seminole, Pinellas Park, Palm Harbor, Belleair, Indian Rocks, Indian Shores, Belleair Beach, Belleair Bluffs, Bardmoor, Reddington Beach, and Reddington Shores.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "what-we-dont-do",
+      "titulo": "What I can't help you with",
+      "contenido": "While I'd love to have your business, I'm very transparent about what I can and am willing to do. If it's something I'm not comfortable with, I'll let you know and point you in the right direction if I know someone I trust to do the job for you.\n\nServices NOT provided: Roofing, Lawn/Yard Maintenance, Large Scale Remodeling, Pressure Washing.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "about",
+      "titulo": "About Around The House Home Services",
+      "contenido": "At Around The House we focus on getting the small jobs done in a reliable and professional manner. Expert Home Repair Services with quality materials and tools. Flexible Scheduling accommodating evenings and weekends. Competitive Pricing with upfront estimates without quality compromise. The owner Ryan performs all on-site work personally and is transparent about capabilities, offering referrals when a job falls outside his expertise.",
+      "cta": null,
+      "imagenes": []
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Get the small jobs done!",
+    "propuesta_valor": "Family-owned and operated business with over 30 years of experience in the residential repair, remodeling, and construction industry. Professional, high-quality handyman service at a reasonable price.",
+    "ctas": ["Schedule Now", "Contact me today", "Send", "Sign up"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "727-386-8528",
+    "whatsapp": null,
+    "email": "aroundthehousehomehandyman@gmail.com",
+    "direccion": "2101 Starkey Rd, Largo, FL 33771, USA",
+    "horarios": "Monday-Friday: 09:00 AM - 05:00 PM, Saturday-Sunday: Closed"
+  },
+  "redes": [],
+  "formularios": [
+    {
+      "proposito": "Contact / Free Quote Request",
+      "campos": ["Name", "Email (required)", "Phone", "Address (Street, City, Zip Code)", "Attach Files"]
+    },
+    {
+      "proposito": "Newsletter Subscription",
+      "campos": ["Email Address"]
+    }
+  ],
+  "footer": {
+    "contenido": "Subscribe - Sign up for updates, deals, and maintenance tips. Business address and contact information.",
+    "links": ["About ATH Home Services", "What We Do", "What We Don't Do", "Contact"],
+    "copyright": "Copyright 2025 Around The House Home Services - All Rights Reserved."
+  },
+  "tecnologia": "GoDaddy Website Builder, Google Analytics (G-BF2FDR6KMM), Facebook Pixel (282429905966327), reCAPTCHA, Service Worker, Schema.org LocalBusiness structured data"
+}

@@ -1,0 +1,160 @@
+{
+  "negocio": "Carolina Dental Alliance",
+  "url": "https://www.carolinadentalalliance.com/",
+  "sector": "Dental Healthcare",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Home | South Carolina | Carolina Dental Alliance",
+    "description": "Carolina Dental Alliance is a dentist with offices in Spartanburg, Greenville, Columbia and other parts of South Carolina.",
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#4fbbda",
+    "secundario": "#2c659c",
+    "acento": "#f2e9cb",
+    "fondo": "#ffffff",
+    "texto": "#1d222a",
+    "otros": ["#9da3a8", "#b32121", "#E4E4E4"]
+  },
+  "logo": {
+    "url": "https://www.carolinadentalalliance.com/wp-content/uploads/2019/04/CDA_logo.png",
+    "descripcion": "Carolina Dental Alliance logo",
+    "posicion": "header top-left",
+    "colores": ["#4fbbda", "#2c659c"]
+  },
+  "tipografias": [
+    { "nombre": "Work Sans", "uso": "headings, body", "peso": "400, 500, 600, 800", "tamanio_aprox": "20px-42px" },
+    { "nombre": "Lato", "uso": "navigation, buttons, body text", "peso": "400, 500, 600", "tamanio_aprox": "13px-20px" }
+  ],
+  "navegacion": [
+    { "label": "Services", "url": "/services" },
+    { "label": "General Dentistry", "url": "/services/general-dentistry" },
+    { "label": "Cosmetic Dentistry", "url": "/services/cosmetic-dentistry" },
+    { "label": "Emergency Dentistry", "url": "/services/emergency-dentistry" },
+    { "label": "Advanced Dentistry", "url": "/services/advanced-dentistry" },
+    { "label": "Dental Implants", "url": "/services/dental-implants" },
+    { "label": "Teeth Straightening/Clear Aligners", "url": "/services/teeth-straightening" },
+    { "label": "Dental Plan", "url": "/dental-plan" },
+    { "label": "New Patients", "url": "/new-patients" },
+    { "label": "Offices", "url": "/offices" },
+    { "label": "Financing & Offers", "url": "/financing-and-offers" },
+    { "label": "Blog", "url": "/blog" },
+    { "label": "Contact Us", "url": "/contact-us" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Welcome to Carolina Dental Alliance",
+      "contenido": "Welcome to Carolina Dental Alliance",
+      "cta": "Choose Your Location",
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios-grid",
+      "titulo": "Services",
+      "contenido": null,
+      "cta": null,
+      "imagenes": [
+        { "url": "https://www.carolinadentalalliance.com/wp-content/uploads/CarolinaDentalAlliance-677292888-400x400.jpg", "alt": "New Patients", "descripcion": "New Patients service card image", "tipo": "card", "dimensiones": "400x400" },
+        { "url": "https://www.carolinadentalalliance.com/wp-content/uploads/CarolinaDentalAlliance-654141608-400x400.jpg", "alt": "Our Services", "descripcion": "Services card image", "tipo": "card", "dimensiones": "400x400" },
+        { "url": "https://www.carolinadentalalliance.com/wp-content/uploads/CarolinaDentalAlliance-501666153-400x400.jpg", "alt": "Special Offers", "descripcion": "Special Offers card image", "tipo": "card", "dimensiones": "400x400" },
+        { "url": "https://www.carolinadentalalliance.com/wp-content/uploads/CarolinaDentalAlliance-940518764-400x400.jpg", "alt": "Dental Plan", "descripcion": "Dental Plan card image", "tipo": "card", "dimensiones": "400x400" }
+      ]
+    },
+    {
+      "tipo": "card",
+      "titulo": "New Patients",
+      "contenido": "From the standard dental checkup to restorative procedures, our team is here for you and your family.",
+      "cta": "/new-patients",
+      "imagenes": []
+    },
+    {
+      "tipo": "card",
+      "titulo": "Our Services",
+      "contenido": "Our many dentists at our South Carolina practices have the skills to provide expert care with a gentle touch.",
+      "cta": "/services",
+      "imagenes": []
+    },
+    {
+      "tipo": "card",
+      "titulo": "Special Offers",
+      "contenido": "Braces starting at $3,995 with Novus Orthodontics. Free consultation including initial exam and X-rays.",
+      "cta": "/financing-and-offers",
+      "imagenes": []
+    },
+    {
+      "tipo": "card",
+      "titulo": "Dental Plan",
+      "contenido": "Our commitment is to our patients, and we strive to make sure they are comfortable throughout their entire appointment.",
+      "cta": "/dental-plan",
+      "imagenes": []
+    },
+    {
+      "tipo": "about",
+      "titulo": "Compassionate Dental Care Is Right Around The Corner",
+      "contenido": "From Upstate South Carolina to the Coast, the friendly dentists and dental professionals at Carolina Dental Alliance practices are dedicated to providing you with exceptional dental care in a relaxed, comfortable atmosphere. We love to see those beautiful Carolina smiles, so we make it easy for you to get the dental care you need to keep your smile brighter, healthier and happier for a lifetime. No matter which of our 17 practices you visit, you'll find a caring team of professionals, equipped with the latest in dental technology, ready to care for your dental needs. They'll answer any questions, explain all of your options and provide the information you need to be better informed and more relaxed. All of the dental professionals at Carolina Dental Alliance maintain the highest levels of accreditation and pursue ongoing education to stay abreast of the latest trends in dentistry.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "contenido",
+      "titulo": null,
+      "contenido": "To make your visit even easier, we accept and file most traditional insurance and even have payment options.",
+      "cta": "Contact Us",
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios-lista",
+      "titulo": "Services",
+      "contenido": "Sedation Dentistry, Maxillofacial & Oral Surgery, TMJ Treatment, Teeth Whitening, Dentures, Implants, Crowns, Bridges, Veneers",
+      "cta": "Contact Us",
+      "imagenes": []
+    },
+    {
+      "tipo": "ubicaciones",
+      "titulo": "Our Locations",
+      "contenido": "Beaufort, Charleston, Columbia, Blacksburg, Greenville, Greenwood, Inman, Liberty, Murrells Inlet, Piedmont, Powdersville, Saluda, Spartanburg Eastside, Spartanburg Powell Mill Road, Spartanburg Westside, Summerville, Union",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "banner-promocional",
+      "titulo": null,
+      "contenido": "No Money Down Braces promotional banner",
+      "cta": null,
+      "imagenes": [
+        { "url": "https://www.carolinadentalalliance.com/wp-content/uploads/2025/06/Carolina-Dental-No-Money-Down-Braces-Banner-300x85.jpeg", "alt": "Carolina Dental No Money Down Braces Banner", "descripcion": "Promotional banner for braces starting with no money down", "tipo": "banner", "dimensiones": "300x85" }
+      ]
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Compassionate Dental Care Is Right Around The Corner",
+    "propuesta_valor": "From Upstate South Carolina to the Coast, the friendly dentists and dental professionals at Carolina Dental Alliance practices are dedicated to providing you with exceptional dental care in a relaxed, comfortable atmosphere.",
+    "ctas": ["Choose Your Location", "Contact Us", "New Patients", "Our Services", "Special Offers", "Dental Plan"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "864-576-0995",
+    "whatsapp": null,
+    "email": null,
+    "direccion": "Multiple locations across South Carolina (17 offices)",
+    "horarios": null
+  },
+  "redes": [
+    { "plataforma": "Facebook", "url": null },
+    { "plataforma": "Twitter", "url": null },
+    { "plataforma": "Instagram", "url": null },
+    { "plataforma": "YouTube", "url": null }
+  ],
+  "formularios": [
+    { "proposito": "Contact/Gravity Forms integration", "campos": [] }
+  ],
+  "footer": {
+    "contenido": "Carolina Dental Alliance footer with navigation links, social media icons, and LocalIQ attribution",
+    "links": ["Home", "Services", "Dental Plan", "New Patients", "Offices", "Financing & Offers", "Blog", "Contact Us", "Privacy Policy", "Sitemap", "Accessibility Statement"],
+    "copyright": "© 2026 Carolina Dental Alliance. All Rights Reserved."
+  },
+  "tecnologia": "WordPress, Material Design theme, Google Analytics (UA-50584001-1), Google Tag Manager (GTM-MLQLJDCM), GA4 (G-TVPP89Q3JP), Gravity Forms, Schema.org structured data"
+}

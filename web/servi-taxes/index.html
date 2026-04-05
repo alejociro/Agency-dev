@@ -57,7 +57,7 @@
 <body>
 
   <!-- ======== HEADER ======== -->
-  <header class="header">
+  <header class="header header--hero">
     <div class="container header__inner">
       <a href="#" aria-label="Servi Taxes LLC - Inicio">
         <img
@@ -106,23 +106,23 @@
     <div class="hero__grid-lines"></div>
 
     <div class="container hero__content">
-      <div class="hero__badge">
+      <div class="hero__badge hero-stagger" style="--stagger: 0">
         <span class="hero__badge-dot"></span>
         Contabilidad profesional en Greenville, SC
       </div>
 
-      <h1 class="hero__title">
+      <h1 class="hero__title hero-stagger" style="--stagger: 1">
         Tranquilidad con sus
         <span class="hero__title-accent">cuentas organizadas</span>
       </h1>
 
-      <p class="hero__subtitle">
+      <p class="hero__subtitle hero-stagger" style="--stagger: 2">
         Deje en nuestras manos la organización de sus libros contables,
         para dedicar más tiempo en hacer crecer su negocio.
       </p>
 
-      <div class="hero__actions">
-        <a href="https://contabilidad.servi-taxes.com/agendar-cita" class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+      <div class="hero__actions hero-stagger" style="--stagger: 3">
+        <a href="https://contabilidad.servi-taxes.com/agendar-cita" class="btn btn--primary btn--lg" data-magnetic target="_blank" rel="noopener">
           Agende una Cita
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
@@ -142,20 +142,22 @@
   <section class="trust-bar container reveal">
     <div class="trust-bar__inner">
       <div class="trust-bar__item">
-        <div class="trust-bar__number" data-count="10" data-suffix="+">0</div>
-        <div class="trust-bar__label">Años de experiencia</div>
-      </div>
-      <div class="trust-bar__item">
-        <div class="trust-bar__number" data-count="500" data-suffix="+">0</div>
-        <div class="trust-bar__label">Clientes atendidos</div>
+        <div class="trust-bar__number" data-count="3">0</div>
+        <div class="trust-bar__label">Servicios integrados</div>
       </div>
       <div class="trust-bar__item">
         <div class="trust-bar__number" data-count="100" data-suffix="%">0</div>
         <div class="trust-bar__label">En español</div>
       </div>
       <div class="trust-bar__item">
-        <div class="trust-bar__number" data-count="3" data-suffix="">0</div>
-        <div class="trust-bar__label">Servicios integrados</div>
+        <div class="trust-bar__number" data-count="2">0</div>
+        <div class="trust-bar__label">Idiomas (ES + EN)</div>
+      </div>
+      <div class="trust-bar__item">
+        <div class="trust-bar__number trust-bar__number--icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="trust-bar__label">Greenville, SC</div>
       </div>
     </div>
   </section>
@@ -490,7 +492,7 @@
             </div>
             <div>
               <div class="contact__info-label">Horarios</div>
-              <p class="contact__info-value">Lunes a Viernes: 9:00 AM - 5:00 PM<br>Sábado: Con cita previa</p>
+              <p class="contact__info-value">Contáctenos para conocer nuestros horarios</p>
             </div>
           </div>
 

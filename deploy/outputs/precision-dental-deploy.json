@@ -1,0 +1,7 @@
+{
+  "negocio": "Precision Dental",
+  "url_produccion": "https://precision-dental.vercel.app",
+  "fecha_deploy": "2026-04-04",
+  "stack": "html",
+  "carpeta_origen": "web/precision-dental/"
+}

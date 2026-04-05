@@ -1,0 +1,162 @@
+{
+  "cliente": "Around The House Home Services",
+  "url_auditada": "https://aroundthehousehandyman.com/",
+  "sector": "Handyman Services / Home Repair & Remodeling",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Tecnico: 50. Applied because this is a local service business (handyman) serving a specific geographic area (Central Pinellas County, FL). The benchmark for local service providers emphasizes trust signals, local SEO, and clear contact information over advanced technical features.",
+  "fecha": "2026-04-04",
+  "scores": {
+    "seo": 38,
+    "ux_ui": 45,
+    "marketing": 52,
+    "contenido": 55,
+    "tecnico": 35,
+    "total": 45
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "H1 contains primary keyword 'Home Handyman Repair Services' with geographic targeting (Largo, Clearwater, Seminole)",
+        "Meta title present and keyword-rich with service and location terms",
+        "CTAs use descriptive action verbs: 'Schedule Now', 'Contact me today' rather than generic 'Click here'",
+        "Schema.org LocalBusiness structured data implemented with address and geo coordinates"
+      ],
+      "negativos": [
+        "Meta description is completely missing — critical for search snippet optimization and CTR",
+        "Most images lack proper descriptive alt text; gallery images have generic 'Handyman project completed' alt tags",
+        "No heading hierarchy detected — multiple sections appear to use similar heading levels without H1>H2>H3 structure",
+        "No favicon detected, reducing brand recognition in browser tabs and bookmarks",
+        "Keyword stuffing in meta title with repetitive 'Handyman' variations"
+      ],
+      "recomendaciones": [
+        { "accion": "Add a compelling meta description (150-160 chars) targeting 'handyman services Largo FL' with a call to action", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Write unique, descriptive alt text for all gallery and section images describing the specific work shown", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implement proper heading hierarchy: single H1 per page, H2 for sections, H3 for subsections", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Add favicon using the brand orange color for browser tab recognition", "prioridad": "baja", "tipo": "quick_win" },
+        { "accion": "Create individual service pages (e.g., /carpentry, /plumbing) for better keyword targeting", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Consistent color palette with orange (#F59402) as primary accent and dark backgrounds for contrast sections",
+        "Readable typography with Quicksand for headings and Muli for body text — both clean sans-serif fonts",
+        "Clear navigation with 6 logically organized menu items covering key pages"
+      ],
+      "negativos": [
+        "GoDaddy template lacks distinctive visual identity — looks generic for a handyman business",
+        "Gallery section shows 29 images in a carousel without categorization, making it hard to find relevant work examples",
+        "No visual differentiation between service categories on the services page — all listed as plain text",
+        "White (#FFFFFF) background with near-black (#1B1B1B) text creates harsh contrast; no warm tones to match the friendly brand personality",
+        "Hero section heading repeated 5 times (carousel artifact), creating a cluttered experience"
+      ],
+      "recomendaciones": [
+        { "accion": "Replace pure white background with a warm off-white (#FAFAF8 or similar) to soften the look and match the friendly brand tone", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Organize gallery into categories (carpentry, plumbing, electrical, etc.) with before/after pairs where possible", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Design service cards with icons and clear visual hierarchy instead of plain text list", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Fix hero carousel to display content cleanly without repeated headings", "prioridad": "alta", "tipo": "quick_win" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Strong value proposition: 'family-owned, 30+ years experience, reasonable price' addresses core customer concerns (trust, experience, affordability)",
+        "Primary CTA 'Schedule Now' is visible in hero and links directly to contact form — clear conversion path",
+        "Testimonials section ('Raving Reviews') present as social proof element",
+        "Transparency as a selling point: 'What We Don't Do' page builds trust by showing honesty about limitations"
+      ],
+      "negativos": [
+        "Testimonial section appears to be present but actual review content was not extractable — may be poorly implemented or empty",
+        "No specific numbers or quantified results (e.g., '500+ projects completed', '4.9 star rating')",
+        "No urgency or scarcity elements to encourage immediate action",
+        "Missing before/after project showcases which are the most compelling content for handyman services",
+        "No mention of licensing, insurance, or certifications which are key trust factors for home service providers"
+      ],
+      "recomendaciones": [
+        { "accion": "Add 3-5 real customer testimonials with names, locations, and specific project descriptions", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Include trust badges: licensed, insured, years in business, number of projects completed", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Create before/after photo pairs for the most impressive projects to showcase quality", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Add a 'Free Quote' badge or banner element near the hero to reinforce the no-cost consultation offer", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Service descriptions are written in first person by the owner (Ryan), creating a personal and authentic tone",
+        "Complete contact information: phone, email, physical address, and business hours all present",
+        "Comprehensive service area listing with specific cities and neighborhoods in Pinellas County",
+        "Clear scope definition with both 'What We Do' and 'What We Don't Do' pages reducing misaligned inquiries"
+      ],
+      "negativos": [
+        "Service descriptions are very brief (1-2 sentences each) and lack detail about process, materials, or what to expect",
+        "No FAQ section addressing common customer questions (pricing range, timeline, booking process)",
+        "No blog or educational content that could drive organic search traffic",
+        "The 'About' section lacks a personal photo of Ryan or the team, missing the personal connection that's key for in-home services",
+        "Repeated service area text appears in multiple sections (hero, about, CTA) creating redundancy"
+      ],
+      "recomendaciones": [
+        { "accion": "Expand each service description to 3-4 sentences covering what's included, typical timeline, and why customers choose ATH for that service", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Add an FAQ section with 8-10 common questions about pricing, scheduling, service area, and process", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Include a personal photo and brief bio of Ryan on the about page to build personal trust", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Consolidate service area mentions to avoid repetition; list once prominently with a service area map", "prioridad": "baja", "tipo": "quick_win" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Schema.org LocalBusiness structured data implemented for search engine understanding",
+        "Google Analytics and Facebook Pixel tracking installed for visitor and campaign analytics",
+        "reCAPTCHA integration on contact form to prevent spam submissions"
+      ],
+      "negativos": [
+        "Built on GoDaddy Website Builder — limited customization, poor performance, and restricted SEO capabilities",
+        "No social media profiles linked despite having Facebook Pixel installed",
+        "Service Worker registered but unclear benefit for a simple service business website",
+        "No evidence of image optimization or lazy loading strategy — 29 gallery images could significantly impact load time",
+        "Template-based platform creates code bloat with unnecessary CSS/JS for features not used"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrate from GoDaddy to a lightweight custom-built site (HTML + Tailwind CSS) for faster load times and full control", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implement proper image optimization: WebP format, lazy loading, and responsive srcset for gallery images", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Set up Google Business Profile integration and link social media accounts", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Add Open Graph and Twitter Card meta tags for better social media sharing", "prioridad": "baja", "tipo": "quick_win" }
+      ],
+      "stack_actual": "GoDaddy Website Builder with Google Analytics, Facebook Pixel, reCAPTCHA, Service Worker",
+      "stack_recomendado": "Static HTML + Tailwind CSS + Alpine.js — lightweight, fast, and fully customizable for a local service business",
+      "integraciones": ["Google Analytics", "Facebook Pixel", "reCAPTCHA", "Schema.org LocalBusiness"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Add meta description targeting 'handyman services Largo FL' with a compelling call to action",
+    "Add 3-5 real customer testimonials with names and project details to the reviews section",
+    "Include trust badges: licensed, insured, 30+ years experience, service guarantee",
+    "Fix hero section to display cleanly without repeated heading elements",
+    "Add descriptive alt text to all gallery images for SEO and accessibility"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Add meta description and fix meta title to remove keyword stuffing",
+      "Write descriptive alt text for all images",
+      "Add 3-5 customer testimonials with real names and project descriptions",
+      "Include trust badges (licensed, insured, years experience) in hero or features section",
+      "Fix hero carousel display issue"
+    ],
+    "mes_1": [
+      "Migrate site from GoDaddy to custom HTML + Tailwind CSS build",
+      "Redesign service section with visual cards, icons, and expanded descriptions",
+      "Create FAQ section with 8-10 common customer questions",
+      "Organize gallery into categorized before/after showcases",
+      "Implement proper heading hierarchy and image optimization",
+      "Add personal photo and expanded bio for owner Ryan"
+    ],
+    "largo_plazo": [
+      "Create individual service landing pages for top services (carpentry, plumbing, electrical)",
+      "Set up and link social media profiles (Google Business, Facebook, Instagram)",
+      "Start a maintenance tips blog for organic search traffic",
+      "Add Open Graph meta tags and service area map"
+    ]
+  },
+  "resumen_ejecutivo": "The current GoDaddy-built website has solid content foundations with authentic service descriptions and complete contact info, but suffers from a generic template appearance, missing meta description, and poor technical performance that likely hurts search visibility against local competitors. The biggest opportunity is migrating to a custom lightweight build that showcases Ryan's 30+ years of experience with compelling before/after work galleries, real testimonials, and trust signals that convert visitors into quote requests. The immediate next step is building a professional, fast-loading custom site that leverages the existing strong content while dramatically improving SEO, visual design, and conversion-focused marketing elements.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["Alpine.js for interactive gallery and mobile menu", "Formspree or Netlify Forms for contact form", "Schema.org LocalBusiness markup"],
+    "justificacion": "Low complexity local service business with static content. HTML + Tailwind + Alpine.js provides the fastest load times, full SEO control, and zero framework overhead — ideal for a handyman service that needs to rank locally and convert mobile visitors quickly."
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "negocio": "Greenville Irrigation Services",
+  "url": "https://www.greenvilleirrigationservices.com/",
+  "sector": "Irrigation Services / Landscape Lighting",
+  "requiere_render": true,
+  "nota_scraping": "Sitio renderizado por JS (Duda platform). Contenido extraido de HTML source, JSON-LD structured data, y base64-encoded widget configs.",
+  "meta": {
+    "title": "Irrigation and Sprinkler Systems / Greenville SC",
+    "description": "Add value to your property with quality installation of irrigation systems, sprinkler systems, or landscape lighting with Greenville Irrigation Services.",
+    "keywords": null
+  },
+  "favicon": "https://irp.cdn-website.com/dbdd0193/site_favicon_16_1617070333334.ico",
+  "paleta": {
+    "primario": "#34f721",
+    "secundario": "#ffd50e",
+    "acento": "#ff7600",
+    "fondo": "#202020",
+    "texto": "#585858",
+    "otros": ["#313131", "#4d4d4d", "#ffffff", "#faf9f9", "#d1d1d1", "#f2f2f2", "#13c010", "#666666"]
+  },
+  "logo": {
+    "url": "https://irp-cdn.multiscreensite.com/dbdd0193/dms3rep/multi/Greenville-Irrigation-Services-Logo.png",
+    "descripcion": "Greenville Irrigation Services logo",
+    "posicion": "header izquierda",
+    "colores": ["#34f721"]
+  },
+  "tipografias": [
+    { "nombre": "Poppins", "uso": "titulos y cuerpo principal", "peso": "300, 400, 500, 700", "tamanio_aprox": "H1: 50px, H2: 32px, body: 16px" },
+    { "nombre": "Source Sans Pro", "uso": "textos secundarios", "peso": "400, 700", "tamanio_aprox": "16px" },
+    { "nombre": "Montserrat", "uso": "acentos", "peso": "400", "tamanio_aprox": "16px" }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "/" },
+    { "label": "Services", "url": "#" },
+    { "label": "Irrigation & Drainage Solutions", "url": "/irrigation-drainage-solutions" },
+    { "label": "Landscape Lighting", "url": "/landscape-lighting" },
+    { "label": "Contact", "url": "/contact" },
+    { "label": "Terms of Service", "url": "/tos" },
+    { "label": "Privacy Policy", "url": "/privacy-policy" },
+    { "label": "About Us Across The Web", "url": "/about-us-across-the-web" },
+    { "label": "Smart Irrigation", "url": "/smart-irrigation" },
+    { "label": "Lawn Irrigation", "url": "/lawn-irrigation" },
+    { "label": "Irrigation System Value", "url": "/irrigation-system-value" },
+    { "label": "Taylors", "url": "/taylors" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "Greenville Irrigation and Sprinkler Systems",
+      "contenido": "If you are like most people, your home or business is one of your greatest investments and provides a strong sense of community and pride. At GIS we know how important the care is that goes into that beautiful landscaping, sculptured walkway, or accent lighting. For many years we have been the #1 provider of these services in Greenville, S.C. We take great pride in both the quality of our work and the communities we serve. As licensed and insured lawn sprinkler contractors and landscape lighting installers, we offer only the best lines of products and experienced technicians to design and install exactly what you need to enhance or provide safety to your property. We can design and install a quality irrigation system for you in Greenville and the surrounding areas. We also provide expert sprinkler repair service to your existing sprinkler system. Contact us through our online form or give us a call, and we will schedule at your convenience to come out and provide a free quote for your project.",
+      "cta": "864-664-2323",
+      "imagenes": [
+        { "url": "https://lirp.cdn-website.com/md/unsplash/dms3rep/multi/opt/photo-1523904200128-4f0fd6d026ad-1920w.jpg", "alt": "lawn landscaping", "descripcion": "Hero background - irrigated lawn", "tipo": "background-gallery", "dimensiones": "1920w" },
+        { "url": "https://lirp.cdn-website.com/md/unsplash/dms3rep/multi/opt/photo-1596046187663-4bc290d19d34-1920w.jpg", "alt": "sprinkler system", "descripcion": "Hero background - sprinkler in action", "tipo": "background-gallery", "dimensiones": "1920w" },
+        { "url": "https://lirp.cdn-website.com/md/unsplash/dms3rep/multi/opt/photo-1594498653385-d5172c532c00-1920w.jpg", "alt": "landscape", "descripcion": "Hero background - green landscape", "tipo": "background-gallery", "dimensiones": "1920w" },
+        { "url": "https://lirp.cdn-website.com/md/unsplash/dms3rep/multi/opt/photo-1609757754057-8a8e17eb73b2-1920w.jpg", "alt": "irrigated front yard landscaping by greenville irrigation services in greenville sc", "descripcion": "About section image - irrigated front yard", "tipo": "section-image", "dimensiones": "1920w" }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Residential or Commercial Irrigation Systems in Greenville",
+      "contenido": "GIS specializes in both residential and commercial systems whether you need design and installation or quality repair service. Keeping a large lawn system operating at peak efficiency can be challenging. Our experienced team is up to any installation or repair you might need done. We pride ourselves on fast, courteous service, stocked service trucks that can do the repairs on the first visit in nearly all cases, and making certain your customers are not inconvenienced in any way during our visits. We support Greenville businesses and have been proud to be one of them for many years. If you need a quote or bid for a residential or commercial installation, or simply sprinkler repair, please contact us. Call us today at (864)664-2323",
+      "cta": "Call us today at (864)664-2323",
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Smart Irrigation is the Smart Answer",
+      "contenido": "In most parts of greater Greenville, regular watering is a must to keep your lawn, shrubs, and trees healthy. Irrigating the right amount at the right times is crucial, especially for those stunning azalea displays we enjoy in early spring and to keep our manicured lawns green during hot summers. Water use is an important topic to everyone in our region, and that is why GIS is on the forefront of the latest technology to provide the best earth friendly watering solutions for your plants and trees. Smart Irrigation uses a number of monitoring techniques and devices to not only control your timer and sprinkler system during rainstorms, but also measures temperature, humidity, soil moisture, and other conditions that make a difference in how much and when your system should or should not operate and at what rate. Call us to schedule a time to walk your property and provide a free quote to see how a smart system might improve your plantings' condition and health while controlling your water and electric bill.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Quality Outdoor Lighting Greenville",
+      "contenido": "Whether you live in Greer, Taylors, or Greenville proper, you probably enjoy the beautiful outdoor living spaces of your home as much as the classic interior. We South Carolinians just love being out in the surroundings we have been blessed with, and being able to enjoy it after hours adds to the pleasure. Quality outdoor lighting properly installed and maintained adds ambiance and increases the value of your property and safety to your business. Whether you have stately trees worth showing off, classic architecture on your truly Southern home, or outstanding features such as a fountain, artwork, or flowerbeds you are proud of, our team has an eye for making Greenville property pop with the addition of appropriate lighting. We are the outdoor lighting leaders in the area. Call us and let's talk about lighting up your nightlife.",
+      "cta": null,
+      "imagenes": [
+        { "url": "https://irp-cdn.multiscreensite.com/dbdd0193/dms3rep/multi/lightedbackyard.jpg", "alt": "outdoor landscape lighting by greenville irrigation services in greenville sc", "descripcion": "Backyard with landscape lighting", "tipo": "section-image", "dimensiones": "576w" }
+      ]
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Water Pumps Greenville",
+      "contenido": "Just like there is a perfect place for every plant and a correct location for every tree, there is a pump made just for that job. Different water pumps do and handle different pumping tasks, elevations, well or water sources, or volume requirements. Trying to buy and install a pump that turns out to be inadequate or incorrect for your needs can be an expensive mistake. Contact the well and lake pump experts at GIS to get experienced advice and a free quote for your pump needs. We also inspect and repair backflow units and other specific devices required by many municipalities and homeowner associations. Call us for service anywhere in the greater Greenville area, including Taylors, Travelers Rest, and Greer.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Drainage Solutions Greenville",
+      "contenido": "Good drainage is a must for the safety and health of your property. Having the right drain basins, French drains and other water shedding solutions protects your property and keeps lawns, beds, and trees healthy and safe. No one wants to deal with a soggy yard or standing water pools that attract bugs, let alone the potential damage that can occur to foundations, roadbeds, or other structures. If you need professional, knowledgeable assistance in the design and install of a drainage system on your property that solves your problems, call or contact GIS. We will walk your property and design a system specific to what needs to be corrected.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Irrigation Repair Starts With Knowing What We Are Doing",
+      "contenido": "Irrigation repair is an important maintenance task that should be regularly done to ensure your irrigation system continues to function well. If you are experiencing problems with your irrigation system, it may be time for a repair. Common issues include broken pipes, clogged irrigation lines and leaks in sprinkler heads. To properly identify the cause of the problem and determine the best course of action, you need a professional that has the experience to correctly diagnose the problem and the knowledge to fix the problem in the best economical way. When it comes to irrigation repair, there are a few important tips to keep in mind. First, try to avoid DIY solutions if the problem is complex or you are unsure of what needs to be done. Do-it-yourself repairs can often lead to more costly repairs and can even cause further damage. Second, contact the right professional for evaluation and advice before starting to make any decisions. Experienced, knowledgeable professionals can provide accurate evaluations and suggest the best solutions. Lastly, be sure to use quality parts for repairs - this will help ensure lasting results and avoid any potential future issues. To ensure your irrigation system is running efficiently and effectively, regular maintenance and repairs are essential. Hiring an experienced professional to repair or upgrade your system is the best way to ensure your system is running smoothly and efficiently. With the right professional, you can trust that your irrigation system will be back up and running in no time. GIS has been proud to be a locally owned and operated business serving greater Greenville for many years. We are one of the best irrigation companies in Greenville SC. Whether you need quality sprinkler installation or quick response for a irrigation repair, we are ready to dispatch a trained technician. Our prices are some of the best in the area, and our quotes for any and all services are always free. Ask around and you will find out how many of your neighbors use us and have for a long time. We are known for fast, economical, courteous service and we would like the opportunity to show you. We provide professional irrigation services to Greenville, Greer, Taylors, Simpsonville, Mauldin, Travelers Rest, Fountain Inn, Duncan & nearby areas. Call us and we'll dispatch our expert technician to your location. See how we can make good things happen to your landscape.",
+      "cta": null,
+      "imagenes": [
+        { "url": "https://irp-cdn.multiscreensite.com/dbdd0193/dms3rep/multi/sprinkler.jpg", "alt": "irrigated lawn and shrubs by greenville irrigation services in greenville sc", "descripcion": "Sprinkler watering lawn", "tipo": "section-image", "dimensiones": "600w" },
+        { "url": "https://irp-cdn.multiscreensite.com/dbdd0193/dms3rep/multi/waterlandscape.jpeg", "alt": "irrigated lawn and bushes by greenville irrigation services in greenville sc", "descripcion": "Irrigated landscape with bushes", "tipo": "section-image", "dimensiones": "600w" }
+      ]
+    },
+    {
+      "tipo": "formulario",
+      "titulo": "Contact Form",
+      "contenido": "Contact form with fields for name, email, phone, and message. Success redirect to thank-you page.",
+      "cta": "Submit",
+      "imagenes": []
+    },
+    {
+      "tipo": "galeria",
+      "titulo": null,
+      "contenido": "Gallery of service images showing irrigation work, landscape lighting, and water features",
+      "cta": null,
+      "imagenes": [
+        { "url": "https://irp-cdn.multiscreensite.com/dbdd0193/dms3rep/multi/landscapelighting.jpg", "alt": "landscape lighting installation", "descripcion": "Landscape lighting example", "tipo": "gallery", "dimensiones": null },
+        { "url": "https://irp-cdn.multiscreensite.com/dbdd0193/dms3rep/multi/waterbushes.jpeg", "alt": "irrigated bushes", "descripcion": "Irrigated bushes and landscaping", "tipo": "gallery", "dimensiones": null }
+      ]
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Smart Irrigation is the Smart Answer",
+    "propuesta_valor": "Greenville Irrigation Services is a locally owned family business located in Greenville SC serving the nearby areas of Greer, Taylors, Travelers Rest, Mauldin, Simpsonville, Lyman, and Duncan. We specialize in irrigation design, installment and repair, as well as outdoor landscape lighting design, installation and repair. We also offer drainage solutions for your yard.",
+    "ctas": ["Call Now", "864-664-2323", "Click to Call Now!", "Call Us Now!", "Contact us"]
+  },
+  "videos": [
+    { "url": "https://www.youtube.com/watch?v=32k5qarrQ4s", "plataforma": "YouTube", "descripcion": null }
+  ],
+  "contacto": {
+    "telefono": "(864)664-2323",
+    "whatsapp": null,
+    "email": "info@greenvilleirrigationservices.com",
+    "direccion": "421 Great Glen Rd, Greenville, SC 29615-2719",
+    "horarios": "Mon-Sat: 8:00 am - 6:00 pm, Sunday: Closed"
+  },
+  "redes": [
+    { "plataforma": "Facebook", "url": "https://facebook.com/greenvilleirrigationandlandscapelighting" },
+    { "plataforma": "YouTube", "url": "https://www.youtube.com/watch?v=32k5qarrQ4s" }
+  ],
+  "formularios": [
+    { "proposito": "Contact / Lead generation", "campos": ["name", "email", "phone", "message"] }
+  ],
+  "footer": {
+    "contenido": "GREENVILLE IRRIGATION SERVICES\nWe are not associated with Greenville Irrigation or Greenville Irrigation Repair!\nCall Us Now!\nWorking Hours: Mon-Sat 8:00am - 6:00pm, Sunday Closed\nProudly powered by Snapps",
+    "links": [
+      { "label": "Services", "url": "/irrigation-drainage-solutions" },
+      { "label": "Irrigation & Drainage Solutions", "url": "/irrigation-drainage-solutions" },
+      { "label": "Landscape Lighting", "url": "/landscape-lighting" },
+      { "label": "Contact us", "url": "/contact" },
+      { "label": "Privacy Policy", "url": "/privacy-policy" },
+      { "label": "About Us Across The Web", "url": "/about-us-across-the-web" },
+      { "label": "Smart Irrigation", "url": "/smart-irrigation" },
+      { "label": "Lawn Irrigation", "url": "/lawn-irrigation" },
+      { "label": "Irrigation System Value", "url": "/irrigation-system-value" },
+      { "label": "Taylors", "url": "/taylors" }
+    ],
+    "copyright": "© 2026 Greenville Irrigation Services"
+  },
+  "tecnologia": "Duda (website builder platform)"
+}

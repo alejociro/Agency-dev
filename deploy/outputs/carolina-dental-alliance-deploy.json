@@ -1,0 +1,7 @@
+{
+  "negocio": "Carolina Dental Alliance",
+  "url_produccion": "https://carolina-dental-alliance.vercel.app",
+  "fecha_deploy": "2026-04-04",
+  "stack": "html",
+  "carpeta_origen": "web/carolina-dental-alliance/"
+}

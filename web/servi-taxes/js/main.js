@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCountUp();
   initMobileMenu();
   initSmoothScroll();
+  initMagneticButtons();
 });
 
 /* ---- Scroll Reveal (IntersectionObserver) ---- */
@@ -159,6 +160,28 @@ function initSmoothScroll() {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
+    });
+  });
+}
+
+/* ---- Magnetic Buttons ---- */
+function initMagneticButtons() {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) return;
+
+  const buttons = document.querySelectorAll('[data-magnetic]');
+  if (!buttons.length) return;
+
+  buttons.forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+    });
+
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = '';
     });
   });
 }

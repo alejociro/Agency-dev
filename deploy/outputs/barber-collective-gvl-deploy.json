@@ -1,5 +1,5 @@
 {
-  "negocio": "The Barber Collective",
+  "negocio": "barber-collective-gvl",
   "url_produccion": "https://barber-collective-gvl.vercel.app",
   "fecha_deploy": "2026-04-04",
   "stack": "html",

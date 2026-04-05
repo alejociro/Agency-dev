@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dentist Greenville SC | Julian Thomas DMD — Family & Cosmetic Dentistry</title>
+  <meta name="description" content="Dr. Julian Thomas provides family and cosmetic dental care in Greenville, SC. Services include veneers, crowns, teeth whitening, implant restoration, and children's dentistry. Now accepting new patients.">
+  <meta name="keywords" content="Greenville Dentist, dentist, family dentist, cosmetic dentistry, crowns, bridges, veneers, teeth whitening, pediatric, julian thomas, greenville sc">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://www.julianthomasdmd.com/wp-content/themes/JJT/images/favicon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS v4 CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/design-system.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/animations.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Julian Thomas DMD — Family & Cosmetic Dentistry in Greenville, SC">
+  <meta property="og:description" content="Beautiful smiles start here. Dr. Julian Thomas provides preventive, restorative, and cosmetic dental services in Greenville, SC.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.julianthomasdmd.com">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Julian Thomas DMD PA",
+    "description": "Family and cosmetic dental care in Greenville, SC. Preventive, restorative, and cosmetic services.",
+    "url": "https://www.julianthomasdmd.com",
+    "telephone": "864-676-0046",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1141 East Butler Road",
+      "addressLocality": "Greenville",
+      "addressRegion": "SC",
+      "postalCode": "29607",
+      "addressCountry": "US"
+    },
+    "openingHours": "Mo-Fr 08:00-17:00",
+    "sameAs": [
+      "https://www.facebook.com/GreenvilleSCDentist"
+    ],
+    "priceRange": "$$",
+    "areaServed": ["Greenville", "Simpsonville", "Five Forks", "Spartanburg"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Dental Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cosmetic Dentistry"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Veneers"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Teeth Whitening"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Crowns & Bridges"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Implant Restoration"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Children's Dentistry"}}
+      ]
+    }
+  }
+  </script>
+
+  <!-- Scroll animation base styles (inline critical) -->
+  <style>
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    [data-animate].animated {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    [data-animate="fade-up"] { transform: translateY(40px); }
+    [data-animate="fade-left"] { transform: translateX(-40px); }
+    [data-animate="fade-right"] { transform: translateX(40px); }
+    [data-animate="fade-left"].animated,
+    [data-animate="fade-right"].animated {
+      transform: translateX(0);
+    }
+    [data-animate="scale-in"] { transform: scale(0.9); }
+    [data-animate="scale-in"].animated { transform: scale(1); }
+  </style>
+</head>
+<body>
+
+  <!-- ===========================
+       NAVIGATION
+       =========================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#" class="nav__brand" aria-label="Julian Thomas DMD - Home">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="2"/>
+          <path d="M8 16c2 3 5 4.5 6 4.5s4-1.5 6-4.5" stroke="#E85D50" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        Julian Thomas <span>DMD</span>
+      </a>
+
+      <ul class="nav__links">
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#about" class="nav__link">Meet Dr. Thomas</a></li>
+        <li><a href="#gold-club" class="nav__link">Gold Club</a></li>
+        <li><a href="#reviews" class="nav__link">Reviews</a></li>
+        <li><a href="#faq" class="nav__link">FAQ</a></li>
+        <li><a href="#contact" class="btn btn--primary nav__cta">Schedule a Visit</a></li>
+      </ul>
+
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav__mobile" aria-label="Mobile navigation">
+      <a href="#services" class="nav__mobile-link">Services</a>
+      <a href="#about" class="nav__mobile-link">Meet Dr. Thomas</a>
+      <a href="#gold-club" class="nav__mobile-link">Gold Club</a>
+      <a href="#reviews" class="nav__mobile-link">Reviews</a>
+      <a href="#faq" class="nav__mobile-link">FAQ</a>
+      <a href="#contact" class="btn btn--primary nav__mobile-cta">Schedule a Visit</a>
+      <div class="nav__mobile-footer">
+        <a href="tel:864-676-0046" class="nav__mobile-phone">
+          Call: 864-676-0046
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===========================
+       HERO SECTION
+       =========================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-shape" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <div class="hero__text">
+        <span class="label hero__label" data-animate="fade-up">Family & Cosmetic Dentistry</span>
+
+        <h1 class="hero__title" data-animate="fade-up" data-animate-delay="100">
+          Your Smile Deserves a Dentist Who <span class="text-gradient">Truly Cares</span>
+        </h1>
+
+        <p class="hero__subtitle" data-animate="fade-up" data-animate-delay="200">
+          Dr. Julian Thomas provides excellent preventive, restorative, and cosmetic dental services in Greenville, SC. Designing beautiful and comfortable smiles since day one.
+        </p>
+
+        <div class="hero__actions" data-animate="fade-up" data-animate-delay="300">
+          <a href="#contact" class="btn btn--primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Schedule Your Visit
+          </a>
+          <a href="tel:864-676-0046" class="btn btn--secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Call 864-676-0046
+          </a>
+        </div>
+
+        <div class="hero__info" data-animate="fade-up" data-animate-delay="400">
+          <div class="hero__info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>1141 East Butler Road, Greenville, SC</span>
+          </div>
+          <div class="hero__info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon - Fri: 8:00 AM - 5:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-animate="fade-left" data-animate-delay="200">
+        <div class="hero__image-wrapper">
+          <img
+            src="https://www.julianthomasdmd.com/wp-content/themes/JJT/images/front_photo_bottom.jpg"
+            alt="Dr. Julian Thomas dental office in Greenville, SC"
+            width="375"
+            height="442"
+            loading="eager"
+            decoding="async"
+          >
+        </div>
+        <div class="hero__float-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          ADA Member
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave divider -->
+    <div class="wave-divider" style="position:absolute; bottom:0; left:0; right:0;" aria-hidden="true">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" style="display:block; width:100%; height:60px;">
+        <path d="M0,40 C360,100 720,0 1080,60 C1260,90 1380,50 1440,40 L1440,100 L0,100Z" fill="var(--color-bg)"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===========================
+       SERVICES SECTION
+       =========================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="label section-header__label">Our Services</span>
+        <h2>Comprehensive Dental Care for Your Whole Family</h2>
+        <p>From routine checkups to complete smile makeovers, we offer the solutions to help you achieve a beautiful, healthy smile.</p>
+      </div>
+
+      <div class="services__grid">
+        <!-- Cosmetic Dentistry -->
+        <div class="service-card" data-animate="fade-up" data-animate-delay="0">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-1.5 0-3 .5-4 2-1.5 2.5-1 5 0 7 .5 1 1 2.5.5 4-.5 2-2 3-2 5 0 1.5 1 3 3 3h5c2 0 3-1.5 3-3 0-2-1.5-3-2-5-.5-1.5 0-3 .5-4 1-2 1.5-4.5 0-7-1-1.5-2.5-2-4-2z"/></svg>
+          </div>
+          <h3 class="service-card__title">Cosmetic Dentistry</h3>
+          <p class="service-card__text">Transform your smile with advanced cosmetic procedures designed to enhance your natural beauty and boost your confidence.</p>
+        </div>
+
+        <!-- Veneers -->
+        <div class="service-card" data-animate="fade-up" data-animate-delay="100">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 12h10"/><path d="M12 7v10"/></svg>
+          </div>
+          <h3 class="service-card__title">Veneers</h3>
+          <p class="service-card__text">Custom porcelain veneers crafted to perfection, giving you a flawless smile that looks completely natural.</p>
+        </div>
+
+        <!-- Implant Restoration -->
+        <div class="service-card" data-animate="fade-up" data-animate-delay="200">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </div>
+          <h3 class="service-card__title">Implant Restoration</h3>
+          <p class="service-card__text">Restore missing teeth with durable, natural-looking implant restorations that feel and function like your own teeth.</p>
+        </div>
+
+        <!-- Teeth Whitening -->
+        <div class="service-card" data-animate="fade-up" data-animate-delay="300">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="service-card__title">Teeth Whitening</h3>
+          <p class="service-card__text">Professional whitening treatments that deliver dramatic results, brightening your smile several shades in just one visit.</p>
+        </div>
+
+        <!-- Crowns & Bridges -->
+        <div class="service-card" data-animate="fade-up" data-animate-delay="400">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20M5 20V8l7-6 7 6v12"/><path d="M9 20v-6h6v6"/></svg>
+          </div>
+          <h3 class="service-card__title">Crowns & Bridges</h3>
+          <p class="service-card__text">Repair damaged or missing teeth with precision-crafted crowns and bridges that restore both function and aesthetics.</p>
+        </div>
+
+        <!-- Preventive Care -->
+        <div class="service-card" data-animate="fade-up" data-animate-delay="500">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3 class="service-card__title">Preventive Care</h3>
+          <p class="service-card__text">Regular checkups, cleanings, and screenings to keep your teeth and gums healthy for a lifetime of confident smiles.</p>
+        </div>
+
+        <!-- Root Canals -->
+        <div class="service-card" data-animate="fade-up" data-animate-delay="100">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+          </div>
+          <h3 class="service-card__title">Root Canals</h3>
+          <p class="service-card__text">Gentle, modern root canal therapy to save your natural tooth and relieve pain with minimal discomfort.</p>
+        </div>
+
+        <!-- Fillings -->
+        <div class="service-card" data-animate="fade-up" data-animate-delay="200">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3 class="service-card__title">Fillings</h3>
+          <p class="service-card__text">Tooth-colored composite fillings that blend seamlessly with your natural teeth for an invisible, durable repair.</p>
+        </div>
+
+        <!-- Children's Dentistry -->
+        <div class="service-card" data-animate="fade-up" data-animate-delay="300">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h3 class="service-card__title">Children's Dentistry</h3>
+          <p class="service-card__text">A warm, friendly environment where kids feel comfortable and parents feel confident about their child's dental health.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave divider -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="display:block; width:100%; height:50px;">
+      <path d="M0,20 C480,80 960,0 1440,40 L1440,80 L0,80Z" fill="var(--color-surface-alt)"/>
+    </svg>
+  </div>
+
+  <!-- ===========================
+       ABOUT / MEET DR. THOMAS
+       =========================== -->
+  <section class="section section--alt" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image" data-animate="fade-right">
+          <img
+            src="https://www.julianthomasdmd.com/wp-content/themes/JJT/images/front_photo_bottom.jpg"
+            alt="Dr. Julian Thomas, Family and Cosmetic Dentist in Greenville, SC"
+            width="375"
+            height="442"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+
+        <div data-animate="fade-left" data-animate-delay="150">
+          <span class="label about__label">Meet the Dentist</span>
+          <h2 class="about__title">Dr. Julian Thomas</h2>
+          <p class="about__text">
+            Dr. Thomas takes pride in designing beautiful and comfortable smiles. Providing excellent preventive, restorative, and cosmetic services, his dental office remains dedicated to optimal dental care for every patient.
+          </p>
+          <p class="about__text">
+            Working with you to achieve your dental health goals, Dr. Thomas and his team pride themselves on helping you in any way and continuing to provide the quality of dental care to which you have become accustomed.
+          </p>
+          <p class="about__text about__text--last">
+            Serving residents from Greenville, Simpsonville, Five Forks, Spartanburg, and throughout the Upstate South Carolina with ethical commitment and deep respect for both the profession and the patients he serves.
+          </p>
+
+          <div class="about__credentials">
+            <div class="credential-badge">
+              <img src="https://www.julianthomasdmd.com/wp-content/themes/JJT/images/ada.png" alt="American Dental Association Member" width="20" height="20" loading="lazy" decoding="async">
+              ADA Member
+            </div>
+            <div class="credential-badge">
+              <img src="https://www.julianthomasdmd.com/wp-content/themes/JJT/images/SCDA.png" alt="South Carolina Dental Association Member" width="20" height="20" loading="lazy" decoding="async">
+              SCDA Member
+            </div>
+            <div class="credential-badge">
+              <img src="https://www.julianthomasdmd.com/wp-content/themes/JJT/images/delta_dental.png" alt="Delta Dental Provider" width="20" height="20" loading="lazy" decoding="async">
+              Delta Dental
+            </div>
+            <div class="credential-badge">
+              <img src="https://www.julianthomasdmd.com/wp-content/themes/JJT/images/care-credit-logo.png" alt="CareCredit Provider" width="20" height="20" loading="lazy" decoding="async">
+              CareCredit
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       GOLD CLUB PROMO
+       =========================== -->
+  <section class="section" id="gold-club">
+    <div class="container">
+      <div class="promo" data-animate="scale-in">
+        <div class="promo__sparkle" aria-hidden="true"></div>
+        <div class="promo__content">
+          <span class="label promo__label">Save Money</span>
+          <h2>No Dental Insurance? No Problem!</h2>
+          <p>Our Gold Club is an in-house dental plan designed to make quality dental care affordable for everyone. Save money on preventive care, cleanings, and treatments without the hassle of traditional insurance.</p>
+          <a href="#contact" class="btn btn--gold">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Learn About Gold Club
+          </a>
+        </div>
+        <div class="promo__visual-desktop">
+          <svg width="180" height="180" viewBox="0 0 180 180" fill="none" aria-hidden="true" class="promo__visual-svg">
+            <circle cx="90" cy="90" r="80" stroke="var(--color-accent)" stroke-width="2" stroke-dasharray="8 6" opacity="0.4"/>
+            <circle cx="90" cy="90" r="55" fill="var(--color-accent)" opacity="0.15"/>
+            <text x="90" y="85" text-anchor="middle" font-family="Fraunces, serif" font-size="32" font-weight="700" fill="var(--color-accent)">GOLD</text>
+            <text x="90" y="110" text-anchor="middle" font-family="Outfit, sans-serif" font-size="14" font-weight="500" fill="rgba(253,246,240,0.7)">CLUB</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave divider -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="display:block; width:100%; height:50px;">
+      <path d="M0,60 C240,0 480,80 720,30 C960,-10 1200,50 1440,20 L1440,80 L0,80Z" fill="var(--color-surface-alt)"/>
+    </svg>
+  </div>
+
+  <!-- ===========================
+       PATIENT REVIEWS
+       =========================== -->
+  <section class="section section--alt" id="reviews">
+    <div class="container">
+      <div class="reviews-cta" data-animate="fade-up">
+        <span class="label reviews-cta__label">Patient Reviews</span>
+        <h2 class="reviews-cta__title">Hear From Our Patients</h2>
+        <p class="reviews-cta__text">See what real families are saying about their experience with Dr. Thomas and the team.</p>
+        <a href="https://www.julianthomasdmd.com/patient-reviews/" class="btn btn--primary" target="_blank" rel="noopener">
+          Read Patient Reviews
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       FAQ SECTION
+       =========================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="label section-header__label">Common Questions</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know before your first visit.</p>
+      </div>
+
+      <div class="faq__list" data-animate="fade-up" data-animate-delay="100">
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            Are you accepting new patients?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              Yes! Dr. Thomas is currently accepting new patients. You can schedule your first appointment by calling 864-676-0046 or using the contact form on this page.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            What insurance do you accept?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              We accept and file most insurance plans, including Delta Dental. We are also a CareCredit provider for flexible payment options. Please note: we are not accepting Medicaid at this time. Contact us to verify your specific plan.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            What is the Gold Club dental plan?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              The Gold Club is our in-house dental plan designed for patients without dental insurance. It provides discounts on preventive care, cleanings, and treatments, making quality dental care affordable. Contact us to learn more about membership and savings.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            What are your office hours?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              Our office is open Monday through Friday, 8:00 AM to 5:00 PM. We are located at 1141 East Butler Road, Greenville, SC 29607.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            Do you offer cosmetic consultations?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              Yes! We offer consultations for all cosmetic procedures including veneers, teeth whitening, crowns, and complete smile makeovers. Schedule your consultation to discuss your goals with Dr. Thomas.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            Can I pay online?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              Yes, we offer convenient online payment. You can also access new patient forms and transfer records digitally before your visit to save time at the office.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave divider -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="display:block; width:100%; height:50px;">
+      <path d="M0,40 C360,0 720,80 1080,20 C1260,0 1380,30 1440,40 L1440,80 L0,80Z" fill="var(--color-surface-alt)"/>
+    </svg>
+  </div>
+
+  <!-- ===========================
+       CONTACT / APPOINTMENT
+       =========================== -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="label section-header__label">Get in Touch</span>
+        <h2>Schedule Your Visit Today</h2>
+        <p>Ready for a healthier, more beautiful smile? Reach out and our team will get back to you promptly.</p>
+      </div>
+
+      <div class="contact__grid">
+        <form id="appointment-form" class="contact__form" data-animate="fade-right">
+          <div class="form-field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(864) 000-0000" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us how we can help you..."></textarea>
+          </div>
+
+          <div class="form-field form-checkbox">
+            <input type="checkbox" id="urgent" name="urgent">
+            <label for="urgent">This is an urgent request</label>
+          </div>
+
+          <div class="form-field form-checkbox">
+            <input type="checkbox" id="patient-record" name="patient-record">
+            <label for="patient-record">I am an existing patient of record</label>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Your Request
+          </button>
+        </form>
+
+        <div class="contact__info" data-animate="fade-left" data-animate-delay="150">
+          <div class="contact__info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <div class="contact__info-label">Our Office</div>
+              <div class="contact__info-value">1141 East Butler Road<br>Greenville, SC 29607</div>
+            </div>
+          </div>
+
+          <div class="contact__info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <div>
+              <div class="contact__info-label">Phone</div>
+              <div class="contact__info-value"><a href="tel:864-676-0046">864-676-0046</a></div>
+            </div>
+          </div>
+
+          <div class="contact__info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div>
+              <div class="contact__info-label">Office Hours</div>
+              <div class="contact__info-value">Monday - Friday<br>8:00 AM - 5:00 PM</div>
+            </div>
+          </div>
+
+          <div class="contact__info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+            <div>
+              <div class="contact__info-label">We Accept</div>
+              <div class="contact__info-value">Most insurance plans, Delta Dental, CareCredit. Gold Club plan for uninsured patients.</div>
+            </div>
+          </div>
+
+          <!-- Medicaid notice -->
+          <div class="contact__medicaid-notice">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span>Not accepting Medicaid at this time.</span>
+          </div>
+
+          <!-- Quick links -->
+          <div class="contact__quick-links">
+            <a href="https://www.julianthomasdmd.com/pay/" class="btn btn--secondary btn--sm" target="_blank" rel="noopener">
+              Pay Online
+            </a>
+            <a href="https://julianthomasdmd.com/np/" class="btn btn--secondary btn--sm" target="_blank" rel="noopener">
+              New Patient Forms
+            </a>
+            <a href="https://signnow.com/s/cpPQ79CK" class="btn btn--secondary btn--sm" target="_blank" rel="noopener">
+              Transfer Records
+            </a>
+          </div>
+
+          <!-- Map embed -->
+          <div class="contact__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8!2d-82.35!3d34.82!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1141+East+Butler+Road+Greenville+SC+29607!5e0!3m2!1sen!2sus!4v1"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Julian Thomas DMD office location on Google Maps"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       SMILE GALLERY CTA
+       =========================== -->
+  <section class="section gallery-cta">
+    <div class="container" data-animate="fade-up">
+      <span class="label gallery-cta__label">Smile Gallery</span>
+      <h2 class="gallery-cta__title">See the Smiles We've Created</h2>
+      <p class="gallery-cta__text">
+        Browse our gallery of real patient transformations. A beautiful smile will make you more attractive, confident, and successful.
+      </p>
+      <a href="https://www.julianthomasdmd.com/smile-gallery/" class="btn btn--primary" target="_blank" rel="noopener">
+        View Smile Gallery
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===========================
+       FOOTER
+       =========================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Julian Thomas <span>DMD</span></div>
+          <p class="footer__desc">
+            Family & Cosmetic Dentistry in Greenville, SC. Providing excellent preventive, restorative, and cosmetic dental services with ethical commitment and respect for every patient.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer__heading">Quick Links</div>
+          <ul class="footer__links">
+            <li><a href="#services" class="footer__link">Services</a></li>
+            <li><a href="#about" class="footer__link">Meet Dr. Thomas</a></li>
+            <li><a href="#gold-club" class="footer__link">Gold Club Plan</a></li>
+            <li><a href="#reviews" class="footer__link">Patient Reviews</a></li>
+            <li><a href="https://www.julianthomasdmd.com/smile-gallery/" class="footer__link" target="_blank" rel="noopener">Smile Gallery</a></li>
+            <li><a href="https://www.julianthomasdmd.com/blog/" class="footer__link" target="_blank" rel="noopener">Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__heading">Patient Resources</div>
+          <ul class="footer__links">
+            <li><a href="https://www.julianthomasdmd.com/pay/" class="footer__link" target="_blank" rel="noopener">Pay Online</a></li>
+            <li><a href="https://julianthomasdmd.com/np/" class="footer__link" target="_blank" rel="noopener">New Patient Forms</a></li>
+            <li><a href="https://signnow.com/s/cpPQ79CK" class="footer__link" target="_blank" rel="noopener">Transfer Records</a></li>
+            <li><a href="#contact" class="footer__link">Contact Us</a></li>
+            <li><a href="https://www.julianthomasdmd.com/find-us/" class="footer__link" target="_blank" rel="noopener">Find Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span class="footer__copyright">Julian Thomas DMD PA - Family & Cosmetic Dentistry. All rights reserved.</span>
+        <div class="footer__socials">
+          <a href="https://www.facebook.com/GreenvilleSCDentist" class="footer__social-link" target="_blank" rel="noopener" aria-label="Visit us on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.google.com/search?q=julian+thomas+dmd+pa+greenville+sc" class="footer__social-link" target="_blank" rel="noopener" aria-label="Find us on Google">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

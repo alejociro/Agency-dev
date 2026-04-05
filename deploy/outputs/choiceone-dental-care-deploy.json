@@ -1,0 +1,7 @@
+{
+  "negocio": "Choice One Dental Care",
+  "url_produccion": "https://choiceone-dental-care.vercel.app",
+  "fecha_deploy": "2026-04-04",
+  "stack": "html",
+  "carpeta_origen": "web/choiceone-dental-care/"
+}
