@@ -1,0 +1,194 @@
+{
+  "negocio": "Boss Barber Studio",
+  "url": "https://www.bossbarberstudio.com/",
+  "sector": "Barbería / Grooming",
+  "requiere_render": false,
+  "nota_scraping": null,
+  "meta": {
+    "title": "Boss Barber Studio",
+    "description": null,
+    "keywords": null
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#000000",
+    "secundario": "#ffffff",
+    "acento": "#333333",
+    "fondo": "#ffffff",
+    "texto": "#000000",
+    "otros": []
+  },
+  "logo": {
+    "url": "https://images.squarespace-cdn.com/content/v1/691f6df1f01e0b5b5ee4975a/9a02fa57-5219-4a86-81a3-04dc0b768183/The+Boss+Barber+3x8+Bldg+sign+-+24APR19.jpg",
+    "descripcion": "Letrero del edificio Boss Barber Studio",
+    "posicion": "header",
+    "colores": ["#000000", "#ffffff"]
+  },
+  "tipografias": [
+    {
+      "nombre": "System default (Squarespace template)",
+      "uso": "general",
+      "peso": "400",
+      "tamanio_aprox": "16px"
+    }
+  ],
+  "navegacion": [
+    { "label": "Home", "url": "/" },
+    { "label": "About", "url": "#about" },
+    { "label": "Location", "url": "#location" },
+    { "label": "Gallery", "url": "#gallery" },
+    { "label": "Book", "url": "https://getsquire.com/booking/brands/boss-barber-studio" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": null,
+      "contenido": null,
+      "cta": "Book Now",
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/691f6df1f01e0b5b5ee4975a/3cfb85ef-3a13-45e5-be91-fa5cff90eef6/20251111_163452.jpg",
+          "alt": "Boss Barber Studio interior",
+          "descripcion": "Imagen principal del estudio de barbería",
+          "tipo": "hero",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "about",
+      "titulo": "About",
+      "contenido": "A family-oriented barbershop focused on customer care, professional service, and quality grooming. Our licensed barbers are here to serve the community and welcome every client who walks through the door.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "ubicacion",
+      "titulo": "Location",
+      "contenido": "Greenville Location: 22 West Antrim Drive, Greenville, SC 29607 | Phone: (864)412-8686 | Email: thebossbarberstudio@gmail.com\n\nSpartanburg Location: 2601 East Main st. #16, Spartanburg, SC 29307 | Phone: (864) 579-8900 | Email: thebossbarberstudio@gmail.com",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "galeria",
+      "titulo": "Gallery",
+      "contenido": null,
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/691f6df1f01e0b5b5ee4975a/1763667902848-SJ3WZ37FH87XGGH1HX3G/20251016_163925.jpg",
+          "alt": "Trabajo de barbería",
+          "descripcion": "Foto de galería del estudio",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/691f6df1f01e0b5b5ee4975a/1763667910928-VRC5ROQ41X39T3NLK0AC/20240606_075115.jpg",
+          "alt": "Trabajo de barbería",
+          "descripcion": "Foto de galería del estudio",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/691f6df1f01e0b5b5ee4975a/1763667897103-EQDPOF39K1DECX4DCPNL/20251108_165432.jpg",
+          "alt": "Trabajo de barbería",
+          "descripcion": "Foto de galería del estudio",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/691f6df1f01e0b5b5ee4975a/1763667896776-046I32X4Q707O42GGRCL/20251108_085654.jpg",
+          "alt": "Trabajo de barbería",
+          "descripcion": "Foto de galería del estudio",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/691f6df1f01e0b5b5ee4975a/1763667906512-0HXLDJ0AFCI523IVMSTX/20250611_110330.jpg",
+          "alt": "Trabajo de barbería",
+          "descripcion": "Foto de galería del estudio",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/691f6df1f01e0b5b5ee4975a/1763667911047-RFGY8C71JSP6953HWWPG/20220916_110016.jpg",
+          "alt": "Trabajo de barbería",
+          "descripcion": "Foto de galería del estudio",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/691f6df1f01e0b5b5ee4975a/1763667920782-PGN4MUOSPHF2GUOLI9NL/20250611_114323.jpg",
+          "alt": "Trabajo de barbería",
+          "descripcion": "Foto de galería del estudio",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/691f6df1f01e0b5b5ee4975a/1763667921509-NUQUT72J3BDT1MUVE3NV/20250610_100242.jpg",
+          "alt": "Trabajo de barbería",
+          "descripcion": "Foto de galería del estudio",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/691f6df1f01e0b5b5ee4975a/1763667928630-YUHGJHGUD8UBGQM720UD/20250620_133708.jpg",
+          "alt": "Trabajo de barbería",
+          "descripcion": "Foto de galería del estudio",
+          "tipo": "galeria",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/691f6df1f01e0b5b5ee4975a/1763667907318-ILR00YER601QPGZA6M78/20230628_110552.jpg",
+          "alt": "Trabajo de barbería",
+          "descripcion": "Foto de galería del estudio",
+          "tipo": "galeria",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "banner",
+      "titulo": null,
+      "contenido": null,
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/691f6df1f01e0b5b5ee4975a/1103d083-8b9f-4b6b-9a7f-9f1ef9b3e83e/290424_Bann-US1530111_1_2_qty_Perforated_Window_Signs_or_One_Way_Vision_Signs_48_x_48_%28Inch%29_Top_of_any_Solid_Surface_Oneway_Outside_%28P%29_1714360316420+%281%29.jpg",
+          "alt": "Boss Barber Studio window sign",
+          "descripcion": "Letrero de ventana perforado del negocio",
+          "tipo": "banner",
+          "dimensiones": "48x48 pulgadas"
+        }
+      ]
+    }
+  ],
+  "textos_clave": {
+    "slogan": "A family-oriented barbershop focused on customer care, professional service, and quality grooming.",
+    "propuesta_valor": "Our licensed barbers are here to serve the community and welcome every client who walks through the door.",
+    "ctas": ["Book Now"]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "(864)412-8686 / (864) 579-8900",
+    "whatsapp": null,
+    "email": "thebossbarberstudio@gmail.com",
+    "direccion": "22 West Antrim Drive, Greenville, SC 29607 | 2601 East Main st. #16, Spartanburg, SC 29307",
+    "horarios": null
+  },
+  "redes": [
+    {
+      "plataforma": "Instagram",
+      "url": "https://www.instagram.com/Thebossbarberstudio"
+    }
+  ],
+  "formularios": [],
+  "footer": {
+    "contenido": null,
+    "links": [
+      { "label": "Instagram", "url": "https://www.instagram.com/Thebossbarberstudio" }
+    ],
+    "copyright": null
+  },
+  "tecnologia": "Squarespace v7.1, Squire booking integration, reCAPTCHA Enterprise"
+}

@@ -196,15 +196,17 @@
 [data-scroll="stagger"] > *:nth-child(7) { animation-range: entry 24% entry 52%; }
 [data-scroll="stagger"] > *:nth-child(8) { animation-range: entry 28% entry 56%; }
 
-/* Hero parallax fade on exit */
+/* Hero parallax fade on exit — gentle transition so the hero never
+   fully vanishes before the next section overlaps it */
 [data-scroll="parallax-fade"] {
   animation: hero-parallax-fade linear both;
   animation-timeline: view();
-  animation-range: exit 0% exit 50%;
+  animation-range: exit 15% exit 75%;
 }
 @keyframes hero-parallax-fade {
-  from { opacity: 1; transform: translateY(0) scale(1); }
-  to   { opacity: 0; transform: translateY(-40px) scale(0.97); }
+  0%   { opacity: 1;    transform: translateY(0) scale(1); }
+  60%  { opacity: 0.45; transform: translateY(-16px) scale(0.985); }
+  100% { opacity: 0.12; transform: translateY(-30px) scale(0.975); }
 }
 
 /* Reading progress bar */

@@ -293,6 +293,7 @@
       radial-gradient(ellipse at 85% 25%, var(--color-accent-glow) 0%, transparent 50%),
       radial-gradient(ellipse at 50% 90%, var(--color-secondary-soft) 0%, transparent 40%),
       var(--color-bg);
+    background-size: 200% 200%;
   }
 
   /* ── Organic blob ── */

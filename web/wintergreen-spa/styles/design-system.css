@@ -154,4 +154,12 @@ a {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+  [data-breathe],
+  .salt-particles,
+  .salt-benefit,
+  .botanical-divider__leaf,
+  .amenity-card--large .amenity-card__image-wrap img,
+  .hero {
+    animation: none !important;
+  }
 }

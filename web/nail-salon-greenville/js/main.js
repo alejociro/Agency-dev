@@ -158,6 +158,18 @@ document.addEventListener('alpine:init', () => {
     }
   }));
 
+  /* Newsletter Form */
+  Alpine.data('newsletterForm', () => ({
+    email: '',
+    subscribed: false,
+
+    submit() {
+      if (this.email.trim() && this.email.includes('@')) {
+        this.subscribed = true;
+      }
+    }
+  }));
+
   /* Contact Form */
   Alpine.data('contactForm', () => ({
     name: '',

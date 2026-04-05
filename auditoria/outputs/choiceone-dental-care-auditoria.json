@@ -1,0 +1,159 @@
+{
+  "cliente": "Choice One Dental Care",
+  "url_auditada": "https://www.choiceonedentalcare.com/",
+  "sector": "Family Dentistry",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Técnico: 50. Dental practices are local health services requiring trust signals, clear service info, and easy appointment booking. Multi-location adds complexity.",
+  "fecha": "2026-04-04",
+  "scores": {
+    "seo": 52,
+    "ux_ui": 48,
+    "marketing": 42,
+    "contenido": 55,
+    "tecnico": 45,
+    "total": 48
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title includes geographic targeting (Georgia and South Carolina) and primary keyword (Family Dentistry)",
+        "Meta description is present and includes relevant service keywords with a clear CTA",
+        "CTAs use descriptive action verbs: 'Find a Location', 'View All Dental Services', 'Schedule a Visit'",
+        "Navigation structure is well-organized with logical service categorization"
+      ],
+      "negativos": [
+        "H1 is generic ('Providing Exceptional Dental Care for the Family') — missing primary keyword 'dentist' or specific location",
+        "No meta keywords defined",
+        "Image alt texts are non-descriptive stock photo IDs (e.g., 'ChoiceOne-1034373588') instead of keyword-rich descriptions",
+        "Multiple service images have null URLs — lazy loading may prevent crawlers from indexing images",
+        "No structured data / schema markup detected for LocalBusiness, Dentist, or MedicalOrganization"
+      ],
+      "recomendaciones": [
+        { "accion": "Rewrite H1 to include primary keyword and location: 'Family Dentist in Georgia & South Carolina — Choice One Dental Care'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Add descriptive alt text to all service card images with keywords like 'family dentistry services', 'cosmetic dentistry treatment'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implement LocalBusiness and Dentist schema markup with locations, hours, and services", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Add individual location pages optimized for each city (Cartersville, Greensboro, Greenville) with unique content", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Color palette is cohesive with blue tones (#0079b7, #06547a) conveying trust and professionalism — appropriate for healthcare",
+        "Two complementary font families (Nunito Sans for headings, Overpass for body) create clear typographic hierarchy",
+        "Contact form is prominently placed on the homepage for easy access"
+      ],
+      "negativos": [
+        "Too many similar blue shades (#0079b7, #06547a, #006a91) create visual monotony — lacks warm accent color for CTAs",
+        "No evidence of mobile-first design or responsive breakpoints in the scraping data",
+        "Light gray background (#f4f4f4) with gray text (#9da3a8) creates poor contrast ratio — fails WCAG AA",
+        "Hero section lacks a compelling background image — only shows the logo",
+        "No visual differentiation between primary and secondary CTAs"
+      ],
+      "recomendaciones": [
+        { "accion": "Add a warm accent color (orange or green) for primary CTAs to create visual contrast against the blue palette", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Add a hero background image showing the dental office, team, or happy patients to create emotional connection", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implement mobile-first responsive design with clear breakpoints and touch-friendly tap targets", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Improve text contrast ratios — ensure all text meets WCAG AA minimum (4.5:1 for body text)", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Value proposition addresses patient comfort and fear of dentists — relevant pain point for dental sector",
+        "Multiple CTAs distributed throughout the page guide users toward conversion",
+        "Messaging emphasizes affordability and individualized care — key differentiators"
+      ],
+      "negativos": [
+        "No social proof whatsoever — zero testimonials, patient reviews, star ratings, or case numbers",
+        "No trust badges, certifications, or professional affiliations displayed",
+        "Hero headline is generic — doesn't address a specific patient pain point or urgency",
+        "No mention of insurance acceptance, payment plans details, or specific pricing transparency",
+        "No team/doctor profiles — patients want to see who will treat them"
+      ],
+      "recomendaciones": [
+        { "accion": "Add a testimonials section with 3-5 patient reviews including star ratings and patient names", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Display trust signals: years in practice, number of patients served, accepted insurance logos, professional certifications", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Add team section with doctor photos, credentials, and brief bios to build personal trust", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Rewrite hero headline to address patient pain: 'Nervous About the Dentist? We Make Your Visit Comfortable and Affordable'", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Text is original and specific to the business — not generic template content",
+        "Services are clearly categorized (Family, Restorative, Preventative, Cosmetic, Orthodontics, Pediatric, Sedation)",
+        "Contact information (phone, address, hours) is present and accessible",
+        "Content addresses patient concerns about comfort and budget"
+      ],
+      "negativos": [
+        "No FAQ section addressing common dental questions or patient objections",
+        "Email address is missing — limits contact options for patients who prefer written communication",
+        "No detailed service descriptions on the homepage — only overview paragraphs",
+        "Location section is bare — just lists city names without addresses, phone numbers, or maps for each office"
+      ],
+      "recomendaciones": [
+        { "accion": "Add FAQ section covering: insurance accepted, emergency appointments, first visit expectations, sedation options", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Add email address and online scheduling link to contact information", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Expand location cards with individual addresses, phone numbers, hours, and embedded maps", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Add brief service descriptions (2-3 sentences each) to service cards on homepage", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "WordPress is a proven CMS with wide plugin ecosystem — adequate for a dental practice website",
+        "Gravity Forms provides reliable form handling with validation and spam protection",
+        "Google Analytics and GTM are properly installed for tracking"
+      ],
+      "negativos": [
+        "jQuery dependency adds unnecessary weight — modern alternatives exist",
+        "WordPress with multiple plugins (Gravity Forms, UserWay, GTM) creates performance overhead",
+        "Images served as base64 placeholders suggest lazy loading implementation but actual image URLs are missing — potential rendering issues",
+        "No evidence of image optimization (WebP format, responsive srcset)"
+      ],
+      "recomendaciones": [
+        { "accion": "Rebuild as static HTML + Tailwind site — dental practice doesn't need WordPress CMS overhead", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implement proper image optimization: WebP format, responsive srcset, and lazy loading with actual src fallbacks", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Replace jQuery with vanilla JavaScript or Alpine.js for lightweight interactivity", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Add Core Web Vitals optimization: preload critical fonts, minimize CSS, defer non-critical JS", "prioridad": "media", "tipo": "mejora_estructural" }
+      ],
+      "stack_actual": "WordPress, Gravity Forms, jQuery, Google Analytics, Google Tag Manager, UserWay Accessibility",
+      "stack_recomendado": "Static HTML + Tailwind CSS + Alpine.js — lightweight, fast, no server-side overhead for a brochure site",
+      "integraciones": ["Google Analytics", "Google Tag Manager", "Gravity Forms", "UserWay Accessibility"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Add patient testimonials section with star ratings and review quotes",
+    "Rewrite H1 to include primary keyword and location targeting",
+    "Add descriptive alt text to all images with relevant dental keywords",
+    "Add warm accent color for primary CTA buttons to improve conversion",
+    "Display trust badges: years in business, patients served, accepted insurance logos"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Rewrite H1 with keyword-rich, location-targeted headline",
+      "Add descriptive alt text to all service images",
+      "Add patient testimonials section (3-5 reviews with ratings)",
+      "Add warm accent color for CTA buttons",
+      "Add hero background image showing dental team or office",
+      "Add email address to contact information"
+    ],
+    "mes_1": [
+      "Implement LocalBusiness and Dentist schema markup",
+      "Add FAQ section addressing common patient questions",
+      "Build team/doctor profiles section with photos and credentials",
+      "Expand location cards with full details and embedded maps",
+      "Rebuild site as static HTML + Tailwind for better performance",
+      "Implement mobile-first responsive design"
+    ],
+    "largo_plazo": [
+      "Add individual SEO-optimized location pages for each city",
+      "Implement online scheduling integration",
+      "Add service detail pages with before/after galleries",
+      "Implement Core Web Vitals optimization and image pipeline"
+    ]
+  },
+  "resumen_ejecutivo": "Choice One Dental Care's website fundamentally lacks social proof and trust signals — the biggest conversion killers for a dental practice where patients need reassurance before booking. The greatest opportunity is adding testimonials, team profiles, and trust badges which can dramatically increase appointment requests with minimal effort. The immediate next step is rebuilding the site with a modern, lightweight stack that prioritizes mobile performance, trust-building content, and clear conversion paths.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["Alpine.js", "Google Fonts (Nunito Sans + Overpass)", "Font Awesome icons"],
+    "justificacion": "Low complexity brochure site for a multi-location dental practice. Static HTML + Tailwind + Alpine.js provides fast load times, zero server overhead, and easy Vercel deployment. No CMS needed — content changes are infrequent."
+  }
+}

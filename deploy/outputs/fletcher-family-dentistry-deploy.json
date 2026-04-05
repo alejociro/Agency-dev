@@ -1,0 +1,7 @@
+{
+  "negocio": "fletcher-family-dentistry",
+  "url_produccion": "https://fletcher-family-dentistry.vercel.app",
+  "fecha_deploy": "2026-04-04",
+  "stack": "html",
+  "carpeta_origen": "web/fletcher-family-dentistry/"
+}

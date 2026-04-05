@@ -1,7 +1,7 @@
 {
-  "negocio": "nail-salon-greenville",
+  "negocio": "Nail Salon Greenville SC",
   "url_produccion": "https://nail-salon-greenville.vercel.app",
-  "fecha_deploy": "2026-04-04",
+  "fecha_deploy": "2026-04-05",
   "stack": "html",
   "carpeta_origen": "web/nail-salon-greenville/"
 }

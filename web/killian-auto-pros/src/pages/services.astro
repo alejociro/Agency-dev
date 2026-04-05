@@ -11,6 +11,7 @@ const services = [
     category: 'climate',
     desc: 'Stay comfortable year-round with expert climate control service. We diagnose and repair AC compressors, condensers, evaporators, heater cores, and blower motors.',
     benefits: ['Full AC system diagnostics', 'Refrigerant recharge and leak detection', 'Heater core repair and replacement', 'Climate control electrical repair'],
+    img: 'https://killianautopros.com/wp-content/uploads/2023/02/car-ac-repair-03.webp',
   },
   {
     num: '02',
@@ -19,6 +20,7 @@ const services = [
     category: 'safety',
     desc: 'Your brakes are your most important safety system. We inspect, repair, and replace every component to ensure confident, reliable stopping power.',
     benefits: ['Brake pad and rotor replacement', 'Caliper repair and rebuilding', 'Brake fluid flush and bleeding', 'ABS system diagnostics'],
+    img: 'https://killianautopros.com/wp-content/uploads/2022/11/brake-repair-03.webp',
   },
   {
     num: '03',
@@ -27,6 +29,7 @@ const services = [
     category: 'diagnostics',
     desc: 'Check engine light on? Strange noise? Our state-of-the-art diagnostic equipment pinpoints issues fast so we fix the problem right the first time.',
     benefits: ['Computer engine diagnostics', 'Electrical system testing', 'Check engine light diagnosis', 'Pre-purchase vehicle inspections'],
+    img: 'https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg',
   },
   {
     num: '04',
@@ -35,6 +38,7 @@ const services = [
     category: 'drivetrain',
     desc: 'From tune-ups to complete rebuilds, our ASE-Certified engine specialists keep your motor running at peak performance.',
     benefits: ['Engine rebuilds and replacements', 'Timing belt and chain service', 'Head gasket repair', 'Performance tuning and upgrades'],
+    img: 'https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg',
   },
   {
     num: '05',
@@ -43,6 +47,7 @@ const services = [
     category: 'maintenance',
     desc: 'Regular maintenance is the best way to avoid expensive repairs. Quick, thorough oil changes and scheduled maintenance to keep your vehicle reliable.',
     benefits: ['Conventional and synthetic oil changes', 'Multi-point vehicle inspections', 'Filter replacements (air, cabin, fuel)', 'Fluid top-offs and coolant flush'],
+    img: 'https://killianautopros.com/wp-content/uploads/2023/02/car-ac-repair-03.webp',
   },
   {
     num: '06',
@@ -51,6 +56,7 @@ const services = [
     category: 'safety',
     desc: 'Ride smooth and handle with confidence. We repair and replace shocks, struts, tie rods, ball joints, and power steering components.',
     benefits: ['Shock and strut replacement', 'Power steering repair', 'Ball joint and tie rod service', 'Suspension lift and lowering kits'],
+    img: 'https://killianautopros.com/wp-content/uploads/2022/11/brake-repair-03.webp',
   },
   {
     num: '07',
@@ -59,6 +65,7 @@ const services = [
     category: 'maintenance',
     desc: 'Maximize tire life and fuel efficiency with expert tire service and precision computer alignments.',
     benefits: ['New tire sales and installation', 'Tire rotation and balancing', 'Precision 4-wheel alignment', 'Flat repair and TPMS service'],
+    img: 'https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg',
   },
   {
     num: '08',
@@ -67,6 +74,7 @@ const services = [
     category: 'drivetrain',
     desc: 'Manual or automatic, we handle it all. From fluid changes to complete rebuilds, we keep your drivetrain shifting smooth.',
     benefits: ['Transmission fluid service', 'Clutch repair and replacement', 'Transmission rebuild and replacement', 'Transfer case and differential service'],
+    img: 'https://killianautopros.com/wp-content/uploads/2022/11/brake-repair-03.webp',
   },
   {
     num: '09',
@@ -75,6 +83,7 @@ const services = [
     category: 'specialty',
     desc: 'Dedicated Jeep service from our team of specialists. Whether you need trail-ready upgrades, lift kits, or routine maintenance, we know Jeeps inside and out.',
     benefits: ['Jeep-specific diagnostics and repair', 'Lift kit installation and suspension upgrades', 'Off-road preparation and trail maintenance', 'Wrangler, Cherokee, and Gladiator specialists'],
+    img: 'https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg',
   },
 ];
 
@@ -133,6 +142,16 @@ const faqSchema = {
               <span class="services-detail__num" aria-hidden="true">{s.num}</span>
               <h2 class="services-detail__title">{s.title}</h2>
               <div class="red-line" aria-hidden="true"></div>
+            </div>
+            <div class="services-detail__img-wrap">
+              <img
+                src={s.img}
+                alt={`${s.title} service at Killian Auto Pros`}
+                width="800"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <p class="services-detail__desc">{s.desc}</p>
             <ul class="services-detail__benefits">
@@ -258,16 +277,38 @@ const faqSchema = {
 
   .services-detail__num {
     font-family: var(--font-display), 'Bebas Neue', sans-serif;
-    font-size: clamp(3rem, 6vw, 5rem);
+    font-size: clamp(2rem, 4vw, 3rem);
     color: var(--color-primary);
     line-height: 1;
     letter-spacing: -0.04em;
-    opacity: 0.3;
+    opacity: 0.35;
   }
 
   .services-detail__title {
     font-size: var(--text-h2);
     margin-block: var(--space-1);
+  }
+
+  .services-detail__img-wrap {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+
+    @media (min-width: 768px) {
+      grid-row: 2 / 5;
+      grid-column: 2;
+    }
+  }
+
+  .services-detail__img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .services-detail:hover .services-detail__img-wrap img {
+    transform: scale(1.04);
   }
 
   .services-detail__desc {
@@ -358,7 +399,7 @@ const faqSchema = {
   /* ---- CTA Banner ---- */
   .cta-banner {
     background: var(--color-primary);
-    padding-block: var(--space-12);
+    padding-block: var(--space-6);
     text-align: center;
   }
 

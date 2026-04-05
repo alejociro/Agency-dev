@@ -192,4 +192,44 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* ═══════════════════════════════════════════
+     MANTRA ROTATOR
+     ═══════════════════════════════════════════ */
+
+  const mantras = document.querySelectorAll('.mantra-rotator__item');
+  if (mantras.length > 0 && !prefersReducedMotion) {
+    let current = 0;
+    const INTERVAL = 4000;
+    const show = (idx) => {
+      mantras.forEach((m, i) => {
+        m.style.opacity = i === idx ? '1' : '0';
+        m.style.transform = i === idx ? 'translateY(0)' : 'translateY(12px)';
+        m.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      });
+    };
+    show(0);
+    setInterval(() => {
+      current = (current + 1) % mantras.length;
+      show(current);
+    }, INTERVAL);
+  } else if (mantras.length > 0) {
+    /* Reduced motion: show first mantra only */
+    mantras[0].style.opacity = '1';
+    mantras[0].style.transform = 'none';
+  }
+
+  /* ═══════════════════════════════════════════
+     APPARATUS SHOWCASE — click to expand details
+     ═══════════════════════════════════════════ */
+
+  document.querySelectorAll('[data-apparatus]').forEach(card => {
+    card.addEventListener('click', () => {
+      const wasActive = card.classList.contains('is-active');
+      /* Close all */
+      document.querySelectorAll('[data-apparatus]').forEach(c => c.classList.remove('is-active'));
+      /* Toggle clicked */
+      if (!wasActive) card.classList.add('is-active');
+    });
+  });
+
 });

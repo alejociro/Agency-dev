@@ -1,0 +1,170 @@
+{
+  "cliente": "Precision Dental",
+  "url_auditada": "https://precisiondentalsc.com/",
+  "sector": "Dental Healthcare",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 50. Clínica dental en Greenville, SC orientada a comunidad diversa. Sitio requiere render JS (WordPress + Divi), lo que limita scores técnicos a máximo 60.",
+  "fecha": "2026-04-04",
+  "scores": {
+    "seo": 38,
+    "ux_ui": 42,
+    "marketing": 55,
+    "contenido": 58,
+    "tecnico": 30,
+    "total": 45
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "H1 presente con keyword relevante: 'High-Quality Dental Care For All'",
+        "Meta description presente y orientada al usuario",
+        "CTAs con texto descriptivo y verbos de acción: 'Book an Appointment', 'Learn More', 'View More Testimonials'",
+        "Imágenes con alt text en la mayoría de casos"
+      ],
+      "negativos": [
+        "Meta title genérico 'Home - Precision Dental' sin keywords de servicio ni localización (Greenville, SC)",
+        "Sin meta keywords definidas",
+        "Sitio renderizado por JS (Divi Builder) — contenido no crawleable por bots sin JS, penaliza indexación severamente",
+        "No se detecta estructura de headings coherente H1→H2→H3 en la homepage; varias secciones sin títulos",
+        "Sin schema markup estructurado para LocalBusiness o Dentist",
+        "URLs de páginas internas sin optimización de keywords (ej. /about/ en vez de /about-precision-dental-greenville/)"
+      ],
+      "recomendaciones": [
+        { "accion": "Reescribir meta title a 'Precision Dental Greenville SC | Affordable Dental Care For All'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Añadir schema markup LocalBusiness y Dentist con datos de contacto, horarios y servicios", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Migrar a stack estático/SSR para garantizar contenido crawleable sin JS", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Establecer jerarquía de headings consistente en cada página", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Crear páginas individuales por servicio con keywords locales (ej. 'Teeth Whitening Greenville SC')", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores definida con azul primario (#2ea3f2) consistente en todo el sitio",
+        "Tipografía legible (Open Sans) con pesos variados para jerarquía",
+        "Fotografía profesional del consultorio y equipo que genera confianza",
+        "Navegación simple de 4 items, fácil de seguir"
+      ],
+      "negativos": [
+        "Solo una tipografía (Open Sans) para todo — falta diferenciación entre headings y cuerpo",
+        "Paleta usa blanco puro (#ffffff) y negro puro (#000000) — contraste agresivo",
+        "Fondo gris claro (#f3f3f3) con texto gris medio (#666666) puede tener contraste insuficiente en algunos contextos",
+        "Sin indicios claros de diseño mobile-first; Divi genera layouts desktop-first",
+        "Iconos de tips (1.png–5.png) son imágenes raster, no escalables",
+        "Secciones de la homepage se sienten desconectadas visualmente sin transiciones ni ritmo"
+      ],
+      "recomendaciones": [
+        { "accion": "Implementar sistema tipográfico dual: serif para headings (confianza/salud) y sans-serif para cuerpo", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reemplazar blanco/negro puros por off-white y charcoal suave para reducir fatiga visual", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Diseño mobile-first con breakpoints claros y navegación hamburger", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reemplazar iconos raster por SVGs escalables", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Añadir espaciado consistente y ritmo visual entre secciones", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Propuesta de valor clara y diferenciadora: clínica diversa, accesible, bilingüe (español)",
+        "CTA principal 'Book an Appointment' visible y repetido en múltiples secciones con link directo a booking",
+        "Prueba social presente: testimonio real de Nancy N. + calificación 4.8/5 en Google",
+        "Historia personal de la fundadora (Dr. Groce) genera conexión emocional y diferenciación",
+        "Mención explícita de ser Black-owned practice — posicionamiento único en el mercado"
+      ],
+      "negativos": [
+        "Solo un testimonio visible — insuficiente prueba social para generar confianza amplia",
+        "Sin números concretos de pacientes atendidos, años de experiencia destacados en hero, o casos de éxito",
+        "CTA de booking lleva a URL externa (rwl.io) — posible fricción y pérdida de confianza",
+        "Sin urgencia o incentivo para actuar ahora (ej. 'primera consulta gratis', 'descuento nuevo paciente')",
+        "Sección de servicios en homepage solo lista 3 categorías genéricas sin beneficios específicos"
+      ],
+      "recomendaciones": [
+        { "accion": "Añadir al menos 3-5 testimonios más con fotos y nombres reales", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Incluir números de impacto en hero o about: '15+ años', 'miles de sonrisas', '4.8 estrellas'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Integrar booking directamente en el sitio o usar iframe para mantener confianza", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Añadir oferta para nuevos pacientes como incentivo de conversión", "prioridad": "media", "tipo": "opcional" },
+        { "accion": "Expandir servicios en homepage con beneficio + icono por cada servicio principal", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Textos originales y auténticos — no genéricos; reflejan la voz y misión del negocio",
+        "Información de contacto completa: teléfono, fax, email, dirección, horarios",
+        "Contenido bilingüe mencionado ('Nosotros hablamos español') — relevante para el público objetivo",
+        "Valores corporativos bien articulados (Diversity, Integrity, Teamwork, Empowerment, Commitment)",
+        "Bio detallada de la doctora con credenciales verificables (Hampton U., Temple U.)"
+      ],
+      "negativos": [
+        "Sin sección de FAQ que resuelva objeciones comunes (costos, seguros, emergencias, dolor)",
+        "Servicios listados sin descripciones individuales detalladas — solo nombres",
+        "Sección de tips es contenido genérico que no diferencia ni aporta valor competitivo",
+        "Sin información sobre seguros aceptados o opciones de financiamiento",
+        "Contenido en español prometido pero no implementado en el sitio"
+      ],
+      "recomendaciones": [
+        { "accion": "Crear sección FAQ con 8-10 preguntas frecuentes: seguros, costos, emergencias, primera visita", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Escribir descripción detallada para cada servicio principal con beneficios y proceso", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Añadir lista de seguros aceptados y opciones de pago/financiamiento", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reemplazar sección de tips genéricos por contenido educativo específico del consultorio", "prioridad": "baja", "tipo": "opcional" },
+        { "accion": "Implementar contenido en español real o al menos toggle de idioma", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "LiteSpeed Cache implementado para performance",
+        "Formulario de contacto funcional con campos relevantes (Gravity Forms)",
+        "Sistema de booking externo integrado (rwl.io)"
+      ],
+      "negativos": [
+        "WordPress + Divi Builder: stack pesado, lento, difícil de mantener para un sitio de 4 páginas",
+        "Contenido renderizado por JS — no crawleable, penaliza SEO severamente",
+        "Divi Theme v4.27.4 genera CSS/JS excesivo (múltiples hojas de estilo, scripts inline)",
+        "Sin HTTPS en algunas referencias internas detectadas",
+        "Dependencia de plugins (Gravity Forms, LiteSpeed, Divi) crea superficie de ataque y necesidad de actualizaciones constantes",
+        "Imágenes no optimizadas — archivos pesados sin lazy loading nativo ni formatos modernos (WebP/AVIF)"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a HTML estático + Tailwind CSS — el sitio tiene solo 4 páginas, no necesita CMS", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Optimizar imágenes a WebP con lazy loading nativo", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Implementar formulario de contacto ligero (Formspree o similar) sin dependencia de plugins", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Añadir meta viewport y asegurar responsive design desde código", "prioridad": "alta", "tipo": "quick_win" }
+      ],
+      "stack_actual": "WordPress + Divi Theme (v4.27.4) + Gravity Forms + LiteSpeed Cache",
+      "stack_recomendado": "HTML estático + Tailwind CSS + Alpine.js — sitio de baja complejidad (4 páginas, formulario simple, sin e-commerce ni CMS necesario)",
+      "integraciones": ["Booking externo (rwl.io)", "Gravity Forms (contacto)", "Google Maps (ubicación)"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Reescribir meta titles con keywords locales (Greenville SC) y de servicio",
+    "Añadir schema markup LocalBusiness/Dentist con datos de contacto y horarios",
+    "Reemplazar blanco/negro puros por tonos suaves (off-white #f8f8f8, charcoal #2d2d2d)",
+    "Incluir números de impacto visibles: '15+ Years', '4.8/5 Google Rating'",
+    "Optimizar imágenes a WebP con dimensiones correctas y lazy loading"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Migrar a HTML estático + Tailwind CSS + Alpine.js",
+      "Reescribir meta titles y descriptions con keywords locales",
+      "Añadir schema markup LocalBusiness y Dentist",
+      "Implementar diseño mobile-first con sistema tipográfico dual",
+      "Optimizar todas las imágenes a WebP"
+    ],
+    "mes_1": [
+      "Crear sección FAQ completa con objeciones comunes",
+      "Escribir descripciones detalladas para cada servicio",
+      "Añadir 3-5 testimonios adicionales",
+      "Integrar booking directamente o via iframe confiable",
+      "Implementar contenido en español (al menos las secciones principales)",
+      "Crear páginas individuales por servicio principal"
+    ],
+    "largo_plazo": [
+      "Reemplazar sección de tips por blog educativo con contenido local SEO",
+      "Añadir oferta de nuevo paciente como incentivo de conversión",
+      "Implementar sistema de reseñas automatizado post-visita"
+    ]
+  },
+  "resumen_ejecutivo": "Precision Dental tiene un mensaje diferenciador poderoso (clínica diversa, bilingüe, accesible) pero lo entierra en un stack técnico obsoleto (WordPress + Divi) que impide la indexación por buscadores y ralentiza la experiencia. La mayor oportunidad es migrar a un sitio estático ultrarrápido que ponga la propuesta de valor al frente con prueba social robusta, keywords locales y mobile-first. El próximo paso es construir un sitio HTML + Tailwind desde cero con las 4 páginas actuales, optimizado para SEO local en Greenville, SC.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["alpine.js", "formspree", "google-maps-embed"],
+    "justificacion": "Sitio de baja complejidad (4 páginas estáticas, 1 formulario, sin e-commerce ni contenido dinámico). HTML + Tailwind + Alpine.js ofrece máxima velocidad, SEO perfecto y cero dependencias de servidor."
+  }
+}

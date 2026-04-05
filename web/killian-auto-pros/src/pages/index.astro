@@ -4,15 +4,15 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const services = [
-  { num: '01', title: 'AC & Heat Repair', desc: 'Complete climate control diagnostics and repair. Stay comfortable in any season with expert AC and heating system service.', icon: 'snowflake' },
-  { num: '02', title: 'Brake Repair', desc: 'Pads, rotors, calipers, and full brake system inspection. Your safety is our top priority on every job.', icon: 'disc' },
-  { num: '03', title: 'Diagnostics', desc: 'State-of-the-art computer diagnostics to pinpoint issues fast. No guessing — just precision troubleshooting.', icon: 'cpu' },
-  { num: '04', title: 'Engines', desc: 'From minor tune-ups to full engine rebuilds. Our ASE-Certified technicians handle it all with precision.', icon: 'engine' },
-  { num: '05', title: 'Oil Changes', desc: 'Quick, thorough oil changes with premium fluids. Keep your engine running clean and strong.', icon: 'droplet' },
-  { num: '06', title: 'Steering & Suspension', desc: 'Shocks, struts, tie rods, and power steering repair. Drive smooth and handle with confidence.', icon: 'steering' },
-  { num: '07', title: 'Tires & Alignments', desc: 'New tires, rotations, balancing, and precision alignments. Maximize tire life and road grip.', icon: 'circle' },
-  { num: '08', title: 'Transmissions', desc: 'Manual and automatic transmission repair and rebuilds. We keep your drivetrain shifting smooth.', icon: 'gear' },
-  { num: '09', title: 'Jeep Specialists', desc: 'Dedicated Jeep service and repair. From trail-ready upgrades to routine maintenance, we know Jeeps inside and out.', icon: 'jeep' },
+  { num: '01', title: 'AC & Heat Repair', desc: 'Complete climate control diagnostics and repair. Stay comfortable in any season with expert AC and heating system service.', icon: 'snowflake', img: 'https://killianautopros.com/wp-content/uploads/2023/02/car-ac-repair-03.webp' },
+  { num: '02', title: 'Brake Repair', desc: 'Pads, rotors, calipers, and full brake system inspection. Your safety is our top priority on every job.', icon: 'disc', img: 'https://killianautopros.com/wp-content/uploads/2022/11/brake-repair-03.webp' },
+  { num: '03', title: 'Diagnostics', desc: 'State-of-the-art computer diagnostics to pinpoint issues fast. No guessing — just precision troubleshooting.', icon: 'cpu', img: 'https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg' },
+  { num: '04', title: 'Engines', desc: 'From minor tune-ups to full engine rebuilds. Our ASE-Certified technicians handle it all with precision.', icon: 'engine', img: 'https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg' },
+  { num: '05', title: 'Oil Changes', desc: 'Quick, thorough oil changes with premium fluids. Keep your engine running clean and strong.', icon: 'droplet', img: 'https://killianautopros.com/wp-content/uploads/2023/02/car-ac-repair-03.webp' },
+  { num: '06', title: 'Steering & Suspension', desc: 'Shocks, struts, tie rods, and power steering repair. Drive smooth and handle with confidence.', icon: 'steering', img: 'https://killianautopros.com/wp-content/uploads/2022/11/brake-repair-03.webp' },
+  { num: '07', title: 'Tires & Alignments', desc: 'New tires, rotations, balancing, and precision alignments. Maximize tire life and road grip.', icon: 'circle', img: 'https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg' },
+  { num: '08', title: 'Transmissions', desc: 'Manual and automatic transmission repair and rebuilds. We keep your drivetrain shifting smooth.', icon: 'gear', img: 'https://killianautopros.com/wp-content/uploads/2022/11/brake-repair-03.webp' },
+  { num: '09', title: 'Jeep Specialists', desc: 'Dedicated Jeep service and repair. From trail-ready upgrades to routine maintenance, we know Jeeps inside and out.', icon: 'jeep', img: 'https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg' },
 ];
 
 const amenities = [
@@ -108,10 +108,22 @@ const locations = [
       <div class="grid-services" data-animate="stagger" data-service-grid>
         {services.map((s) => (
           <a href="/services" class="service-card" data-service-category="all">
-            <span class="service-card__number" aria-hidden="true">{s.num}</span>
-            <h3 class="service-card__title">{s.title}</h3>
-            <div class="red-line red-line-hover" aria-hidden="true"></div>
-            <p class="service-card__desc">{s.desc}</p>
+            <div class="service-card__img-wrap">
+              <img
+                src={s.img}
+                alt={`${s.title} service at Killian Auto Pros`}
+                width="600"
+                height="400"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="service-card__body">
+              <span class="service-card__number" aria-hidden="true">{s.num}</span>
+              <h3 class="service-card__title">{s.title}</h3>
+              <div class="red-line red-line-hover" aria-hidden="true"></div>
+              <p class="service-card__desc">{s.desc}</p>
+            </div>
           </a>
         ))}
       </div>
@@ -151,8 +163,20 @@ const locations = [
         </div>
 
         <div class="amenities-accent" data-animate="fade-right">
-          <div class="amenities-accent__number number-label float-number" aria-hidden="true">7+</div>
-          <p class="amenities-accent__text text-display">Free amenities<br/>with every<br/>service visit</p>
+          <div class="amenities-accent__img-wrap">
+            <img
+              src="https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg"
+              alt="Killian Auto Pros professional auto repair shop"
+              width="600"
+              height="800"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="amenities-accent__overlay">
+              <div class="amenities-accent__number number-label float-number" aria-hidden="true">7+</div>
+              <p class="amenities-accent__text text-display">Free amenities<br/>with every<br/>service visit</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -262,12 +286,23 @@ const locations = [
     overflow: hidden;
   }
 
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('https://killianautopros.com/wp-content/uploads/2023/02/SLIDER3-01-01-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.18;
+    z-index: 0;
+  }
+
   .hero__overlay {
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse at 30% 70%, oklch(0.55 0.25 27 / 0.12) 0%, transparent 60%),
-      linear-gradient(180deg, oklch(0.1 0.01 50 / 0.3) 0%, transparent 40%);
+      radial-gradient(ellipse at 30% 70%, oklch(0.55 0.25 27 / 0.18) 0%, transparent 60%),
+      linear-gradient(180deg, oklch(0.05 0.01 50 / 0.6) 0%, oklch(0.1 0.01 50 / 0.3) 40%, transparent 70%);
     z-index: 1;
   }
 
@@ -346,7 +381,7 @@ const locations = [
 
   /* ---- SECTION HEADERS ---- */
   .section-header {
-    margin-block-end: var(--space-8);
+    margin-block-end: var(--space-6);
     text-align: center;
 
     & .section-tag {
@@ -377,6 +412,29 @@ const locations = [
     margin-block-start: var(--space-6);
   }
 
+  /* ---- SERVICE CARD IMAGE ---- */
+  .service-card__img-wrap {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    margin: calc(-1 * var(--space-3));
+    margin-block-end: 0;
+  }
+
+  .service-card__img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .service-card:hover .service-card__img-wrap img {
+    transform: scale(1.06);
+  }
+
+  .service-card__body {
+    padding: var(--space-3) 0 0;
+  }
+
   /* ---- AMENITIES ACCENT ---- */
   .amenities-section {
     background: var(--color-bg);
@@ -385,31 +443,54 @@ const locations = [
   .amenities-accent {
     display: none;
     position: relative;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: var(--space-8);
 
     @media (min-width: 768px) {
-      display: flex;
+      display: block;
     }
   }
 
+  .amenities-accent__img-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    overflow: hidden;
+  }
+
+  .amenities-accent__img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .amenities-accent__overlay {
+    position: absolute;
+    inset: 0;
+    background: oklch(0.1 0.01 50 / 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--space-4);
+  }
+
   .amenities-accent__number {
-    font-size: clamp(6rem, 14vw, 12rem);
+    font-size: clamp(5rem, 12vw, 9rem);
+    color: var(--color-text-inverse);
+    opacity: 0.9;
   }
 
   .amenities-accent__text {
     font-size: var(--text-h2);
-    color: var(--color-secondary);
-    margin-block-start: var(--space-2);
+    color: var(--color-text-inverse);
+    margin-block-start: var(--space-1);
   }
 
   /* ---- CTA BANNER ---- */
   .cta-banner {
     background: var(--color-primary);
-    padding-block: var(--space-12);
+    padding-block: var(--space-6);
     text-align: center;
   }
 
@@ -462,7 +543,7 @@ const locations = [
 
   /* ---- FINAL CTA ---- */
   .cta-final {
-    padding-block: var(--space-12);
+    padding-block: var(--space-6);
     text-align: center;
     color: var(--color-text-inverse);
   }

@@ -39,8 +39,21 @@
   ).matches;
 
   if (!prefersReduced) {
+    /* Assign stagger delays to grid children */
+    const grids = document.querySelectorAll(
+      ".services__grid, .amenities__grid, .gifts__grid, .journey__timeline"
+    );
+    grids.forEach((grid) => {
+      const children = grid.querySelectorAll(
+        ".service-card, .amenity-card, .gift-card, .journey__step"
+      );
+      children.forEach((child, i) => {
+        child.setAttribute("data-delay", String(Math.min(i, 6)));
+      });
+    });
+
     const targets = document.querySelectorAll(
-      ".service-card, .amenity-card, .gift-card, .faq__item, .about__content, .about__visual, .section__header, .contact__block, .contact__form"
+      ".service-card, .amenity-card, .gift-card, .faq__item, .about__content, .about__visual, .section__header, .contact__block, .contact__form, .journey__step"
     );
 
     targets.forEach((el) => el.classList.add("fade-up"));

@@ -1095,6 +1095,182 @@
     gap: 8px;
   }
 
+  /* --- Why Us / Differentiators --- */
+  .why-us__heading {
+    margin-bottom: var(--space-4);
+  }
+
+  .why-us__heading span {
+    color: var(--color-primary);
+    font-style: italic;
+  }
+
+  .why-us__description {
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-6);
+    max-width: 50ch;
+  }
+
+  .differentiators {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .diff-item {
+    display: flex;
+    gap: var(--space-3);
+    align-items: flex-start;
+  }
+
+  .diff-item__icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    background: var(--color-primary-glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+  }
+
+  .diff-item__title {
+    font-family: var(--font-display);
+    font-size: var(--text-h3);
+    margin-bottom: 4px;
+  }
+
+  .diff-item__text {
+    color: var(--color-text-muted);
+    font-size: var(--text-small);
+  }
+
+  .why-us__image-wrap {
+    position: relative;
+  }
+
+  .why-us__image {
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    width: 100%;
+    height: auto;
+  }
+
+  .why-us__floating-stat {
+    position: absolute;
+    bottom: var(--space-4);
+    left: calc(var(--space-4) * -0.5);
+    background: var(--color-surface-card);
+    border: 1px solid var(--color-border-gold);
+    border-radius: var(--radius-lg);
+    padding: var(--space-3) var(--space-4);
+    box-shadow: var(--shadow-gold);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .why-us__floating-number {
+    font-family: var(--font-display);
+    font-size: var(--text-h2);
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+  }
+
+  .why-us__floating-label {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    line-height: 1.3;
+  }
+
+  /* --- Nail Inspiration Gallery (Masonry) --- */
+  .nail-gallery {
+    columns: 2;
+    column-gap: var(--space-3);
+
+    @media (min-width: 640px) {
+      columns: 3;
+    }
+
+    @media (min-width: 1024px) {
+      columns: 4;
+    }
+  }
+
+  .nail-gallery__item {
+    break-inside: avoid;
+    margin-bottom: var(--space-3);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform var(--duration-normal) var(--ease-out),
+                box-shadow var(--duration-normal) var(--ease-out);
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    & img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform var(--duration-slower) var(--ease-out);
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
+  .nail-gallery__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(44, 36, 32, 0.55) 100%);
+    opacity: 0;
+    transition: opacity var(--duration-normal) var(--ease-out);
+    display: flex;
+    align-items: flex-end;
+    padding: var(--space-3);
+  }
+
+  .nail-gallery__item:hover .nail-gallery__overlay {
+    opacity: 1;
+  }
+
+  .nail-gallery__caption {
+    color: var(--color-white);
+    font-size: var(--text-small);
+    font-weight: var(--weight-medium);
+    letter-spacing: var(--tracking-wide);
+  }
+
+  /* --- Salon Card Placeholder (initials) --- */
+  .salon-card__initials {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-full);
+    background: var(--color-bg-alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    margin-bottom: var(--space-2);
+    border: 2px solid var(--color-border);
+    font-family: var(--font-display);
+    font-size: var(--text-h3);
+    font-weight: var(--weight-semibold);
+    color: var(--color-primary);
+    transition: border-color var(--duration-normal) var(--ease-out);
+
+    .salon-card:hover & {
+      border-color: var(--color-primary);
+    }
+  }
+
   /* --- Footer --- */
   .footer {
     background: var(--color-text);

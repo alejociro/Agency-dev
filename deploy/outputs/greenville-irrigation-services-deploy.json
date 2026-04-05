@@ -1,0 +1,7 @@
+{
+  "negocio": "greenville-irrigation-services",
+  "url_produccion": "https://greenville-irrigation-services.vercel.app",
+  "fecha_deploy": "2026-04-04",
+  "stack": "html",
+  "carpeta_origen": "web/greenville-irrigation-services/"
+}

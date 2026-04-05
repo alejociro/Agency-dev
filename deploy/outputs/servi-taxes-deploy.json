@@ -1,7 +1,7 @@
 {
   "negocio": "Servi Taxes LLC",
   "url_produccion": "https://servi-taxes.vercel.app",
-  "fecha_deploy": "2026-04-04",
+  "fecha_deploy": "2026-04-05",
   "stack": "html",
   "carpeta_origen": "web/servi-taxes/"
 }

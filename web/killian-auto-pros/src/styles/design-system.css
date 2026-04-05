@@ -62,9 +62,9 @@
   --space-3:  1.5rem;
   --space-4:  2rem;
   --space-6:  3rem;
-  --space-8:  4rem;
-  --space-12: 6rem;
-  --space-16: 8rem;
+  --space-8:  3rem;
+  --space-12: 4rem;
+  --space-16: 6rem;
 
   /* ---- Tipografía fluida ---- */
   --text-hero:  clamp(3.5rem, 12vw, 10rem);
@@ -94,7 +94,7 @@
   --radius-full: 9999px;
 
   /* ---- Layout ---- */
-  --section-padding:   clamp(5rem, 10vw, 10rem);
+  --section-padding:   clamp(3rem, 6vw, 5rem);
   --container-max:     1200px;
   --container-padding: clamp(1rem, 5vw, 2rem);
 
@@ -330,18 +330,18 @@ textarea:focus-visible {
 
 /* ---- Diagonal section break ---- */
 .diagonal-cut {
-  clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
+  clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 98%);
 
   @media (min-width: 768px) {
-    clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
   }
 }
 
 .diagonal-cut--top {
-  clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
 
   @media (min-width: 768px) {
-    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
   }
 }
 
@@ -650,8 +650,8 @@ textarea:focus-visible {
   background: var(--color-bg);
   border: 1px solid var(--color-border);
   padding: var(--space-3);
-  padding-block-start: var(--space-4);
   transition: all var(--duration-normal) var(--ease-out-expo);
+  overflow: hidden;
 
   &:hover {
     border-color: var(--color-primary);
@@ -660,16 +660,15 @@ textarea:focus-visible {
   }
 
   & .service-card__number {
-    position: absolute;
-    inset-block-start: -1.25rem;
-    inset-inline-start: -0.5rem;
+    display: block;
     font-family: var(--font-display), 'Bebas Neue', sans-serif;
-    font-size: clamp(3rem, 6vw, 5rem);
+    font-size: clamp(2rem, 4vw, 3rem);
     color: var(--color-primary);
     line-height: 1;
     letter-spacing: -0.04em;
-    opacity: 0.9;
+    opacity: 0.35;
     transition: opacity var(--duration-normal) var(--ease-out-expo);
+    margin-block-end: var(--space-1);
   }
 
   &:hover .service-card__number {
@@ -952,7 +951,7 @@ textarea:focus-visible {
   }
 
   @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

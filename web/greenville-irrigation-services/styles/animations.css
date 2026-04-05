@@ -1,0 +1,514 @@
+/* ============================================
+   ANIMATIONS — Greenville Irrigation Services
+   Theme: Water flow, organic reveals, earthy motion
+   ============================================ */
+
+/* ============================================
+   CAPA 1 — PAGE LOAD (hero stagger)
+   Direction: rise like water + fade
+   Easing: smooth water-like curve
+   ============================================ */
+
+@keyframes waterRise {
+  from {
+    opacity: 0;
+    transform: translateY(32px) scale(0.98);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes gentleFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes expandIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0.6);
+    transform-origin: left center;
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes dropletIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.7);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(4px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Hero stagger sequence */
+.hero__badge     { animation: expandIn  0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both; }
+.hero__title     { animation: waterRise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.3s  both; }
+.hero__subtitle  { animation: gentleFade 0.8s ease 0.65s both; }
+.hero__actions   { animation: waterRise 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.85s both; }
+.hero__form-card { animation: dropletIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.5s  both; }
+
+/* ============================================
+   CAPA 2 — SCROLL REVEAL
+   Method: scroll-driven CSS primary, IO fallback
+   Theme: organic upward flow like water through soil
+   ============================================ */
+
+/* --- Scroll-driven keyframes --- */
+
+@keyframes scroll-rise {
+  from {
+    opacity: 0;
+    transform: translateY(48px);
+    filter: blur(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes scroll-drift-left {
+  from {
+    opacity: 0;
+    transform: translateX(-40px) rotate(-1deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+@keyframes scroll-drift-right {
+  from {
+    opacity: 0;
+    transform: translateX(40px) rotate(1deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+@keyframes scroll-bloom {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes scroll-clip-reveal {
+  from {
+    clip-path: inset(100% 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* --- Apply scroll-driven animations --- */
+
+[data-scroll="rise"] {
+  animation: scroll-rise linear both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 35%;
+}
+
+[data-scroll="drift-left"] {
+  animation: scroll-drift-left linear both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 38%;
+}
+
+[data-scroll="drift-right"] {
+  animation: scroll-drift-right linear both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 38%;
+}
+
+[data-scroll="bloom"] {
+  animation: scroll-bloom linear both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 32%;
+}
+
+[data-scroll="clip-up"] {
+  animation: scroll-clip-reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 40%;
+}
+
+/* --- Stagger: water-cascade pattern (each child slightly after previous) --- */
+[data-scroll="cascade"] > * {
+  animation: scroll-rise linear both;
+  animation-timeline: view();
+}
+[data-scroll="cascade"] > *:nth-child(1) { animation-range: entry 0%  entry 30%; }
+[data-scroll="cascade"] > *:nth-child(2) { animation-range: entry 4%  entry 34%; }
+[data-scroll="cascade"] > *:nth-child(3) { animation-range: entry 8%  entry 38%; }
+[data-scroll="cascade"] > *:nth-child(4) { animation-range: entry 12% entry 42%; }
+[data-scroll="cascade"] > *:nth-child(5) { animation-range: entry 16% entry 46%; }
+[data-scroll="cascade"] > *:nth-child(6) { animation-range: entry 20% entry 50%; }
+
+/* --- Parallax fade-out on exit --- */
+[data-scroll="parallax-exit"] {
+  animation: parallax-fade-exit linear both;
+  animation-timeline: view();
+  animation-range: exit 0% exit 40%;
+}
+
+@keyframes parallax-fade-exit {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(-40px); }
+}
+
+/* --- Hero background parallax --- */
+.hero__bg img {
+  animation: hero-parallax linear;
+  animation-timeline: scroll();
+  animation-range: 0vh 100vh;
+}
+
+@keyframes hero-parallax {
+  to { transform: translateY(80px) scale(1.05); }
+}
+
+/* --- Reading progress bar --- */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  transform-origin: left;
+  animation: progressScale linear;
+  animation-timeline: scroll();
+  z-index: 60;
+}
+
+@keyframes progressScale {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* ============================================
+   SCROLL-DRIVEN FALLBACK (IO-based)
+   ============================================ */
+
+@supports not (animation-timeline: view()) {
+  [data-scroll] {
+    opacity: 0;
+    transition: opacity 0.7s ease,
+                transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                filter 0.7s ease;
+  }
+
+  [data-scroll="rise"]        { transform: translateY(48px); filter: blur(2px); }
+  [data-scroll="drift-left"]  { transform: translateX(-40px) rotate(-1deg); }
+  [data-scroll="drift-right"] { transform: translateX(40px) rotate(1deg); }
+  [data-scroll="bloom"]       { transform: scale(0.85); filter: blur(3px); }
+  [data-scroll="clip-up"]     { clip-path: inset(100% 0 0 0); transition: clip-path 0.8s cubic-bezier(0.22, 1, 0.36, 1); }
+
+  [data-scroll].is-visible {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+    clip-path: inset(0 0 0 0);
+  }
+
+  /* Stagger fallback */
+  [data-scroll="cascade"] > * {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.6s ease,
+                transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  [data-scroll="cascade"].is-visible > *:nth-child(1) { transition-delay: 0.05s; opacity: 1; transform: none; }
+  [data-scroll="cascade"].is-visible > *:nth-child(2) { transition-delay: 0.12s; opacity: 1; transform: none; }
+  [data-scroll="cascade"].is-visible > *:nth-child(3) { transition-delay: 0.20s; opacity: 1; transform: none; }
+  [data-scroll="cascade"].is-visible > *:nth-child(4) { transition-delay: 0.28s; opacity: 1; transform: none; }
+  [data-scroll="cascade"].is-visible > *:nth-child(5) { transition-delay: 0.36s; opacity: 1; transform: none; }
+  [data-scroll="cascade"].is-visible > *:nth-child(6) { transition-delay: 0.44s; opacity: 1; transform: none; }
+
+  .reading-progress {
+    transform: scaleX(0);
+    transition: transform 100ms linear;
+  }
+}
+
+/* ============================================
+   CAPA 3 — MICRO-INTERACTIONS
+   ============================================ */
+
+/* Service cards — spring hover */
+.service-card {
+  transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 300ms ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Button shimmer — water light reflection */
+.btn--primary {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.15),
+    transparent
+  );
+  transition: left 500ms ease;
+}
+
+.btn--primary:hover::after {
+  left: 120%;
+}
+
+/* Accent button pulse on hover */
+.btn--accent:hover {
+  animation: subtlePulse 1.5s ease-in-out infinite;
+}
+
+@keyframes subtlePulse {
+  0%, 100% { box-shadow: 0 4px 20px var(--color-accent-glow); }
+  50%      { box-shadow: 0 4px 30px rgba(212, 168, 67, 0.4); }
+}
+
+/* FAQ arrow rotation */
+.faq-item__question .icon {
+  transition: transform var(--duration-base) cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Testimonial cards — staggered float */
+.testimonial-card {
+  transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 300ms ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Area tags — ripple on hover */
+.area-tag {
+  transition: all 200ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Form inputs — water border glow */
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 3px var(--color-secondary-glow);
+}
+
+/* ============================================
+   CAPA 4 — SPECIAL: WATER-THEMED ELEMENTS
+   ============================================ */
+
+/* Water drop loader / decorative */
+@keyframes waterDrop {
+  0% {
+    transform: translateY(-10px) scale(1, 0.8);
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(0) scale(0.9, 1.1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(4px) scale(1.05, 0.95);
+  }
+  70% {
+    transform: translateY(-2px) scale(0.98, 1.02);
+  }
+  100% {
+    transform: translateY(0) scale(1, 1);
+    opacity: 1;
+  }
+}
+
+/* Water surface shimmer for dark sections */
+.section--dark::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-secondary-glow) 20%,
+    rgba(74, 144, 164, 0.4) 50%,
+    var(--color-secondary-glow) 80%,
+    transparent 100%
+  );
+  animation: shimmerLine 4s ease-in-out infinite;
+}
+
+@keyframes shimmerLine {
+  0%, 100% { opacity: 0.3; }
+  50%      { opacity: 0.8; }
+}
+
+/* Animated gradient mesh for hero overlay */
+@property --water-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes waterGradientRotate {
+  to { --water-angle: 360deg; }
+}
+
+.hero__bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    conic-gradient(from var(--water-angle) at 25% 65%, rgba(74, 144, 164, 0.08), transparent 45%),
+    conic-gradient(from calc(var(--water-angle) + 180deg) at 75% 35%, rgba(45, 122, 58, 0.06), transparent 40%);
+  animation: waterGradientRotate 15s linear infinite;
+  z-index: 1;
+}
+
+/* Wave animation for hero bottom separator */
+@keyframes waveGently {
+  0%, 100% { transform: translateX(0); }
+  50%      { transform: translateX(-2%); }
+}
+
+.hero__ripple svg path {
+  animation: waveGently 6s ease-in-out infinite;
+}
+
+.hero__ripple svg path:nth-child(2) {
+  animation-delay: -2s;
+  animation-duration: 8s;
+}
+
+/* ============================================
+   CAPA 5 — PREMIUM: KINETIC HERO TEXT
+   ============================================ */
+
+/* Split text word reveal */
+.kw {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.kw-inner {
+  display: inline-block;
+  transform: translateY(115%);
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              opacity 0.6s ease;
+  transition-delay: calc(var(--i) * 0.07s);
+}
+
+/* Scroll-driven kinetic text */
+@supports (animation-timeline: view()) {
+  .kinetic-ready .kw-inner {
+    animation: kineticWord linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 28%;
+    animation-delay: calc(var(--i) * 0.04s);
+    transition: none;
+  }
+
+  @keyframes kineticWord {
+    from {
+      transform: translateY(115%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+/* IO fallback for kinetic text */
+@supports not (animation-timeline: view()) {
+  [data-kinetic].is-visible .kw-inner {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ============================================
+   REDUCED MOTION — respect user preference
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .hero__bg::before {
+    animation: none !important;
+  }
+
+  .hero__ripple svg path {
+    animation: none !important;
+  }
+
+  .section--dark::before {
+    animation: none !important;
+    opacity: 0.5;
+  }
+
+  [data-scroll] {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    clip-path: none !important;
+  }
+
+  .reading-progress {
+    display: none;
+  }
+}

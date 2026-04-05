@@ -1,0 +1,156 @@
+{
+  "cliente": "Carolina Dental Alliance",
+  "url_auditada": "https://www.carolinadentalalliance.com/",
+  "sector": "Dental Healthcare",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 50. Applied because Carolina Dental Alliance is a multi-location local dental healthcare provider in South Carolina, fitting the local health service category.",
+  "fecha": "2026-04-04",
+  "scores": {
+    "seo": 40,
+    "ux_ui": 45,
+    "marketing": 38,
+    "contenido": 42,
+    "tecnico": 48,
+    "total": 43
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title and description present with geographic keywords (South Carolina, Spartanburg, Greenville, Columbia)",
+        "Clear navigation structure with logical service hierarchy and 13 menu items",
+        "Multiple CTAs with descriptive text (Choose Your Location, Contact Us, New Patients)"
+      ],
+      "negativos": [
+        "H1 is generic 'Welcome to Carolina Dental Alliance' — lacks primary keyword like 'dentist' or 'dental care'",
+        "No meta keywords defined",
+        "Most images use base64 lazy-loading placeholders with missing or generic alt text",
+        "Meta description is thin and generic — doesn't mention services or unique value proposition",
+        "No structured heading hierarchy visible (H1 > H2 > H3 progression unclear)"
+      ],
+      "recomendaciones": [
+        { "accion": "Rewrite H1 to include primary keyword: 'Compassionate Dental Care Across South Carolina'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Optimize meta description to 150-160 chars including services, locations, and CTA", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Add descriptive alt text to all images with service-related keywords", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Implement proper H1>H2>H3 heading hierarchy across all sections", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Consistent color palette with clear primary (#4fbbda) and secondary (#2c659c) brand colors",
+        "Two complementary font families (Work Sans for headings, Lato for body) create visual hierarchy",
+        "Service cards provide scannable grid layout for key offerings"
+      ],
+      "negativos": [
+        "Hero section has minimal visual impact — white overlay at 50% opacity with basic heading",
+        "Location section lists 17 offices as plain text without visual differentiation or map integration",
+        "Too many color values detected (8+) suggesting inconsistent application across the site",
+        "No visible social proof elements (testimonials, ratings) above the fold",
+        "Services list is plain comma-separated text instead of visual cards or icons"
+      ],
+      "recomendaciones": [
+        { "accion": "Redesign hero with compelling imagery, clear value proposition, and prominent CTA button", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Convert locations section to interactive card grid with address, phone, and map link per office", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Reduce color palette to 3 primary + 2 neutral for consistency", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Add icons to services list for scannability and visual engagement", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "Clear value proposition mentioning 17 locations across South Carolina — emphasizes convenience",
+        "Special offer prominently displayed (braces starting at $3,995 with free consultation)",
+        "Multiple pathways for different user intents (New Patients, Services, Dental Plan, Offers)"
+      ],
+      "negativos": [
+        "No social proof — zero testimonials, reviews, patient counts, or trust badges visible",
+        "No urgency or scarcity elements in CTAs or offers",
+        "Hero CTA 'Choose Your Location' is navigation-focused, not benefit-focused",
+        "No differentiation from competitors — messaging is generic dental language",
+        "Broken social media links (hash placeholders instead of actual URLs)"
+      ],
+      "recomendaciones": [
+        { "accion": "Add patient testimonials section with star ratings and real quotes", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Change hero CTA to benefit-focused: 'Book Your Free Consultation' or 'Find Your Dentist'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Add trust indicators: years in business, number of patients served, Google review rating", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Fix social media links with actual profile URLs", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "About section contains detailed, specific copy about the practice's values and approach",
+        "Comprehensive services list covering 9+ dental specialties",
+        "17 locations listed — demonstrates scale and accessibility"
+      ],
+      "negativos": [
+        "Card descriptions are generic and interchangeable — not specific to each service",
+        "No FAQ section addressing common patient concerns (cost, insurance, pain, first visit)",
+        "Email address missing from contact information",
+        "Operating hours not listed anywhere on the homepage",
+        "No individual dentist bios or team information visible"
+      ],
+      "recomendaciones": [
+        { "accion": "Add FAQ section addressing insurance, first visit process, emergency care, and costs", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Rewrite service card descriptions with specific benefits and outcomes for each", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Add email and operating hours to contact information", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Create 'Meet Our Team' section with dentist photos and credentials", "prioridad": "baja", "tipo": "mejora_estructural" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "WordPress CMS with established plugin ecosystem (Gravity Forms, Schema.org)",
+        "Triple analytics setup (UA, GTM, GA4) for comprehensive tracking",
+        "Responsive design with hamburger menu for mobile"
+      ],
+      "negativos": [
+        "WordPress with Material Design theme — heavy and potentially slow for a primarily informational site",
+        "Images using base64 lazy-loading suggests performance optimization issues",
+        "Legacy Universal Analytics (UA-50584001-1) still present alongside GA4",
+        "Gravity Forms detected but form fields not visible — possibly broken or hidden"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrate to lightweight static site (HTML + Tailwind) for faster load times", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Remove legacy Universal Analytics tracking code", "prioridad": "baja", "tipo": "quick_win" },
+        { "accion": "Optimize image delivery — use WebP format with proper srcset for responsive images", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Verify Gravity Forms contact form is functional and visible to users", "prioridad": "alta", "tipo": "quick_win" }
+      ],
+      "stack_actual": "WordPress, Material Design theme, Gravity Forms, Google Analytics/GTM/GA4, Schema.org",
+      "stack_recomendado": "HTML + Tailwind CSS + Alpine.js — lightweight, fast-loading static site appropriate for multi-location dental practice",
+      "integraciones": ["Google Analytics GA4", "Google Tag Manager", "Gravity Forms", "Schema.org structured data"],
+      "complejidad": "media"
+    }
+  },
+  "quick_wins": [
+    "Rewrite H1 to include primary dental keyword and location",
+    "Add patient testimonials with star ratings to homepage",
+    "Change hero CTA from 'Choose Your Location' to 'Book Your Free Consultation'",
+    "Add trust badges: years in business, patients served, Google rating",
+    "Add email and operating hours to contact section"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Rewrite H1 and meta description with targeted keywords",
+      "Change hero CTA to benefit-focused language",
+      "Add trust indicators and social proof numbers",
+      "Fix broken social media links",
+      "Add email and operating hours to contact info"
+    ],
+    "mes_1": [
+      "Redesign hero section with compelling imagery and clear value proposition",
+      "Build patient testimonials section",
+      "Convert locations to interactive card grid with details per office",
+      "Add FAQ section for common dental concerns",
+      "Implement proper heading hierarchy and image alt text optimization"
+    ],
+    "largo_plazo": [
+      "Migrate to lightweight static site for performance",
+      "Create Meet Our Team section with dentist bios",
+      "Build individual location pages with unique content and local SEO",
+      "Remove legacy analytics and optimize image delivery pipeline"
+    ]
+  },
+  "resumen_ejecutivo": "Carolina Dental Alliance has a functional but underperforming website that scores 43/100, well below the 58-benchmark for local health services — the homepage lacks social proof, has a generic hero, and misses critical trust signals that dental patients need. The biggest opportunity is adding testimonials, trust badges, and a benefit-focused CTA to the hero, which could dramatically improve conversion from the site's existing traffic across 17 locations. Immediate next step: rebuild the homepage with a modern, lightweight stack focusing on social proof, clear service differentiation, and location-specific CTAs.",
+  "stack_para_web": {
+    "framework": "astro",
+    "estilos": "tailwind",
+    "extras": ["alpine.js", "google-maps-embed", "schema-org"],
+    "justificacion": "Medium complexity multi-location dental practice with 17 offices needs a performant static site with component reuse for location cards. Astro provides excellent static generation with partial hydration for interactive elements like location finder, while Tailwind ensures consistent design system across all sections."
+  }
+}

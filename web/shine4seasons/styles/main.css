@@ -960,6 +960,237 @@
       box-shadow: 0 8px 32px oklch(0.75 0.08 80 / 0.35);
     }
   }
+
+  /* ── Service Badge (Popular / Seasonal) ────────── */
+  .service-card__badge {
+    position: absolute;
+    inset-block-start: var(--space-2);
+    inset-inline-end: var(--space-2);
+    z-index: 3;
+    font-family: var(--font-body);
+    font-size: var(--text-label);
+    font-weight: 600;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-full);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .service-card__badge--popular {
+    background: oklch(from var(--color-secondary) l c h / 0.9);
+    color: var(--color-white);
+    box-shadow: var(--shadow-gold);
+  }
+
+  .service-card__badge--seasonal {
+    background: oklch(from var(--color-spring) l c h / 0.85);
+    color: var(--color-text);
+  }
+
+  /* ── Gallery Filters ────────────────────────────── */
+  .gallery-filters {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-1);
+    flex-wrap: wrap;
+    margin-block-end: var(--space-6);
+  }
+
+  .gallery-filter-btn {
+    font-family: var(--font-body);
+    font-size: var(--text-small);
+    font-weight: 500;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    padding: 0.5rem 1.25rem;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--color-border);
+    background: transparent;
+    color: var(--color-text-light);
+    cursor: pointer;
+    transition: all var(--duration-fast) var(--ease-out-expo);
+
+    &:hover {
+      border-color: var(--color-secondary);
+      color: var(--color-secondary);
+    }
+
+    &.active {
+      background: var(--color-secondary);
+      border-color: var(--color-secondary);
+      color: var(--color-white);
+      box-shadow: var(--shadow-gold);
+    }
+  }
+
+  .gallery-item[data-category] {
+    transition: opacity var(--duration-normal) var(--ease-out-expo),
+                transform var(--duration-normal) var(--ease-out-expo);
+  }
+
+  .gallery-item.gallery-hidden {
+    display: none;
+  }
+
+  /* ── Trending / Seasonal Banner ──────────────── */
+  .trending-banner {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--color-bg-warm) 0%, var(--color-surface) 100%);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4) var(--space-6);
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+
+    @media (min-width: 768px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .trending-banner__season-icon {
+    inline-size: 56px;
+    block-size: 56px;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+  }
+
+  .trending-banner__content {
+    flex: 1;
+    min-inline-size: 200px;
+  }
+
+  .trending-banner__title {
+    font-family: var(--font-display);
+    font-size: var(--text-h3);
+    font-weight: 500;
+    margin-block-end: 0.25rem;
+  }
+
+  .trending-banner__text {
+    font-size: var(--text-small);
+    color: var(--color-text-light);
+    line-height: var(--leading-body);
+  }
+
+  /* ── Instagram Mini Feed ─────────────────────── */
+  .insta-feed {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-1);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  .insta-feed__item {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: var(--radius-sm);
+
+    & img {
+      inline-size: 100%;
+      block-size: 100%;
+      object-fit: cover;
+      transition: transform var(--duration-slow) var(--ease-out-expo);
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+
+    & .insta-feed__overlay {
+      position: absolute;
+      inset: 0;
+      background: oklch(0.15 0.01 60 / 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity var(--duration-fast) var(--ease-out-expo);
+    }
+
+    &:hover .insta-feed__overlay {
+      opacity: 1;
+    }
+  }
+
+  /* ── Mobile Hero Carousel ───────────────────── */
+  @media (max-width: 767px) {
+    .hero__panels {
+      display: flex !important;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .hero__panel {
+      flex: 0 0 85vw;
+      scroll-snap-align: center;
+      min-block-size: 60svh !important;
+      border-radius: var(--radius-md);
+      margin-inline: 2vw;
+
+      &:first-child {
+        margin-inline-start: 4vw;
+      }
+
+      &:last-child {
+        margin-inline-end: 4vw;
+      }
+
+      & .hero__panel-desc {
+        opacity: 0.9 !important;
+        max-block-size: 200px !important;
+      }
+    }
+
+    .hero__scroll-hint {
+      display: flex !important;
+    }
+  }
+
+  .hero__scroll-hint {
+    display: none;
+    position: absolute;
+    inset-block-end: 90px;
+    inset-inline: 0;
+    z-index: 11;
+    justify-content: center;
+    gap: var(--space-1);
+    padding-block: var(--space-2);
+  }
+
+  .hero__scroll-dot {
+    inline-size: 8px;
+    block-size: 8px;
+    border-radius: var(--radius-full);
+    background: oklch(1 0 0 / 0.4);
+    transition: all var(--duration-fast) var(--ease-out-expo);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    &.active {
+      inline-size: 24px;
+      background: var(--color-secondary);
+    }
+  }
 }
 
 /* ═══════════════════════════════════════════════════

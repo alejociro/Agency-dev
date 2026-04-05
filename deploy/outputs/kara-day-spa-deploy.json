@@ -1,7 +1,7 @@
 {
   "negocio": "Kara Day Spa",
   "url_produccion": "https://kara-day-spa.vercel.app",
-  "fecha_deploy": "2026-04-03",
+  "fecha_deploy": "2026-04-05",
   "stack": "astro",
   "carpeta_origen": "web/kara-day-spa/"
 }

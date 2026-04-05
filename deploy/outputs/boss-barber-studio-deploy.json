@@ -1,0 +1,7 @@
+{
+  "negocio": "Boss Barber Studio",
+  "url_produccion": "https://boss-barber-studio.vercel.app",
+  "fecha_deploy": "2026-04-04",
+  "stack": "html",
+  "carpeta_origen": "web/boss-barber-studio/"
+}

@@ -1,156 +1,196 @@
 ---
 import SectionHeader from './ui/SectionHeader.astro';
-import StarRating from './ui/StarRating.astro';
 
-const testimonials = [
+const platforms = [
   {
-    name: 'Sarah M.',
-    text: 'The Kara Ultimate Facial was worth every penny. My skin hasn\'t looked this good in years. The microderm and light therapy combination is incredible.',
-    service: 'Kara Ultimate Facial',
-    rating: 5,
-    initials: 'SM',
-    color: 'var(--color-primary)',
+    name: 'Facebook',
+    url: 'https://www.facebook.com/kara.spa/',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+    label: 'Read Reviews on Facebook',
   },
   {
-    name: 'David R.',
-    text: 'As someone who\'s never been to a spa, the How to Spa guide put me at ease. The Gentleman\'s Facial was exactly what I needed — relaxing and zero awkwardness.',
-    service: "Gentleman's Facial",
-    rating: 5,
-    initials: 'DR',
-    color: 'var(--color-accent)',
-  },
-  {
-    name: 'Jennifer L.',
-    text: 'I booked the Wellness Package for my birthday and it was the best gift I\'ve ever given myself. The massage therapist found tension I didn\'t know I had. Already rebooked.',
-    service: 'Kara Wellness Package',
-    rating: 5,
-    initials: 'JL',
-    color: 'var(--color-secondary)',
-  },
-  {
-    name: 'Michael T.',
-    text: 'Having massage and chiropractic under one roof is a game changer. I do both in one visit and leave feeling like a new person. Great downtown location too.',
-    service: 'Massage + Chiropractic',
-    rating: 5,
-    initials: 'MT',
-    color: 'var(--color-primary-light)',
+    name: 'Instagram',
+    url: 'https://www.instagram.com/karaspaandboutique/',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>`,
+    label: 'Follow Us on Instagram',
   },
 ];
 
+const highlights = [
+  { number: '20+', label: 'Years Serving Greenville' },
+  { number: '40+', label: 'Years Combined Experience' },
+  { number: '4', label: 'Licensed Specialists' },
+];
 ---
 
 <section class="section" id="testimonials">
   <div class="container">
     <SectionHeader
-      tag="Testimonials"
-      title="What Our Guests <em>Say</em>"
+      tag="Guest Experiences"
+      title="See What Our Guests <em>Say</em>"
+      subtitle="We're proud to have served the Greenville community since 2005. See real guest experiences on our social channels."
+      align="center"
     />
 
-    <div class="testimonials-track" data-animate="fade-up" data-delay="200">
-      {testimonials.map((t) => (
-        <article class="testimonial">
-          <StarRating rating={t.rating} />
-          <blockquote>
-            <p>{t.text}</p>
-          </blockquote>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar" style={`--avatar-color: ${t.color}`}>
-              {t.initials}
-            </div>
-            <div>
-              <strong>{t.name}</strong>
-              <span>{t.service}</span>
-            </div>
-          </div>
-        </article>
+    <div class="social-proof-grid" data-animate="stagger">
+      {platforms.map((platform) => (
+        <a href={platform.url} target="_blank" rel="noopener noreferrer" class="social-proof-card">
+          <div class="social-icon" set:html={platform.icon} />
+          <h3>{platform.name}</h3>
+          <p>{platform.label}</p>
+          <span class="social-cta">
+            Visit Our {platform.name} <span aria-hidden="true">&rarr;</span>
+          </span>
+        </a>
       ))}
     </div>
 
-    <p class="testimonials-disclaimer">
-      <em>* Reviews are representative of guest experiences. Visit our <a href="https://www.facebook.com/kara.spa/" target="_blank" rel="noopener noreferrer">Facebook</a> and <a href="https://www.instagram.com/karaspaandboutique/" target="_blank" rel="noopener noreferrer">Instagram</a> for more guest feedback.</em>
+    <div class="proof-highlights" data-animate="fade-up" data-delay="200">
+      {highlights.map((h, i) => (
+        <>
+          <div class="proof-stat">
+            <span class="proof-number">{h.number}</span>
+            <span class="proof-label">{h.label}</span>
+          </div>
+          {i < highlights.length - 1 && <div class="proof-divider" aria-hidden="true"></div>}
+        </>
+      ))}
+    </div>
+
+    <p class="social-disclaimer">
+      <em>Visit our social media pages to see real guest feedback, before-and-after results, and behind-the-scenes at Kara Day Spa.</em>
     </p>
   </div>
 </section>
 
 <style>
-  .testimonials-track {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+  .social-proof-grid {
+    display: grid;
     gap: var(--space-4);
-    scrollbar-width: none;
-    padding-block: var(--space-2);
-    padding-inline-end: var(--container-padding);
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin-inline: auto;
   }
 
-  .testimonials-track::-webkit-scrollbar {
-    display: none;
+  @media (min-width: 640px) {
+    .social-proof-grid {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: none;
+    }
   }
 
-  .testimonial {
-    scroll-snap-align: start;
-    flex: 0 0 clamp(280px, 80vw, 400px);
+  .social-proof-card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    text-align: center;
     display: flex;
     flex-direction: column;
-    gap: var(--space-3);
-    padding: var(--space-6);
-  }
-
-  .testimonial-stars {
-    display: flex;
-    gap: 2px;
-  }
-
-  .testimonial blockquote {
-    flex: 1;
-  }
-
-  .testimonial blockquote p {
-    font-size: var(--text-body);
-    color: var(--color-text);
-    line-height: var(--leading-body);
-    font-style: italic;
-    max-width: none;
-  }
-
-  .testimonial-author {
-    display: flex;
     align-items: center;
     gap: var(--space-2);
-    margin-block-start: auto;
-    padding-block-start: var(--space-3);
-    border-top: 1px solid var(--color-border);
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: all var(--duration-normal) var(--ease-out);
+
+    &:hover {
+      border-color: var(--color-border-subtle);
+      box-shadow: var(--shadow-card-hover);
+      transform: translateY(-4px);
+    }
   }
 
-  .testimonial-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--avatar-color, var(--color-primary));
-    color: var(--color-bg);
+  .social-icon {
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--font-display);
-    font-size: var(--text-small);
-    font-weight: 500;
-    flex-shrink: 0;
+    color: var(--color-primary);
+    background-color: var(--color-bg);
+    border-radius: var(--radius-full);
+    padding: 0.75rem;
+    transition: color var(--duration-normal) var(--ease-out),
+                background-color var(--duration-normal) var(--ease-out);
   }
 
-  .testimonial-author strong {
-    display: block;
-    font-family: var(--font-display);
-    font-size: var(--text-body);
-    font-weight: 500;
+  .social-proof-card:hover .social-icon {
+    color: var(--color-bg);
+    background-color: var(--color-primary);
+  }
+
+  .social-proof-card h3 {
+    font-size: var(--text-h3);
     color: var(--color-primary-dark);
   }
 
-  .testimonial-author span {
+  .social-proof-card p {
     font-size: var(--text-small);
     color: var(--color-text-muted);
+    max-width: none;
   }
 
-  .testimonials-disclaimer {
+  .social-cta {
+    font-family: var(--font-body);
+    font-size: var(--text-small);
+    font-weight: 500;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-block-start: var(--space-1);
+    transition: color var(--duration-fast) var(--ease-out);
+  }
+
+  .social-proof-card:hover .social-cta {
+    color: var(--color-accent-dark);
+  }
+
+  /* Proof highlights bar */
+  .proof-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-6);
+    margin-block-start: var(--space-8);
+    padding: var(--space-6);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-xl);
+  }
+
+  .proof-stat {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .proof-number {
+    font-family: var(--font-display);
+    font-size: var(--text-h2);
+    font-weight: 600;
+    color: var(--color-primary-dark);
+  }
+
+  .proof-label {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    letter-spacing: var(--tracking-wide);
+  }
+
+  .proof-divider {
+    width: 1px;
+    height: 40px;
+    background: var(--color-border);
+    display: none;
+  }
+
+  @media (min-width: 640px) {
+    .proof-divider {
+      display: block;
+    }
+  }
+
+  .social-disclaimer {
     margin-block-start: var(--space-4);
     font-size: var(--text-small);
     color: var(--color-text-light);
@@ -158,7 +198,7 @@ const testimonials = [
     max-width: none;
   }
 
-  .testimonials-disclaimer a {
+  .social-disclaimer a {
     color: var(--color-primary);
     text-decoration: underline;
     text-underline-offset: 2px;

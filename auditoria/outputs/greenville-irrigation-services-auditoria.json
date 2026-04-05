@@ -1,0 +1,159 @@
+{
+  "cliente": "Greenville Irrigation Services",
+  "url_auditada": "https://www.greenvilleirrigationservices.com/",
+  "sector": "Irrigation Services / Landscape Lighting",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO: 55, UX/UI: 60, Marketing: 60, Contenido: 65, Técnico: 50. Aplicado porque es un negocio de servicios locales con cobertura geográfica definida (Greenville SC y alrededores), orientado a captación de leads telefónicos y formulario.",
+  "fecha": "2026-04-04",
+  "scores": {
+    "seo": 38,
+    "ux_ui": 30,
+    "marketing": 35,
+    "contenido": 45,
+    "tecnico": 25,
+    "total": 35
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title incluye keyword principal 'Irrigation and Sprinkler Systems' con localización 'Greenville SC'",
+        "Meta description presente y descriptiva con propuesta de valor clara y keywords relevantes",
+        "Imágenes tienen alt text descriptivo con keywords locales (ej: 'irrigated front yard landscaping by greenville irrigation services in greenville sc')",
+        "JSON-LD structured data presente con LocalBusiness schema incluyendo dirección, teléfono, coordenadas y horarios"
+      ],
+      "negativos": [
+        "Sitio renderizado por JS (Duda) — contenido no crawleable directamente por bots, penalización severa en indexación",
+        "No hay keywords en meta tags — campo keywords vacío",
+        "Estructura de headings deficiente: H1 no claramente definido, múltiples secciones sin jerarquía H1→H2→H3 coherente",
+        "Hero sobrecargado de texto — párrafo extenso sin escaneo fácil, propuesta de valor diluida",
+        "URL canónica presente pero sitio no genera sitemap estático por ser SPA de Duda"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a sitio estático/SSR para que el contenido sea crawleable por Google sin renderizado JS", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Definir H1 único con keyword principal 'Irrigation & Sprinkler Services Greenville SC' y estructurar H2/H3 por servicio", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar meta keywords con términos locales: irrigation greenville, sprinkler repair greenville sc, landscape lighting", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Acortar el hero text a 2-3 oraciones con propuesta de valor y mover el detalle a secciones internas", "prioridad": "alta", "tipo": "quick_win" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta de colores definida con verde primario coherente con el sector de servicios de jardinería/irrigación",
+        "Tipografías modernas (Poppins, Source Sans Pro) con buena legibilidad",
+        "Botón de llamada telefónica prominente y accesible desde el header"
+      ],
+      "negativos": [
+        "Paleta excesiva: verde neón (#34f721), amarillo (#ffd50e), naranja (#ff7600) sobre fondo oscuro (#202020) genera ruido visual y bajo contraste en textos",
+        "Fondo oscuro (#202020) con texto gris medio (#585858) tiene ratio de contraste insuficiente (~3.5:1, debería ser mínimo 4.5:1 WCAG AA)",
+        "Navegación sobrecargada con 12 items incluyendo páginas legales, falta jerarquía clara entre servicios principales y secundarios",
+        "Sin indicios de diseño mobile-first — la estructura sugiere desktop-first adaptado con hamburger genérico",
+        "Secciones de servicios son bloques de texto monótonos sin iconografía, cards ni elementos visuales diferenciadores"
+      ],
+      "recomendaciones": [
+        { "accion": "Reducir paleta a 3 colores: verde profesional (menos neón), blanco/crema para fondos, gris oscuro para texto", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Rediseñar navegación con máximo 5-6 items principales y subitems en dropdown", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar iconos/ilustraciones por cada servicio para romper monotonía de bloques de texto", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Implementar diseño mobile-first con secciones de servicios en cards interactivas", "prioridad": "alta", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "CTA de teléfono prominente y repetido en múltiples ubicaciones — facilita conversión directa",
+        "Propuesta de valor clara: empresa local, licenciada, asegurada, con cotización gratuita",
+        "Tono cercano y local coherente con público objetivo de propietarios residenciales y comerciales en Greenville"
+      ],
+      "negativos": [
+        "Sin prueba social: no hay testimonios, reseñas, calificaciones, ni número de clientes atendidos",
+        "Sin indicadores de confianza: no se muestran certificaciones, licencias, años de experiencia con número concreto, ni logos de marcas/proveedores",
+        "CTAs genéricos — 'Call Now', 'Call Us Now!', 'Click to Call Now!' son repetitivos y no comunican beneficio",
+        "Hero no resuelve un dolor concreto — comienza con 'If you are like most people...' en lugar de atacar un problema específico",
+        "Sin oferta diferenciadora clara frente a competencia — el 'por qué nosotros' está diluido en párrafos largos"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar sección de testimonios con reseñas reales de clientes de Google/Facebook", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Crear hero con headline que ataque dolor: 'Your Greenville Lawn Deserves Expert Irrigation — Free Quote Today'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Incluir badges de confianza: 'Licensed & Insured', años de operación, cantidad de proyectos completados", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Diferenciar CTAs por sección: 'Get Free Irrigation Quote', 'Schedule Lighting Consultation', 'Request Repair Service'", "prioridad": "media", "tipo": "quick_win" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Contenido extenso y original para cada servicio — no es texto genérico o placeholder",
+        "Información de contacto completa: teléfono, email, dirección física, horarios",
+        "Cobertura geográfica claramente mencionada: Greenville, Greer, Taylors, Travelers Rest, Mauldin, Simpsonville, Lyman, Duncan",
+        "Servicios bien desglosados: irrigación residencial/comercial, smart irrigation, landscape lighting, water pumps, drainage, irrigation repair"
+      ],
+      "negativos": [
+        "Textos excesivamente largos y densos — secciones de 200+ palabras sin formateo, bullets o highlights",
+        "Sin FAQ ni sección de preguntas frecuentes que aborde objeciones de precio, garantías o proceso",
+        "Repetición excesiva de contenido entre secciones — la misma información de contacto y área de servicio aparece múltiples veces",
+        "Disclaimer confuso en footer: 'We are not associated with Greenville Irrigation or Greenville Irrigation Repair!' genera duda sobre la identidad del negocio"
+      ],
+      "recomendaciones": [
+        { "accion": "Condensar cada sección de servicio a 80-120 palabras con bullets para beneficios clave y CTA específico", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar sección FAQ con 5-8 preguntas comunes: costos, garantía, tiempo de instalación, áreas de servicio", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Eliminar disclaimer del footer o reformularlo positivamente como diferenciador de marca", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Crear página de 'About Us' dedicada con historia, equipo y valores para separar del contenido de servicios", "prioridad": "baja", "tipo": "mejora_estructural" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "SSL activo y dominio personalizado configurado",
+        "Service worker implementado para funcionalidad offline",
+        "Formulario de contacto funcional con validación y captcha"
+      ],
+      "negativos": [
+        "Plataforma Duda genera HTML pesado con múltiples scripts, CSS inline y dependencias de terceros",
+        "Sitio renderizado por JS — crawler bots no pueden acceder al contenido sin ejecutar JavaScript",
+        "Sin optimización de imágenes evidente — imágenes de 1920w servidas sin srcset ni lazy loading nativo",
+        "3 familias tipográficas cargadas (Poppins, Source Sans Pro, Montserrat) más FontAwesome — exceso de requests de fuentes",
+        "Sin caché de assets evidente más allá del service worker genérico"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a stack estático (HTML + Tailwind + Alpine.js) para eliminar dependencia de renderizado JS", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Optimizar imágenes: WebP/AVIF, srcset responsive, lazy loading nativo", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Reducir a 1-2 familias tipográficas y cargar solo pesos necesarios con font-display: swap", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Implementar caché agresivo de assets estáticos con headers apropiados", "prioridad": "media", "tipo": "mejora_estructural" }
+      ],
+      "stack_actual": "Duda (website builder) — JS-rendered SPA, service worker, reCAPTCHA",
+      "stack_recomendado": "HTML estático + Tailwind CSS + Alpine.js — sitio de baja complejidad que no necesita framework pesado",
+      "integraciones": ["reCAPTCHA", "Google Analytics (via Duda)", "Facebook page", "YouTube video", "Click-to-call"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Migrar a HTML estático con Tailwind para hacer el contenido crawleable y mejorar rendimiento drásticamente",
+    "Rediseñar hero con headline orientado a dolor del cliente + CTA de cotización gratuita",
+    "Agregar sección de testimonios/reseñas para generar confianza inmediata",
+    "Condensar textos de servicios a formato escaneable con bullets, iconos y CTAs específicos",
+    "Corregir contraste de colores: verde menos neón, fondo claro, texto oscuro con ratio WCAG AA"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Definir paleta profesional: verde #2D8C3C, blanco #FAFAFA, gris oscuro #1A1A2E",
+      "Reescribir hero con headline de impacto y CTA claro 'Get Your Free Quote'",
+      "Estructurar headings: H1 único, H2 por servicio, H3 para sub-detalles",
+      "Condensar textos de servicios a 80-120 palabras con bullets",
+      "Agregar badges de confianza: Licensed & Insured, Free Quotes, Local Family Business"
+    ],
+    "mes_1": [
+      "Migrar a sitio estático HTML + Tailwind desplegado en Vercel",
+      "Implementar diseño mobile-first con cards de servicios e iconografía",
+      "Agregar sección de testimonios reales",
+      "Crear FAQ con 5-8 preguntas frecuentes",
+      "Optimizar imágenes a WebP con lazy loading y srcset",
+      "Rediseñar navegación con máximo 5-6 items principales"
+    ],
+    "largo_plazo": [
+      "Crear páginas individuales para cada servicio con contenido SEO optimizado",
+      "Implementar blog con artículos sobre cuidado de jardín e irrigación para SEO orgánico",
+      "Integrar Google Reviews widget con actualización automática",
+      "Agregar chatbot o WhatsApp Business para captura de leads fuera de horario"
+    ]
+  },
+  "resumen_ejecutivo": "El sitio de Greenville Irrigation Services tiene contenido abundante y original pero está atrapado en una plataforma JS-heavy (Duda) que impide el crawleo por motores de búsqueda, tiene diseño visual anticuado con paleta de colores de bajo contraste y carece completamente de prueba social. La mayor oportunidad está en migrar a un sitio estático rápido con diseño profesional, hero orientado a conversión y testimonios que generen confianza inmediata, lo cual podría duplicar las conversiones telefónicas y mejorar dramáticamente el posicionamiento local. El próximo paso es construir un sitio estático con Tailwind CSS que preserve todo el contenido valioso existente pero lo presente en un formato moderno, escaneable y optimizado para SEO local.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["alpine.js", "formspree o web3forms para formulario", "google fonts (solo Poppins)"],
+    "justificacion": "Sitio de baja complejidad (servicio local, single-page con secciones de servicios y formulario de contacto). No requiere framework JS pesado. HTML estático + Tailwind proporciona máximo rendimiento, crawleabilidad total y facilidad de mantenimiento. Alpine.js cubre las interacciones mínimas necesarias (menú mobile, accordion FAQ)."
+  }
+}

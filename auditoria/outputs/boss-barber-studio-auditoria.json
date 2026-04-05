@@ -1,0 +1,164 @@
+{
+  "cliente": "Boss Barber Studio",
+  "url_auditada": "https://www.bossbarberstudio.com/",
+  "sector": "Barbería / Grooming",
+  "benchmark_aplicado": "Servicio local (salud, legal) — SEO 55, UX/UI 60, Marketing 60, Contenido 65, Técnico 50. Una barbería con dos locaciones es un servicio local orientado a la comunidad; se evalúa contra estándares de negocios de servicio local donde la presencia digital debe facilitar reservas y generar confianza.",
+  "fecha": "2026-04-04",
+  "scores": {
+    "seo": 22,
+    "ux_ui": 35,
+    "marketing": 30,
+    "contenido": 28,
+    "tecnico": 40,
+    "total": 31
+  },
+  "hallazgos": {
+    "seo": {
+      "positivos": [
+        "Meta title presente con nombre del negocio",
+        "Navegación incluye enlaces de anclaje internos organizados por sección",
+        "CTA 'Book Now' usa verbo de acción descriptivo"
+      ],
+      "negativos": [
+        "No hay meta description — Google mostrará texto aleatorio en resultados de búsqueda",
+        "No hay keywords definidos — no se posiciona para términos como 'barbershop greenville sc'",
+        "No se detecta H1 con keyword principal ni estructura de headings jerárquica",
+        "Hero sin título ni texto — los primeros 200px no comunican propuesta de valor",
+        "Imágenes de galería con alt text genérico repetido ('Trabajo de barbería') en lugar de descripciones únicas",
+        "Sin favicon detectado"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar meta description optimizada: 'Boss Barber Studio — Family barbershop in Greenville & Spartanburg SC. Licensed barbers, quality grooming. Book your appointment today.'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Crear H1 visible con keyword principal: 'Boss Barber Studio — Greenville & Spartanburg Barbershop'", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Optimizar alt text de cada imagen de galería con descripciones únicas y relevantes", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Agregar schema markup LocalBusiness con datos de ambas locaciones", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Implementar meta keywords y Open Graph tags para compartibilidad social", "prioridad": "baja", "tipo": "quick_win" }
+      ]
+    },
+    "ux_ui": {
+      "positivos": [
+        "Paleta minimalista blanco/negro mantiene consistencia visual",
+        "Navegación clara con secciones lógicas (Home, About, Location, Gallery, Book)",
+        "Integración directa con sistema de reservas Squire desde la navegación"
+      ],
+      "negativos": [
+        "Diseño extremadamente básico — no hay identidad visual más allá de blanco y negro",
+        "Sin paleta de acento que genere jerarquía visual o destaque CTAs",
+        "Tipografía genérica del sistema — sin personalidad de marca",
+        "Hero es solo una imagen sin overlay ni texto — no guía al usuario",
+        "Sin indicios claros de diseño responsive o mobile-first optimizado",
+        "Secciones sin espaciado consistente ni respiración visual adecuada"
+      ],
+      "recomendaciones": [
+        { "accion": "Definir paleta de marca con color primario oscuro, acento dorado/cálido y fondo neutro para identidad de barbería premium", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Implementar tipografía de marca con fuente display para títulos y sans-serif para cuerpo", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Rediseñar hero con overlay de texto, propuesta de valor y CTA prominente sobre la imagen", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar sistema de espaciado consistente con padding/margin estandarizado entre secciones", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "marketing": {
+      "positivos": [
+        "CTA 'Book Now' presente y conectado a sistema de reservas funcional (Squire)",
+        "Mensaje de marca claro: barbería familiar orientada a la comunidad",
+        "Dos locaciones comunican crecimiento y estabilidad del negocio"
+      ],
+      "negativos": [
+        "Sin prueba social — no hay testimonios, reseñas, calificaciones ni número de clientes atendidos",
+        "El mensaje principal no resuelve un dolor concreto del cliente — es descriptivo pero no persuasivo",
+        "Sin sección de servicios con precios — el cliente no sabe qué puede obtener ni a qué costo",
+        "CTA 'Book Now' solo aparece en el hero — debería repetirse en más secciones",
+        "Sin diferenciador claro frente a otras barberías de la zona"
+      ],
+      "recomendaciones": [
+        { "accion": "Agregar sección de testimonios con reseñas reales de Google/Yelp", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Crear sección de servicios con lista de cortes, precios y descripciones", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Repetir CTA 'Book Now' después de cada sección principal (about, servicios, galería)", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Agregar contadores de prueba social: años de experiencia, clientes atendidos, barberos licenciados", "prioridad": "media", "tipo": "mejora_estructural" }
+      ]
+    },
+    "contenido": {
+      "positivos": [
+        "Texto del about es original y específico del negocio",
+        "Información de contacto completa con teléfono, email y dirección de ambas locaciones",
+        "Galería con 10 fotos reales del trabajo del estudio"
+      ],
+      "negativos": [
+        "Contenido textual extremadamente escaso — solo un párrafo en todo el sitio",
+        "Sin sección de servicios — el cliente no sabe qué ofrece la barbería",
+        "Sin horarios de atención publicados",
+        "Sin FAQ ni sección que resuelva objeciones comunes",
+        "Sin información sobre los barberos (nombres, especialidades, experiencia)",
+        "Footer prácticamente vacío — sin copyright ni información legal"
+      ],
+      "recomendaciones": [
+        { "accion": "Crear sección de servicios detallada con nombres, descripciones y precios de cada corte/servicio", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Agregar horarios de atención para ambas locaciones", "prioridad": "alta", "tipo": "quick_win" },
+        { "accion": "Agregar perfiles de los barberos con foto, nombre y especialidad", "prioridad": "media", "tipo": "mejora_estructural" },
+        { "accion": "Crear sección FAQ con preguntas comunes: sistema de citas, walk-ins, pagos aceptados, etc.", "prioridad": "baja", "tipo": "mejora_estructural" }
+      ]
+    },
+    "tecnico": {
+      "positivos": [
+        "Squarespace proporciona hosting confiable, SSL y CDN incluidos",
+        "Integración funcional con Squire para sistema de reservas",
+        "reCAPTCHA Enterprise activo para protección contra spam"
+      ],
+      "negativos": [
+        "Squarespace v7.1 es un builder limitado en personalización y rendimiento",
+        "Sin formularios de contacto — toda comunicación depende de teléfono/email directo",
+        "Sin Google Maps embebido para las locaciones",
+        "Sin analytics o tracking visible para medir conversiones"
+      ],
+      "recomendaciones": [
+        { "accion": "Migrar a sitio estático con HTML + Tailwind para mayor velocidad y personalización", "prioridad": "alta", "tipo": "mejora_estructural" },
+        { "accion": "Embeber Google Maps para ambas locaciones", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Agregar Google Analytics y seguimiento de conversiones en el botón Book Now", "prioridad": "media", "tipo": "quick_win" },
+        { "accion": "Implementar formulario de contacto como alternativa al email directo", "prioridad": "baja", "tipo": "mejora_estructural" }
+      ],
+      "stack_actual": "Squarespace v7.1, Squire booking integration, reCAPTCHA Enterprise",
+      "stack_recomendado": "HTML estático + Tailwind CSS + Alpine.js — sitio de baja complejidad que no necesita framework pesado",
+      "integraciones": ["Squire (reservas)", "Instagram", "reCAPTCHA Enterprise"],
+      "complejidad": "baja"
+    }
+  },
+  "quick_wins": [
+    "Agregar meta description optimizada con keywords locales (barbershop greenville, spartanburg)",
+    "Crear H1 visible con keyword principal en el hero",
+    "Agregar horarios de atención para ambas locaciones",
+    "Repetir CTA 'Book Now' después de cada sección principal",
+    "Embeber Google Maps para las dos direcciones"
+  ],
+  "plan_de_accion": {
+    "semana_1": [
+      "Agregar meta description y meta keywords optimizados",
+      "Crear H1 con keyword principal en hero",
+      "Rediseñar hero con overlay de texto y CTA prominente",
+      "Definir paleta de marca y tipografías",
+      "Crear sección de servicios con precios",
+      "Agregar testimonios/prueba social",
+      "Agregar horarios de atención"
+    ],
+    "mes_1": [
+      "Migrar a sitio estático HTML + Tailwind con diseño personalizado",
+      "Implementar tipografía y paleta de marca consistente",
+      "Agregar perfiles de barberos",
+      "Embeber Google Maps para ambas locaciones",
+      "Implementar Google Analytics y tracking de conversiones",
+      "Optimizar alt text de todas las imágenes",
+      "Repetir CTAs en múltiples secciones"
+    ],
+    "largo_plazo": [
+      "Agregar schema markup LocalBusiness para SEO local",
+      "Crear sección FAQ",
+      "Implementar formulario de contacto",
+      "Agregar Open Graph tags para social sharing"
+    ]
+  },
+  "resumen_ejecutivo": "Boss Barber Studio tiene un sitio web extremadamente básico en Squarespace que funciona como poco más que una tarjeta de presentación digital — carece de servicios, precios, horarios, testimonios y cualquier elemento persuasivo que convierta visitantes en clientes. La mayor oportunidad está en construir un sitio con identidad visual de barbería premium, sección de servicios completa y prueba social que refleje la calidad del trabajo visible en su galería de 10 fotos. El siguiente paso inmediato es migrar a un sitio estático personalizado con diseño profesional, SEO local optimizado y todas las secciones de contenido que un cliente necesita para decidir reservar.",
+  "stack_para_web": {
+    "framework": "html",
+    "estilos": "tailwind",
+    "extras": ["Alpine.js", "Google Maps embed", "Squire booking widget"],
+    "justificacion": "Sitio de baja complejidad para barbería con dos locaciones. No requiere framework reactivo — HTML estático con Tailwind para diseño moderno y Alpine.js para interactividad mínima (menú móvil, galería, tabs de locaciones). Se mantiene integración con Squire para reservas."
+  }
+}
