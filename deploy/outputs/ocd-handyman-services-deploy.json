@@ -1,0 +1,7 @@
+{
+  "negocio": "ocd-handyman-services",
+  "url_produccion": "https://ocd-handyman-services.vercel.app",
+  "fecha_deploy": "2026-04-05",
+  "stack": "html",
+  "carpeta_origen": "web/ocd-handyman-services"
+}

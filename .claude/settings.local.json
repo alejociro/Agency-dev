@@ -81,7 +81,9 @@
       "WebFetch(domain:the-wrkt-greenville.vercel.app)",
       "WebFetch(domain:www.thewrkt.co)",
       "Bash(grep -l \"color-indigo-deep\\\\|Playfair\" /Users/et59866/agencia/Agency-dev/web/indigo-flow-and-art/dist/_astro/*.css)",
-      "Bash(npx vercel:*)"
+      "Bash(npx vercel:*)",
+      "Bash(npm list:*)",
+      "Bash(npm i:*)"
     ]
   }
 }
