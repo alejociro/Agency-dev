@@ -92,6 +92,11 @@ if (!CSS.supports('animation-timeline', 'view()') && !prefersReducedMotion) {
   document.querySelectorAll('[data-kinetic]').forEach(el => {
     revealObserver.observe(el);
   });
+
+  // Team grid — observe for staggered avatar reveal fallback
+  document.querySelectorAll('.team-grid').forEach(el => {
+    revealObserver.observe(el);
+  });
 }
 
 /* ─────────────────────────────────────

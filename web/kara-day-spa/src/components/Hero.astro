@@ -17,6 +17,8 @@
 
       <hr class="divider hero-divider" />
 
+      <p class="hero-slogan">Experience the Kara Difference</p>
+
       <p class="hero-subtitle">
         Full-service day spa offering massage, facials, body treatments,
         natural nail care &amp; chiropractic — all under one roof in the
@@ -39,7 +41,7 @@
           </div>
           <span class="proof-dot" aria-hidden="true"></span>
           <div class="proof-item">
-            <span>Est. in Downtown Greenville</span>
+            <span>Est. 2005 in Downtown Greenville</span>
           </div>
           <span class="proof-dot" aria-hidden="true"></span>
           <div class="proof-item">
@@ -78,6 +80,13 @@
     position: relative;
     overflow: hidden;
     padding-block: var(--space-20) var(--space-12);
+    animation: ambientShift 12s ease-in-out infinite alternate;
+  }
+
+  @keyframes ambientShift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 60% 40%; }
+    100% { background-position: 100% 50%; }
   }
 
   .hero-content {
@@ -115,12 +124,24 @@
     }
   }
 
+  .hero-slogan {
+    font-family: var(--font-display);
+    font-size: var(--text-h3);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--color-accent);
+    letter-spacing: var(--tracking-wide);
+    margin-block-start: var(--space-2);
+    max-width: none;
+    animation: fadeIn 0.9s ease 0.45s both;
+  }
+
   .hero-subtitle {
     font-size: var(--text-body);
     color: var(--color-text-muted);
     max-width: 48ch;
     line-height: var(--leading-body);
-    margin-block-start: var(--space-2);
+    margin-block-start: var(--space-1);
   }
 
   .hero-cta {

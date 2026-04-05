@@ -252,8 +252,9 @@ function initBeforeAfter() {
 /* ── Gallery Category Filters ── */
 function initGalleryFilters() {
   const buttons = document.querySelectorAll('.gallery-filter-btn');
+  const grid = document.querySelector('.gallery-grid');
   const items = document.querySelectorAll('.gallery-item[data-category]');
-  if (!buttons.length || !items.length) return;
+  if (!buttons.length || !items.length || !grid) return;
 
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -263,9 +264,13 @@ function initGalleryFilters() {
       buttons.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
-      // Filter items
+      // Toggle filtered class for uniform grid layout
+      grid.classList.toggle('gallery-filtered', filter !== 'all');
+
+      // Filter items — supports space-separated multi-category
       items.forEach(item => {
-        const matches = filter === 'all' || item.dataset.category === filter;
+        const categories = item.dataset.category.split(' ');
+        const matches = filter === 'all' || categories.includes(filter);
         if (matches) {
           item.classList.remove('hidden');
           item.style.position = '';

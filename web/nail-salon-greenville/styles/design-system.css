@@ -23,22 +23,7 @@
 
 @layer base, components, utilities;
 
-/* --- Custom Fonts --- */
-@font-face {
-  font-family: 'Cormorant Garamond';
-  font-style: normal;
-  font-weight: 300 700;
-  font-display: swap;
-  src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
-}
-
-@font-face {
-  font-family: 'Jost';
-  font-style: normal;
-  font-weight: 300 700;
-  font-display: swap;
-  src: url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
-}
+/* Fonts loaded via <link> in HTML — no @font-face needed */
 
 /* --- Design Tokens --- */
 :root {

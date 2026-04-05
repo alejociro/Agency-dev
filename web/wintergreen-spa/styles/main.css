@@ -322,9 +322,14 @@
 }
 
 .service-card__icon {
-  font-size: 1.8rem;
   margin-bottom: var(--space-2);
   color: var(--color-primary);
+  line-height: 0;
+
+  & svg {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .service-card__title {
@@ -357,20 +362,28 @@
 
 .services--alt { background: var(--color-surface); }
 
-/* ── Diagonal Break ──────────────────────────────────── */
-.diagonal-break {
+/* ── Botanical Divider ───────────────────────────────── */
+.botanical-divider {
   position: relative;
-  height: 60px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  & svg { width: 100%; height: 100%; }
 }
 
-.diagonal-break__line {
-  width: 120px;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
-  transform: rotate(-5deg);
+.botanical-divider__leaf {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: gentle-float 6s var(--ease-in-out) infinite;
+}
+
+@keyframes gentle-float {
+  0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
+  50% { transform: translate(-50%, -54%) rotate(3deg); }
 }
 
 /* ── Amenities ───────────────────────────────────────── */
@@ -425,9 +438,14 @@
 }
 
 .amenity-card__icon-large {
-  font-size: 3rem;
   color: var(--color-primary);
   margin-bottom: var(--space-2);
+  line-height: 0;
+
+  & svg {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .amenity-card__price {
@@ -809,7 +827,185 @@
   & iframe { display: block; filter: grayscale(0.3) contrast(1.05); }
 }
 
-/* ── Scroll animations ───────────────────────────────── */
+/* ── Wellness Journey ────────────────────────────────── */
+.journey { background: var(--color-surface); }
+
+.journey__timeline {
+  position: relative;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.journey__line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 28px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-accent), var(--color-primary), transparent);
+  opacity: 0.3;
+}
+
+.journey__step {
+  position: relative;
+  display: flex;
+  gap: var(--space-3);
+  padding-bottom: var(--space-6);
+}
+
+.journey__step:last-child { padding-bottom: 0; }
+
+.journey__step-icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg);
+  border: 2px solid var(--color-border);
+  border-radius: 50%;
+  color: var(--color-primary);
+  z-index: 1;
+  transition: border-color var(--duration-normal) var(--ease-out),
+              box-shadow var(--duration-normal) var(--ease-out);
+}
+
+.journey__step:hover .journey__step-icon {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 20px var(--color-accent-glow);
+}
+
+.journey__step-number {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: var(--weight-semibold);
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.3rem;
+}
+
+.journey__step-content {
+  & h3 {
+    font-family: var(--font-display);
+    font-size: var(--text-h3);
+    margin-bottom: 0.5rem;
+  }
+  & p {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: var(--leading-body);
+    max-width: 50ch;
+  }
+}
+
+/* ── Salt Room Atmospheric ──────────────────────────── */
+.amenity-card--salt {
+  overflow: hidden;
+}
+
+.amenity-card--salt::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 80%, oklch(0.85 0.04 80 / 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.salt-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: var(--space-2);
+}
+
+.salt-benefit {
+  font-size: 0.7rem;
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  background: oklch(0.92 0.03 165 / 0.3);
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-full);
+  border: 1px solid oklch(0.7 0.05 165 / 0.2);
+  animation: salt-drift 4s var(--ease-in-out) infinite;
+}
+
+.salt-benefit:nth-child(2) { animation-delay: 0.6s; }
+.salt-benefit:nth-child(3) { animation-delay: 1.2s; }
+.salt-benefit:nth-child(4) { animation-delay: 1.8s; }
+.salt-benefit:nth-child(5) { animation-delay: 2.4s; }
+
+@keyframes salt-drift {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.salt-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, oklch(0.95 0.01 80 / 0.4) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 60% 20%, oklch(0.95 0.01 80 / 0.3) 50%, transparent 50%),
+    radial-gradient(1px 1px at 80% 60%, oklch(0.95 0.01 80 / 0.35) 50%, transparent 50%),
+    radial-gradient(2px 2px at 40% 70%, oklch(0.95 0.01 80 / 0.25) 50%, transparent 50%),
+    radial-gradient(1px 1px at 10% 80%, oklch(0.95 0.01 80 / 0.3) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 90% 40%, oklch(0.95 0.01 80 / 0.35) 50%, transparent 50%);
+  animation: particles-float 8s linear infinite;
+}
+
+@keyframes particles-float {
+  0% { transform: translateY(0); opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-20px); opacity: 0.6; }
+}
+
+/* ── Breathing Animation (about quote) ──────────────── */
+[data-breathe] {
+  animation: breathe 6s var(--ease-in-out) infinite;
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+/* ── Hero Gradient Shift ────────────────────────────── */
+.hero {
+  animation: hero-gradient-shift 12s var(--ease-in-out) infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes hero-gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* ── Ken Burns Effect on Amenity Images ─────────────── */
+.amenity-card__image-wrap img {
+  transition: transform 8s var(--ease-in-out);
+}
+
+.amenity-card:hover .amenity-card__image-wrap img {
+  transform: scale(1.06);
+}
+
+.amenity-card--large .amenity-card__image-wrap img {
+  animation: ken-burns 20s var(--ease-in-out) infinite alternate;
+}
+
+@keyframes ken-burns {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.08) translate(-1%, -1%); }
+}
+
+/* ── Scroll animations (staggered) ──────────────────── */
 .fade-up {
   opacity: 0;
   transform: translateY(30px);
@@ -820,4 +1016,18 @@
 .fade-up--visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Stagger delays for grid children */
+.fade-up[data-delay="1"] { transition-delay: 80ms; }
+.fade-up[data-delay="2"] { transition-delay: 160ms; }
+.fade-up[data-delay="3"] { transition-delay: 240ms; }
+.fade-up[data-delay="4"] { transition-delay: 320ms; }
+.fade-up[data-delay="5"] { transition-delay: 400ms; }
+.fade-up[data-delay="6"] { transition-delay: 480ms; }
+
+/* ── Focus visible ──────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
 }

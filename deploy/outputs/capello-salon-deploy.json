@@ -1,7 +1,7 @@
 {
-  "negocio": "capello-salon",
+  "negocio": "Capello Salon and Suites",
   "url_produccion": "https://capello-salon-nu.vercel.app",
-  "fecha_deploy": "2026-04-04",
+  "fecha_deploy": "2026-04-05",
   "stack": "html",
   "carpeta_origen": "web/capello-salon/"
 }

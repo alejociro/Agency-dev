@@ -1,0 +1,222 @@
+---
+const plates = [
+  {
+    name: 'Spa Plate',
+    price: '$20',
+    description: 'A scoop of chicken or tuna salad over a bed of mixed greens and vegetables. Includes a side of mixed fruit and crackers.',
+  },
+  {
+    name: 'Grilled Chicken Salad',
+    price: '$20',
+    description: 'Sliced grilled chicken atop a bed of mixed greens and vegetables. Includes a side of mixed fruit and crackers.',
+  },
+  {
+    name: 'Charcuterie for One',
+    price: '$14',
+    description: 'Can be added to any service. Includes a Mimosa, cheese, nuts and fruit.',
+  },
+];
+
+const beverages = ['Mimosa', 'Tea', 'Herbal Hot Tea', 'Water'];
+const dressings = ['Ranch', 'Balsamic Vinaigrette', 'Caesar'];
+---
+
+<section class="section-alt" id="lunch">
+  <div class="container">
+    <div class="lunch-layout">
+      <div class="lunch-text" data-animate="fade-right">
+        <span class="label">Dine at the Spa</span>
+        <h2>Lunch <em>Menu</em></h2>
+        <p>
+          Extend your spa day with a light, nourishing meal. Enjoy our
+          curated lunch options between treatments — because a complete
+          escape includes every detail.
+        </p>
+        <div class="lunch-note">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <circle cx="8" cy="8" r="7" stroke="var(--color-accent)" stroke-width="1.5"/>
+            <path d="M8 5v3" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="8" cy="11" r="0.75" fill="var(--color-accent)"/>
+          </svg>
+          <span>Available to add during any spa visit</span>
+        </div>
+      </div>
+
+      <div class="lunch-cards" data-animate="fade-left" data-delay="200">
+        <div class="menu-card">
+          <h3 class="menu-card-title">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M10 2C5 2 3 6 3 8c0 3 2 4 7 4s7-1 7-4c0-2-2-6-7-6z" stroke="var(--color-accent)" stroke-width="1.2"/>
+              <path d="M3 12c0 3 3 6 7 6s7-3 7-6" stroke="var(--color-accent)" stroke-width="1.2"/>
+              <path d="M6 8h8" stroke="var(--color-accent)" stroke-width="1" opacity="0.4"/>
+            </svg>
+            Plates
+          </h3>
+
+          {plates.map((plate) => (
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">{plate.name}</span>
+                <span class="menu-item-dots" aria-hidden="true"></span>
+                <span class="menu-item-price">{plate.price}</span>
+              </div>
+              <p class="menu-item-desc">{plate.description}</p>
+            </div>
+          ))}
+
+          <hr class="menu-divider" />
+
+          <div class="menu-extras">
+            <div class="menu-extra">
+              <h4>Beverages</h4>
+              <p>{beverages.join(' \u00B7 ')}</p>
+            </div>
+            <div class="menu-extra">
+              <h4>Dressings</h4>
+              <p>{dressings.join(' \u00B7 ')}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .lunch-layout {
+    display: grid;
+    gap: var(--space-8);
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    .lunch-layout {
+      grid-template-columns: 1fr 2fr;
+      gap: var(--space-12);
+      align-items: start;
+    }
+  }
+
+  .lunch-text {
+    position: sticky;
+    top: calc(var(--space-16) + 2rem);
+  }
+
+  .lunch-text em {
+    color: var(--color-accent);
+    font-style: italic;
+  }
+
+  .lunch-text h2 {
+    margin-block-start: var(--space-2);
+  }
+
+  .lunch-text > p {
+    margin-block-start: var(--space-3);
+    color: var(--color-text-muted);
+  }
+
+  .lunch-note {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-block-start: var(--space-4);
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+  }
+
+  .lunch-note svg {
+    flex-shrink: 0;
+  }
+
+  /* Menu card */
+  .menu-card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    border: 1px solid var(--color-border-subtle);
+  }
+
+  .menu-card-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-h3);
+    margin-block-end: var(--space-4);
+    padding-block-end: var(--space-3);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .menu-item {
+    padding-block: var(--space-3);
+  }
+
+  .menu-item + .menu-item {
+    border-top: 1px dashed oklch(80% 0.01 60 / 0.3);
+  }
+
+  .menu-item-header {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+  }
+
+  .menu-item-name {
+    font-family: var(--font-display);
+    font-size: var(--text-h4);
+    font-weight: 500;
+    color: var(--color-primary-dark);
+    white-space: nowrap;
+  }
+
+  .menu-item-dots {
+    flex: 1;
+    border-bottom: 1px dotted var(--color-border);
+    min-width: 20px;
+    margin-block-end: 4px;
+  }
+
+  .menu-item-price {
+    font-family: var(--font-display);
+    font-size: var(--text-h4);
+    font-weight: 600;
+    color: var(--color-accent-dark);
+    white-space: nowrap;
+  }
+
+  .menu-item-desc {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    margin-block-start: var(--space-1);
+    line-height: var(--leading-body);
+  }
+
+  .menu-divider {
+    height: 1px;
+    background: var(--color-border);
+    border: none;
+    margin-block: var(--space-4);
+  }
+
+  .menu-extras {
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .menu-extra h4 {
+    font-family: var(--font-body);
+    font-size: var(--text-label);
+    font-weight: 500;
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-block-end: var(--space-1);
+  }
+
+  .menu-extra p {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    max-width: none;
+  }
+</style>

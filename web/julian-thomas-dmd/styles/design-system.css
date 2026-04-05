@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 /* BRIEF CREATIVO
    Negocio    : Julian Thomas DMD PA
    Sector     : Odontologia / Dentistry
@@ -150,6 +148,19 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
 }
 
 button {

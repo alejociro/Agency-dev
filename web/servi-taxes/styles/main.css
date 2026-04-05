@@ -1023,3 +1023,74 @@
 .header--hero .header__nav .btn--primary {
   color: #fff;
 }
+
+/* ===================================
+   LANGUAGE TOGGLE
+   =================================== */
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-full);
+  border: 2px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.08);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.lang-toggle:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.5);
+  transform: scale(1.08);
+}
+
+.lang-toggle__label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  color: rgba(255,255,255,0.85);
+  pointer-events: none;
+}
+
+/* Scrolled header — adapt to light bg */
+.header.is-scrolled .lang-toggle {
+  border-color: var(--color-border);
+  background: var(--color-surface-alt);
+}
+
+.header.is-scrolled .lang-toggle:hover {
+  border-color: var(--color-primary);
+  background: rgba(45, 184, 45, 0.08);
+}
+
+.header.is-scrolled .lang-toggle__label {
+  color: var(--color-text);
+}
+
+/* Mobile menu variant */
+.lang-toggle--mobile {
+  width: 52px;
+  height: 52px;
+  border-color: var(--color-border);
+  background: var(--color-surface-alt);
+  margin-top: var(--space-2);
+}
+
+.lang-toggle--mobile .lang-toggle__label {
+  color: var(--color-text);
+  font-size: var(--text-small);
+}
+
+.lang-toggle--mobile:hover {
+  border-color: var(--color-primary);
+  background: rgba(45, 184, 45, 0.08);
+}
+
+.lang-toggle:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}

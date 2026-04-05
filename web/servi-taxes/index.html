@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contabilidad y Taxes en Greenville SC — Servi Taxes LLC</title>
-  <meta name="description" content="Servi Taxes LLC ofrece contabilidad profesional, asesoría financiera y declaración de impuestos para negocios hispanos en Greenville, SC. Agende su cita hoy.">
+  <title data-i18n="page_title">Contabilidad y Taxes en Greenville SC — Servi Taxes LLC</title>
+  <meta name="description" content="Servi Taxes LLC ofrece contabilidad profesional, asesoría financiera y declaración de impuestos para negocios hispanos en Greenville, SC. Agende su cita hoy." data-i18n-attr="content" data-i18n="meta_description">
   <meta name="keywords" content="contabilidad Greenville SC, taxes, impuestos, bookkeeping, Servi Taxes, declaración de impuestos, asesoría contable hispano">
 
   <!-- Open Graph -->
@@ -72,13 +72,16 @@
       </a>
 
       <nav class="header__nav">
-        <a href="#servicios">Servicios</a>
-        <a href="#como-trabajamos">Cómo Trabajamos</a>
-        <a href="#faq">Preguntas</a>
-        <a href="#contacto">Contacto</a>
-        <a href="https://contabilidad.servi-taxes.com/agendar-cita" class="btn btn--primary" target="_blank" rel="noopener">
+        <a href="#servicios" data-i18n="nav_services">Servicios</a>
+        <a href="#como-trabajamos" data-i18n="nav_process">Cómo Trabajamos</a>
+        <a href="#faq" data-i18n="nav_faq">Preguntas</a>
+        <a href="#contacto" data-i18n="nav_contact">Contacto</a>
+        <a href="https://contabilidad.servi-taxes.com/agendar-cita" class="btn btn--primary" target="_blank" rel="noopener" data-i18n="nav_cta">
           Agende una Cita
         </a>
+        <button class="lang-toggle" aria-label="Switch language" data-lang-toggle>
+          <span class="lang-toggle__label">EN</span>
+        </button>
       </nav>
 
       <button class="header__toggle" aria-label="Abrir menú">
@@ -91,13 +94,16 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu">
-    <a href="#servicios">Servicios</a>
-    <a href="#como-trabajamos">Cómo Trabajamos</a>
-    <a href="#faq">Preguntas</a>
-    <a href="#contacto">Contacto</a>
-    <a href="https://contabilidad.servi-taxes.com/agendar-cita" class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+    <a href="#servicios" data-i18n="nav_services">Servicios</a>
+    <a href="#como-trabajamos" data-i18n="nav_process">Cómo Trabajamos</a>
+    <a href="#faq" data-i18n="nav_faq">Preguntas</a>
+    <a href="#contacto" data-i18n="nav_contact">Contacto</a>
+    <a href="https://contabilidad.servi-taxes.com/agendar-cita" class="btn btn--primary btn--lg" target="_blank" rel="noopener" data-i18n="nav_cta">
       Agende una Cita
     </a>
+    <button class="lang-toggle lang-toggle--mobile" aria-label="Switch language" data-lang-toggle>
+      <span class="lang-toggle__label">EN</span>
+    </button>
   </div>
 
   <!-- ======== HERO ======== -->
@@ -108,32 +114,32 @@
     <div class="container hero__content">
       <div class="hero__badge hero-stagger" style="--stagger: 0">
         <span class="hero__badge-dot"></span>
-        Contabilidad profesional en Greenville, SC
+        <span data-i18n="hero_badge">Contabilidad profesional en Greenville, SC</span>
       </div>
 
       <h1 class="hero__title hero-stagger" style="--stagger: 1">
-        Tranquilidad con sus
-        <span class="hero__title-accent">cuentas organizadas</span>
+        <span data-i18n="hero_title_1">Tranquilidad con sus</span>
+        <span class="hero__title-accent" data-i18n="hero_title_accent">cuentas organizadas</span>
       </h1>
 
-      <p class="hero__subtitle hero-stagger" style="--stagger: 2">
+      <p class="hero__subtitle hero-stagger" style="--stagger: 2" data-i18n="hero_subtitle">
         Deje en nuestras manos la organización de sus libros contables,
         para dedicar más tiempo en hacer crecer su negocio.
       </p>
 
       <div class="hero__actions hero-stagger" style="--stagger: 3">
         <a href="https://contabilidad.servi-taxes.com/agendar-cita" class="btn btn--primary btn--lg" data-magnetic target="_blank" rel="noopener">
-          Agende una Cita
+          <span data-i18n="hero_cta">Agende una Cita</span>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
         <a href="#servicios" class="btn btn--white btn--lg">
-          Conozca Nuestros Servicios
+          <span data-i18n="hero_secondary">Conozca Nuestros Servicios</span>
         </a>
       </div>
     </div>
 
     <div class="hero__scroll-indicator">
-      <span>Descubre más</span>
+      <span data-i18n="hero_scroll">Descubre más</span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
     </div>
   </section>
@@ -143,15 +149,15 @@
     <div class="trust-bar__inner">
       <div class="trust-bar__item">
         <div class="trust-bar__number" data-count="3">0</div>
-        <div class="trust-bar__label">Servicios integrados</div>
+        <div class="trust-bar__label" data-i18n="trust_services">Servicios integrados</div>
       </div>
       <div class="trust-bar__item">
         <div class="trust-bar__number" data-count="100" data-suffix="%">0</div>
-        <div class="trust-bar__label">En español</div>
+        <div class="trust-bar__label" data-i18n="trust_spanish">En español</div>
       </div>
       <div class="trust-bar__item">
         <div class="trust-bar__number" data-count="2">0</div>
-        <div class="trust-bar__label">Idiomas (ES + EN)</div>
+        <div class="trust-bar__label" data-i18n="trust_languages">Idiomas (ES + EN)</div>
       </div>
       <div class="trust-bar__item">
         <div class="trust-bar__number trust-bar__number--icon">
@@ -166,9 +172,9 @@
   <section id="servicios" class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-header__tag">Nuestros Servicios</span>
-        <h2 class="section-header__title">Nuestro servicio en tres pilares</h2>
-        <p class="section-header__subtitle">
+        <span class="section-header__tag" data-i18n="services_tag">Nuestros Servicios</span>
+        <h2 class="section-header__title" data-i18n="services_title">Nuestro servicio en tres pilares</h2>
+        <p class="section-header__subtitle" data-i18n="services_subtitle">
           Ofrecemos la mejor contabilidad para tomar decisiones y mejorar su negocio.
         </p>
       </div>
@@ -181,8 +187,8 @@
               <rect x="2" y="3" width="20" height="18" rx="2"/><path d="M8 7v10"/><path d="M12 7v10"/><path d="M16 7v10"/><path d="M2 12h20"/>
             </svg>
           </div>
-          <h3 class="service-card__title">Contabilidad</h3>
-          <p class="service-card__text">
+          <h3 class="service-card__title" data-i18n="service1_title">Contabilidad</h3>
+          <p class="service-card__text" data-i18n="service1_text">
             No más ansiedad ni caos. Conozca exactamente la cantidad de ventas y gastos de su empresa con libros contables organizados y reportes claros.
           </p>
         </article>
@@ -194,8 +200,8 @@
               <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
             </svg>
           </div>
-          <h3 class="service-card__title">Asesoría</h3>
-          <p class="service-card__text">
+          <h3 class="service-card__title" data-i18n="service2_title">Asesoría</h3>
+          <p class="service-card__text" data-i18n="service2_text">
             Un profesional dedicado para brindarle reportes claros y recomendaciones personalizadas que ayudan a su negocio a tomar mejores decisiones financieras.
           </p>
         </article>
@@ -207,8 +213,8 @@
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M9 15h6"/><path d="M9 11h6"/>
             </svg>
           </div>
-          <h3 class="service-card__title">Declaración de Taxes Anuales</h3>
-          <p class="service-card__text">
+          <h3 class="service-card__title" data-i18n="service3_title">Declaración de Taxes Anuales</h3>
+          <p class="service-card__text" data-i18n="service3_text">
             Organizamos su contabilidad para ayudarle a pagar menos impuestos, maximizando las deducciones y reduciendo su responsabilidad fiscal.
           </p>
         </article>
@@ -220,9 +226,9 @@
   <section id="como-trabajamos" class="section section--alt">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-header__tag">Nuestro Proceso</span>
-        <h2 class="section-header__title">Cómo hacemos la diferencia</h2>
-        <p class="section-header__subtitle">
+        <span class="section-header__tag" data-i18n="process_tag">Nuestro Proceso</span>
+        <h2 class="section-header__title" data-i18n="process_title">Cómo hacemos la diferencia</h2>
+        <p class="section-header__subtitle" data-i18n="process_subtitle">
           Sin importar el tamaño ni la complejidad, organizamos las cuentas de su empresa.
         </p>
       </div>
@@ -241,13 +247,13 @@
         </div>
         <div class="reveal-right">
           <span class="how-we-work__step-number">1</span>
-          <h3 class="how-we-work__step-title">Organizamos las cuentas de su empresa</h3>
-          <p class="how-we-work__step-text">
+          <h3 class="how-we-work__step-title" data-i18n="step1_title">Organizamos las cuentas de su empresa</h3>
+          <p class="how-we-work__step-text" data-i18n="step1_text">
             El crecimiento de su negocio depende del orden en las transacciones.
             Nos encargamos de clasificar, registrar y mantener al día cada movimiento
             financiero de su empresa.
           </p>
-          <a href="https://contabilidad.servi-taxes.com/agendar-cita" class="btn btn--primary" target="_blank" rel="noopener">
+          <a href="https://contabilidad.servi-taxes.com/agendar-cita" class="btn btn--primary" target="_blank" rel="noopener" data-i18n="cta_book">
             Agende una Cita
           </a>
         </div>
@@ -267,13 +273,13 @@
         </div>
         <div class="reveal-left">
           <span class="how-we-work__step-number">2</span>
-          <h3 class="how-we-work__step-title">Profesional dedicado para ayudarle a prosperar</h3>
-          <p class="how-we-work__step-text">
+          <h3 class="how-we-work__step-title" data-i18n="step2_title">Profesional dedicado para ayudarle a prosperar</h3>
+          <p class="how-we-work__step-text" data-i18n="step2_text">
             Servicio al cliente personalizado. Tendrá un profesional dedicado para darle
             información valiosa que su negocio necesita para crecer, con reportes claros
             y recomendaciones accionables.
           </p>
-          <a href="https://contabilidad.servi-taxes.com/agendar-cita" class="btn btn--primary" target="_blank" rel="noopener">
+          <a href="https://contabilidad.servi-taxes.com/agendar-cita" class="btn btn--primary" target="_blank" rel="noopener" data-i18n="cta_book">
             Agende una Cita
           </a>
         </div>
@@ -293,13 +299,13 @@
         </div>
         <div class="reveal-right">
           <span class="how-we-work__step-number">3</span>
-          <h3 class="how-we-work__step-title">Información organizada para minimizar sus taxes</h3>
-          <p class="how-we-work__step-text">
+          <h3 class="how-we-work__step-title" data-i18n="step3_title">Información organizada para minimizar sus taxes</h3>
+          <p class="how-we-work__step-text" data-i18n="step3_text">
             Contabilidad hecha para incluir todos sus gastos elegibles, maximizando las
             deducciones y reduciendo sus impuestos. Organizamos todo durante el año para
             que la temporada de taxes sea tranquila.
           </p>
-          <a href="https://contabilidad.servi-taxes.com/agendar-cita" class="btn btn--primary" target="_blank" rel="noopener">
+          <a href="https://contabilidad.servi-taxes.com/agendar-cita" class="btn btn--primary" target="_blank" rel="noopener" data-i18n="cta_book">
             Agende una Cita
           </a>
         </div>
@@ -311,9 +317,9 @@
   <section id="faq" class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-header__tag">Preguntas Frecuentes</span>
-        <h2 class="section-header__title">Resolvemos sus dudas</h2>
-        <p class="section-header__subtitle">
+        <span class="section-header__tag" data-i18n="faq_tag">Preguntas Frecuentes</span>
+        <h2 class="section-header__title" data-i18n="faq_title">Resolvemos sus dudas</h2>
+        <p class="section-header__subtitle" data-i18n="faq_subtitle">
           Todo lo que necesita saber sobre nuestros servicios de contabilidad y taxes.
         </p>
       </div>
@@ -321,11 +327,11 @@
       <div class="faq__list reveal">
         <div class="faq__item">
           <button class="faq__question">
-            ¿Qué incluye el servicio de contabilidad?
+            <span data-i18n="faq1_q">¿Qué incluye el servicio de contabilidad?</span>
             <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
           </button>
           <div class="faq__answer">
-            <div class="faq__answer-inner">
+            <div class="faq__answer-inner" data-i18n="faq1_a">
               Nuestro servicio incluye la organización completa de sus libros contables:
               clasificación de transacciones, registro de ventas y gastos, conciliación bancaria,
               y reportes mensuales claros para que usted siempre sepa el estado financiero de su empresa.
@@ -335,11 +341,11 @@
 
         <div class="faq__item">
           <button class="faq__question">
-            ¿Trabajan con todo tipo de negocios?
+            <span data-i18n="faq2_q">¿Trabajan con todo tipo de negocios?</span>
             <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
           </button>
           <div class="faq__answer">
-            <div class="faq__answer-inner">
+            <div class="faq__answer-inner" data-i18n="faq2_a">
               Sí, sin importar el tamaño ni la complejidad de su empresa. Trabajamos con
               negocios pequeños, medianos y grandes en Greenville y el área de Upstate South Carolina.
               Nuestro servicio es completamente en español e inglés.
@@ -349,11 +355,11 @@
 
         <div class="faq__item">
           <button class="faq__question">
-            ¿Cómo me ayudan a pagar menos impuestos?
+            <span data-i18n="faq3_q">¿Cómo me ayudan a pagar menos impuestos?</span>
             <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
           </button>
           <div class="faq__answer">
-            <div class="faq__answer-inner">
+            <div class="faq__answer-inner" data-i18n="faq3_a">
               Organizamos su contabilidad durante todo el año para incluir todos sus gastos elegibles,
               maximizando las deducciones disponibles. Cuando llega la temporada de taxes, su
               información ya está lista para declarar con el menor impuesto posible dentro de la ley.
@@ -363,11 +369,11 @@
 
         <div class="faq__item">
           <button class="faq__question">
-            ¿Puedo agendar una consulta gratuita?
+            <span data-i18n="faq4_q">¿Puedo agendar una consulta gratuita?</span>
             <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
           </button>
           <div class="faq__answer">
-            <div class="faq__answer-inner">
+            <div class="faq__answer-inner" data-i18n="faq4_a">
               Sí, puede agendar una cita directamente desde nuestro sitio web. En esta primera
               consulta evaluamos su situación contable actual y le explicamos cómo podemos ayudarle
               a organizar sus finanzas y reducir sus impuestos.
@@ -377,11 +383,11 @@
 
         <div class="faq__item">
           <button class="faq__question">
-            ¿Qué necesito para empezar?
+            <span data-i18n="faq5_q">¿Qué necesito para empezar?</span>
             <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
           </button>
           <div class="faq__answer">
-            <div class="faq__answer-inner">
+            <div class="faq__answer-inner" data-i18n="faq5_a">
               Solo necesita agendar una cita con nosotros. Traiga sus estados de cuenta bancarios
               y cualquier documentación de su negocio que tenga. Nosotros nos encargamos de
               organizar todo y crear un plan contable personalizado para usted.
@@ -396,13 +402,13 @@
   <section class="cta-section section">
     <div class="cta-section__bg"></div>
     <div class="container cta-section__content reveal">
-      <h2 class="cta-section__title">¡Servicio de calidad!</h2>
-      <p class="cta-section__text">
+      <h2 class="cta-section__title" data-i18n="cta_title">¡Servicio de calidad!</h2>
+      <p class="cta-section__text" data-i18n="cta_text">
         La organización es lo que nos esforzamos por lograr.
         El progreso de su empresa es el resultado.
       </p>
       <a href="https://contabilidad.servi-taxes.com/agendar-cita" class="btn btn--primary btn--lg" target="_blank" rel="noopener">
-        Agende su Cita Ahora
+        <span data-i18n="cta_button">Agende su Cita Ahora</span>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
       </a>
     </div>
@@ -412,9 +418,9 @@
   <section id="contacto" class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-header__tag">Contáctenos</span>
-        <h2 class="section-header__title">Estamos aquí para ayudarle</h2>
-        <p class="section-header__subtitle">
+        <span class="section-header__tag" data-i18n="contact_tag">Contáctenos</span>
+        <h2 class="section-header__title" data-i18n="contact_title">Estamos aquí para ayudarle</h2>
+        <p class="section-header__subtitle" data-i18n="contact_subtitle">
           Comuníquese con nosotros para agendar su cita o resolver cualquier duda.
         </p>
       </div>
@@ -423,33 +429,33 @@
         <!-- Form -->
         <form class="contact__form reveal-left" action="#" method="POST" onsubmit="return false;">
           <div class="form-group">
-            <label for="name">Nombre completo</label>
-            <input type="text" id="name" name="name" placeholder="Su nombre" required>
+            <label for="name" data-i18n="form_name">Nombre completo</label>
+            <input type="text" id="name" name="name" data-i18n-attr="placeholder" data-i18n="form_name_ph" placeholder="Su nombre" required>
           </div>
           <div class="form-group">
-            <label for="email">Correo electrónico</label>
+            <label for="email" data-i18n="form_email">Correo electrónico</label>
             <input type="email" id="email" name="email" placeholder="[email protected]" required>
           </div>
           <div class="form-group">
-            <label for="phone">Teléfono</label>
+            <label for="phone" data-i18n="form_phone">Teléfono</label>
             <input type="tel" id="phone" name="phone" placeholder="(864) 000-0000">
           </div>
           <div class="form-group">
-            <label for="service">Servicio de interés</label>
+            <label for="service" data-i18n="form_service">Servicio de interés</label>
             <select id="service" name="service">
-              <option value="">Seleccione un servicio</option>
-              <option value="contabilidad">Contabilidad</option>
-              <option value="asesoria">Asesoría financiera</option>
-              <option value="taxes">Declaración de taxes</option>
-              <option value="otro">Otro</option>
+              <option value="" data-i18n="form_select">Seleccione un servicio</option>
+              <option value="contabilidad" data-i18n="form_opt_accounting">Contabilidad</option>
+              <option value="asesoria" data-i18n="form_opt_advisory">Asesoría financiera</option>
+              <option value="taxes" data-i18n="form_opt_taxes">Declaración de taxes</option>
+              <option value="otro" data-i18n="form_opt_other">Otro</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" placeholder="Cuéntenos sobre su negocio y cómo podemos ayudarle..."></textarea>
+            <label for="message" data-i18n="form_message">Mensaje</label>
+            <textarea id="message" name="message" data-i18n-attr="placeholder" data-i18n="form_message_ph" placeholder="Cuéntenos sobre su negocio y cómo podemos ayudarle..."></textarea>
           </div>
           <button type="submit" class="btn btn--primary btn--lg">
-            Enviar Mensaje
+            <span data-i18n="form_submit">Enviar Mensaje</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </button>
         </form>
@@ -461,7 +467,7 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </div>
             <div>
-              <div class="contact__info-label">Teléfono</div>
+              <div class="contact__info-label" data-i18n="contact_phone">Teléfono</div>
               <a href="tel:8644029826" class="contact__info-value">864-402-9826</a>
             </div>
           </div>
@@ -471,7 +477,7 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             </div>
             <div>
-              <div class="contact__info-label">Correo electrónico</div>
+              <div class="contact__info-label" data-i18n="contact_email_label">Correo electrónico</div>
               <a href="mailto:[email protected]" class="contact__info-value">[email protected]</a>
             </div>
           </div>
@@ -481,7 +487,7 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
-              <div class="contact__info-label">Dirección</div>
+              <div class="contact__info-label" data-i18n="contact_address">Dirección</div>
               <p class="contact__info-value">4008 White Horse Rd. Suite C<br>Greenville, SC 29611</p>
             </div>
           </div>
@@ -491,8 +497,8 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
             <div>
-              <div class="contact__info-label">Horarios</div>
-              <p class="contact__info-value">Contáctenos para conocer nuestros horarios</p>
+              <div class="contact__info-label" data-i18n="contact_hours">Horarios</div>
+              <p class="contact__info-value" data-i18n="contact_hours_val">Contáctenos para conocer nuestros horarios</p>
             </div>
           </div>
 
@@ -528,7 +534,7 @@
             loading="lazy"
             decoding="async"
           >
-          <p class="footer__desc">
+          <p class="footer__desc" data-i18n="footer_desc">
             Contabilidad profesional, asesoría financiera y declaración de impuestos
             para negocios hispanos en Greenville, SC.
           </p>
@@ -546,17 +552,17 @@
         </div>
 
         <div>
-          <h4>Servicios</h4>
+          <h4 data-i18n="footer_services">Servicios</h4>
           <ul class="footer__links">
-            <li><a href="#servicios">Contabilidad</a></li>
-            <li><a href="#servicios">Asesoría financiera</a></li>
-            <li><a href="#servicios">Declaración de taxes</a></li>
-            <li><a href="https://contabilidad.servi-taxes.com/agendar-cita" target="_blank" rel="noopener">Agendar cita</a></li>
+            <li><a href="#servicios" data-i18n="service1_title">Contabilidad</a></li>
+            <li><a href="#servicios" data-i18n="footer_advisory">Asesoría financiera</a></li>
+            <li><a href="#servicios" data-i18n="footer_taxes">Declaración de taxes</a></li>
+            <li><a href="https://contabilidad.servi-taxes.com/agendar-cita" target="_blank" rel="noopener" data-i18n="footer_book">Agendar cita</a></li>
           </ul>
         </div>
 
         <div>
-          <h4>Contacto</h4>
+          <h4 data-i18n="nav_contact">Contacto</h4>
           <ul class="footer__links">
             <li><a href="tel:8644029826">864-402-9826</a></li>
             <li><a href="mailto:[email protected]">[email protected]</a></li>
@@ -567,8 +573,8 @@
       </div>
 
       <div class="footer__bottom">
-        <span>&copy; 2025 Servi Taxes LLC. Todos los derechos reservados.</span>
-        <a href="https://contabilidad.servi-taxes.com/privatepolicy">Política de Privacidad</a>
+        <span data-i18n="footer_copy">&copy; 2025 Servi Taxes LLC. Todos los derechos reservados.</span>
+        <a href="https://contabilidad.servi-taxes.com/privatepolicy" data-i18n="footer_privacy">Política de Privacidad</a>
       </div>
     </div>
   </footer>
@@ -580,11 +586,13 @@
     target="_blank"
     rel="noopener"
     aria-label="Contactar por WhatsApp"
+    data-i18n-wa
   >
     <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
   <!-- JS -->
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

@@ -84,7 +84,7 @@
         <a href="#faq" class="nav-link">FAQ</a>
       </nav>
 
-      <div style="display:flex;align-items:center;gap:var(--space-2)">
+      <div class="header-actions">
         <a href="tel:8552471033" class="header-phone" aria-label="Call us">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           (855) 247-1033
@@ -115,12 +115,12 @@
     <a href="#locations" class="nav-mobile-link">Locations</a>
     <a href="#faq" class="nav-mobile-link">FAQ</a>
     <a href="#contact" class="nav-mobile-link">Contact</a>
-    <div style="margin-top:auto;padding-top:var(--space-4)">
-      <a href="tel:8552471033" style="display:flex;align-items:center;gap:0.5rem;color:var(--color-primary);font-weight:600;text-decoration:none;margin-bottom:var(--space-2)">
+    <div class="nav-mobile-bottom">
+      <a href="tel:8552471033" class="nav-mobile-phone">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         (855) 247-1033
       </a>
-      <a href="#contact" class="btn btn--primary" style="width:100%;text-align:center">Book a Visit</a>
+      <a href="#contact" class="btn btn--primary nav-mobile-cta">Book a Visit</a>
     </div>
   </nav>
 
@@ -128,6 +128,7 @@
     <!-- ========== HERO ========== -->
     <section class="hero" id="hero">
       <div class="hero-bg"></div>
+      <div class="hero-pattern"></div>
       <div class="hero-blob hero-blob--1"></div>
       <div class="hero-blob hero-blob--2"></div>
 
@@ -176,7 +177,7 @@
     </div>
 
     <!-- ========== TRUST BAR ========== -->
-    <section style="background:var(--color-bg);padding-block:var(--space-4) var(--space-2)">
+    <section class="trust-section">
       <div class="container">
         <div class="trust-bar reveal">
           <div class="trust-item">
@@ -204,12 +205,12 @@
     </section>
 
     <!-- ========== SERVICES ========== -->
-    <section class="section-padding" id="services" style="background:var(--color-bg)">
+    <section class="section-padding section-bg" id="services">
       <div class="container">
-        <div style="text-align:center;margin-bottom:var(--space-8)" class="reveal">
+        <div class="section-header reveal">
           <span class="section-label">Our Dental Services</span>
           <h2>Everything Your Family Needs Under One Roof</h2>
-          <p style="max-width:55ch;margin-inline:auto;color:var(--color-text-muted);margin-top:var(--space-2)">
+          <p>
             Choice One Dental Care provides a host of dental services to the entire family, making us Georgia and South Carolina's premier family dentistry provider.
           </p>
         </div>
@@ -270,7 +271,7 @@
           </div>
 
           <!-- Sedation Dentistry -->
-          <div class="service-card reveal reveal-delay-1" style="grid-column:1/-1;max-width:400px;margin-inline:auto">
+          <div class="service-card service-card--centered reveal reveal-delay-1">
             <div class="service-card-icon">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
             </div>
@@ -289,7 +290,7 @@
     </div>
 
     <!-- ========== ABOUT / TREATMENT PLANS ========== -->
-    <section class="section-padding" id="about" style="background:var(--color-bg-warm)">
+    <section class="section-padding section-bg-warm" id="about">
       <div class="container">
         <div class="about-grid">
           <div class="about-image-wrapper reveal">
@@ -307,38 +308,38 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
               </div>
               <div>
-                <div style="font-weight:700;font-size:var(--text-small);color:var(--color-trust)">Individualized</div>
-                <div style="font-size:var(--text-xs);color:var(--color-text-muted)">Treatment Plans</div>
+                <div class="contact-info-label" style="color:var(--color-trust)">Individualized</div>
+                <div class="contact-info-text" style="font-size:var(--text-xs)">Treatment Plans</div>
               </div>
             </div>
           </div>
 
-          <div class="reveal reveal-delay-2">
+          <div class="about-text reveal reveal-delay-2">
             <span class="section-label">Compassionate Dentistry</span>
-            <h2 style="margin-bottom:var(--space-3)">Personalized Care for Every Member of Your Family</h2>
-            <p style="color:var(--color-text-muted);margin-bottom:var(--space-3)">
+            <h2>Personalized Care for Every Member of Your Family</h2>
+            <p>
               No two patients are alike, so Choice One Dental Care creates a personalized treatment plan for everyone who enters our doors. We consider all factors when devising your treatment, including your needs, desires, and budget.
             </p>
-            <p style="color:var(--color-text-muted);margin-bottom:var(--space-4)">
+            <p>
               Crafting a plan that works for you rather than our bottom line is vital. That way, you can feel secure knowing you will always enjoy top-notch dental care from our professionals. Whether you require orthodontics or cosmetic care, you can rely on individualized attention from us.
             </p>
 
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-2);margin-bottom:var(--space-4)">
-              <div style="display:flex;align-items:center;gap:0.75rem">
+            <div class="about-checklist">
+              <div class="about-checklist-item">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-trust)" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span style="font-size:var(--text-small);font-weight:500">Affordable Options</span>
+                <span>Affordable Options</span>
               </div>
-              <div style="display:flex;align-items:center;gap:0.75rem">
+              <div class="about-checklist-item">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-trust)" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span style="font-size:var(--text-small);font-weight:500">Comfort-First Approach</span>
+                <span>Comfort-First Approach</span>
               </div>
-              <div style="display:flex;align-items:center;gap:0.75rem">
+              <div class="about-checklist-item">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-trust)" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span style="font-size:var(--text-small);font-weight:500">Modern Technology</span>
+                <span>Modern Technology</span>
               </div>
-              <div style="display:flex;align-items:center;gap:0.75rem">
+              <div class="about-checklist-item">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-trust)" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
-                <span style="font-size:var(--text-small);font-weight:500">All Ages Welcome</span>
+                <span>All Ages Welcome</span>
               </div>
             </div>
 
@@ -356,29 +357,64 @@
     </div>
 
     <!-- ========== SOCIAL PROOF ========== -->
-    <section style="background:var(--color-bg);padding-block:var(--space-6)">
+    <section class="social-proof">
       <div class="container">
-        <div style="text-align:center;max-width:var(--container-narrow);margin-inline:auto" class="reveal">
+        <div class="social-proof-inner reveal">
           <span class="section-label">Trusted by Families</span>
-          <h2 style="margin-bottom:var(--space-2)">Compassionate Care Across 3 Locations</h2>
-          <p style="color:var(--color-text-muted);max-width:50ch;margin-inline:auto">
-            We pride ourselves on delivering our services compassionately and with the utmost concern for our patients' comfort. Visit us on
-            <a href="https://www.choiceonedentalcare.com/facebook/" style="color:var(--color-primary);text-decoration:underline;font-weight:500">Facebook</a>,
-            <a href="https://www.choiceonedentalcare.com/google/" style="color:var(--color-primary);text-decoration:underline;font-weight:500">Google</a>, or
-            <a href="https://www.choiceonedentalcare.com/yelp/" style="color:var(--color-primary);text-decoration:underline;font-weight:500">Yelp</a>
-            to see what our patients have to say.
+          <h2>Compassionate Care Across 3 Locations</h2>
+          <p class="contact-info-text" style="max-width:50ch;margin-inline:auto;margin-top:var(--space-2)">
+            We pride ourselves on delivering our services compassionately and with the utmost concern for our patients' comfort.
           </p>
+
+          <div class="social-proof-metrics reveal reveal-delay-1">
+            <div class="social-proof-metric">
+              <div class="social-proof-metric-icon social-proof-metric-icon--primary">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+              </div>
+              <div class="social-proof-metric-value" data-count="7" data-suffix=" Services">0</div>
+              <div class="social-proof-metric-label">Dental Specialties</div>
+            </div>
+            <div class="social-proof-metric">
+              <div class="social-proof-metric-icon social-proof-metric-icon--accent">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div class="social-proof-metric-value" data-count="3">0</div>
+              <div class="social-proof-metric-label">Convenient Locations</div>
+            </div>
+            <div class="social-proof-metric">
+              <div class="social-proof-metric-icon social-proof-metric-icon--trust">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <div class="social-proof-metric-value" data-count="5" data-suffix=" Days/Wk">0</div>
+              <div class="social-proof-metric-label">Available for You</div>
+            </div>
+          </div>
+
+          <div class="social-proof-links reveal reveal-delay-2">
+            <a href="https://www.choiceonedentalcare.com/facebook/" class="social-proof-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              Facebook
+            </a>
+            <a href="https://www.choiceonedentalcare.com/google/" class="social-proof-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+              Google
+            </a>
+            <a href="https://www.choiceonedentalcare.com/yelp/" class="social-proof-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              Yelp
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ========== LOCATIONS ========== -->
-    <section class="section-padding" id="locations" style="background:var(--color-surface-alt)">
+    <section class="section-padding section-bg-surface" id="locations">
       <div class="container">
-        <div style="text-align:center;margin-bottom:var(--space-8)" class="reveal">
+        <div class="section-header section-header--narrow reveal">
           <span class="section-label">Our Locations</span>
           <h2>Find a Location Near You</h2>
-          <p style="max-width:50ch;margin-inline:auto;color:var(--color-text-muted);margin-top:var(--space-2)">
+          <p>
             Three convenient offices across Georgia and South Carolina, all offering the same exceptional standard of care.
           </p>
         </div>
@@ -390,10 +426,8 @@
             </div>
             <h3>Cartersville</h3>
             <p>Cartersville, Georgia</p>
-            <p style="font-size:var(--text-xs);color:var(--color-text-light);margin-top:0.5rem">Mon–Fri: 8:00 AM – 5:00 PM</p>
-            <a href="tel:8552471033" class="btn btn--outline" style="margin-top:var(--space-2);font-size:var(--text-small);padding:0.5rem 1.25rem">
-              Call to Book
-            </a>
+            <p class="location-hours">Mon–Fri: 8:00 AM – 5:00 PM</p>
+            <a href="tel:8552471033" class="btn btn--outline">Call to Book</a>
           </div>
 
           <div class="location-card reveal reveal-delay-2">
@@ -402,10 +436,8 @@
             </div>
             <h3>Greensboro</h3>
             <p>Greensboro, Georgia</p>
-            <p style="font-size:var(--text-xs);color:var(--color-text-light);margin-top:0.5rem">Mon–Fri: 8:00 AM – 5:00 PM</p>
-            <a href="tel:8552471033" class="btn btn--outline" style="margin-top:var(--space-2);font-size:var(--text-small);padding:0.5rem 1.25rem">
-              Call to Book
-            </a>
+            <p class="location-hours">Mon–Fri: 8:00 AM – 5:00 PM</p>
+            <a href="tel:8552471033" class="btn btn--outline">Call to Book</a>
           </div>
 
           <div class="location-card reveal reveal-delay-3">
@@ -414,19 +446,17 @@
             </div>
             <h3>Greenville</h3>
             <p>Greenville, South Carolina</p>
-            <p style="font-size:var(--text-xs);color:var(--color-text-light);margin-top:0.5rem">Mon–Fri: 8:00 AM – 5:00 PM</p>
-            <a href="tel:8552471033" class="btn btn--outline" style="margin-top:var(--space-2);font-size:var(--text-small);padding:0.5rem 1.25rem">
-              Call to Book
-            </a>
+            <p class="location-hours">Mon–Fri: 8:00 AM – 5:00 PM</p>
+            <a href="tel:8552471033" class="btn btn--outline">Call to Book</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ========== FAQ ========== -->
-    <section class="section-padding" id="faq" style="background:var(--color-bg)">
+    <section class="section-padding section-bg" id="faq">
       <div class="container--narrow">
-        <div style="text-align:center;margin-bottom:var(--space-8)" class="reveal">
+        <div class="section-header reveal">
           <span class="section-label">Common Questions</span>
           <h2>Frequently Asked Questions</h2>
         </div>
@@ -496,15 +526,15 @@
     </section>
 
     <!-- ========== CTA BANNER ========== -->
-    <section style="background:var(--color-bg);padding-block:0 var(--section-padding)">
+    <section class="section-bg" style="padding-block:0 var(--section-padding)">
       <div class="container">
         <div class="cta-banner reveal">
           <div class="cta-banner-content">
             <h2>Ready for a Healthier, More Beautiful Smile?</h2>
             <p>Creating beautiful and healthy smiles is our specialty. Schedule your appointment today and experience the Choice One difference.</p>
-            <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);justify-content:center">
+            <div class="cta-banner-actions">
               <a href="#contact" class="btn btn--primary">Schedule Your Visit</a>
-              <a href="tel:8552471033" class="btn btn--ghost" style="color:#fff">
+              <a href="tel:8552471033" class="btn btn--ghost cta-banner-phone">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 (855) 247-1033
               </a>
@@ -515,12 +545,12 @@
     </section>
 
     <!-- ========== CONTACT ========== -->
-    <section class="section-padding" id="contact" style="background:var(--color-surface-alt)">
+    <section class="section-padding section-bg-surface" id="contact">
       <div class="container">
-        <div style="text-align:center;margin-bottom:var(--space-8)" class="reveal">
+        <div class="section-header section-header--narrow reveal">
           <span class="section-label">Get in Touch</span>
           <h2>Contact Us Today</h2>
-          <p style="max-width:50ch;margin-inline:auto;color:var(--color-text-muted);margin-top:var(--space-2)">
+          <p>
             Ready to schedule your appointment? Fill out the form or give us a call. We look forward to welcoming you.
           </p>
         </div>
@@ -552,7 +582,7 @@
                 <label class="form-label" for="message">Message</label>
                 <textarea class="form-textarea" id="message" name="message" placeholder="Tell us how we can help..."></textarea>
               </div>
-              <button type="submit" class="btn btn--primary" style="width:100%;margin-top:var(--space-1)">Send Message</button>
+              <button type="submit" class="btn btn--primary" style="width:100%;margin-top:var(--space-1)" data-magnetic>Send Message</button>
             </form>
           </div>
 
@@ -562,8 +592,8 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               </div>
               <div>
-                <div style="font-weight:600;margin-bottom:0.25rem">Phone</div>
-                <a href="tel:8552471033" style="color:var(--color-primary);text-decoration:none;font-size:var(--text-body-lg);font-weight:600">(855) 247-1033</a>
+                <div class="contact-info-label">Phone</div>
+                <a href="tel:8552471033" class="contact-phone-link">(855) 247-1033</a>
               </div>
             </div>
 
@@ -572,8 +602,8 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
               </div>
               <div>
-                <div style="font-weight:600;margin-bottom:0.25rem">Main Office</div>
-                <p style="color:var(--color-text-muted);font-size:var(--text-small)">5665 New Northside Drive, Ste. 250<br>Atlanta, GA 30328</p>
+                <div class="contact-info-label">Main Office</div>
+                <p class="contact-info-text">5665 New Northside Drive, Ste. 250<br>Atlanta, GA 30328</p>
               </div>
             </div>
 
@@ -582,21 +612,21 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               </div>
               <div>
-                <div style="font-weight:600;margin-bottom:0.25rem">Hours</div>
-                <p style="color:var(--color-text-muted);font-size:var(--text-small)">Monday – Friday: 8:00 AM – 5:00 PM<br>Saturday – Sunday: Closed</p>
+                <div class="contact-info-label">Hours</div>
+                <p class="contact-info-text">Monday – Friday: 8:00 AM – 5:00 PM<br>Saturday – Sunday: Closed</p>
               </div>
             </div>
 
-            <div style="margin-top:var(--space-4)">
-              <div style="font-weight:600;margin-bottom:var(--space-1)">Follow Us</div>
-              <div class="footer-social">
-                <a href="https://www.choiceonedentalcare.com/facebook/" class="footer-social-link" aria-label="Facebook" style="background:var(--color-primary-light);color:var(--color-primary)">
+            <div class="contact-social-wrapper">
+              <div class="contact-social-heading">Follow Us</div>
+              <div class="contact-social">
+                <a href="https://www.choiceonedentalcare.com/facebook/" class="contact-social-link" aria-label="Facebook">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
                 </a>
-                <a href="https://www.choiceonedentalcare.com/google/" class="footer-social-link" aria-label="Google" style="background:var(--color-primary-light);color:var(--color-primary)">
+                <a href="https://www.choiceonedentalcare.com/google/" class="contact-social-link" aria-label="Google">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
                 </a>
-                <a href="https://www.choiceonedentalcare.com/yelp/" class="footer-social-link" aria-label="Yelp" style="background:var(--color-primary-light);color:var(--color-primary)">
+                <a href="https://www.choiceonedentalcare.com/yelp/" class="contact-social-link" aria-label="Yelp">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                 </a>
               </div>
@@ -612,7 +642,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="https://www.choiceonedentalcare.com/wp-content/uploads/2020/07/logo.png" alt="Choice One Dental Care" width="160" height="40" loading="lazy" decoding="async" style="filter:brightness(0) invert(1);opacity:0.8">
+          <img src="https://www.choiceonedentalcare.com/wp-content/uploads/2020/07/logo.png" alt="Choice One Dental Care" width="160" height="40" loading="lazy" decoding="async" class="footer-logo-inverted">
           <p>Georgia and South Carolina's premier family dentistry provider. Compassionate care with the utmost concern for your comfort.</p>
         </div>
 

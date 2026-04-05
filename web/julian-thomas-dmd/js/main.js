@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initSmoothScroll();
   initFormHandler();
+  initMagneticButtons();
 });
 
 /* ===========================
@@ -86,11 +87,16 @@ function initFaqAccordion() {
       const isActive = item.classList.contains('active');
 
       // Close all others
-      items.forEach(i => i.classList.remove('active'));
+      items.forEach(i => {
+        i.classList.remove('active');
+        const q = i.querySelector('.faq-item__question');
+        if (q) q.setAttribute('aria-expanded', 'false');
+      });
 
       // Toggle current
       if (!isActive) {
         item.classList.add('active');
+        question.setAttribute('aria-expanded', 'true');
       }
     });
   });
@@ -146,6 +152,32 @@ function initSmoothScroll() {
         top: targetPosition,
         behavior: 'smooth'
       });
+    });
+  });
+}
+
+/* ===========================
+   MAGNETIC BUTTONS
+   =========================== */
+function initMagneticButtons() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  // Only on non-touch devices
+  if ('ontouchstart' in window) return;
+
+  const magnetics = document.querySelectorAll('[data-magnetic]');
+
+  magnetics.forEach(el => {
+    el.addEventListener('mousemove', (e) => {
+      const rect = el.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      el.style.transform = `translate(${x * 0.25}px, ${y * 0.25}px)`;
+    });
+
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = '';
+      el.style.transition = 'transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
+      setTimeout(() => { el.style.transition = ''; }, 400);
     });
   });
 }

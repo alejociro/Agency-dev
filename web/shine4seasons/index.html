@@ -202,6 +202,14 @@
       </div>
     </div>
 
+    <!-- Mobile Carousel Dots -->
+    <div class="hero__scroll-hint" aria-label="Scroll indicator">
+      <button class="hero__scroll-dot active" aria-label="Spring panel"></button>
+      <button class="hero__scroll-dot" aria-label="Summer panel"></button>
+      <button class="hero__scroll-dot" aria-label="Autumn panel"></button>
+      <button class="hero__scroll-dot" aria-label="Winter panel"></button>
+    </div>
+
     <div class="hero__bottom">
       <div style="text-align: center; padding-inline: var(--container-padding);">
         <h1 class="hero__title">Shine 4 Seasons</h1>
@@ -288,7 +296,47 @@
         <p class="section-subtitle">From expert nail care to rejuvenating facials, we offer a full range of beauty services tailored to make you look and feel your best.</p>
       </div>
 
+      <!-- ── Trending This Season ── -->
+      <div class="trending-banner" data-animate="fade-up" style="margin-block-end: var(--space-8);">
+        <div class="trending-banner__season-icon" style="background: oklch(from var(--color-spring) l c h / 0.15);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 1 0-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="trending-banner__content">
+          <h3 class="trending-banner__title">Spring Refresh Collection</h3>
+          <p class="trending-banner__text">Pastel nail art, fresh pedicures, and rejuvenating facials — start the season feeling renewed. Book your spring transformation today.</p>
+        </div>
+        <a href="https://booking.gocheckin.net/v2/15459" target="_blank" rel="noopener" class="btn btn--primary" style="flex-shrink: 0;">Book Spring Special</a>
+      </div>
+
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-4);" data-animate="stagger">
+        <!-- Manicure — Most Popular -->
+        <div class="service-card">
+          <span class="service-card__badge service-card__badge--popular">Most Popular</span>
+          <div class="service-card__image">
+            <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/product/thumbnail/dreamstime_m_35878958-w576.webp"
+                 alt="Expert manicure services in Greenville SC"
+                 width="400" height="300" loading="lazy" decoding="async">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Manicure</h3>
+            <p class="service-card__desc">Classic, gel, and luxury manicures crafted with attention to detail for flawless nails.</p>
+          </div>
+        </div>
+
+        <!-- Pedicure — Seasonal Pick -->
+        <div class="service-card">
+          <span class="service-card__badge service-card__badge--seasonal">Spring Pick</span>
+          <div class="service-card__image">
+            <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/png/product/dreamstime_s_28806725.webp"
+                 alt="Luxury pedicure with spa protective liner"
+                 width="400" height="300" loading="lazy" decoding="async">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Pedicure</h3>
+            <p class="service-card__desc">All pedicure services include a personal spa protective liner, pumice bar, nail file and buffer set.</p>
+          </div>
+        </div>
+
         <!-- Hair Services -->
         <div class="service-card">
           <div class="service-card__image">
@@ -302,34 +350,9 @@
           </div>
         </div>
 
-        <!-- Pedicure -->
+        <!-- Nail Extensions — Most Popular -->
         <div class="service-card">
-          <div class="service-card__image">
-            <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/png/product/dreamstime_s_28806725.webp"
-                 alt="Luxury pedicure with spa protective liner"
-                 width="400" height="300" loading="lazy" decoding="async">
-          </div>
-          <div class="service-card__body">
-            <h3 class="service-card__title">Pedicure</h3>
-            <p class="service-card__desc">All pedicure services include a personal spa protective liner, pumice bar, nail file and buffer set.</p>
-          </div>
-        </div>
-
-        <!-- Manicure -->
-        <div class="service-card">
-          <div class="service-card__image">
-            <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/product/thumbnail/dreamstime_m_35878958-w576.webp"
-                 alt="Expert manicure services in Greenville SC"
-                 width="400" height="300" loading="lazy" decoding="async">
-          </div>
-          <div class="service-card__body">
-            <h3 class="service-card__title">Manicure</h3>
-            <p class="service-card__desc">Classic, gel, and luxury manicures crafted with attention to detail for flawless nails.</p>
-          </div>
-        </div>
-
-        <!-- Nail Extensions -->
-        <div class="service-card">
+          <span class="service-card__badge service-card__badge--popular">Client Favorite</span>
           <div class="service-card__image">
             <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/png/product/dreamstime_s_117330176.webp"
                  alt="Nail extensions and powder dip services"
@@ -364,6 +387,45 @@
           <div class="service-card__body">
             <h3 class="service-card__title">Facial</h3>
             <p class="service-card__desc">Rejuvenating facials that cleanse, hydrate, and restore your natural glow.</p>
+          </div>
+        </div>
+
+        <!-- Eyelash Extensions -->
+        <div class="service-card">
+          <div class="service-card__image">
+            <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/product/thumbnail/dreamstime_l_108989908-w576.webp"
+                 alt="Professional eyelash extension services"
+                 width="400" height="300" loading="lazy" decoding="async">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Eyelash Extensions</h3>
+            <p class="service-card__desc">Natural or dramatic lash looks applied by experienced professionals for eyes that captivate.</p>
+          </div>
+        </div>
+
+        <!-- Kid Service -->
+        <div class="service-card">
+          <div class="service-card__image">
+            <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/product/thumbnail/kid-dreamstime_s_31693497-w576.webp"
+                 alt="Fun nail services for kids"
+                 width="400" height="300" loading="lazy" decoding="async">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Kid Service</h3>
+            <p class="service-card__desc">Fun, gentle nail treatments designed for little ones. A special pampering experience the whole family can enjoy.</p>
+          </div>
+        </div>
+
+        <!-- Additional Services -->
+        <div class="service-card">
+          <div class="service-card__image">
+            <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/png/product/dreamstime_s_106080833.webp"
+                 alt="Additional beauty services at Shine 4 Seasons"
+                 width="400" height="300" loading="lazy" decoding="async">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Additional Services</h3>
+            <p class="service-card__desc">Extras and add-ons to complement your visit — from nail art designs to special treatments and more.</p>
           </div>
         </div>
       </div>
@@ -426,36 +488,68 @@
         <p class="section-subtitle">Browse our gallery of nail art designs, eyelash extensions, and beauty transformations.</p>
       </div>
 
-      <div class="gallery-grid" data-animate="stagger">
-        <div class="gallery-item">
+      <!-- Gallery Filters -->
+      <div class="gallery-filters" data-animate="fade-up">
+        <button class="gallery-filter-btn active" data-filter="all">All</button>
+        <button class="gallery-filter-btn" data-filter="nails">Nails</button>
+        <button class="gallery-filter-btn" data-filter="eyelash">Eyelash</button>
+        <button class="gallery-filter-btn" data-filter="salon">Salon</button>
+      </div>
+
+      <div class="gallery-grid" data-animate="stagger" id="gallery-grid">
+        <div class="gallery-item" data-category="salon">
           <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Shine-4-Seasons-Salon-jul-23-2025-2.webp"
                alt="Salon interior at Shine 4 Seasons"
                width="600" height="600" loading="lazy" decoding="async">
           <div class="gallery-overlay"><span>Our Salon</span></div>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="nails">
           <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Nail-art-design-13.webp"
                alt="Custom nail art design"
                width="400" height="400" loading="lazy" decoding="async">
           <div class="gallery-overlay"><span>Nail Art</span></div>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="eyelash">
           <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Eyelash-Extensions-5.webp"
                alt="Professional eyelash extensions"
                width="400" height="400" loading="lazy" decoding="async">
           <div class="gallery-overlay"><span>Eyelash</span></div>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="nails">
           <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Nail-art-design-9.webp"
                alt="Elegant nail art design"
                width="400" height="400" loading="lazy" decoding="async">
           <div class="gallery-overlay"><span>Nail Art</span></div>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="eyelash">
           <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Eyelash-Extensions-4.webp"
                alt="Eyelash extensions close-up"
                width="400" height="400" loading="lazy" decoding="async">
           <div class="gallery-overlay"><span>Eyelash</span></div>
+        </div>
+        <div class="gallery-item" data-category="nails">
+          <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Nail-art-design-8.webp"
+               alt="Intricate nail art design"
+               width="400" height="400" loading="lazy" decoding="async">
+          <div class="gallery-overlay"><span>Nail Art</span></div>
+        </div>
+        <div class="gallery-item" data-category="eyelash">
+          <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Eyelash-Extensions-3.webp"
+               alt="Eyelash extensions style"
+               width="400" height="400" loading="lazy" decoding="async">
+          <div class="gallery-overlay"><span>Eyelash</span></div>
+        </div>
+        <div class="gallery-item" data-category="salon">
+          <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Shine-4-Seasons-Salon-jul-23-2025-1.webp"
+               alt="Shine 4 Seasons Salon atmosphere"
+               width="400" height="400" loading="lazy" decoding="async">
+          <div class="gallery-overlay"><span>Our Space</span></div>
+        </div>
+        <div class="gallery-item" data-category="nails">
+          <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/5-Nail-art-design-6.webp"
+               alt="Creative nail art design"
+               width="400" height="400" loading="lazy" decoding="async">
+          <div class="gallery-overlay"><span>Nail Art</span></div>
         </div>
       </div>
     </div>
@@ -469,36 +563,44 @@
         <h2 class="section-title">What Our Clients Say</h2>
       </div>
 
+      <p style="text-align: center; font-size: var(--text-small); color: var(--color-text-muted); margin-block-end: var(--space-4);">See what our clients are saying on <a href="https://www.google.com/search?q=Shine+4+Seasons+Salon+greenville+29615" target="_blank" rel="noopener" style="color: var(--color-secondary); text-decoration: underline;">Google</a> and <a href="https://www.yelp.com/biz/shine-4-seasons-salon-greenville" target="_blank" rel="noopener" style="color: var(--color-secondary); text-decoration: underline;">Yelp</a></p>
+
       <div style="display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: var(--space-4); scrollbar-width: none; padding-block: var(--space-2);" data-animate="stagger">
         <div class="testimonial" style="scroll-snap-align: start; flex: 0 0 clamp(280px, 80vw, 420px);">
-          <p class="testimonial__text">Absolutely love this salon! The staff is so friendly and talented. My nails always look perfect, and the atmosphere is so relaxing.</p>
+          <p class="testimonial__text">The staff is so friendly and talented. My nails always look perfect, and the atmosphere is so relaxing.</p>
           <div class="testimonial__author">
-            <div style="inline-size: 48px; block-size: 48px; border-radius: var(--radius-full); background: var(--color-spring); display: flex; align-items: center; justify-content: center; color: var(--color-white); font-family: var(--font-display); font-weight: 600;">JM</div>
+            <div style="inline-size: 48px; block-size: 48px; border-radius: var(--radius-full); background: var(--color-spring); display: flex; align-items: center; justify-content: center; color: var(--color-white); font-family: var(--font-display); font-weight: 600;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg>
+            </div>
             <div>
-              <div class="testimonial__name">Jessica M.</div>
-              <div class="testimonial__role">Regular Client</div>
+              <div class="testimonial__name">Happy Client</div>
+              <div class="testimonial__role">Nail Care Experience</div>
             </div>
           </div>
         </div>
 
         <div class="testimonial" style="scroll-snap-align: start; flex: 0 0 clamp(280px, 80vw, 420px);">
-          <p class="testimonial__text">Best nail salon in Greenville! They pay attention to every detail and the results last for weeks. The pedicure with the spa liner is top tier.</p>
+          <p class="testimonial__text">They pay attention to every detail and the results last for weeks. The pedicure with the spa liner is top tier.</p>
           <div class="testimonial__author">
-            <div style="inline-size: 48px; block-size: 48px; border-radius: var(--radius-full); background: var(--color-summer); display: flex; align-items: center; justify-content: center; color: var(--color-white); font-family: var(--font-display); font-weight: 600;">SK</div>
+            <div style="inline-size: 48px; block-size: 48px; border-radius: var(--radius-full); background: var(--color-summer); display: flex; align-items: center; justify-content: center; color: var(--color-white); font-family: var(--font-display); font-weight: 600;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg>
+            </div>
             <div>
-              <div class="testimonial__name">Sarah K.</div>
-              <div class="testimonial__role">Verified on Google</div>
+              <div class="testimonial__name">Happy Client</div>
+              <div class="testimonial__role">Pedicure Experience</div>
             </div>
           </div>
         </div>
 
         <div class="testimonial" style="scroll-snap-align: start; flex: 0 0 clamp(280px, 80vw, 420px);">
-          <p class="testimonial__text">I got my eyelash extensions here and they looked amazing. Very professional team and they really take their time to get it right.</p>
+          <p class="testimonial__text">My eyelash extensions looked amazing. Very professional team and they really take their time to get it right.</p>
           <div class="testimonial__author">
-            <div style="inline-size: 48px; block-size: 48px; border-radius: var(--radius-full); background: var(--color-autumn); display: flex; align-items: center; justify-content: center; color: var(--color-white); font-family: var(--font-display); font-weight: 600;">RL</div>
+            <div style="inline-size: 48px; block-size: 48px; border-radius: var(--radius-full); background: var(--color-autumn); display: flex; align-items: center; justify-content: center; color: var(--color-white); font-family: var(--font-display); font-weight: 600;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg>
+            </div>
             <div>
-              <div class="testimonial__name">Rachel L.</div>
-              <div class="testimonial__role">Verified on Yelp</div>
+              <div class="testimonial__name">Happy Client</div>
+              <div class="testimonial__role">Eyelash Extensions</div>
             </div>
           </div>
         </div>
@@ -536,6 +638,54 @@
           <p style="color: var(--color-text-light); font-size: var(--text-small);">Walk out feeling confident with results that last. Share your look and come back for your next season.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ═══ INSTAGRAM / RECENT WORK ═══ -->
+  <section style="background: var(--color-text); padding-block: var(--space-8); overflow: hidden;">
+    <div class="container" style="text-align: center; margin-block-end: var(--space-4);">
+      <span class="text-label" style="color: var(--color-secondary);" data-animate="fade-up">Follow Our Work</span>
+      <h2 style="font-family: var(--font-display); font-size: var(--text-h2); color: var(--color-white); margin-block-start: var(--space-1);" data-animate="fade-up" data-delay="100">
+        <a href="https://instagram.com/shine4seasons" target="_blank" rel="noopener" style="color: var(--color-white); text-decoration: none;">@shine4seasons</a>
+      </h2>
+    </div>
+    <div class="insta-feed" data-animate="stagger">
+      <a href="https://instagram.com/shine4seasons" target="_blank" rel="noopener" class="insta-feed__item">
+        <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Nail-art-design-13.webp" alt="Nail art showcase" width="300" height="300" loading="lazy" decoding="async">
+        <div class="insta-feed__overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+      </a>
+      <a href="https://instagram.com/shine4seasons" target="_blank" rel="noopener" class="insta-feed__item">
+        <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Eyelash-Extensions-5.webp" alt="Eyelash extensions work" width="300" height="300" loading="lazy" decoding="async">
+        <div class="insta-feed__overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+      </a>
+      <a href="https://instagram.com/shine4seasons" target="_blank" rel="noopener" class="insta-feed__item">
+        <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Nail-art-design-9.webp" alt="Nail design" width="300" height="300" loading="lazy" decoding="async">
+        <div class="insta-feed__overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+      </a>
+      <a href="https://instagram.com/shine4seasons" target="_blank" rel="noopener" class="insta-feed__item">
+        <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/5-Nail-art-design-5.webp" alt="Nail art" width="300" height="300" loading="lazy" decoding="async">
+        <div class="insta-feed__overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+      </a>
+      <a href="https://instagram.com/shine4seasons" target="_blank" rel="noopener" class="insta-feed__item" style="display: none;" data-insta-desktop>
+        <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/Eyelash-Extensions-2.webp" alt="Eyelash work" width="300" height="300" loading="lazy" decoding="async">
+        <div class="insta-feed__overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+      </a>
+      <a href="https://instagram.com/shine4seasons" target="_blank" rel="noopener" class="insta-feed__item" style="display: none;" data-insta-desktop>
+        <img src="https://shine4seasons.com/uploads/fnail0lsagxak/webp/jpg/gallery/5-Nail-art-design-6.webp" alt="Nail design showcase" width="300" height="300" loading="lazy" decoding="async">
+        <div class="insta-feed__overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+      </a>
     </div>
   </section>
 

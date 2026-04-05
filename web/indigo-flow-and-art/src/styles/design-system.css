@@ -245,6 +245,14 @@ body::before {
       color: var(--color-gold-light);
     }
   }
+
+  & .btn--primary {
+    color: var(--color-primary-dark);
+
+    &:hover {
+      color: var(--color-primary-dark);
+    }
+  }
 }
 
 .section--alt {
@@ -671,7 +679,9 @@ body::before {
   z-index: 50;
   padding-block: var(--space-2);
   transition: all var(--transition-base);
-  background-color: transparent;
+  background-color: rgba(245, 240, 232, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .nav--scrolled {

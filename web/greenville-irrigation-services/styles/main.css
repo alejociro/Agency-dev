@@ -288,23 +288,52 @@ body::before {
 }
 
 .hero__form-card {
-  background: rgba(247, 245, 240, 0.06);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(247, 245, 240, 0.1);
+  background: rgba(28, 43, 31, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(247, 245, 240, 0.15);
   border-radius: var(--radius-xl);
   padding: var(--space-4);
 
   & h3 {
-    color: var(--color-text-light);
+    color: #FFFFFF;
     font-size: var(--text-h3);
     margin-bottom: var(--space-1);
+    font-weight: 700;
   }
 
   & p {
-    color: rgba(247, 245, 240, 0.6);
+    color: rgba(247, 245, 240, 0.85);
     font-size: var(--text-small);
     margin-bottom: var(--space-3);
+  }
+
+  /* Ensure form inputs inside hero card have solid backgrounds and visible text */
+  & .form-input,
+  & .form-textarea {
+    background: rgba(247, 245, 240, 0.95);
+    color: var(--color-text);
+    border-color: rgba(247, 245, 240, 0.3);
+
+    &::placeholder {
+      color: rgba(28, 43, 31, 0.5);
+    }
+
+    &:focus {
+      background: #FFFFFF;
+      border-color: var(--color-accent);
+      box-shadow: 0 0 0 3px var(--color-accent-glow);
+    }
+  }
+
+  /* Select dropdown visibility */
+  & select.form-input {
+    color: var(--color-text);
+  }
+
+  & select.form-input option {
+    background: var(--color-surface);
+    color: var(--color-text);
   }
 }
 
@@ -817,13 +846,13 @@ body::before {
   font-size: var(--text-body);
   color: var(--color-text);
   background: var(--color-surface);
-  border: 2px solid var(--color-border);
+  border: 2px solid var(--color-border-strong);
   border-radius: var(--radius-md);
   transition: border-color var(--duration-fast) var(--ease-out),
               box-shadow var(--duration-fast) var(--ease-out);
 
   &::placeholder {
-    color: var(--color-text-muted);
+    color: rgba(28, 43, 31, 0.45);
   }
 
   &:focus {
@@ -922,6 +951,23 @@ body::before {
 
     &:hover {
       color: var(--color-accent);
+    }
+  }
+}
+
+/* Fix contact items on light backgrounds (contact section reuses footer class) */
+.cta-section .footer__contact-item {
+  color: var(--color-text);
+
+  & svg {
+    color: var(--color-primary);
+  }
+
+  & a {
+    color: var(--color-primary-dark);
+
+    &:hover {
+      color: var(--color-primary);
     }
   }
 }

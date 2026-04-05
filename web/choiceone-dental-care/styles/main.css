@@ -951,3 +951,317 @@
 .reveal-delay-3 { transition-delay: 300ms; }
 .reveal-delay-4 { transition-delay: 400ms; }
 .reveal-delay-5 { transition-delay: 500ms; }
+
+/* ============================================
+   EXTRACTED UTILITY CLASSES (from inline styles)
+   ============================================ */
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.section-header p {
+  max-width: 55ch;
+  margin-inline: auto;
+  color: var(--color-text-muted);
+  margin-top: var(--space-2);
+}
+
+.section-header--narrow p {
+  max-width: 50ch;
+}
+
+.section-bg {
+  background: var(--color-bg);
+}
+
+.section-bg-warm {
+  background: var(--color-bg-warm);
+}
+
+.section-bg-surface {
+  background: var(--color-surface-alt);
+}
+
+/* About section utilities */
+.about-text p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.about-text p:last-of-type {
+  margin-bottom: var(--space-4);
+}
+
+.about-text h2 {
+  margin-bottom: var(--space-3);
+}
+
+.about-checklist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.about-checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.about-checklist-item span {
+  font-size: var(--text-small);
+  font-weight: 500;
+}
+
+/* ============================================
+   SOCIAL PROOF — Enhanced Layout
+   ============================================ */
+
+.social-proof {
+  background: var(--color-bg);
+  padding-block: var(--space-8);
+}
+
+.social-proof-inner {
+  text-align: center;
+  max-width: var(--container-narrow);
+  margin-inline: auto;
+}
+
+.social-proof-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.social-proof-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.social-proof-metric-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+}
+
+.social-proof-metric-icon--primary {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.social-proof-metric-icon--accent {
+  background: var(--color-accent-glow);
+  color: var(--color-accent);
+}
+
+.social-proof-metric-icon--trust {
+  background: var(--color-trust-light);
+  color: var(--color-trust);
+}
+
+.social-proof-metric-value {
+  font-family: 'Fraunces', serif;
+  font-size: var(--text-h3);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.social-proof-metric-label {
+  font-size: var(--text-small);
+  color: var(--color-text-muted);
+}
+
+.social-proof-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.social-proof-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--text-small);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  background: var(--color-primary-light);
+  transition: all var(--duration-normal) var(--ease-out-expo);
+}
+
+.social-proof-link:hover {
+  background: var(--color-primary);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+/* ============================================
+   CONTACT SOCIAL LINKS (light bg variant)
+   ============================================ */
+
+.contact-social {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.contact-social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all var(--duration-fast);
+}
+
+.contact-social-link:hover {
+  background: var(--color-primary);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Contact info label */
+.contact-info-label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.contact-info-text {
+  color: var(--color-text-muted);
+  font-size: var(--text-small);
+}
+
+.contact-social-wrapper {
+  margin-top: var(--space-4);
+}
+
+.contact-social-heading {
+  font-weight: 600;
+  margin-bottom: var(--space-1);
+}
+
+/* ============================================
+   HERO — Dental SVG Pattern
+   ============================================ */
+
+.hero-pattern {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.04;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 10c-4 0-7 2-9 5-1.5 2.5-2 5.5-2 9 0 4 1 8 3 12s5 8 8 12c3-4 6-8 8-12s3-8 3-12c0-3.5-.5-6.5-2-9-2-3-5-5-9-5z' fill='%23ffffff' fill-opacity='1'/%3E%3C/svg%3E");
+  background-size: 80px 80px;
+}
+
+/* ============================================
+   CTA BANNER — Extracted styles
+   ============================================ */
+
+.cta-banner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: center;
+}
+
+.cta-banner-phone {
+  color: #fff;
+}
+
+/* ============================================
+   SECTION PADDING HELPERS
+   ============================================ */
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+/* Location card CTA */
+.location-card .btn {
+  margin-top: var(--space-2);
+  font-size: var(--text-small);
+  padding: 0.5rem 1.25rem;
+}
+
+/* Service section centered card */
+.service-card--centered {
+  grid-column: 1 / -1;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+/* Trust bar section */
+.trust-section {
+  background: var(--color-bg);
+  padding-block: var(--space-4) var(--space-2);
+}
+
+/* Contact phone link */
+.contact-phone-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: var(--text-body-lg);
+  font-weight: 600;
+}
+
+/* Location hours */
+.location-hours {
+  font-size: var(--text-xs);
+  color: var(--color-text-light);
+  margin-top: 0.5rem;
+}
+
+/* Header actions container */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* Mobile nav bottom */
+.nav-mobile-bottom {
+  margin-top: auto;
+  padding-top: var(--space-4);
+}
+
+.nav-mobile-phone {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: var(--space-2);
+}
+
+.nav-mobile-cta {
+  width: 100%;
+  text-align: center;
+}
+
+/* Footer logo invert */
+.footer-logo-inverted {
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+}

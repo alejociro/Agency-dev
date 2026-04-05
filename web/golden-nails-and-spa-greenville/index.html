@@ -170,6 +170,7 @@
         <ul class="nav__links">
           <li><a href="#about" class="nav__link">About</a></li>
           <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#price-menu" class="nav__link">Menu</a></li>
           <li><a href="#gallery" class="nav__link">Gallery</a></li>
           <li><a href="#faq" class="nav__link">FAQ</a></li>
           <li><a href="#contact" class="nav__link">Contact</a></li>
@@ -195,6 +196,7 @@
          :class="{ open: mobileOpen }">
       <a href="#about" class="nav-mobile__link" @click="closeMobile()">About</a>
       <a href="#services" class="nav-mobile__link" @click="closeMobile()">Services</a>
+      <a href="#price-menu" class="nav-mobile__link" @click="closeMobile()">Menu</a>
       <a href="#gallery" class="nav-mobile__link" @click="closeMobile()">Gallery</a>
       <a href="#faq" class="nav-mobile__link" @click="closeMobile()">FAQ</a>
       <a href="#contact" class="nav-mobile__link" @click="closeMobile()">Contact</a>
@@ -209,8 +211,8 @@
     <div class="hero__bg" style="background-image: url('https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g1.jpg')"></div>
     <div class="hero__grain" aria-hidden="true"></div>
     <div class="hero__content">
-      <span class="hero-tag">Nail Salon &amp; Spa in Greenville, SC</span>
-      <h1 class="hero-title">Your Golden<br>Sanctuary</h1>
+      <span class="hero__subtitle hero-tag">Nail Salon &amp; Spa in Greenville, SC</span>
+      <h1 class="hero__title hero-title">Your Golden<br>Sanctuary</h1>
       <hr class="hero__line hero-line" aria-hidden="true">
       <p class="hero__description hero-sub">Where skilled workmanship meets nurturing care. Experience premium nail and spa services in a relaxing environment crafted just for you.</p>
       <div class="hero__actions hero-cta">
@@ -230,35 +232,41 @@
   </section>
 
   <!-- ══════════════════════════════
-       SOCIAL PROOF BAR
+       DIFFERENTIATORS BAR
        ══════════════════════════════ -->
-  <section class="proof-bar" data-animate="fade-up">
+  <section class="diff-bar" data-animate="fade-up">
     <div class="container">
-      <div class="proof-bar__grid">
-        <div class="proof-bar__item">
-          <span class="proof-bar__number" data-counter data-target="30" data-suffix="+">0+</span>
-          <span class="proof-bar__label">Services Offered</span>
+      <div class="diff-bar__grid">
+        <div class="diff-bar__card">
+          <div class="diff-bar__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+          </div>
+          <h3 class="diff-bar__title">Skilled Workmanship</h3>
+          <p class="diff-bar__text">Every nail set crafted to your exact vision — shape, length, color, and design by experienced professionals.</p>
         </div>
-        <div class="proof-bar__divider" aria-hidden="true"></div>
-        <div class="proof-bar__item">
-          <span class="proof-bar__number">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-3px"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-          </span>
-          <span class="proof-bar__label">Skilled Workmanship</span>
+        <div class="diff-bar__card">
+          <div class="diff-bar__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 12L11 14L15 10"/>
+              <path d="M20.42 4.58a5.4 5.4 0 00-7.65 0L12 5.34l-.77-.76a5.4 5.4 0 00-7.65 0 5.4 5.4 0 000 7.65L12 20.65l8.42-8.42a5.4 5.4 0 000-7.65z"/>
+            </svg>
+          </div>
+          <h3 class="diff-bar__title">Trusted Products</h3>
+          <p class="diff-bar__text">Only polishes and spa products from reputable brands — safe for adults and children alike.</p>
         </div>
-        <div class="proof-bar__divider" aria-hidden="true"></div>
-        <div class="proof-bar__item">
-          <span class="proof-bar__number">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-3px"><path d="M9 12L11 14L15 10"/><path d="M20.42 4.58a5.4 5.4 0 00-7.65 0L12 5.34l-.77-.76a5.4 5.4 0 00-7.65 0 5.4 5.4 0 000 7.65L12 20.65l8.42-8.42a5.4 5.4 0 000-7.65z"/></svg>
-          </span>
-          <span class="proof-bar__label">High-Quality Products</span>
-        </div>
-        <div class="proof-bar__divider" aria-hidden="true"></div>
-        <div class="proof-bar__item">
-          <span class="proof-bar__number">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-3px"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-          </span>
-          <span class="proof-bar__label">5-Star Service</span>
+        <div class="diff-bar__card">
+          <div class="diff-bar__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+              <path d="M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <h3 class="diff-bar__title">5-Star Service</h3>
+          <p class="diff-bar__text">Warm welcome, attentive listening, meticulous care, and follow-up — a personalized experience every visit.</p>
         </div>
       </div>
     </div>
@@ -418,7 +426,92 @@
 
       <!-- Full menu CTA -->
       <div class="services__cta" data-animate="fade-up" data-delay="2">
-        <a href="#contact" class="btn btn--dark">View Full Price Menu &rarr;</a>
+        <a href="#price-menu" class="btn btn--dark">View Full Price Menu &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FULL PRICE MENU (accordion)
+       ══════════════════════════════ -->
+  <section class="price-menu section" id="price-menu" x-data="priceMenu">
+    <div class="container">
+      <div class="services__header" data-animate="fade-up">
+        <span class="services__label">Full Menu</span>
+        <h2>Service Prices</h2>
+        <hr class="gold-line gold-line--center gold-line--animated" aria-hidden="true">
+      </div>
+
+      <!-- Category tabs -->
+      <div class="price-menu__tabs" data-animate="fade-up" data-delay="1">
+        <template x-for="(cat, i) in categories" :key="i">
+          <button class="price-menu__tab"
+                  :class="{ active: activeTab === i }"
+                  @click="activeTab = i"
+                  x-text="cat.name"></button>
+        </template>
+      </div>
+
+      <!-- Price lists -->
+      <div class="price-menu__content" data-animate="fade-up" data-delay="2">
+        <template x-for="(cat, ci) in categories" :key="ci">
+          <div class="price-menu__list" x-show="activeTab === ci" x-transition.opacity>
+            <template x-for="(item, ii) in cat.items" :key="ii">
+              <div class="price-menu__item">
+                <div class="price-menu__item-info">
+                  <span class="price-menu__item-name" x-text="item.name"></span>
+                  <span class="price-menu__item-desc" x-text="item.desc" x-show="item.desc"></span>
+                </div>
+                <span class="price-menu__item-dots"></span>
+                <span class="price-menu__item-price" x-text="item.price"></span>
+              </div>
+            </template>
+            <!-- Note if exists -->
+            <p class="price-menu__note" x-show="cat.note" x-text="cat.note"></p>
+          </div>
+        </template>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       SCENT EXPERIENCE (Lovely Pedicure)
+       ══════════════════════════════ -->
+  <section class="scent-experience section" data-animate="fade-up">
+    <div class="container">
+      <div class="services__header">
+        <span class="services__label">The Lovely Pedicure</span>
+        <h2>Choose Your Scent</h2>
+        <hr class="gold-line gold-line--center gold-line--animated" aria-hidden="true">
+        <p style="max-width:560px;margin-inline:auto;color:var(--color-text-muted);font-size:var(--text-body)">Our signature Lovely Pedicure ($65) includes a 20-minute massage with collagen treatments and hot stone therapy. Select from five luxurious scents:</p>
+      </div>
+
+      <div class="scent-experience__grid" x-data="{ hoveredScent: null }" data-animate="stagger">
+        <button class="scent-card" @mouseenter="hoveredScent = 0" @mouseleave="hoveredScent = null" :class="{ 'scent-card--active': hoveredScent === 0 }">
+          <div class="scent-card__orb scent-card__orb--perfume"></div>
+          <h3 class="scent-card__name">No.5 Perfume</h3>
+          <p class="scent-card__desc">Classic & elegant</p>
+        </button>
+        <button class="scent-card" @mouseenter="hoveredScent = 1" @mouseleave="hoveredScent = null" :class="{ 'scent-card--active': hoveredScent === 1 }">
+          <div class="scent-card__orb scent-card__orb--orange"></div>
+          <h3 class="scent-card__name">Sweet Orange</h3>
+          <p class="scent-card__desc">Warm & citrusy</p>
+        </button>
+        <button class="scent-card" @mouseenter="hoveredScent = 2" @mouseleave="hoveredScent = null" :class="{ 'scent-card--active': hoveredScent === 2 }">
+          <div class="scent-card__orb scent-card__orb--crystal"></div>
+          <h3 class="scent-card__name">Crystal Water</h3>
+          <p class="scent-card__desc">Fresh & clean</p>
+        </button>
+        <button class="scent-card" @mouseenter="hoveredScent = 3" @mouseleave="hoveredScent = null" :class="{ 'scent-card--active': hoveredScent === 3 }">
+          <div class="scent-card__orb scent-card__orb--pearl"></div>
+          <h3 class="scent-card__name">Luxury Pearl</h3>
+          <p class="scent-card__desc">Soft & luminous</p>
+        </button>
+        <button class="scent-card" @mouseenter="hoveredScent = 4" @mouseleave="hoveredScent = null" :class="{ 'scent-card--active': hoveredScent === 4 }">
+          <div class="scent-card__orb scent-card__orb--lemon"></div>
+          <h3 class="scent-card__name">Lemon Splash</h3>
+          <p class="scent-card__desc">Bright & refreshing</p>
+        </button>
       </div>
     </div>
   </section>
@@ -426,7 +519,7 @@
   <!-- ══════════════════════════════
        KIDS SERVICES (diferenciador)
        ══════════════════════════════ -->
-  <section class="kids section" id="kids">
+  <section class="kids section kids--playful" id="kids">
     <div class="container">
       <div class="services__header" data-animate="fade-up">
         <span class="kids__badge">
@@ -440,7 +533,7 @@
         </span>
         <h2>Little Hands,<br>Big Smiles</h2>
         <hr class="gold-line gold-line--center gold-line--animated" aria-hidden="true">
-        <p class="services__label" style="max-width:560px;margin-inline:auto;color:var(--color-text-muted);font-size:var(--text-body);text-transform:none;letter-spacing:normal">Not every salon welcomes children — we do. Using only safe, kid-friendly products, we offer a full menu of nail and pedicure services designed for younger guests.</p>
+        <p class="kids__desc">Not every salon welcomes children — we do. Using only safe, kid-friendly products, we offer a full menu of nail and pedicure services designed for younger guests.</p>
       </div>
 
       <div class="services__grid" data-animate="stagger" style="max-width:800px;margin-inline:auto">
@@ -510,7 +603,7 @@
   <!-- ══════════════════════════════
        GALLERY
        ══════════════════════════════ -->
-  <section class="gallery section" id="gallery" x-data="lightbox">
+  <section class="gallery section" id="gallery" x-data="galleryLightbox">
     <div class="container">
       <div class="gallery__header" data-animate="fade-up">
         <span class="gallery__label">Our Work</span>
@@ -518,8 +611,16 @@
         <hr class="gold-line gold-line--center gold-line--animated" aria-hidden="true">
       </div>
 
+      <!-- Gallery filter tabs -->
+      <div class="gallery__filters" data-animate="fade-up" data-delay="1">
+        <button class="gallery__filter" :class="{ active: filter === 'all' }" @click="filter = 'all'">All</button>
+        <button class="gallery__filter" :class="{ active: filter === 'nails' }" @click="filter = 'nails'">Nails</button>
+        <button class="gallery__filter" :class="{ active: filter === 'pedicure' }" @click="filter = 'pedicure'">Pedicure</button>
+        <button class="gallery__filter" :class="{ active: filter === 'salon' }" @click="filter = 'salon'">Salon</button>
+      </div>
+
       <div class="gallery__grid" data-animate="stagger">
-        <div class="gallery__item" @click="openAt(0)" data-lightbox-src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g1.jpg">
+        <div class="gallery__item" data-category="nails" x-show="filter === 'all' || filter === 'nails'" x-transition.opacity @click="openAt(0)" data-lightbox-src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g1.jpg">
           <img src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g1.jpg"
                alt="Elegant nail design with intricate gold details at Golden Nails & Spa"
                width="400" height="400" loading="lazy" decoding="async">
@@ -527,7 +628,7 @@
             <svg class="gallery__overlay-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
           </div>
         </div>
-        <div class="gallery__item" @click="openAt(1)" data-lightbox-src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g2.jpg">
+        <div class="gallery__item" data-category="pedicure" x-show="filter === 'all' || filter === 'pedicure'" x-transition.opacity @click="openAt(1)" data-lightbox-src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g2.jpg">
           <img src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g2.jpg"
                alt="Professional pedicure service at Golden Nails & Spa Greenville"
                width="400" height="400" loading="lazy" decoding="async">
@@ -535,7 +636,7 @@
             <svg class="gallery__overlay-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
           </div>
         </div>
-        <div class="gallery__item" @click="openAt(2)" data-lightbox-src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g3.jpg">
+        <div class="gallery__item" data-category="nails" x-show="filter === 'all' || filter === 'nails'" x-transition.opacity @click="openAt(2)" data-lightbox-src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g3.jpg">
           <img src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g3.jpg"
                alt="Luxurious manicure with gel polish at Golden Nails salon"
                width="400" height="400" loading="lazy" decoding="async">
@@ -543,7 +644,7 @@
             <svg class="gallery__overlay-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
           </div>
         </div>
-        <div class="gallery__item" @click="openAt(3)" data-lightbox-src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g4-400x284.jpg">
+        <div class="gallery__item" data-category="nails" x-show="filter === 'all' || filter === 'nails'" x-transition.opacity @click="openAt(3)" data-lightbox-src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g4-400x284.jpg">
           <img src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g4-400x284.jpg"
                alt="Acrylic nail enhancement set with custom design"
                width="400" height="284" loading="lazy" decoding="async">
@@ -551,7 +652,7 @@
             <svg class="gallery__overlay-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
           </div>
         </div>
-        <div class="gallery__item" @click="openAt(4)" data-lightbox-src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g5.jpg">
+        <div class="gallery__item" data-category="nails" x-show="filter === 'all' || filter === 'nails'" x-transition.opacity @click="openAt(4)" data-lightbox-src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g5.jpg">
           <img src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g5.jpg"
                alt="Dipping powder nail art in trendy colors"
                width="400" height="400" loading="lazy" decoding="async">
@@ -559,7 +660,7 @@
             <svg class="gallery__overlay-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
           </div>
         </div>
-        <div class="gallery__item" @click="openAt(5)" data-lightbox-src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g6.jpg">
+        <div class="gallery__item" data-category="pedicure" x-show="filter === 'all' || filter === 'pedicure'" x-transition.opacity @click="openAt(5)" data-lightbox-src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g6.jpg">
           <img src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g6.jpg"
                alt="Spa pedicure with hot stone massage treatment"
                width="400" height="400" loading="lazy" decoding="async">
@@ -567,7 +668,7 @@
             <svg class="gallery__overlay-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
           </div>
         </div>
-        <div class="gallery__item" @click="openAt(6)" data-lightbox-src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g7-400x284.jpg">
+        <div class="gallery__item" data-category="nails" x-show="filter === 'all' || filter === 'nails'" x-transition.opacity @click="openAt(6)" data-lightbox-src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g7-400x284.jpg">
           <img src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g7-400x284.jpg"
                alt="Pink and white French tip nail design"
                width="400" height="284" loading="lazy" decoding="async">
@@ -575,7 +676,7 @@
             <svg class="gallery__overlay-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
           </div>
         </div>
-        <div class="gallery__item" @click="openAt(7)" data-lightbox-src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g8.jpg">
+        <div class="gallery__item" data-category="salon" x-show="filter === 'all' || filter === 'salon'" x-transition.opacity @click="openAt(7)" data-lightbox-src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g8.jpg">
           <img src="https://goldennailsandspagreenville.com/wp-content/uploads/2024/03/864-568-5026-GOLDEN-NAILS-SPA-g8.jpg"
                alt="Relaxing nail salon interior at Golden Nails & Spa"
                width="400" height="400" loading="lazy" decoding="async">
@@ -767,32 +868,39 @@
         </div>
 
         <!-- Form -->
-        <div data-animate="fade-left">
+        <div class="contact__form-card" data-animate="fade-left">
+          <h3 class="contact__form-title">Send Us a Message</h3>
+          <p class="contact__form-subtitle">Have a question or want to book? Fill out the form and we'll get back to you shortly.</p>
+
           <form class="form" @submit.prevent="submit()" x-show="!submitted">
-            <div class="form__group">
-              <label class="form__label" for="name">Your Name *</label>
-              <input class="form__input" type="text" id="name" x-model="name" required autocomplete="name">
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="name">Your Name *</label>
+                <input class="form__input" type="text" id="name" x-model="name" required autocomplete="name">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="email">Email Address *</label>
+                <input class="form__input" type="email" id="email" x-model="email" required autocomplete="email">
+              </div>
             </div>
-            <div class="form__group">
-              <label class="form__label" for="email">Email Address *</label>
-              <input class="form__input" type="email" id="email" x-model="email" required autocomplete="email">
-            </div>
-            <div class="form__group">
-              <label class="form__label" for="phone">Phone Number</label>
-              <input class="form__input" type="tel" id="phone" x-model="phone" autocomplete="tel">
-            </div>
-            <div class="form__group">
-              <label class="form__label" for="service">Service Interested In</label>
-              <select class="form__input" id="service" x-model="service">
-                <option value="">Select a service...</option>
-                <option value="manicure">Manicure</option>
-                <option value="pedicure">Pedicure</option>
-                <option value="nail-enhancements">Nail Enhancements</option>
-                <option value="dipping-powder">Dipping Powder</option>
-                <option value="waxing">Waxing</option>
-                <option value="kids">Kids' Services</option>
-                <option value="other">Other</option>
-              </select>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="phone">Phone Number</label>
+                <input class="form__input" type="tel" id="phone" x-model="phone" autocomplete="tel">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="service">Service Interested In</label>
+                <select class="form__input" id="service" x-model="service">
+                  <option value="">Select a service...</option>
+                  <option value="manicure">Manicure</option>
+                  <option value="pedicure">Pedicure</option>
+                  <option value="nail-enhancements">Nail Enhancements</option>
+                  <option value="dipping-powder">Dipping Powder</option>
+                  <option value="waxing">Waxing</option>
+                  <option value="kids">Kids' Services</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
             </div>
             <div class="form__group">
               <label class="form__label" for="message">Message *</label>
@@ -838,6 +946,7 @@
           <ul class="footer__links">
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#price-menu">Full Menu</a></li>
             <li><a href="#kids">Kids' Services</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#faq">FAQ</a></li>

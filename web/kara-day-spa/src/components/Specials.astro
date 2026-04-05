@@ -1,0 +1,135 @@
+---
+import SectionHeader from './ui/SectionHeader.astro';
+
+const specials = [
+  {
+    name: 'Fall for Reflexology',
+    regular: '$80',
+    special: '$60',
+    savings: 'Save $20',
+  },
+  {
+    name: 'Micro Peel (series of 3)',
+    regular: '$430',
+    special: '$300',
+    savings: 'Save $130',
+  },
+  {
+    name: 'AromaTouch',
+    regular: '$65',
+    special: '$45',
+    savings: 'Save $20',
+  },
+];
+---
+
+<section class="section" id="specials">
+  <div class="container">
+    <SectionHeader
+      tag="Current Specials"
+      title="Limited-Time <em>Offers</em>"
+      subtitle="Take advantage of our seasonal promotions — the perfect reason to try something new."
+      align="center"
+    />
+
+    <div class="specials-grid" data-animate="stagger">
+      {specials.map((item) => (
+        <article class="special-card">
+          <div class="special-savings">{item.savings}</div>
+          <h3>{item.name}</h3>
+          <div class="special-pricing">
+            <span class="special-regular">{item.regular}</span>
+            <span class="special-arrow" aria-hidden="true">&rarr;</span>
+            <span class="special-price">{item.special}</span>
+          </div>
+          <a href="https://www.secure-booker.com/karaspa/MakeAppointment/Search.aspx" target="_blank" rel="noopener noreferrer" class="btn-ghost">
+            Book This Special <span aria-hidden="true">&rarr;</span>
+          </a>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .specials-grid {
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: 1fr;
+    max-width: 900px;
+    margin-inline: auto;
+  }
+
+  @media (min-width: 640px) {
+    .specials-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .special-card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    border: 1px solid transparent;
+    transition: all var(--duration-normal) var(--ease-out);
+    position: relative;
+
+    &:hover {
+      border-color: var(--color-border-subtle);
+      box-shadow: var(--shadow-card-hover);
+      transform: translateY(-4px);
+    }
+  }
+
+  .special-savings {
+    display: inline-block;
+    background-color: oklch(68% 0.1 70 / 0.12);
+    color: var(--color-accent-dark);
+    font-family: var(--font-body);
+    font-size: var(--text-label);
+    font-weight: 500;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    padding: 0.25rem 0.875rem;
+    border-radius: var(--radius-full);
+  }
+
+  .special-card h3 {
+    font-size: var(--text-h4);
+  }
+
+  .special-pricing {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .special-regular {
+    font-family: var(--font-display);
+    font-size: var(--text-h3);
+    font-weight: 400;
+    color: var(--color-text-light);
+    text-decoration: line-through;
+  }
+
+  .special-arrow {
+    color: var(--color-text-light);
+    font-size: var(--text-small);
+  }
+
+  .special-price {
+    font-family: var(--font-display);
+    font-size: var(--text-h2);
+    font-weight: 600;
+    color: var(--color-accent-dark);
+  }
+
+  .special-card .btn-ghost {
+    margin-block-start: auto;
+  }
+</style>

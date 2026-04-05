@@ -96,11 +96,7 @@
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kid's Menu", "description": "Fun, safe manicure and pedicure for children" } }
       ]
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "3"
-    }
+    "keywords": ["nail salon", "manicure", "pedicure", "waxing", "nail enhancement", "greenville sc"]
   }
   </script>
 
@@ -176,6 +172,28 @@
     @keyframes bounce {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(8px); }
+    }
+    @keyframes shimmer {
+      0%   { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+    .hero__diagonal::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        105deg,
+        transparent 20%,
+        oklch(0.95 0.04 80 / 0.08) 30%,
+        oklch(1 0.02 80 / 0.18) 35%,
+        oklch(0.95 0.04 80 / 0.08) 40%,
+        transparent 50%
+      );
+      background-size: 200% 100%;
+      animation: shimmer 6s ease-in-out infinite;
+      pointer-events: none;
+      z-index: 2;
+      mix-blend-mode: soft-light;
     }
 
     .hero__tagline  { animation: slideUp 0.6s cubic-bezier(0.16,1,0.3,1) 0.2s both; }
@@ -426,6 +444,7 @@
       .reading-progress { animation: none; transform: scaleX(1); }
       .cursor-dot, .cursor-ring { display: none; }
       .hero__scroll svg { animation: none; }
+      .hero__diagonal::after { animation: none; opacity: 0; }
     }
   </style>
 </head>
@@ -506,13 +525,16 @@
       </div>
       <div class="social-proof__divider"></div>
       <div>
-        <div class="social-proof__stat-value">6+</div>
-        <div class="social-proof__stat-label">Service Categories</div>
+        <div class="social-proof__stat-value">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-3px;margin-right:4px"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/></svg>
+          Gift Cards
+        </div>
+        <div class="social-proof__stat-label">Available Now</div>
       </div>
       <div class="social-proof__divider"></div>
       <div>
-        <div class="social-proof__stat-value">5.0 &#9733;</div>
-        <div class="social-proof__stat-label">Client Rating</div>
+        <div class="social-proof__stat-value">Walk-Ins</div>
+        <div class="social-proof__stat-label">Always Welcome</div>
       </div>
       <div class="social-proof__divider"></div>
       <div>
@@ -611,11 +633,11 @@
         </div>
         <div class="service-card">
           <div class="service-card__icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/></svg>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
           </div>
-          <h3>Specials & Packages</h3>
-          <p>Seasonal promotions and combo packages. Check with us for current deals and group discounts.</p>
-          <a href="tel:+18642828683" class="service-card__cta">Book Now &rarr;</a>
+          <h3>Salon Policy</h3>
+          <p>We use ultra-hygienic disposable liners for every client. Gift certificates available. Appointments and walk-ins welcome.</p>
+          <a href="tel:+18642828683" class="service-card__cta">Learn More &rarr;</a>
         </div>
       </div>
     </div>
@@ -668,100 +690,99 @@
   <!-- ============================
        GALLERY
        ============================ -->
-  <section class="gallery section" id="gallery">
+  <section class="gallery section" id="gallery" x-data="{ filter: 'all' }">
     <div class="container">
       <div class="gallery__header" data-animate="fade-up">
         <p class="gallery__label">Our Work</p>
         <h2 class="gallery__title">Nail <strong>Artistry</strong></h2>
       </div>
 
+      <!-- Gallery filter — nail-salon-specific -->
+      <div class="gallery__filters" data-animate="fade-up">
+        <button class="gallery__filter-btn" :class="{ 'active': filter === 'all' }" @click="filter = 'all'">All</button>
+        <button class="gallery__filter-btn" :class="{ 'active': filter === 'manicure' }" @click="filter = 'manicure'">Manicure</button>
+        <button class="gallery__filter-btn" :class="{ 'active': filter === 'pedicure' }" @click="filter = 'pedicure'">Pedicure</button>
+        <button class="gallery__filter-btn" :class="{ 'active': filter === 'salon' }" @click="filter = 'salon'">Our Salon</button>
+      </div>
+
       <div class="gallery__grid" data-animate="stagger">
-        <div class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=600&fit=crop" width="600" height="600" loading="lazy" decoding="async" alt="Elegant gel manicure with gold accents at A Perfect 10 Nails Greenville">
+        <div class="gallery__item" x-show="filter === 'all' || filter === 'salon'" x-transition.opacity.duration.300ms>
+          <img src="http://aperfect10nails.com/MyPhotosGalary/IMG_9407.JPG" width="600" height="600" loading="lazy" decoding="async" alt="Interior view of A Perfect 10 Nails salon in Greenville SC">
         </div>
-        <div class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=400&h=400&fit=crop" width="400" height="400" loading="lazy" decoding="async" alt="Classic French tip manicure done at A Perfect 10 Nails">
+        <div class="gallery__item" x-show="filter === 'all' || filter === 'salon'" x-transition.opacity.duration.300ms>
+          <img src="http://aperfect10nails.com/MyPhotosGalary/IMG_4182.JPG" width="400" height="400" loading="lazy" decoding="async" alt="Salon workspace at A Perfect 10 Nails Greenville">
         </div>
-        <div class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400&h=400&fit=crop" width="400" height="400" loading="lazy" decoding="async" alt="Custom nail art design with intricate patterns">
+        <div class="gallery__item" x-show="filter === 'all' || filter === 'manicure'" x-transition.opacity.duration.300ms>
+          <img src="http://aperfect10nails.com/MyPhotosGalary/manicure4.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Professional manicure at A Perfect 10 Nails">
         </div>
-        <div class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=400&h=400&fit=crop" width="400" height="400" loading="lazy" decoding="async" alt="Luxury pedicure service at Greenville nail salon">
+        <div class="gallery__item" x-show="filter === 'all' || filter === 'salon'" x-transition.opacity.duration.300ms>
+          <img src="http://aperfect10nails.com/MyPhotosGalary/IMG_4741.JPG" width="400" height="400" loading="lazy" decoding="async" alt="Nail station at A Perfect 10 Nails">
         </div>
-        <div class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=400&h=400&fit=crop" width="400" height="400" loading="lazy" decoding="async" alt="Professional acrylic nail extensions in blush pink">
+        <div class="gallery__item" x-show="filter === 'all' || filter === 'pedicure'" x-transition.opacity.duration.300ms>
+          <img src="http://aperfect10nails.com/MyPhotosGalary/pedicure4.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Luxury pedicure service at A Perfect 10 Nails Greenville">
         </div>
-        <div class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&h=400&fit=crop&q=80" width="400" height="400" loading="lazy" decoding="async" alt="Dip powder manicure with seasonal nail art">
+        <div class="gallery__item" x-show="filter === 'all' || filter === 'salon'" x-transition.opacity.duration.300ms>
+          <img src="http://aperfect10nails.com/MyPhotosGalary/facial.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Facial treatment at A Perfect 10 Nails">
+        </div>
+        <div class="gallery__item" x-show="filter === 'all' || filter === 'salon'" x-transition.opacity.duration.300ms>
+          <img src="http://aperfect10nails.com/MyPhotosGalary/IMG_4740.JPG" width="400" height="400" loading="lazy" decoding="async" alt="A Perfect 10 Nails salon interior Greenville SC">
+        </div>
+        <div class="gallery__item" x-show="filter === 'all' || filter === 'salon'" x-transition.opacity.duration.300ms>
+          <img src="http://aperfect10nails.com/MyPhotosGalary/IMG_9070.JPG" width="400" height="400" loading="lazy" decoding="async" alt="Clean workspace at A Perfect 10 Nails">
+        </div>
+        <div class="gallery__item" x-show="filter === 'all' || filter === 'pedicure'" x-transition.opacity.duration.300ms>
+          <img src="http://aperfect10nails.com/MyPhotosGalary/IMG_9285.JPG" width="400" height="400" loading="lazy" decoding="async" alt="Pedicure station with disposable liners at A Perfect 10 Nails">
+        </div>
+        <div class="gallery__item" x-show="filter === 'all' || filter === 'salon'" x-transition.opacity.duration.300ms>
+          <img src="http://aperfect10nails.com/MyPhotosGalary/IMG_9408.JPG" width="400" height="400" loading="lazy" decoding="async" alt="A Perfect 10 Nails salon showcase">
+        </div>
+        <div class="gallery__item" x-show="filter === 'all' || filter === 'manicure'" x-transition.opacity.duration.300ms>
+          <img src="http://aperfect10nails.com/MyPhotosGalary/manicure5.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Detailed manicure work at A Perfect 10 Nails Greenville">
+        </div>
+        <div class="gallery__item" x-show="filter === 'all' || filter === 'manicure'" x-transition.opacity.duration.300ms>
+          <img src="http://aperfect10nails.com/MyPhotosGalary/IMG_8565.JPG" width="400" height="400" loading="lazy" decoding="async" alt="Manicure closeup at A Perfect 10 Nails">
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============================
-       TESTIMONIALS
+       REVIEWS — Real platform links
        ============================ -->
-  <section class="section" style="background: var(--color-surface);">
+  <section class="reviews section" style="background: var(--color-surface);">
     <div class="container">
       <div class="gallery__header" data-animate="fade-up">
-        <p class="services__label">Client Love</p>
-        <h2 class="services__title">What They <strong>Say</strong></h2>
+        <p class="services__label">Real Reviews</p>
+        <h2 class="services__title">See What Clients <strong>Say</strong></h2>
       </div>
 
-      <div class="testimonials__track" data-animate="fade-up">
-        <div class="testimonial-card">
-          <div class="testimonial-card__stars">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <div class="reviews__grid" data-animate="stagger">
+        <a href="https://www.yelp.com/biz/a-perfect-10-nails-and-spa-greenville" target="_blank" rel="noopener noreferrer" class="review-platform-card">
+          <div class="review-platform-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--color-primary-dark)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           </div>
-          <p class="testimonial-card__text">"The cleanest nail salon I've ever been to. You can actually see them use fresh liners and new tools for every client. My go-to spot in Greenville!"</p>
-          <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar" style="background: var(--color-primary);">SJ</div>
-            <div>
-              <div class="testimonial-card__name">Sarah J.</div>
-              <div class="testimonial-card__role">Regular Client</div>
-            </div>
-          </div>
-        </div>
+          <h3>Yelp</h3>
+          <p>Read reviews from real clients on Yelp and share your experience.</p>
+          <span class="review-platform-card__cta">Read Reviews &rarr;</span>
+        </a>
 
-        <div class="testimonial-card">
-          <div class="testimonial-card__stars">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <a href="https://www.google.com/search?q=a+perfect+10+nails+%26+spa+greenville+sc" target="_blank" rel="noopener noreferrer" class="review-platform-card">
+          <div class="review-platform-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
-          <p class="testimonial-card__text">"Brought my daughter for her first manicure and they made it such a special experience. The Kid's Menu is adorable and the staff was so patient with her."</p>
-          <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar" style="background: var(--color-secondary);">MT</div>
-            <div>
-              <div class="testimonial-card__name">Michelle T.</div>
-              <div class="testimonial-card__role">First-time Visitor</div>
-            </div>
-          </div>
-        </div>
+          <h3>Google</h3>
+          <p>Find us on Google and see ratings from the Greenville community.</p>
+          <span class="review-platform-card__cta">See on Google &rarr;</span>
+        </a>
 
-        <div class="testimonial-card">
-          <div class="testimonial-card__stars">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <a href="https://www.facebook.com/aperfect10nailsandspa/" target="_blank" rel="noopener noreferrer" class="review-platform-card">
+          <div class="review-platform-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--color-primary-dark)" stroke="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
           </div>
-          <p class="testimonial-card__text">"As a guy, I was nervous about going to a nail salon. The team here made me feel totally comfortable. Best pedicure I've ever had — no judgment, just great service."</p>
-          <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar" style="background: oklch(0.45 0.06 70);">DW</div>
-            <div>
-              <div class="testimonial-card__name">David W.</div>
-              <div class="testimonial-card__role">Monthly Regular</div>
-            </div>
-          </div>
-        </div>
+          <h3>Facebook</h3>
+          <p>Follow us on Facebook for updates, photos, and community reviews.</p>
+          <span class="review-platform-card__cta">Visit Facebook &rarr;</span>
+        </a>
       </div>
     </div>
   </section>
@@ -773,7 +794,7 @@
     <div class="container">
       <div class="about__grid">
         <div class="about__image-wrapper" data-animate="fade-right">
-          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=750&fit=crop" width="600" height="750" loading="lazy" decoding="async" alt="Interior of A Perfect 10 Nails salon in Greenville SC">
+          <img src="http://aperfect10nails.com/MyPhotosGalary/IMG_9407.JPG" width="600" height="750" loading="lazy" decoding="async" alt="Interior of A Perfect 10 Nails salon in Greenville SC">
         </div>
         <div class="about__content">
           <p class="about__label" data-animate="fade-up">Our Story</p>
@@ -811,9 +832,9 @@
        ============================ -->
   <section class="cta-banner" data-animate="fade-up">
     <div class="container">
-      <h2>New Clients Get <strong>15% Off</strong></h2>
-      <p>Book your first appointment today and experience the cleanest nail salon in Greenville. Your nails — and your peace of mind — will thank you.</p>
-      <a href="tel:+18642828683" class="btn btn--primary">Claim Your Offer</a>
+      <h2><strong>Gift Certificates</strong> Available</h2>
+      <p>Give the gift of pristine luxury. Perfect for birthdays, holidays, or a well-deserved treat. Walk-ins and appointments always welcome.</p>
+      <a href="tel:+18642828683" class="btn btn--primary">Call to Purchase</a>
     </div>
   </section>
 

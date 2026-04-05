@@ -437,7 +437,7 @@ import '../styles/animations.css';
 </section>
 
 <!-- ===== COMMUNITY ===== -->
-<section id="community" class="section" data-label="Community">
+<section id="community" class="section section-compact" data-label="Community">
   <div class="container">
     <div class="community-section" data-animate="fade-up">
       <span class="section-tag">Our Community</span>
@@ -1406,6 +1406,10 @@ import '../styles/animations.css';
   }
 }
 
+.section-compact {
+  padding-block: clamp(3rem, 6vw, 5rem);
+}
+
 /* COMMUNITY */
 .community-section {
   text-align: center;
@@ -1415,7 +1419,7 @@ import '../styles/animations.css';
   max-width: 55ch;
   margin-inline: auto;
   color: var(--color-text-muted);
-  margin-block: var(--space-3) var(--space-6);
+  margin-block: var(--space-2) var(--space-4);
 }
 
 .community-highlights {
@@ -1423,11 +1427,11 @@ import '../styles/animations.css';
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-4);
   text-align: center;
-  margin-block-end: var(--space-4);
+  margin-block-end: var(--space-2);
 }
 
 .community-card {
-  padding: var(--space-6);
+  padding: var(--space-4);
   background: var(--color-surface);
   border-radius: var(--radius-xl);
   display: flex;
@@ -1452,10 +1456,10 @@ import '../styles/animations.css';
 }
 
 .community-image {
-  margin-block: var(--space-3) var(--space-4);
+  margin-block: var(--space-2) var(--space-1);
   border-radius: var(--radius-xl);
   overflow: hidden;
-  max-height: 400px;
+  max-height: 300px;
 }
 
 .community-img {

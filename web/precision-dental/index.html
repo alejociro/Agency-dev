@@ -122,11 +122,12 @@
       </a>
       <nav aria-label="Main navigation">
         <ul class="nav-links">
-          <li><a href="index.html" class="nav-link active">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="services.html" class="nav-link">Services</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="https://rwl.io/3ID9mRv" class="btn btn-primary nav-cta" data-magnetic target="_blank" rel="noopener">Book Appointment</a></li>
+          <li><a href="index.html" class="nav-link active" data-i18n="nav-home">Home</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav-about">About</a></li>
+          <li><a href="services.html" class="nav-link" data-i18n="nav-services">Services</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav-contact">Contact</a></li>
+          <li><a href="https://rwl.io/3ID9mRv" class="btn btn-primary nav-cta" data-magnetic target="_blank" rel="noopener" data-i18n="nav-cta">Book Appointment</a></li>
+          <li><button class="lang-toggle" onclick="toggleLanguage()" aria-label="Cambiar a español"><span class="lang-en lang-active">EN</span><span class="lang-sep">|</span><span class="lang-es lang-inactive">ES</span></button></li>
         </ul>
       </nav>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -139,11 +140,12 @@
 
   <!-- Mobile nav overlay -->
   <div class="nav-mobile" role="dialog" aria-label="Mobile navigation">
-    <a href="index.html" class="nav-mobile-link">Home</a>
-    <a href="about.html" class="nav-mobile-link">About</a>
-    <a href="services.html" class="nav-mobile-link">Services</a>
-    <a href="contact.html" class="nav-mobile-link">Contact</a>
-    <a href="https://rwl.io/3ID9mRv" class="btn btn-primary" target="_blank" rel="noopener">Book Appointment</a>
+    <a href="index.html" class="nav-mobile-link" data-i18n="nav-home">Home</a>
+    <a href="about.html" class="nav-mobile-link" data-i18n="nav-about">About</a>
+    <a href="services.html" class="nav-mobile-link" data-i18n="nav-services">Services</a>
+    <a href="contact.html" class="nav-mobile-link" data-i18n="nav-contact">Contact</a>
+    <a href="https://rwl.io/3ID9mRv" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="nav-cta">Book Appointment</a>
+    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Cambiar a español"><span class="lang-en lang-active">EN</span><span class="lang-sep">|</span><span class="lang-es lang-inactive">ES</span></button>
   </div>
 
   <!-- ═══ HERO ═══ -->
@@ -157,21 +159,21 @@
       </svg>
     </div>
     <div class="container hero-content">
-      <span class="hero-tag section-tag">Greenville, SC Dental Practice</span>
-      <h1 class="hero-title" data-kinetic>High-Quality Dental Care For All</h1>
-      <p class="hero-subtitle">We are a team of passionate dental experts dedicated to ensuring your smile is healthy and sparkling. Everyone deserves care in a safe, diverse environment.</p>
+      <span class="hero-tag section-tag" data-i18n="home-hero-tag">Greenville, SC Dental Practice</span>
+      <h1 class="hero-title" data-kinetic data-i18n="home-hero-title">High-Quality Dental Care For All</h1>
+      <p class="hero-subtitle" data-i18n="home-hero-subtitle">We are a team of passionate dental experts dedicated to ensuring your smile is healthy and sparkling. Everyone deserves care in a safe, diverse environment.</p>
       <div class="hero-actions hero-cta">
-        <a href="https://rwl.io/3ID9mRv" class="btn btn-accent" data-magnetic target="_blank" rel="noopener">Book an Appointment</a>
-        <a href="#services" class="btn btn-secondary" style="border-color: rgba(254,253,251,0.4); color: var(--color-white);">Our Services &rarr;</a>
+        <a href="https://rwl.io/3ID9mRv" class="btn btn-accent" data-magnetic target="_blank" rel="noopener" data-i18n="home-hero-book">Book an Appointment</a>
+        <a href="#services" class="btn btn-secondary" style="border-color: rgba(254,253,251,0.4); color: var(--color-white);" data-i18n="home-hero-services">Our Services &rarr;</a>
       </div>
       <div class="hero-stats" data-scroll="fade-up">
         <div class="stat">
           <div class="stat-number" data-counter data-target="15" data-suffix="+">0+</div>
-          <div class="stat-label">Years Experience</div>
+          <div class="stat-label" data-i18n="home-stat-years">Years Experience</div>
         </div>
         <div class="stat">
           <div class="stat-number">4.8/5</div>
-          <div class="stat-label">Google Rating</div>
+          <div class="stat-label" data-i18n="home-stat-rating">Google Rating</div>
         </div>
         <div class="stat">
           <div class="stat-number">
@@ -191,13 +193,13 @@
     <div class="container">
       <div class="grid-asymmetric" style="align-items: center;">
         <div data-scroll="fade-left">
-          <span class="section-tag">Our Mission</span>
-          <h2>Dental Care Is a Fundamental Human Right</h2>
-          <p style="margin-block: var(--space-4);">Quality dental care is a fundamental human right. We believe everyone deserves to receive dental care in a safe environment that reflects the diversity of the world we live in today. Our mission is to bring affordable, accessible care to hardworking, everyday people of all sizes, colors, and backgrounds.</p>
-          <p class="text-muted" style="margin-block-end: var(--space-6);">Stop by our office or contact us to see how we can brighten your smile.</p>
+          <span class="section-tag" data-i18n="home-mission-tag">Our Mission</span>
+          <h2 data-i18n="home-mission-title">Dental Care Is a Fundamental Human Right</h2>
+          <p style="margin-block: var(--space-4);" data-i18n="home-mission-text">Quality dental care is a fundamental human right. We believe everyone deserves to receive dental care in a safe environment that reflects the diversity of the world we live in today. Our mission is to bring affordable, accessible care to hardworking, everyday people of all sizes, colors, and backgrounds.</p>
+          <p class="text-muted" style="margin-block-end: var(--space-6);" data-i18n="home-mission-subtext">Stop by our office or contact us to see how we can brighten your smile.</p>
           <div style="display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center;">
-            <a href="https://rwl.io/3ID9mRv" class="btn btn-primary" target="_blank" rel="noopener">Book an Appointment</a>
-            <span class="badge-accent badge">Nosotros hablamos espa&ntilde;ol</span>
+            <a href="https://rwl.io/3ID9mRv" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="home-mission-cta">Book an Appointment</a>
+            <span class="badge-accent badge" data-i18n="home-mission-badge">Nosotros hablamos espa&ntilde;ol</span>
           </div>
         </div>
         <div class="bleed-right" data-scroll="fade-right">
@@ -211,57 +213,57 @@
   <section class="section bg-warm" id="services" data-label="Services">
     <div class="container">
       <div style="text-align: center; margin-block-end: var(--space-8);" data-scroll="fade-up">
-        <span class="section-tag">What We Offer</span>
-        <h2>Our Services</h2>
-        <p style="margin-inline: auto; margin-block-start: var(--space-2); color: var(--color-text-muted);">Our practice features a full range of affordable dental services to care for your smile.</p>
+        <span class="section-tag" data-i18n="home-svc-tag">What We Offer</span>
+        <h2 data-i18n="home-svc-title">Our Services</h2>
+        <p style="margin-inline: auto; margin-block-start: var(--space-2); color: var(--color-text-muted);" data-i18n="home-svc-subtitle">Our practice features a full range of affordable dental services to care for your smile.</p>
       </div>
       <div class="bento" data-scroll="stagger">
         <div class="bento-item">
           <div class="card-icon" style="background: rgba(254,253,251,0.15); color: var(--color-white);">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 2 6 5 6 8c0 4 2 6 3 10h6c1-4 3-6 3-10 0-3-2-6-6-6z"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
           </div>
-          <h3>Cosmetic Dentistry</h3>
-          <p>Teeth whitening, custom porcelain veneers, dental bonding, and invisible braces to give you the smile you have always wanted.</p>
-          <a href="services.html" class="btn btn-secondary" style="border-color: rgba(254,253,251,0.3); color: var(--color-white); margin-block-start: auto; align-self: flex-start;">Learn More &rarr;</a>
+          <h3 data-i18n="home-svc-cosmetic">Cosmetic Dentistry</h3>
+          <p data-i18n="home-svc-cosmetic-text">Teeth whitening, custom porcelain veneers, dental bonding, and invisible braces to give you the smile you have always wanted.</p>
+          <a href="services.html" class="btn btn-secondary" style="border-color: rgba(254,253,251,0.3); color: var(--color-white); margin-block-start: auto; align-self: flex-start;" data-i18n="home-svc-learn">Learn More &rarr;</a>
         </div>
         <div class="bento-item">
           <div class="card-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h3>Family Dentistry</h3>
-          <p>Routine cleanings, exams, digital X-rays, fluoride treatments, and sealants for patients of all ages.</p>
+          <h3 data-i18n="home-svc-family">Family Dentistry</h3>
+          <p data-i18n="home-svc-family-text">Routine cleanings, exams, digital X-rays, fluoride treatments, and sealants for patients of all ages.</p>
         </div>
         <div class="bento-item">
           <div class="card-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
           </div>
-          <h3>Reconstructive</h3>
-          <p>Crowns, dental implants, bridges, inlays, onlays, and full-mouth rehabilitation.</p>
+          <h3 data-i18n="home-svc-reconstructive">Reconstructive</h3>
+          <p data-i18n="home-svc-reconstructive-text">Crowns, dental implants, bridges, inlays, onlays, and full-mouth rehabilitation.</p>
         </div>
         <div class="bento-item">
           <div class="card-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8"/><path d="M12 17v4"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
-          <h3>CEREC Technology</h3>
-          <p>CAD/CAM digital modeling for same-day ceramic restorations. Chairside Economical Restoration of Esthetic Ceramic.</p>
+          <h3 data-i18n="home-svc-cerec">CEREC Technology</h3>
+          <p data-i18n="home-svc-cerec-text">CAD/CAM digital modeling for same-day ceramic restorations. Chairside Economical Restoration of Esthetic Ceramic.</p>
         </div>
         <div class="bento-item">
           <div class="card-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
           </div>
-          <h3>Emergency &amp; Sedation</h3>
-          <p>Root canals, tooth removal, non-surgical periodontal therapy, night guards, and sedation options for anxious patients.</p>
+          <h3 data-i18n="home-svc-emergency">Emergency &amp; Sedation</h3>
+          <p data-i18n="home-svc-emergency-text">Root canals, tooth removal, non-surgical periodontal therapy, night guards, and sedation options for anxious patients.</p>
         </div>
         <div class="bento-item">
           <div class="card-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
           </div>
-          <h3>Dentures &amp; Partials</h3>
-          <p>Custom-fit dentures and partial dentures to restore your complete, confident smile.</p>
+          <h3 data-i18n="home-svc-dentures">Dentures &amp; Partials</h3>
+          <p data-i18n="home-svc-dentures-text">Custom-fit dentures and partial dentures to restore your complete, confident smile.</p>
         </div>
       </div>
       <div style="text-align: center; margin-block-start: var(--space-8);" data-scroll="fade-up">
-        <a href="services.html" class="btn btn-primary" data-magnetic>View All Services</a>
+        <a href="services.html" class="btn btn-primary" data-magnetic data-i18n="home-svc-view-all">View All Services</a>
       </div>
     </div>
   </section>
@@ -274,11 +276,11 @@
           <img src="https://precisiondentalsc.com/wp-content/uploads/2022/08/PrecisionDental_5_2022__50-web.jpg" alt="Inside Precision Dental office in Greenville" width="800" height="600" loading="lazy" decoding="async" style="width: 100%; height: auto;">
         </div>
         <div data-scroll="fade-right">
-          <span class="section-tag">Why Precision Dental</span>
-          <h2>You No Longer Have To Go To The Dentist. Now, You Get To Go.</h2>
-          <p style="margin-block: var(--space-4);">When you walk through our doors, you will feel something different than other dentist offices you may have been to. Apart from being warmly welcomed into a comfortable, clean and professional environment, you will sense a sort of buzz in the air, the kind of vibe that only exudes from a place that is thriving.</p>
-          <p class="text-muted" style="margin-block-end: var(--space-6);">We truly find joy in our work, which is what motivates us to come in each and every day and give 100%, using the most sophisticated techniques and up-to-date technology, to ensure that you receive the dental care you deserve.</p>
-          <a href="about.html" class="btn btn-secondary">Meet Dr. Groce &rarr;</a>
+          <span class="section-tag" data-i18n="home-why-tag">Why Precision Dental</span>
+          <h2 data-i18n="home-why-title">You No Longer Have To Go To The Dentist. Now, You Get To Go.</h2>
+          <p style="margin-block: var(--space-4);" data-i18n="home-why-text">When you walk through our doors, you will feel something different than other dentist offices you may have been to. Apart from being warmly welcomed into a comfortable, clean and professional environment, you will sense a sort of buzz in the air, the kind of vibe that only exudes from a place that is thriving.</p>
+          <p class="text-muted" style="margin-block-end: var(--space-6);" data-i18n="home-why-subtext">We truly find joy in our work, which is what motivates us to come in each and every day and give 100%, using the most sophisticated techniques and up-to-date technology, to ensure that you receive the dental care you deserve.</p>
+          <a href="about.html" class="btn btn-secondary" data-i18n="home-why-cta">Meet Dr. Groce &rarr;</a>
         </div>
       </div>
     </div>
@@ -288,17 +290,17 @@
   <section class="section bg-warm" id="testimonials" data-label="Testimonials">
     <div class="container">
       <div style="text-align: center; margin-block-end: var(--space-8);" data-scroll="fade-up">
-        <span class="section-tag">Patient Stories</span>
-        <h2>What Our Patients Say</h2>
+        <span class="section-tag" data-i18n="home-test-tag">Patient Stories</span>
+        <h2 data-i18n="home-test-title">What Our Patients Say</h2>
       </div>
       <div style="max-width: 740px; margin-inline: auto;" data-scroll="scale-in">
         <div class="testimonial-card">
-          <p class="testimonial-text">I have always been nervous about going to the dentist, but after going to Precision Dental, that has changed. Everyone was so kind and very easy to talk to and explained everything they were doing. A great group and I plan to keep up with my dental visits now that I have been there.</p>
+          <p class="testimonial-text" data-i18n="home-test-text">I have always been nervous about going to the dentist, but after going to Precision Dental, that has changed. Everyone was so kind and very easy to talk to and explained everything they were doing. A great group and I plan to keep up with my dental visits now that I have been there.</p>
           <div style="display: flex; align-items: center; gap: var(--space-3); margin-block-start: var(--space-4);">
             <div style="width: 48px; height: 48px; border-radius: var(--radius-full); background: var(--color-primary-glow); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 700; color: var(--color-primary);">NN</div>
             <div>
               <p class="testimonial-author">Nancy N.</p>
-              <p class="testimonial-source">Google Reviewer</p>
+              <p class="testimonial-source" data-i18n="home-test-source">Google Reviewer</p>
             </div>
             <div style="margin-inline-start: auto; display: flex; gap: 2px; color: var(--color-accent);">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -311,7 +313,7 @@
         </div>
       </div>
       <p style="text-align: center; margin-block-start: var(--space-4);" class="text-muted" data-scroll="fade-up">
-        <strong style="color: var(--color-primary);">4.8 out of 5</strong> based on Google Reviews
+        <strong style="color: var(--color-primary);" data-i18n="home-test-rating">4.8 out of 5</strong> <span data-i18n="home-test-rating-suffix">based on Google Reviews</span>
       </p>
     </div>
   </section>
@@ -319,11 +321,11 @@
   <!-- ═══ CTA FULL WIDTH ═══ -->
   <section class="section bg-primary" style="text-align: center;" id="cta" data-label="Book Now">
     <div class="container" data-scroll="fade-up">
-      <h2 style="color: var(--color-white); max-width: 600px; margin-inline: auto;">Ready to Transform Your Smile?</h2>
-      <p style="color: rgba(254,253,251,0.75); margin-block: var(--space-4); max-width: 500px; margin-inline: auto;">Schedule your appointment today and experience the Precision Dental difference. New patients welcome.</p>
+      <h2 style="color: var(--color-white); max-width: 600px; margin-inline: auto;" data-i18n="home-cta-title">Ready to Transform Your Smile?</h2>
+      <p style="color: rgba(254,253,251,0.75); margin-block: var(--space-4); max-width: 500px; margin-inline: auto;" data-i18n="home-cta-text">Schedule your appointment today and experience the Precision Dental difference. New patients welcome.</p>
       <div style="display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center;">
-        <a href="https://rwl.io/3ID9mRv" class="btn btn-accent" data-magnetic target="_blank" rel="noopener">Book an Appointment</a>
-        <a href="tel:8642328393" class="btn btn-secondary" style="border-color: rgba(254,253,251,0.3); color: var(--color-white);">Call (864) 232-8393</a>
+        <a href="https://rwl.io/3ID9mRv" class="btn btn-accent" data-magnetic target="_blank" rel="noopener" data-i18n="home-cta-book">Book an Appointment</a>
+        <a href="tel:8642328393" class="btn btn-secondary" style="border-color: rgba(254,253,251,0.3); color: var(--color-white);" data-i18n="home-cta-call">Call (864) 232-8393</a>
       </div>
     </div>
   </section>
@@ -333,16 +335,16 @@
     <div class="container">
       <div class="contact-grid">
         <div data-scroll="fade-left">
-          <span class="section-tag">Get In Touch</span>
-          <h2>Let Us Know How We Can Help</h2>
-          <p class="text-muted" style="margin-block: var(--space-4);">We would love to hear from you. Reach out to schedule an appointment or ask any questions.</p>
+          <span class="section-tag" data-i18n="home-contact-tag">Get In Touch</span>
+          <h2 data-i18n="home-contact-title">Let Us Know How We Can Help</h2>
+          <p class="text-muted" style="margin-block: var(--space-4);" data-i18n="home-contact-text">We would love to hear from you. Reach out to schedule an appointment or ask any questions.</p>
           <div style="display: flex; flex-direction: column; gap: var(--space-4); margin-block-start: var(--space-6);">
             <div class="contact-info-item">
               <div class="contact-icon">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               </div>
               <div>
-                <strong>Phone</strong>
+                <strong data-i18n="home-contact-phone">Phone</strong>
                 <p><a href="tel:8642328393">(864) 232-8393</a></p>
               </div>
             </div>
@@ -351,7 +353,7 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </div>
               <div>
-                <strong>Email</strong>
+                <strong data-i18n="home-contact-email">Email</strong>
                 <p><a href="mailto:smile@precisiondentalsc.com">smile@precisiondentalsc.com</a></p>
               </div>
             </div>
@@ -360,7 +362,7 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
               <div>
-                <strong>Address</strong>
+                <strong data-i18n="home-contact-address">Address</strong>
                 <p>10 Pelham Road, Greenville, SC 29607</p>
               </div>
             </div>
@@ -369,7 +371,7 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               </div>
               <div>
-                <strong>Hours</strong>
+                <strong data-i18n="home-contact-hours">Hours</strong>
                 <p>Mon&ndash;Thu: 8:30 AM &ndash; 5:00 PM<br><span class="text-muted">Lunch: 12:30 &ndash; 2:00 PM</span></p>
               </div>
             </div>
@@ -378,36 +380,36 @@
         <div data-scroll="fade-right">
           <form class="card" action="https://formspree.io/f/placeholder" method="POST" style="display: flex; flex-direction: column; gap: var(--space-4);">
             <div class="form-group">
-              <label class="form-label" for="home-name">Full Name</label>
-              <input class="form-input" type="text" id="home-name" name="name" placeholder="Your name" required>
+              <label class="form-label" for="home-name" data-i18n="home-form-name-label">Full Name</label>
+              <input class="form-input" type="text" id="home-name" name="name" placeholder="Your name" required data-i18n-ph="ph-name">
             </div>
             <div class="form-group">
-              <label class="form-label" for="home-email">Email</label>
-              <input class="form-input" type="email" id="home-email" name="email" placeholder="your@email.com" required>
+              <label class="form-label" for="home-email" data-i18n="home-form-email-label">Email</label>
+              <input class="form-input" type="email" id="home-email" name="email" placeholder="your@email.com" required data-i18n-ph="ph-email">
             </div>
             <div class="form-group">
-              <label class="form-label" for="home-phone">Phone</label>
-              <input class="form-input" type="tel" id="home-phone" name="phone" placeholder="(___) ___-____">
+              <label class="form-label" for="home-phone" data-i18n="home-form-phone-label">Phone</label>
+              <input class="form-input" type="tel" id="home-phone" name="phone" placeholder="(___) ___-____" data-i18n-ph="ph-phone">
             </div>
             <div class="form-group">
-              <label class="form-label" for="home-service">Interested In</label>
+              <label class="form-label" for="home-service" data-i18n="home-form-service-label">Interested In</label>
               <select class="form-select" id="home-service" name="service">
-                <option value="">Select a service...</option>
-                <option value="teeth-whitening">Teeth Whitening</option>
-                <option value="dentures-partials">Dentures &amp; Partials</option>
-                <option value="veneers">Custom Porcelain Veneers</option>
-                <option value="crowns">Crowns</option>
-                <option value="dental-bonding">Dental Bonding</option>
-                <option value="dental-implants">Dental Implants</option>
-                <option value="cleaning-exam">Routine Cleaning &amp; Exam</option>
-                <option value="other">Other</option>
+                <option value="" data-i18n="opt-select">Select a service...</option>
+                <option value="teeth-whitening" data-i18n="opt-whitening">Teeth Whitening</option>
+                <option value="dentures-partials" data-i18n="opt-dentures">Dentures &amp; Partials</option>
+                <option value="veneers" data-i18n="opt-veneers">Custom Porcelain Veneers</option>
+                <option value="crowns" data-i18n="opt-crowns">Crowns</option>
+                <option value="dental-bonding" data-i18n="opt-bonding">Dental Bonding</option>
+                <option value="dental-implants" data-i18n="opt-implants">Dental Implants</option>
+                <option value="cleaning-exam" data-i18n="opt-cleaning">Routine Cleaning &amp; Exam</option>
+                <option value="other" data-i18n="opt-other">Other</option>
               </select>
             </div>
             <div class="form-group">
-              <label class="form-label" for="home-message">Message</label>
-              <textarea class="form-textarea" id="home-message" name="message" placeholder="Tell us how we can help..." rows="4"></textarea>
+              <label class="form-label" for="home-message" data-i18n="home-form-message-label">Message</label>
+              <textarea class="form-textarea" id="home-message" name="message" placeholder="Tell us how we can help..." rows="4" data-i18n-ph="ph-message"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send Message</button>
+            <button type="submit" class="btn btn-primary" style="align-self: flex-start;" data-i18n="home-form-submit">Send Message</button>
           </form>
         </div>
       </div>
@@ -420,39 +422,39 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <img src="https://precisiondentalsc.com/wp-content/uploads/2022/08/PrecisionDentalLogo.png" alt="Precision Dental" width="140" height="55" loading="lazy" decoding="async" style="filter: brightness(0) invert(1); opacity: 0.8;">
-          <p>Quality dental care is a fundamental human right. We bring affordable, accessible care to everyone in Greenville, SC.</p>
+          <p data-i18n="footer-brand-text">Quality dental care is a fundamental human right. We bring affordable, accessible care to everyone in Greenville, SC.</p>
         </div>
         <div>
-          <h4 class="footer-heading">Pages</h4>
+          <h4 class="footer-heading" data-i18n="footer-pages">Pages</h4>
           <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="index.html" data-i18n="footer-home">Home</a></li>
+            <li><a href="about.html" data-i18n="footer-about">About</a></li>
+            <li><a href="services.html" data-i18n="footer-services-link">Services</a></li>
+            <li><a href="contact.html" data-i18n="footer-contact-link">Contact Us</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="footer-heading">Services</h4>
+          <h4 class="footer-heading" data-i18n="footer-services">Services</h4>
           <ul class="footer-links">
-            <li><a href="services.html">Teeth Whitening</a></li>
-            <li><a href="services.html">Dental Implants</a></li>
-            <li><a href="services.html">Cosmetic Dentistry</a></li>
-            <li><a href="services.html">Family Dentistry</a></li>
+            <li><a href="services.html" data-i18n="footer-whitening">Teeth Whitening</a></li>
+            <li><a href="services.html" data-i18n="footer-implants">Dental Implants</a></li>
+            <li><a href="services.html" data-i18n="footer-cosmetic">Cosmetic Dentistry</a></li>
+            <li><a href="services.html" data-i18n="footer-family">Family Dentistry</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="footer-heading">Contact</h4>
+          <h4 class="footer-heading" data-i18n="footer-contact">Contact</h4>
           <ul class="footer-links">
             <li><a href="tel:8642328393">(864) 232-8393</a></li>
             <li><a href="mailto:smile@precisiondentalsc.com">smile@precisiondentalsc.com</a></li>
             <li>10 Pelham Road<br>Greenville, SC 29607</li>
-            <li>Mon&ndash;Thu: 8:30 AM &ndash; 5 PM</li>
+            <li data-i18n="footer-hours">Mon&ndash;Thu: 8:30 AM &ndash; 5 PM</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Precision Dental. All rights reserved.</p>
-        <a href="#" style="color: rgba(254,253,251,0.4);">Privacy Policy</a>
+        <p data-i18n="footer-rights">&copy; 2026 Precision Dental. All rights reserved.</p>
+        <a href="#" style="color: rgba(254,253,251,0.4);" data-i18n="footer-privacy">Privacy Policy</a>
       </div>
     </div>
   </footer>

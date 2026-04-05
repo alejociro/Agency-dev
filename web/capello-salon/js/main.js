@@ -193,6 +193,120 @@
     document.querySelectorAll('.ribbon-svg').forEach(el => ribbonObserver.observe(el));
   }
 
+  /* ── 9. BEFORE/AFTER SLIDER ── */
+  function initBeforeAfter() {
+    document.querySelectorAll('[data-before-after]').forEach(card => {
+      const afterEl = card.querySelector('.ba-card__after');
+      const divider = card.querySelector('.ba-card__divider');
+      const handle = card.querySelector('.ba-card__handle');
+      if (!afterEl) return;
+
+      let isDragging = false;
+
+      function updatePosition(x) {
+        const rect = card.getBoundingClientRect();
+        let pct = ((x - rect.left) / rect.width) * 100;
+        pct = Math.max(5, Math.min(95, pct));
+        afterEl.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+        if (divider) divider.style.left = pct + '%';
+        if (handle) handle.style.left = pct + '%';
+      }
+
+      card.addEventListener('pointerdown', (e) => {
+        isDragging = true;
+        card.setPointerCapture(e.pointerId);
+        updatePosition(e.clientX);
+      });
+
+      card.addEventListener('pointermove', (e) => {
+        if (isDragging) updatePosition(e.clientX);
+      });
+
+      card.addEventListener('pointerup', () => { isDragging = false; });
+      card.addEventListener('pointercancel', () => { isDragging = false; });
+    });
+  }
+
+  /* ── 10. MAGNETIC BUTTON ── */
+  function initMagnetic() {
+    if (prefersReducedMotion) return;
+
+    document.querySelectorAll('[data-magnetic]').forEach(btn => {
+      btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+      });
+
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = '';
+      });
+    });
+  }
+
+  /* ── 11. SECTION DOTS NAVIGATION ── */
+  function initSectionDots() {
+    const dots = document.querySelectorAll('.section-dots__dot');
+    if (!dots.length) return;
+
+    const sections = [];
+    dots.forEach(dot => {
+      const sectionId = dot.dataset.section;
+      const el = document.getElementById(sectionId);
+      if (el) sections.push({ el, dot });
+    });
+
+    /* Click to scroll */
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const target = document.getElementById(dot.dataset.section);
+        if (target) {
+          const navH = document.querySelector('.nav')?.offsetHeight || 0;
+          window.scrollTo({
+            top: target.getBoundingClientRect().top + window.scrollY - navH - 20,
+            behavior: prefersReducedMotion ? 'auto' : 'smooth'
+          });
+        }
+      });
+    });
+
+    /* Update active dot on scroll */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          dots.forEach(d => d.classList.remove('is-active'));
+          const match = sections.find(s => s.el === entry.target);
+          if (match) match.dot.classList.add('is-active');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    sections.forEach(s => { if (s.el) observer.observe(s.el); });
+  }
+
+  /* ── 12. SPLIT TEXT REVEAL ── */
+  function initSplitReveal() {
+    const splitEls = document.querySelectorAll('[data-split]');
+    if (!splitEls.length) return;
+
+    if (prefersReducedMotion) {
+      splitEls.forEach(el => el.classList.add('is-visible'));
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    splitEls.forEach(el => observer.observe(el));
+  }
+
   /* ── INIT ── */
   function init() {
     initScrollReveal();
@@ -203,6 +317,10 @@
     initSmoothScroll();
     initParallax();
     initRibbonAnimation();
+    initBeforeAfter();
+    initMagnetic();
+    initSectionDots();
+    initSplitReveal();
   }
 
   if (document.readyState === 'loading') {

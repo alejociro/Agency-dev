@@ -170,6 +170,68 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   });
 
+  /* ── Gallery Filter ───────────────────────────── */
+  const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item[data-category]');
+
+  if (filterBtns.length && galleryItems.length) {
+    filterBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+
+        // Update active button
+        filterBtns.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // Filter items
+        galleryItems.forEach((item) => {
+          const matches = filter === 'all' || item.dataset.category === filter;
+          if (matches) {
+            item.classList.remove('gallery-hidden');
+          } else {
+            item.classList.add('gallery-hidden');
+          }
+        });
+      });
+    });
+  }
+
+  /* ── Mobile Hero Carousel Dots ──────────────── */
+  const heroScroll = document.querySelector('.hero__panels');
+  const scrollDots = document.querySelectorAll('.hero__scroll-dot');
+
+  if (heroScroll && scrollDots.length) {
+    const panels = heroScroll.querySelectorAll('.hero__panel');
+
+    // Update dots on scroll
+    heroScroll.addEventListener('scroll', () => {
+      const scrollLeft = heroScroll.scrollLeft;
+      const panelWidth = heroScroll.scrollWidth / panels.length;
+      const activeIndex = Math.round(scrollLeft / panelWidth);
+
+      scrollDots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === activeIndex);
+      });
+    }, { passive: true });
+
+    // Click dot to scroll to panel
+    scrollDots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        const panel = panels[i];
+        if (panel) {
+          panel.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        }
+      });
+    });
+  }
+
+  /* ── Show Desktop-Only Instagram Items ──────── */
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    document.querySelectorAll('[data-insta-desktop]').forEach((item) => {
+      item.style.display = '';
+    });
+  }
+
   /* ── Smooth scroll for anchor links ──────────── */
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener('click', (e) => {

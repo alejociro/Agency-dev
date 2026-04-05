@@ -1,7 +1,7 @@
 {
   "negocio": "wintergreen-spa",
   "url_produccion": "https://wintergreen-spa.vercel.app",
-  "fecha_deploy": "2026-04-03",
+  "fecha_deploy": "2026-04-05",
   "stack": "html",
   "carpeta_origen": "web/wintergreen-spa/"
 }

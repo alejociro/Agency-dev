@@ -218,15 +218,18 @@ body::before {
   inset-inline: 0;
   z-index: var(--z-nav);
   padding-block: var(--space-3);
-  transition: all var(--duration-normal) var(--ease-out);
+  background: rgba(250, 250, 247, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all var(--duration-slow) var(--ease-out);
 }
 
 .navbar.scrolled {
-  background: rgba(250, 250, 247, 0.92);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(250, 250, 247, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   padding-block: var(--space-2);
-  box-shadow: 0 1px 0 var(--color-border);
+  box-shadow: 0 1px 0 var(--color-border), 0 4px 16px rgba(38, 70, 83, 0.04);
 }
 
 .navbar__inner {
@@ -505,6 +508,16 @@ body::before {
   }
 }
 
+.hero__photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  z-index: 1;
+}
+
 .hero__image-overlay {
   position: absolute;
   inset: 0;
@@ -512,6 +525,7 @@ body::before {
     radial-gradient(ellipse at 50% 60%, transparent 30%, var(--color-accent) 100%);
   mix-blend-mode: multiply;
   opacity: 0.3;
+  z-index: 2;
 }
 
 /* Decorative floating elements */
@@ -686,6 +700,11 @@ body::before {
 
 .team-member {
   text-align: center;
+  transition: transform 0.4s cubic-bezier(0.22, 1.2, 0.36, 1);
+
+  &:hover {
+    transform: translateY(-8px);
+  }
 }
 
 .team-member__avatar {
@@ -704,6 +723,8 @@ body::before {
   color: var(--color-white);
   position: relative;
   overflow: hidden;
+  transition: transform 0.5s cubic-bezier(0.22, 1.2, 0.36, 1),
+              box-shadow 0.5s cubic-bezier(0.22, 1.2, 0.36, 1);
 
   &::after {
     content: '';
@@ -711,12 +732,50 @@ body::before {
     inset: 3px;
     border-radius: var(--radius-full);
     background: var(--color-surface);
+    transition: background 0.4s ease;
   }
 
   & span {
     position: relative;
     z-index: 1;
     color: var(--color-primary);
+    transition: transform 0.4s cubic-bezier(0.22, 1.2, 0.36, 1),
+                color 0.3s ease;
+  }
+}
+
+/* Enhanced team hover — avatar scales up, glows, initial reveals */
+.team-member:hover .team-member__avatar {
+  transform: scale(1.12) rotate(-3deg);
+  box-shadow: 0 0 0 4px var(--color-bg),
+              0 0 0 6px var(--color-primary),
+              0 12px 32px -4px var(--color-primary-glow);
+}
+
+.team-member:hover .team-member__avatar::after {
+  background: linear-gradient(135deg, var(--color-surface), rgba(42, 157, 143, 0.08));
+}
+
+.team-member:hover .team-member__avatar span {
+  transform: scale(1.1);
+  color: var(--color-primary-dark);
+}
+
+/* Team photo avatars */
+.team-member__avatar--photo {
+  background: var(--color-surface);
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-full);
+    position: relative;
+    z-index: 2;
+  }
+
+  &::after {
+    display: none;
   }
 }
 
@@ -726,11 +785,116 @@ body::before {
   font-weight: var(--weight-bold);
   color: var(--color-accent);
   margin-block-end: 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.team-member:hover .team-member__name {
+  color: var(--color-primary);
 }
 
 .team-member__role {
   font-size: var(--text-small);
   color: var(--color-text-muted);
+  transition: color 0.3s ease;
+}
+
+.team-member:hover .team-member__role {
+  color: var(--color-primary-dark);
+}
+
+/* ─── Team member staggered scroll-driven entrance ─── */
+@keyframes team-avatar-reveal {
+  from {
+    opacity: 0;
+    transform: scale(0.5) translateY(30px);
+    filter: blur(8px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.08) translateY(-4px);
+    filter: blur(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes team-text-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.team-grid .team-member {
+  animation: team-avatar-reveal 0.8s cubic-bezier(0.22, 1.2, 0.36, 1) both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 40%;
+}
+
+/* Stagger each team member for a wave effect */
+.team-grid .team-member:nth-child(1) { animation-range: entry 0% entry 35%; }
+.team-grid .team-member:nth-child(2) { animation-range: entry 3% entry 38%; }
+.team-grid .team-member:nth-child(3) { animation-range: entry 6% entry 41%; }
+.team-grid .team-member:nth-child(4) { animation-range: entry 9% entry 44%; }
+.team-grid .team-member:nth-child(5) { animation-range: entry 5% entry 40%; }
+.team-grid .team-member:nth-child(6) { animation-range: entry 8% entry 43%; }
+.team-grid .team-member:nth-child(7) { animation-range: entry 11% entry 46%; }
+.team-grid .team-member:nth-child(8) { animation-range: entry 14% entry 49%; }
+
+/* IO fallback for team reveal */
+@supports not (animation-timeline: view()) {
+  .team-grid .team-member {
+    opacity: 0;
+    transform: scale(0.5) translateY(30px);
+    filter: blur(8px);
+    transition: opacity 0.7s ease,
+                transform 0.7s cubic-bezier(0.22, 1.2, 0.36, 1),
+                filter 0.7s ease;
+  }
+
+  .team-grid.is-visible .team-member {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+  }
+
+  .team-grid.is-visible .team-member:nth-child(1) { transition-delay: 0.05s; }
+  .team-grid.is-visible .team-member:nth-child(2) { transition-delay: 0.12s; }
+  .team-grid.is-visible .team-member:nth-child(3) { transition-delay: 0.19s; }
+  .team-grid.is-visible .team-member:nth-child(4) { transition-delay: 0.26s; }
+  .team-grid.is-visible .team-member:nth-child(5) { transition-delay: 0.33s; }
+  .team-grid.is-visible .team-member:nth-child(6) { transition-delay: 0.40s; }
+  .team-grid.is-visible .team-member:nth-child(7) { transition-delay: 0.47s; }
+  .team-grid.is-visible .team-member:nth-child(8) { transition-delay: 0.54s; }
+}
+
+/* ─────────────────────────────────────
+   WHY US — VISUAL
+   ───────────────────────────────────── */
+.why-visual {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    position: relative;
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+  }
+}
+
+.why-visual__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
 }
 
 /* ─────────────────────────────────────
@@ -1201,15 +1365,17 @@ body::before {
 [data-scroll="stagger"] > *:nth-child(5) { animation-range: entry 8% entry 38%; }
 [data-scroll="stagger"] > *:nth-child(6) { animation-range: entry 12% entry 42%; }
 
-/* Parallax fade for hero on exit */
+/* Parallax fade for hero on exit — smooth gradual crossfade */
 [data-scroll="parallax-exit"] {
   animation: parallax-exit linear both;
   animation-timeline: view();
-  animation-range: exit 0% exit 40%;
+  animation-range: exit 0% exit 55%;
 }
 @keyframes parallax-exit {
-  from { opacity: 1; transform: translateY(0) scale(1); }
-  to   { opacity: 0; transform: translateY(-40px) scale(0.97); }
+  0%   { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+  40%  { opacity: 0.85; transform: translateY(-8px) scale(0.995); filter: blur(0); }
+  70%  { opacity: 0.4; transform: translateY(-20px) scale(0.985); filter: blur(2px); }
+  100% { opacity: 0; transform: translateY(-36px) scale(0.97); filter: blur(6px); }
 }
 
 /* Reading progress bar */
@@ -1324,12 +1490,7 @@ body::before {
   padding-block-start: var(--space-3);
 }
 
-/* Team member avatar pulse on hover */
-.team-member:hover .team-member__avatar {
-  box-shadow: 0 0 0 4px var(--color-bg),
-              0 0 0 6px var(--color-primary);
-  transition: box-shadow 0.3s cubic-bezier(0.22, 1.2, 0.36, 1);
-}
+/* Team member avatar pulse on hover — now handled in team section styles above */
 
 /* Form input subtle grow on focus */
 .form-input:focus,
@@ -1421,6 +1582,7 @@ body::before {
   border-radius: var(--radius-full);
   pointer-events: none;
   animation: organicDrift 12s ease-in-out infinite;
+  z-index: 3;
 }
 
 .float-circle--1 {
