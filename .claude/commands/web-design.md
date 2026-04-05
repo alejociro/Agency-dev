@@ -1,17 +1,29 @@
-# WEB — PASO 2: SISTEMA DE DISEÑO VISUAL
+# WEB — STEP 2: VISUAL DESIGN SYSTEM
 
-Genera el design system completo basado en el brief creativo y los datos del JSON.
+Generate the complete design system based on the creative brief and JSON data.
+
+## CREATIVE VARIATION RULE
+
+**Every site must have a UNIQUE design system. The code here is structural reference, not a template.**
+
+- **Typography:** The tone table suggests fonts, but there are hundreds of options on Google Fonts. Don't repeat the same font across two different sites in the same batch. Explore combinations not in the table if they fit the business better.
+- **Colors:** The variants with `color-mix()` and `oklch()` are the technique — the values must be unique per site. Experiment with different saturations, luminosities, and hue angles.
+- **Spacing and layout:** Not all sites need the same `--container-max` or `--section-padding`. A luxury site breathes more, an urgent services site is more compact.
+- **Depth effects:** Grain, glassmorphism, gradient mesh, colored shadows — choose the ones that fit the tone. Don't use all of them, don't always use the same ones.
+- **Separators:** Lines, SVGs, clip-paths, gradients — vary the technique between sites.
+
+**What MUST be constant:** Semantic CSS variables, WCAG AA contrast, no pure #fff/#000, maximum 2 font families.
 
 ---
 
-## 2.1 Tipografía (define el carácter del sitio)
+## 2.1 Typography (defines the site's character)
 
-Usa Google Fonts o @font-face. **Nunca** Inter, Roboto, Arial, Helvetica ni Open Sans como display.
+Use Google Fonts or @font-face. **Never** Inter, Roboto, Arial, Helvetica, or Open Sans as display.
 
-Reglas de pairing:
-- Una fuente display con personalidad fuerte (serif, condensada, experimental)
-- Una fuente body legible y complementaria
-- Máximo 2 familias en el proyecto
+Pairing rules:
+- One display font with strong personality (serif, condensed, experimental)
+- One legible and complementary body font
+- Maximum 2 families per project
 
 ```css
 @import url('https://fonts.googleapis.com/css2?family=[Display]:wght@400;600;700&family=[Body]:wght@300;400;500&display=swap');
@@ -27,28 +39,54 @@ body, p, .btn            { font-family: var(--font-body); }
 
 ---
 
-## 2.2 Color y Atmósfera
+## 2.2 Color and Atmosphere
 
-Nunca blanco puro (#fff) ni negro puro (#000) para fondos o texto principal.
+Never pure white (#fff) or pure black (#000) for backgrounds or main text.
 
-| Elemento | Recomendación |
+| Element | Recommendation |
 |---|---|
-| Fondo principal | #fafaf8 (warm) / #f5f7fa (cool) / #0f0f0f (dark) |
-| Superficie (card) | 4-6% más oscuro/claro que fondo |
-| Texto principal | #1a1a1a o #f0efe9 según tema |
-| Texto secundario | 60% opacidad del principal |
+| Main background | #fafaf8 (warm) / #f5f7fa (cool) / #0f0f0f (dark) |
+| Surface (card) | 4-6% darker/lighter than background |
+| Main text | #1a1a1a or #f0efe9 depending on theme |
+| Secondary text | 60% opacity of main |
 
-### Variantes de color con funciones CSS modernas:
+### Mandatory Color Variable Mapping
+
+**CRITICAL RULE:** Each semantic variable MUST have a distinct value with sufficient contrast. Never assign the same hex to `--color-primary` and `--color-text`, nor to `--color-text` and `--color-bg`.
+
+Use the JSON colors (`primario`, `secundario`, `fondo`, `texto`) as a starting point:
+
 ```css
 :root {
-  --color-primary:       [hex del JSON];
+  /* --- Base palette (from JSON / brief) --- */
+  --color-primary:   [primary hex from JSON — accent, buttons, links];
+  --color-secondary: [secondary hex — complement, badges, hovers];
+  --color-bg:        [background hex — main site background];
+  --color-text:      [text hex — body text color];
+
+  /* --- Mandatory mental validation --- */
+  /* ✅ --color-text must be READABLE on --color-bg (WCAG AA ≥ 4.5:1) */
+  /* ✅ --color-primary must be READABLE on --color-bg as link/button */
+  /* ❌ If text and bg are similar → light text on dark bg or vice versa */
+  /* ❌ If primary == text → change text to a neutral (see table below) */
+
+  /* --- Automatic variants --- */
   --color-primary-dark:  color-mix(in oklch, var(--color-primary) 80%, black);
   --color-primary-light: color-mix(in oklch, var(--color-primary) 40%, white);
   --color-primary-glow:  oklch(from var(--color-primary) l c h / 0.25);
+  --color-text-muted:    oklch(from var(--color-text) l c h / 0.6);
 }
 ```
 
-### Efectos de profundidad (elegir 1-2 según tono):
+### Fallbacks if JSON lacks clear colors
+
+| Background | Recommended Text | Avoid |
+|---|---|---|
+| light (#fafaf8, #f5f7fa) | dark (#1a1a1a, #2d2d2d) | same tone as primary |
+| dark (#0f0f0f, #1a1a2e) | light (#f0efe9, #e8e8e8) | mid-gray with no contrast |
+| medium (#4a5568) | DO NOT use as main background | — |
+
+### Depth Effects (choose 1-2 based on tone):
 
 **Grain overlay** (premium, subtle):
 ```css
@@ -60,7 +98,7 @@ Nunca blanco puro (#fff) ni negro puro (#000) para fondos o texto principal.
 }
 ```
 
-**Gradient mesh** (moderno, vibrante):
+**Gradient mesh** (modern, vibrant):
 ```css
 .mesh-bg {
   background:
@@ -70,7 +108,7 @@ Nunca blanco puro (#fff) ni negro puro (#000) para fondos o texto principal.
 }
 ```
 
-**Glassmorphism** (tech, futurista):
+**Glassmorphism** (tech, futuristic):
 ```css
 .glass {
   background: oklch(from var(--color-bg) l c h / 0.08);
@@ -82,7 +120,7 @@ Nunca blanco puro (#fff) ni negro puro (#000) para fondos o texto principal.
 
 ---
 
-## 2.3 Espaciado y Layout
+## 2.3 Spacing and Layout
 
 ```css
 .container {
@@ -97,16 +135,16 @@ Nunca blanco puro (#fff) ni negro puro (#000) para fondos o texto principal.
 }
 ```
 
-### Romper la grilla en al menos 2 secciones:
-- Elemento que desborda su contenedor (imagen edge-to-edge en desktop)
-- Texto en diagonal con `clip-path` o `transform: rotate(-2deg)`
-- Card asimétrica con `position: absolute` superpuesta sobre la siguiente sección
-- CSS Grid asimétrico (`2fr 1fr` o `3fr 2fr`)
-- CSS Subgrid para alinear contenido entre cards hermanas
+### Break the grid in at least 2 sections:
+- Element that overflows its container (edge-to-edge image on desktop)
+- Diagonal text with `clip-path` or `transform: rotate(-2deg)`
+- Asymmetric card with `position: absolute` overlapping the next section
+- Asymmetric CSS Grid (`2fr 1fr` or `3fr 2fr`)
+- CSS Subgrid to align content between sibling cards
 
 ---
 
-## 2.4 Sombras con personalidad
+## 2.4 Shadows with Personality
 
 ```css
 :root {
@@ -120,7 +158,7 @@ Nunca blanco puro (#fff) ni negro puro (#000) para fondos o texto principal.
 
 ---
 
-## 2.5 Separadores y detalles decorativos
+## 2.5 Separators and Decorative Details
 
 ```css
 .divider {
@@ -138,13 +176,13 @@ Nunca blanco puro (#fff) ni negro puro (#000) para fondos o texto principal.
 
 ---
 
-## 2.6 Técnicas CSS modernas a usar
+## 2.6 Modern CSS Techniques to Use
 
-- **CSS Nesting nativo:** agrupar estilos relacionados sin preprocesador
-- **Container Queries:** `@container` para componentes adaptables al contenedor
-- **`:has()` selector:** estilizar padres basado en hijos (ej: `.card:has(img)`)
-- **`oklch()`:** variantes de color perceptualmente uniformes
-- **CSS Subgrid:** alinear contenido internamente entre grid siblings
-- **`@layer`:** base, components, utilities — para controlar la cascada
-- **`light-dark()`:** si el diseño soporta temas claro/oscuro
-- **Logical properties:** usar `margin-inline`, `padding-block`, `inset` en vez de `margin-left/right`
+- **Native CSS Nesting:** group related styles without preprocessor
+- **Container Queries:** `@container` for components adaptable to their container
+- **`:has()` selector:** style parents based on children (e.g.: `.card:has(img)`)
+- **`oklch()`:** perceptually uniform color variants
+- **CSS Subgrid:** align content internally between grid siblings
+- **`@layer`:** base, components, utilities — to control the cascade
+- **`light-dark()`:** if the design supports light/dark themes
+- **Logical properties:** use `margin-inline`, `padding-block`, `inset` instead of `margin-left/right`

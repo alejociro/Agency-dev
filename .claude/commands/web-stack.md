@@ -1,24 +1,24 @@
-# WEB — PASO 1: STACK Y CONFIGURACIÓN
+# WEB — STEP 1: STACK & CONFIGURATION
 
-Configura el proyecto según `stack_para_web.framework` del JSON de auditoría.
+Configure the project based on `stack_para_web.framework` from the audit JSON.
 
 ---
 
-## Selección de stack
+## Stack Selection
 
-| Valor JSON | Stack completo | Cuándo aplica |
+| JSON Value | Full Stack | When to Use |
 |---|---|---|
-| `html` | HTML + CSS + JS vanilla + Tailwind CSS v4 CDN | Brochure simples, < 5 páginas |
-| `astro` | Astro 5 + Tailwind CSS v4 (vía `@tailwindcss/vite`) | Contenido rico, buen SEO, sin backend |
-| `react` | Vite 6 + React 19 + Tailwind CSS v4 (vía `@tailwindcss/vite`) + Framer Motion | Apps dinámicas, muchas interacciones |
+| `html` | HTML + CSS + JS vanilla + Tailwind CSS v4 CDN | Simple brochures, < 5 pages |
+| `astro` | Astro 5 + Tailwind CSS v4 (via `@tailwindcss/vite`) | Rich content, good SEO, no backend |
+| `react` | Vite 6 + React 19 + Tailwind CSS v4 (via `@tailwindcss/vite`) + Framer Motion | Dynamic apps, many interactions |
 
 ---
 
-## Estructura de carpetas
+## Folder Structure
 
 ### HTML vanilla
 ```
-<negocio>/
+<business>/
   index.html
   about.html
   services.html
@@ -35,7 +35,7 @@ Configura el proyecto según `stack_para_web.framework` del JSON de auditoría.
 
 ### Astro 5
 ```
-<negocio>/
+<business>/
   astro.config.mjs
   package.json
   src/
@@ -53,11 +53,11 @@ Configura el proyecto según `stack_para_web.framework` del JSON de auditoría.
     assets/
 ```
 
-> **NO crear** `tailwind.config.mjs` — Tailwind v4 no lo usa. Los tokens se definen en `design-system.css` con `@theme`.
+> **DO NOT create** `tailwind.config.mjs` — Tailwind v4 doesn't use it. Tokens are defined in `design-system.css` with `@theme`.
 
 ### React 19 (Vite 6)
 ```
-<negocio>/
+<business>/
   vite.config.js
   package.json
   src/
@@ -73,15 +73,15 @@ Configura el proyecto según `stack_para_web.framework` del JSON de auditoría.
     assets/
 ```
 
-> **NO crear** `tailwind.config.js` — Tailwind v4 no lo usa.
+> **DO NOT create** `tailwind.config.js` — Tailwind v4 doesn't use it.
 
 ---
 
-## Configuración de Tailwind CSS v4 (OBLIGATORIO)
+## Tailwind CSS v4 Configuration (MANDATORY)
 
-Tailwind v4 usa `@tailwindcss/vite` como plugin de Vite. **NO usar `@astrojs/tailwind`** (ese paquete es para Tailwind v3 y es incompatible).
+Tailwind v4 uses `@tailwindcss/vite` as a Vite plugin. **DO NOT use `@astrojs/tailwind`** (that package is for Tailwind v3 and is incompatible).
 
-### package.json — dependencias Astro
+### package.json — Astro dependencies
 
 ```json
 {
@@ -93,7 +93,7 @@ Tailwind v4 usa `@tailwindcss/vite` como plugin de Vite. **NO usar `@astrojs/tai
 }
 ```
 
-### package.json — dependencias React
+### package.json — React dependencies
 
 ```json
 {
@@ -136,40 +136,40 @@ export default defineConfig({
 });
 ```
 
-### design-system.css — inicio del archivo (SIEMPRE)
+### design-system.css — file start (ALWAYS)
 
 ```css
 @import "tailwindcss";
 ```
 
-> **NUNCA usar** `@tailwind base; @tailwind components; @tailwind utilities;` (sintaxis v3).
-> **NUNCA usar** `@layer base, components, utilities;` sin `@import "tailwindcss"`.
-> **NUNCA crear** `tailwind.config.mjs` ni `postcss.config.mjs` — Tailwind v4 no los necesita.
+> **NEVER use** `@tailwind base; @tailwind components; @tailwind utilities;` (v3 syntax).
+> **NEVER use** `@layer base, components, utilities;` without `@import "tailwindcss"`.
+> **NEVER create** `tailwind.config.mjs` or `postcss.config.mjs` — Tailwind v4 doesn't need them.
 
-### Paquetes prohibidos (NO instalar)
+### Prohibited Packages (DO NOT install)
 
-- `@astrojs/tailwind` — integración obsoleta para Tailwind v3
-- `postcss-nesting` — Tailwind v4 soporta nesting nativo
-- `autoprefixer` — Tailwind v4 lo incluye internamente
+- `@astrojs/tailwind` — obsolete integration for Tailwind v3
+- `postcss-nesting` — Tailwind v4 supports native nesting
+- `autoprefixer` — Tailwind v4 includes it internally
 
 ---
 
-## Variables CSS universales (en design-system.css — SIEMPRE)
+## Universal CSS Variables (in design-system.css — ALWAYS)
 
 ```css
 :root {
-  /* Paleta — adaptar del JSON */
-  --color-primary:       [del JSON];
-  --color-primary-dark:  [10% más oscuro];
-  --color-primary-glow:  [con alpha 0.25 para efectos];
-  --color-secondary:     [del JSON];
-  --color-accent:        [del JSON];
-  --color-bg:            [nunca #fff puro — usar warm o cool off-white];
-  --color-surface:       [ligeramente diferente al bg para cards];
-  --color-text:          [nunca #000 puro — usar #1a1a1a o similar];
-  --color-text-muted:    [60-70% opacidad del text];
+  /* Palette — adapt from JSON */
+  --color-primary:       [from JSON];
+  --color-primary-dark:  [10% darker];
+  --color-primary-glow:  [with alpha 0.25 for effects];
+  --color-secondary:     [from JSON];
+  --color-accent:        [from JSON];
+  --color-bg:            [never pure #fff — use warm or cool off-white];
+  --color-surface:       [slightly different from bg for cards];
+  --color-text:          [never pure #000 — use #1a1a1a or similar];
+  --color-text-muted:    [60-70% opacity of text];
 
-  /* Espaciado (base 8px) */
+  /* Spacing (base 8px) */
   --space-1: 0.5rem;
   --space-2: 1rem;
   --space-3: 1.5rem;
@@ -179,7 +179,7 @@ export default defineConfig({
   --space-12: 6rem;
   --space-16: 8rem;
 
-  /* Tipografía fluida */
+  /* Fluid Typography */
   --text-hero:  clamp(3rem, 8vw, 7rem);
   --text-h1:    clamp(2rem, 5vw, 4rem);
   --text-h2:    clamp(1.5rem, 3vw, 2.5rem);
@@ -199,7 +199,7 @@ export default defineConfig({
   --radius-xl:   24px;
   --radius-full: 9999px;
 
-  /* Secciones */
+  /* Sections */
   --section-padding:   clamp(5rem, 10vw, 10rem);
   --container-max:     1200px;
   --container-padding: clamp(1rem, 5vw, 2rem);
@@ -208,15 +208,15 @@ export default defineConfig({
 
 ---
 
-## Reglas de configuración
+## Configuration Rules
 
-- Mobile-first: media queries de 360px hacia arriba
-- Usar CSS nesting nativo (soportado en todos los browsers modernos 2025+)
-- Usar `@layer` de Tailwind v4 para organizar cascade (se activa con `@import "tailwindcss"`)
-- `prefers-reduced-motion` desactiva animaciones no esenciales
-- `font-display: swap` en todas las fuentes
-- Todas las imágenes: `width`, `height`, `loading="lazy"`, `decoding="async"`
-- Critical CSS (above the fold) inline en `<head>`
-- Usar `oklch()` para definir colores cuando se necesiten variantes programáticas
-- Container queries (`@container`) para componentes que se adaptan a su contenedor, no solo al viewport
-- En frontmatter de Astro (entre `---`): usar backticks o comillas dobles para strings con apóstrofes (ej: `"property's"`, nunca `'property's'`)
+- Mobile-first: media queries from 360px upward
+- Use native CSS nesting (supported in all modern browsers 2025+)
+- Use Tailwind v4 `@layer` to organize cascade (activated with `@import "tailwindcss"`)
+- `prefers-reduced-motion` disables non-essential animations
+- `font-display: swap` on all fonts
+- All images: `width`, `height`, `loading="lazy"`, `decoding="async"`
+- Critical CSS (above the fold) inline in `<head>`
+- Use `oklch()` to define colors when programmatic variants are needed
+- Container queries (`@container`) for components that adapt to their container, not just the viewport
+- In Astro frontmatter (between `---`): use backticks or double quotes for strings with apostrophes (e.g.: `"property's"`, never `'property's'`)

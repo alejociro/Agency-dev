@@ -1,0 +1,179 @@
+{
+  "negocio": "Servi Taxes LLC",
+  "url": "https://contabilidad.servi-taxes.com/",
+  "sector": "Contabilidad y servicios de impuestos",
+  "requiere_render": true,
+  "nota_scraping": "Sitio renderizado por JS (Nuxt.js/Vue). Algunos datos pueden estar incompletos. Considerar scraping con browser headless.",
+  "meta": {
+    "title": "Servi Taxes LLC - Contabilidad",
+    "description": "Ofrecemos la mejor contabilidad para tomar decisiones y mejorar su negocio.",
+    "keywords": "contabilidad, taxes, impuestos, bookkeeping, Greenville SC, Servi Taxes"
+  },
+  "favicon": null,
+  "paleta": {
+    "primario": "#37ca37",
+    "secundario": "#188bf6",
+    "acento": "#e93d3d",
+    "fondo": "#F9F9F9",
+    "texto": "#171210",
+    "otros": ["#cbd5e0", "#f6ad55", "#faf089", "#9ae6b4", "#81e6d9", "#63b3ed", "#757BBD", "#d6bcfa", "#fbb6ce", "#FFE9E9"]
+  },
+  "logo": {
+    "url": "https://storage.googleapis.com/msgsndr/2o28iBgv2JEmcaRGZTrr/media/66d2139f287df2c510e3b91e.png",
+    "descripcion": "Logo de Servi Taxes LLC",
+    "posicion": "header",
+    "colores": ["#37ca37", "#188bf6"]
+  },
+  "tipografias": [
+    { "nombre": "Lato", "uso": "titulos y cuerpo", "peso": "400, 700", "tamanio_aprox": "15px-63px" },
+    { "nombre": "Open Sans", "uso": "alternativa", "peso": "400", "tamanio_aprox": "16px" },
+    { "nombre": "Montserrat", "uso": "alternativa", "peso": "400, 700", "tamanio_aprox": "16px" },
+    { "nombre": "Roboto", "uso": "alternativa", "peso": "400", "tamanio_aprox": "16px" }
+  ],
+  "navegacion": [
+    { "label": "AGENDE UNA CITA", "url": "https://contabilidad.servi-taxes.com/agendar-cita" },
+    { "label": "QUE DICEN NUESTROS CLIENTES", "url": "#testimonios" }
+  ],
+  "secciones": [
+    {
+      "tipo": "hero",
+      "titulo": "",
+      "contenido": "Ofrecemos la mejor contabilidad para tomar desciones y mejorar su negocio.",
+      "cta": "AGENDE UNA CITA → https://contabilidad.servi-taxes.com/agendar-cita",
+      "imagenes": [
+        {
+          "url": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/2o28iBgv2JEmcaRGZTrr/media/a703e3f6-4ad4-4396-ab41-d8c9bb72429c.jpeg",
+          "alt": "Hero background Servi Taxes",
+          "descripcion": "Imagen de fondo del hero",
+          "tipo": "background",
+          "dimensiones": "1200px"
+        },
+        {
+          "url": "https://storage.googleapis.com/msgsndr/2o28iBgv2JEmcaRGZTrr/media/66d2139f287df2c510e3b91e.png",
+          "alt": "Logo Servi Taxes LLC",
+          "descripcion": "Logo principal del negocio en el hero",
+          "tipo": "logo",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "testimonios-header",
+      "titulo": "QUE DICEN NUESTROS CLIENTES",
+      "contenido": "Tranquiliad con sus cuentas organizadas. Deje en nuestras manos la organización de sus libros contables, para dedicar mas tiempo en hacer crecer su negocio.",
+      "cta": null,
+      "imagenes": []
+    },
+    {
+      "tipo": "servicios",
+      "titulo": "Nuestro servicio en tres pilares:",
+      "contenido": "1. Contabilidad: No mas ansiedad ni caos. Conosca excatamente la cantidad de ventas y gastos de su empresa.\n\n2. Asesoria: Un profesional dedicado para brindárle reportes claros y recomendaciones personalizadas.\n\n3. Declaracion de taxes anuales: Organizamos su contabilidad para ayudarle a pagar menos impuestos.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/2o28iBgv2JEmcaRGZTrr/media/66d1e9b261d98533a016c873.png",
+          "alt": "Fondo sección servicios",
+          "descripcion": "Imagen de fondo de la sección de tres pilares",
+          "tipo": "background",
+          "dimensiones": null
+        },
+        {
+          "url": "https://storage.googleapis.com/msgsndr/2o28iBgv2JEmcaRGZTrr/media/051f0b84-ffac-4e66-8c67-d7d3fc4e7bd0.svg+xml",
+          "alt": "Icono contabilidad",
+          "descripcion": "Icono SVG representando contabilidad",
+          "tipo": "icono",
+          "dimensiones": null
+        },
+        {
+          "url": "https://storage.googleapis.com/msgsndr/2o28iBgv2JEmcaRGZTrr/media/8782a9e9-1eef-42c0-9599-a01f8de4cced.svg+xml",
+          "alt": "Icono asesoría",
+          "descripcion": "Icono SVG representando asesoría",
+          "tipo": "icono",
+          "dimensiones": null
+        },
+        {
+          "url": "https://storage.googleapis.com/msgsndr/2o28iBgv2JEmcaRGZTrr/media/bb2f1956-bd2b-4710-9c24-b2dcd8329cd1.svg+xml",
+          "alt": "Icono declaración de taxes",
+          "descripcion": "Icono SVG representando declaración de impuestos",
+          "tipo": "icono",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "diferenciadores",
+      "titulo": "Como hacemos la diferencia",
+      "contenido": "1. Sin importar el tamaño, ni la complejidad, organizamos las cuentas de su empresa. El crecimiento de su negocio depende del orden en las transacciones. Descubra cómo podemos ayudarle.\n\n2. Profesional dedicado para ayudarle a prosperar. Servicio al cliente personalizado. Tendras un profesional para darte informacion valiosa que su negocio necesita para crecer.\n\n3. Informacion organizada para minimizar tu responsabilidad de taxes. Contabilidad hecha para incluir todos sus gastos elegibles, maximizando las deducciones y reduciendo sus impuestos.",
+      "cta": "Agende una cita → https://contabilidad.servi-taxes.com/agendar-cita",
+      "imagenes": [
+        {
+          "url": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/2o28iBgv2JEmcaRGZTrr/media/66d1e7c0146c05d9f7221c84.png",
+          "alt": "Organización de cuentas empresariales",
+          "descripcion": "Imagen ilustrativa sobre organización contable",
+          "tipo": "contenido",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/2o28iBgv2JEmcaRGZTrr/media/66d1f5ab287df211cbe39bcc.png",
+          "alt": "Profesional dedicado",
+          "descripcion": "Imagen de profesional de contabilidad",
+          "tipo": "contenido",
+          "dimensiones": null
+        },
+        {
+          "url": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/2o28iBgv2JEmcaRGZTrr/media/66d1f19608d960133c7238a8.png",
+          "alt": "Minimizar responsabilidad de taxes",
+          "descripcion": "Imagen sobre optimización de impuestos",
+          "tipo": "contenido",
+          "dimensiones": null
+        }
+      ]
+    },
+    {
+      "tipo": "calidad",
+      "titulo": "¡Servicio de calidad!",
+      "contenido": "La organizacion es lo que nos esforzamos por lograr. El progreso de tu empresa es el resultado.",
+      "cta": null,
+      "imagenes": [
+        {
+          "url": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/2o28iBgv2JEmcaRGZTrr/media/66c8b1cb99d27b49b5e08f0a.png",
+          "alt": "Servicio de calidad Servi Taxes",
+          "descripcion": "Imagen representativa de servicio de calidad",
+          "tipo": "contenido",
+          "dimensiones": null
+        }
+      ]
+    }
+  ],
+  "textos_clave": {
+    "slogan": "Ofrecemos la mejor contabilidad para tomar decisiones y mejorar su negocio.",
+    "propuesta_valor": "Tranquilidad con sus cuentas organizadas. Deje en nuestras manos la organización de sus libros contables, para dedicar más tiempo en hacer crecer su negocio.",
+    "ctas": [
+      "AGENDE UNA CITA",
+      "Agende una cita",
+      "Agenda una cita"
+    ]
+  },
+  "videos": [],
+  "contacto": {
+    "telefono": "864-402-9826",
+    "whatsapp": null,
+    "email": "[email protected]",
+    "direccion": "4008 White Horse Rd. Suite C. Greenville, SC 29611",
+    "horarios": null
+  },
+  "redes": [
+    { "plataforma": "Facebook", "url": "https://facebook.com" },
+    { "plataforma": "Instagram", "url": "https://instagram.com" },
+    { "plataforma": "TikTok", "url": "https://tiktok.com" }
+  ],
+  "formularios": [],
+  "footer": {
+    "contenido": "4008 White Horse Rd. Suite C. Greenville, SC 29611",
+    "links": [
+      { "label": "Private Policy", "url": "https://contabilidad.servi-taxes.com/privatepolicy" }
+    ],
+    "copyright": "© 2025 Servitaxes - All Rights Reserved"
+  },
+  "tecnologia": "Nuxt.js (Vue.js), HighLevel (leadconnectorhq.com), Stripe, reCAPTCHA Enterprise"
+}

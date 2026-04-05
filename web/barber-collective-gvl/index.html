@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Primary -->
+  <title>The Barber Collective | Premium Barbershop in Greenville, SC</title>
+  <meta name="description" content="Premium barbershop in Greenville, SC. Haircuts, beard trims, straight razor shaves, and the full gentleman's experience. Book your appointment today.">
+  <meta name="keywords" content="barbershop greenville sc, haircut greenville, beard trim, straight razor shave, barber collective, mens haircut greenville, barber near me">
+  <link rel="canonical" href="https://www.barbercollectivegvl.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.barbercollectivegvl.com/">
+  <meta property="og:title" content="The Barber Collective | Premium Barbershop in Greenville, SC">
+  <meta property="og:description" content="Premium barbershop in Greenville, SC. Haircuts, beard trims, straight razor shaves. Book your appointment today.">
+  <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/0c67402f-36f2-4b2e-bf7f-38a2e2163244/TLR_5949.jpg">
+  <meta property="og:site_name" content="The Barber Collective">
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Barber Collective | Premium Barbershop in Greenville, SC">
+  <meta name="twitter:description" content="Premium barbershop in Greenville, SC. Haircuts, beard trims, straight razor shaves. Book your appointment today.">
+  <meta name="twitter:image" content="https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/0c67402f-36f2-4b2e-bf7f-38a2e2163244/TLR_5949.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/5a3df793-3560-40f3-87fc-e8275e742ce6/Barber-black.png">
+
+  <!-- Preconnect & Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind v4 CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Design System + Animations -->
+  <link rel="stylesheet" href="styles/design-system.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Performance: content-visibility for below-the-fold sections -->
+  <style>
+    .section:not(.hero) {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 600px;
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD: BarberShop -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "The Barber Collective",
+    "description": "Premium barbershop in Greenville, SC. Haircuts, beard trims, straight razor shaves, and the full gentleman's experience.",
+    "url": "https://www.barbercollectivegvl.com/",
+    "telephone": "(864) 236-5155",
+    "email": "thebarbercollectivegvl@gmail.com",
+    "image": "https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/0c67402f-36f2-4b2e-bf7f-38a2e2163244/TLR_5949.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1502 East North Street",
+      "addressLocality": "Greenville",
+      "addressRegion": "SC",
+      "postalCode": "29607",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.855,
+      "longitude": -82.37
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "10:00", "closes": "16:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "10:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "13:00" }
+    ],
+    "priceRange": "$25-$100",
+    "sameAs": [
+      "http://instagram.com/thebarbercollective_gvl"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Barbershop Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Haircut", "description": "Includes haircut, hot towel, razor neck shave, style" }, "price": "35.00", "priceCurrency": "USD" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kids Haircut", "description": "12 and under. Haircut, style" }, "price": "25.00", "priceCurrency": "USD" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Haircut and Beard Trim", "description": "Haircut, hot towel, neck shave, beard trim, style" }, "price": "45.00", "priceCurrency": "USD" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Straight Razor Services", "description": "Straight razor shave on head or face, hot towel service" }, "price": "35.00", "priceCurrency": "USD" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "The Collective Package", "description": "Haircut, hot towel, neck shave, shampoo, style, plus 3 additional services" }, "price": "100.00", "priceCurrency": "USD" }
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body class="grain">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <!-- Section Dot Navigation -->
+  <nav class="section-dots" aria-label="Section navigation"></nav>
+
+  <!-- ====================== NAVIGATION ====================== -->
+  <header class="site-nav" role="banner">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="The Barber Collective - Home">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/5a3df793-3560-40f3-87fc-e8275e742ce6/Barber-black.png"
+          alt="The Barber Collective logo"
+          width="50"
+          height="50"
+          loading="eager"
+          decoding="async"
+          class="nav-logo-img"
+        >
+      </a>
+
+      <nav class="nav-links" data-nav-menu aria-label="Main navigation">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://www.vagaro.com/lfc7yl" target="_blank" rel="noopener" class="btn btn-primary nav-cta" data-magnetic>Book Now</a>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button class="nav-hamburger" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+    <div class="nav-overlay" data-nav-overlay></div>
+  </header>
+
+
+  <!-- ====================== HERO ====================== -->
+  <section id="hero" class="hero section-dark" data-label="Home" data-scroll="parallax-fade">
+    <div class="aurora-glow" aria-hidden="true"></div>
+    <div class="razor-line razor-line--left" aria-hidden="true"></div>
+    <div class="razor-line razor-line--right" aria-hidden="true"></div>
+
+    <div class="hero-content container">
+      <span class="hero-label section-label">Premium Barbershop in Greenville, SC</span>
+
+      <p class="hero-brand-name">The Barber Collective</p>
+
+      <h1 class="hero-title" data-kinetic>The Gentleman's Experience</h1>
+
+      <div class="hero-line" aria-hidden="true"></div>
+
+      <p class="hero-sub">
+        Where precision meets tradition. Every cut, shave, and trim
+        is crafted with the care your look deserves.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://www.vagaro.com/lfc7yl" target="_blank" rel="noopener" class="btn btn-primary hero-cta" data-magnetic>
+          Book Your Appointment
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="#services" class="btn btn-outline-light hero-cta">
+          View Services
+        </a>
+      </div>
+
+      <div class="hero-proof hero-scroll">
+        <div class="status-badge" data-open-status>
+          <span class="status-text">Checking...</span>
+          <span class="status-sub"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator hero-scroll" aria-hidden="true">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ====================== SERVICES ====================== -->
+  <section id="services" class="section section-dark" data-label="Services">
+    <div class="aurora-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-header" data-scroll="blade-up">
+        <span class="section-label">What We Offer</span>
+        <h2 class="text-display section-heading section-heading--light">
+          Our <span class="gold-gradient-text">Services</span>
+        </h2>
+        <p class="text-body-lg section-intro">
+          From classic cuts to the full collective experience. Every service includes attention to detail that sets us apart.
+        </p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="filter-bar mt-6" data-scroll="fade-up">
+        <button class="filter-btn filter-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cuts">Cuts</button>
+        <button class="filter-btn" data-filter="shaves">Shaves & Beard</button>
+        <button class="filter-btn" data-filter="packages">Packages</button>
+        <button class="filter-btn" data-filter="extras">Add-Ons</button>
+      </div>
+
+      <!-- Services grid -->
+      <div class="services-grid" data-scroll="stagger">
+
+        <!-- CUTS -->
+        <div class="service-card card-dark" data-category="cuts">
+          <div class="service-card-inner">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M18 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M6 18L12 6l6 12"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>Haircut</h3>
+              <p class="service-desc">Includes haircut, hot towel, razor neck shave, style</p>
+              <div class="service-meta">
+                <span class="service-price">$35</span>
+                <span class="service-time">30-45 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card card-dark" data-category="cuts">
+          <div class="service-card-inner">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>Kids Haircut</h3>
+              <p class="service-desc">12 and under. Haircut, style</p>
+              <div class="service-meta">
+                <span class="service-price">$25</span>
+                <span class="service-time">30-45 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card card-dark" data-category="cuts">
+          <div class="service-card-inner">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>Buzzcut</h3>
+              <p class="service-desc">A haircut that only uses guards, hot towel, neck shave</p>
+              <div class="service-meta">
+                <span class="service-price">$30</span>
+                <span class="service-time">30-45 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card card-dark" data-category="cuts">
+          <div class="service-card-inner">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 2v6m0 4v10"/><path d="M5 12h14"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>Undercut with Design</h3>
+              <p class="service-desc">Requires advance booking with specific barber</p>
+              <div class="service-meta">
+                <span class="service-price">$35</span>
+                <span class="service-time">30-45 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card card-dark" data-category="cuts">
+          <div class="service-card-inner">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 20h16"/><path d="M12 4v12"/><path d="M8 8l4-4 4 4"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>Transformation Haircut</h3>
+              <p class="service-desc">3+ months of growth removed. Hot towel, neck shave, style</p>
+              <div class="service-meta">
+                <span class="service-price">$45</span>
+                <span class="service-time">1 hour</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SHAVES & BEARD -->
+        <div class="service-card card-dark" data-category="shaves">
+          <div class="service-card-inner">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M7 3L4 21"/><path d="M7 3h10l-3 18H4"/><path d="M10 3l-1 7"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>Straight Razor Services</h3>
+              <p class="service-desc">Straight razor shave on head or face, hot towel service, razor finished beard trim</p>
+              <div class="service-meta">
+                <span class="service-price">$35</span>
+                <span class="service-time">30-45 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card card-dark" data-category="shaves">
+          <div class="service-card-inner">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 22c4 0 8-2 8-8V6l-8-2-8 2v8c0 6 4 8 8 8z"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>Beard Trim</h3>
+              <p class="service-desc">Beard shaping and trimming</p>
+              <div class="service-meta">
+                <span class="service-price">$25</span>
+                <span class="service-time">30-45 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card card-dark" data-category="shaves">
+          <div class="service-card-inner">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M18 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M6 18L12 6l6 12"/><path d="M12 6v4"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>Haircut and Beard Trim</h3>
+              <p class="service-desc">Haircut, hot towel, neck shave, beard trim, style</p>
+              <div class="service-meta">
+                <span class="service-price">$45</span>
+                <span class="service-time">30-45 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card card-dark" data-category="shaves">
+          <div class="service-card-inner">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 2C6 2 2 6 2 12s4 10 10 10 10-4 10-10S18 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>Transformation + Beard Trim</h3>
+              <p class="service-desc">Growth removal haircut, hot towel, neck shave, style, and beard trim</p>
+              <div class="service-meta">
+                <span class="service-price">$55</span>
+                <span class="service-time">1 hour</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PACKAGES -->
+        <div class="service-card card-dark service-featured" data-category="packages">
+          <div class="service-card-inner">
+            <span class="service-badge">Most Popular</span>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>Full Service</h3>
+              <p class="service-desc">Choose: standard haircut with face shave; head shave with facial shave or beard trim; or haircut with beard trim</p>
+              <div class="service-meta">
+                <span class="service-price">$65</span>
+                <span class="service-time">1 hour</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card card-dark service-premium" data-category="packages">
+          <div class="service-card-inner">
+            <span class="service-badge badge-gold">Premium</span>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 7l10-5 10 5-10 5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>The Collective Package</h3>
+              <p class="service-desc">Haircut, hot towel, neck shave, shampoo, style or head shave, plus 3 additional services (face shave, beard trim, grey blending, or waxing)</p>
+              <div class="service-meta">
+                <span class="service-price">$100</span>
+                <span class="service-time">1.5 hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXTRAS -->
+        <div class="service-card card-dark" data-category="extras">
+          <div class="service-card-inner">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>Shampoo</h3>
+              <p class="service-desc">Relaxing shampoo treatment</p>
+              <div class="service-meta">
+                <span class="service-price">$10</span>
+                <span class="service-time">15 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card card-dark" data-category="extras">
+          <div class="service-card-inner">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>Camo Color Grey Blending</h3>
+              <p class="service-desc">Natural-looking grey coverage</p>
+              <div class="service-meta">
+                <span class="service-price">$30</span>
+                <span class="service-time">15 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card card-dark" data-category="extras">
+          <div class="service-card-inner">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 2v10"/><path d="M18.4 6.6a9 9 0 1 1-12.8 0"/></svg>
+            </div>
+            <div class="service-info">
+              <h3>Waxing</h3>
+              <p class="service-desc">Per area</p>
+              <div class="service-meta">
+                <span class="service-price">$10</span>
+                <span class="service-time">15 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="services-cta text-center mt-8" data-scroll="fade-up">
+        <a href="https://www.vagaro.com/lfc7yl" target="_blank" rel="noopener" class="btn btn-primary" data-magnetic>
+          Book Your Service
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================== GALLERY ====================== -->
+  <section id="gallery" class="section section-surface" data-label="Gallery">
+    <div class="container">
+      <div class="section-header" data-scroll="blade-up">
+        <span class="section-label">Our Work</span>
+        <h2 class="text-display section-heading">
+          Crafted with <span class="gold-gradient-text">Precision</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="gallery-wrapper mt-6" data-scroll="scale-in">
+      <div class="gallery-scroll-track">
+        <div class="gallery-item">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/0c67402f-36f2-4b2e-bf7f-38a2e2163244/TLR_5949.jpg"
+            alt="Professional haircut and styling at The Barber Collective"
+            width="400" height="500" loading="lazy" decoding="async"
+          >
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/d1189eea-7542-4955-bae3-1724d5e5180f/TLR_5878.jpg"
+            alt="Precision beard trim in progress"
+            width="400" height="500" loading="lazy" decoding="async"
+          >
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/6271f996-2437-42f4-8bbb-d61826d95205/TLR_5921.jpg"
+            alt="Detailed barbering work at our Greenville shop"
+            width="400" height="500" loading="lazy" decoding="async"
+          >
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/ef7e263b-c035-44e4-9195-3a438d478a5e/TLR_5919.jpg"
+            alt="Classic barbershop experience"
+            width="400" height="500" loading="lazy" decoding="async"
+          >
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/8c682620-e1e7-4f9a-916e-6f0f4f944ff2/TLR_5602.jpg"
+            alt="Straight razor shave technique"
+            width="400" height="500" loading="lazy" decoding="async"
+          >
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/7f3cc663-9205-4eb4-901c-725ffd3e1afc/TLR_5444.jpg"
+            alt="The Barber Collective shop atmosphere"
+            width="400" height="500" loading="lazy" decoding="async"
+          >
+        </div>
+      </div>
+      <p class="gallery-hint text-center mt-2 color-muted">
+        Drag to explore our work
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ====================== CTA BANNER ====================== -->
+  <section id="book" class="cta-banner" data-label="Book">
+    <div class="cta-banner-inner">
+      <div class="container text-center" data-scroll="blade-up">
+        <h2 class="text-display cta-heading color-dark mb-2">
+          Your Best Look is One Appointment Away
+        </h2>
+        <p class="cta-desc max-w-sm mx-auto mb-4">
+          Walk in a client, walk out a gentleman.
+        </p>
+        <a href="https://www.vagaro.com/lfc7yl" target="_blank" rel="noopener" class="btn btn-dark" data-magnetic>
+          Book Now
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================== ABOUT / WHY US ====================== -->
+  <section id="about" class="section section-dark" data-label="About">
+    <div class="aurora-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content" data-scroll="clip-left">
+          <span class="section-label">The Collective</span>
+          <h2 class="text-display section-heading section-heading--light mt-2">
+            More Than a <span class="gold-gradient-text">Haircut</span>
+          </h2>
+          <p class="text-body-lg color-muted-light mt-4 max-w-prose">
+            At The Barber Collective, we believe every man deserves a grooming experience that goes beyond the chair. We combine traditional barbering techniques with modern style to deliver results that make you look and feel your best.
+          </p>
+          <p class="color-muted-light mt-3 max-w-prose">
+            Located on East North Street in Greenville, SC, our shop is a place where craftsmanship, community, and attention to detail come together.
+          </p>
+        </div>
+
+        <div class="about-features" data-scroll="stagger">
+          <div class="feature-card card-dark">
+            <div class="feature-icon gold-text" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M7 3L4 21"/><path d="M7 3h10l-3 18H4"/></svg>
+            </div>
+            <h3 class="feature-title">Precision Tools</h3>
+            <p class="feature-desc">
+              Straight razors, hot towels, and techniques honed over years of dedicated practice.
+            </p>
+          </div>
+
+          <div class="feature-card card-dark">
+            <div class="feature-icon gold-text" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="feature-title">Community First</h3>
+            <p class="feature-desc">
+              A collective of barbers united by a shared passion for the craft and our Greenville community.
+            </p>
+          </div>
+
+          <div class="feature-card card-dark">
+            <div class="feature-icon gold-text" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+            </div>
+            <h3 class="feature-title">Complete Experience</h3>
+            <p class="feature-desc">
+              From the hot towel to the final style, every visit is a ritual designed for the modern gentleman.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================== TRUST BANNER ====================== -->
+  <section id="connect" class="section section-surface" data-label="Connect">
+    <div class="container">
+      <div class="trust-banner" data-scroll="blade-up">
+        <div class="trust-content">
+          <h2 class="text-display trust-heading">
+            Join <span class="gold-gradient-text">The Collective</span>
+          </h2>
+          <p class="trust-desc">
+            Follow our work on Instagram and book your next appointment online.
+          </p>
+        </div>
+        <div class="trust-actions">
+          <a href="https://www.vagaro.com/lfc7yl" target="_blank" rel="noopener" class="btn btn-primary" data-magnetic>
+            Book Appointment
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="http://instagram.com/thebarbercollective_gvl" target="_blank" rel="noopener" class="btn btn-outline trust-instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            @thebarbercollective_gvl
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================== CONTACT & LOCATION ====================== -->
+  <section id="contact" class="section section-dark" data-label="Contact">
+    <div class="aurora-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-header section-header--centered" data-scroll="blade-up">
+        <span class="section-label justify-center">Visit Us</span>
+        <h2 class="text-display section-heading section-heading--light">
+          Find <span class="gold-gradient-text">The Collective</span>
+        </h2>
+      </div>
+
+      <div class="contact-grid mt-8">
+        <!-- Contact Info -->
+        <div class="contact-info" data-scroll="clip-left">
+          <div class="info-card card-dark">
+            <div class="info-icon gold-text" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h3 class="feature-title">Location</h3>
+              <p>
+                <a href="https://maps.google.com/?q=1502+East+North+Street+Greenville+SC+29607" target="_blank" rel="noopener" class="address-link">
+                  1502 East North Street<br>Greenville, SC 29607
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-card card-dark">
+            <div class="info-icon gold-text" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <h3 class="feature-title">Phone</h3>
+              <p><a href="tel:+18642365155">(864) 236-5155</a></p>
+            </div>
+          </div>
+
+          <div class="info-card card-dark">
+            <div class="info-icon gold-text" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h3 class="feature-title">Email</h3>
+              <p><a href="mailto:thebarbercollectivegvl@gmail.com">thebarbercollectivegvl@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="info-card card-dark">
+            <div class="info-icon gold-text" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+            </div>
+            <div>
+              <h3 class="feature-title">Hours</h3>
+              <div class="hours-list">
+                <div class="hours-row"><span>Tuesday</span><span>10am - 6pm</span></div>
+                <div class="hours-row"><span>Wednesday</span><span>10am - 4pm</span></div>
+                <div class="hours-row"><span>Thursday</span><span>10am - 6pm</span></div>
+                <div class="hours-row"><span>Friday</span><span>10am - 5pm</span></div>
+                <div class="hours-row"><span>Saturday</span><span>10am - 1pm</span></div>
+                <div class="hours-row"><span>Sun - Mon</span><span>Closed</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="contact-map" data-scroll="clip-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.0!2d-82.37!3d34.855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1502+East+North+Street+Greenville+SC+29607!5e0!3m2!1sen!2sus!4v1"
+            width="100%"
+            height="100%"
+            style="border:0; border-radius:var(--radius-lg); min-height:400px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="The Barber Collective location map"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/649622ca737b3137390e4e2a/5a3df793-3560-40f3-87fc-e8275e742ce6/Barber-black.png"
+            alt="The Barber Collective"
+            width="60"
+            height="60"
+            loading="lazy"
+            decoding="async"
+            class="footer-logo"
+          >
+          <p class="footer-desc">
+            Premium barbershop in Greenville, SC. Where precision meets tradition.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#hero" class="footer-link">Home</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#gallery" class="footer-link">Gallery</a></li>
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4 class="footer-heading">Follow Us</h4>
+          <div class="footer-social-links">
+            <a href="http://instagram.com/thebarbercollective_gvl" target="_blank" rel="noopener" class="social-link color-muted-light" aria-label="Follow us on Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+          <div class="mt-4">
+            <a href="https://www.vagaro.com/lfc7yl" target="_blank" rel="noopener" class="btn btn-outline-light footer-cta-btn">
+              Book Appointment
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider-dark footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="footer-text">&copy; 2026 The Barber Collective. All rights reserved.</p>
+        <p class="footer-text">1502 East North Street, Greenville, SC 29607</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

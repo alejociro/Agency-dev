@@ -1,51 +1,53 @@
-# WEB — PASO 0: DIRECCIÓN CREATIVA
+# WEB — STEP 0: CREATIVE DIRECTION
 
-Lee el JSON de auditoría indicado y define el brief creativo antes de escribir código.
+Read the indicated audit JSON and define the creative brief before writing any code.
 
-**Input:** `$ARGUMENTS` (ruta al auditoria.json, si no está ya en contexto)
+**Input:** `$ARGUMENTS` (path to auditoria.json, if not already in context)
+
+**Language rule:** The brief comment content should be in Spanish where it references business-specific data. Website copy and client-facing text must be in Spanish.
 
 ---
 
-## Brief obligatorio
+## Required Brief
 
-Documenta como comentario al tope del archivo principal:
+Document as a comment at the top of the main file:
 
 ```
 /* BRIEF CREATIVO
-   Negocio    : [nombre del JSON]
-   Sector     : [sector del JSON]
-   Tono       : [elegir uno o combinación de la tabla]
-   Concepto   : [una frase que capture la IDEA central del diseño]
-   Diferenciador visual: [lo que nadie va a olvidar de este sitio]
+   Negocio    : [name from JSON]
+   Sector     : [sector from JSON]
+   Tono       : [choose one or combination from table]
+   Concepto   : [one phrase capturing the CENTRAL IDEA of the design]
+   Diferenciador visual: [the thing nobody will forget about this site]
    Tipografía : [display font] + [body font]
-   Mood       : [3 palabras: ej. "oscuro · dorado · preciso"]
-   Paleta base: [colores del JSON como punto de partida]
+   Mood       : [3 words: e.g. "dark · golden · precise"]
+   Paleta base: [colors from JSON as starting point]
 */
 ```
 
 ---
 
-## Tabla de tonos
+## Tone Table
 
-| Tono | Tipografía sugerida | Efectos sugeridos | Sectores típicos |
+| Tone | Suggested Typography | Suggested Effects | Typical Sectors |
 |---|---|---|---|
-| luxury refinado | Cormorant Garamond + Jost | grain, sombras doradas | moda, joyería, spa |
-| brutalist vibrante | Space Grotesk + DM Mono | bordes gruesos, offset texto | agencias, arte, música |
-| editorial sofisticado | Playfair Display + Source Serif | mucho espacio, líneas finas | revistas, arquitectura |
-| orgánico natural | Lora + Nunito | texturas verdes, gradientes suaves | alimentación, bienestar |
-| futurista tech | Syne + IBM Plex Mono | neón, glassmorphism | SaaS, startups, crypto |
-| artesanal cálido | Libre Baskerville + Karla | papel, grano, ocres | artesanía, restaurantes |
-| corporativo moderno | Plus Jakarta Sans + Inter | gradientes sutiles, limpio | finanzas, consultoría, B2B |
-| minimalista premium | DM Sans + Cabinet Grotesk | mucho blanco, tipografía big | arquitectura, diseño |
-| retro bold | Clash Display + Satoshi | colores saturados, formas geométricas | cultura, eventos, gastro |
-| neo-orgánico | Fraunces + Outfit | blobs, gradientes cálidos, bordes suaves | wellness, eco, orgánico |
+| luxury refined | Cormorant Garamond + Jost | grain, golden shadows | fashion, jewelry, spa |
+| brutalist vibrant | Space Grotesk + DM Mono | thick borders, offset text | agencies, art, music |
+| editorial sophisticated | Playfair Display + Source Serif | lots of space, fine lines | magazines, architecture |
+| organic natural | Lora + Nunito | green textures, soft gradients | food, wellness |
+| futuristic tech | Syne + IBM Plex Mono | neon, glassmorphism | SaaS, startups, crypto |
+| artisanal warm | Libre Baskerville + Karla | paper, grain, ochres | crafts, restaurants |
+| corporate modern | Plus Jakarta Sans + Inter | subtle gradients, clean | finance, consulting, B2B |
+| minimalist premium | DM Sans + Cabinet Grotesk | lots of white, big typography | architecture, design |
+| retro bold | Clash Display + Satoshi | saturated colors, geometric shapes | culture, events, gastro |
+| neo-organic | Fraunces + Outfit | blobs, warm gradients, soft edges | wellness, eco, organic |
 
 ---
 
-## Reglas del brief
+## Brief Rules
 
-- El tono se elige según `sector` del JSON y los valores del negocio
-- Si el JSON tiene colores detectados → usalos como punto de partida, no los ignores
-- El "diferenciador visual" debe ser algo concreto: "hero con texto en diagonal sobre imagen granulada", no "diseño moderno y elegante"
-- Tipografía NUNCA puede ser Inter, Roboto, Arial, Helvetica ni Open Sans como fuente display (salvo en "corporativo moderno" donde Inter solo se permite como body)
-- Presenta el brief al usuario y espera confirmación antes de proceder al siguiente paso
+- The tone is chosen based on the JSON `sector` and the business values
+- If the JSON has detected colors → use them as a starting point, don't ignore them
+- The "diferenciador visual" must be something concrete: "hero with diagonal text over grainy image", not "modern and elegant design"
+- Typography can NEVER be Inter, Roboto, Arial, Helvetica, or Open Sans as display font (except in "corporate modern" where Inter is only allowed as body)
+- Present the brief to the user and wait for confirmation before proceeding to the next step
