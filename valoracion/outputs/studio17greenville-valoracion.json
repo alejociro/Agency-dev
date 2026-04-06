@@ -1,0 +1,53 @@
+{
+  "negocio": "studio17greenville",
+  "stack": "astro",
+  "paginas": 4,
+  "componentes": 5,
+  "features": [
+    "contact_form",
+    "animations_system",
+    "scroll_animations",
+    "interactive_experience",
+    "testimonials",
+    "faq",
+    "google_maps",
+    "schema_jsonld",
+    "og_meta",
+    "design_system",
+    "mobile_menu",
+    "stat_counters",
+    "cta_banners",
+    "reduced_motion",
+    "texture_effects",
+    "multistep_form"
+  ],
+  "precio_base": 1600,
+  "multiplicador_paginas": 1.0,
+  "addons_total": 1725,
+  "precio_estimado": 3300,
+  "plan_mensual": "Pro",
+  "plan_mensual_precio": 149,
+  "ingreso_anual_estimado": 5088,
+  "desglose": {
+    "base": "$1,600 (Astro)",
+    "paginas": "x1.0 (4 pages)",
+    "addons": [
+      "Contact form: +$100",
+      "Animations system: +$150",
+      "Scroll-driven animations: +$200",
+      "Interactive experience: +$300",
+      "Testimonials: +$50",
+      "FAQ accordion: +$50",
+      "Google Maps: +$50",
+      "Schema JSON-LD: +$75",
+      "Open Graph meta: +$50",
+      "Design system: +$150",
+      "Mobile menu: +$75",
+      "Stat counters: +$75",
+      "CTA banners (5x): +$125",
+      "Reduced motion support: +$25",
+      "Texture effects: +$50",
+      "Multi-step form: +$200"
+    ]
+  }
+}

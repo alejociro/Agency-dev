@@ -1,0 +1,49 @@
+{
+  "negocio": "home-and-happy",
+  "stack": "html",
+  "paginas": 1,
+  "componentes": 0,
+  "features": [
+    "contact_form",
+    "scroll_animations",
+    "testimonials",
+    "faq",
+    "google_maps",
+    "schema_jsonld",
+    "og_meta",
+    "design_system",
+    "mobile_menu",
+    "stat_counters",
+    "team_section",
+    "cta_banners",
+    "reduced_motion",
+    "texture_effects"
+  ],
+  "precio_base": 1200,
+  "multiplicador_paginas": 0.7,
+  "addons_total": 1050,
+  "precio_estimado": 1900,
+  "plan_mensual": "Growth",
+  "plan_mensual_precio": 99,
+  "ingreso_anual_estimado": 3088,
+  "desglose": {
+    "base": "$1,200 (HTML Vanilla)",
+    "paginas": "x0.7 (1 pages)",
+    "addons": [
+      "Contact form: +$100",
+      "Scroll-driven animations: +$200",
+      "Testimonials: +$50",
+      "FAQ accordion: +$50",
+      "Google Maps: +$50",
+      "Schema JSON-LD: +$75",
+      "Open Graph meta: +$50",
+      "Design system: +$150",
+      "Mobile menu: +$75",
+      "Stat counters: +$75",
+      "Team section: +$50",
+      "CTA banners (2x): +$50",
+      "Reduced motion support: +$25",
+      "Texture effects: +$50"
+    ]
+  }
+}

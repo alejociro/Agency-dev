@@ -211,7 +211,7 @@
       width: 55%;
       height: 100%;
       background: linear-gradient(135deg, oklch(0.74 0.08 75 / 0.7) 0%, oklch(0.35 0.06 60 / 0.85) 100%),
-                  url('http://aperfect10nails.com/MyPhotosGalary/newbanner8.jpg') center/cover no-repeat;
+                  url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&q=80') center/cover no-repeat;
       clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
       z-index: 1;
 
@@ -1119,12 +1119,57 @@
     border-top: 1px solid rgba(200, 169, 110, 0.1);
     padding: var(--space-6) 0;
 
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+      margin-bottom: var(--space-8);
+
+      @media (min-width: 768px) {
+        grid-template-columns: 2fr 1fr 1fr;
+      }
+    }
+
+    .footer__col {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+
+      h4 {
+        font-family: var(--font-body);
+        font-size: var(--text-small);
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--color-primary);
+        margin-bottom: var(--space-2);
+      }
+
+      a {
+        font-size: var(--text-small);
+        color: var(--color-accent);
+        transition: color var(--duration-fast);
+
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+    }
+
+    .footer__tagline {
+      font-size: var(--text-small);
+      color: var(--color-accent);
+      max-width: 35ch;
+      line-height: var(--leading-body);
+    }
+
     .footer__inner {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: var(--space-3);
       text-align: center;
+      padding-top: var(--space-6);
+      border-top: 1px solid rgba(200, 169, 110, 0.08);
 
       @media (min-width: 768px) {
         flex-direction: row;

@@ -97,9 +97,11 @@ const dressings = ['Ranch', 'Balsamic Vinaigrette', 'Caesar'];
     }
   }
 
-  .lunch-text {
-    position: sticky;
-    top: calc(var(--space-16) + 2rem);
+  @media (min-width: 768px) {
+    .lunch-text {
+      position: sticky;
+      top: calc(var(--space-16) + 2rem);
+    }
   }
 
   .lunch-text em {

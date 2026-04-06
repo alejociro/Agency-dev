@@ -155,37 +155,37 @@ document.addEventListener("alpine:init", () => {
     activeTab: 0,
     categories: [
       {
-        name: "Manicuras",
-        note: "Extra $15 por Gel Polish en Collagen Spa Manicure",
+        name: "Manicures",
+        note: "Extra $15 for Gel Polish on Collagen Spa Manicure",
         items: [
-          { name: "Classic Manicure", desc: "Corte y moldeado, tratamiento de cutículas, masaje con loción, esmalte regular, toalla caliente", price: "$25" },
-          { name: "Signature Manicure", desc: "Exfoliación con azúcar, masaje con aceite caliente, toalla caliente, esmalte regular", price: "$35" },
-          { name: "Collagen Spa Manicure", desc: "Guantes de colágeno, hidratación profunda, exfoliación, masaje con aceite caliente", price: "$45" }
+          { name: "Classic Manicure", desc: "Shaping, cuticle care, lotion massage, regular polish, hot towel", price: "$25" },
+          { name: "Signature Manicure", desc: "Sugar scrub, hot oil massage, hot towel, regular polish", price: "$35" },
+          { name: "Collagen Spa Manicure", desc: "Collagen gloves, deep moisturizing, exfoliation, hot oil massage", price: "$45" }
         ]
       },
       {
-        name: "Pedicuras",
-        note: "Extra $15 por Gel Polish. Collagen Socks: $10",
+        name: "Pedicures",
+        note: "Extra $15 for Gel Polish. Collagen Socks: $10",
         items: [
           { name: "Regular Pedicure", desc: null, price: "$35" },
           { name: "Spa Pedicure", desc: null, price: "$45" },
           { name: "Deluxe Pedicure", desc: null, price: "$55" },
-          { name: "Lovely Pedicure", desc: "Masaje de 20 min, tratamiento de colágeno, piedra caliente, elección de 5 aromas", price: "$65" },
-          { name: "Collagen Socks", desc: "Hidratación intensa, suaviza líneas finas", price: "$10" }
+          { name: "Lovely Pedicure", desc: "20-min massage, collagen treatment, hot stone, choice of 5 scents", price: "$65" },
+          { name: "Collagen Socks", desc: "Intense hydration, softens fine lines", price: "$10" }
         ]
       },
       {
-        name: "Extensiones",
+        name: "Extensions",
         note: null,
         items: [
           { name: "Acrylic Full Set", desc: null, price: "$45+" },
           { name: "Acrylic Fill-In", desc: null, price: "$35+" },
-          { name: "Acrylic con Gel Polish (Full Set)", desc: null, price: "$55+" },
-          { name: "Acrylic con Gel Polish (Fill-In)", desc: null, price: "$50+" },
+          { name: "Acrylic w/ Gel Polish (Full Set)", desc: null, price: "$55+" },
+          { name: "Acrylic w/ Gel Polish (Fill-In)", desc: null, price: "$50+" },
           { name: "Pink & White Full Set", desc: null, price: "$65+" },
           { name: "Pink & White Fill-In", desc: null, price: "$55+" },
-          { name: "Remoción de Uñas", desc: null, price: "$10+" },
-          { name: "Reparación de Uña", desc: null, price: "$4+" }
+          { name: "Nail Removal", desc: null, price: "$10+" },
+          { name: "Nail Repair", desc: null, price: "$4+" }
         ]
       },
       {
@@ -199,33 +199,33 @@ document.addEventListener("alpine:init", () => {
           { name: "Ombre Full Set", desc: null, price: "$65+" },
           { name: "Ombre Fill-In", desc: null, price: "$60+" },
           { name: "Color Overlay Full Set", desc: null, price: "$45" },
-          { name: "Servicios Adicionales", desc: null, price: "$5+" }
+          { name: "Additional Services", desc: null, price: "$5+" }
         ]
       },
       {
-        name: "Depilación",
+        name: "Waxing",
         note: null,
         items: [
-          { name: "Cejas", desc: null, price: "$12" },
-          { name: "Labio Superior", desc: null, price: "$8" },
-          { name: "Labio Inferior y Mentón", desc: null, price: "$20+" },
-          { name: "Cejas, Labio y Mentón", desc: null, price: "$25+" },
-          { name: "Rostro Completo", desc: null, price: "$35+" },
-          { name: "Brazos", desc: null, price: "$50+" },
-          { name: "Axilas", desc: null, price: "$30+" },
-          { name: "Piernas (Rodilla hacia abajo)", desc: null, price: "$60+" }
+          { name: "Eyebrows", desc: null, price: "$12" },
+          { name: "Upper Lip", desc: null, price: "$8" },
+          { name: "Lower Lip & Chin", desc: null, price: "$20+" },
+          { name: "Eyebrows, Lip & Chin", desc: null, price: "$25+" },
+          { name: "Full Face", desc: null, price: "$35+" },
+          { name: "Arms", desc: null, price: "$50+" },
+          { name: "Underarms", desc: null, price: "$30+" },
+          { name: "Legs (Knee Down)", desc: null, price: "$60+" }
         ]
       },
       {
         name: "Extras",
         note: null,
         items: [
-          { name: "Cambio Gel Polish (Manos)", desc: null, price: "$25" },
-          { name: "Cambio Gel Polish (Pies)", desc: null, price: "$30" },
-          { name: "Cambio Esmalte Regular (Manos)", desc: null, price: "$15" },
-          { name: "Cambio Esmalte Regular (Pies)", desc: null, price: "$20" },
-          { name: "Punta Blanca", desc: null, price: "Extra $5" },
-          { name: "Diseño de Uñas", desc: null, price: "$7+" }
+          { name: "Gel Polish Change (Hands)", desc: null, price: "$25" },
+          { name: "Gel Polish Change (Feet)", desc: null, price: "$30" },
+          { name: "Regular Polish Change (Hands)", desc: null, price: "$15" },
+          { name: "Regular Polish Change (Feet)", desc: null, price: "$20" },
+          { name: "White Tip", desc: null, price: "Extra $5" },
+          { name: "Nail Design", desc: null, price: "$7+" }
         ]
       }
     ]

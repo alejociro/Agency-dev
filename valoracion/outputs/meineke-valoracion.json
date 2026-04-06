@@ -1,0 +1,35 @@
+{
+  "negocio": "meineke",
+  "stack": "react",
+  "paginas": 0,
+  "componentes": 0,
+  "features": [
+    "contact_form",
+    "scroll_animations",
+    "interactive_experience",
+    "design_system",
+    "cta_banners",
+    "reduced_motion",
+    "multistep_form"
+  ],
+  "precio_base": 1800,
+  "multiplicador_paginas": 0.7,
+  "addons_total": 1050,
+  "precio_estimado": 2300,
+  "plan_mensual": "Growth",
+  "plan_mensual_precio": 99,
+  "ingreso_anual_estimado": 3488,
+  "desglose": {
+    "base": "$1,800 (React/Vite)",
+    "paginas": "x0.7 (0 pages)",
+    "addons": [
+      "Contact form: +$100",
+      "Scroll-driven animations: +$200",
+      "Interactive experience: +$300",
+      "Design system: +$150",
+      "CTA banners (3x): +$75",
+      "Reduced motion support: +$25",
+      "Multi-step form: +$200"
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "negocio": "Shine 4 Seasons Salon",
   "url_produccion": "https://shine4seasons.vercel.app",
-  "fecha_deploy": "2026-04-05",
+  "fecha_deploy": "2026-04-06",
   "stack": "html",
   "carpeta_origen": "web/shine4seasons/"
 }

@@ -83,7 +83,13 @@
       "Bash(grep -l \"color-indigo-deep\\\\|Playfair\" /Users/et59866/agencia/Agency-dev/web/indigo-flow-and-art/dist/_astro/*.css)",
       "Bash(npx vercel:*)",
       "Bash(npm list:*)",
-      "Bash(npm i:*)"
+      "Bash(npm i:*)",
+      "WebFetch(domain:greenvillewebworks.com)",
+      "WebFetch(domain:www.intelligentsdesigns.com)",
+      "WebFetch(domain:upstatesc.net)",
+      "WebFetch(domain:www.sandlappercreative.com)",
+      "WebFetch(domain:gruffygoat.com)",
+      "WebFetch(domain:www.webyking.com)"
     ]
   }
 }

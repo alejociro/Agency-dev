@@ -1,0 +1,51 @@
+{
+  "negocio": "greenville-chiropractic",
+  "stack": "html",
+  "paginas": 1,
+  "componentes": 0,
+  "features": [
+    "animations_system",
+    "scroll_animations",
+    "testimonials",
+    "faq",
+    "google_maps",
+    "schema_jsonld",
+    "og_meta",
+    "design_system",
+    "mobile_menu",
+    "stat_counters",
+    "team_section",
+    "cta_banners",
+    "custom_favicon",
+    "reduced_motion",
+    "texture_effects"
+  ],
+  "precio_base": 1200,
+  "multiplicador_paginas": 0.7,
+  "addons_total": 1125,
+  "precio_estimado": 1950,
+  "plan_mensual": "Pro",
+  "plan_mensual_precio": 149,
+  "ingreso_anual_estimado": 3738,
+  "desglose": {
+    "base": "$1,200 (HTML Vanilla)",
+    "paginas": "x0.7 (1 pages)",
+    "addons": [
+      "Animations system: +$150",
+      "Scroll-driven animations: +$200",
+      "Testimonials: +$50",
+      "FAQ accordion: +$50",
+      "Google Maps: +$50",
+      "Schema JSON-LD: +$75",
+      "Open Graph meta: +$50",
+      "Design system: +$150",
+      "Mobile menu: +$75",
+      "Stat counters: +$75",
+      "Team section: +$50",
+      "CTA banners (2x): +$50",
+      "Custom favicon: +$25",
+      "Reduced motion support: +$25",
+      "Texture effects: +$50"
+    ]
+  }
+}

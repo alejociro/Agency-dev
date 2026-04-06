@@ -144,8 +144,9 @@
           header.classList.remove('header--scrolled');
         }
 
-        /* Hide/show on scroll direction */
-        if (currentScrollY > lastScrollY && currentScrollY > 300) {
+        /* Hide/show on scroll direction (desktop only — mobile needs hamburger) */
+        const isDesktop = window.innerWidth >= 768;
+        if (isDesktop && currentScrollY > lastScrollY && currentScrollY > 300) {
           header.classList.add('header--hidden');
         } else {
           header.classList.remove('header--hidden');

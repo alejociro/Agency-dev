@@ -1,0 +1,51 @@
+{
+  "negocio": "handyman-greenville",
+  "stack": "html",
+  "paginas": 4,
+  "componentes": 0,
+  "features": [
+    "contact_form",
+    "scroll_animations",
+    "testimonials",
+    "faq",
+    "schema_jsonld",
+    "og_meta",
+    "design_system",
+    "mobile_menu",
+    "stat_counters",
+    "team_section",
+    "cta_banners",
+    "custom_favicon",
+    "reduced_motion",
+    "texture_effects",
+    "multistep_form"
+  ],
+  "precio_base": 1200,
+  "multiplicador_paginas": 1.0,
+  "addons_total": 1275,
+  "precio_estimado": 2500,
+  "plan_mensual": "Pro",
+  "plan_mensual_precio": 149,
+  "ingreso_anual_estimado": 4288,
+  "desglose": {
+    "base": "$1,200 (HTML Vanilla)",
+    "paginas": "x1.0 (4 pages)",
+    "addons": [
+      "Contact form: +$100",
+      "Scroll-driven animations: +$200",
+      "Testimonials: +$50",
+      "FAQ accordion: +$50",
+      "Schema JSON-LD: +$75",
+      "Open Graph meta: +$50",
+      "Design system: +$150",
+      "Mobile menu: +$75",
+      "Stat counters: +$75",
+      "Team section: +$50",
+      "CTA banners (4x): +$100",
+      "Custom favicon: +$25",
+      "Reduced motion support: +$25",
+      "Texture effects: +$50",
+      "Multi-step form: +$200"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "negocio": "the-wrkt-greenville",
+  "stack": "astro",
+  "paginas": 1,
+  "componentes": 5,
+  "features": [
+    "contact_form",
+    "animations_system",
+    "scroll_animations",
+    "testimonials",
+    "faq",
+    "google_maps",
+    "schema_jsonld",
+    "og_meta",
+    "design_system",
+    "mobile_menu",
+    "stat_counters",
+    "cta_banners",
+    "reduced_motion",
+    "texture_effects",
+    "pricing_section"
+  ],
+  "precio_base": 1600,
+  "multiplicador_paginas": 0.7,
+  "addons_total": 1275,
+  "precio_estimado": 2400,
+  "plan_mensual": "Growth",
+  "plan_mensual_precio": 99,
+  "ingreso_anual_estimado": 3588,
+  "desglose": {
+    "base": "$1,600 (Astro)",
+    "paginas": "x0.7 (1 pages)",
+    "addons": [
+      "Contact form: +$100",
+      "Animations system: +$150",
+      "Scroll-driven animations: +$200",
+      "Testimonials: +$50",
+      "FAQ accordion: +$50",
+      "Google Maps: +$50",
+      "Schema JSON-LD: +$75",
+      "Open Graph meta: +$50",
+      "Design system: +$150",
+      "Mobile menu: +$75",
+      "Stat counters: +$75",
+      "CTA banners (5x): +$125",
+      "Reduced motion support: +$25",
+      "Texture effects: +$50",
+      "Pricing section: +$50"
+    ]
+  }
+}

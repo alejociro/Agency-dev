@@ -1,0 +1,41 @@
+{
+  "negocio": "bocasyrisas",
+  "stack": "astro",
+  "paginas": 1,
+  "componentes": 2,
+  "features": [
+    "contact_form",
+    "scroll_animations",
+    "testimonials",
+    "faq",
+    "schema_jsonld",
+    "mobile_menu",
+    "cta_banners",
+    "custom_favicon",
+    "reduced_motion",
+    "texture_effects"
+  ],
+  "precio_base": 1600,
+  "multiplicador_paginas": 0.7,
+  "addons_total": 775,
+  "precio_estimado": 1900,
+  "plan_mensual": "Growth",
+  "plan_mensual_precio": 99,
+  "ingreso_anual_estimado": 3088,
+  "desglose": {
+    "base": "$1,600 (Astro)",
+    "paginas": "x0.7 (1 pages)",
+    "addons": [
+      "Contact form: +$100",
+      "Scroll-driven animations: +$200",
+      "Testimonials: +$50",
+      "FAQ accordion: +$50",
+      "Schema JSON-LD: +$75",
+      "Mobile menu: +$75",
+      "CTA banners (5x): +$125",
+      "Custom favicon: +$25",
+      "Reduced motion support: +$25",
+      "Texture effects: +$50"
+    ]
+  }
+}

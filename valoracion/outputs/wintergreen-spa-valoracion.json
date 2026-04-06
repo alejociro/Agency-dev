@@ -1,0 +1,45 @@
+{
+  "negocio": "wintergreen-spa",
+  "stack": "html",
+  "paginas": 2,
+  "componentes": 0,
+  "features": [
+    "contact_form",
+    "scroll_animations",
+    "faq",
+    "google_maps",
+    "schema_jsonld",
+    "og_meta",
+    "design_system",
+    "mobile_menu",
+    "cta_banners",
+    "reduced_motion",
+    "texture_effects",
+    "multistep_form"
+  ],
+  "precio_base": 1200,
+  "multiplicador_paginas": 0.9,
+  "addons_total": 1100,
+  "precio_estimado": 2200,
+  "plan_mensual": "Growth",
+  "plan_mensual_precio": 99,
+  "ingreso_anual_estimado": 3388,
+  "desglose": {
+    "base": "$1,200 (HTML Vanilla)",
+    "paginas": "x0.9 (2 pages)",
+    "addons": [
+      "Contact form: +$100",
+      "Scroll-driven animations: +$200",
+      "FAQ accordion: +$50",
+      "Google Maps: +$50",
+      "Schema JSON-LD: +$75",
+      "Open Graph meta: +$50",
+      "Design system: +$150",
+      "Mobile menu: +$75",
+      "CTA banners (3x): +$75",
+      "Reduced motion support: +$25",
+      "Texture effects: +$50",
+      "Multi-step form: +$200"
+    ]
+  }
+}

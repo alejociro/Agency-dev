@@ -68,9 +68,11 @@ const steps = [
     }
   }
 
-  .how-text {
-    position: sticky;
-    top: calc(var(--space-16) + 2rem);
+  @media (min-width: 768px) {
+    .how-text {
+      position: sticky;
+      top: calc(var(--space-16) + 2rem);
+    }
   }
 
   .how-text em {

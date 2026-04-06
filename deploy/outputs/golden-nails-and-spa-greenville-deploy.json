@@ -1,7 +1,7 @@
 {
   "negocio": "Golden Nails & Spa",
   "url_produccion": "https://golden-nails-and-spa-greenville.vercel.app",
-  "fecha_deploy": "2026-04-05",
+  "fecha_deploy": "2026-04-06",
   "stack": "html",
   "carpeta_origen": "web/golden-nails-and-spa-greenville"
 }
