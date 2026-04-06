@@ -1,243 +1,193 @@
 # OUTREACH BATCH — 2026-04-06
 # 16 emails generated for Greenville SC businesses
-# Sender: Sebastian Garcia — Sales Manager @ CreedNova
+# Sender: Sebastian Garcia — Web Designer @ CreedNova
 
 ═══════════════════════════════════════
 TO: lanho30021@yahoo.com
-SUBJECT: Golden Nails & Spa's website
+SUBJECT: Quick question about Golden Nails' website
 ═══════════════════════════════════════
 
 Hi,
 
-I'm Sebastian from CreedNova, a web design studio here in Greenville. I came across Golden Nails & Spa and your reputation as the go-to nail salon on Milestone Plaza really stands out.
+I'm Sebastian, a web designer from CreedNova based in Greenville. I came across Golden Nails & Spa and noticed the site is built on Divi — it works, but the navigation gets pretty cramped on mobile and the booking page takes a few extra taps to reach.
 
-I noticed your current site can be a bit hard to navigate on phones, which is how most people search for nail salons these days. A business with your quality of service deserves a website that matches, so our team put together a modern concept to show you what I mean:
+I put together a quick redesign concept to show what a cleaner mobile experience could look like:
 
-👉 https://golden-nails-and-spa-greenville.vercel.app
+golden-nails-and-spa-greenville.vercel.app
 
-Takes 30 seconds to check on your phone. If you like what you see, I'd love to chat about making it yours.
-
-Best regards,
 Sebastian Garcia
-Sales Manager · Greenville, South Carolina
-CreedNova — creednova.com
-(862) 459-7048
+CreedNova · Greenville, SC
 linkedin.com/in/sebastian-garcia-167522295/
 
 ───────────────────────────────────────
 
 ═══════════════════════════════════════
 TO: info@nailsalongreenville.com
-SUBJECT: Nail Salon Greenville's website
+SUBJECT: Your directory site on mobile
 ═══════════════════════════════════════
 
 Hi,
 
-I'm Sebastian with CreedNova, a web studio based in Greenville. I found your site while looking at top-rated nail salons in the area, and it's clear you've built a trusted name connecting people with quality nail care.
+I'm Sebastian, a web designer based in Greenville. I found nailsalongreenville.com while researching local nail salons — the directory concept is solid, but I noticed the salon listings are hard to browse on a phone and the page loads a bit slow.
 
-Your current site has a lot of potential, but it's not the easiest experience on mobile — and that's where most of your customers are searching from. Our team put together a quick modern concept to show what's possible:
+I put together a redesign concept that makes the salon grid easier to tap through on mobile:
 
-👉 https://nail-salon-greenville.vercel.app
+nail-salon-greenville.vercel.app
 
-Give it a quick look on your phone — takes 30 seconds. If it resonates, I'd love to have a quick conversation.
-
-Best regards,
 Sebastian Garcia
-Sales Manager · Greenville, South Carolina
-CreedNova — creednova.com
-(862) 459-7048
+CreedNova · Greenville, SC
 linkedin.com/in/sebastian-garcia-167522295/
 
 ───────────────────────────────────────
 
 ═══════════════════════════════════════
 TO: shine4seasonssalon@gmail.com
-SUBJECT: Shine 4 Seasons Salon's website
+SUBJECT: Shine 4 Seasons — mobile booking flow
 ═══════════════════════════════════════
 
 Hi,
 
-I'm Sebastian from CreedNova, a web design studio in Greenville. Shine 4 Seasons caught my eye — offering nails, spa, and beauty all under one roof on Pelham Road is a great setup, and I can see there's real potential to bring in even more clients online.
+I'm Sebastian, a web designer in Greenville. I was looking at Shine 4 Seasons' site and noticed the booking button sends you to gocheckin.net — it works, but jumping to a different domain can feel off for customers, especially on mobile.
 
-I noticed your current site runs on a booking platform that limits how your brand comes across, especially on mobile. Our developers put together a modern concept that puts your services front and center:
+I put together a redesign concept that keeps everything in one place:
 
-👉 https://shine4seasons.vercel.app
+shine4seasons.vercel.app
 
-Check it out on your phone — takes just 30 seconds. If you like the direction, let's talk.
-
-Best regards,
 Sebastian Garcia
-Sales Manager · Greenville, South Carolina
-CreedNova — creednova.com
-(862) 459-7048
+CreedNova · Greenville, SC
 linkedin.com/in/sebastian-garcia-167522295/
 
 ───────────────────────────────────────
 
 ═══════════════════════════════════════
 TO: DOANTHAI1195@GMAIL.COM
-SUBJECT: A Perfect 10 Nails' website
+SUBJECT: A Perfect 10 Nails site question
 ═══════════════════════════════════════
 
 Hi,
 
-I'm Sebastian with CreedNova, a Greenville-based web design studio. A Perfect 10 Nails has been a staple for professional nail care, and your commitment to a clean, welcoming environment really comes through.
+I'm Sebastian, a web designer in Greenville. I checked out A Perfect 10 Nails' site and noticed it's still on http (not https) — browsers are flagging that as "not secure" now, which can turn people away before they even see your services.
 
-Your current site was built with some older technology that makes it tough to use on today's phones. There's so much potential to showcase your manicure, pedicure, and waxing services in a way that brings in new clients. Our team put together a fresh concept:
+I put together a redesign concept with a clean, secure setup:
 
-👉 https://a-perfect-10-nails.vercel.app
+a-perfect-10-nails.vercel.app
 
-Takes 30 seconds on your phone. If you like it, I'd love to chat.
-
-Best regards,
 Sebastian Garcia
-Sales Manager · Greenville, South Carolina
-CreedNova — creednova.com
-(862) 459-7048
+CreedNova · Greenville, SC
 linkedin.com/in/sebastian-garcia-167522295/
 
 ───────────────────────────────────────
 
 ═══════════════════════════════════════
 TO: tetianamassageterapist@yahoo.com
-SUBJECT: Wintergreen Spa's website
+SUBJECT: Wintergreen Spa's Wix site
 ═══════════════════════════════════════
 
 Hi,
 
-I'm Sebastian from CreedNova, a web design studio here in Greenville. Wintergreen SPA's combination of massage, infrared sauna, salt room, and hot tub is such a unique offering — not many spas in the area cover that full range.
+I'm Sebastian, a web designer in Greenville. I came across Wintergreen SPA — the salt room and infrared sauna are really unique offerings. I noticed the Wix site doesn't show those amenities right away and the layout feels a bit basic for what you actually offer.
 
-Your current Wix site does the job, but I think there's a big opportunity to better capture the relaxation and premium feel of what you offer. Our team put together a concept that gives Wintergreen the online presence it deserves:
+I put together a redesign concept that highlights the full experience upfront:
 
-👉 https://wintergreen-spa.vercel.app
+wintergreen-spa.vercel.app
 
-Quick 30-second look on your phone will show you the difference. Let me know if you'd like to talk about it.
-
-Best regards,
 Sebastian Garcia
-Sales Manager · Greenville, South Carolina
-CreedNova — creednova.com
-(862) 459-7048
+CreedNova · Greenville, SC
 linkedin.com/in/sebastian-garcia-167522295/
 
 ───────────────────────────────────────
 
 ═══════════════════════════════════════
 TO: karaspa1@gmail.com
-SUBJECT: Kara Day Spa's website
+SUBJECT: Kara Day Spa's website on mobile
 ═══════════════════════════════════════
 
 Hi,
 
-I'm Sebastian with CreedNova, a web studio based in downtown Greenville. Kara Day Spa has been a downtown staple for relaxation, and the range of services you offer — from massages to facials to spa packages — is impressive.
+I'm Sebastian, a web designer in Greenville. I was looking at Kara Day Spa's site — I love that you include a lunch menu and chiropractic alongside the spa services, that's rare. But the Divi layout makes it hard to find those details on a phone without scrolling through a lot of pages.
 
-I see a lot of potential in your business to attract even more clients with a modern online presence. Your current site doesn't quite capture the premium experience you deliver in person. Our team built a concept that does:
+I put together a redesign concept that brings it all together:
 
-👉 https://kara-day-spa.vercel.app
+kara-day-spa.vercel.app
 
-30 seconds on your phone is all it takes. If it catches your eye, I'd love to chat.
-
-Best regards,
 Sebastian Garcia
-Sales Manager · Greenville, South Carolina
-CreedNova — creednova.com
-(862) 459-7048
+CreedNova · Greenville, SC
 linkedin.com/in/sebastian-garcia-167522295/
 
 ───────────────────────────────────────
 
 ═══════════════════════════════════════
 TO: info@studio17@gmail.com
-SUBJECT: Studio 17's website
+SUBJECT: Studio 17's Squarespace site
 ═══════════════════════════════════════
 
 Hi,
 
-I'm Sebastian from CreedNova, a web design studio in Greenville. Studio 17's approach to Pilates — focusing on lengthening, strengthening, and balance — really stands out in the local fitness scene.
+I'm Sebastian, a web designer in Greenville. I checked out Studio 17's site — I like BeLinda's approach to Classical Pilates. The Squarespace template is clean but the class schedule and booking aren't easy to find without clicking around.
 
-Your Squarespace site works, but I think there's untapped potential to better reflect the energy and focus of your studio online. Our team put together a modern concept that feels more like the Studio 17 experience:
+I put together a redesign concept that puts the schedule front and center:
 
-👉 https://studio17-greenville.vercel.app
+studio17-greenville.vercel.app
 
-Take a quick look on your phone — 30 seconds. If you like the direction, let's connect.
-
-Best regards,
 Sebastian Garcia
-Sales Manager · Greenville, South Carolina
-CreedNova — creednova.com
-(862) 459-7048
+CreedNova · Greenville, SC
 linkedin.com/in/sebastian-garcia-167522295/
 
 ───────────────────────────────────────
 
 ═══════════════════════════════════════
 TO: hello.indigoflowandart@gmail.com
-SUBJECT: Indigo Flow and Art's website
+SUBJECT: Indigo's Pilates + Art site
 ═══════════════════════════════════════
 
 Hi,
 
-I'm Sebastian with CreedNova, a web studio here in Greenville. The way Indigo Flow and Art blends Classical Pilates with a fine art gallery is truly one of a kind — I haven't seen anything like it in the area.
+I'm Sebastian, a web designer in Greenville. I found Indigo Flow and Art on Pendleton Street — combining Classical Pilates with a fine art gallery is genuinely one of a kind. The Squarespace site is minimal, but it doesn't really show off that creative space the way it could.
 
-A concept this unique deserves a website that captures that creative energy. Your current Squarespace site is clean but doesn't fully convey what makes Indigo special. Our designers built something to show you what I mean:
+I put together a redesign concept that captures more of that energy:
 
-👉 https://indigo-flow-and-art.vercel.app
+indigo-flow-and-art.vercel.app
 
-30 seconds on your phone. If it speaks to you, I'd love to talk.
-
-Best regards,
 Sebastian Garcia
-Sales Manager · Greenville, South Carolina
-CreedNova — creednova.com
-(862) 459-7048
+CreedNova · Greenville, SC
 linkedin.com/in/sebastian-garcia-167522295/
 
 ───────────────────────────────────────
 
 ═══════════════════════════════════════
 TO: reform@reforagvl.com
-SUBJECT: Refora's website
+SUBJECT: Refora's site — quick thought
 ═══════════════════════════════════════
 
 Hi,
 
-I'm Sebastian from CreedNova, a web design studio in Greenville. Refora's combination of Pilates, yoga, and a café all in one space is such a smart concept — "Growth Happens Through Rhythm, Not Rush" really captures the vibe.
+I'm Sebastian, a web designer in Greenville. I was checking out Refora — Pilates, yoga, and a cafe all in one spot is a great concept. The WordPress site has a lot of pages (schedule, membership, FAQ, cafe, shop, events) which makes it hard to navigate on mobile without a lot of tapping.
 
-With everything you have going on, there's huge potential to grow your community even more with a site that truly reflects that energy. Our team put together a concept to show what that could look like:
+I put together a redesign concept that simplifies the flow:
 
-👉 https://refora-gvl.vercel.app
+refora-gvl.vercel.app
 
-Take a quick peek on your phone — 30 seconds. If it feels right, let's chat.
-
-Best regards,
 Sebastian Garcia
-Sales Manager · Greenville, South Carolina
-CreedNova — creednova.com
-(862) 459-7048
+CreedNova · Greenville, SC
 linkedin.com/in/sebastian-garcia-167522295/
 
 ───────────────────────────────────────
 
 ═══════════════════════════════════════
 TO: greenville@thewrkt.com
-SUBJECT: The WRKT Greenville's website
+SUBJECT: The WRKT Greenville site
 ═══════════════════════════════════════
 
 Hi,
 
-I'm Sebastian with CreedNova, a web studio based in Greenville. The WRKT's unlimited Reformer Pilates model with flexible memberships is a great fit for the Greenville market — it makes premium fitness accessible.
+I'm Sebastian, a web designer in Greenville. I was looking at The WRKT's Greenville page — the unlimited Reformer Pilates model is smart. I noticed the Squarespace site is mostly focused on the brand overall and the Greenville location page doesn't have its own strong identity to convert local visitors.
 
-I think there's real potential to convert more visitors into members with a site built specifically for your Greenville location. Our team put together a fast, modern concept focused on getting people to book:
+I put together a redesign concept focused specifically on the Greenville studio:
 
-👉 https://the-wrkt-greenville.vercel.app
+the-wrkt-greenville.vercel.app
 
-30 seconds on your phone tells the whole story. If you're interested, I'd love to connect.
-
-Best regards,
 Sebastian Garcia
-Sales Manager · Greenville, South Carolina
-CreedNova — creednova.com
-(862) 459-7048
+CreedNova · Greenville, SC
 linkedin.com/in/sebastian-garcia-167522295/
 
 ───────────────────────────────────────
@@ -249,139 +199,109 @@ SUBJECT: Sitio web de Servi Taxes
 
 Hola,
 
-Soy Sebastian de CreedNova, un estudio de diseño web aquí en Greenville. Vi el trabajo que hacen en Servi Taxes con contabilidad e impuestos para la comunidad hispana, y se nota que hay mucha confianza y experiencia detrás.
+Soy Sebastian, disenador web de CreedNova aqui en Greenville. Vi el sitio de Servi Taxes — esta en una plataforma de landing pages (LeadConnector) que se ve un poco generica y no carga tan rapido en celular.
 
-Creo que hay mucho potencial para atraer más clientes con un sitio que refleje mejor la profesionalidad de sus servicios. Nuestro equipo armó un concepto moderno para mostrarles lo que es posible:
+Arme un concepto de rediseno que se ve mas profesional y carga rapido:
 
-👉 https://servi-taxes.vercel.app
+servi-taxes.vercel.app
 
-Toma 30 segundos verlo en el celular. Si les gusta lo que ven, me encantaría conversarlo.
-
-Saludos cordiales,
 Sebastian Garcia
-Sales Manager · Greenville, South Carolina
-CreedNova — creednova.com
-(862) 459-7048
+CreedNova · Greenville, SC
 linkedin.com/in/sebastian-garcia-167522295/
 
 ───────────────────────────────────────
 
 ═══════════════════════════════════════
 TO: elevatemybiz2019@gmail.com
-SUBJECT: Greenville Irrigation Services' website
+SUBJECT: Greenville Irrigation's website
 ═══════════════════════════════════════
 
 Hi,
 
-I'm Sebastian from CreedNova, a web design studio here in Greenville. Greenville Irrigation Services being a locally owned family business serving the Upstate really resonates — people want to hire someone who knows the area.
+I'm Sebastian, a web designer in Greenville. I was looking at Greenville Irrigation Services' site on the Duda platform — there's a lot of good content about irrigation and landscape lighting, but the dark background and layout make it hard to read on a phone.
 
-Your current site has good content but there's a lot of potential to stand out more in local search and make it easier for homeowners to reach you on mobile. Our team put together a modern concept:
+I put together a redesign concept with a cleaner layout:
 
-👉 https://greenville-irrigation-services.vercel.app
+greenville-irrigation-services.vercel.app
 
-Quick 30-second look on your phone. If you like the direction, I'd love to talk.
-
-Best regards,
 Sebastian Garcia
-Sales Manager · Greenville, South Carolina
-CreedNova — creednova.com
-(862) 459-7048
+CreedNova · Greenville, SC
 linkedin.com/in/sebastian-garcia-167522295/
 
 ───────────────────────────────────────
 
 ═══════════════════════════════════════
 TO: thebossbarberstudio@gmail.com
-SUBJECT: Boss Barber Studio's website
+SUBJECT: Boss Barber Studio's site
 ═══════════════════════════════════════
 
 Hi,
 
-I'm Sebastian with CreedNova, a web studio in Greenville. Boss Barber Studio's focus on family-oriented service and professional grooming is exactly what the community needs — it's clear you take pride in every client.
+I'm Sebastian, a web designer in Greenville. I checked out Boss Barber Studio's Squarespace site — the photos look great, but the booking button sends people to Squire on a separate domain. That extra step can lose customers, especially walk-in types just checking you out on their phone.
 
-A business with your reputation deserves an online presence that matches. Your current Squarespace site is solid, but I think there's potential to make a stronger first impression. Our team built a concept to show you:
+I put together a redesign concept with a smoother booking flow:
 
-👉 https://boss-barber-studio.vercel.app
+boss-barber-studio.vercel.app
 
-Check it on your phone — 30 seconds. If it clicks, let's chat.
-
-Best regards,
 Sebastian Garcia
-Sales Manager · Greenville, South Carolina
-CreedNova — creednova.com
-(862) 459-7048
+CreedNova · Greenville, SC
 linkedin.com/in/sebastian-garcia-167522295/
 
 ───────────────────────────────────────
 
 ═══════════════════════════════════════
 TO: thebarbercollectivegvl@gmail.com
-SUBJECT: The Barber Collective's website
+SUBJECT: Barber Collective's website
 ═══════════════════════════════════════
 
 Hi,
 
-I'm Sebastian from CreedNova, a web design studio based in Greenville. The Barber Collective has built a solid reputation in the GVL barber scene, and the community vibe really comes through.
+I'm Sebastian, a web designer in Greenville. I was looking at The Barber Collective's Squarespace site — the branding is solid but the site is pretty bare, just a logo and a booking button. There's no services list, no photos of the shop, nothing for someone to see before they commit to booking.
 
-I see great potential in taking that even further online. Your current Squarespace site works, but imagine having a site where clients can book directly without being redirected to another platform. Our team put together a concept that brings it all together:
+I put together a redesign concept that gives visitors more to go on:
 
-👉 https://barber-collective-gvl.vercel.app
+barber-collective-gvl.vercel.app
 
-30 seconds on your phone. If you like what you see — especially the idea of integrated booking — let's talk.
-
-Best regards,
 Sebastian Garcia
-Sales Manager · Greenville, South Carolina
-CreedNova — creednova.com
-(862) 459-7048
+CreedNova · Greenville, SC
 linkedin.com/in/sebastian-garcia-167522295/
 
 ───────────────────────────────────────
 
 ═══════════════════════════════════════
 TO: smile@precisiondentalsc.com
-SUBJECT: Precision Dental's website
+SUBJECT: Precision Dental's site on mobile
 ═══════════════════════════════════════
 
 Hi,
 
-I'm Sebastian with CreedNova, a web studio in Greenville. Precision Dental's commitment to high-quality care for the whole family is clear, and serving both the English and Spanish-speaking community is a real strength.
+I'm Sebastian, a web designer in Greenville. I was looking at Precision Dental's site — I noticed it serves both English and Spanish-speaking patients, which is great. The Divi layout works on desktop but the service pages are hard to browse on a phone and the bilingual content isn't easy to switch between.
 
-I think there's huge potential to bring in more patients with a modern site that's fully bilingual and easy to navigate on phones. Our team put together a concept — and since we're also bilingual, building and maintaining it in both languages is something we handle naturally:
+I put together a redesign concept with a cleaner bilingual experience:
 
-👉 https://precision-dental.vercel.app
+precision-dental.vercel.app
 
-Quick look on your phone — 30 seconds. If it resonates, I'd love to chat.
-
-Best regards,
 Sebastian Garcia
-Sales Manager · Greenville, South Carolina
-CreedNova — creednova.com
-(862) 459-7048
+CreedNova · Greenville, SC
 linkedin.com/in/sebastian-garcia-167522295/
 
 ───────────────────────────────────────
 
 ═══════════════════════════════════════
 TO: aroundthehousehomehandyman@gmail.com
-SUBJECT: Around The House Home Services' website
+SUBJECT: Around The House website
 ═══════════════════════════════════════
 
 Hi,
 
-I'm Sebastian from CreedNova, a web design studio here in Greenville. Over 30 years as a family-owned home repair business is no small thing — Around The House has clearly earned the trust of this community.
+I'm Sebastian, a web designer in Greenville. I came across Around The House Home Services — over 30 years in home repair is impressive. The GoDaddy site has good info but the layout feels dated and the contact form is buried at the bottom past a lot of scrolling.
 
-Your current GoDaddy site doesn't reflect the depth of experience you bring. There's so much potential to turn your website into a real lead generator for the Greenville and Greer area. Our team put together a modern concept:
+I put together a redesign concept that makes it easier for homeowners to reach you:
 
-👉 https://around-the-house-handyman.vercel.app
+around-the-house-handyman.vercel.app
 
-Takes 30 seconds on your phone. If you like it, I'd love to have a quick conversation.
-
-Best regards,
 Sebastian Garcia
-Sales Manager · Greenville, South Carolina
-CreedNova — creednova.com
-(862) 459-7048
+CreedNova · Greenville, SC
 linkedin.com/in/sebastian-garcia-167522295/
 
 ───────────────────────────────────────
@@ -406,7 +326,7 @@ OUTREACH COMPLETED: 16 emails generated, 7 skipped (no email)
 | Servi Taxes LLC | servitaxes.sc@gmail.com | Ready (Spanish) |
 | Greenville Irrigation Services | elevatemybiz2019@gmail.com | Ready (verify email) |
 | Boss Barber Studio | thebossbarberstudio@gmail.com | Ready |
-| The Barber Collective | thebarbercollectivegvl@gmail.com | Ready (booking mention) |
+| The Barber Collective | thebarbercollectivegvl@gmail.com | Ready |
 | Precision Dental | smile@precisiondentalsc.com | Ready (bilingual mention) |
 | Around The House Home Services | aroundthehousehomehandyman@gmail.com | Ready |
 | Capello Salon | — | Skipped (no email) |
@@ -421,4 +341,6 @@ OUTREACH COMPLETED: 16 emails generated, 7 skipped (no email)
 - Studio 17 email looks invalid: "info@studio17@gmail.com" (double @) — verify before sending
 - Greenville Irrigation email is uncertain: "elevatemybiz2019@gmail.com" — may want to call first
 - Before sending, add unsubscribe line: "If you'd prefer not to hear from me, just reply 'unsubscribe' and I won't reach out again."
-- Best send time: Wednesday morning, 7-11 AM EST
+- Best send time: Tuesday-Thursday morning, 7-11 AM EST
+- Max 10-15 emails per day from Gmail to avoid being flagged
+- Vary the order — don't send all 16 in one sitting
