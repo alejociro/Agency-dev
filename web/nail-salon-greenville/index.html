@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
+<script>document.documentElement.classList.replace('no-js','js')</script>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,9 +50,9 @@
   <link rel="stylesheet" href="styles/design-system.css">
   <link rel="stylesheet" href="styles/main.css">
 
-  <!-- Alpine.js -->
+  <!-- Main JS first, then Alpine (defer preserves order) -->
+  <script defer src="js/main.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  <script src="js/main.js"></script>
 
   <!-- Schema: Directory (WebSite + ItemList) -->
   <script type="application/ld+json">
@@ -205,13 +206,13 @@
           <p class="text-label hero__label">Greenville's Curated Nail Directory</p>
           <h1 class="hero__title">
             Find Your<br>
-            <span class="hero__title-accent">Perfect Salon</span>
+            <span class="hero__title-accent" data-split>Perfect Salon</span>
           </h1>
           <p class="hero__subtitle">
             Discover top-rated nail salons in Greenville, SC. Curated reviews, real services, and easy booking — your guide to the best nail artistry in town.
           </p>
           <div class="hero__actions">
-            <a href="#salons" class="btn btn--primary">Browse Salons</a>
+            <a href="#salons" class="btn btn--primary" data-magnetic>Browse Salons</a>
             <a href="#services" class="btn btn--ghost">
               Explore Services
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -381,8 +382,8 @@
           </div>
         </div>
 
-        <div style="text-align: center; margin-top: var(--space-6);" data-animate="fade-up">
-          <a href="#contact" class="btn btn--outline">List Your Salon</a>
+        <div style="text-align: center; margin-top: var(--space-3);" data-animate="fade-up">
+          <a href="#contact" class="btn btn--outline" data-magnetic>List Your Salon</a>
         </div>
       </div>
     </section>
@@ -390,7 +391,8 @@
     <!-- ============================================
          LOGO MARQUEE — infinite scroll salon logos
          ============================================ -->
-    <div class="logos-marquee section" style="padding-block: var(--space-8);" aria-label="Featured salon logos">
+    <hr class="divider" style="margin: 0;">
+    <div class="logos-marquee section" style="padding-block: var(--space-3);" aria-label="Featured salon logos">
       <div class="logos-track">
         <img src="https://www.nailsalongreenville.com/front/uploads/logolar/676a7ed798e73_fabulous-nails-spa-greenville-south-carolina-logo.png" width="120" height="60" alt="Fabulous Nail Spa" loading="lazy" decoding="async" style="height:48px;width:auto;object-fit:contain;filter:grayscale(0.3);opacity:0.7;transition:filter 0.3s,opacity 0.3s;">
         <img src="https://www.nailsalongreenville.com/front/uploads/logolar/6769860a4fb21_newnailslogo.png" width="120" height="60" alt="Nails on the River" loading="lazy" decoding="async" style="height:48px;width:auto;object-fit:contain;filter:grayscale(0.3);opacity:0.7;transition:filter 0.3s,opacity 0.3s;">
@@ -409,6 +411,8 @@
         <img src="https://www.nailsalongreenville.com/front/uploads/logolar/677856350fa17_regency-salon-spa-nails-greenville-south-carolina-logo.png" width="120" height="60" alt="Regency Salon and Spa" loading="lazy" decoding="async" style="height:48px;width:auto;object-fit:contain;filter:grayscale(0.3);opacity:0.7;transition:filter 0.3s,opacity 0.3s;" aria-hidden="true">
       </div>
     </div>
+
+    <hr class="divider" style="margin: 0;">
 
     <!-- ============================================
          SERVICES — SVG icons, asymmetric grid
@@ -482,6 +486,8 @@
       </div>
     </section>
 
+    <hr class="divider" style="margin: 0;">
+
     <!-- ============================================
          WHY US — Differentiators
          ============================================ -->
@@ -489,7 +495,7 @@
       <div class="container">
         <div class="grid-asymmetric" style="align-items: center;">
           <div data-animate="fade-right">
-            <p class="text-label" style="margin-bottom: var(--space-2);">Why This Directory</p>
+            <p class="text-label" style="margin-bottom: var(--space-1);">Why This Directory</p>
             <h2 class="why-us__heading">Not Just Another Listing.<br><span>A Curated Guide.</span></h2>
             <p class="why-us__description">
               Google Maps shows every business with a pin. We show you the salons worth visiting — with details that matter.
@@ -544,11 +550,12 @@
          HOW IT WORKS — Process steps
          ============================================ -->
     <section class="section" id="how-it-works">
-      <div class="container container--narrow">
+      <div class="container">
         <div class="section-header" data-animate="fade-up">
           <p class="text-label section-header__label">Simple & Quick</p>
           <h2 class="section-header__title">How It Works</h2>
           <hr class="gold-line gold-line--center section-header__line">
+          <p class="section-header__description">Three simple steps to find, compare, and book your perfect nail experience in Greenville.</p>
         </div>
 
         <div class="process" data-animate="stagger">
@@ -583,51 +590,6 @@
     </section>
 
     <!-- ============================================
-         RECENT COMPANIES
-         ============================================ -->
-    <section class="section" id="recent" style="background: var(--color-bg-alt);">
-      <div class="container">
-        <div class="section-header" data-animate="fade-up">
-          <p class="text-label section-header__label">New Additions</p>
-          <h2 class="section-header__title">Recently Listed Salons</h2>
-          <hr class="gold-line gold-line--center section-header__line">
-          <p class="section-header__description">
-            The latest salons to join our Greenville directory.
-          </p>
-        </div>
-
-        <div class="salon-grid" data-animate="stagger" style="max-width: 900px; margin-inline: auto;">
-          <div class="salon-card">
-            <div class="salon-card__initials">NS</div>
-            <h3 class="salon-card__name">Nail Spa</h3>
-            <p class="salon-card__location">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style="display:inline;vertical-align:-2px;" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
-              Greenville, SC
-            </p>
-          </div>
-
-          <div class="salon-card">
-            <img class="salon-card__logo" src="https://www.nailsalongreenville.com/front/uploads/logolar/677856350fa17_regency-salon-spa-nails-greenville-south-carolina-logo.png" width="80" height="80" alt="Regency Salon and Spa logo" loading="lazy" decoding="async">
-            <h3 class="salon-card__name">Regency Salon and Spa</h3>
-            <p class="salon-card__location">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style="display:inline;vertical-align:-2px;" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
-              Greenville, SC
-            </p>
-          </div>
-
-          <div class="salon-card">
-            <div class="salon-card__initials">5S</div>
-            <h3 class="salon-card__name">5 Sisters Nails & Spa</h3>
-            <p class="salon-card__location">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style="display:inline;vertical-align:-2px;" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
-              Greenville, SC
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================
          BLOG / TIPS
          ============================================ -->
     <section class="section" id="blog">
@@ -636,9 +598,10 @@
           <p class="text-label section-header__label">From the Blog</p>
           <h2 class="section-header__title">Nail Care Tips & Trends</h2>
           <hr class="gold-line gold-line--center section-header__line">
+          <p class="section-header__description">Expert advice on nail care, the latest trends, and tips to keep your manicure looking flawless.</p>
         </div>
 
-        <div class="blog-grid" data-animate="stagger" style="max-width: 800px; margin-inline: auto;">
+        <div class="blog-grid" data-animate="stagger">
           <article class="blog-card">
             <div class="blog-card__image-wrap">
               <img class="blog-card__image" src="https://www.nailsalongreenville.com/front/uploads/bloglar/6777bdfd31eae_what-is-permanent-nail-polish.jpg" width="600" height="400" alt="What is Permanent Nail Polish?" loading="lazy" decoding="async">
@@ -658,6 +621,17 @@
               <p class="blog-card__category">Extensions</p>
               <h3 class="blog-card__title">How Long Do Artificial Nails Last?</h3>
               <p class="blog-card__excerpt">A practical guide to the lifespan of artificial nails — from acrylics to gel extensions — and tips to maximize their durability.</p>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-card__image-wrap">
+              <img class="blog-card__image" src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=400&fit=crop" width="600" height="400" alt="Choosing the Right Nail Shape" loading="lazy" decoding="async">
+            </div>
+            <div class="blog-card__content">
+              <p class="blog-card__category">Style Guide</p>
+              <h3 class="blog-card__title">How to Choose the Right Nail Shape</h3>
+              <p class="blog-card__excerpt">From classic oval to trendy coffin — discover which nail shape flatters your fingers and suits your lifestyle best.</p>
             </div>
           </article>
         </div>
@@ -724,6 +698,7 @@
           <p class="text-label section-header__label">What People Say</p>
           <h2 class="section-header__title">Trusted by Greenville</h2>
           <hr class="gold-line gold-line--center section-header__line">
+          <p class="section-header__description">Real feedback from salon-goers and business owners using our directory.</p>
         </div>
 
         <div class="testimonials-track" data-animate="fade-up" data-delay="200">
@@ -790,7 +765,7 @@
     <section class="cta-band">
       <h2 class="cta-band__title" data-animate="fade-up">Own a Nail Salon?</h2>
       <p class="cta-band__text" data-animate="fade" data-delay="200">Join Greenville's premier nail directory. Get discovered by clients actively searching for your services.</p>
-      <a href="#contact" class="btn btn--primary" data-animate="fade-up" data-delay="300">List Your Salon Free</a>
+      <a href="#contact" class="btn btn--primary" data-animate="fade-up" data-delay="300" data-magnetic>List Your Salon Free</a>
     </section>
 
     <!-- ============================================
@@ -802,6 +777,7 @@
           <p class="text-label section-header__label">Questions</p>
           <h2 class="section-header__title">Frequently Asked</h2>
           <hr class="gold-line gold-line--center section-header__line">
+          <p class="section-header__description">Everything you need to know about our directory, listings, and how to get started.</p>
         </div>
 
         <div data-animate="fade-up" data-delay="200">
@@ -866,11 +842,11 @@
         <div class="contact-grid" data-animate="fade-up">
           <!-- Left: Info -->
           <div class="contact-info">
-            <p class="text-label" style="margin-bottom: var(--space-2);">Get in Touch</p>
-            <h2 style="margin-bottom: var(--space-3);">Let's Connect</h2>
-            <hr class="gold-line" style="margin-bottom: var(--space-4);">
-            <p style="color: var(--color-text-muted); margin-bottom: var(--space-6); max-width: 40ch;">
-              Have a question, want to list your salon, or partnership inquiry? We'd love to hear from you.
+            <p class="text-label" style="margin-bottom: var(--space-1);">Get in Touch</p>
+            <h2 style="margin-bottom: var(--space-2);">Let's Connect</h2>
+            <hr class="gold-line" style="margin-bottom: var(--space-2);">
+            <p style="color: var(--color-text-muted); margin-bottom: var(--space-3); max-width: 40ch; line-height: var(--leading-body);">
+              Have a question, want to list your salon, or partnership inquiry? We'd love to hear from you. Responses within 24 hours.
             </p>
 
             <div class="contact-details">
@@ -885,41 +861,64 @@
               <div class="contact-detail">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
                 <div>
-                  <p style="font-weight: var(--weight-medium); font-size: var(--text-small);">Contact</p>
+                  <p style="font-weight: var(--weight-medium); font-size: var(--text-small);">Email</p>
                   <p style="color: var(--color-text-muted); font-size: var(--text-small);">Use the form to reach us</p>
                 </div>
               </div>
+
+              <div class="contact-detail">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div>
+                  <p style="font-weight: var(--weight-medium); font-size: var(--text-small);">Response Time</p>
+                  <p style="color: var(--color-text-muted); font-size: var(--text-small);">Within 24 hours</p>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                <div>
+                  <p style="font-weight: var(--weight-medium); font-size: var(--text-small);">Listing</p>
+                  <p style="color: var(--color-text-muted); font-size: var(--text-small);">Free for all salons</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mini testimonial -->
+            <div style="margin-top: var(--space-3); padding: var(--space-3); background: var(--color-surface-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); border-left: 3px solid var(--color-primary);">
+              <p style="font-family: var(--font-display); font-style: italic; font-size: var(--text-small); color: var(--color-text); line-height: var(--leading-body); margin-bottom: var(--space-1);">"Listing here brought me new clients who specifically wanted gel nail services."</p>
+              <p style="font-size: var(--text-label); color: var(--color-text-muted);">— Tina L., Salon Owner</p>
             </div>
           </div>
 
-          <!-- Right: Form with floating labels -->
+          <!-- Right: Form -->
           <div class="contact-form-wrap" x-data="contactForm">
             <form class="form" @submit.prevent="submit()" x-show="!submitted">
-              <div class="field">
-                <input type="text" id="contact-name" placeholder=" " x-model="name" required>
-                <label for="contact-name">Full Name</label>
+              <div class="field-row">
+                <div class="field">
+                  <label for="contact-name">Full Name</label>
+                  <input type="text" id="contact-name" placeholder="Jane Doe" x-model="name" required>
+                </div>
+                <div class="field">
+                  <label for="contact-email">Email Address</label>
+                  <input type="email" id="contact-email" placeholder="you@example.com" x-model="email" required>
+                </div>
               </div>
 
               <div class="field">
-                <input type="email" id="contact-email" placeholder=" " x-model="email" required>
-                <label for="contact-email">Email Address</label>
-              </div>
-
-              <div class="field">
+                <label for="contact-subject">Topic</label>
                 <select id="contact-subject" x-model="subject" required>
-                  <option value="" disabled selected>Select a topic</option>
+                  <option value="" disabled selected>Select a topic...</option>
                   <option value="general">General Question</option>
                   <option value="list-salon">List My Salon</option>
                   <option value="update-listing">Update a Listing</option>
                   <option value="partnership">Partnership</option>
                   <option value="other">Other</option>
                 </select>
-                <label for="contact-subject" class="field__label--select">Topic</label>
               </div>
 
               <div class="field">
-                <textarea id="contact-message" placeholder=" " x-model="message" rows="4" required></textarea>
                 <label for="contact-message">Your Message</label>
+                <textarea id="contact-message" placeholder="Tell us how we can help..." x-model="message" rows="4" required></textarea>
               </div>
 
               <p x-show="error" x-text="error" style="color: var(--color-accent-dark); font-size: var(--text-small);"></p>
@@ -931,9 +930,9 @@
             </form>
 
             <!-- Success dialog -->
-            <div x-show="submitted" style="text-align: center; padding: var(--space-8) var(--space-4);">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" style="margin: 0 auto var(--space-3);"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <p style="font-size: var(--text-h3); font-family: var(--font-display); font-weight: 600; margin-bottom: var(--space-2);">Message Sent!</p>
+            <div x-show="submitted" style="text-align: center; padding: var(--space-6) var(--space-4);">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" style="margin: 0 auto var(--space-2);"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <p style="font-size: var(--text-h3); font-family: var(--font-display); font-weight: 600; margin-bottom: var(--space-1);">Message Sent!</p>
               <p style="color: var(--color-text-muted);">Thank you for reaching out. We'll get back to you within 24 hours.</p>
             </div>
           </div>

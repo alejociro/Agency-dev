@@ -33,6 +33,43 @@ Every site MUST vary its implementation. For each animation, adapt based on the 
 
 ---
 
+## ⛔ MANDATORY NO-JS FALLBACK RULE
+
+**ALL content that starts at `opacity: 0` MUST be visible if JavaScript fails to load.** Content hidden behind JS-dependent animations = invisible page = CRITICAL defect.
+
+**Required pattern — add this inline script BEFORE any external JS in `<head>` or at the top of `<body>`:**
+
+```html
+<script>document.documentElement.classList.add('js')</script>
+```
+
+**Then condition ALL opacity:0 on the `.js` class:**
+
+```css
+/* Content is VISIBLE by default (no JS) */
+[data-scroll], [data-animate] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Only hide for animation if JS is available */
+.js [data-scroll],
+.js [data-animate] {
+  opacity: 0;
+}
+.js [data-scroll="fade-up"],
+.js [data-animate="fade-up"]   { transform: translateY(32px); }
+.js [data-scroll="fade-left"],
+.js [data-animate="fade-left"] { transform: translateX(-32px); }
+/* ... etc for each animation direction */
+```
+
+**NEVER write unconditional `opacity: 0` on content elements in CSS.** This includes `[data-animate] { opacity: 0; }` without the `.js` prefix — if Alpine.js, the CDN, or any script fails, the user sees a blank page.
+
+**This applies to ALL animation approaches:** scroll-driven CSS, IntersectionObserver, Alpine x-data templates. If the section depends on JS/Alpine to render content (not just interactivity), provide static HTML fallback or `<noscript>` content.
+
+---
+
 ## Layer 1 — Page Load (immediate impact)
 
 ```css

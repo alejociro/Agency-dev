@@ -19,6 +19,38 @@ Use data from the audit JSON to personalize content.
 
 ---
 
+## ⛔ CONTENT DEDUPLICATION RULE
+
+**Each piece of information must appear EXACTLY ONCE on the page.** Repetition makes the site feel template-generated and wastes vertical space.
+
+Common violations to avoid:
+- **Differentiators bar + About features:** If the social-proof/diff bar already shows "Skilled Workmanship, Quality Products, 5-Star Service", the About section MUST NOT repeat those same 3 points. Use About for: business story, mission, history, team, or location context.
+- **Hero description + About text:** If the hero subtitle already states the value proposition, About must expand with NEW information (founding story, what makes them different in detail), not rephrase the same paragraph.
+- **Footer About + Section About:** Footer gets a 1-2 line summary. The section gets the full narrative. They should NOT be the same text.
+- **Service cards + Price menu:** Service overview cards describe categories. The price menu lists specifics. They complement each other — don't duplicate descriptions.
+
+**Mental test:** Read the page top-to-bottom. Does any sentence or idea make you think "I already read this"? If yes → one of the two instances must change to provide NEW value.
+
+---
+
+## ⛔ INLINE ELEMENT DISPLAY RULE
+
+**All `<span>` elements used as section labels, tags, or badges MUST have `display: block` or `display: inline-block` in CSS.** Without it, `margin-top`/`margin-bottom` won't apply and the label will collapse into the heading below it.
+
+```css
+/* Always set display on label spans */
+.section-label,
+.gallery__label,
+.faq__label,
+.contact__label,
+[class*="__label"],
+[class*="__tag"] {
+  display: block; /* or inline-block */
+}
+```
+
+---
+
 ## Main page (index)
 
 ### HERO — First impression = Everything

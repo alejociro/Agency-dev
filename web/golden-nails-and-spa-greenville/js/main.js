@@ -1,9 +1,9 @@
 /* ═══════════════════════════════════════
    MAIN JS — Golden Nails & Spa
-   4 capas de animación + Alpine.js data
+   Scroll reveal + Alpine.js data + interactions
    ═══════════════════════════════════════ */
 
-/* ── Capa 2: Scroll Reveal (Intersection Observer) ── */
+/* ── Scroll Reveal (Intersection Observer) ── */
 const scrollObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -13,61 +13,13 @@ const scrollObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.15, rootMargin: "0px 0px -50px 0px" }
+  { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
 );
 
-/* ── Capa 4: Custom Cursor (luxury, pointer: fine only) ── */
-function initCustomCursor() {
-  if (!window.matchMedia("(pointer: fine)").matches) return;
-
-  const cursor = document.createElement("div");
-  cursor.className = "custom-cursor";
-  const follower = document.createElement("div");
-  follower.className = "cursor-follower";
-  document.body.appendChild(cursor);
-  document.body.appendChild(follower);
-
-  let cursorX = 0, cursorY = 0;
-  let followerX = 0, followerY = 0;
-
-  document.addEventListener("mousemove", (e) => {
-    cursorX = e.clientX;
-    cursorY = e.clientY;
-    cursor.style.left = cursorX + "px";
-    cursor.style.top = cursorY + "px";
-  });
-
-  function updateFollower() {
-    followerX += (cursorX - followerX) * 0.12;
-    followerY += (cursorY - followerY) * 0.12;
-    follower.style.left = followerX + "px";
-    follower.style.top = followerY + "px";
-    requestAnimationFrame(updateFollower);
-  }
-  requestAnimationFrame(updateFollower);
-
-  const hoverTargets = "a, button, [role='button'], .gallery__item, .service-card, .btn";
-  document.addEventListener("mouseover", (e) => {
-    if (e.target.closest(hoverTargets)) {
-      cursor.classList.add("cursor--hover");
-      follower.classList.add("cursor--hover");
-    }
-  });
-  document.addEventListener("mouseout", (e) => {
-    if (e.target.closest(hoverTargets)) {
-      cursor.classList.remove("cursor--hover");
-      follower.classList.remove("cursor--hover");
-    }
-  });
-}
-
-/* ── Respeta prefers-reduced-motion ── */
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-/* ── DOMContentLoaded: init observers ── */
 document.addEventListener("DOMContentLoaded", () => {
-  // Scroll reveal
-  document.querySelectorAll("[data-animate]").forEach((el) => {
+  document.querySelectorAll("[data-animate], [data-stagger]").forEach((el) => {
     if (prefersReducedMotion) {
       el.classList.add("is-visible");
     } else {
@@ -75,27 +27,54 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Gold line animation
-  document.querySelectorAll(".gold-line--animated").forEach((el) => {
-    scrollObserver.observe(el);
-  });
+  initBASlider();
+  initMagnetic();
+});
 
-  // Custom cursor (only if motion is fine)
-  if (!prefersReducedMotion) {
-    initCustomCursor();
+/* ── Before/After Slider ── */
+function initBASlider() {
+  const slider = document.getElementById("baSlider");
+  if (!slider) return;
+
+  const afterImg = slider.querySelector(".ba-slider__after");
+  const line = slider.querySelector(".ba-slider__line");
+  const handle = slider.querySelector(".ba-slider__handle");
+  let isDragging = false;
+
+  function setPosition(x) {
+    const rect = slider.getBoundingClientRect();
+    let pct = ((x - rect.left) / rect.width) * 100;
+    pct = Math.max(2, Math.min(98, pct));
+    afterImg.style.clipPath = `inset(0 0 0 ${pct}%)`;
+    line.style.left = pct + "%";
+    handle.style.left = pct + "%";
   }
 
-  // Sparkle radial follow on service cards
-  document.querySelectorAll(".service-card").forEach((card) => {
-    card.addEventListener("mousemove", (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = ((e.clientX - rect.left) / rect.width) * 100;
-      const y = ((e.clientY - rect.top) / rect.height) * 100;
-      card.style.setProperty("--sparkle-x", x + "%");
-      card.style.setProperty("--sparkle-y", y + "%");
+  slider.addEventListener("mousedown", (e) => { isDragging = true; setPosition(e.clientX); });
+  slider.addEventListener("touchstart", (e) => { isDragging = true; setPosition(e.touches[0].clientX); }, { passive: true });
+
+  window.addEventListener("mousemove", (e) => { if (isDragging) setPosition(e.clientX); });
+  window.addEventListener("touchmove", (e) => { if (isDragging) setPosition(e.touches[0].clientX); }, { passive: true });
+
+  window.addEventListener("mouseup", () => { isDragging = false; });
+  window.addEventListener("touchend", () => { isDragging = false; });
+}
+
+/* ── Magnetic Button ── */
+function initMagnetic() {
+  if (prefersReducedMotion) return;
+  document.querySelectorAll("[data-magnetic]").forEach((el) => {
+    el.addEventListener("mousemove", (e) => {
+      const rect = el.getBoundingClientRect();
+      const x = (e.clientX - rect.left - rect.width / 2) * 0.25;
+      const y = (e.clientY - rect.top - rect.height / 2) * 0.25;
+      el.style.transform = `translate(${x}px, ${y}px)`;
+    });
+    el.addEventListener("mouseleave", () => {
+      el.style.transform = "";
     });
   });
-});
+}
 
 /* ═══════════════════════════════════════
    ALPINE.JS COMPONENTS
@@ -128,12 +107,11 @@ document.addEventListener("alpine:init", () => {
     }
   }));
 
-  /* ── Gallery Lightbox with Filter ── */
+  /* ── Gallery Lightbox ── */
   Alpine.data("galleryLightbox", () => ({
     open: false,
     currentIndex: 0,
     images: [],
-    filter: "all",
 
     init() {
       this.images = Array.from(
@@ -164,8 +142,7 @@ document.addEventListener("alpine:init", () => {
     },
 
     prev() {
-      this.currentIndex =
-        (this.currentIndex - 1 + this.images.length) % this.images.length;
+      this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
     },
 
     get currentSrc() {
@@ -178,37 +155,37 @@ document.addEventListener("alpine:init", () => {
     activeTab: 0,
     categories: [
       {
-        name: "Manicures",
-        note: "Extra $15 for Gel Polish on Collagen Spa Manicure",
+        name: "Manicuras",
+        note: "Extra $15 por Gel Polish en Collagen Spa Manicure",
         items: [
-          { name: "Classic Manicure", desc: "Nail trimming, cuticle treatment, lotion massage, regular polish, hot towel", price: "$25" },
-          { name: "Signature Manicure", desc: "Sugar scrub, hot oil massage, hot towel, regular polish", price: "$35" },
-          { name: "Collagen Spa Manicure", desc: "Collagen gloves, deep moisturizing, sugar scrub, hot oil massage", price: "$45" }
+          { name: "Classic Manicure", desc: "Corte y moldeado, tratamiento de cutículas, masaje con loción, esmalte regular, toalla caliente", price: "$25" },
+          { name: "Signature Manicure", desc: "Exfoliación con azúcar, masaje con aceite caliente, toalla caliente, esmalte regular", price: "$35" },
+          { name: "Collagen Spa Manicure", desc: "Guantes de colágeno, hidratación profunda, exfoliación, masaje con aceite caliente", price: "$45" }
         ]
       },
       {
-        name: "Pedicures",
-        note: "Extra $15 for Gel Polish. Collagen Socks add-on: $10",
+        name: "Pedicuras",
+        note: "Extra $15 por Gel Polish. Collagen Socks: $10",
         items: [
           { name: "Regular Pedicure", desc: null, price: "$35" },
           { name: "Spa Pedicure", desc: null, price: "$45" },
           { name: "Deluxe Pedicure", desc: null, price: "$55" },
-          { name: "Lovely Pedicure", desc: "20-min massage, collagen treatment, hot stone, choice of 5 scents", price: "$65" },
-          { name: "Collagen Socks", desc: "Intense hydration, smooths fine lines", price: "$10" }
+          { name: "Lovely Pedicure", desc: "Masaje de 20 min, tratamiento de colágeno, piedra caliente, elección de 5 aromas", price: "$65" },
+          { name: "Collagen Socks", desc: "Hidratación intensa, suaviza líneas finas", price: "$10" }
         ]
       },
       {
-        name: "Enhancements",
+        name: "Extensiones",
         note: null,
         items: [
           { name: "Acrylic Full Set", desc: null, price: "$45+" },
           { name: "Acrylic Fill-In", desc: null, price: "$35+" },
-          { name: "Acrylic with Gel Polish (Full Set)", desc: null, price: "$55+" },
-          { name: "Acrylic with Gel Polish (Fill-In)", desc: null, price: "$50+" },
+          { name: "Acrylic con Gel Polish (Full Set)", desc: null, price: "$55+" },
+          { name: "Acrylic con Gel Polish (Fill-In)", desc: null, price: "$50+" },
           { name: "Pink & White Full Set", desc: null, price: "$65+" },
           { name: "Pink & White Fill-In", desc: null, price: "$55+" },
-          { name: "Nail Removal / Take-Off", desc: null, price: "$10+" },
-          { name: "Nail Repair", desc: null, price: "$4+" }
+          { name: "Remoción de Uñas", desc: null, price: "$10+" },
+          { name: "Reparación de Uña", desc: null, price: "$4+" }
         ]
       },
       {
@@ -222,33 +199,33 @@ document.addEventListener("alpine:init", () => {
           { name: "Ombre Full Set", desc: null, price: "$65+" },
           { name: "Ombre Fill-In", desc: null, price: "$60+" },
           { name: "Color Overlay Full Set", desc: null, price: "$45" },
-          { name: "Additional Services", desc: null, price: "$5+" }
+          { name: "Servicios Adicionales", desc: null, price: "$5+" }
         ]
       },
       {
-        name: "Waxing",
+        name: "Depilación",
         note: null,
         items: [
-          { name: "Eyebrows", desc: null, price: "$12" },
-          { name: "Upper Lip", desc: null, price: "$8" },
-          { name: "Bottom Lip & Chin", desc: null, price: "$20+" },
-          { name: "Eyebrows, Lip & Chin", desc: null, price: "$25+" },
-          { name: "Full Face", desc: null, price: "$35+" },
-          { name: "Arms", desc: null, price: "$50+" },
-          { name: "Underarms", desc: null, price: "$30+" },
-          { name: "Leg (Knees Down)", desc: null, price: "$60+" }
+          { name: "Cejas", desc: null, price: "$12" },
+          { name: "Labio Superior", desc: null, price: "$8" },
+          { name: "Labio Inferior y Mentón", desc: null, price: "$20+" },
+          { name: "Cejas, Labio y Mentón", desc: null, price: "$25+" },
+          { name: "Rostro Completo", desc: null, price: "$35+" },
+          { name: "Brazos", desc: null, price: "$50+" },
+          { name: "Axilas", desc: null, price: "$30+" },
+          { name: "Piernas (Rodilla hacia abajo)", desc: null, price: "$60+" }
         ]
       },
       {
         name: "Extras",
         note: null,
         items: [
-          { name: "Gel Polish Change (Fingernails)", desc: null, price: "$25" },
-          { name: "Gel Polish Change (Toenails)", desc: null, price: "$30" },
-          { name: "Regular Polish Change (Fingernails)", desc: null, price: "$15" },
-          { name: "Regular Polish Change (Toenails)", desc: null, price: "$20" },
-          { name: "White Tip", desc: null, price: "Extra $5" },
-          { name: "Nail Design", desc: null, price: "$7+" }
+          { name: "Cambio Gel Polish (Manos)", desc: null, price: "$25" },
+          { name: "Cambio Gel Polish (Pies)", desc: null, price: "$30" },
+          { name: "Cambio Esmalte Regular (Manos)", desc: null, price: "$15" },
+          { name: "Cambio Esmalte Regular (Pies)", desc: null, price: "$20" },
+          { name: "Punta Blanca", desc: null, price: "Extra $5" },
+          { name: "Diseño de Uñas", desc: null, price: "$7+" }
         ]
       }
     ]

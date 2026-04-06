@@ -59,6 +59,7 @@ Verify that everything meets the standards before confirming delivery.
 - [ ] Smooth and natural animations
 - [ ] `prefers-reduced-motion` respected
 - [ ] No animation blocks access to content
+- [ ] **No-JS fallback:** `<script>document.documentElement.classList.add('js')</script>` present, and ALL `opacity:0` for animations is conditional on `.js` class — if you remove all JS, is ALL content still visible? If not → CRITICAL
 
 ### Responsive
 - [ ] Mobile (360px) looks AS good as desktop
@@ -68,9 +69,10 @@ Verify that everything meets the standards before confirming delivery.
 
 ### Accessibility
 - [ ] All images with descriptive `alt`
-- [ ] WCAG AA contrast (minimum 4.5:1) on all backgrounds
+- [ ] **Contrast verification (4 pairs):** `--color-text` on `--color-bg` ≥ 4.5:1, `--color-primary` on `--color-bg` ≥ 4.5:1 (or ≥ 3:1 if only large text), `--color-primary` on `--color-surface` ≥ 3:1, `--color-text-muted` on `--color-bg` ≥ 4.5:1. **Gold/tan/beige on cream = FAILS — check this specifically.**
 - [ ] Visible focus on interactive elements (`:focus-visible`)
 - [ ] Semantic HTML (no divs where buttons/links/nav should go)
+- [ ] **Inline elements:** All `<span>` used as labels/tags/badges have `display: block` or `display: inline-block` in CSS (otherwise margin-top/bottom won't apply)
 
 ### SEO and Performance
 - [ ] Unique `<title>` and `<meta description>` per page
@@ -82,9 +84,14 @@ Verify that everything meets the standards before confirming delivery.
 - [ ] Speculation rules for prefetch
 - [ ] `content-visibility: auto` on below the fold sections
 
+### Content integrity
+- [ ] **No duplicated content:** Read the page top-to-bottom — no idea or information appears twice (e.g., diff-bar and About features saying the same thing, hero and About repeating the same text)
+- [ ] **Alpine/framework dependency:** If a section depends on Alpine/React to RENDER content (not just interactivity), provide static HTML fallback or verify the section shows meaningful content before JS initializes
+
 ### Code
 - [ ] No console.log in production
 - [ ] No unnecessary commented-out code
 - [ ] CSS variables used consistently
 - [ ] JavaScript doesn't block initial render
 - [ ] CSS organized with `@layer`
+- [ ] **Section padding sanity:** `--section-padding` ≤ 6rem. No 10rem+ padding on any section except hero/CTA banners

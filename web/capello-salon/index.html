@@ -443,22 +443,17 @@
     <div class="container">
       <div class="grid-asymmetric" style="align-items: center;">
 
-        <!-- Left: Animated scalp aura -->
+        <!-- Left: Scalp treatment image with aura overlay -->
         <div class="scalp-aura bleed-left" data-animate="fade-right">
-          <div class="scalp-aura__bg" aria-hidden="true"></div>
+          <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&h=750&fit=crop&q=80"
+               alt="Relaxing scalp treatment at Capello Salon"
+               width="600" height="750" loading="lazy" decoding="async"
+               style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+          <div class="scalp-aura__bg" aria-hidden="true" style="mix-blend-mode: soft-light;"></div>
           <div class="scalp-aura__rings" aria-hidden="true">
             <div class="scalp-aura__ring"></div>
             <div class="scalp-aura__ring"></div>
             <div class="scalp-aura__ring"></div>
-          </div>
-          <div class="scalp-aura__icon">
-            <svg viewBox="0 0 200 200" width="140" height="140" fill="none" stroke="var(--color-primary)" stroke-width="1.5" opacity="0.7">
-              <circle cx="100" cy="60" r="40"/>
-              <path d="M60 60c0 50 20 80 40 100 20-20 40-50 40-100" stroke-dasharray="4 4"/>
-              <circle cx="100" cy="60" r="15"/>
-              <path d="M85 55c10-5 20-5 30 0M88 65c8-3 16-3 24 0"/>
-              <circle cx="100" cy="60" r="55" stroke-dasharray="2 6" opacity="0.4"/>
-            </svg>
           </div>
         </div>
 
@@ -525,16 +520,10 @@
         <!-- Transformation 1: Balayage -->
         <div class="ba-card" data-before-after>
           <div class="ba-card__before">
-            <div style="text-align: center; padding: var(--space-4);">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-text-muted)" stroke-width="1" opacity="0.5"><circle cx="24" cy="16" r="10"/><path d="M14 16c0 16 4 24 10 28 6-4 10-12 10-28"/></svg>
-              <span style="display: block; margin-top: var(--space-2); font-family: var(--font-body); font-size: var(--text-small); color: var(--color-text-muted);">Single tone, flat</span>
-            </div>
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=530&fit=crop&q=80&sat=-100" alt="Before: single tone flat hair" width="400" height="530" loading="lazy" decoding="async" draggable="false" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="ba-card__after">
-            <div style="text-align: center; padding: var(--space-4);">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="1.5"><circle cx="24" cy="16" r="10"/><path d="M14 16c0 16 4 24 10 28 6-4 10-12 10-28"/><path d="M18 20c4 8 8 8 12 0" stroke="var(--color-secondary)" stroke-dasharray="2 2"/></svg>
-              <span style="display: block; margin-top: var(--space-2); font-family: var(--font-body); font-size: var(--text-small); color: var(--color-primary-dark);">Dimensional balayage</span>
-            </div>
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=530&fit=crop&q=80" alt="After: dimensional balayage blend" width="400" height="530" loading="lazy" decoding="async" draggable="false" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="ba-card__divider" aria-hidden="true"></div>
           <div class="ba-card__handle" aria-hidden="true">
@@ -548,16 +537,10 @@
         <!-- Transformation 2: Foilayage -->
         <div class="ba-card" data-before-after>
           <div class="ba-card__before">
-            <div style="text-align: center; padding: var(--space-4);">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-text-muted)" stroke-width="1" opacity="0.5"><path d="M16 8c0 10 2 20 8 32 6-12 8-22 8-32"/><path d="M12 12h24"/></svg>
-              <span style="display: block; margin-top: var(--space-2); font-family: var(--font-body); font-size: var(--text-small); color: var(--color-text-muted);">Grown out, brassy</span>
-            </div>
+            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400&h=530&fit=crop&q=80&sat=-100" alt="Before: grown out brassy hair" width="400" height="530" loading="lazy" decoding="async" draggable="false" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="ba-card__after">
-            <div style="text-align: center; padding: var(--space-4);">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-secondary)" stroke-width="1.5"><path d="M16 8c0 10 2 20 8 32 6-12 8-22 8-32"/><path d="M12 12h24"/><path d="M20 16c2 12 4 12 8 0" stroke="var(--color-accent)" stroke-dasharray="3 2"/><path d="M18 24c3 8 9 8 12 0" stroke="var(--color-primary)" stroke-dasharray="2 3"/></svg>
-              <span style="display: block; margin-top: var(--space-2); font-family: var(--font-body); font-size: var(--text-small); color: var(--color-secondary-dark);">Refreshed foilayage</span>
-            </div>
+            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400&h=530&fit=crop&q=80" alt="After: refreshed foilayage" width="400" height="530" loading="lazy" decoding="async" draggable="false" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="ba-card__divider" aria-hidden="true"></div>
           <div class="ba-card__handle" aria-hidden="true">
@@ -571,16 +554,10 @@
         <!-- Transformation 3: Color Correction -->
         <div class="ba-card" data-before-after>
           <div class="ba-card__before">
-            <div style="text-align: center; padding: var(--space-4);">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-text-muted)" stroke-width="1" opacity="0.5"><circle cx="24" cy="20" r="12"/><path d="M12 20c0 14 6 22 12 24 6-2 12-10 12-24"/><path d="M20 16h8" stroke-dasharray="1 2"/></svg>
-              <span style="display: block; margin-top: var(--space-2); font-family: var(--font-body); font-size: var(--text-small); color: var(--color-text-muted);">Uneven, damaged color</span>
-            </div>
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=400&h=530&fit=crop&q=80&sat=-100" alt="Before: uneven damaged color" width="400" height="530" loading="lazy" decoding="async" draggable="false" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="ba-card__after">
-            <div style="text-align: center; padding: var(--space-4);">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-accent)" stroke-width="1.5"><circle cx="24" cy="20" r="12"/><path d="M12 20c0 14 6 22 12 24 6-2 12-10 12-24"/><circle cx="24" cy="20" r="6" stroke="var(--color-primary)" fill="none"/><path d="M18 28c4 4 8 4 12 0" stroke="var(--color-secondary)"/></svg>
-              <span style="display: block; margin-top: var(--space-2); font-family: var(--font-body); font-size: var(--text-small); color: var(--color-accent-dark);">Seamless color correction</span>
-            </div>
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=400&h=530&fit=crop&q=80" alt="After: seamless color correction" width="400" height="530" loading="lazy" decoding="async" draggable="false" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="ba-card__divider" aria-hidden="true"></div>
           <div class="ba-card__handle" aria-hidden="true">
@@ -702,10 +679,16 @@
         </div>
 
         <!-- Right: Image -->
-        <div class="img-frame bleed-right" data-animate="fade-left" style="aspect-ratio: 3/4; background: linear-gradient(180deg, var(--color-surface-alt), var(--color-surface)); display: flex; align-items: center; justify-content: center;">
-          <div style="text-align: center; padding: var(--space-4);">
-            <span style="font-family: var(--font-display); font-size: clamp(4rem, 10vw, 8rem); line-height: 1; display: block; color: var(--color-primary);" data-counter="20" data-suffix="+">0</span>
-            <span style="font-family: var(--font-body); font-size: var(--text-small); text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-text-muted);">Years Transforming Confidence</span>
+        <div class="img-frame bleed-right" data-animate="fade-left" style="aspect-ratio: 3/4; position: relative; overflow: hidden;">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=800&fit=crop&q=80"
+               alt="Luxury hair salon interior with warm lighting"
+               width="600" height="800" loading="lazy" decoding="async"
+               style="width: 100%; height: 100%; object-fit: cover;">
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(45,36,36,0.6) 0%, transparent 50%); display: flex; align-items: flex-end; justify-content: center; padding-block-end: var(--space-6);">
+            <div style="text-align: center;">
+              <span style="font-family: var(--font-display); font-size: clamp(3rem, 8vw, 5rem); line-height: 1; display: block; color: var(--color-text-light);" data-counter="20" data-suffix="+">0</span>
+              <span style="font-family: var(--font-body); font-size: var(--text-small); text-transform: uppercase; letter-spacing: 0.12em; color: rgba(245,240,235,0.8);">Years Transforming Confidence</span>
+            </div>
           </div>
         </div>
 
@@ -716,7 +699,7 @@
   <!-- ════════════════════════════════════════
        CTA INTERMEDIO
        ════════════════════════════════════════ -->
-  <section style="background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); padding-block: var(--space-12); text-align: center; position: relative; overflow: hidden;">
+  <section style="background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); padding-block: var(--space-8); text-align: center; position: relative; overflow: hidden;">
     <!-- Decorative orb -->
     <div class="orb" style="background: rgba(255,255,255,0.1); width: 500px; height: 500px; top: -200px; right: -100px; filter: blur(80px);" aria-hidden="true"></div>
 
@@ -895,11 +878,11 @@
           <a href="#contact" class="btn btn--accent">Visit Birdie Boutique</a>
         </div>
 
-        <div class="img-frame bleed-right" data-animate="fade-left" style="aspect-ratio: 1/1; background: linear-gradient(135deg, rgba(212,149,106,0.15), rgba(237,140,194,0.15)); display: flex; align-items: center; justify-content: center;">
-          <svg viewBox="0 0 120 120" width="100" height="100" fill="none" stroke="var(--color-accent)" stroke-width="1" opacity="0.5">
-            <path d="M60 20l10 25h25l-20 15 8 25-23-17-23 17 8-25-20-15h25z"/>
-            <circle cx="60" cy="60" r="45" stroke-dasharray="4 6"/>
-          </svg>
+        <div class="img-frame bleed-right" data-animate="fade-left" style="aspect-ratio: 1/1; overflow: hidden;">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=600&fit=crop&q=80"
+               alt="Curated boutique jewelry and accessories display"
+               width="600" height="600" loading="lazy" decoding="async"
+               style="width: 100%; height: 100%; object-fit: cover;">
         </div>
 
       </div>
@@ -968,41 +951,28 @@
       </div>
 
       <div class="insta-strip" data-animate="fade-up">
-        <!-- Salon ambiance tiles (color-based since no real images) -->
         <div class="insta-strip__item">
-          <div class="insta-strip__visual" style="background: linear-gradient(135deg, var(--color-primary-glow), var(--color-surface));">
-            <svg width="32" height="32" viewBox="0 0 48 48" fill="none" stroke="var(--color-primary)" stroke-width="1" opacity="0.6"><circle cx="24" cy="12" r="8"/><path d="M16 20c-4 4-6 10-6 16a4 4 0 004 4h20a4 4 0 004-4c0-6-2-12-6-16"/></svg>
-          </div>
+          <img class="insta-strip__visual" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=300&h=300&fit=crop&q=75" alt="Balayage hair color result" width="300" height="300" loading="lazy" decoding="async" style="object-fit: cover;">
           <div class="insta-strip__ig-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg></div>
         </div>
         <div class="insta-strip__item">
-          <div class="insta-strip__visual" style="background: linear-gradient(135deg, var(--color-secondary-glow), var(--color-surface-alt));">
-            <svg width="32" height="32" viewBox="0 0 48 48" fill="none" stroke="var(--color-secondary)" stroke-width="1" opacity="0.6"><circle cx="14" cy="38" r="6"/><circle cx="34" cy="38" r="6"/><path d="M18 34L30 10M30 34L18 10"/></svg>
-          </div>
+          <img class="insta-strip__visual" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=300&h=300&fit=crop&q=75&crop=top" alt="Salon styling tools" width="300" height="300" loading="lazy" decoding="async" style="object-fit: cover;">
           <div class="insta-strip__ig-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg></div>
         </div>
         <div class="insta-strip__item">
-          <div class="insta-strip__visual" style="background: linear-gradient(135deg, rgba(212,149,106,0.15), var(--color-surface));">
-            <svg width="32" height="32" viewBox="0 0 48 48" fill="none" stroke="var(--color-accent)" stroke-width="1" opacity="0.6"><path d="M24 4c-6 8-16 14-16 26a16 16 0 0032 0c0-12-10-18-16-26z"/></svg>
-          </div>
+          <img class="insta-strip__visual" src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=300&h=300&fit=crop&q=75" alt="Beautiful hair styling" width="300" height="300" loading="lazy" decoding="async" style="object-fit: cover;">
           <div class="insta-strip__ig-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg></div>
         </div>
         <div class="insta-strip__item">
-          <div class="insta-strip__visual" style="background: linear-gradient(180deg, var(--color-primary-glow), rgba(255,127,110,0.15));">
-            <svg width="32" height="32" viewBox="0 0 48 48" fill="none" stroke="var(--color-primary-dark)" stroke-width="1" opacity="0.6"><path d="M12 8c0 8 4 16 4 28"/><path d="M24 4c0 10 4 18 4 32"/><path d="M36 8c0 8-4 16-4 28"/></svg>
-          </div>
+          <img class="insta-strip__visual" src="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=300&h=300&fit=crop&q=75" alt="Hair color transformation" width="300" height="300" loading="lazy" decoding="async" style="object-fit: cover;">
           <div class="insta-strip__ig-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg></div>
         </div>
         <div class="insta-strip__item">
-          <div class="insta-strip__visual" style="background: linear-gradient(135deg, var(--color-surface-alt), var(--color-primary-glow));">
-            <svg width="32" height="32" viewBox="0 0 48 48" fill="none" stroke="var(--color-accent)" stroke-width="1" opacity="0.6"><path d="M24 20l10 25h25l-20 15 8 25-23-17-23 17 8-25-20-15h25z" transform="scale(0.5) translate(24,10)"/></svg>
-          </div>
+          <img class="insta-strip__visual" src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=300&h=300&fit=crop&q=75" alt="Salon ambiance" width="300" height="300" loading="lazy" decoding="async" style="object-fit: cover;">
           <div class="insta-strip__ig-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg></div>
         </div>
         <div class="insta-strip__item">
-          <div class="insta-strip__visual" style="background: linear-gradient(135deg, rgba(255,127,110,0.1), rgba(237,140,194,0.15));">
-            <svg width="32" height="32" viewBox="0 0 48 48" fill="none" stroke="var(--color-secondary)" stroke-width="1" opacity="0.6"><circle cx="24" cy="24" r="16"/><path d="M16 20c5-3 11-3 16 0M18 28c4-2 8-2 12 0"/></svg>
-          </div>
+          <img class="insta-strip__visual" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=300&h=300&fit=crop&q=75&crop=center" alt="Luxury salon interior" width="300" height="300" loading="lazy" decoding="async" style="object-fit: cover;">
           <div class="insta-strip__ig-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg></div>
         </div>
       </div>
@@ -1237,7 +1207,7 @@
   <!-- ════════════════════════════════════════
        FOOTER
        ════════════════════════════════════════ -->
-  <footer style="background: var(--color-text); color: var(--color-text-light); padding-block: var(--space-12) var(--space-6);">
+  <footer style="background: var(--color-text); color: var(--color-text-light); padding-block: var(--space-8) var(--space-6);">
     <div class="container">
 
       <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-8); margin-block-end: var(--space-8);">

@@ -122,7 +122,7 @@
   --shadow-btn:   0 4px 16px rgba(184, 134, 11, 0.25);
 
   /* Secciones / Layout */
-  --section-padding:    clamp(5rem, 10vw, 10rem);
+  --section-padding:    clamp(2.5rem, 4vw, 4rem);
   --container-max:      1200px;
   --container-narrow:   800px;
   --container-padding:  clamp(1rem, 5vw, 2rem);
@@ -418,12 +418,8 @@
   contain-intrinsic-size: auto 600px;
 }
 
-/* will-change for animated elements (used sparingly) */
+/* will-change only for continuously animated elements */
 .hero__collage { will-change: transform; }
-.salon-card,
-.service-card,
-.blog-card { will-change: transform; }
-.btn--primary { will-change: transform, box-shadow; }
 
 /* ========================================
    ANIMATION SYSTEM — 4 Capas
@@ -474,42 +470,43 @@
 .hero__collage-item:nth-child(3) { animation: slideInRight3 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.8s both; }
 
 /* --- CAPA 2: Scroll Reveal (Intersection Observer) --- */
+/* Gate behind html.js so content is visible if JS fails */
 
-[data-animate] {
+html.js [data-animate] {
   opacity: 0;
   transition: opacity 0.7s ease,
               transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-[data-animate="fade-up"]    { transform: translateY(36px); }
-[data-animate="fade-down"]  { transform: translateY(-36px); }
-[data-animate="fade-left"]  { transform: translateX(-36px); }
-[data-animate="fade-right"] { transform: translateX(36px); }
-[data-animate="scale-in"]   { transform: scale(0.92); }
-[data-animate="fade"]       { transform: none; }
+html.js [data-animate="fade-up"]    { transform: translateY(36px); }
+html.js [data-animate="fade-down"]  { transform: translateY(-36px); }
+html.js [data-animate="fade-left"]  { transform: translateX(-36px); }
+html.js [data-animate="fade-right"] { transform: translateX(36px); }
+html.js [data-animate="scale-in"]   { transform: scale(0.92); }
+html.js [data-animate="fade"]       { transform: none; }
 
-[data-animate].is-visible {
+html.js [data-animate].is-visible {
   opacity: 1;
   transform: none;
 }
 
 /* Stagger children (grids, lists) */
-[data-animate="stagger"] > * {
+html.js [data-animate="stagger"] > * {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.5s ease,
               transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-[data-animate="stagger"].is-visible > *:nth-child(1)  { transition-delay: 0.05s; opacity: 1; transform: none; }
-[data-animate="stagger"].is-visible > *:nth-child(2)  { transition-delay: 0.10s; opacity: 1; transform: none; }
-[data-animate="stagger"].is-visible > *:nth-child(3)  { transition-delay: 0.15s; opacity: 1; transform: none; }
-[data-animate="stagger"].is-visible > *:nth-child(4)  { transition-delay: 0.20s; opacity: 1; transform: none; }
-[data-animate="stagger"].is-visible > *:nth-child(5)  { transition-delay: 0.25s; opacity: 1; transform: none; }
-[data-animate="stagger"].is-visible > *:nth-child(6)  { transition-delay: 0.30s; opacity: 1; transform: none; }
-[data-animate="stagger"].is-visible > *:nth-child(7)  { transition-delay: 0.35s; opacity: 1; transform: none; }
-[data-animate="stagger"].is-visible > *:nth-child(8)  { transition-delay: 0.40s; opacity: 1; transform: none; }
-[data-animate="stagger"].is-visible > *:nth-child(n+9){ transition-delay: 0.45s; opacity: 1; transform: none; }
+html.js [data-animate="stagger"].is-visible > *:nth-child(1)  { transition-delay: 0.05s; opacity: 1; transform: none; }
+html.js [data-animate="stagger"].is-visible > *:nth-child(2)  { transition-delay: 0.10s; opacity: 1; transform: none; }
+html.js [data-animate="stagger"].is-visible > *:nth-child(3)  { transition-delay: 0.15s; opacity: 1; transform: none; }
+html.js [data-animate="stagger"].is-visible > *:nth-child(4)  { transition-delay: 0.20s; opacity: 1; transform: none; }
+html.js [data-animate="stagger"].is-visible > *:nth-child(5)  { transition-delay: 0.25s; opacity: 1; transform: none; }
+html.js [data-animate="stagger"].is-visible > *:nth-child(6)  { transition-delay: 0.30s; opacity: 1; transform: none; }
+html.js [data-animate="stagger"].is-visible > *:nth-child(7)  { transition-delay: 0.35s; opacity: 1; transform: none; }
+html.js [data-animate="stagger"].is-visible > *:nth-child(8)  { transition-delay: 0.40s; opacity: 1; transform: none; }
+html.js [data-animate="stagger"].is-visible > *:nth-child(n+9){ transition-delay: 0.45s; opacity: 1; transform: none; }
 
 /* Custom delay via attribute */
 [data-delay="100"] { transition-delay: 0.1s; }
@@ -518,23 +515,25 @@
 [data-delay="400"] { transition-delay: 0.4s; }
 [data-delay="500"] { transition-delay: 0.5s; }
 
-/* Scroll-driven reading progress bar */
-.reading-progress {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--gradient-gold);
-  transform-origin: left;
-  z-index: calc(var(--z-nav) + 1);
-  animation: scaleProgress linear;
-  animation-timeline: scroll();
-}
+/* Scroll-driven reading progress bar — only if supported */
+@supports (animation-timeline: scroll()) {
+  .reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-gold);
+    transform-origin: left;
+    z-index: calc(var(--z-nav) + 1);
+    animation: scaleProgress linear;
+    animation-timeline: scroll();
+  }
 
-@keyframes scaleProgress {
-  from { transform: scaleX(0); }
-  to   { transform: scaleX(1); }
+  @keyframes scaleProgress {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+  }
 }
 
 /* --- CAPA 3: Micro-interacciones --- */
@@ -598,8 +597,9 @@
   50%      { box-shadow: 0 0 0 5px rgba(184, 134, 11, 0.10); }
 }
 
-.form__input:focus,
-.form__textarea:focus {
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
   animation: focusGlow 2s ease infinite;
 }
 
@@ -687,6 +687,25 @@
   }
 }
 
+/* --- CAPA 4: Text Split Reveal --- */
+html.js [data-split] .char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px) rotate(4deg);
+  transition: opacity 0.4s ease, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html.js [data-split].is-visible .char {
+  opacity: 1;
+  transform: translateY(0) rotate(0deg);
+}
+
+/* preserve whitespace between words */
+html.js [data-split] .char-space {
+  display: inline-block;
+  width: 0.3em;
+}
+
 /* --- Reduced motion --- */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -698,12 +717,14 @@
     scroll-behavior: auto !important;
   }
 
-  [data-animate] {
+  [data-animate],
+  html.js [data-animate] {
     opacity: 1 !important;
     transform: none !important;
   }
 
-  [data-animate="stagger"] > * {
+  [data-animate="stagger"] > *,
+  html.js [data-animate="stagger"] > * {
     opacity: 1 !important;
     transform: none !important;
   }

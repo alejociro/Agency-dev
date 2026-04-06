@@ -86,6 +86,26 @@ Use the JSON colors (`primario`, `secundario`, `fondo`, `texto`) as a starting p
 | dark (#0f0f0f, #1a1a2e) | light (#f0efe9, #e8e8e8) | mid-gray with no contrast |
 | medium (#4a5568) | DO NOT use as main background | — |
 
+### ⛔ MANDATORY CONTRAST VALIDATION GATE
+
+**BEFORE writing the CSS file, you MUST calculate and verify these 4 contrast pairs. This is a BLOCKING requirement — do NOT proceed if any pair fails.**
+
+| Pair | Minimum Ratio | Common Failure |
+|---|---|---|
+| `--color-text` on `--color-bg` | ≥ 4.5:1 | Dark gray on medium gray |
+| `--color-primary` on `--color-bg` | ≥ 4.5:1 (normal text) / ≥ 3:1 (large text only) | **Gold/tan/beige on cream/white — ALMOST ALWAYS FAILS** |
+| `--color-primary` on `--color-surface` | ≥ 3:1 | Same warm family = invisible |
+| `--color-text-muted` on `--color-bg` | ≥ 4.5:1 | Low-opacity text on light bg |
+
+**How to validate:** For each pair, estimate the contrast ratio. If `--color-primary` is used as text color for labels, links, or prices on light backgrounds, it MUST pass 4.5:1. If only used for large headings (≥24px / 18.66px bold), 3:1 is acceptable.
+
+**Warm-on-warm trap:** Gold (#C9A96E), tan, beige, coral, peach on cream (#FAF7F2), ivory, white backgrounds = ~2-3:1 ratio = **FAILS**. Solutions:
+- Darken the primary: gold → deep gold (#8B7530) or bronze (#7A6332)
+- Cool the background: cream → cool light (#F5F7FA) or true white-ish (#FAFAFA)
+- Use primary only for decorative elements (borders, icons, backgrounds) and a darker variant for text
+
+**If ANY pair fails → adjust the value and re-verify before writing the file.**
+
 ### Depth Effects (choose 1-2 based on tone):
 
 **Grain overlay** (premium, subtle):
@@ -122,6 +142,11 @@ Use the JSON colors (`primario`, `secundario`, `fondo`, `texto`) as a starting p
 
 ## 2.3 Spacing and Layout
 
+**Spacing bounds (MANDATORY):**
+- `--section-padding`: `clamp(3rem, 6vw, 6rem)` as DEFAULT. Only hero and full-width CTA banners may use up to `clamp(4rem, 8vw, 8rem)`.
+- **NEVER use 10rem+ section padding.** Empty space ≠ luxury. Content density must feel intentional, not abandoned. A page with 13 sections × 10rem padding = user scrolls through voids.
+- Luxury sites breathe through **typography scale and whitespace within content**, not through massive section padding.
+
 ```css
 .container {
   width: 100%;
@@ -131,7 +156,7 @@ Use the JSON colors (`primario`, `secundario`, `fondo`, `texto`) as a starting p
 }
 
 .section {
-  padding-block: var(--section-padding);
+  padding-block: var(--section-padding); /* clamp(3rem, 6vw, 6rem) — NEVER exceed 6rem */
 }
 ```
 
