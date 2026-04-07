@@ -1,7 +1,7 @@
 {
-  "negocio": "spotless-magic-world",
+  "negocio": "Spotless Magic World LLC",
   "url_produccion": "https://spotless-magic-world.vercel.app",
-  "fecha_deploy": "2026-04-04",
+  "fecha_deploy": "2026-04-05",
   "stack": "html",
-  "carpeta_origen": "web/spotless-magic-world/"
+  "carpeta_origen": "web/spotless-magic-world"
 }

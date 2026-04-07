@@ -224,19 +224,46 @@
         <p>From classic manicures to designer extensions, every service is crafted to enhance your natural beauty with premium products and professional technique.</p>
       </div>
 
-      <div class="services__grid" data-stagger>
-        <div class="service-card service-card--gold">
-          <svg class="service-card__icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 00-2-2 2 2 0 00-2 2"/><path d="M14 10V4a2 2 0 00-2-2 2 2 0 00-2 2v2"/><path d="M10 10.5V6a2 2 0 00-2-2 2 2 0 00-2 2v8"/><path d="M18 8a2 2 0 012 2v7.1a5 5 0 01-.68 2.52L17.4 23H8.6l-1.7-2.55A5 5 0 016 17.83V13"/></svg>
-          <h3 class="service-card__title">Manicures</h3>
-          <p class="service-card__desc">From classic to collagen spa. Shaping, cuticle care, sugar scrub, hot oil massage, and perfect polish.</p>
-          <span class="service-card__price">$25 <span>– $45+</span></span>
+      <div class="services__grid" data-animate="stagger">
+        <!-- Manicures -->
+        <div class="service-card card-container">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 11V6a2 2 0 00-2-2 2 2 0 00-2 2"/>
+            <path d="M14 10V4a2 2 0 00-2-2 2 2 0 00-2 2v2"/>
+            <path d="M10 10.5V6a2 2 0 00-2-2 2 2 0 00-2 2v8"/>
+            <path d="M18 8a2 2 0 012 2v7.1a5 5 0 01-.68 2.52L17.4 23H8.6l-1.7-2.55A5 5 0 016 17.83V13"/>
+          </svg>
+          <div>
+            <h3 class="service-card__title">Manicures</h3>
+            <ul class="service-card__list">
+              <li>Classic Manicure — $25</li>
+              <li>Signature Manicure — $35</li>
+              <li>Collagen Spa Manicure — $45</li>
+            </ul>
+            <p class="service-card__description">Nail trimming, cuticle care, sugar scrub, hot oil massage, collagen gloves, and polish perfection. Extra $15 for gel polish on Collagen Spa.</p>
+            <span class="service-card__price">$25 <span>– $45+</span></span>
+          </div>
         </div>
 
-        <div class="service-card service-card--sage">
-          <svg class="service-card__icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16s1-1 4-1 5 2 8 2 4-1 4-1"/><path d="M2 12s2-2 6-2 6 3 10 3 6-2 6-2"/><path d="M2 20s2-1 6-1 6 2 10 2 6-1 6-1"/></svg>
-          <h3 class="service-card__title">Pedicures</h3>
-          <p class="service-card__desc">Regular to Lovely Pedicure with 20-min massage. Collagen treatment, hot stone, and five luxury scents.</p>
-          <span class="service-card__price">$35 <span>– $65+</span></span>
+        <!-- Pedicures -->
+        <div class="service-card card-container">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 16s1-1 4-1 5 2 8 2 4-1 4-1"/>
+            <path d="M2 12s2-2 6-2 6 3 10 3 6-2 6-2"/>
+            <path d="M2 20s2-1 6-1 6 2 10 2 6-1 6-1"/>
+          </svg>
+          <div>
+            <h3 class="service-card__title">Pedicures</h3>
+            <ul class="service-card__list">
+              <li>Regular Pedicure — $35</li>
+              <li>Spa Pedicure — $45</li>
+              <li>Deluxe Pedicure — $55</li>
+              <li>Lovely Pedicure — $65 <small>(20-min massage)</small></li>
+              <li>Collagen Socks add-on — $10</li>
+            </ul>
+            <p class="service-card__description">Collagen treatments, hot stone therapy, and choice of five luxurious scents. Extra $15 for gel polish.</p>
+            <span class="service-card__price">$35 <span>– $65+</span></span>
+          </div>
         </div>
 
         <div class="service-card service-card--gold">
@@ -268,8 +295,40 @@
         </div>
       </div>
 
-      <div class="services__cta" data-animate="fade-up">
-        <a href="#price-menu" class="btn btn--outline">View Full Price Menu &rarr;</a>
+        <!-- Dipping Powder -->
+        <div class="service-card card-container">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M8 2h8l4 10H4L8 2z"/>
+            <path d="M12 12v6"/>
+            <path d="M6 22h12"/>
+            <path d="M9 18h6"/>
+          </svg>
+          <div>
+            <h3 class="service-card__title">Dipping Powder</h3>
+            <p class="service-card__description">Pink &amp; white, ombre, and color options. Long-lasting, lightweight alternative to acrylics with a natural look.</p>
+            <span class="service-card__price">$45 <span>– $65+</span></span>
+          </div>
+        </div>
+
+        <!-- Kid's Services -->
+        <div class="service-card card-container">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+            <line x1="9" y1="9" x2="9.01" y2="9"/>
+            <line x1="15" y1="9" x2="15.01" y2="9"/>
+          </svg>
+          <div>
+            <h3 class="service-card__title">Kid's Services</h3>
+            <p class="service-card__description">NexGen, acrylic sets, manicures, pedicures, and gel polish — all at kid-friendly prices with safe products.</p>
+            <span class="service-card__price">$12 <span>– $45</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full menu CTA -->
+      <div class="services__cta" data-animate="fade-up" data-delay="2">
+        <a href="#price-menu" class="btn btn--dark">View Full Price Menu &rarr;</a>
       </div>
     </div>
   </section>

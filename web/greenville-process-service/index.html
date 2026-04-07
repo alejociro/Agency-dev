@@ -32,9 +32,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS v4 CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
   <!-- Design System & Styles -->
   <link rel="stylesheet" href="styles/design-system.css">
   <link rel="stylesheet" href="styles/main.css">
@@ -144,7 +141,7 @@
       <div class="container" style="position: relative; z-index: 2;">
         <div class="hero__content">
           <span class="section-tag hero-tag">Upstate South Carolina Process Service</span>
-          <h1 class="hero-title hero-title" style="font-size: var(--text-hero);">
+          <h1 class="hero-title" style="font-size: var(--text-hero);">
             Every Document<br>
             <span class="text-accent">Delivered with Authority</span>
           </h1>
@@ -153,11 +150,11 @@
             We serve legal documents with the precision and reliability that law firms depend on.
           </p>
           <div class="hero__actions hero-cta">
-            <a href="tel:8642420712" class="btn btn--primary btn--large btn--phone">
+            <a href="tel:8642420712" class="btn btn--primary btn--large btn--phone" data-magnetic>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               Call 864-242-0712
             </a>
-            <a href="services.html" class="btn btn--outline">Our Services &rarr;</a>
+            <a href="#contact" class="btn btn--outline">Request Service &darr;</a>
           </div>
           <div class="hero-proof" style="margin-top: var(--space-6); display: flex; gap: var(--space-4); align-items: center; flex-wrap: wrap;">
             <span style="color: var(--color-text-muted-light); font-size: var(--text-small); letter-spacing: var(--tracking-wide); text-transform: uppercase;">
@@ -414,6 +411,107 @@
     </section>
 
     <!-- ============================================
+         CONTACT FORM — Request Service from Homepage
+         ============================================ -->
+    <section id="contact" class="section section--cream">
+      <div class="container">
+        <div class="grid-2col" style="gap: var(--space-8);">
+          <!-- Form -->
+          <div data-animate="fade-up">
+            <span class="section-tag">Get in Touch</span>
+            <h2 style="margin-bottom: var(--space-2);">Request Service</h2>
+            <div class="copper-line" style="margin-bottom: var(--space-4);"></div>
+
+            <form class="contact-form" action="https://formspree.io/f/placeholder" method="POST" x-data="{ submitted: false }" x-on:submit.prevent="submitted = true">
+
+              <template x-if="!submitted">
+                <div>
+                  <div class="grid-2col" style="gap: var(--space-3);">
+                    <div class="form-group">
+                      <label for="home-name" class="form-label">Full Name</label>
+                      <input type="text" id="home-name" name="name" class="form-input" placeholder="John Smith" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="home-email" class="form-label">Email</label>
+                      <input type="email" id="home-email" name="email" class="form-input" placeholder="john@example.com" required>
+                    </div>
+                  </div>
+
+                  <div class="grid-2col" style="gap: var(--space-3);">
+                    <div class="form-group">
+                      <label for="home-phone" class="form-label">Phone</label>
+                      <input type="tel" id="home-phone" name="phone" class="form-input" placeholder="(864) 555-0123">
+                    </div>
+                    <div class="form-group">
+                      <label for="home-service" class="form-label">Service Needed</label>
+                      <select id="home-service" name="service" class="form-input" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="process-service">Service of Process</option>
+                        <option value="court-filing">Court Filing &amp; Retrieval</option>
+                        <option value="skip-trace">Skip Trace</option>
+                        <option value="multiple">Multiple Services</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="home-message" class="form-label">Details</label>
+                    <textarea id="home-message" name="message" class="form-textarea" placeholder="Describe the documents to be served, defendant information, and any relevant case details..." required></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn--primary btn--large" style="width: 100%;">
+                    Submit Request
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </button>
+                  <p style="font-size: var(--text-small); color: var(--color-text-muted); margin-top: var(--space-2); text-align: center;">
+                    We respond within one business day. For urgent requests, call us directly.
+                  </p>
+                </div>
+              </template>
+
+              <template x-if="submitted">
+                <div style="text-align: center; padding: var(--space-8) var(--space-4);">
+                  <div style="width: 64px; height: 64px; border-radius: var(--radius-full); background: var(--color-accent-glow); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3); color: var(--color-accent);">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <h3 style="margin-bottom: var(--space-2);">Request Received</h3>
+                  <p style="color: var(--color-text-muted); max-width: 40ch; margin-inline: auto;">
+                    Thank you. We'll review your request and get back to you within one business day. For urgent matters, call us at <a href="tel:8642420712" style="font-weight: 700;">864-242-0712</a>.
+                  </p>
+                </div>
+              </template>
+
+            </form>
+          </div>
+
+          <!-- Contact Info Sidebar -->
+          <div data-animate="fade-right" data-delay="2">
+            <div style="background: var(--color-primary); border-radius: var(--radius-md); padding: var(--space-6); color: var(--color-text-light); position: relative; overflow: hidden;">
+              <div style="position: absolute; top: -20px; right: -10px; font-family: var(--font-display); font-size: 8rem; font-weight: 900; color: rgba(244, 237, 228, 0.04); line-height: 1; pointer-events: none;" aria-hidden="true">&#9742;</div>
+              <h3 style="color: var(--color-text-light); margin-bottom: var(--space-4); font-size: var(--text-h3);">Prefer to Call?</h3>
+              <a href="tel:8642420712" style="font-family: var(--font-display); font-size: var(--text-h2); font-weight: 900; color: var(--color-accent); display: block; margin-bottom: var(--space-4); transition: opacity 150ms ease;">864-242-0712</a>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-3);">
+                <li style="display: flex; gap: var(--space-2); align-items: center;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <a href="mailto:greenvilleps@bellsouth.net" style="color: var(--color-text-muted-light); transition: color 150ms ease;">greenvilleps@bellsouth.net</a>
+                </li>
+                <li style="display: flex; gap: var(--space-2); align-items: center;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span style="color: var(--color-text-muted-light);">25 Woods Lake Road, Suite 216<br>Greenville, SC 29607</span>
+                </li>
+                <li style="display: flex; gap: var(--space-2); align-items: center;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  <span style="color: var(--color-text-muted-light);">Mon-Fri: 8:00 AM - 5:00 PM</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
          CTA — Full width
          ============================================ -->
     <section class="section section--dark" style="text-align: center;">
@@ -421,14 +519,14 @@
         <div class="copper-line copper-line--center"></div>
         <h2 style="margin-bottom: var(--space-3);" class="text-balance">Need a Document Served<br>in the Upstate?</h2>
         <p style="color: var(--color-text-muted-light); margin-inline: auto; margin-bottom: var(--space-6); max-width: 50ch;">
-          Call us today or submit a request online. We serve documents in all five Upstate counties, Monday through Friday.
+          Call us today or submit a request above. We serve documents in all five Upstate counties, Monday through Friday.
         </p>
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-2);">
           <a href="tel:8642420712" class="btn btn--primary btn--large btn--phone">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             Call 864-242-0712
           </a>
-          <a href="contact.html" class="btn btn--outline btn--large">Request Service Online &rarr;</a>
+          <a href="#contact" class="btn btn--outline btn--large">Fill Out the Form &uarr;</a>
         </div>
       </div>
     </section>

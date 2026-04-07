@@ -728,63 +728,52 @@
     object-fit: cover;
   }
 
-  /* ---------- TESTIMONIALS ---------- */
-  .testimonials-wrapper {
+  /* ---------- TESTIMONIALS — Infinite Auto-Scroll Carousel ---------- */
+  .testimonials-carousel {
+    overflow: hidden;
     position: relative;
+    mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
   }
 
-  .testimonials-track {
+  .testimonials-carousel__track {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
     gap: var(--space-3);
-    padding-bottom: var(--space-4);
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-primary) var(--color-surface);
+    width: max-content;
+    animation: testimonials-scroll 30s linear infinite;
+  }
 
-    &::-webkit-scrollbar {
-      height: 6px;
+  .testimonials-carousel__track .testimonial-card {
+    flex: 0 0 clamp(300px, 38vw, 420px);
+  }
+
+  @keyframes testimonials-scroll {
+    0% {
+      transform: translateX(0);
     }
-    &::-webkit-scrollbar-track {
-      background: var(--color-surface);
-      border-radius: var(--radius-full);
-    }
-    &::-webkit-scrollbar-thumb {
-      background: var(--color-primary);
-      border-radius: var(--radius-full);
+    100% {
+      /* Translate by exactly half (3 original cards + gaps) to loop seamlessly */
+      transform: translateX(calc(-50% - var(--space-3) / 2));
     }
   }
 
-  .testimonials-track .testimonial-card {
-    scroll-snap-align: start;
-    flex: 0 0 clamp(280px, 80vw, 420px);
+  .testimonials-carousel:hover .testimonials-carousel__track {
+    animation-play-state: paused;
   }
 
-  .testimonials-nav {
-    display: flex;
-    justify-content: center;
-    gap: var(--space-2);
-    margin-top: var(--space-2);
-  }
-
-  .testimonials-nav__btn {
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: var(--radius-full);
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    color: var(--color-primary);
-    transition: all var(--duration-fast) var(--ease-out-expo);
-    cursor: pointer;
-
-    &:hover {
-      background: var(--color-primary);
-      color: var(--color-bg);
-      border-color: var(--color-primary);
+  @media (prefers-reduced-motion: reduce) {
+    .testimonials-carousel__track {
+      animation: none;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: auto;
+    }
+    .testimonials-carousel {
+      mask-image: none;
+      -webkit-mask-image: none;
+    }
+    .testimonials-carousel__track .testimonial-card {
+      flex: 0 1 clamp(280px, 80vw, 420px);
     }
   }
 

@@ -1,7 +1,7 @@
 {
   "negocio": "rudys-rug-cleaning",
-  "url_produccion": "https://rudys-rug-cleaning.vercel.app",
-  "fecha_deploy": "2026-04-02",
+  "url_produccion": "https://rudys-rug-cleaning-six.vercel.app",
+  "fecha_deploy": "2026-04-06",
   "stack": "html",
   "carpeta_origen": "web/rudys-rug-cleaning"
 }

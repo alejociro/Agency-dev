@@ -34,11 +34,33 @@
     }
 
     & .nav__logo {
+      display: flex;
+      align-items: center;
+      gap: var(--space-1);
       font-family: var(--font-display);
       font-size: var(--text-h4);
       font-weight: 700;
       color: var(--color-white-soft);
       transition: color var(--duration-fast);
+    }
+
+    & .nav__logo-img {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      object-fit: contain;
+      transition: width var(--duration-base), height var(--duration-base);
+    }
+
+    &.scrolled .nav__logo-img {
+      width: 36px;
+      height: 36px;
+    }
+
+    & .nav__logo-text {
+      @media (max-width: 480px) {
+        display: none;
+      }
     }
 
     &.scrolled .nav__logo {
@@ -48,10 +70,10 @@
     & .nav__links {
       display: none;
       list-style: none;
-      gap: var(--space-5);
+      gap: var(--space-4);
       align-items: center;
 
-      @media (min-width: 768px) {
+      @media (min-width: 900px) {
         display: flex;
       }
     }
@@ -127,7 +149,7 @@
       cursor: pointer;
       padding: var(--space-1);
 
-      @media (min-width: 768px) {
+      @media (min-width: 900px) {
         display: none;
       }
 
@@ -410,6 +432,14 @@
       pointer-events: none;
       z-index: 1;
     }
+  }
+
+  /* Hero background layer with real image */
+  .hero__bg-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    will-change: transform;
   }
 
   /* --- Service Cards --- */

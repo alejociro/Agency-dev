@@ -227,13 +227,37 @@ document.addEventListener("alpine:init", () => {
           { name: "White Tip", desc: null, price: "Extra $5" },
           { name: "Nail Design", desc: null, price: "$7+" }
         ]
+      },
+      {
+        name: "Kids",
+        note: "Gel Polish: Extra $15",
+        items: [
+          { name: "NexGen Pink & White (Full Set)", desc: null, price: "$45" },
+          { name: "NexGen Pink & White (Fill-In)", desc: null, price: "$38" },
+          { name: "NexGen Colors (Full Set)", desc: null, price: "$40" },
+          { name: "NexGen Colors (Fill-In)", desc: null, price: "$35" },
+          { name: "Acrylic White Tips (Full Set)", desc: null, price: "$35" },
+          { name: "Acrylic White Tips (Fill-In)", desc: null, price: "$28" },
+          { name: "Acrylic (Full Set)", desc: null, price: "$30" },
+          { name: "Acrylic (Fill-In)", desc: null, price: "$23" },
+          { name: "Acrylic with Gel Polish (Full Set)", desc: null, price: "$40" },
+          { name: "Acrylic with Gel Polish (Fill-In)", desc: null, price: "$35" },
+          { name: "Manicure", desc: null, price: "$20" },
+          { name: "Manicure with Gel Polish", desc: null, price: "$35" },
+          { name: "Gel Polish Change", desc: null, price: "$20" },
+          { name: "Regular Pedicure", desc: null, price: "$25" },
+          { name: "Spa Pedicure", desc: null, price: "$35" },
+          { name: "Deluxe Pedicure", desc: null, price: "$45" },
+          { name: "Toenail Polish Change", desc: null, price: "$15" },
+          { name: "Fingernail Polish Change", desc: null, price: "$12" }
+        ]
       }
     ]
   }));
 
   /* ── FAQ Accordion ── */
   Alpine.data("faqAccordion", () => ({
-    activeIndex: null,
+    activeIndex: 0,
 
     toggle(index) {
       this.activeIndex = this.activeIndex === index ? null : index;

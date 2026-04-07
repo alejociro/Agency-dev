@@ -462,6 +462,12 @@
    CAPA 3 — MICRO-INTERACCIONES
    ======================================== */
 
+/* Magnetic button base */
+[data-magnetic] {
+  transition: transform 0.15s ease;
+  will-change: transform;
+}
+
 /* Boton primario con shimmer */
 .btn--primary {
   position: relative;

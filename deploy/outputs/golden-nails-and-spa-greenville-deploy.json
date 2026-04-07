@@ -1,7 +1,16 @@
 {
   "negocio": "Golden Nails & Spa",
   "url_produccion": "https://golden-nails-and-spa-greenville.vercel.app",
-  "fecha_deploy": "2026-04-06",
+  "fecha_deploy": "2026-04-05",
+  "fecha_refine": "2026-04-05",
   "stack": "html",
-  "carpeta_origen": "web/golden-nails-and-spa-greenville"
+  "carpeta_origen": "web/golden-nails-and-spa-greenville",
+  "refinado": true,
+  "cambios_refine": [
+    "Fixed Kids, Process, and Gallery section spacing and layout distribution",
+    "Added complete manicure and pedicure service lists with individual items and prices to service cards",
+    "Added Kid's Services card to main services grid and Kids tab to full price menu",
+    "Fixed FAQ accordion to show first answer open by default",
+    "Fixed Contact/Get in Touch section spacing, alignment, and layout distribution"
+  ]
 }

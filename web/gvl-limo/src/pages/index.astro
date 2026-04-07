@@ -358,6 +358,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <span class="area-tag">Hendersonville</span>
         <span class="area-tag">Seneca</span>
         <span class="area-tag">Laurens</span>
+        <span class="area-tag">Duncan</span>
+        <span class="area-tag">Easley</span>
+        <span class="area-tag">Greenwood</span>
+        <span class="area-tag">Fair Play</span>
+        <span class="area-tag">Taylors</span>
         <span class="area-tag area-tag-accent">& Wherever Else You Need Us</span>
       </div>
     </div>
@@ -404,6 +409,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </a>
             <a href="https://www.youtube.com/channel/UCHINlly5C97aLuaVqIkOShA" aria-label="YouTube" target="_blank" rel="noopener">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="3" stroke="#C9A84C" stroke-width="1.5"/><path d="M8 8l5 2.5L8 13V8z" fill="#C9A84C"/></svg>
+            </a>
+            <a href="https://www.x.com/GvlLimo" aria-label="X / Twitter" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 3l5.5 7.5L3 17h1.5l4.5-5.3L13 17h4l-5.8-8L16.5 3H15l-4.2 4.8L7 3H3zm2 1.5h2l8 11h-2L5 4.5z" fill="#C9A84C"/></svg>
+            </a>
+            <a href="https://www.yelp.com/biz/jQTpLcSbhyOb__TQ4WOv-g" aria-label="Yelp" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 1l2.1 4.3 4.7.7-3.4 3.3.8 4.7L10 11.8 5.8 14l.8-4.7L3.2 6l4.7-.7L10 1z" fill="#C9A84C"/></svg>
             </a>
           </div>
         </div>
@@ -848,6 +859,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   .social-links {
     display: flex;
     gap: var(--space-3);
+    flex-wrap: wrap;
 
     & a {
       opacity: 0.6;

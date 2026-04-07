@@ -143,20 +143,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  /* Testimonials navigation */
-  const track = document.querySelector('.testimonials-track');
-  const prevBtn = document.querySelector('.testimonials-nav__btn--prev');
-  const nextBtn = document.querySelector('.testimonials-nav__btn--next');
-  if (track && prevBtn && nextBtn) {
-    const scrollAmount = () => {
-      const card = track.querySelector('.testimonial-card');
-      return card ? card.offsetWidth + 24 : 300;
-    };
-    prevBtn.addEventListener('click', () => {
-      track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
-    });
-    nextBtn.addEventListener('click', () => {
-      track.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
-    });
-  }
+  /* Testimonials — CSS-driven infinite carousel (no JS needed for scroll) */
 });

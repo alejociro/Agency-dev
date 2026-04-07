@@ -1,7 +1,7 @@
 {
-  "negocio": "greenville-process-service",
+  "negocio": "Greenville Process Service",
   "url_produccion": "https://greenville-process-service.vercel.app",
-  "fecha_deploy": "2026-04-04",
+  "fecha_deploy": "2026-04-05",
   "stack": "html",
   "carpeta_origen": "web/greenville-process-service"
 }

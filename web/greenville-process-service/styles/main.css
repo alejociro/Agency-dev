@@ -15,6 +15,9 @@
     width: 100%;
     z-index: 100;
     padding: var(--space-2) 0;
+    background-color: rgba(27, 42, 65, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     transition: background-color var(--transition-base),
                 box-shadow var(--transition-base),
                 padding var(--transition-base);
@@ -852,6 +855,36 @@
   }
 
   /* Animaciones de scroll movidas a design-system.css (Capa 2) */
+}
+
+/* ================================================
+   NAV OVERRIDES — unlayered to ensure visibility
+   over any external reset (Tailwind, normalize, etc.)
+   ================================================ */
+.nav__logo {
+  color: var(--color-text-light);
+}
+.nav__logo:hover {
+  color: var(--color-text-light);
+  opacity: 0.85;
+}
+.nav__link {
+  color: var(--color-text-muted-light);
+}
+.nav__link:hover {
+  color: var(--color-text-light);
+}
+.nav__mobile-link {
+  color: var(--color-text-light);
+}
+.nav__mobile-link:hover {
+  color: var(--color-accent);
+}
+.footer__link {
+  color: var(--color-text-muted-light);
+}
+.footer__link:hover {
+  color: var(--color-accent);
 }
 
 @layer utilities {

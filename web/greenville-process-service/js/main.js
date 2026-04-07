@@ -153,6 +153,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ================================================
+     MAGNETIC BUTTON (data-magnetic)
+     ================================================ */
+  if (!prefersReducedMotion) {
+    document.querySelectorAll('[data-magnetic]').forEach(btn => {
+      const strength = 0.3;
+
+      btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        btn.style.transform = `translate(${x * strength}px, ${y * strength}px)`;
+      });
+
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = '';
+        btn.style.transition = 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)';
+        setTimeout(() => { btn.style.transition = ''; }, 400);
+      });
+    });
+  }
+
+  /* ================================================
      SMOOTH SCROLL for anchor links
      ================================================ */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
