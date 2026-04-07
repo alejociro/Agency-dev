@@ -37,6 +37,7 @@ Hi,
 
 Sebastian Garcia
 CreedNova · Greenville, SC
+(862) 459-7048
 linkedin.com/in/sebastian-garcia-167522295/
 ```
 
@@ -44,7 +45,7 @@ linkedin.com/in/sebastian-garcia-167522295/
 - **NO emojis** anywhere in the email — Gmail flags them
 - **NO https://** prefix on links — just `site-name.vercel.app`
 - **NO "Best regards"** or formal closings — too template-y
-- **NO phone number in signature** — reduces spam score, they can find it on LinkedIn
+- **Phone number in signature only** — never in the body, keeps it clean
 - **NO "creednova.com"** link in signature — multiple links = higher spam score
 - **NO "Sales Manager"** or any title — just name + company + city
 - **Minimal signature** — name, company, city, LinkedIn only
@@ -132,6 +133,7 @@ OUTREACH COMPLETED: X emails generated, Y skipped (no email)
 Every email must be sendable. The signature includes:
 - Real name and physical location (Greenville, SC)
 - Company name
+- Phone number
 - LinkedIn (for verification/trust)
 
 Note to user: Before sending, add an unsubscribe line at the bottom of each email:
